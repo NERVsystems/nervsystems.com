@@ -20,20 +20,12 @@ export default function TacticalNav() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center">
             <img
               src="/img/Screenshot 2025-06-20 at 20.44.53.png"
-              alt="NERV Logo"
+              alt="NERV Systems"
               className="h-12 w-auto"
             />
-            <div>
-              <span className="font-mono font-bold text-xl text-white tracking-wider">
-                NERV
-              </span>
-              <div className="text-[10px] text-tactical-textDim font-mono tracking-widest -mt-1">
-                SYSTEMS
-              </div>
-            </div>
           </div>
 
           {/* Nav Items */}

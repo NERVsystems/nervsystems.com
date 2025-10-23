@@ -5,15 +5,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center space-x-3 mb-4">
+            <div className="mb-4">
               <img
                 src="/img/Screenshot 2025-06-20 at 20.44.53.png"
-                alt="NERV Logo"
+                alt="NERV Systems"
                 className="h-10 w-auto"
               />
-              <span className="font-mono font-bold text-lg text-white tracking-wider">
-                NERV SYSTEMS
-              </span>
             </div>
             <p className="text-tactical-textDim text-sm leading-relaxed">
               Tactical AI for Mission Planning and Edge Intelligence
