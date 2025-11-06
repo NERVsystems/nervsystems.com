@@ -1,9 +1,11 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import RequestDemoForm from './RequestDemoForm';
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false);
+  const [showDemoForm, setShowDemoForm] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -47,18 +49,27 @@ export default function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="px-8 py-4 bg-white text-black hover:bg-tactical-textDim transition-all duration-300 text-sm font-medium">
+            <button
+              onClick={() => setShowDemoForm(true)}
+              className="px-8 py-4 bg-white text-black hover:bg-tactical-textDim transition-all duration-300 text-sm font-medium"
+            >
               Request Demo
             </button>
-            <button className="px-8 py-4 bg-transparent border border-white/30 text-white hover:border-white hover:bg-white/10 transition-all duration-300 text-sm font-medium">
+            <a
+              href="#nerva"
+              className="px-8 py-4 bg-transparent border border-white/30 text-white hover:border-white hover:bg-white/10 transition-all duration-300 text-sm font-medium text-center"
+            >
               Learn More
-            </button>
+            </a>
           </div>
         </div>
       </div>
 
       {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-tactical-bg to-transparent pointer-events-none"></div>
+
+      {/* Demo Form Modal */}
+      {showDemoForm && <RequestDemoForm onClose={() => setShowDemoForm(false)} formType="demo" />}
     </section>
   );
 }

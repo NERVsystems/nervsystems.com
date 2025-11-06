@@ -1,4 +1,10 @@
+'use client';
+
+import { useState } from 'react';
+import RequestDemoForm from './RequestDemoForm';
+
 export default function NERVASection() {
+  const [showDemoForm, setShowDemoForm] = useState(false);
   const capabilities = [
     {
       icon: "UAS",
@@ -123,11 +129,17 @@ export default function NERVASection() {
           <p className="text-tactical-textDim text-lg mb-6">
             Already using TAK? NERVA makes it intelligent.
           </p>
-          <button className="px-8 py-4 bg-white text-black hover:bg-tactical-textDim transition-all duration-300 text-sm font-medium">
+          <button
+            onClick={() => setShowDemoForm(true)}
+            className="px-8 py-4 bg-white text-black hover:bg-tactical-textDim transition-all duration-300 text-sm font-medium"
+          >
             See NERVA in Action
           </button>
         </div>
       </div>
+
+      {/* Demo Form Modal */}
+      {showDemoForm && <RequestDemoForm onClose={() => setShowDemoForm(false)} formType="demo" />}
     </section>
   );
 }
