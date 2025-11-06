@@ -23,24 +23,42 @@ export default function Footer() {
               Navigation
             </h3>
             <ul className="space-y-3">
-              {['Features', 'Platform', 'Contact', 'Documentation'].map((item) => (
-                <li key={item}>
-                  <a href={`#${item.toLowerCase()}`} className="text-tactical-textDim hover:text-white transition-colors text-sm">
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a href="#nerva" className="text-tactical-textDim hover:text-white transition-colors text-sm">
+                  NERVA AI
+                </a>
+              </li>
+              <li>
+                <a href="#features" className="text-tactical-textDim hover:text-white transition-colors text-sm">
+                  Platform
+                </a>
+              </li>
+              <li>
+                <a href="#platform" className="text-tactical-textDim hover:text-white transition-colors text-sm">
+                  TAK Integration
+                </a>
+              </li>
+              <li>
+                <a href="#solutions" className="text-tactical-textDim hover:text-white transition-colors text-sm">
+                  Solutions & Services
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact & Affiliations */}
           <div>
             <h3 className="text-sm font-bold text-white mb-4 uppercase tracking-wider">
               Contact
             </h3>
-            <div className="text-tactical-textDim text-sm space-y-2">
+            <div className="text-tactical-textDim text-sm space-y-2 mb-6">
               <p>Email: contact@nervsystems.com</p>
-              <p>Location: United States</p>
+              <p>Asia Pacific Operations</p>
+            </div>
+            <div className="text-xs text-tactical-textDim/70 space-y-1">
+              <p>🔷 NVIDIA Inception Member</p>
+              <p>🎓 NUS Enterprise Incubated</p>
+              <p>🎖️ King&apos;s College London Affiliated</p>
             </div>
           </div>
         </div>

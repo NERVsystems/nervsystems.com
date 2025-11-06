@@ -26,7 +26,7 @@ export default function HeroSection() {
 
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-tactical-textDim max-w-3xl mb-12 leading-relaxed">
-            AI-powered decision support that turns information overload into clear action for critical operations.
+            TAK-native AI-powered decision support that turns information overload into clear action for critical operations.
           </p>
 
           {/* Key Stats */}

@@ -21,7 +21,7 @@ export default function FeaturesSection() {
     {
       icon: "◐",
       title: "EDGE COMPUTE",
-      description: "Field-deployable 'GPU-in-a-box' for secure, private, AI at the edge. Operates when connectivity fails.",
+      description: "Field-deployable 'GPU-in-a-helmet' for secure, private, AI at the edge. Operates when connectivity fails.",
       code: "HARDWARE-01"
     }
   ];

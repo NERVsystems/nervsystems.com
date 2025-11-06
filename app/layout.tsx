@@ -2,16 +2,53 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NERV | Tactical AI for Mission Planning and Edge Intelligence",
-  description: "NERV is a next-generation Tactical AI platform engineered for autonomous mission planning, real-time decision support, and edge AI processing in contested, disconnected, and multi-domain environments.",
-  keywords: ["tactical AI", "TAK", "ATAK", "mission planning", "edge intelligence", "defense technology"],
+  title: "NERV Systems | AI-Powered TAK Platform for Mission Planning",
+  description: "Advanced TAK/ATAK solutions with AI mission planning, autonomous operations, and intelligent drone integration. NERVA AI assistant, managed TAK hosting, deployment consulting, and training for Asia Pacific. TAK-native autonomous decision support.",
+  keywords: [
+    "TAK solutions",
+    "ATAK platform",
+    "AI-powered TAK",
+    "intelligent ATAK",
+    "TAK server hosting",
+    "TAK deployment consulting",
+    "TAK training Asia Pacific",
+    "managed TAK hosting",
+    "NERVA AI assistant",
+    "tactical AI",
+    "mission planning",
+    "edge AI",
+    "drone integration TAK",
+    "TAK plugin development",
+    "Team Awareness Kit",
+    "TAK Singapore",
+    "TAK Asia",
+    "autonomous mission planning",
+    "defense technology",
+    "tactical edge computing"
+  ],
   authors: [{ name: "NERV Systems" }],
   openGraph: {
-    title: "NERV | Tactical AI for Mission Planning",
-    description: "Next-generation Tactical AI platform for autonomous mission planning and edge intelligence",
+    title: "NERV Systems | AI-Powered TAK Platform for Mission Planning",
+    description: "Advanced TAK/ATAK solutions with AI mission planning, autonomous operations, and intelligent drone integration. Managed hosting, consulting & training for Asia Pacific.",
     url: "https://www.nervsystems.com",
     siteName: "NERV Systems",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NERV Systems | AI-Powered TAK Platform",
+    description: "TAK/ATAK solutions with AI mission planning and autonomous operations",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
