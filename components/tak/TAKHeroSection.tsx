@@ -7,9 +7,22 @@ export default function TAKHeroSection() {
   const [showQuoteForm, setShowQuoteForm] = useState(false);
 
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden grid-bg pt-24">
+    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-24">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2400&q=80"
+          alt="Command Center Operations"
+          className="w-full h-full object-cover"
+        />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-tactical-bg/85"></div>
+        {/* Grid overlay */}
+        <div className="absolute inset-0 grid-bg opacity-40"></div>
+      </div>
+
       {/* Scan line effect */}
-      <div className="scan-line absolute inset-0 pointer-events-none"></div>
+      <div className="scan-line absolute inset-0 pointer-events-none z-5"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">

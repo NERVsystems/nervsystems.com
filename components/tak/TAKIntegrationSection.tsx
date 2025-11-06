@@ -79,40 +79,73 @@ export default function TAKIntegrationSection() {
 
           {/* Right: Use Cases */}
           <div className="space-y-6">
-            <div className="tactical-border p-6 bg-white/5">
-              <h4 className="text-xl font-bold text-white mb-3">TAK for Military Operations</h4>
-              <p className="text-tactical-textDim text-sm leading-relaxed mb-3">
-                Deploy TAK/ATAK systems for command and control, ISR operations, close air support, CASEVAC coordination, and multi-domain operations with AI-enhanced mission planning.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">C2</span>
-                <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">ISR</span>
-                <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">CASEVAC</span>
-                <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">CAS</span>
+            {/* Military Operations */}
+            <div className="tactical-border bg-white/5 overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80"
+                  alt="Military Tactical Operations"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-tactical-bg to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-xl font-bold text-white mb-3">TAK for Military Operations</h4>
+                <p className="text-tactical-textDim text-sm leading-relaxed mb-3">
+                  Deploy TAK/ATAK systems for command and control, ISR operations, close air support, CASEVAC coordination, and multi-domain operations with AI-enhanced mission planning.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">C2</span>
+                  <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">ISR</span>
+                  <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">CASEVAC</span>
+                  <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">CAS</span>
+                </div>
               </div>
             </div>
 
-            <div className="tactical-border p-6 bg-white/5">
-              <h4 className="text-xl font-bold text-white mb-3">TAK for Law Enforcement</h4>
-              <p className="text-tactical-textDim text-sm leading-relaxed mb-3">
-                ATAK solutions for tactical operations, SWAT coordination, event security, border patrol, and inter-agency information sharing with real-time situational awareness.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">SWAT</span>
-                <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">SECURITY</span>
-                <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">PATROL</span>
+            {/* Law Enforcement */}
+            <div className="tactical-border bg-white/5 overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80"
+                  alt="Law Enforcement Tactical Operations"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-tactical-bg to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-xl font-bold text-white mb-3">TAK for Law Enforcement</h4>
+                <p className="text-tactical-textDim text-sm leading-relaxed mb-3">
+                  ATAK solutions for tactical operations, SWAT coordination, event security, border patrol, and inter-agency information sharing with real-time situational awareness.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">SWAT</span>
+                  <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">SECURITY</span>
+                  <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">PATROL</span>
+                </div>
               </div>
             </div>
 
-            <div className="tactical-border p-6 bg-white/5">
-              <h4 className="text-xl font-bold text-white mb-3">TAK for Emergency Management</h4>
-              <p className="text-tactical-textDim text-sm leading-relaxed mb-3">
-                Emergency response TAK systems for disaster response, search and rescue (SAR), fire operations, medical coordination, and multi-agency incident management.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">SAR</span>
-                <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">FIRE</span>
-                <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">EMS</span>
+            {/* Emergency Management */}
+            <div className="tactical-border bg-white/5 overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=800&q=80"
+                  alt="Emergency Management and Search & Rescue"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-tactical-bg to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-xl font-bold text-white mb-3">TAK for Emergency Management</h4>
+                <p className="text-tactical-textDim text-sm leading-relaxed mb-3">
+                  Emergency response TAK systems for disaster response, search and rescue (SAR), fire operations, medical coordination, and multi-agency incident management.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">SAR</span>
+                  <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">FIRE</span>
+                  <span className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">EMS</span>
+                </div>
               </div>
             </div>
           </div>
