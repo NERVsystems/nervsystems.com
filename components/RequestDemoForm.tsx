@@ -30,9 +30,15 @@ export default function RequestDemoForm({ onClose, formType = 'demo' }: RequestD
     e.preventDefault();
     setIsSubmitting(true);
 
-    // For now, using mailto (will upgrade to backend/CRM later)
-    const subject = encodeURIComponent(`${formTitles[formType]} - ${formData.organization || formData.name}`);
-    const body = encodeURIComponent(`
+    try {
+      // Submit to HubSpot Forms API
+      const portalId = process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID;
+      const formId = process.env.NEXT_PUBLIC_HUBSPOT_FORM_ID;
+
+      if (!portalId || !formId) {
+        // Fallback to mailto if HubSpot not configured
+        const subject = encodeURIComponent(`${formTitles[formType]} - ${formData.organization || formData.name}`);
+        const body = encodeURIComponent(`
 Name: ${formData.name}
 Email: ${formData.email}
 Organization: ${formData.organization}
@@ -45,15 +51,53 @@ ${formData.message}
 ---
 Form Type: ${formTitles[formType]}
 Submitted: ${new Date().toISOString()}
-    `);
+        `);
+        window.location.href = `mailto:contact@nervsystems.com?subject=${subject}&body=${body}`;
+        setSubmitted(true);
+        setIsSubmitting(false);
+        return;
+      }
 
-    window.location.href = `mailto:contact@nervsystems.com?subject=${subject}&body=${body}`;
+      // HubSpot API submission
+      const response = await fetch(
+        `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formId}`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            fields: [
+              { name: 'firstname', value: formData.name },
+              { name: 'email', value: formData.email },
+              { name: 'company', value: formData.organization },
+              { name: 'phone', value: formData.phone },
+              { name: 'interest_area', value: formData.interest },
+              { name: 'message', value: formData.message },
+              { name: 'form_type', value: formTitles[formType] },
+            ],
+            context: {
+              pageUri: window.location.href,
+              pageName: document.title,
+            },
+          }),
+        }
+      );
 
-    // Simulate submission delay
-    setTimeout(() => {
-      setSubmitted(true);
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        console.error('HubSpot submission failed:', await response.text());
+        // Fallback to mailto on error
+        alert('There was an issue submitting the form. Please email us directly at contact@nervsystems.com');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      // Fallback to mailto on error
+      alert('There was an issue submitting the form. Please email us directly at contact@nervsystems.com');
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
