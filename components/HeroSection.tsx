@@ -21,7 +21,7 @@ export default function HeroSection() {
           <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-tight tracking-tight">
             <span className="text-white">Tactical AI for</span>
             <br />
-            <span className="text-white">Mission Planning</span>
+            <span className="text-white">Mission Success</span>
           </h1>
 
           {/* Subheading */}

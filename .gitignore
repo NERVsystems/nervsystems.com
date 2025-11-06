@@ -34,3 +34,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Strategy and internal documentation (DO NOT COMMIT)
+docs/
+IMPLEMENTATION_STRATEGY.md
+*STRATEGY*.md
+*strategy*.md
+*competitive*.md
+*COMPETITIVE*.md
