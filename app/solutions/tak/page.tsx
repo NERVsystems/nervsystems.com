@@ -3,6 +3,8 @@ import TacticalNav from '@/components/TacticalNav';
 import TAKHeroSection from '@/components/tak/TAKHeroSection';
 import TAKServicesSection from '@/components/tak/TAKServicesSection';
 import TAKIntegrationSection from '@/components/tak/TAKIntegrationSection';
+import TAKCompetitiveSection from '@/components/tak/TAKCompetitiveSection';
+import TAKResourcesSection from '@/components/tak/TAKResourcesSection';
 import TAKFAQSection from '@/components/tak/TAKFAQSection';
 import Footer from '@/components/Footer';
 
@@ -51,6 +53,8 @@ export default function TAKSolutionsPage() {
       <TAKHeroSection />
       <TAKServicesSection />
       <TAKIntegrationSection />
+      <TAKCompetitiveSection />
+      <TAKResourcesSection />
       <TAKFAQSection />
       <Footer />
     </main>
