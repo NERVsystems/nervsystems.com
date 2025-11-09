@@ -1,25 +1,25 @@
 export default function FeaturesSection() {
   const features = [
     {
-      icon: "◈",
+      icon: "01",
       title: "REAL-TIME MISSION PLANNING",
       description: "Automated generation of tactical options from live ATAK data. 30-second planning cycles for time-critical operations.",
       code: "MAGI-01"
     },
     {
-      icon: "◇",
+      icon: "02",
       title: "MULTI-SOURCE INTELLIGENCE FUSION",
       description: "Unified analysis across drone feeds, sensor networks, and operator reports. Single operational picture from distributed data sources.",
       code: "MAGI-02"
     },
     {
-      icon: "◆",
+      icon: "03",
       title: "AUTONOMOUS ASSESSMENT",
       description: "Pattern recognition and anomaly detection for predictive analysis of operational environments.",
       code: "MAGI-03"
     },
     {
-      icon: "◐",
+      icon: "04",
       title: "EDGE COMPUTE",
       description: "Field-deployable 'GPU-in-a-helmet' for secure, private, AI at the edge. Operates when connectivity fails.",
       code: "HARDWARE-01"
@@ -46,6 +46,11 @@ export default function FeaturesSection() {
               key={index}
               className="group relative tactical-border p-8 bg-white/5 hover:bg-white/10 transition-all duration-300"
             >
+              {/* Icon Number */}
+              <div className="font-mono text-xs text-tactical-accent mb-3 px-2 py-1 bg-black/30 rounded border border-tactical-accent/30 inline-block">
+                {feature.icon}
+              </div>
+
               {/* Title */}
               <h3 className="text-xl font-bold text-white mb-4">
                 {feature.title}

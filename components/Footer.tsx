@@ -56,9 +56,9 @@ export default function Footer() {
               <p>Asia Pacific Operations</p>
             </div>
             <div className="text-xs text-tactical-textDim/70 space-y-1">
-              <p>🔷 NVIDIA Inception Member</p>
-              <p>🎓 NUS Enterprise Incubated</p>
-              <p>🎖️ King&apos;s College London Affiliated</p>
+              <p className="font-mono">▸ NVIDIA Inception Member</p>
+              <p className="font-mono">▸ NUS Enterprise Incubated</p>
+              <p className="font-mono">▸ King&apos;s College London Affiliated</p>
             </div>
           </div>
         </div>

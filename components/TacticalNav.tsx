@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function TacticalNav() {
   const [scrolled, setScrolled] = useState(false);
@@ -30,15 +31,18 @@ export default function TacticalNav() {
 
           {/* Nav Items */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-sm text-tactical-textDim hover:text-white transition-colors">
+            <Link href="/#features" className="text-sm text-tactical-textDim hover:text-white transition-colors">
               Features
-            </a>
-            <a href="#platform" className="text-sm text-tactical-textDim hover:text-white transition-colors">
+            </Link>
+            <Link href="/#platform" className="text-sm text-tactical-textDim hover:text-white transition-colors">
               Platform
-            </a>
-            <a href="#contact" className="text-sm text-tactical-textDim hover:text-white transition-colors">
+            </Link>
+            <Link href="/solutions/tak" className="text-sm text-tactical-textDim hover:text-white transition-colors">
+              TAK Solutions
+            </Link>
+            <Link href="/#contact" className="text-sm text-tactical-textDim hover:text-white transition-colors">
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* CTA */}

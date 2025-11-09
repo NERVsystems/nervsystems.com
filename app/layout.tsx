@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Analytics from "@/components/Analytics";
 
 export const metadata: Metadata = {
-  title: "NERV Systems | AI-Powered TAK Platform for Mission Planning",
+  title: "NERV Systems | AI-Powered TAK Platform for Mission Success",
   description: "Advanced TAK/ATAK solutions with AI mission planning, autonomous operations, and intelligent drone integration. NERVA AI assistant, managed TAK hosting, deployment consulting, and training for Asia Pacific. TAK-native autonomous decision support.",
   keywords: [
     "TAK solutions",
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "NERV Systems" }],
   openGraph: {
-    title: "NERV Systems | AI-Powered TAK Platform for Mission Planning",
+    title: "NERV Systems | AI-Powered TAK Platform for Mission Success",
     description: "Advanced TAK/ATAK solutions with AI mission planning, autonomous operations, and intelligent drone integration. Managed hosting, consulting & training for Asia Pacific.",
     url: "https://www.nervsystems.com",
     siteName: "NERV Systems",
@@ -60,6 +61,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
+        <Analytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
         {children}
       </body>
     </html>

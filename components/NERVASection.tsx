@@ -1,7 +1,13 @@
+'use client';
+
+import { useState } from 'react';
+import RequestDemoForm from './RequestDemoForm';
+
 export default function NERVASection() {
+  const [showDemoForm, setShowDemoForm] = useState(false);
   const capabilities = [
     {
-      icon: "🎯",
+      icon: "UAS",
       title: "Autonomous Drone Operations",
       command: '"NERVA, launch reconnaissance pattern Alpha"',
       description: "Autonomous flight path planning, real-time ISR analysis, automatic target identification, and predictive drone positioning. NERVA doesn't just show drone feeds—it plans, analyzes, and acts autonomously.",
@@ -9,7 +15,7 @@ export default function NERVASection() {
       videoPlaceholder: true
     },
     {
-      icon: "🚁",
+      icon: "MEDEVAC",
       title: "Automated CASEVAC Coordination",
       command: '"NERVA, we need a CASEVAC!"',
       description: "Identifies optimal helicopter landing zones in under 30 seconds, automatically notifies medical and aviation teams, monitors rescue progress, and updates all TAK clients in real-time.",
@@ -17,7 +23,7 @@ export default function NERVASection() {
       videoPlaceholder: true
     },
     {
-      icon: "🎯",
+      icon: "THREAT",
       title: "Hostile Unit Intelligence",
       command: "Identify enemy unit → NERVA acts",
       description: "Automatic lookup from Jane's Defence databases, plots range-of-fire rings, alerts all units in danger zones, and provides recommended countermeasures based on threat capabilities.",
@@ -25,7 +31,7 @@ export default function NERVASection() {
       videoPlaceholder: true
     },
     {
-      icon: "🔍",
+      icon: "SAR",
       title: "Search Area Calculation",
       command: '"NERVA, calculate search area for missing unit"',
       description: "Probability-based search zone generation using terrain analysis, weather conditions, and unit capabilities. Works for both military operations and civilian Search & Rescue (SAR).",
@@ -33,7 +39,7 @@ export default function NERVASection() {
       videoPlaceholder: true
     },
     {
-      icon: "🚨",
+      icon: "ALERT",
       title: "Intelligent Geofencing",
       command: '"NERVA, alert me if anyone enters Zone Delta"',
       description: "Creates dynamic geofences with complex boundaries, monitors all TAK feeds, generates detailed incident descriptions, and automatically escalates threats based on assessment.",
@@ -41,7 +47,7 @@ export default function NERVASection() {
       videoPlaceholder: true
     },
     {
-      icon: "✈️",
+      icon: "AIRSPACE",
       title: "3D Airspace Visualization",
       command: "Show chart → NERVA renders 3D airspace",
       description: "Interprets complex airspace restriction charts and visualizes Class A/B/C/D/E airspace in 3D on tactical maps. Provides real-time airspace violation warnings and deconfliction with friendly assets.",
@@ -74,7 +80,9 @@ export default function NERVASection() {
               className="group relative tactical-border p-6 bg-white/5 hover:bg-white/10 transition-all duration-300"
             >
               {/* Icon */}
-              <div className="text-4xl mb-4">{capability.icon}</div>
+              <div className="font-mono text-sm text-tactical-accent mb-4 px-2 py-1 bg-black/30 rounded border border-tactical-accent/30 inline-block">
+                {capability.icon}
+              </div>
 
               {/* Title */}
               <h3 className="text-xl font-bold text-white mb-3">
@@ -121,11 +129,17 @@ export default function NERVASection() {
           <p className="text-tactical-textDim text-lg mb-6">
             Already using TAK? NERVA makes it intelligent.
           </p>
-          <button className="px-8 py-4 bg-white text-black hover:bg-tactical-textDim transition-all duration-300 text-sm font-medium">
+          <button
+            onClick={() => setShowDemoForm(true)}
+            className="px-8 py-4 bg-white text-black hover:bg-tactical-textDim transition-all duration-300 text-sm font-medium"
+          >
             See NERVA in Action
           </button>
         </div>
       </div>
+
+      {/* Demo Form Modal */}
+      {showDemoForm && <RequestDemoForm onClose={() => setShowDemoForm(false)} formType="demo" />}
     </section>
   );
 }

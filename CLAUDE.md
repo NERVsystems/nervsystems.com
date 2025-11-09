@@ -116,3 +116,14 @@ Build output is fully static and can be served from CDN.
 - All animations should be subtle and professional - avoid flashy effects
 - Grid background and scan lines are key visual elements of the brand
 - Component imports use `@/` alias which maps to project root
+- **CRITICAL: NEVER use emoji in this website** - Emoji flag the site as AI-generated and are inappropriate for a tactical/military product. Use tactical abbreviations (UAS, SAR, ALERT, etc.), numbers (01, 02, 03), or simple ASCII symbols (▸, -, •) instead.
+
+## Content Guidelines
+
+- **No Emoji Ever** - This is a defense technology product. Emoji are unprofessional and immediately signal AI-generated content.
+- Use military/tactical terminology: CASEVAC, LZ, ISR, UAS, SAR, etc.
+- Icon replacements:
+  - Use tactical codes: "UAS", "MEDEVAC", "THREAT", "SAR", "ALERT", "AIRSPACE"
+  - Use numbered prefixes: "01", "02", "03"
+  - Use monospace ASCII: "▸", "•", "-", ">"
+- Maintain professional, operator-focused language throughout

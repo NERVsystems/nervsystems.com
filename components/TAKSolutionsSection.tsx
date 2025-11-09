@@ -1,4 +1,10 @@
+'use client';
+
+import { useState } from 'react';
+import RequestDemoForm from './RequestDemoForm';
+
 export default function TAKSolutionsSection() {
+  const [showQuoteForm, setShowQuoteForm] = useState(false);
   const hostingTiers = [
     {
       name: "Starter",
@@ -171,7 +177,10 @@ export default function TAKSolutionsSection() {
                   ))}
                 </ul>
 
-                <button className="w-full px-6 py-3 bg-transparent border border-white/30 text-white hover:border-white hover:bg-white/10 transition-all duration-300 text-sm font-medium">
+                <button
+                  onClick={() => setShowQuoteForm(true)}
+                  className="w-full px-6 py-3 bg-transparent border border-white/30 text-white hover:border-white hover:bg-white/10 transition-all duration-300 text-sm font-medium"
+                >
                   Get Started
                 </button>
               </div>
@@ -219,7 +228,10 @@ export default function TAKSolutionsSection() {
                   ))}
                 </ul>
 
-                <button className="w-full px-6 py-3 bg-transparent border border-white/30 text-white hover:border-white hover:bg-white/10 transition-all duration-300 text-sm font-medium">
+                <button
+                  onClick={() => setShowQuoteForm(true)}
+                  className="w-full px-6 py-3 bg-transparent border border-white/30 text-white hover:border-white hover:bg-white/10 transition-all duration-300 text-sm font-medium"
+                >
                   Request Quote
                 </button>
               </div>
@@ -262,7 +274,10 @@ export default function TAKSolutionsSection() {
                   <p className="text-sm text-tactical-textDim">{program.description}</p>
                 </div>
 
-                <button className="w-full px-6 py-3 bg-transparent border border-white/30 text-white hover:border-white hover:bg-white/10 transition-all duration-300 text-sm font-medium">
+                <button
+                  onClick={() => setShowQuoteForm(true)}
+                  className="w-full px-6 py-3 bg-transparent border border-white/30 text-white hover:border-white hover:bg-white/10 transition-all duration-300 text-sm font-medium"
+                >
                   Enroll Now
                 </button>
               </div>
@@ -305,6 +320,9 @@ export default function TAKSolutionsSection() {
           </div>
         </div>
       </div>
+
+      {/* Quote Form Modal */}
+      {showQuoteForm && <RequestDemoForm onClose={() => setShowQuoteForm(false)} formType="quote" />}
     </section>
   );
 }
