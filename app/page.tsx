@@ -5,6 +5,7 @@ import FeaturesSection from '@/components/FeaturesSection';
 import TAKSection from '@/components/TAKSection';
 import TAKCalloutSection from '@/components/TAKCalloutSection';
 import PartnersSection from '@/components/PartnersSection';
+import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <TAKSection />
       <TAKCalloutSection />
       <PartnersSection />
+      <ContactSection />
       <Footer />
     </main>
   );

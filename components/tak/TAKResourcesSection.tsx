@@ -84,25 +84,67 @@ export default function TAKResourcesSection() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // In production, this would submit to HubSpot or your CRM
-    // For now, we'll simulate the submission
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Submit to HubSpot Forms API
+      const portalId = process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID;
+      const formId = process.env.NEXT_PUBLIC_HUBSPOT_RESOURCE_FORM_ID;
 
-      setSubmitSuccess(true);
+      if (!portalId || !formId) {
+        // Fallback: just show success
+        console.warn('HubSpot not configured for resource downloads');
+        setSubmitSuccess(true);
+        setTimeout(() => {
+          setShowDownloadForm(false);
+          setSubmitSuccess(false);
+          setFormData({ name: '', email: '', organization: '', role: '' });
+          setSelectedResource(null);
+        }, 2000);
+        return;
+      }
 
-      // In production, trigger actual PDF download here
-      // window.location.href = `/downloads/${selectedResource?.category.toLowerCase()}.pdf`;
+      // HubSpot API submission
+      const response = await fetch(
+        `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formId}`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            fields: [
+              { name: 'firstname', value: formData.name.split(' ')[0] },
+              { name: 'lastname', value: formData.name.split(' ').slice(1).join(' ') || formData.name },
+              { name: 'email', value: formData.email },
+              { name: 'company', value: formData.organization },
+              { name: 'role', value: formData.role },
+              { name: 'resource_requested', value: selectedResource?.title || '' },
+            ],
+            context: {
+              pageUri: window.location.href,
+              pageName: document.title,
+            },
+          }),
+        }
+      );
 
-      setTimeout(() => {
-        setShowDownloadForm(false);
-        setSubmitSuccess(false);
-        setFormData({ name: '', email: '', organization: '', role: '' });
-        setSelectedResource(null);
-      }, 2000);
+      if (response.ok) {
+        setSubmitSuccess(true);
+        // In production, trigger actual PDF download here
+        // window.location.href = `/downloads/${selectedResource?.category.toLowerCase()}.pdf`;
+
+        setTimeout(() => {
+          setShowDownloadForm(false);
+          setSubmitSuccess(false);
+          setFormData({ name: '', email: '', organization: '', role: '' });
+          setSelectedResource(null);
+        }, 2000);
+      } else {
+        console.error('HubSpot submission failed:', await response.text());
+        alert('There was an issue submitting the form. Please try again or contact us directly.');
+      }
     } catch (error) {
       console.error('Download form submission error:', error);
+      alert('There was an issue submitting the form. Please try again or contact us directly.');
     } finally {
       setIsSubmitting(false);
     }
