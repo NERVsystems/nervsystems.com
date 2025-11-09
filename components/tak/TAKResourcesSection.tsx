@@ -102,6 +102,11 @@ export default function TAKResourcesSection() {
         return;
       }
 
+      // Split name into first and last
+      const nameParts = formData.name.trim().split(' ');
+      const firstname = nameParts[0] || '';
+      const lastname = nameParts.slice(1).join(' ') || firstname;
+
       // HubSpot API submission
       const response = await fetch(
         `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formId}`,
@@ -112,11 +117,11 @@ export default function TAKResourcesSection() {
           },
           body: JSON.stringify({
             fields: [
-              { name: 'firstname', value: formData.name.split(' ')[0] },
-              { name: 'lastname', value: formData.name.split(' ').slice(1).join(' ') || formData.name },
+              { name: 'firstname', value: firstname },
+              { name: 'lastname', value: lastname },
               { name: 'email', value: formData.email },
-              { name: 'company', value: formData.organization },
-              { name: 'role', value: formData.role },
+              { name: 'name', value: formData.organization }, // Note: "name" not "company" for Resources form
+              { name: 'jobtitle', value: formData.role },
               { name: 'resource_requested', value: selectedResource?.title || '' },
             ],
             context: {
