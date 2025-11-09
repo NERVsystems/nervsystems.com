@@ -69,7 +69,13 @@ export default function HeroSection() {
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-tactical-bg to-transparent pointer-events-none"></div>
 
       {/* Demo Form Modal */}
-      {showDemoForm && <RequestDemoForm onClose={() => setShowDemoForm(false)} formType="demo" />}
+      {showDemoForm && (
+        <RequestDemoForm
+          onClose={() => setShowDemoForm(false)}
+          formType="demo"
+          formId={process.env.NEXT_PUBLIC_HUBSPOT_DEMO_FORM_ID}
+        />
+      )}
     </section>
   );
 }

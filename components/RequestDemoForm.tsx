@@ -5,9 +5,10 @@ import { useState } from 'react';
 interface RequestDemoFormProps {
   onClose: () => void;
   formType?: 'demo' | 'quote' | 'contact';
+  formId?: string; // Optional: specify which HubSpot form to use
 }
 
-export default function RequestDemoForm({ onClose, formType = 'demo' }: RequestDemoFormProps) {
+export default function RequestDemoForm({ onClose, formType = 'demo', formId }: RequestDemoFormProps) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -33,9 +34,9 @@ export default function RequestDemoForm({ onClose, formType = 'demo' }: RequestD
     try {
       // Submit to HubSpot Forms API
       const portalId = process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID;
-      const formId = process.env.NEXT_PUBLIC_HUBSPOT_FORM_ID;
+      const hubspotFormId = formId || process.env.NEXT_PUBLIC_HUBSPOT_FORM_ID;
 
-      if (!portalId || !formId) {
+      if (!portalId || !hubspotFormId) {
         // Fallback to mailto if HubSpot not configured
         const subject = encodeURIComponent(`${formTitles[formType]} - ${formData.organization || formData.name}`);
         const body = encodeURIComponent(`
@@ -60,7 +61,7 @@ Submitted: ${new Date().toISOString()}
 
       // HubSpot API submission
       const response = await fetch(
-        `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formId}`,
+        `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${hubspotFormId}`,
         {
           method: 'POST',
           headers: {

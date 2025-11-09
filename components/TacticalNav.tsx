@@ -2,9 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import RequestDemoForm from './RequestDemoForm';
 
 export default function TacticalNav() {
   const [scrolled, setScrolled] = useState(false);
+  const [showDemoForm, setShowDemoForm] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,11 +48,23 @@ export default function TacticalNav() {
           </div>
 
           {/* CTA */}
-          <button className="px-6 py-2 bg-white text-black hover:bg-tactical-textDim transition-all duration-300 text-sm font-medium">
+          <button
+            onClick={() => setShowDemoForm(true)}
+            className="px-6 py-2 bg-white text-black hover:bg-tactical-textDim transition-all duration-300 text-sm font-medium"
+          >
             Request Demo
           </button>
         </div>
       </div>
+
+      {/* Demo Form Modal */}
+      {showDemoForm && (
+        <RequestDemoForm
+          onClose={() => setShowDemoForm(false)}
+          formType="demo"
+          formId={process.env.NEXT_PUBLIC_HUBSPOT_DEMO_FORM_ID}
+        />
+      )}
     </nav>
   );
 }

@@ -139,7 +139,13 @@ export default function NERVASection() {
       </div>
 
       {/* Demo Form Modal */}
-      {showDemoForm && <RequestDemoForm onClose={() => setShowDemoForm(false)} formType="demo" />}
+      {showDemoForm && (
+        <RequestDemoForm
+          onClose={() => setShowDemoForm(false)}
+          formType="demo"
+          formId={process.env.NEXT_PUBLIC_HUBSPOT_DEMO_FORM_ID}
+        />
+      )}
     </section>
   );
 }
