@@ -61,9 +61,34 @@ export default function NERVASection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mb-16 text-center">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-            Meet NERVA
-          </h2>
+          <div className="flex items-center justify-center mb-4 gap-4">
+            {/* NERVA Face Logo with Hover Effect */}
+            <div className="relative group cursor-pointer">
+              <img
+                src="/img/NERVA WHT Calm.png"
+                alt="NERVA Calm"
+                className="h-20 md:h-28 w-auto transition-opacity duration-300 group-hover:opacity-0"
+              />
+              <img
+                src="/img/NERVA WHT Fierce.png"
+                alt="NERVA Fierce"
+                className="h-20 md:h-28 w-auto absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+              />
+            </div>
+
+            {/* NERVA Logotype */}
+            <img
+              src="/img/NERVA WHT Logotype.png"
+              alt="NERVA"
+              className="h-16 md:h-24 w-auto"
+            />
+          </div>
+
+          {/* Tagline */}
+          <p className="text-tactical-accent font-mono text-sm md:text-base mb-6 tracking-wide">
+            Turning bad guy OODA loops to stone
+          </p>
+
           <p className="text-tactical-textDim text-xl max-w-3xl mx-auto mb-4">
             Your AI Tactical Assistant
           </p>

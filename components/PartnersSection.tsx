@@ -3,23 +3,30 @@ export default function PartnersSection() {
     {
       name: "NVIDIA Inception",
       description: "Member of NVIDIA Inception Program for AI startups",
-      logo: "/img/nvidia-inception-badge.png", // Placeholder - needs official badge
+      logo: "/img/brands/partners/NVIDIA Inception Program.jpeg",
       link: "https://www.nvidia.com/en-us/startups/",
-      placeholder: true
+      placeholder: false
     },
     {
       name: "National University of Singapore",
       description: "Incubated at NUS Enterprise",
-      logo: "/img/nus-logo.png", // Placeholder - needs official logo
+      logo: "/img/brands/partners/B71_BrandSig_RGB.png",
       link: "https://enterprise.nus.edu.sg/",
-      placeholder: true
+      placeholder: false
     },
     {
       name: "King's College London",
       description: "Affiliated with War Studies Department",
-      logo: "/img/kcl-logo.png", // Placeholder - needs official logo
+      logo: "/img/brands/partners/king's college london (kcl) war studies.jpg",
       link: "https://www.kcl.ac.uk/warstudies",
-      placeholder: true
+      placeholder: false
+    },
+    {
+      name: "Autodesk Foundation",
+      description: "Supported by Autodesk Foundation",
+      logo: "/img/brands/partners/autodesk foundation.jpg",
+      link: "https://www.autodesk.org/",
+      placeholder: false
     }
   ];
 
@@ -32,12 +39,12 @@ export default function PartnersSection() {
             Trusted by Leading Organizations
           </h3>
           <p className="text-tactical-textDim text-sm max-w-3xl mx-auto">
-            NERV Systems is backed by NVIDIA Inception, incubated at National University of Singapore, and affiliated with King&apos;s College London War Studies
+            NERV Systems is backed by NVIDIA Inception, supported by Autodesk Foundation, incubated at National University of Singapore, and affiliated with King&apos;s College London War Studies
           </p>
         </div>
 
         {/* Partners Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {partners.map((partner, index) => (
             <a
               key={index}
@@ -76,12 +83,6 @@ export default function PartnersSection() {
           ))}
         </div>
 
-        {/* Note about official badges */}
-        <div className="mt-8 text-center">
-          <p className="text-xs text-tactical-textDim/50 italic">
-            Official partner logos will be added upon receipt of branding assets
-          </p>
-        </div>
       </div>
     </section>
   );
