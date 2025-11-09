@@ -59,6 +59,47 @@ Submitted: ${new Date().toISOString()}
         return;
       }
 
+      // Split name into first and last
+      const nameParts = formData.name.trim().split(' ');
+      const firstname = nameParts[0] || '';
+      const lastname = nameParts.slice(1).join(' ') || firstname;
+
+      // Build fields based on form type
+      let fields: Array<{ name: string; value: string }> = [
+        { name: 'firstname', value: firstname },
+        { name: 'lastname', value: lastname },
+        { name: 'email', value: formData.email },
+        { name: 'company', value: formData.organization },
+      ];
+
+      // Add phone if provided
+      if (formData.phone) {
+        fields.push({ name: 'phone', value: formData.phone });
+      }
+
+      // Add form-specific fields
+      if (formType === 'demo') {
+        // Demo Request Form fields
+        if (formData.interest) {
+          fields.push({ name: 'use_case', value: formData.interest });
+        }
+      } else if (formType === 'quote') {
+        // TAK Service Interest Form fields
+        if (formData.interest) {
+          fields.push({ name: 'tak_interest_type', value: formData.interest });
+        }
+      } else if (formType === 'contact') {
+        // General Contact Form fields
+        if (formData.interest) {
+          fields.push({ name: 'enquiry_type', value: formData.interest });
+        }
+      }
+
+      // Add message if provided
+      if (formData.message) {
+        fields.push({ name: 'message', value: formData.message });
+      }
+
       // HubSpot API submission
       const response = await fetch(
         `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${hubspotFormId}`,
@@ -68,15 +109,7 @@ Submitted: ${new Date().toISOString()}
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            fields: [
-              { name: 'firstname', value: formData.name },
-              { name: 'email', value: formData.email },
-              { name: 'company', value: formData.organization },
-              { name: 'phone', value: formData.phone },
-              { name: 'interest_area', value: formData.interest },
-              { name: 'message', value: formData.message },
-              { name: 'form_type', value: formTitles[formType] },
-            ],
+            fields: fields,
             context: {
               pageUri: window.location.href,
               pageName: document.title,
@@ -88,7 +121,8 @@ Submitted: ${new Date().toISOString()}
       if (response.ok) {
         setSubmitted(true);
       } else {
-        console.error('HubSpot submission failed:', await response.text());
+        const errorText = await response.text();
+        console.error('HubSpot submission failed:', errorText);
         // Fallback to mailto on error
         alert('There was an issue submitting the form. Please email us directly at contact@nervsystems.com');
       }
