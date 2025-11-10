@@ -16,7 +16,7 @@ export default function PartnersSection() {
     },
     {
       name: "King's College London",
-      description: "Affiliated with War Studies Department",
+      description: "Incubated by King's College London",
       logo: "/img/kcl-logo.png", // Placeholder - needs official logo
       link: "https://www.kcl.ac.uk/warstudies",
       placeholder: true
@@ -32,7 +32,7 @@ export default function PartnersSection() {
             Trusted by Leading Organizations
           </h3>
           <p className="text-tactical-textDim text-sm max-w-3xl mx-auto">
-            NERV Systems is backed by NVIDIA Inception, incubated at National University of Singapore, and affiliated with King&apos;s College London War Studies
+            NERV Systems is backed by NVIDIA Inception, incubated at National University of Singapore, and incubated by King&apos;s College London
           </p>
         </div>
 
