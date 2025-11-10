@@ -78,7 +78,7 @@ export default function ContactSection() {
                   </div>
                   <div className="flex items-center space-x-2">
                     <span className="text-tactical-accent">▸</span>
-                    <span>King&apos;s College London Affiliated</span>
+                    <span>King&apos;s College London Incubated</span>
                   </div>
                 </div>
               </div>
