@@ -36,7 +36,18 @@ export default function RequestDemoForm({ onClose, formType = 'demo', formId }: 
       const portalId = process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID;
       const hubspotFormId = formId || process.env.NEXT_PUBLIC_HUBSPOT_FORM_ID;
 
+      // Debug logging
+      console.log('[RequestDemoForm] Form submission started');
+      console.log('[RequestDemoForm] Form Type:', formType);
+      console.log('[RequestDemoForm] Portal ID:', portalId ? `${portalId} (SET)` : 'MISSING');
+      console.log('[RequestDemoForm] Form ID (prop):', formId ? `${formId} (SET)` : 'NOT PROVIDED');
+      console.log('[RequestDemoForm] Form ID (env):', process.env.NEXT_PUBLIC_HUBSPOT_FORM_ID ? 'SET' : 'MISSING');
+      console.log('[RequestDemoForm] Final Form ID:', hubspotFormId ? `${hubspotFormId} (SET)` : 'MISSING');
+
       if (!portalId || !hubspotFormId) {
+        console.error('[RequestDemoForm] Missing HubSpot configuration - falling back to mailto');
+        console.error('[RequestDemoForm] Portal ID present:', !!portalId);
+        console.error('[RequestDemoForm] Form ID present:', !!hubspotFormId);
         // Fallback to mailto if HubSpot not configured
         const subject = encodeURIComponent(`${formTitles[formType]} - ${formData.organization || formData.name}`);
         const body = encodeURIComponent(`
@@ -101,33 +112,45 @@ Submitted: ${new Date().toISOString()}
       }
 
       // HubSpot API submission
-      const response = await fetch(
-        `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${hubspotFormId}`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            fields: fields,
-            context: {
-              pageUri: window.location.href,
-              pageName: document.title,
-            },
-          }),
-        }
-      );
+      const apiUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${hubspotFormId}`;
+      const payload = {
+        fields: fields,
+        context: {
+          pageUri: window.location.href,
+          pageName: document.title,
+        },
+      };
+
+      console.log('[RequestDemoForm] Submitting to HubSpot API');
+      console.log('[RequestDemoForm] API URL:', apiUrl);
+      console.log('[RequestDemoForm] Payload:', JSON.stringify(payload, null, 2));
+
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      console.log('[RequestDemoForm] Response status:', response.status);
+      console.log('[RequestDemoForm] Response ok:', response.ok);
 
       if (response.ok) {
+        console.log('[RequestDemoForm] Submission successful!');
         setSubmitted(true);
       } else {
         const errorText = await response.text();
-        console.error('HubSpot submission failed:', errorText);
+        console.error('[RequestDemoForm] HubSpot submission failed');
+        console.error('[RequestDemoForm] Status:', response.status);
+        console.error('[RequestDemoForm] Error:', errorText);
         // Fallback to mailto on error
         alert('There was an issue submitting the form. Please email us directly at contact@nervsystems.com');
       }
     } catch (error) {
-      console.error('Form submission error:', error);
+      console.error('[RequestDemoForm] Form submission error (catch block):', error);
+      console.error('[RequestDemoForm] Error type:', error instanceof Error ? error.constructor.name : typeof error);
+      console.error('[RequestDemoForm] Error message:', error instanceof Error ? error.message : String(error));
       // Fallback to mailto on error
       alert('There was an issue submitting the form. Please email us directly at contact@nervsystems.com');
     } finally {
