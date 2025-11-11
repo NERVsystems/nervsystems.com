@@ -1,0 +1,191 @@
+%% NERV Systems Guide/Checklist Template
+%% Extends nerv-base.tex with checklist-specific features
+
+% Load base template
+\input{nerv-base.tex}
+
+%% ============================================================================
+%% CHECKLIST-SPECIFIC PACKAGES
+%% ============================================================================
+\usepackage{amssymb}  % For checkboxes
+
+%% ============================================================================
+%% CHECKLIST ENVIRONMENTS
+%% ============================================================================
+
+% Checklist item with checkbox
+\newcommand{\checkitem}[1]{%
+  \item[\textcolor{tactical-accent}{$\square$}] #1
+}
+
+% Completed checklist item
+\newcommand{\checkeditem}[1]{%
+  \item[\textcolor{tactical-accent}{$\boxtimes$}] #1
+}
+
+% Priority levels
+\newcommand{\priority}[1]{%
+  \textcolor{tactical-accent}{\texttt{[P#1]}}
+}
+
+% Tactical checklist environment
+\newenvironment{tacticalchecklist}{%
+  \begin{mdframed}[
+    linecolor=tactical-accent,
+    linewidth=1pt,
+    backgroundcolor=tactical-surface!30,
+    leftmargin=0pt,
+    rightmargin=0pt,
+    innerleftmargin=10pt,
+    innerrightmargin=10pt,
+    innertopmargin=10pt,
+    innerbottommargin=10pt,
+    skipabove=10pt,
+    skipbelow=10pt
+  ]
+  \begin{itemize}[leftmargin=*,labelsep=10pt]
+}{%
+  \end{itemize}
+  \end{mdframed}
+}
+
+% Phase section (for multi-phase guides)
+\newcounter{phase}
+\newcommand{\phase}[1]{%
+  \stepcounter{phase}
+  \section*{\textcolor{tactical-accent}{\texttt{[PHASE \arabic{phase}]}} #1}
+  \addcontentsline{toc}{section}{\protect\numberline{Phase \arabic{phase}}#1}
+}
+
+% Timeline item
+\newcommand{\timeline}[2]{%
+  \noindent\textcolor{tactical-accent}{\texttt{[\,#1\,]}} \textbf{#2}\\[0.5em]
+}
+
+% Requirements box
+\newtcolorbox{requirements}{
+  colback=tactical-bg,
+  colframe=tactical-accent,
+  boxrule=1pt,
+  arc=0pt,
+  title=\textcolor{tactical-accent}{\texttt{▸ REQUIREMENTS}},
+  fonttitle=\bfseries,
+  left=10pt,
+  right=10pt,
+  top=5pt,
+  bottom=5pt,
+  fontupper=\small\color{tactical-text}
+}
+
+% Prerequisites box
+\newtcolorbox{prerequisites}{
+  colback=tactical-surface,
+  colframe=tactical-accent,
+  boxrule=1pt,
+  arc=0pt,
+  title=\textcolor{tactical-accent}{\texttt{▸ PREREQUISITES}},
+  fonttitle=\bfseries,
+  left=10pt,
+  right=10pt,
+  top=5pt,
+  bottom=5pt,
+  fontupper=\small\color{tactical-text}
+}
+
+% Best practice callout
+\newtcolorbox{bestpractice}{
+  colback=tactical-surface,
+  colframe=tactical-accent,
+  boxrule=1pt,
+  arc=0pt,
+  title=\textcolor{tactical-accent}{\texttt{✓ BEST PRACTICE}},
+  fonttitle=\bfseries,
+  left=10pt,
+  right=10pt,
+  top=5pt,
+  bottom=5pt,
+  fontupper=\small\color{tactical-text}
+}
+
+% Common pitfall warning
+\newtcolorbox{pitfall}{
+  colback=tactical-bg,
+  colframe=red!70,
+  boxrule=2pt,
+  arc=0pt,
+  title=\textcolor{red!70}{\texttt{⚠ COMMON PITFALL}},
+  fonttitle=\bfseries,
+  left=10pt,
+  right=10pt,
+  top=5pt,
+  bottom=5pt,
+  fontupper=\small\color{tactical-text}
+}
+
+%% ============================================================================
+%% GUIDE-SPECIFIC FORMATTING
+%% ============================================================================
+
+% Step-by-step procedure
+\newcounter{step}[section]
+\newenvironment{procedure}{%
+  \setcounter{step}{0}
+  \begin{enumerate}[
+    label=\textcolor{tactical-accent}{\texttt{[\arabic*]}},
+    leftmargin=*,
+    labelsep=10pt
+  ]
+}{%
+  \end{enumerate}
+}
+
+% Sub-steps
+\newenvironment{substeps}{%
+  \begin{enumerate}[
+    label=\textcolor{tactical-dim}{\texttt{\alph*)}},
+    leftmargin=*,
+    labelsep=8pt
+  ]
+}{%
+  \end{enumerate}
+}
+
+%% ============================================================================
+%% DEPLOYMENT-SPECIFIC ELEMENTS
+%% ============================================================================
+
+% Team roles table
+\newcommand{\teamroletable}[1]{%
+  \begin{table}[h]
+    \centering
+    \begin{tabular}{|l|p{4in}|}
+      \hline
+      \rowcolor{tactical-surface}
+      \textcolor{tactical-accent}{\textbf{ROLE}} & \textcolor{tactical-accent}{\textbf{RESPONSIBILITIES}} \\
+      \hline
+      #1
+      \hline
+    \end{tabular}
+  \end{table}
+}
+
+% Resource estimation table
+\newcommand{\resourcetable}[1]{%
+  \begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|l|}
+      \hline
+      \rowcolor{tactical-surface}
+      \textcolor{tactical-accent}{\textbf{RESOURCE}} &
+      \textcolor{tactical-accent}{\textbf{QUANTITY}} &
+      \textcolor{tactical-accent}{\textbf{NOTES}} \\
+      \hline
+      #1
+      \hline
+    \end{tabular}
+  \end{table}
+}
+
+%% ============================================================================
+%% END OF TEMPLATE
+%% ============================================================================

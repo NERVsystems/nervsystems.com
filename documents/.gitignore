@@ -1,0 +1,37 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.xdv
+
+# Generated LaTeX files (built from YAML)
+content/**/*.tex
+
+# Generated PDFs (built from LaTeX)
+content/**/*.pdf
+
+# Build directory
+build/outputs/*.pdf
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# Keep output directory structure but ignore contents
+build/outputs/*
+!build/outputs/.gitkeep
