@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Analytics from "@/components/Analytics";
+import StructuredData from "@/components/StructuredData";
 
 export const metadata: Metadata = {
   title: "NERV Systems | AI-Powered TAK Platform for Mission Success",
@@ -61,6 +62,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
+        <StructuredData />
         <Analytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
         {children}
       </body>
