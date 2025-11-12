@@ -14,8 +14,14 @@ export default function RequestDemoForm({ onClose, formType = 'demo', formId }: 
     email: '',
     organization: '',
     phone: '',
+    jobtitle: '',
     interest: formType === 'quote' ? 'TAK Hosting' : 'NERVA AI Platform',
-    message: ''
+    message: '',
+    // TAK-specific fields
+    organisationType: '',
+    currentTakUsage: '',
+    estimatedTakUsers: '',
+    takDeploymentTimeline: ''
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -72,9 +78,14 @@ Submitted: ${new Date().toISOString()}
         { name: 'company', value: formData.organization },
       ];
 
-      // Add phone if provided
+      // Add phone - required for quote form
       if (formData.phone) {
         fields.push({ name: 'phone', value: formData.phone });
+      }
+
+      // Add job title if provided (for demo form)
+      if (formData.jobtitle && formType === 'demo') {
+        fields.push({ name: 'jobtitle', value: formData.jobtitle });
       }
 
       // Add form-specific fields
@@ -84,9 +95,18 @@ Submitted: ${new Date().toISOString()}
           fields.push({ name: 'use_case', value: formData.interest });
         }
       } else if (formType === 'quote') {
-        // TAK Service Interest Form fields
+        // TAK Service Interest Form fields - all required by HubSpot
+        fields.push({ name: 'phone', value: formData.phone || '' }); // Ensure phone is always sent
         if (formData.interest) {
           fields.push({ name: 'tak_interest_type', value: formData.interest });
+        }
+        fields.push({ name: 'organisation_type', value: formData.organisationType });
+        fields.push({ name: 'current_tak_usage', value: formData.currentTakUsage });
+        if (formData.estimatedTakUsers) {
+          fields.push({ name: 'estimated_tak_users', value: formData.estimatedTakUsers });
+        }
+        if (formData.takDeploymentTimeline) {
+          fields.push({ name: 'tak_deployment_timeline', value: formData.takDeploymentTimeline });
         }
       } else if (formType === 'contact') {
         // General Contact Form fields
@@ -237,18 +257,122 @@ Submitted: ${new Date().toISOString()}
 
             <div>
               <label htmlFor="phone" className="block text-sm font-mono text-tactical-textDim mb-2">
-                PHONE
+                PHONE{formType === 'quote' ? ' *' : ''}
               </label>
               <input
                 type="tel"
                 id="phone"
                 name="phone"
+                required={formType === 'quote'}
                 value={formData.phone}
                 onChange={handleChange}
                 className="w-full bg-black/30 border border-white/20 text-white px-4 py-3 focus:border-tactical-accent focus:outline-none transition-colors"
               />
             </div>
           </div>
+
+          {formType === 'demo' && (
+            <div>
+              <label htmlFor="jobtitle" className="block text-sm font-mono text-tactical-textDim mb-2">
+                JOB TITLE
+              </label>
+              <input
+                type="text"
+                id="jobtitle"
+                name="jobtitle"
+                value={formData.jobtitle}
+                onChange={handleChange}
+                className="w-full bg-black/30 border border-white/20 text-white px-4 py-3 focus:border-tactical-accent focus:outline-none transition-colors"
+              />
+            </div>
+          )}
+
+          {formType === 'quote' && (
+            <>
+              <div>
+                <label htmlFor="organisationType" className="block text-sm font-mono text-tactical-textDim mb-2">
+                  ORGANISATION TYPE *
+                </label>
+                <select
+                  id="organisationType"
+                  name="organisationType"
+                  required
+                  value={formData.organisationType}
+                  onChange={handleChange}
+                  className="w-full bg-black/30 border border-white/20 text-white px-4 py-3 focus:border-tactical-accent focus:outline-none transition-colors"
+                >
+                  <option value="">Select organisation type...</option>
+                  <option value="Military/Defense">Military/Defense</option>
+                  <option value="Law Enforcement">Law Enforcement</option>
+                  <option value="Emergency Services">Emergency Services</option>
+                  <option value="Government">Government</option>
+                  <option value="Private Security">Private Security</option>
+                  <option value="Commercial">Commercial</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div>
+                <label htmlFor="currentTakUsage" className="block text-sm font-mono text-tactical-textDim mb-2">
+                  CURRENT TAK USAGE *
+                </label>
+                <select
+                  id="currentTakUsage"
+                  name="currentTakUsage"
+                  required
+                  value={formData.currentTakUsage}
+                  onChange={handleChange}
+                  className="w-full bg-black/30 border border-white/20 text-white px-4 py-3 focus:border-tactical-accent focus:outline-none transition-colors"
+                >
+                  <option value="">Select current usage...</option>
+                  <option value="Already using TAK">Already using TAK</option>
+                  <option value="Ready to purchase">Ready to purchase</option>
+                  <option value="Evaluating vendors">Evaluating vendors</option>
+                  <option value="Researching solutions">Researching solutions</option>
+                </select>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="estimatedTakUsers" className="block text-sm font-mono text-tactical-textDim mb-2">
+                    ESTIMATED TAK USERS
+                  </label>
+                  <select
+                    id="estimatedTakUsers"
+                    name="estimatedTakUsers"
+                    value={formData.estimatedTakUsers}
+                    onChange={handleChange}
+                    className="w-full bg-black/30 border border-white/20 text-white px-4 py-3 focus:border-tactical-accent focus:outline-none transition-colors"
+                  >
+                    <option value="">Select...</option>
+                    <option value="1-50">1-50 users</option>
+                    <option value="51-250">51-250 users</option>
+                    <option value="251-1000">251-1000 users</option>
+                    <option value="1000+">1000+ users</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label htmlFor="takDeploymentTimeline" className="block text-sm font-mono text-tactical-textDim mb-2">
+                    DEPLOYMENT TIMELINE
+                  </label>
+                  <select
+                    id="takDeploymentTimeline"
+                    name="takDeploymentTimeline"
+                    value={formData.takDeploymentTimeline}
+                    onChange={handleChange}
+                    className="w-full bg-black/30 border border-white/20 text-white px-4 py-3 focus:border-tactical-accent focus:outline-none transition-colors"
+                  >
+                    <option value="">Select...</option>
+                    <option value="Immediate (0-1 month)">Immediate (0-1 month)</option>
+                    <option value="Short term (1-3 months)">Short term (1-3 months)</option>
+                    <option value="Medium term (3-6 months)">Medium term (3-6 months)</option>
+                    <option value="Long term (6+ months)">Long term (6+ months)</option>
+                  </select>
+                </div>
+              </div>
+            </>
+          )}
 
           <div>
             <label htmlFor="interest" className="block text-sm font-mono text-tactical-textDim mb-2">

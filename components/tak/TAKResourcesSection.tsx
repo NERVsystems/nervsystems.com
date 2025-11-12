@@ -122,6 +122,7 @@ export default function TAKResourcesSection() {
               { name: 'email', value: formData.email },
               { name: 'company', value: formData.organization },
               { name: 'jobtitle', value: formData.role },
+              { name: 'hs_role', value: formData.role }, // HubSpot Employment Role field
               { name: 'resource_requested', value: selectedResource?.title || '' },
             ],
             context: {
