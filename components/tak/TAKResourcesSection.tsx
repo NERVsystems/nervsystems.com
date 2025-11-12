@@ -19,7 +19,9 @@ export default function TAKResourcesSection() {
     name: '',
     email: '',
     organization: '',
-    role: ''
+    jobtitle: '',
+    role: '',
+    currentStage: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
@@ -96,7 +98,7 @@ export default function TAKResourcesSection() {
         setTimeout(() => {
           setShowDownloadForm(false);
           setSubmitSuccess(false);
-          setFormData({ name: '', email: '', organization: '', role: '' });
+          setFormData({ name: '', email: '', organization: '', jobtitle: '', role: '', currentStage: '' });
           setSelectedResource(null);
         }, 2000);
         return;
@@ -121,8 +123,9 @@ export default function TAKResourcesSection() {
               { name: 'lastname', value: lastname },
               { name: 'email', value: formData.email },
               { name: 'company', value: formData.organization },
-              { name: 'jobtitle', value: formData.role },
-              { name: 'hs_role', value: formData.role }, // HubSpot Employment Role field
+              { name: 'jobtitle', value: formData.jobtitle },
+              { name: 'hs_role', value: formData.role }, // HubSpot Employment Role dropdown
+              { name: 'current_stage', value: formData.currentStage }, // Current Stage dropdown
               { name: 'resource_requested', value: selectedResource?.title || '' },
             ],
             context: {
@@ -141,7 +144,7 @@ export default function TAKResourcesSection() {
         setTimeout(() => {
           setShowDownloadForm(false);
           setSubmitSuccess(false);
-          setFormData({ name: '', email: '', organization: '', role: '' });
+          setFormData({ name: '', email: '', organization: '', jobtitle: '', role: '', currentStage: '' });
           setSelectedResource(null);
         }, 2000);
       } else {
@@ -299,7 +302,7 @@ export default function TAKResourcesSection() {
 
                   <div>
                     <label className="block text-white text-sm font-medium mb-2">
-                      Organization *
+                      Company name *
                     </label>
                     <input
                       type="text"
@@ -312,7 +315,19 @@ export default function TAKResourcesSection() {
 
                   <div>
                     <label className="block text-white text-sm font-medium mb-2">
-                      Role *
+                      Job Title
+                    </label>
+                    <input
+                      type="text"
+                      value={formData.jobtitle}
+                      onChange={(e) => setFormData({ ...formData, jobtitle: e.target.value })}
+                      className="w-full px-4 py-2 bg-black/30 border border-white/20 text-white focus:border-tactical-accent focus:outline-none"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-white text-sm font-medium mb-2">
+                      Employment Role *
                     </label>
                     <select
                       required
@@ -321,13 +336,41 @@ export default function TAKResourcesSection() {
                       className="w-full px-4 py-2 bg-black/30 border border-white/20 text-white focus:border-tactical-accent focus:outline-none"
                     >
                       <option value="">Select your role</option>
-                      <option value="military">Military/Defense</option>
-                      <option value="law-enforcement">Law Enforcement</option>
-                      <option value="emergency">Emergency Management</option>
-                      <option value="it-admin">IT/System Administrator</option>
-                      <option value="procurement">Procurement/Acquisition</option>
-                      <option value="executive">Executive/Decision Maker</option>
-                      <option value="other">Other</option>
+                      <option value="Support">Support</option>
+                      <option value="Sales">Sales</option>
+                      <option value="Retired">Retired</option>
+                      <option value="Research">Research</option>
+                      <option value="Recruiting">Recruiting</option>
+                      <option value="Product Management">Product Management</option>
+                      <option value="Marketing">Marketing</option>
+                      <option value="IT">IT</option>
+                      <option value="Human Resources">Human Resources</option>
+                      <option value="Finance">Finance</option>
+                      <option value="Executive Leadership">Executive Leadership</option>
+                      <option value="Engineering">Engineering</option>
+                      <option value="Education">Education</option>
+                      <option value="Design">Design</option>
+                      <option value="Customer Success">Customer Success</option>
+                      <option value="Consulting">Consulting</option>
+                      <option value="Business Development">Business Development</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-white text-sm font-medium mb-2">
+                      Current Stage
+                    </label>
+                    <select
+                      value={formData.currentStage}
+                      onChange={(e) => setFormData({ ...formData, currentStage: e.target.value })}
+                      className="w-full px-4 py-2 bg-black/30 border border-white/20 text-white focus:border-tactical-accent focus:outline-none"
+                    >
+                      <option value="">Select stage...</option>
+                      <option value="Researching solutions">Researching solutions</option>
+                      <option value="Evaluating vendors">Evaluating vendors</option>
+                      <option value="Ready to purchase">Ready to purchase</option>
+                      <option value="Already using TAK">Already using TAK</option>
                     </select>
                   </div>
 

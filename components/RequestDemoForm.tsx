@@ -399,12 +399,13 @@ Submitted: ${new Date().toISOString()}
 
           <div>
             <label htmlFor="message" className="block text-sm font-mono text-tactical-textDim mb-2">
-              MESSAGE
+              MESSAGE{formType === 'contact' ? ' *' : ''}
             </label>
             <textarea
               id="message"
               name="message"
               rows={4}
+              required={formType === 'contact'}
               value={formData.message}
               onChange={handleChange}
               placeholder="Tell us about your requirements..."
