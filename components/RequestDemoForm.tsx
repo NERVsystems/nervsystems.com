@@ -10,7 +10,8 @@ interface RequestDemoFormProps {
 
 export default function RequestDemoForm({ onClose, formType = 'demo', formId }: RequestDemoFormProps) {
   const [formData, setFormData] = useState({
-    name: '',
+    firstname: '',
+    lastname: '',
     email: '',
     organization: '',
     phone: '',
@@ -44,9 +45,10 @@ export default function RequestDemoForm({ onClose, formType = 'demo', formId }: 
 
       if (!portalId || !hubspotFormId) {
         // Fallback to mailto if HubSpot not configured
-        const subject = encodeURIComponent(`${formTitles[formType]} - ${formData.organization || formData.name}`);
+        const subject = encodeURIComponent(`${formTitles[formType]} - ${formData.organization || `${formData.firstname} ${formData.lastname}`}`);
         const body = encodeURIComponent(`
-Name: ${formData.name}
+First Name: ${formData.firstname}
+Last Name: ${formData.lastname}
 Email: ${formData.email}
 Organization: ${formData.organization}
 Phone: ${formData.phone}
@@ -65,15 +67,10 @@ Submitted: ${new Date().toISOString()}
         return;
       }
 
-      // Split name into first and last
-      const nameParts = formData.name.trim().split(' ');
-      const firstname = nameParts[0] || '';
-      const lastname = nameParts.slice(1).join(' ') || firstname;
-
       // Build fields based on form type
       let fields: Array<{ name: string; value: string }> = [
-        { name: 'firstname', value: firstname },
-        { name: 'lastname', value: lastname },
+        { name: 'firstname', value: formData.firstname },
+        { name: 'lastname', value: formData.lastname },
         { name: 'email', value: formData.email },
         { name: 'company', value: formData.organization },
       ];
@@ -209,20 +206,37 @@ Submitted: ${new Date().toISOString()}
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid md:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="name" className="block text-sm font-mono text-tactical-textDim mb-2">
-                NAME *
+              <label htmlFor="firstname" className="block text-sm font-mono text-tactical-textDim mb-2">
+                FIRST NAME *
               </label>
               <input
                 type="text"
-                id="name"
-                name="name"
+                id="firstname"
+                name="firstname"
                 required
-                value={formData.name}
+                value={formData.firstname}
                 onChange={handleChange}
                 className="w-full bg-black/30 border border-white/20 text-white px-4 py-3 focus:border-tactical-accent focus:outline-none transition-colors"
               />
             </div>
 
+            <div>
+              <label htmlFor="lastname" className="block text-sm font-mono text-tactical-textDim mb-2">
+                LAST NAME *
+              </label>
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                required
+                value={formData.lastname}
+                onChange={handleChange}
+                className="w-full bg-black/30 border border-white/20 text-white px-4 py-3 focus:border-tactical-accent focus:outline-none transition-colors"
+              />
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4">
             <div>
               <label htmlFor="email" className="block text-sm font-mono text-tactical-textDim mb-2">
                 EMAIL *
@@ -237,9 +251,7 @@ Submitted: ${new Date().toISOString()}
                 className="w-full bg-black/30 border border-white/20 text-white px-4 py-3 focus:border-tactical-accent focus:outline-none transition-colors"
               />
             </div>
-          </div>
 
-          <div className="grid md:grid-cols-2 gap-4">
             <div>
               <label htmlFor="organization" className="block text-sm font-mono text-tactical-textDim mb-2">
                 ORGANIZATION *

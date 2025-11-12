@@ -16,7 +16,8 @@ export default function TAKResourcesSection() {
   const [showDownloadForm, setShowDownloadForm] = useState(false);
   const [selectedResource, setSelectedResource] = useState<Resource | null>(null);
   const [formData, setFormData] = useState({
-    name: '',
+    firstname: '',
+    lastname: '',
     email: '',
     organization: '',
     jobtitle: '',
@@ -98,16 +99,11 @@ export default function TAKResourcesSection() {
         setTimeout(() => {
           setShowDownloadForm(false);
           setSubmitSuccess(false);
-          setFormData({ name: '', email: '', organization: '', jobtitle: '', role: '', currentStage: '' });
+          setFormData({ firstname: '', lastname: '', email: '', organization: '', jobtitle: '', role: '', currentStage: '' });
           setSelectedResource(null);
         }, 2000);
         return;
       }
-
-      // Split name into first and last
-      const nameParts = formData.name.trim().split(' ');
-      const firstname = nameParts[0] || '';
-      const lastname = nameParts.slice(1).join(' ') || firstname;
 
       // HubSpot API submission
       const response = await fetch(
@@ -119,8 +115,8 @@ export default function TAKResourcesSection() {
           },
           body: JSON.stringify({
             fields: [
-              { name: 'firstname', value: firstname },
-              { name: 'lastname', value: lastname },
+              { name: 'firstname', value: formData.firstname },
+              { name: 'lastname', value: formData.lastname },
               { name: 'email', value: formData.email },
               { name: 'company', value: formData.organization },
               { name: 'jobtitle', value: formData.jobtitle },
@@ -144,7 +140,7 @@ export default function TAKResourcesSection() {
         setTimeout(() => {
           setShowDownloadForm(false);
           setSubmitSuccess(false);
-          setFormData({ name: '', email: '', organization: '', jobtitle: '', role: '', currentStage: '' });
+          setFormData({ firstname: '', lastname: '', email: '', organization: '', jobtitle: '', role: '', currentStage: '' });
           setSelectedResource(null);
         }, 2000);
       } else {
@@ -274,17 +270,32 @@ export default function TAKResourcesSection() {
 
                 {/* Form */}
                 <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <label className="block text-white text-sm font-medium mb-2">
-                      Name *
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-2 bg-black/30 border border-white/20 text-white focus:border-tactical-accent focus:outline-none"
-                    />
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-white text-sm font-medium mb-2">
+                        First Name *
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        value={formData.firstname}
+                        onChange={(e) => setFormData({ ...formData, firstname: e.target.value })}
+                        className="w-full px-4 py-2 bg-black/30 border border-white/20 text-white focus:border-tactical-accent focus:outline-none"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block text-white text-sm font-medium mb-2">
+                        Last Name *
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        value={formData.lastname}
+                        onChange={(e) => setFormData({ ...formData, lastname: e.target.value })}
+                        className="w-full px-4 py-2 bg-black/30 border border-white/20 text-white focus:border-tactical-accent focus:outline-none"
+                      />
+                    </div>
                   </div>
 
                   <div>
