@@ -120,7 +120,7 @@ export default function TAKResourcesSection() {
               { name: 'firstname', value: firstname },
               { name: 'lastname', value: lastname },
               { name: 'email', value: formData.email },
-              { name: 'name', value: formData.organization }, // Note: "name" not "company" for Resources form
+              { name: 'company', value: formData.organization },
               { name: 'jobtitle', value: formData.role },
               { name: 'resource_requested', value: selectedResource?.title || '' },
             ],
