@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 interface Resource {
@@ -13,6 +14,7 @@ interface Resource {
 }
 
 export default function TAKResourcesSection() {
+  const t = useTranslations('takSolutions.resources');
   const [showDownloadForm, setShowDownloadForm] = useState(false);
   const [selectedResource, setSelectedResource] = useState<Resource | null>(null);
   const [formData, setFormData] = useState({
@@ -26,57 +28,6 @@ export default function TAKResourcesSection() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
-
-  const resources: Resource[] = [
-    {
-      title: "Tactical AI ROI Calculator & Guide",
-      description: "Comprehensive analysis of AI integration ROI for tactical operations. Calculate cost savings from automated mission planning, reduced planning time, improved decision accuracy, and enhanced operational tempo. Includes real-world case studies and deployment scenarios.",
-      pages: "24 pages",
-      format: "PDF",
-      category: "ROI",
-      topics: ["Cost-benefit analysis", "AI automation savings", "Deployment timelines", "Performance metrics"]
-    },
-    {
-      title: "TAK vs. Commercial Alternatives: Complete Comparison",
-      description: "In-depth comparison of TAK/ATAK against commercial C2 platforms, emergency management systems, and proprietary solutions. Covers functionality, total cost of ownership, security considerations, interoperability, and integration capabilities. Includes decision framework for platform selection.",
-      pages: "32 pages",
-      format: "PDF",
-      category: "COMPARISON",
-      topics: ["Platform comparison matrix", "TCO analysis", "Security comparison", "Integration capabilities"]
-    },
-    {
-      title: "TAK Deployment Checklist: Complete Implementation Guide",
-      description: "Step-by-step deployment checklist for TAK/ATAK implementations. Covers requirements gathering, infrastructure planning, security configuration, user onboarding, training programs, and go-live procedures. Includes templates, configuration examples, and common pitfall avoidance.",
-      pages: "18 pages",
-      format: "PDF",
-      category: "DEPLOYMENT",
-      topics: ["Pre-deployment planning", "Infrastructure setup", "Security hardening", "User training plan"]
-    },
-    {
-      title: "NERVA AI Integration Architecture Guide",
-      description: "Technical architecture documentation for NERVA integration with existing TAK deployments. Covers API specifications, data flows, security architecture, deployment patterns (cloud/on-premise/edge), and migration strategies. Includes reference implementations and code samples.",
-      pages: "28 pages",
-      format: "PDF",
-      category: "TECHNICAL",
-      topics: ["API integration", "Security architecture", "Deployment patterns", "Migration strategies"]
-    },
-    {
-      title: "Asia Pacific TAK Compliance & Regulations Guide",
-      description: "Comprehensive guide to regulatory requirements, data sovereignty considerations, and compliance frameworks for TAK deployments across Asia Pacific. Covers Singapore, Hong Kong, Japan, Australia, and regional requirements. Includes compliance checklists and certification guidance.",
-      pages: "22 pages",
-      format: "PDF",
-      category: "COMPLIANCE",
-      topics: ["Regional regulations", "Data sovereignty", "Security certifications", "Compliance frameworks"]
-    },
-    {
-      title: "TAK System Administration Best Practices",
-      description: "Operations manual for TAK system administrators. Covers monitoring, backup strategies, performance tuning, security patching, user management, federation setup, and troubleshooting. Includes automation scripts and operational runbooks.",
-      pages: "36 pages",
-      format: "PDF",
-      category: "OPERATIONS",
-      topics: ["System monitoring", "Backup & recovery", "Performance optimization", "Security operations"]
-    }
-  ];
 
   const handleDownloadClick = (resource: Resource) => {
     setSelectedResource(resource);
@@ -125,8 +76,8 @@ export default function TAKResourcesSection() {
               { name: 'resource_requested', value: selectedResource?.title || '' },
             ],
             context: {
-              pageUri: window.location.href,
-              pageName: document.title,
+              pageUri: typeof window !== 'undefined' ? window.location.href : '',
+              pageName: typeof document !== 'undefined' ? document.title : '',
             },
           }),
         }
@@ -161,19 +112,19 @@ export default function TAKResourcesSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="font-mono text-sm text-tactical-accent mb-4 uppercase tracking-wider">
-            Free Resources
+            {t('eyebrow')}
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            TAK Intelligence Library
+            {t('title')}
           </h2>
           <p className="text-tactical-textDim text-lg max-w-3xl mx-auto">
-            Download comprehensive guides, technical documentation, and strategic resources to accelerate your TAK deployment and maximize ROI from AI integration.
+            {t('subtitle')}
           </p>
         </div>
 
         {/* Resources Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {resources.map((resource, index) => (
+          {t.raw('items').map((resource: Resource, index: number) => (
             <div
               key={index}
               className="tactical-border p-6 bg-white/5 hover:bg-white/10 transition-all duration-300 flex flex-col"
@@ -200,9 +151,9 @@ export default function TAKResourcesSection() {
 
               {/* Topics */}
               <div className="mb-4">
-                <div className="text-xs font-mono text-tactical-accent mb-2">COVERS:</div>
+                <div className="text-xs font-mono text-tactical-accent mb-2">{t('covers')}</div>
                 <div className="flex flex-wrap gap-1">
-                  {resource.topics.map((topic, idx) => (
+                  {resource.topics.map((topic: string, idx: number) => (
                     <span
                       key={idx}
                       className="text-xs text-tactical-textDim bg-black/30 px-2 py-1 rounded"
@@ -218,7 +169,7 @@ export default function TAKResourcesSection() {
                 onClick={() => handleDownloadClick(resource)}
                 className="w-full px-6 py-3 bg-white text-black hover:bg-tactical-accent hover:text-black transition-all duration-300 text-sm font-medium"
               >
-                Download Free PDF →
+                {t('downloadButton')}
               </button>
             </div>
           ))}
@@ -227,16 +178,16 @@ export default function TAKResourcesSection() {
         {/* Bottom CTA */}
         <div className="mt-16 text-center tactical-border p-8 bg-white/5">
           <h3 className="text-2xl font-bold text-white mb-4">
-            Need custom analysis for your organization?
+            {t('cta.title')}
           </h3>
           <p className="text-tactical-textDim mb-6 max-w-2xl mx-auto">
-            Our TAK consulting team can provide tailored assessments, ROI analysis, and deployment planning specific to your operational requirements.
+            {t('cta.description')}
           </p>
           <Link
             href="/#contact"
             className="inline-block px-8 py-4 bg-white text-black hover:bg-tactical-accent hover:text-black transition-all duration-300 text-sm font-medium"
           >
-            Schedule Consultation
+            {t('cta.button')}
           </Link>
         </div>
       </div>
@@ -244,7 +195,7 @@ export default function TAKResourcesSection() {
       {/* Download Form Modal */}
       {showDownloadForm && selectedResource && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <div className="tactical-border bg-tactical-surface p-8 max-w-md w-full relative">
+          <div className="tactical-border bg-tactical-surface p-8 max-w-md w-full relative max-h-[90vh] overflow-y-auto">
             {/* Close Button */}
             <button
               onClick={() => setShowDownloadForm(false)}
@@ -261,7 +212,7 @@ export default function TAKResourcesSection() {
                     {selectedResource.category}
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-2">
-                    Download Resource
+                    {t('form.title')}
                   </h3>
                   <p className="text-tactical-textDim text-sm">
                     {selectedResource.title}
@@ -273,7 +224,7 @@ export default function TAKResourcesSection() {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label className="block text-white text-sm font-medium mb-2">
-                        First Name *
+                        {t('form.firstName')} {t('form.required')}
                       </label>
                       <input
                         type="text"
@@ -286,7 +237,7 @@ export default function TAKResourcesSection() {
 
                     <div>
                       <label className="block text-white text-sm font-medium mb-2">
-                        Last Name *
+                        {t('form.lastName')} {t('form.required')}
                       </label>
                       <input
                         type="text"
@@ -300,7 +251,7 @@ export default function TAKResourcesSection() {
 
                   <div>
                     <label className="block text-white text-sm font-medium mb-2">
-                      Email *
+                      {t('form.email')} {t('form.required')}
                     </label>
                     <input
                       type="email"
@@ -313,7 +264,7 @@ export default function TAKResourcesSection() {
 
                   <div>
                     <label className="block text-white text-sm font-medium mb-2">
-                      Company name *
+                      {t('form.company')} {t('form.required')}
                     </label>
                     <input
                       type="text"
@@ -326,7 +277,7 @@ export default function TAKResourcesSection() {
 
                   <div>
                     <label className="block text-white text-sm font-medium mb-2">
-                      Job Title
+                      {t('form.jobTitle')}
                     </label>
                     <input
                       type="text"
@@ -338,7 +289,7 @@ export default function TAKResourcesSection() {
 
                   <div>
                     <label className="block text-white text-sm font-medium mb-2">
-                      Employment Role *
+                      {t('form.role')} {t('form.required')}
                     </label>
                     <select
                       required
@@ -346,42 +297,42 @@ export default function TAKResourcesSection() {
                       onChange={(e) => setFormData({ ...formData, role: e.target.value })}
                       className="w-full px-4 py-2 bg-black/30 border border-white/20 text-white focus:border-tactical-accent focus:outline-none"
                     >
-                      <option value="">Select your role</option>
-                      <option value="Support">Support</option>
-                      <option value="Sales">Sales</option>
-                      <option value="Retired">Retired</option>
-                      <option value="Research">Research</option>
-                      <option value="Recruiting">Recruiting</option>
-                      <option value="Product Management">Product Management</option>
-                      <option value="Marketing">Marketing</option>
-                      <option value="IT">IT</option>
-                      <option value="Human Resources">Human Resources</option>
-                      <option value="Finance">Finance</option>
-                      <option value="Executive Leadership">Executive Leadership</option>
-                      <option value="Engineering">Engineering</option>
-                      <option value="Education">Education</option>
-                      <option value="Design">Design</option>
-                      <option value="Customer Success">Customer Success</option>
-                      <option value="Consulting">Consulting</option>
-                      <option value="Business Development">Business Development</option>
-                      <option value="Other">Other</option>
+                      <option value="">{t('form.selectRole')}</option>
+                      <option value="Support">{t('form.roles.support')}</option>
+                      <option value="Sales">{t('form.roles.sales')}</option>
+                      <option value="Retired">{t('form.roles.retired')}</option>
+                      <option value="Research">{t('form.roles.research')}</option>
+                      <option value="Recruiting">{t('form.roles.recruiting')}</option>
+                      <option value="Product Management">{t('form.roles.productManagement')}</option>
+                      <option value="Marketing">{t('form.roles.marketing')}</option>
+                      <option value="IT">{t('form.roles.it')}</option>
+                      <option value="Human Resources">{t('form.roles.hr')}</option>
+                      <option value="Finance">{t('form.roles.finance')}</option>
+                      <option value="Executive Leadership">{t('form.roles.executiveLeadership')}</option>
+                      <option value="Engineering">{t('form.roles.engineering')}</option>
+                      <option value="Education">{t('form.roles.education')}</option>
+                      <option value="Design">{t('form.roles.design')}</option>
+                      <option value="Customer Success">{t('form.roles.customerSuccess')}</option>
+                      <option value="Consulting">{t('form.roles.consulting')}</option>
+                      <option value="Business Development">{t('form.roles.businessDevelopment')}</option>
+                      <option value="Other">{t('form.roles.other')}</option>
                     </select>
                   </div>
 
                   <div>
                     <label className="block text-white text-sm font-medium mb-2">
-                      Current Stage
+                      {t('form.currentStage')}
                     </label>
                     <select
                       value={formData.currentStage}
                       onChange={(e) => setFormData({ ...formData, currentStage: e.target.value })}
                       className="w-full px-4 py-2 bg-black/30 border border-white/20 text-white focus:border-tactical-accent focus:outline-none"
                     >
-                      <option value="">Select stage...</option>
-                      <option value="Researching solutions">Researching solutions</option>
-                      <option value="Evaluating vendors">Evaluating vendors</option>
-                      <option value="Ready to purchase">Ready to purchase</option>
-                      <option value="Already using TAK">Already using TAK</option>
+                      <option value="">{t('form.selectStage')}</option>
+                      <option value="Researching solutions">{t('form.stages.researching')}</option>
+                      <option value="Evaluating vendors">{t('form.stages.evaluating')}</option>
+                      <option value="Ready to purchase">{t('form.stages.readyToPurchase')}</option>
+                      <option value="Already using TAK">{t('form.stages.alreadyUsingTAK')}</option>
                     </select>
                   </div>
 
@@ -390,20 +341,20 @@ export default function TAKResourcesSection() {
                     disabled={isSubmitting}
                     className="w-full px-6 py-3 bg-white text-black hover:bg-tactical-accent hover:text-black transition-all duration-300 text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    {isSubmitting ? 'Processing...' : 'Download PDF →'}
+                    {isSubmitting ? t('form.processing') : t('form.downloadButton')}
                   </button>
 
                   <p className="text-xs text-tactical-textDim text-center">
-                    We respect your privacy. Your information will only be used to send you relevant TAK resources and updates.
+                    {t('form.privacy')}
                   </p>
                 </form>
               </>
             ) : (
               <div className="text-center py-8">
                 <div className="text-tactical-accent text-5xl mb-4">✓</div>
-                <h3 className="text-2xl font-bold text-white mb-2">Download Starting...</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">{t('form.successTitle')}</h3>
                 <p className="text-tactical-textDim">
-                  Your download should begin automatically. Check your email for additional resources.
+                  {t('form.successMessage')}
                 </p>
               </div>
             )}
