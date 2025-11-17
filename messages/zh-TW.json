@@ -1,0 +1,296 @@
+{
+  "nav": {
+    "features": "功能特色",
+    "platform": "平台",
+    "takSolutions": "TAK 解決方案",
+    "contact": "聯絡我們",
+    "requestDemo": "申請展示"
+  },
+  "hero": {
+    "title": "戰術 AI，確保任務成功",
+    "subtitle": "TAK 原生 AI 驅動決策支援系統，將資訊過載轉化為明確行動，支援關鍵任務。",
+    "stats": {
+      "planning": {
+        "value": "<30秒",
+        "label": "規劃週期"
+      },
+      "edge": {
+        "value": "100%",
+        "label": "邊緣運算能力"
+      },
+      "tak": {
+        "value": "TAK",
+        "label": "原生整合"
+      }
+    },
+    "cta": {
+      "demo": "申請展示",
+      "learn": "了解更多"
+    }
+  },
+  "nerva": {
+    "tagline": "將敵方 OODA 迴圈石化",
+    "subtitle": "您的 AI 戰術助理",
+    "description": "NERVA 是您團隊的 AI 延伸。不僅是態勢感知——更是{decisionAdvantage}。",
+    "decisionAdvantage": "決策優勢",
+    "bottomCta": {
+      "text": "已在使用 TAK？NERVA 讓它更智慧。",
+      "button": "查看 NERVA 實戰演示"
+    },
+    "capabilities": {
+      "uas": {
+        "icon": "UAS",
+        "title": "自主無人機作業",
+        "command": "「NERVA，執行偵察模式 Alpha」",
+        "description": "自主飛行路徑規劃，支援情監偵、偵察和反無人機作業。NERVA 監控無人機遙測數據、發出直接指令，並可立即將友方無人機從監視任務重新部署至攔截任務——規劃交戰航線以中和敵對無人機或防衛關鍵資產。",
+        "features": [
+          "自主飛行規劃",
+          "即時遙測監控",
+          "自動攔截規劃",
+          "無人機指揮管制"
+        ]
+      },
+      "medevac": {
+        "icon": "MEDEVAC",
+        "title": "自動化傷患後送協調",
+        "command": "「NERVA，我們需要傷患後送！」",
+        "description": "在 30 秒內識別最佳直升機降落區，自動通知醫療和航空團隊，監控救援進度，並即時更新所有 TAK 客戶端。",
+        "features": [
+          "降落區識別 <30秒",
+          "自動團隊通知",
+          "即時監控",
+          "TAK 全域更新"
+        ]
+      },
+      "threat": {
+        "icon": "THREAT",
+        "title": "敵對單位情報",
+        "command": "識別敵軍單位 → NERVA 行動",
+        "description": "自動從 Jane's Defence 資料庫查詢，繪製射程環，警告所有危險區域內的單位，並根據威脅能力提供建議對策。",
+        "features": [
+          "Jane's 資料庫整合",
+          "射程分析",
+          "自動警報",
+          "對策建議"
+        ]
+      },
+      "sar": {
+        "icon": "SAR",
+        "title": "搜索區域計算",
+        "command": "「NERVA，計算失蹤單位的搜索區域」",
+        "description": "基於機率的搜索區域生成，使用地形分析、氣象條件和單位能力。適用於軍事行動和民間搜救 (SAR)。",
+        "features": [
+          "機率建模",
+          "地形分析",
+          "資源配置",
+          "軍事與民間搜救"
+        ]
+      },
+      "alert": {
+        "icon": "ALERT",
+        "title": "地理圍欄執法與回應",
+        "command": "「NERVA，如有任何目標進入禁區，立即警告」",
+        "description": "虛擬邊界防禦，支援 2D/3D 地理圍欄監控。NERVA 整合第三方感測器（ADS-B、射頻偵測、雷達）追蹤飛機和無人機。當任何目標違反虛擬邊界時，NERVA 立即警告所有聯網資產並協調回應——從友方無人機攔截到整合反無人機效應器。",
+        "features": [
+          "2D/3D 虛擬地理圍欄",
+          "第三方感測器整合",
+          "即時全網警報",
+          "協調回應規劃"
+        ]
+      },
+      "airspace": {
+        "icon": "AIRSPACE",
+        "title": "3D 空域視覺化",
+        "command": "顯示圖表 → NERVA 渲染 3D 空域",
+        "description": "從分區圖、NOTAM 和 TFR 多模態渲染複雜空域。NERVA 提取地理空間數據，視覺化 3D 限制區域，並疊加即時無人機航跡以實現全面空域感知——對反無人機作業和飛行衝突解決至關重要。",
+        "features": [
+          "AI 圖表解讀",
+          "3D 限制區渲染",
+          "即時航跡疊加",
+          "反無人機空域感知"
+        ]
+      }
+    },
+    "videoPlaceholder": {
+      "title": "展示影片",
+      "comingSoon": "[即將推出]"
+    }
+  },
+  "features": {
+    "title": "完整平台",
+    "subtitle": "戰術邊緣部署的軟硬體整合",
+    "items": {
+      "planning": {
+        "icon": "01",
+        "title": "即時任務規劃",
+        "description": "從即時 ATAK 數據自動生成戰術選項。時效性關鍵作業的 30 秒規劃週期。",
+        "code": "MAGI-01"
+      },
+      "fusion": {
+        "icon": "02",
+        "title": "多源情報融合",
+        "description": "跨無人機影像、感測器網路和操作員報告的統一分析。從分散數據源建立單一作戰圖像。",
+        "code": "MAGI-02"
+      },
+      "assessment": {
+        "icon": "03",
+        "title": "自主評估",
+        "description": "模式識別和異常檢測，用於作戰環境的預測分析。",
+        "code": "MAGI-03"
+      },
+      "edge": {
+        "icon": "04",
+        "title": "邊緣運算",
+        "description": "可野外部署的「頭盔內 GPU」，提供安全、私密的邊緣 AI。在連線失效時仍可運作。",
+        "code": "HARDWARE-01"
+      }
+    }
+  },
+  "tak": {
+    "title": "為團隊感知而生",
+    "subtitle": "已在使用 TAK 進行緊急協調？完美。NERV 直接整合您現有的 Team Awareness Kit 系統。",
+    "integration": {
+      "native": {
+        "label": "原生 TAK 整合",
+        "description": "增強您現有的工作流程"
+      },
+      "noRetraining": {
+        "label": "無需重新培訓",
+        "description": "熟悉的介面加上 AI 超能力"
+      },
+      "realTime": {
+        "label": "即時資料融合",
+        "description": "來自衛星、無人機和感測器饋送"
+      },
+      "natural": {
+        "label": "自然語言介面",
+        "description": "提出問題，獲得明確答案"
+      },
+      "portable": {
+        "label": "可攜式野外部署",
+        "description": "在連線失效時仍可運作"
+      }
+    },
+    "cta": "查看整合文件"
+  },
+  "takCallout": {
+    "label": "TAK/ATAK 解決方案",
+    "title": "尋找 TAK 託管與部署？",
+    "description": "NERV 為亞太地區提供完整的 TAK/ATAK 解決方案：每月 $495 起的託管 TAK 伺服器、專業部署諮詢、系統管理、操作員培訓，以及透過 NERVA 整合的 AI 增強功能。",
+    "benefits": {
+      "certified": {
+        "title": "TAK.gov 認證",
+        "description": "官方 TAK 部署"
+      },
+      "asiaPacific": {
+        "title": "亞太地區專注",
+        "description": "區域專業知識"
+      },
+      "aiEnhanced": {
+        "title": "AI 增強",
+        "description": "NERVA 整合"
+      },
+      "uptime": {
+        "title": "99.9% 正常運行",
+        "description": "企業級 SLA"
+      }
+    },
+    "cta": "探索 TAK 解決方案 →",
+    "stats": {
+      "hosting": {
+        "label": "託管服務",
+        "price": "$495/月",
+        "description": "企業級 TAK 伺服器，配備 AI 監控、24/7 支援和 NERVA 整合"
+      },
+      "deployment": {
+        "label": "部署",
+        "title": "全方位服務",
+        "description": "從初步評估到上線：TAK 伺服器設定、外掛配置、培訓和支援"
+      },
+      "training": {
+        "label": "培訓",
+        "title": "認證課程",
+        "description": "TAK 操作員基礎、進階作業和 NERVA AI 助理培訓課程"
+      }
+    }
+  },
+  "partners": {
+    "title": "受領先組織信賴",
+    "description": "NERV Systems 獲 NVIDIA Inception 支持、Autodesk Foundation 贊助、於新加坡國立大學孵化，並與倫敦國王學院戰爭研究系合作",
+    "items": {
+      "nvidia": {
+        "name": "NVIDIA Inception",
+        "description": "NVIDIA Inception AI 新創計畫成員"
+      },
+      "nus": {
+        "name": "新加坡國立大學",
+        "description": "NUS Enterprise 孵化"
+      },
+      "kcl": {
+        "name": "倫敦國王學院",
+        "description": "戰爭研究系合作"
+      },
+      "autodesk": {
+        "name": "Autodesk Foundation",
+        "description": "Autodesk Foundation 支持"
+      }
+    }
+  },
+  "contact": {
+    "label": "聯絡我們",
+    "title": "準備部署戰術 AI？",
+    "subtitle": "無論您需要 NERVA AI 整合、TAK 解決方案，或想討論您的作戰需求——我們的團隊隨時為您服務。",
+    "form": {
+      "label": "一般諮詢",
+      "title": "發送訊息給我們",
+      "description": "填寫我們的聯絡表單，我們的團隊將在 24 小時內回覆。",
+      "button": "聯絡我們 →"
+    },
+    "direct": {
+      "label": "直接聯絡",
+      "title": "直接聯繫",
+      "email": {
+        "label": "電子郵件",
+        "value": "contact@nervsystems.com"
+      },
+      "region": {
+        "label": "區域",
+        "value": "亞太地區業務"
+      },
+      "affiliations": {
+        "label": "合作夥伴",
+        "nvidia": "NVIDIA Inception 成員",
+        "nus": "NUS Enterprise 孵化",
+        "kcl": "倫敦國王學院孵化"
+      }
+    },
+    "quickLinks": {
+      "title": "尋找特定內容？",
+      "nerva": "NERVA AI 平台",
+      "tak": "TAK 解決方案",
+      "resources": "資源與指南"
+    }
+  },
+  "footer": {
+    "tagline": "用於任務規劃與邊緣智慧的戰術 AI",
+    "navigation": {
+      "title": "導航",
+      "nerva": "NERVA AI",
+      "platform": "平台",
+      "takIntegration": "TAK 整合",
+      "solutions": "解決方案與服務"
+    },
+    "contact": {
+      "title": "聯絡",
+      "email": "電子郵件：contact@nervsystems.com",
+      "region": "亞太地區業務",
+      "affiliations": {
+        "nvidia": "NVIDIA Inception 成員",
+        "nus": "NUS Enterprise 孵化",
+        "kcl": "倫敦國王學院孵化"
+      }
+    },
+    "copyright": "© 2025 NERV Systems. 版權所有。",
+    "taglineBottom": "為戰術邊緣而打造"
+  }
+}
