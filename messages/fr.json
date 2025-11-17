@@ -292,5 +292,462 @@
     },
     "copyright": "© 2025 NERV Systems. Tous droits réservés.",
     "taglineBottom": "Conçu pour la périphérie tactique"
+  },
+  "takSolutions": {
+    "hero": {
+      "eyebrow": "Solutions TAK pour l'Asie-Pacifique",
+      "title": "Solutions et services TAK/ATAK complets",
+      "subtitle": "Hébergement de serveur TAK expert, conseil en déploiement ATAK, administration système et formation pour les équipes militaires, de maintien de l'ordre et d'intervention d'urgence dans toute l'Asie-Pacifique.",
+      "features": {
+        "hosting": "Hébergement TAK géré à partir de 495 $/mois",
+        "aiEnhanced": "Amélioré par IA avec NERVA",
+        "deployment": "Déploiement TAK expert",
+        "training": "Programmes de formation ATAK"
+      },
+      "cta": {
+        "quote": "Demander un devis",
+        "services": "Voir les services"
+      }
+    },
+    "services": {
+      "introduction": {
+        "title": "Solutions TAK professionnelles pour l'Asie-Pacifique",
+        "description": "NERV Systems fournit des solutions TAK (Team Awareness Kit) et ATAK (Android Team Awareness Kit) complètes, notamment l'hébergement de serveur TAK géré, le conseil en déploiement ATAK, l'administration système TAK, les programmes de formation d'opérateurs et le développement de plugins TAK personnalisés. Notre plateforme TAK améliorée par IA combine les capacités TAK traditionnelles avec l'automatisation intelligente via NERVA."
+      },
+      "hosting": {
+        "title": "Hébergement de serveur TAK géré",
+        "description": "Hébergement de serveur TAK de niveau entreprise avec SLA de disponibilité de 99,9%. Notre service d'hébergement TAK géré élimine la complexité de l'administration du serveur TAK tout en fournissant des capacités améliorées par IA grâce à l'intégration NERVA. Parfait pour les organisations déployant des systèmes TAK/ATAK dans les opérations militaires, de maintien de l'ordre, de gestion des urgences et de sécurité publique.",
+        "footer": "Tous les plans d'hébergement TAK incluent : certificats SSL, sauvegardes automatisées, protection DDoS et accès aux mises à jour TAK.gov",
+        "tiers": {
+          "starter": {
+            "name": "Starter",
+            "price": "495 $",
+            "period": "/mois",
+            "users": "Jusqu'à 50 utilisateurs TAK",
+            "nerva": "NERVA Lite (3 capacités IA)",
+            "features": [
+              "Déploiement de serveur TAK de base",
+              "Plugins ATAK standard inclus",
+              "SLA de disponibilité de 99% du serveur TAK",
+              "Support par email pour les problèmes TAK",
+              "Correctifs de sécurité TAK mensuels"
+            ],
+            "cta": "Commencer avec TAK"
+          },
+          "professional": {
+            "name": "Professional",
+            "price": "1 495 $",
+            "period": "/mois",
+            "users": "Jusqu'à 250 utilisateurs ATAK",
+            "nerva": "NERVA complet (toutes les 6 capacités IA)",
+            "popular": true,
+            "features": [
+              "Serveur TAK entreprise",
+              "Plugins ATAK premium",
+              "SLA de disponibilité TAK de 99,9%",
+              "Support TAK 24/7",
+              "Support de fédération TAK",
+              "Surveillance de santé système IA"
+            ],
+            "cta": "Démarrer TAK professionnel"
+          },
+          "enterprise": {
+            "name": "Enterprise",
+            "price": "Personnalisé",
+            "users": "1 000+ utilisateurs TAK/ATAK",
+            "nerva": "NERVA personnalisé + formation",
+            "features": [
+              "Infrastructure TAK personnalisée",
+              "Options TAK en marque blanche",
+              "SLA de disponibilité TAK de 99,99%",
+              "Équipe de support TAK dédiée",
+              "Déploiement TAK multi-régions",
+              "Packages de conformité TAK"
+            ],
+            "cta": "Contacter pour TAK entreprise"
+          }
+        }
+      },
+      "consulting": {
+        "title": "Conseil en déploiement TAK",
+        "description": "Services de déploiement TAK experts depuis l'évaluation initiale des exigences jusqu'à la capacité opérationnelle complète. Notre équipe de conseil TAK apporte une vaste expérience dans le déploiement de systèmes ATAK pour les organisations de défense, de maintien de l'ordre et de gestion des urgences. Chaque déploiement TAK comprend une feuille de route d'intégration de capacités IA montrant comment NERVA améliore vos opérations TAK.",
+        "packages": {
+          "assessment": {
+            "name": "Évaluation TAK",
+            "price": "4 500 $",
+            "duration": "Évaluation TAK sur site d'1 jour",
+            "features": [
+              "Évaluation des exigences TAK",
+              "Conception d'infrastructure TAK",
+              "Exigences utilisateur ATAK",
+              "Conseils de sélection de plugins TAK",
+              "Support TAK de 30 jours"
+            ],
+            "cta": "Demander une évaluation TAK"
+          },
+          "deployment": {
+            "name": "Déploiement TAK",
+            "price": "15 000 $",
+            "duration": "Configuration complète du système TAK",
+            "popular": true,
+            "features": [
+              "Déploiement complet du serveur TAK (100 utilisateurs)",
+              "Installation de plugins ATAK",
+              "Intégration système TAK",
+              "Formation opérateur ATAK de base",
+              "Support prioritaire TAK de 90 jours"
+            ],
+            "cta": "Déployer le système TAK"
+          },
+          "enterprise": {
+            "name": "TAK entreprise",
+            "price": "45 000 $+",
+            "duration": "Déploiement TAK à grande échelle",
+            "features": [
+              "Grand déploiement TAK (100+ utilisateurs)",
+              "Feuille de route d'intégration IA",
+              "Développement de plugins TAK personnalisés",
+              "Formation ATAK avancée (3 jours)",
+              "Support TAK dédié de 180 jours"
+            ],
+            "cta": "Planifier TAK entreprise"
+          }
+        }
+      },
+      "training": {
+        "title": "Programmes de formation TAK et ATAK",
+        "description": "Programmes complets de formation d'opérateurs TAK et de certification ATAK. Notre formation TAK couvre tout, des opérations d'interface ATAK de base à la planification de mission avancée avec assistance IA NERVA. Remises de volume disponibles pour la formation d'équipe : 10% de réduction pour 5-10 étudiants, 20% de réduction pour 11-20 étudiants, 30% de réduction pour 21+ étudiants.",
+        "programs": {
+          "fundamentals": {
+            "name": "Fondamentaux TAK",
+            "price": "595 $",
+            "period": "/étudiant",
+            "duration": "Cours de bases ATAK d'1 jour",
+            "cta": "S'inscrire à la formation TAK"
+          },
+          "nervaAI": {
+            "name": "Formation IA NERVA",
+            "price": "795 $",
+            "period": "/étudiant",
+            "duration": "Cours TAK amélioré par IA d'1 jour",
+            "recommended": true,
+            "cta": "S'inscrire à la formation IA"
+          },
+          "advanced": {
+            "name": "Opérations TAK avancées",
+            "price": "1 495 $",
+            "period": "/étudiant",
+            "duration": "Cours ATAK avancé de 2 jours",
+            "cta": "S'inscrire à la formation avancée"
+          }
+        }
+      }
+    },
+    "integration": {
+      "title": "Pourquoi choisir NERV pour les solutions TAK ?",
+      "description": "Contrairement aux fournisseurs d'hébergement TAK traditionnels, NERV Systems combine des services de déploiement TAK experts avec une intelligence alimentée par IA. Chaque solution TAK inclut l'intégration NERVA, transformant votre système TAK/ATAK de la simple conscience situationnelle en une plateforme de support décisionnel intelligente.",
+      "benefits": [
+        {
+          "title": "Plateforme TAK améliorée par IA",
+          "description": "NERVA ajoute la planification de mission autonome, la coordination CASEVAC automatisée, le renseignement sur les menaces et le support décisionnel en temps réel à votre système TAK"
+        },
+        {
+          "title": "Expertise Asie-Pacifique",
+          "description": "Expertise en déploiement TAK local à travers Singapour, Hong Kong, le Japon et la région Asie-Pacifique avec compréhension des exigences régionales"
+        },
+        {
+          "title": "Support complet du cycle de vie TAK",
+          "description": "De l'évaluation TAK initiale au déploiement, à la formation et à l'administration système continue—support complet pour l'ensemble de votre parcours TAK"
+        },
+        {
+          "title": "Infrastructure TAK de niveau entreprise",
+          "description": "SLA de disponibilité de 99,9%, sauvegardes TAK automatisées, protection DDoS, certificats SSL et conformité aux normes de sécurité TAK.gov"
+        },
+        {
+          "title": "Options de déploiement TAK flexibles",
+          "description": "TAK hébergé dans le cloud, serveurs TAK sur site, architectures TAK hybrides, ou systèmes TAK déployés en périphérie avec notre matériel GPU dans un casque"
+        }
+      ],
+      "useCases": {
+        "military": {
+          "title": "TAK pour les opérations militaires",
+          "description": "Déployez des systèmes TAK/ATAK pour le commandement et le contrôle, les opérations ISR, le soutien aérien rapproché, la coordination CASEVAC et les opérations multi-domaines avec planification de mission améliorée par IA.",
+          "tags": [
+            "C2",
+            "ISR",
+            "CASEVAC",
+            "CAS"
+          ]
+        },
+        "lawEnforcement": {
+          "title": "TAK pour les forces de l'ordre",
+          "description": "Solutions ATAK pour les opérations tactiques, la coordination SWAT, la sécurité des événements, la patrouille frontalière et le partage d'informations inter-agences avec conscience situationnelle en temps réel.",
+          "tags": [
+            "SWAT",
+            "SÉCURITÉ",
+            "PATROUILLE"
+          ]
+        },
+        "emergency": {
+          "title": "TAK pour la gestion des urgences",
+          "description": "Systèmes TAK d'intervention d'urgence pour la réponse aux catastrophes, les opérations de recherche et de sauvetage (SAR), les opérations d'incendie, la coordination médicale et la gestion d'incidents multi-agences.",
+          "tags": [
+            "SAR",
+            "INCENDIE",
+            "EMS"
+          ]
+        }
+      }
+    },
+    "competitive": {
+      "eyebrow": "Avantage concurrentiel",
+      "title": "Pourquoi NERV pour les solutions TAK ?",
+      "subtitle": "Les fournisseurs d'hébergement TAK traditionnels offrent l'infrastructure. NERV offre l'intelligence. Voyez comment notre plateforme TAK améliorée par IA se compare aux fournisseurs de solutions TAK conventionnels.",
+      "tableHeaders": {
+        "capability": "Capacité",
+        "traditional": "Fournisseurs TAK traditionnels",
+        "nerv": "Solutions TAK NERV"
+      },
+      "comparisons": [
+        {
+          "category": "Capacités IA",
+          "traditional": "Planification et analyse de mission manuelles",
+          "nerv": "Planification de mission autonome avec IA NERVA : CASEVAC automatisé, renseignement sur les menaces, calculs SAR"
+        },
+        {
+          "category": "Temps de réponse",
+          "traditional": "Réponse support 24-48 heures",
+          "nerv": "Support en temps réel 24/7 avec surveillance système IA et alertes prédictives"
+        },
+        {
+          "category": "Présence Asie-Pacifique",
+          "traditional": "Support régional limité, infrastructure basée aux États-Unis",
+          "nerv": "Hébergement TAK local à Singapour, Hong Kong, expertise en conformité régionale"
+        },
+        {
+          "category": "Intégration TAK",
+          "traditional": "Déploiement de serveur TAK standard",
+          "nerv": "TAK amélioré avec intégration NERVA, fusion de données intelligente, interface en langage naturel"
+        },
+        {
+          "category": "Edge Computing",
+          "traditional": "Cloud uniquement ou sur site statique",
+          "nerv": "Flexible : cloud, sur site, hybride ou déploiement en périphérie GPU dans un casque"
+        },
+        {
+          "category": "Programmes de formation",
+          "traditional": "Formation d'opérateur TAK générique",
+          "nerv": "Fondamentaux TAK + formation assistant IA NERVA + planification de mission avancée avec IA"
+        },
+        {
+          "category": "Administration système",
+          "traditional": "Correctifs et surveillance manuels",
+          "nerv": "Surveillance alimentée par IA, sauvegardes automatisées, maintenance prédictive, alertes intelligentes"
+        },
+        {
+          "category": "Développement de plugins",
+          "traditional": "Plugins TAK standard uniquement",
+          "nerv": "Plugins intégrés NERVA personnalisés avec capacités IA et automatisation intelligente"
+        }
+      ],
+      "cta": {
+        "title": "Prêt à améliorer votre infrastructure TAK ?",
+        "description": "Démarrez avec la plateforme TAK améliorée par IA de NERV et découvrez la différence que fait une infrastructure intelligente.",
+        "buttons": {
+          "pricing": "Voir les tarifs et services",
+          "guide": "Télécharger le guide de comparaison"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "Questions fréquemment posées",
+      "title": "FAQ sur les solutions TAK",
+      "subtitle": "Questions courantes sur l'hébergement TAK/ATAK, le déploiement, la formation et l'intégration IA NERVA",
+      "cta": {
+        "text": "Vous avez d'autres questions sur l'hébergement TAK, le déploiement ATAK ou l'intégration NERVA ?",
+        "button": "Contactez nos experts TAK"
+      },
+      "questions": [
+        {
+          "question": "Qu'est-ce que TAK/ATAK et pourquoi en ai-je besoin ?",
+          "answer": "TAK (Team Awareness Kit) est une plateforme de collaboration géospatiale développée par l'US Air Force Research Lab pour les opérations militaires et tactiques. ATAK (Android Team Awareness Kit) est la version mobile Android qui fournit une conscience situationnelle en temps réel, une cartographie, un partage de localisation et une coordination de mission. Les organisations ont besoin de TAK/ATAK lorsqu'elles nécessitent une coordination géospatiale sécurisée en temps réel entre équipes distribuées—que ce soit pour les opérations militaires, les équipes tactiques de maintien de l'ordre, les opérations de recherche et de sauvetage ou la gestion des urgences. NERV améliore les déploiements TAK standard avec les capacités IA NERVA pour la planification de mission intelligente et le support décisionnel automatisé."
+        },
+        {
+          "question": "Quelles sont les exigences pour l'hébergement de serveur TAK ?",
+          "answer": "L'hébergement professionnel de serveur TAK nécessite : un compte TAK.gov pour les téléchargements officiels du logiciel TAK Server, des certificats SSL pour les communications TAK chiffrées, une infrastructure de serveur dédiée avec disponibilité de 99,9%, une protection DDoS pour la sécurité opérationnelle, des systèmes de sauvegarde automatisés pour les données TAK et une expertise en configuration de TAK Server et administration système. L'hébergement TAK géré de NERV inclut toutes ces exigences plus des fonctionnalités améliorées par IA via l'intégration NERVA, à partir de 495 $/mois pour les petites équipes jusqu'à 1 495 $/mois pour les déploiements TAK à grande échelle."
+        },
+        {
+          "question": "Combien de temps prend le déploiement TAK ?",
+          "answer": "Les délais de déploiement TAK varient selon la complexité. La configuration de base du serveur TAK peut être complétée en 1-2 semaines pour les déploiements simples. L'implémentation complète TAK/ATAK incluant la configuration du serveur, la configuration des appareils clients, la formation utilisateur, l'intégration de plugins et le développement de packages de données TAK personnalisés prend généralement 4-8 semaines. Les déploiements TAK entreprise avec personnalisation extensive, architecture multi-sites, intégration de systèmes hérités et développement avancé de plugins ATAK peuvent nécessiter 3-6 mois. Les services de conseil en déploiement TAK de NERV incluent la planification détaillée de projet, l'estimation des délais et le suivi des jalons tout au long de votre parcours d'implémentation TAK."
+        },
+        {
+          "question": "Offrez-vous une formation et une certification ATAK ?",
+          "answer": "Oui, NERV offre des programmes de formation ATAK complets pour tous les niveaux de compétence. Notre cours Fondamentaux d'opérateur TAK (595 $ par opérateur) couvre la navigation dans l'interface ATAK, la gestion des cartes, le placement de marqueurs, le partage de localisation et les communications TAK de base—parfait pour les nouveaux utilisateurs ATAK. Le cours Opérations TAK avancées (995 $ par opérateur) inclut la planification de mission dans ATAK, la création de packages de données, l'utilisation de plugins, l'intégration vidéo TAK et les flux de travail tactiques. Pour les équipes techniques, notre Certification d'administrateur TAK (1 495 $ par admin) fournit une formation approfondie en administration de TAK Server, gestion des utilisateurs, configuration de sécurité, déploiement de plugins et dépannage système. Toutes les formations ATAK incluent des exercices pratiques avec de vrais systèmes TAK/ATAK."
+        },
+        {
+          "question": "Qu'est-ce qui différencie les solutions TAK de NERV des autres fournisseurs d'hébergement TAK ?",
+          "answer": "Contrairement aux sociétés d'hébergement TAK traditionnelles, NERV combine des services de déploiement TAK experts avec une intelligence alimentée par IA via l'intégration NERVA. Chaque solution TAK NERV inclut la planification de mission autonome, la coordination CASEVAC automatisée, le renseignement sur les menaces en temps réel, le géorepérage intelligent et la visualisation de l'espace aérien 3D—des capacités non disponibles chez les fournisseurs TAK standard. Nous nous spécialisons également dans la région Asie-Pacifique avec hébergement de serveur TAK local à Singapour, compréhension des exigences de conformité régionale et expertise en déploiement TAK axée sur l'Asie. De plus, nos options de déploiement flexibles incluent l'hébergement TAK cloud, les serveurs TAK sur site, les architectures hybrides et les systèmes TAK déployés en périphérie avec notre matériel compatible GPU."
+        },
+        {
+          "question": "Pouvez-vous développer des plugins TAK personnalisés ?",
+          "answer": "Absolument. NERV fournit des services professionnels de développement de plugins TAK dans le cadre de notre offre d'ingénierie de solutions TAK. Nous développons des plugins ATAK personnalisés pour les appareils Android, des plugins TAK Server pour l'intégration backend, des plugins WinTAK pour les environnements Windows et des plugins iTAK pour iOS. Notre expertise en développement de plugins TAK inclut : l'intégration avec les systèmes d'entreprise existants, les sources de données et flux personnalisés, les outils de planification de mission spécialisés, les plugins de flux de travail automatisés, l'intégration de capteurs et de matériel, et les capacités TAK améliorées par IA via NERVA. Les projets de développement de plugins TAK commencent à 15 000 $ pour les plugins de base jusqu'à 100 000 $+ pour les extensions complètes de plateforme TAK avec support continu."
+        },
+        {
+          "question": "Offrez-vous un support d'administration système TAK ?",
+          "answer": "Oui, l'administration système TAK complète est incluse dans tous nos plans d'hébergement TAK géré. Nos services d'administration système TAK couvrent : les mises à jour et correctifs logiciels de TAK Server, la gestion des comptes utilisateurs et du contrôle d'accès, la gestion et le renouvellement des certificats SSL, le déploiement et les mises à jour des packages de données TAK, l'installation et la configuration de plugins, la surveillance et l'optimisation des performances, l'audit de sécurité et la conformité, la vérification des sauvegardes et la récupération après sinistre, et la surveillance système TAK 24/7. Pour les organisations exécutant leur propre infrastructure TAK, nous offrons également un conseil en administration système TAK autonome à 195 $/heure ou des contrats de support TAK mensuels à partir de 2 500 $/mois."
+        },
+        {
+          "question": "Quels cas d'utilisation TAK/ATAK prenez-vous en charge ?",
+          "answer": "NERV prend en charge le spectre complet des applications TAK/ATAK dans la défense, la sécurité publique et les services d'urgence. Les cas d'utilisation TAK militaire incluent : commandement et contrôle (C2), renseignement/surveillance/reconnaissance (ISR), coordination de soutien aérien rapproché (CAS), opérations CASEVAC/MEDEVAC, opérations multi-domaines et exercices d'entraînement. Les applications ATAK de maintien de l'ordre incluent : coordination d'équipe SWAT, gestion de sécurité d'événements, opérations de patrouille frontalière, traque de fugitifs et collaboration inter-agences. Les déploiements TAK de gestion des urgences couvrent : recherche et sauvetage (SAR), réponse aux incendies de forêt, coordination de secours en cas de catastrophe, opérations EMS et gestion d'incidents multi-agences. Chaque cas d'utilisation est amélioré avec les capacités IA NERVA pour une exécution de mission plus intelligente."
+        },
+        {
+          "question": "Comment l'intégration IA NERVA améliore-t-elle les systèmes TAK ?",
+          "answer": "NERVA transforme les TAK/ATAK standard de la simple conscience situationnelle en une plateforme de support décisionnel intelligente. NERVA analyse les données TAK en temps réel pour fournir : planification de mission autonome avec routes et timing optimisés, coordination CASEVAC automatisée calculant les meilleures emplacements LZ et trajectoires de vol, renseignement sur les unités hostiles avec prédiction de menaces et recommandations de contre-mesures, calcul intelligent de zone de recherche pour les opérations SAR, géorepérage avec alertes automatiques pour les violations d'espace aérien, et visualisation de l'espace aérien 3D pour la déconfliction UAS. NERVA fonctionne sur infrastructure cloud, serveurs sur site ou notre matériel GPU déployé en périphérie, s'intégrant de manière transparente avec les déploiements TAK Server existants via les protocoles et API TAK standard."
+        }
+      ]
+    },
+    "resources": {
+      "eyebrow": "Ressources gratuites",
+      "title": "Bibliothèque de renseignement TAK",
+      "subtitle": "Téléchargez des guides complets, de la documentation technique et des ressources stratégiques pour accélérer votre déploiement TAK et maximiser le ROI de l'intégration IA.",
+      "downloadButton": "Télécharger le PDF gratuit →",
+      "covers": "COUVRE :",
+      "items": [
+        {
+          "title": "Calculateur et guide ROI de l'IA tactique",
+          "description": "Analyse complète du ROI de l'intégration IA pour les opérations tactiques. Calculez les économies de coûts grâce à la planification de mission automatisée, la réduction du temps de planification, l'amélioration de la précision des décisions et l'amélioration du tempo opérationnel. Comprend des études de cas réelles et des scénarios de déploiement.",
+          "pages": "24 pages",
+          "format": "PDF",
+          "category": "ROI",
+          "topics": [
+            "Analyse coûts-bénéfices",
+            "Économies d'automatisation IA",
+            "Délais de déploiement",
+            "Métriques de performance"
+          ]
+        },
+        {
+          "title": "TAK vs alternatives commerciales : comparaison complète",
+          "description": "Comparaison approfondie de TAK/ATAK contre les plateformes C2 commerciales, les systèmes de gestion des urgences et les solutions propriétaires. Couvre les fonctionnalités, le coût total de possession, les considérations de sécurité, l'interopérabilité et les capacités d'intégration. Comprend un cadre de décision pour la sélection de plateforme.",
+          "pages": "32 pages",
+          "format": "PDF",
+          "category": "COMPARAISON",
+          "topics": [
+            "Matrice de comparaison de plateformes",
+            "Analyse TCO",
+            "Comparaison de sécurité",
+            "Capacités d'intégration"
+          ]
+        },
+        {
+          "title": "Liste de vérification de déploiement TAK : guide d'implémentation complet",
+          "description": "Liste de vérification de déploiement étape par étape pour les implémentations TAK/ATAK. Couvre la collecte des exigences, la planification d'infrastructure, la configuration de sécurité, l'intégration des utilisateurs, les programmes de formation et les procédures de mise en service. Comprend des modèles, des exemples de configuration et l'évitement des pièges courants.",
+          "pages": "18 pages",
+          "format": "PDF",
+          "category": "DÉPLOIEMENT",
+          "topics": [
+            "Planification pré-déploiement",
+            "Configuration d'infrastructure",
+            "Durcissement de sécurité",
+            "Plan de formation utilisateur"
+          ]
+        },
+        {
+          "title": "Guide d'architecture d'intégration IA NERVA",
+          "description": "Documentation d'architecture technique pour l'intégration NERVA avec les déploiements TAK existants. Couvre les spécifications API, les flux de données, l'architecture de sécurité, les modèles de déploiement (cloud/sur site/périphérie) et les stratégies de migration. Comprend des implémentations de référence et des exemples de code.",
+          "pages": "28 pages",
+          "format": "PDF",
+          "category": "TECHNIQUE",
+          "topics": [
+            "Intégration API",
+            "Architecture de sécurité",
+            "Modèles de déploiement",
+            "Stratégies de migration"
+          ]
+        },
+        {
+          "title": "Guide de conformité et réglementation TAK Asie-Pacifique",
+          "description": "Guide complet des exigences réglementaires, des considérations de souveraineté des données et des cadres de conformité pour les déploiements TAK en Asie-Pacifique. Couvre Singapour, Hong Kong, le Japon, l'Australie et les exigences régionales. Comprend des listes de vérification de conformité et des conseils de certification.",
+          "pages": "22 pages",
+          "format": "PDF",
+          "category": "CONFORMITÉ",
+          "topics": [
+            "Réglementations régionales",
+            "Souveraineté des données",
+            "Certifications de sécurité",
+            "Cadres de conformité"
+          ]
+        },
+        {
+          "title": "Meilleures pratiques d'administration système TAK",
+          "description": "Manuel d'opérations pour les administrateurs système TAK. Couvre la surveillance, les stratégies de sauvegarde, l'optimisation des performances, les correctifs de sécurité, la gestion des utilisateurs, la configuration de fédération et le dépannage. Comprend des scripts d'automatisation et des guides opérationnels.",
+          "pages": "36 pages",
+          "format": "PDF",
+          "category": "OPÉRATIONS",
+          "topics": [
+            "Surveillance système",
+            "Sauvegarde et récupération",
+            "Optimisation des performances",
+            "Opérations de sécurité"
+          ]
+        }
+      ],
+      "bottomCta": {
+        "title": "Besoin d'une analyse personnalisée pour votre organisation ?",
+        "description": "Notre équipe de conseil TAK peut fournir des évaluations sur mesure, une analyse ROI et une planification de déploiement spécifiques à vos exigences opérationnelles.",
+        "button": "Planifier une consultation"
+      },
+      "form": {
+        "header": "Télécharger la ressource",
+        "fields": {
+          "firstName": "Prénom *",
+          "lastName": "Nom *",
+          "email": "Email *",
+          "company": "Nom de l'entreprise *",
+          "jobTitle": "Titre du poste",
+          "role": "Rôle professionnel *",
+          "currentStage": "Étape actuelle"
+        },
+        "roleOptions": {
+          "placeholder": "Sélectionnez votre rôle",
+          "support": "Support",
+          "sales": "Ventes",
+          "retired": "Retraité",
+          "research": "Recherche",
+          "recruiting": "Recrutement",
+          "productManagement": "Gestion de produit",
+          "marketing": "Marketing",
+          "it": "IT",
+          "humanResources": "Ressources humaines",
+          "finance": "Finance",
+          "executiveLeadership": "Direction exécutive",
+          "engineering": "Ingénierie",
+          "education": "Éducation",
+          "design": "Design",
+          "customerSuccess": "Succès client",
+          "consulting": "Conseil",
+          "businessDevelopment": "Développement commercial",
+          "other": "Autre"
+        },
+        "stageOptions": {
+          "placeholder": "Sélectionnez l'étape...",
+          "researching": "Recherche de solutions",
+          "evaluating": "Évaluation de fournisseurs",
+          "readyToPurchase": "Prêt à acheter",
+          "alreadyUsingTAK": "Utilise déjà TAK"
+        },
+        "submit": "Télécharger le PDF →",
+        "submitting": "Traitement...",
+        "privacy": "Nous respectons votre vie privée. Vos informations ne seront utilisées que pour vous envoyer des ressources et mises à jour TAK pertinentes.",
+        "success": {
+          "title": "Téléchargement en cours...",
+          "message": "Votre téléchargement devrait commencer automatiquement. Vérifiez votre email pour des ressources supplémentaires."
+        }
+      }
+    },
+    "labels": {
+      "popular": "POPULAIRE",
+      "recommended": "RECOMMANDÉ"
+    }
   }
 }
