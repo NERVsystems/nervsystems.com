@@ -292,5 +292,455 @@
     },
     "copyright": "© 2025 NERV Systems. 保留所有权利。",
     "taglineBottom": "为战术边缘而生"
+  },
+  "takSolutions": {
+    "hero": {
+      "eyebrow": "亚太地区TAK解决方案",
+      "title": "完整TAK/ATAK",
+      "titleLine2": "解决方案与服务",
+      "subtitle": "为亚太地区的军事、执法和应急响应团队提供专业的TAK服务器托管、ATAK部署咨询、系统管理和培训。",
+      "features": {
+        "hosting": "托管TAK托管 起价$495/月",
+        "aiEnhanced": "NERVA AI增强",
+        "deployment": "专业TAK部署",
+        "training": "ATAK培训计划"
+      },
+      "cta": {
+        "quote": "申请报价",
+        "viewServices": "查看服务"
+      }
+    },
+    "services": {
+      "title": "亚太地区专业TAK解决方案",
+      "subtitle": "NERV Systems提供全面的TAK（团队感知套件）和ATAK（Android团队感知套件）解决方案，包括托管TAK服务器托管、ATAK部署咨询、TAK系统管理、操作员培训计划和自定义TAK插件开发。我们的AI增强TAK平台将传统TAK功能与NERVA智能自动化相结合。",
+      "hosting": {
+        "title": "托管TAK服务器托管",
+        "description": "企业级TAK服务器托管，99.9%正常运行时间SLA。我们的托管TAK托管服务消除了TAK服务器管理的复杂性，同时通过NERVA集成提供AI增强功能。非常适合在军事、执法、应急管理和公共安全行动中部署TAK/ATAK系统的组织。",
+        "tiers": {
+          "starter": {
+            "name": "入门版",
+            "price": "$495",
+            "perMonth": "/月",
+            "users": "最多50个TAK用户",
+            "nerva": "NERVA Lite（3项AI功能）",
+            "features": [
+              "基础TAK服务器部署",
+              "包含标准ATAK插件",
+              "99% TAK服务器正常运行时间SLA",
+              "TAK问题的电子邮件支持",
+              "每月TAK安全补丁"
+            ],
+            "cta": "开始使用TAK"
+          },
+          "professional": {
+            "name": "专业版",
+            "price": "$1,495",
+            "perMonth": "/月",
+            "users": "最多250个ATAK用户",
+            "nerva": "完整NERVA（全部6项AI功能）",
+            "badge": "热门",
+            "features": [
+              "企业级TAK服务器",
+              "高级ATAK插件",
+              "99.9% TAK正常运行时间SLA",
+              "24/7 TAK支持",
+              "TAK联邦支持",
+              "AI系统健康监控"
+            ],
+            "cta": "开始专业版TAK"
+          },
+          "enterprise": {
+            "name": "企业版",
+            "price": "定制",
+            "users": "1,000+个TAK/ATAK用户",
+            "nerva": "定制NERVA + 培训",
+            "features": [
+              "定制TAK基础设施",
+              "白标TAK选项",
+              "99.99% TAK正常运行时间SLA",
+              "专属TAK支持团队",
+              "多区域TAK部署",
+              "TAK合规包"
+            ],
+            "cta": "联系企业版TAK"
+          }
+        },
+        "footer": "所有TAK托管计划包括：SSL证书、自动备份、DDoS保护和TAK.gov更新访问"
+      },
+      "deployment": {
+        "title": "TAK部署咨询",
+        "description": "从初步需求评估到全面运营能力的专业TAK部署服务。我们的TAK咨询团队在为国防、执法和应急管理组织部署ATAK系统方面拥有丰富的经验。每次TAK部署都包括AI能力集成路线图，展示NERVA如何增强您的TAK操作。",
+        "tiers": {
+          "assessment": {
+            "name": "TAK评估",
+            "price": "$4,500",
+            "description": "1天现场TAK评估",
+            "features": [
+              "TAK需求评估",
+              "TAK基础设施设计",
+              "ATAK用户需求",
+              "TAK插件选择指导",
+              "30天TAK支持"
+            ],
+            "cta": "申请TAK评估"
+          },
+          "deployment": {
+            "name": "TAK部署",
+            "price": "$15,000",
+            "description": "完整TAK系统设置",
+            "badge": "热门",
+            "features": [
+              "完整TAK服务器部署（100个用户）",
+              "ATAK插件安装",
+              "TAK系统集成",
+              "基础ATAK操作员培训",
+              "90天TAK优先支持"
+            ],
+            "cta": "部署TAK系统"
+          },
+          "enterprise": {
+            "name": "企业TAK",
+            "price": "$45,000+",
+            "description": "大规模TAK部署",
+            "features": [
+              "大型TAK部署（100+用户）",
+              "AI集成路线图",
+              "定制TAK插件开发",
+              "高级ATAK培训（3天）",
+              "180天专属TAK支持"
+            ],
+            "cta": "规划企业TAK"
+          }
+        }
+      },
+      "training": {
+        "title": "TAK与ATAK培训计划",
+        "description": "全面的TAK操作员培训和ATAK认证计划。我们的TAK培训涵盖从基础ATAK界面操作到使用NERVA AI辅助的高级任务规划的所有内容。团队培训享有批量折扣：5-10名学员享受10%折扣，11-20名学员享受20%折扣，21名以上学员享受30%折扣。",
+        "courses": {
+          "fundamentals": {
+            "name": "TAK基础",
+            "price": "$595",
+            "perStudent": "/学员",
+            "description": "1天ATAK基础课程",
+            "cta": "报名TAK培训"
+          },
+          "nervaAI": {
+            "name": "NERVA AI培训",
+            "price": "$795",
+            "perStudent": "/学员",
+            "description": "1天AI增强TAK课程",
+            "badge": "推荐",
+            "cta": "报名AI培训"
+          },
+          "advanced": {
+            "name": "高级TAK操作",
+            "price": "$1,495",
+            "perStudent": "/学员",
+            "description": "2天高级ATAK课程",
+            "cta": "报名高级培训"
+          }
+        }
+      }
+    },
+    "integration": {
+      "title": "为什么选择NERV的TAK解决方案？",
+      "subtitle": "与传统TAK托管提供商不同，NERV Systems将专业的TAK部署服务与AI驱动的智能相结合。每个TAK解决方案都包括NERVA集成，将您的TAK/ATAK系统从基本的态势感知转变为智能决策支持平台。",
+      "benefits": [
+        {
+          "number": "01",
+          "title": "AI增强TAK平台",
+          "description": "NERVA为您的TAK系统增加自主任务规划、自动CASEVAC协调、威胁情报和实时决策支持"
+        },
+        {
+          "number": "02",
+          "title": "亚太地区专业知识",
+          "description": "在新加坡、香港、日本和更广泛的亚太地区的本地TAK部署专业知识，了解区域要求"
+        },
+        {
+          "number": "03",
+          "title": "完整TAK生命周期支持",
+          "description": "从初步TAK评估到部署、培训和持续系统管理——为您的整个TAK旅程提供全面支持"
+        },
+        {
+          "number": "04",
+          "title": "企业级TAK基础设施",
+          "description": "99.9%正常运行时间SLA、自动TAK备份、DDoS保护、SSL证书，并符合TAK.gov安全标准"
+        },
+        {
+          "number": "05",
+          "title": "灵活的TAK部署选项",
+          "description": "云托管TAK、本地TAK服务器、混合TAK架构，或使用我们的头盔内GPU硬件的边缘部署TAK系统"
+        }
+      ],
+      "useCases": {
+        "military": {
+          "title": "军事行动TAK",
+          "description": "为指挥控制、ISR行动、近距离空中支援、CASEVAC协调和多域行动部署TAK/ATAK系统，配备AI增强的任务规划。",
+          "tags": [
+            "C2",
+            "ISR",
+            "CASEVAC",
+            "CAS"
+          ]
+        },
+        "lawEnforcement": {
+          "title": "执法TAK",
+          "description": "用于战术行动、SWAT协调、活动安全、边境巡逻和机构间信息共享的ATAK解决方案，具有实时态势感知。",
+          "tags": [
+            "SWAT",
+            "安全",
+            "巡逻"
+          ]
+        },
+        "emergency": {
+          "title": "应急管理TAK",
+          "description": "用于灾难响应、搜救（SAR）、消防行动、医疗协调和多机构事件管理的应急响应TAK系统。",
+          "tags": [
+            "SAR",
+            "消防",
+            "EMS"
+          ]
+        }
+      }
+    },
+    "competitive": {
+      "eyebrow": "竞争优势",
+      "title": "为什么选择NERV的TAK解决方案？",
+      "subtitle": "传统TAK托管提供商提供基础设施。NERV提供智能。看看我们的AI增强TAK平台与传统TAK解决方案提供商的比较。",
+      "tableHeaders": {
+        "capability": "能力",
+        "traditional": "传统TAK提供商",
+        "nerv": "NERV TAK解决方案"
+      },
+      "comparisons": [
+        {
+          "category": "AI功能",
+          "traditional": "手动任务规划和分析",
+          "nerv": "使用NERVA AI的自主任务规划：自动CASEVAC、威胁情报、SAR计算"
+        },
+        {
+          "category": "响应时间",
+          "traditional": "24-48小时支持响应",
+          "nerv": "24/7实时支持，配备AI系统监控和预测警报"
+        },
+        {
+          "category": "亚太地区存在",
+          "traditional": "有限的区域支持，美国基础设施",
+          "nerv": "新加坡、香港的本地TAK托管，区域合规专业知识"
+        },
+        {
+          "category": "TAK集成",
+          "traditional": "标准TAK服务器部署",
+          "nerv": "增强的TAK与NERVA集成、智能数据融合、自然语言界面"
+        },
+        {
+          "category": "边缘计算",
+          "traditional": "仅云或静态本地部署",
+          "nerv": "灵活：云、本地、混合或头盔内GPU边缘部署"
+        },
+        {
+          "category": "培训计划",
+          "traditional": "通用TAK操作员培训",
+          "nerv": "TAK基础 + NERVA AI助手培训 + 使用AI的高级任务规划"
+        },
+        {
+          "category": "系统管理",
+          "traditional": "手动补丁和监控",
+          "nerv": "AI驱动监控、自动备份、预测性维护、智能警报"
+        },
+        {
+          "category": "插件开发",
+          "traditional": "仅标准TAK插件",
+          "nerv": "定制NERVA集成插件，具有AI功能和智能自动化"
+        }
+      ],
+      "cta": {
+        "title": "准备升级您的TAK基础设施？",
+        "description": "开始使用NERV的AI增强TAK平台，体验智能基础设施带来的不同。",
+        "primaryButton": "查看定价与服务",
+        "secondaryButton": "下载比较指南"
+      }
+    },
+    "resources": {
+      "eyebrow": "免费资源",
+      "title": "TAK情报库",
+      "subtitle": "下载全面的指南、技术文档和战略资源，以加速您的TAK部署并最大化AI集成的投资回报率。",
+      "items": [
+        {
+          "title": "战术AI投资回报率计算器与指南",
+          "description": "全面分析战术行动AI集成的投资回报率。计算自动任务规划、缩短规划时间、提高决策准确性和增强作战节奏带来的成本节省。包括真实案例研究和部署场景。",
+          "pages": "24页",
+          "format": "PDF",
+          "category": "投资回报率",
+          "topics": [
+            "成本效益分析",
+            "AI自动化节省",
+            "部署时间表",
+            "性能指标"
+          ]
+        },
+        {
+          "title": "TAK与商业替代方案：完整比较",
+          "description": "深入比较TAK/ATAK与商业C2平台、应急管理系统和专有解决方案。涵盖功能、总拥有成本、安全考虑、互操作性和集成能力。包括平台选择的决策框架。",
+          "pages": "32页",
+          "format": "PDF",
+          "category": "比较",
+          "topics": [
+            "平台比较矩阵",
+            "总拥有成本分析",
+            "安全比较",
+            "集成能力"
+          ]
+        },
+        {
+          "title": "TAK部署检查清单：完整实施指南",
+          "description": "TAK/ATAK实施的分步部署检查清单。涵盖需求收集、基础设施规划、安全配置、用户入职、培训计划和上线程序。包括模板、配置示例和常见陷阱规避。",
+          "pages": "18页",
+          "format": "PDF",
+          "category": "部署",
+          "topics": [
+            "部署前规划",
+            "基础设施设置",
+            "安全加固",
+            "用户培训计划"
+          ]
+        },
+        {
+          "title": "NERVA AI集成架构指南",
+          "description": "NERVA与现有TAK部署集成的技术架构文档。涵盖API规范、数据流、安全架构、部署模式（云/本地/边缘）和迁移策略。包括参考实现和代码示例。",
+          "pages": "28页",
+          "format": "PDF",
+          "category": "技术",
+          "topics": [
+            "API集成",
+            "安全架构",
+            "部署模式",
+            "迁移策略"
+          ]
+        },
+        {
+          "title": "亚太地区TAK合规与法规指南",
+          "description": "亚太地区TAK部署的监管要求、数据主权考虑和合规框架的综合指南。涵盖新加坡、香港、日本、澳大利亚和区域要求。包括合规检查清单和认证指导。",
+          "pages": "22页",
+          "format": "PDF",
+          "category": "合规",
+          "topics": [
+            "区域法规",
+            "数据主权",
+            "安全认证",
+            "合规框架"
+          ]
+        },
+        {
+          "title": "TAK系统管理最佳实践",
+          "description": "TAK系统管理员操作手册。涵盖监控、备份策略、性能调优、安全补丁、用户管理、联邦设置和故障排除。包括自动化脚本和操作手册。",
+          "pages": "36页",
+          "format": "PDF",
+          "category": "操作",
+          "topics": [
+            "系统监控",
+            "备份与恢复",
+            "性能优化",
+            "安全操作"
+          ]
+        }
+      ],
+      "downloadButton": "免费下载PDF →",
+      "covers": "涵盖内容：",
+      "cta": {
+        "title": "需要为您的组织定制分析？",
+        "description": "我们的TAK咨询团队可以提供针对您的作战要求的定制评估、投资回报率分析和部署规划。",
+        "button": "预约咨询"
+      },
+      "form": {
+        "title": "下载资源",
+        "firstName": "名字",
+        "lastName": "姓氏",
+        "email": "电子邮件",
+        "company": "公司名称",
+        "jobTitle": "职位",
+        "role": "职业角色",
+        "selectRole": "选择您的角色",
+        "roles": {
+          "support": "支持",
+          "sales": "销售",
+          "retired": "退休",
+          "research": "研究",
+          "recruiting": "招聘",
+          "productManagement": "产品管理",
+          "marketing": "市场营销",
+          "it": "IT",
+          "hr": "人力资源",
+          "finance": "财务",
+          "executiveLeadership": "高管领导",
+          "engineering": "工程",
+          "education": "教育",
+          "design": "设计",
+          "customerSuccess": "客户成功",
+          "consulting": "咨询",
+          "businessDevelopment": "业务发展",
+          "other": "其他"
+        },
+        "currentStage": "当前阶段",
+        "selectStage": "选择阶段...",
+        "stages": {
+          "researching": "研究解决方案",
+          "evaluating": "评估供应商",
+          "readyToPurchase": "准备购买",
+          "alreadyUsingTAK": "已在使用TAK"
+        },
+        "downloadButton": "下载PDF →",
+        "processing": "处理中...",
+        "privacy": "我们尊重您的隐私。您的信息仅用于向您发送相关的TAK资源和更新。",
+        "successTitle": "下载开始...",
+        "successMessage": "您的下载应自动开始。请检查您的电子邮件以获取其他资源。",
+        "required": "*"
+      }
+    },
+    "faq": {
+      "eyebrow": "常见问题",
+      "title": "TAK解决方案FAQ",
+      "subtitle": "关于TAK/ATAK托管、部署、培训和NERVA AI集成的常见问题",
+      "items": [
+        {
+          "question": "什么是TAK/ATAK，为什么我需要它？",
+          "answer": "TAK（团队感知套件）是美国空军研究实验室为军事和战术行动开发的地理空间协作平台。ATAK（Android团队感知套件）是提供实时态势感知、地图绘制、位置共享和任务协调的移动Android版本。当组织需要跨分布式团队进行安全、实时的地理空间协调时——无论是军事行动、执法战术团队、搜救还是应急管理——都需要TAK/ATAK。NERV通过NERVA AI功能增强标准TAK部署，实现智能任务规划和自动决策支持。"
+        },
+        {
+          "question": "TAK服务器托管有哪些要求？",
+          "answer": "专业TAK服务器托管需要：TAK.gov帐户用于官方TAK服务器软件下载、用于加密TAK通信的SSL证书、99.9%正常运行时间的专用服务器基础设施、用于作战安全的DDoS保护、用于TAK数据的自动备份系统，以及TAK服务器配置和系统管理专业知识。NERV的托管TAK托管包括所有这些要求，加上通过NERVA集成的AI增强功能，小团队起价$495/月，大规模TAK部署起价$1,495/月。"
+        },
+        {
+          "question": "TAK部署需要多长时间？",
+          "answer": "TAK部署时间表因复杂性而异。基础TAK服务器设置可在1-2周内完成简单部署。包括服务器配置、客户端设备设置、用户培训、插件集成和自定义TAK数据包开发的全面TAK/ATAK实施通常需要4-8周。具有广泛定制、多站点架构、旧系统集成和高级ATAK插件开发的企业TAK部署可能需要3-6个月。NERV的TAK部署咨询服务包括详细的项目规划、时间表估算和整个TAK实施过程的里程碑跟踪。"
+        },
+        {
+          "question": "你们提供ATAK培训和认证吗？",
+          "answer": "是的，NERV为所有技能水平提供全面的ATAK培训计划。我们的TAK操作员基础课程（每位操作员$595）涵盖ATAK界面导航、地图管理、标记放置、位置共享和基本TAK通信——非常适合新ATAK用户。高级TAK操作课程（每位操作员$995）包括ATAK中的任务规划、数据包创建、插件使用、TAK视频集成和战术工作流程。对于技术团队，我们的TAK管理员认证（每位管理员$1,495）提供TAK服务器管理、用户管理、安全配置、插件部署和系统故障排除的深入培训。所有ATAK培训都包括使用真实TAK/ATAK系统的实践练习。"
+        },
+        {
+          "question": "NERV的TAK解决方案与其他TAK托管提供商有何不同？",
+          "answer": "与传统TAK托管公司不同，NERV将专业TAK部署服务与通过NERVA集成的AI驱动智能相结合。每个NERV TAK解决方案都包括自主任务规划、自动CASEVAC协调、实时威胁情报、智能地理围栏和3D空域可视化——标准TAK提供商无法提供的功能。我们还专注于亚太地区，在新加坡提供本地TAK服务器托管、了解区域合规要求以及亚洲专注的TAK部署专业知识。此外，我们灵活的部署选项包括云TAK托管、本地TAK服务器、混合架构以及使用我们支持GPU的硬件的边缘部署TAK系统。"
+        },
+        {
+          "question": "你们可以开发定制TAK插件吗？",
+          "answer": "当然可以。NERV作为TAK解决方案工程服务的一部分提供专业TAK插件开发服务。我们为Android设备开发定制ATAK插件、为后端集成开发TAK服务器插件、为Windows环境开发WinTAK插件以及为iOS开发iTAK插件。我们的TAK插件开发专业知识包括：与现有企业系统集成、定制数据源和数据流、专用任务规划工具、自动化工作流程插件、传感器和硬件集成，以及通过NERVA的AI增强TAK功能。TAK插件开发项目起价$15,000用于基础插件，综合TAK平台扩展和持续支持最高$100,000+。"
+        },
+        {
+          "question": "你们提供TAK系统管理支持吗？",
+          "answer": "是的，我们所有托管TAK托管计划都包括全面的TAK系统管理。我们的TAK系统管理服务涵盖：TAK服务器软件更新和补丁、用户帐户管理和访问控制、SSL证书管理和续订、TAK数据包部署和更新、插件安装和配置、性能监控和优化、安全审计和合规性、备份验证和灾难恢复，以及24/7 TAK系统监控。对于运行自己TAK基础设施的组织，我们还提供独立TAK系统管理咨询，费用为$195/小时，或月度TAK支持保留服务，起价$2,500/月。"
+        },
+        {
+          "question": "你们支持哪些TAK/ATAK用例？",
+          "answer": "NERV支持国防、公共安全和应急服务的全方位TAK/ATAK应用。军事TAK用例包括：指挥与控制（C2）、情报/监视/侦察（ISR）、近距离空中支援（CAS）协调、CASEVAC/MEDEVAC行动、多域行动和训练演习。执法ATAK应用包括：SWAT团队协调、活动安全管理、边境巡逻行动、逃犯追踪和机构间协作。应急管理TAK部署涵盖：搜救（SAR）、野火响应、灾难救援协调、EMS行动和多机构事件管理。每个用例都通过NERVA AI功能增强，实现更智能的任务执行。"
+        },
+        {
+          "question": "NERVA AI集成如何增强TAK系统？",
+          "answer": "NERVA将标准TAK/ATAK从基本态势感知转变为智能决策支持平台。NERVA实时分析TAK数据以提供：具有优化路线和时间的自主任务规划、计算最佳着陆区位置和飞行路径的自动CASEVAC协调、具有威胁预测和对抗措施建议的敌对单位情报、SAR行动的智能搜索区域计算、具有空域违规自动警报的地理围栏，以及用于无人机冲突解决的3D空域可视化。NERVA在云基础设施、本地服务器或我们的边缘部署GPU硬件上运行，通过标准TAK协议和API与现有TAK服务器部署无缝集成。"
+        }
+      ],
+      "ctaQuestion": "对TAK托管、ATAK部署或NERVA集成有更多问题？",
+      "ctaButton": "联系我们的TAK专家"
+    }
   }
 }
