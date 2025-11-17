@@ -1,296 +1,296 @@
 {
   "nav": {
-    "features": "Features",
-    "platform": "Platform",
-    "takSolutions": "TAK Solutions",
-    "contact": "Contact",
-    "requestDemo": "Request Demo"
+    "features": "คุณสมบัติ",
+    "platform": "แพลตฟอร์ม",
+    "takSolutions": "โซลูชัน TAK",
+    "contact": "ติดต่อเรา",
+    "requestDemo": "ขอทดลองใช้"
   },
   "hero": {
-    "title": "Tactical AI for Mission Success",
-    "subtitle": "TAK-native AI-powered decision support that turns information overload into clear action for critical operations.",
+    "title": "AI ยุทธวิธีเพื่อความสำเร็จของภารกิจ",
+    "subtitle": "ระบบสนับสนุนการตัดสินใจที่ขับเคลื่อนด้วย AI แบบ TAK-native ที่เปลี่ยนข้อมูลล้นหลามให้เป็นแผนปฏิบัติการที่ชัดเจนสำหรับภารกิจวิกฤติ",
     "stats": {
       "planning": {
-        "value": "<30s",
-        "label": "Planning Cycles"
+        "value": "<30 วินาที",
+        "label": "รอบการวางแผน"
       },
       "edge": {
         "value": "100%",
-        "label": "Edge Capable"
+        "label": "รองรับ Edge"
       },
       "tak": {
         "value": "TAK",
-        "label": "Native Integration"
+        "label": "การผสานรวมดั้งเดิม"
       }
     },
     "cta": {
-      "demo": "Request Demo",
-      "learn": "Learn More"
+      "demo": "ขอทดลองใช้",
+      "learn": "เรียนรู้เพิ่มเติม"
     }
   },
   "nerva": {
-    "tagline": "Turning bad guy OODA loops to stone",
-    "subtitle": "Your AI Tactical Assistant",
-    "description": "NERVA is an AI extension of your team. Not just situational awareness—{decisionAdvantage}.",
-    "decisionAdvantage": "decision advantage",
+    "tagline": "เปลี่ยนวงจร OODA ของฝ่ายตรงข้ามให้หยุดนิ่ง",
+    "subtitle": "ผู้ช่วยยุทธวิธี AI ของคุณ",
+    "description": "NERVA เป็นส่วนขยาย AI ของทีมคุณ ไม่เพียงแค่การรับรู้สถานการณ์—แต่คือ{decisionAdvantage}",
+    "decisionAdvantage": "ความได้เปรียบในการตัดสินใจ",
     "bottomCta": {
-      "text": "Already using TAK? NERVA makes it intelligent.",
-      "button": "See NERVA in Action"
+      "text": "ใช้ TAK อยู่แล้ว? NERVA ทำให้มันอัจฉริยะขึ้น",
+      "button": "ดู NERVA ในการปฏิบัติการ"
     },
     "capabilities": {
       "uas": {
         "icon": "UAS",
-        "title": "Autonomous Drone Operations",
-        "command": "\"NERVA, launch reconnaissance pattern Alpha\"",
-        "description": "Autonomous flight path planning for ISR, reconnaissance, and counter-UAS operations. NERVA monitors drone telemetry, issues direct commands, and can instantly retask friendly UAS from surveillance to intercept missions—plotting engagement courses for hostile drone neutralization or critical asset defense.",
+        "title": "ปฏิบัติการโดรนอัตโนมัติ",
+        "command": "\"NERVA เปิดรูปแบบการลาดตระเวนแบบ Alpha\"",
+        "description": "การวางแผนเส้นทางบินอัตโนมัติสำหรับภารกิจ ISR, การลาดตระเวน และการต่อต้าน UAS NERVA ติดตามข้อมูลทางไกลโดรน ออกคำสั่งโดยตรง และสามารถมอบหมายภารกิจ UAS ฝ่ายเราใหม่ทันทีจากการเฝ้าระวังเป็นภารกิจสกัดกั้น—วางแผนเส้นทางการสกัดกั้นเพื่อทำลายโดรนข้าศึกหรือป้องกันทรัพย์สินสำคัญ",
         "features": [
-          "Autonomous flight planning",
-          "Real-time telemetry monitoring",
-          "Automated intercept planning",
-          "UAS command & control"
+          "การวางแผนเที่ยวบินอัตโนมัติ",
+          "การติดตามข้อมูลทางไกลแบบเรียลไทม์",
+          "การวางแผนสกัดกั้นอัตโนมัติ",
+          "การบังคับบัญชา UAS"
         ]
       },
       "medevac": {
         "icon": "MEDEVAC",
-        "title": "Automated CASEVAC Coordination",
-        "command": "\"NERVA, we need a CASEVAC!\"",
-        "description": "Identifies optimal helicopter landing zones in under 30 seconds, automatically notifies medical and aviation teams, monitors rescue progress, and updates all TAK clients in real-time.",
+        "title": "การประสานงาน CASEVAC อัตโนมัติ",
+        "command": "\"NERVA เราต้องการ CASEVAC!\"",
+        "description": "ระบุจุดลงจอดเฮลิคอปเตอร์ที่เหมาะสมภายในเวลาไม่ถึง 30 วินาที แจ้งเตือนทีมแพทย์และการบินโดยอัตโนมัติ ติดตามความคืบหน้าการกู้ภัย และอัปเดตผู้ใช้ TAK ทั้งหมดแบบเรียลไทม์",
         "features": [
-          "LZ identification <30s",
-          "Automatic team notifications",
-          "Real-time monitoring",
-          "TAK-wide updates"
+          "การระบุ LZ <30 วินาที",
+          "การแจ้งเตือนทีมอัตโนมัติ",
+          "การติดตามแบบเรียลไทม์",
+          "การอัปเดตทั่วทั้ง TAK"
         ]
       },
       "threat": {
         "icon": "THREAT",
-        "title": "Hostile Unit Intelligence",
-        "command": "Identify enemy unit → NERVA acts",
-        "description": "Automatic lookup from Jane's Defence databases, plots range-of-fire rings, alerts all units in danger zones, and provides recommended countermeasures based on threat capabilities.",
+        "title": "ข่าวกรองหน่วยข้าศึก",
+        "command": "ระบุหน่วยข้าศึก → NERVA ดำเนินการ",
+        "description": "ค้นหาอัตโนมัติจากฐานข้อมูล Jane's Defence วางแผนวงล้อมระยะยิง แจ้งเตือนทุกหน่วยในพื้นที่อันตราย และให้คำแนะนำมาตรการตอบโต้ตามความสามารถของภัยคุกคาม",
         "features": [
-          "Jane's database integration",
-          "Range-of-fire analysis",
-          "Automatic alerts",
-          "Countermeasure recommendations"
+          "การผสานรวมฐานข้อมูล Jane's",
+          "การวิเคราะห์ระยะยิง",
+          "การแจ้งเตือนอัตโนมัติ",
+          "คำแนะนำมาตรการตอบโต้"
         ]
       },
       "sar": {
         "icon": "SAR",
-        "title": "Search Area Calculation",
-        "command": "\"NERVA, calculate search area for missing unit\"",
-        "description": "Probability-based search zone generation using terrain analysis, weather conditions, and unit capabilities. Works for both military operations and civilian Search & Rescue (SAR).",
+        "title": "การคำนวณพื้นที่ค้นหา",
+        "command": "\"NERVA คำนวณพื้นที่ค้นหาสำหรับหน่วยที่สูญหาย\"",
+        "description": "การสร้างเขตค้นหาตามความน่าจะเป็นโดยใช้การวิเคราะห์ภูมิประเทศ สภาพอากาศ และความสามารถของหน่วย ทำงานได้ทั้งปฏิบัติการทางทหารและการค้นหาและกู้ภัยพลเรือน (SAR)",
         "features": [
-          "Probabilistic modeling",
-          "Terrain analysis",
-          "Resource allocation",
-          "Military & civilian SAR"
+          "การสร้างแบบจำลองความน่าจะเป็น",
+          "การวิเคราะห์ภูมิประเทศ",
+          "การจัดสรรทรัพยากร",
+          "SAR ทางทหารและพลเรือน"
         ]
       },
       "alert": {
         "icon": "ALERT",
-        "title": "Geofence Enforcement & Response",
-        "command": "\"NERVA, alert if any track enters the exclusion zone\"",
-        "description": "Virtual perimeter defense with 2D/3D geofence monitoring. NERVA integrates with third-party sensors (ADS-B, RF detection, radar) to track aircraft and UAS. When any track violates virtual boundaries, NERVA instantly alerts all networked assets and coordinates response—from friendly UAS intercepts to integration with C-UAS effectors.",
+        "title": "การบังคับใช้และตอบสนอง Geofence",
+        "command": "\"NERVA แจ้งเตือนถ้ามีเป้าหมายเข้าสู่เขตห้าม\"",
+        "description": "การป้องกันขอบเขตเสมือนด้วยการติดตาม geofence แบบ 2D/3D NERVA ผสานรวมกับเซ็นเซอร์บุคคลที่สาม (ADS-B, การตรวจจับ RF, เรดาร์) เพื่อติดตามอากาศยานและ UAS เมื่อเป้าหมายใดละเมิดขอบเขตเสมือน NERVA แจ้งเตือนทรัพย์สินเครือข่ายทั้งหมดทันทีและประสานงานการตอบสนอง—ตั้งแต่การสกัดกั้น UAS ฝ่ายเราไปจนถึงการผสานรวมกับเครื่องมือ C-UAS",
         "features": [
-          "2D/3D virtual geofences",
-          "Third-party sensor integration",
-          "Instant network-wide alerts",
-          "Coordinated response planning"
+          "Geofence เสมือนแบบ 2D/3D",
+          "การผสานรวมเซ็นเซอร์บุคคลที่สาม",
+          "การแจ้งเตือนทั่วเครือข่ายทันที",
+          "การวางแผนการตอบสนองประสานงาน"
         ]
       },
       "airspace": {
         "icon": "AIRSPACE",
-        "title": "3D Airspace Visualization",
-        "command": "Show chart → NERVA renders 3D airspace",
-        "description": "Multi-modal rendering of complex airspace from sectional charts, NOTAMs, and TFRs. NERVA extracts geospatial data, visualizes 3D restricted zones, and overlays real-time UAS tracks for total airspace awareness—critical for counter-UAS operations and flight deconfliction.",
+        "title": "การแสดงภาพน่านฟ้า 3D",
+        "command": "แสดงแผนภูมิ → NERVA สร้างน่านฟ้า 3D",
+        "description": "การสร้างภาพแบบหลายโหมดของน่านฟ้าที่ซับซ้อนจากแผนภูมิส่วน NOTAM และ TFR NERVA สกัดข้อมูลเชิงพื้นที่ แสดงภาพเขตจำกัด 3D และซ้อนทับแทร็ก UAS แบบเรียลไทม์เพื่อการรับรู้น่านฟ้าทั้งหมด—สำคัญสำหรับปฏิบัติการต่อต้าน UAS และการป้องกันการปะทะทางอากาศ",
         "features": [
-          "AI chart interpretation",
-          "3D restricted zone rendering",
-          "Real-time track overlay",
-          "C-UAS airspace awareness"
+          "การตีความแผนภูมิ AI",
+          "การสร้างเขตจำกัด 3D",
+          "การซ้อนทับแทร็กแบบเรียลไทม์",
+          "การรับรู้น่านฟ้า C-UAS"
         ]
       }
     },
     "videoPlaceholder": {
-      "title": "Demo Video",
-      "comingSoon": "[Coming Soon]"
+      "title": "วิดีโอสาธิต",
+      "comingSoon": "[เร็วๆ นี้]"
     }
   },
   "features": {
-    "title": "Complete Platform",
-    "subtitle": "Software + Hardware for Tactical Edge Deployment",
+    "title": "แพลตฟอร์มครบวงจร",
+    "subtitle": "ซอฟต์แวร์ + ฮาร์ดแวร์สำหรับการปรับใช้ Tactical Edge",
     "items": {
       "planning": {
         "icon": "01",
-        "title": "REAL-TIME MISSION PLANNING",
-        "description": "Automated generation of tactical options from live ATAK data. 30-second planning cycles for time-critical operations.",
+        "title": "การวางแผนภารกิจแบบเรียลไทม์",
+        "description": "การสร้างตัวเลือกยุทธวิธีอัตโนมัติจากข้อมูล ATAK สด รอบการวางแผน 30 วินาทีสำหรับปฏิบัติการวิกฤติเวลา",
         "code": "MAGI-01"
       },
       "fusion": {
         "icon": "02",
-        "title": "MULTI-SOURCE INTELLIGENCE FUSION",
-        "description": "Unified analysis across drone feeds, sensor networks, and operator reports. Single operational picture from distributed data sources.",
+        "title": "การผสานรวมข่าวกรองหลายแหล่ง",
+        "description": "การวิเคราะห์แบบรวมทั่วฟีดโดรน เครือข่ายเซ็นเซอร์ และรายงานผู้ปฏิบัติการ ภาพปฏิบัติการเดียวจากแหล่งข้อมูลกระจาย",
         "code": "MAGI-02"
       },
       "assessment": {
         "icon": "03",
-        "title": "AUTONOMOUS ASSESSMENT",
-        "description": "Pattern recognition and anomaly detection for predictive analysis of operational environments.",
+        "title": "การประเมินอัตโนมัติ",
+        "description": "การจดจำรูปแบบและการตรวจจับความผิดปกติสำหรับการวิเคราะห์เชิงคาดการณ์ของสภาพแวดล้อมปฏิบัติการ",
         "code": "MAGI-03"
       },
       "edge": {
         "icon": "04",
         "title": "EDGE COMPUTE",
-        "description": "Field-deployable 'GPU-in-a-helmet' for secure, private, AI at the edge. Operates when connectivity fails.",
+        "description": "'GPU-ในหมวก' ที่สามารถปรับใช้ในสนามสำหรับ AI ที่ปลอดภัย ส่วนตัว ที่ Edge ทำงานได้แม้การเชื่อมต่อขัดข้อง",
         "code": "HARDWARE-01"
       }
     }
   },
   "tak": {
-    "title": "Built for Team Awareness",
-    "subtitle": "Already using TAK for emergency coordination? Perfect. NERV integrates directly with your existing Team Awareness Kit systems.",
+    "title": "สร้างขึ้นเพื่อการรับรู้ของทีม",
+    "subtitle": "ใช้ TAK สำหรับการประสานงานฉุกเฉินอยู่แล้ว? ดีมาก NERV ผสานรวมโดยตรงกับระบบ Team Awareness Kit ที่มีอยู่ของคุณ",
     "integration": {
       "native": {
-        "label": "Native TAK Integration",
-        "description": "Enhances your current workflows"
+        "label": "การผสานรวม TAK ดั้งเดิม",
+        "description": "ปรับปรุงเวิร์กโฟลว์ปัจจุบันของคุณ"
       },
       "noRetraining": {
-        "label": "No Retraining Required",
-        "description": "Familiar interface with AI superpowers"
+        "label": "ไม่ต้องฝึกอบรมใหม่",
+        "description": "อินเทอร์เฟซที่คุ้นเคยพร้อมพลัง AI"
       },
       "realTime": {
-        "label": "Real-Time Data Fusion",
-        "description": "From satellites, drones, and sensor feeds"
+        "label": "การผสานรวมข้อมูลแบบเรียลไทม์",
+        "description": "จากดาวเทียม โดรน และฟีดเซ็นเซอร์"
       },
       "natural": {
-        "label": "Natural Language Interface",
-        "description": "Ask questions, get clear answers"
+        "label": "อินเทอร์เฟซภาษาธรรมชาติ",
+        "description": "ถามคำถาม รับคำตอบที่ชัดเจน"
       },
       "portable": {
-        "label": "Portable Field Deployment",
-        "description": "Works when connectivity fails"
+        "label": "การปรับใช้สนามแบบพกพา",
+        "description": "ทำงานได้แม้การเชื่อมต่อขัดข้อง"
       }
     },
-    "cta": "View Integration Docs"
+    "cta": "ดูเอกสารการผสานรวม"
   },
   "takCallout": {
-    "label": "TAK/ATAK Solutions",
-    "title": "Looking for TAK Hosting & Deployment?",
-    "description": "NERV provides complete TAK/ATAK solutions for Asia Pacific: managed TAK server hosting from $495/month, expert deployment consulting, system administration, operator training, and AI-enhanced capabilities through NERVA integration.",
+    "label": "โซลูชัน TAK/ATAK",
+    "title": "มองหาการโฮสต์และการปรับใช้ TAK?",
+    "description": "NERV ให้บริการโซลูชัน TAK/ATAK ครบวงจรสำหรับเอเชียแปซิฟิก: การโฮสต์เซิร์ฟเวอร์ TAK แบบจัดการเริ่มต้น $495/เดือน การให้คำปรึกษาการปรับใช้ผู้เชี่ยวชาญ การบริหารระบบ การฝึกอบรมผู้ปฏิบัติการ และความสามารถที่ปรับปรุงด้วย AI ผ่านการผสานรวม NERVA",
     "benefits": {
       "certified": {
-        "title": "TAK.gov Certified",
-        "description": "Official TAK deployments"
+        "title": "ได้รับการรับรอง TAK.gov",
+        "description": "การปรับใช้ TAK อย่างเป็นทางการ"
       },
       "asiaPacific": {
-        "title": "Asia Pacific Focus",
-        "description": "Regional expertise"
+        "title": "มุ่งเน้นเอเชียแปซิฟิก",
+        "description": "ความเชี่ยวชาญระดับภูมิภาค"
       },
       "aiEnhanced": {
-        "title": "AI-Enhanced",
-        "description": "NERVA integration"
+        "title": "ปรับปรุงด้วย AI",
+        "description": "การผสานรวม NERVA"
       },
       "uptime": {
         "title": "99.9% Uptime",
-        "description": "Enterprise SLA"
+        "description": "SLA ระดับองค์กร"
       }
     },
-    "cta": "Explore TAK Solutions →",
+    "cta": "สำรวจโซลูชัน TAK →",
     "stats": {
       "hosting": {
-        "label": "MANAGED HOSTING",
-        "price": "$495/mo",
-        "description": "Enterprise TAK servers with AI monitoring, 24/7 support, and NERVA integration"
+        "label": "การโฮสต์แบบจัดการ",
+        "price": "$495/เดือน",
+        "description": "เซิร์ฟเวอร์ TAK ระดับองค์กรพร้อมการติดตาม AI, การสนับสนุน 24/7 และการผสานรวม NERVA"
       },
       "deployment": {
-        "label": "DEPLOYMENT",
-        "title": "Full Service",
-        "description": "From initial assessment to go-live: TAK server setup, plugin config, training, and support"
+        "label": "การปรับใช้",
+        "title": "บริการเต็มรูปแบบ",
+        "description": "จากการประเมินเริ่มต้นถึงการเปิดตัว: การติดตั้งเซิร์ฟเวอร์ TAK การกำหนดค่าปลั๊กอิน การฝึกอบรม และการสนับสนุน"
       },
       "training": {
-        "label": "TRAINING",
-        "title": "Certified",
-        "description": "TAK operator fundamentals, advanced operations, and NERVA AI assistant training programs"
+        "label": "การฝึกอบรม",
+        "title": "ได้รับการรับรอง",
+        "description": "พื้นฐานผู้ปฏิบัติการ TAK ปฏิบัติการขั้นสูง และโปรแกรมฝึกอบรมผู้ช่วย AI NERVA"
       }
     }
   },
   "partners": {
-    "title": "Trusted by Leading Organizations",
-    "description": "NERV Systems is backed by NVIDIA Inception, supported by Autodesk Foundation, incubated at National University of Singapore, and affiliated with King's College London War Studies",
+    "title": "ได้รับความไว้วางใจจากองค์กรชั้นนำ",
+    "description": "NERV Systems ได้รับการสนับสนุนโดย NVIDIA Inception สนับสนุนโดย Autodesk Foundation บ่มเพาะที่ National University of Singapore และเป็นพันธมิตรกับ King's College London War Studies",
     "items": {
       "nvidia": {
         "name": "NVIDIA Inception",
-        "description": "Member of NVIDIA Inception Program for AI startups"
+        "description": "สมาชิกโปรแกรม NVIDIA Inception สำหรับสตาร์ทอัพ AI"
       },
       "nus": {
         "name": "National University of Singapore",
-        "description": "Incubated at NUS Enterprise"
+        "description": "บ่มเพาะที่ NUS Enterprise"
       },
       "kcl": {
         "name": "King's College London",
-        "description": "Affiliated with War Studies Department"
+        "description": "เป็นพันธมิตรกับภาควิชา War Studies"
       },
       "autodesk": {
         "name": "Autodesk Foundation",
-        "description": "Supported by Autodesk Foundation"
+        "description": "ได้รับการสนับสนุนโดย Autodesk Foundation"
       }
     }
   },
   "contact": {
-    "label": "Get In Touch",
-    "title": "Ready to Deploy Tactical AI?",
-    "subtitle": "Whether you need NERVA AI integration, TAK solutions, or want to discuss your operational requirements—our team is here to help.",
+    "label": "ติดต่อเรา",
+    "title": "พร้อมที่จะปรับใช้ Tactical AI?",
+    "subtitle": "ไม่ว่าคุณจะต้องการการผสานรวม NERVA AI โซลูชัน TAK หรือต้องการหารือเกี่ยวกับข้อกำหนดปฏิบัติการของคุณ—ทีมของเราพร้อมช่วยเหลือ",
     "form": {
-      "label": "General Inquiry",
-      "title": "Send Us a Message",
-      "description": "Fill out our contact form and our team will respond within 24 hours.",
-      "button": "Contact Us →"
+      "label": "สอบถามทั่วไป",
+      "title": "ส่งข้อความถึงเรา",
+      "description": "กรอกแบบฟอร์มติดต่อของเราและทีมของเราจะตอบกลับภายใน 24 ชั่วโมง",
+      "button": "ติดต่อเรา →"
     },
     "direct": {
-      "label": "Direct Contact",
-      "title": "Reach Out Directly",
+      "label": "ติดต่อโดยตรง",
+      "title": "ติดต่อโดยตรง",
       "email": {
-        "label": "EMAIL",
+        "label": "อีเมล",
         "value": "contact@nervsystems.com"
       },
       "region": {
-        "label": "REGION",
-        "value": "Asia Pacific Operations"
+        "label": "ภูมิภาค",
+        "value": "ปฏิบัติการเอเชียแปซิฟิก"
       },
       "affiliations": {
-        "label": "AFFILIATIONS",
-        "nvidia": "NVIDIA Inception Member",
-        "nus": "NUS Enterprise Incubated",
-        "kcl": "King's College London Incubated"
+        "label": "ความเป็นพันธมิตร",
+        "nvidia": "สมาชิก NVIDIA Inception",
+        "nus": "บ่มเพาะ NUS Enterprise",
+        "kcl": "บ่มเพาะ King's College London"
       }
     },
     "quickLinks": {
-      "title": "Looking for something specific?",
-      "nerva": "NERVA AI Platform",
-      "tak": "TAK Solutions",
-      "resources": "Resources & Guides"
+      "title": "มองหาอะไรเฉพาะเจาะจง?",
+      "nerva": "แพลตฟอร์ม NERVA AI",
+      "tak": "โซลูชัน TAK",
+      "resources": "ทรัพยากรและคู่มือ"
     }
   },
   "footer": {
-    "tagline": "Tactical AI for Mission Planning and Edge Intelligence",
+    "tagline": "Tactical AI สำหรับการวางแผนภารกิจและ Edge Intelligence",
     "navigation": {
-      "title": "Navigation",
+      "title": "นำทาง",
       "nerva": "NERVA AI",
-      "platform": "Platform",
-      "takIntegration": "TAK Integration",
-      "solutions": "Solutions & Services"
+      "platform": "แพลตฟอร์ม",
+      "takIntegration": "การผสานรวม TAK",
+      "solutions": "โซลูชันและบริการ"
     },
     "contact": {
-      "title": "Contact",
-      "email": "Email: contact@nervsystems.com",
-      "region": "Asia Pacific Operations",
+      "title": "ติดต่อ",
+      "email": "อีเมล: contact@nervsystems.com",
+      "region": "ปฏิบัติการเอเชียแปซิฟิก",
       "affiliations": {
-        "nvidia": "NVIDIA Inception Member",
-        "nus": "NUS Enterprise Incubated",
-        "kcl": "King's College London Incubated"
+        "nvidia": "สมาชิก NVIDIA Inception",
+        "nus": "บ่มเพาะ NUS Enterprise",
+        "kcl": "บ่มเพาะ King's College London"
       }
     },
-    "copyright": "© 2025 NERV Systems. All rights reserved.",
-    "taglineBottom": "Built for the tactical edge"
+    "copyright": "© 2025 NERV Systems สงวนลิขสิทธิ์",
+    "taglineBottom": "สร้างขึ้นสำหรับ tactical edge"
   }
 }
