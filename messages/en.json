@@ -271,6 +271,80 @@
       "resources": "Resources & Guides"
     }
   },
+  "takPage": {
+    "hero": {
+      "eyebrow": "TAK Solutions for Asia Pacific",
+      "title": "Complete TAK/ATAK Solutions & Services",
+      "subtitle": "Expert TAK server hosting, ATAK deployment consulting, system administration, and training for military, law enforcement, and emergency response teams across Asia Pacific.",
+      "features": ["Managed TAK Hosting from $495/mo", "AI-Enhanced with NERVA", "Expert TAK Deployment", "ATAK Training Programs"],
+      "cta": {
+        "quote": "Request Quote",
+        "services": "View Services"
+      }
+    },
+    "services": {
+      "intro": {
+        "title": "Professional TAK Solutions for Asia Pacific",
+        "description": "NERV Systems provides comprehensive TAK (Team Awareness Kit) and ATAK (Android Team Awareness Kit) solutions including managed TAK server hosting, ATAK deployment consulting, TAK system administration, operator training programs, and custom TAK plugin development. Our AI-enhanced TAK platform combines traditional TAK capabilities with intelligent automation through NERVA."
+      },
+      "hosting": {
+        "title": "Managed TAK Server Hosting",
+        "description": "Enterprise-grade TAK server hosting with 99.9% uptime SLA. Our managed TAK hosting service eliminates the complexity of TAK server administration while providing AI-enhanced capabilities through NERVA integration. Perfect for organizations deploying TAK/ATAK systems across military, law enforcement, emergency management, and public safety operations.",
+        "footer": "All TAK hosting plans include: SSL certificates, automated backups, DDoS protection, and access to TAK.gov updates"
+      },
+      "deployment": {
+        "title": "TAK Deployment Consulting",
+        "description": "Expert TAK deployment services from initial requirements assessment to full operational capability. Our TAK consulting team brings extensive experience deploying ATAK systems for defense, law enforcement, and emergency management organizations. Every TAK deployment includes an AI capability integration roadmap showing how NERVA enhances your TAK operations."
+      },
+      "training": {
+        "title": "TAK & ATAK Training Programs",
+        "description": "Comprehensive TAK operator training and ATAK certification programs. Our TAK training covers everything from basic ATAK interface operations to advanced mission planning with NERVA AI assistance. Volume discounts available for team training: 10% off for 5-10 students, 20% off for 11-20 students, 30% off for 21+ students."
+      }
+    },
+    "integration": {
+      "title": "Why Choose NERV for TAK Solutions?",
+      "description": "Unlike traditional TAK hosting providers, NERV Systems combines expert TAK deployment services with AI-powered intelligence. Every TAK solution includes NERVA integration, transforming your TAK/ATAK system from basic situational awareness into an intelligent decision support platform."
+    },
+    "faq": {
+      "eyebrow": "Frequently Asked Questions",
+      "title": "TAK Solutions FAQ",
+      "description": "Common questions about TAK/ATAK hosting, deployment, training, and NERVA AI integration",
+      "cta": {
+        "text": "Have more questions about TAK hosting, ATAK deployment, or NERVA integration?",
+        "button": "Contact Our TAK Experts"
+      }
+    },
+    "resources": {
+      "eyebrow": "Free Resources",
+      "title": "TAK Intelligence Library",
+      "description": "Download comprehensive guides, technical documentation, and strategic resources to accelerate your TAK deployment and maximize ROI from AI integration.",
+      "cta": {
+        "title": "Need custom analysis for your organization?",
+        "description": "Our TAK consulting team can provide tailored assessments, ROI analysis, and deployment planning specific to your operational requirements.",
+        "button": "Schedule Consultation"
+      },
+      "download": {
+        "title": "Download Resource",
+        "button": "Download Free PDF →",
+        "processing": "Processing...",
+        "success": {
+          "title": "Download Starting...",
+          "description": "Your download should begin automatically. Check your email for additional resources."
+        }
+      }
+    },
+    "competitive": {
+      "eyebrow": "Competitive Advantage",
+      "title": "Why NERV for TAK Solutions?",
+      "description": "Traditional TAK hosting providers offer infrastructure. NERV offers intelligence. See how our AI-enhanced TAK platform compares to conventional TAK solution providers.",
+      "cta": {
+        "title": "Ready to upgrade your TAK infrastructure?",
+        "description": "Get started with NERV's AI-enhanced TAK platform and experience the difference intelligent infrastructure makes.",
+        "services": "View Pricing & Services",
+        "guide": "Download Comparison Guide"
+      }
+    }
+  },
   "footer": {
     "tagline": "Tactical AI for Mission Planning and Edge Intelligence",
     "navigation": {
