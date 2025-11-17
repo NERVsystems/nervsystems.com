@@ -10,8 +10,8 @@ export default function NERVASection() {
       icon: "UAS",
       title: "Autonomous Drone Operations",
       command: '"NERVA, launch reconnaissance pattern Alpha"',
-      description: "Autonomous flight path planning, real-time ISR analysis, automatic target identification, and predictive drone positioning. NERVA doesn't just show drone feeds—it plans, analyzes, and acts autonomously.",
-      features: ["Autonomous flight planning", "Real-time ISR analysis", "Target identification", "Predictive positioning"],
+      description: "Autonomous flight path planning for ISR, reconnaissance, and counter-UAS operations. NERVA monitors drone telemetry, issues direct commands, and can instantly retask friendly UAS from surveillance to intercept missions—plotting engagement courses for hostile drone neutralization or critical asset defense.",
+      features: ["Autonomous flight planning", "Real-time telemetry monitoring", "Automated intercept planning", "UAS command & control"],
       videoPlaceholder: true
     },
     {
@@ -40,18 +40,18 @@ export default function NERVASection() {
     },
     {
       icon: "ALERT",
-      title: "Intelligent Geofencing",
-      command: '"NERVA, alert me if anyone enters Zone Delta"',
-      description: "Creates dynamic geofences with complex boundaries, monitors all TAK feeds, generates detailed incident descriptions, and automatically escalates threats based on assessment.",
-      features: ["Dynamic geofences", "Automatic incident reports", "Threat escalation", "Pattern analysis"],
+      title: "Geofence Enforcement & Response",
+      command: '"NERVA, alert if any track enters the exclusion zone"',
+      description: "Virtual perimeter defense with 2D/3D geofence monitoring. NERVA integrates with third-party sensors (ADS-B, RF detection, radar) to track aircraft and UAS. When any track violates virtual boundaries, NERVA instantly alerts all networked assets and coordinates response—from friendly UAS intercepts to integration with C-UAS effectors.",
+      features: ["2D/3D virtual geofences", "Third-party sensor integration", "Instant network-wide alerts", "Coordinated response planning"],
       videoPlaceholder: true
     },
     {
       icon: "AIRSPACE",
       title: "3D Airspace Visualization",
       command: "Show chart → NERVA renders 3D airspace",
-      description: "Interprets complex airspace restriction charts and visualizes Class A/B/C/D/E airspace in 3D on tactical maps. Provides real-time airspace violation warnings and deconfliction with friendly assets.",
-      features: ["AI chart interpretation", "3D visualization", "Violation warnings", "Asset deconfliction"],
+      description: "Multi-modal rendering of complex airspace from sectional charts, NOTAMs, and TFRs. NERVA extracts geospatial data, visualizes 3D restricted zones, and overlays real-time UAS tracks for total airspace awareness—critical for counter-UAS operations and flight deconfliction.",
+      features: ["AI chart interpretation", "3D restricted zone rendering", "Real-time track overlay", "C-UAS airspace awareness"],
       videoPlaceholder: true
     }
   ];
