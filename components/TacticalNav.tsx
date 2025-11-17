@@ -2,9 +2,12 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import RequestDemoForm from './RequestDemoForm';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function TacticalNav() {
+  const t = useTranslations('nav');
   const [scrolled, setScrolled] = useState(false);
   const [showDemoForm, setShowDemoForm] = useState(false);
 
@@ -34,26 +37,29 @@ export default function TacticalNav() {
           {/* Nav Items */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/#features" className="text-sm text-tactical-textDim hover:text-white transition-colors">
-              Features
+              {t('features')}
             </Link>
             <Link href="/#platform" className="text-sm text-tactical-textDim hover:text-white transition-colors">
-              Platform
+              {t('platform')}
             </Link>
             <Link href="/solutions/tak" className="text-sm text-tactical-textDim hover:text-white transition-colors">
-              TAK Solutions
+              {t('takSolutions')}
             </Link>
             <Link href="/#contact" className="text-sm text-tactical-textDim hover:text-white transition-colors">
-              Contact
+              {t('contact')}
             </Link>
           </div>
 
-          {/* CTA */}
-          <button
-            onClick={() => setShowDemoForm(true)}
-            className="px-6 py-2 bg-white text-black hover:bg-tactical-textDim transition-all duration-300 text-sm font-medium"
-          >
-            Request Demo
-          </button>
+          {/* Right Side: Language Switcher + CTA */}
+          <div className="flex items-center space-x-4">
+            <LanguageSwitcher />
+            <button
+              onClick={() => setShowDemoForm(true)}
+              className="px-6 py-2 bg-white text-black hover:bg-tactical-textDim transition-all duration-300 text-sm font-medium"
+            >
+              {t('requestDemo')}
+            </button>
+          </div>
         </div>
       </div>
 

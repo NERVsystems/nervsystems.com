@@ -1,34 +1,23 @@
+import { useTranslations } from 'next-intl';
+
 export default function PartnersSection() {
-  const partners = [
-    {
-      name: "NVIDIA Inception",
-      description: "Member of NVIDIA Inception Program for AI startups",
-      logo: "/img/brands/partners/NVIDIA Inception Program.jpeg",
-      link: "https://www.nvidia.com/en-us/startups/",
-      placeholder: false
-    },
-    {
-      name: "National University of Singapore",
-      description: "Incubated at NUS Enterprise",
-      logo: "/img/brands/partners/B71_BrandSig_RGB.png",
-      link: "https://enterprise.nus.edu.sg/",
-      placeholder: false
-    },
-    {
-      name: "King's College London",
-      description: "Affiliated with War Studies Department",
-      logo: "/img/brands/partners/king's college london (kcl) war studies.jpg",
-      link: "https://www.kcl.ac.uk/warstudies",
-      placeholder: false
-    },
-    {
-      name: "Autodesk Foundation",
-      description: "Supported by Autodesk Foundation",
-      logo: "/img/brands/partners/autodesk foundation.jpg",
-      link: "https://www.autodesk.org/",
-      placeholder: false
-    }
-  ];
+  const t = useTranslations('partners');
+
+  const partnerKeys = ['nvidia', 'nus', 'kcl', 'autodesk'] as const;
+
+  const partners = partnerKeys.map(key => ({
+    name: t(`items.${key}.name`),
+    description: t(`items.${key}.description`),
+    logo: key === 'nvidia' ? "/img/brands/partners/NVIDIA Inception Program.jpeg" :
+          key === 'nus' ? "/img/brands/partners/B71_BrandSig_RGB.png" :
+          key === 'kcl' ? "/img/brands/partners/king's college london (kcl) war studies.jpg" :
+          "/img/brands/partners/autodesk foundation.jpg",
+    link: key === 'nvidia' ? "https://www.nvidia.com/en-us/startups/" :
+          key === 'nus' ? "https://enterprise.nus.edu.sg/" :
+          key === 'kcl' ? "https://www.kcl.ac.uk/warstudies" :
+          "https://www.autodesk.org/",
+    placeholder: false
+  }));
 
   return (
     <section id="partners" className="relative py-16 bg-tactical-surface border-t border-white/10">
@@ -36,10 +25,10 @@ export default function PartnersSection() {
         {/* Section Header */}
         <div className="mb-12 text-center">
           <h3 className="text-2xl font-bold text-white mb-3">
-            Trusted by Leading Organizations
+            {t('title')}
           </h3>
           <p className="text-tactical-textDim text-sm max-w-3xl mx-auto">
-            NERV Systems is backed by NVIDIA Inception, supported by Autodesk Foundation, incubated at National University of Singapore, and affiliated with King&apos;s College London War Studies
+            {t('description')}
           </p>
         </div>
 
