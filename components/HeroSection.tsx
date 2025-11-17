@@ -1,9 +1,11 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 import RequestDemoForm from './RequestDemoForm';
 
 export default function HeroSection() {
+  const t = useTranslations('hero');
   const [mounted, setMounted] = useState(false);
   const [showDemoForm, setShowDemoForm] = useState(false);
 
@@ -21,29 +23,27 @@ export default function HeroSection() {
         <div className={`transition-all duration-1000 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {/* Main Heading */}
           <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-tight tracking-tight">
-            <span className="text-white">Tactical AI for</span>
-            <br />
-            <span className="text-white">Mission Success</span>
+            <span className="text-white">{t('title')}</span>
           </h1>
 
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-tactical-textDim max-w-3xl mb-12 leading-relaxed">
-            TAK-native AI-powered decision support that turns information overload into clear action for critical operations.
+            {t('subtitle')}
           </p>
 
           {/* Key Stats */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-12 max-w-2xl">
             <div className="tactical-border p-6 bg-white/5 backdrop-blur-sm">
-              <div className="font-mono text-4xl font-bold text-white mb-2">&lt;30s</div>
-              <div className="text-xs text-tactical-textDim uppercase tracking-wide">Planning Cycles</div>
+              <div className="font-mono text-4xl font-bold text-white mb-2">{t('stats.planning.value')}</div>
+              <div className="text-xs text-tactical-textDim uppercase tracking-wide">{t('stats.planning.label')}</div>
             </div>
             <div className="tactical-border p-6 bg-white/5 backdrop-blur-sm">
-              <div className="font-mono text-4xl font-bold text-white mb-2">100%</div>
-              <div className="text-xs text-tactical-textDim uppercase tracking-wide">Edge Capable</div>
+              <div className="font-mono text-4xl font-bold text-white mb-2">{t('stats.edge.value')}</div>
+              <div className="text-xs text-tactical-textDim uppercase tracking-wide">{t('stats.edge.label')}</div>
             </div>
             <div className="tactical-border p-6 bg-white/5 backdrop-blur-sm col-span-2 md:col-span-1">
-              <div className="font-mono text-4xl font-bold text-white mb-2">TAK</div>
-              <div className="text-xs text-tactical-textDim uppercase tracking-wide">Native Integration</div>
+              <div className="font-mono text-4xl font-bold text-white mb-2">{t('stats.tak.value')}</div>
+              <div className="text-xs text-tactical-textDim uppercase tracking-wide">{t('stats.tak.label')}</div>
             </div>
           </div>
 
@@ -53,13 +53,13 @@ export default function HeroSection() {
               onClick={() => setShowDemoForm(true)}
               className="px-8 py-4 bg-white text-black hover:bg-tactical-textDim transition-all duration-300 text-sm font-medium"
             >
-              Request Demo
+              {t('cta.demo')}
             </button>
             <a
               href="#nerva"
               className="px-8 py-4 bg-transparent border border-white/30 text-white hover:border-white hover:bg-white/10 transition-all duration-300 text-sm font-medium text-center"
             >
-              Learn More
+              {t('cta.learn')}
             </a>
           </div>
         </div>

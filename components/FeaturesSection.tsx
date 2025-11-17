@@ -1,30 +1,16 @@
+import { useTranslations } from 'next-intl';
+
 export default function FeaturesSection() {
-  const features = [
-    {
-      icon: "01",
-      title: "REAL-TIME MISSION PLANNING",
-      description: "Automated generation of tactical options from live ATAK data. 30-second planning cycles for time-critical operations.",
-      code: "MAGI-01"
-    },
-    {
-      icon: "02",
-      title: "MULTI-SOURCE INTELLIGENCE FUSION",
-      description: "Unified analysis across drone feeds, sensor networks, and operator reports. Single operational picture from distributed data sources.",
-      code: "MAGI-02"
-    },
-    {
-      icon: "03",
-      title: "AUTONOMOUS ASSESSMENT",
-      description: "Pattern recognition and anomaly detection for predictive analysis of operational environments.",
-      code: "MAGI-03"
-    },
-    {
-      icon: "04",
-      title: "EDGE COMPUTE",
-      description: "Field-deployable 'GPU-in-a-helmet' for secure, private, AI at the edge. Operates when connectivity fails.",
-      code: "HARDWARE-01"
-    }
-  ];
+  const t = useTranslations('features');
+
+  const featureKeys = ['planning', 'fusion', 'assessment', 'edge'] as const;
+
+  const features = featureKeys.map(key => ({
+    icon: t(`items.${key}.icon`),
+    title: t(`items.${key}.title`),
+    description: t(`items.${key}.description`),
+    code: t(`items.${key}.code`)
+  }));
 
   return (
     <section id="features" className="relative py-24 bg-tactical-bg border-t border-white/10">
@@ -32,10 +18,10 @@ export default function FeaturesSection() {
         {/* Section Header */}
         <div className="mb-16">
           <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-            Complete Platform
+            {t('title')}
           </h2>
           <p className="text-tactical-textDim text-xl max-w-2xl">
-            Software + Hardware for Tactical Edge Deployment
+            {t('subtitle')}
           </p>
         </div>
 
