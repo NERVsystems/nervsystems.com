@@ -1,0 +1,296 @@
+{
+  "nav": {
+    "features": "Funktionen",
+    "platform": "Plattform",
+    "takSolutions": "TAK-Lösungen",
+    "contact": "Kontakt",
+    "requestDemo": "Demo anfordern"
+  },
+  "hero": {
+    "title": "Taktische KI für Missionserfolg",
+    "subtitle": "TAK-native, KI-gestützte Entscheidungsunterstützung, die Informationsüberflutung in klare Handlungsanweisungen für kritische Einsätze verwandelt.",
+    "stats": {
+      "planning": {
+        "value": "<30s",
+        "label": "Planungszyklen"
+      },
+      "edge": {
+        "value": "100%",
+        "label": "Edge-fähig"
+      },
+      "tak": {
+        "value": "TAK",
+        "label": "Native Integration"
+      }
+    },
+    "cta": {
+      "demo": "Demo anfordern",
+      "learn": "Mehr erfahren"
+    }
+  },
+  "nerva": {
+    "tagline": "Gegnerische OODA-Schleifen erstarren lassen",
+    "subtitle": "Ihr KI-Taktikassistent",
+    "description": "NERVA ist eine KI-Erweiterung Ihres Teams. Nicht nur Lagebewusstsein—{decisionAdvantage}.",
+    "decisionAdvantage": "Entscheidungsvorteil",
+    "bottomCta": {
+      "text": "Nutzen Sie bereits TAK? NERVA macht es intelligent.",
+      "button": "NERVA in Aktion sehen"
+    },
+    "capabilities": {
+      "uas": {
+        "icon": "UAS",
+        "title": "Autonome Drohnenoperationen",
+        "command": "\"NERVA, starte Aufklärungsmuster Alpha\"",
+        "description": "Autonome Flugbahnplanung für ISR, Aufklärung und Counter-UAS-Operationen. NERVA überwacht Drohnentelemetrie, erteilt direkte Befehle und kann freundliche UAS sofort von Überwachungs- zu Abfangmissionen umwidmen—Planung von Einsatzkursen zur Neutralisierung feindlicher Drohnen oder Verteidigung kritischer Güter.",
+        "features": [
+          "Autonome Flugplanung",
+          "Echtzeit-Telemetrieüberwachung",
+          "Automatisierte Abfangplanung",
+          "UAS-Kommando & Kontrolle"
+        ]
+      },
+      "medevac": {
+        "icon": "MEDEVAC",
+        "title": "Automatisierte CASEVAC-Koordination",
+        "command": "\"NERVA, wir brauchen eine CASEVAC!\"",
+        "description": "Identifiziert optimale Hubschrauber-Landezonen in unter 30 Sekunden, benachrichtigt automatisch medizinische und Luftfahrtteams, überwacht den Rettungsfortschritt und aktualisiert alle TAK-Clients in Echtzeit.",
+        "features": [
+          "LZ-Identifikation <30s",
+          "Automatische Teambenachrichtigungen",
+          "Echtzeit-Überwachung",
+          "TAK-weite Updates"
+        ]
+      },
+      "threat": {
+        "icon": "THREAT",
+        "title": "Feindliche Einheitenaufklärung",
+        "command": "Feindliche Einheit identifizieren → NERVA handelt",
+        "description": "Automatische Abfrage aus Jane's Defence-Datenbanken, zeichnet Reichweiten-Feuerringe, alarmiert alle Einheiten in Gefahrenzonen und liefert empfohlene Gegenmaßnahmen basierend auf Bedrohungsfähigkeiten.",
+        "features": [
+          "Jane's Datenbankintegration",
+          "Reichweitenanalyse",
+          "Automatische Alarme",
+          "Gegenmaßnahmenempfehlungen"
+        ]
+      },
+      "sar": {
+        "icon": "SAR",
+        "title": "Suchgebietsberechnung",
+        "command": "\"NERVA, berechne Suchgebiet für vermisste Einheit\"",
+        "description": "Wahrscheinlichkeitsbasierte Suchzonengenerierung unter Verwendung von Geländeanalyse, Wetterbedingungen und Einheitenfähigkeiten. Funktioniert sowohl für militärische Operationen als auch zivile Such- und Rettungseinsätze (SAR).",
+        "features": [
+          "Probabilistische Modellierung",
+          "Geländeanalyse",
+          "Ressourcenzuweisung",
+          "Militärisches & ziviles SAR"
+        ]
+      },
+      "alert": {
+        "icon": "ALERT",
+        "title": "Geofence-Durchsetzung & Reaktion",
+        "command": "\"NERVA, Alarm wenn eine Spur die Sperrzone betritt\"",
+        "description": "Virtuelle Perimeterverteidigung mit 2D/3D-Geofence-Überwachung. NERVA integriert Drittanbieter-Sensoren (ADS-B, RF-Detektion, Radar) zur Verfolgung von Flugzeugen und UAS. Wenn eine Spur virtuelle Grenzen verletzt, alarmiert NERVA sofort alle vernetzten Assets und koordiniert die Reaktion—von freundlichen UAS-Abfängen bis zur Integration mit C-UAS-Effektoren.",
+        "features": [
+          "2D/3D virtuelle Geofences",
+          "Drittanbieter-Sensorintegration",
+          "Sofortige netzwerkweite Alarme",
+          "Koordinierte Reaktionsplanung"
+        ]
+      },
+      "airspace": {
+        "icon": "AIRSPACE",
+        "title": "3D-Luftraumvisualisierung",
+        "command": "Karte zeigen → NERVA rendert 3D-Luftraum",
+        "description": "Multimodale Darstellung komplexer Lufträume aus Sektionskarten, NOTAMs und TFRs. NERVA extrahiert Geodaten, visualisiert 3D-Sperrzonen und überlagert Echtzeit-UAS-Spuren für vollständiges Luftraumbewusstsein—kritisch für Counter-UAS-Operationen und Flugdekonflikt.",
+        "features": [
+          "KI-Karteninterpretation",
+          "3D-Sperrzonenrendering",
+          "Echtzeit-Spurüberlagerung",
+          "C-UAS-Luftraumbewusstsein"
+        ]
+      }
+    },
+    "videoPlaceholder": {
+      "title": "Demo-Video",
+      "comingSoon": "[Demnächst]"
+    }
+  },
+  "features": {
+    "title": "Komplette Plattform",
+    "subtitle": "Software + Hardware für taktische Edge-Deployment",
+    "items": {
+      "planning": {
+        "icon": "01",
+        "title": "ECHTZEIT-MISSIONSPLANUNG",
+        "description": "Automatisierte Generierung taktischer Optionen aus Live-ATAK-Daten. 30-Sekunden-Planungszyklen für zeitkritische Operationen.",
+        "code": "MAGI-01"
+      },
+      "fusion": {
+        "icon": "02",
+        "title": "MULTI-SOURCE-INTELLIGENCE-FUSION",
+        "description": "Vereinheitlichte Analyse über Drohnen-Feeds, Sensornetzwerke und Operatorberichte. Einheitliches Operationsbild aus verteilten Datenquellen.",
+        "code": "MAGI-02"
+      },
+      "assessment": {
+        "icon": "03",
+        "title": "AUTONOME BEWERTUNG",
+        "description": "Mustererkennung und Anomalieerkennung für prädiktive Analyse operativer Umgebungen.",
+        "code": "MAGI-03"
+      },
+      "edge": {
+        "icon": "04",
+        "title": "EDGE COMPUTE",
+        "description": "Feldeinsatzfähige 'GPU-im-Helm' für sichere, private KI am Edge. Funktioniert, wenn Konnektivität ausfällt.",
+        "code": "HARDWARE-01"
+      }
+    }
+  },
+  "tak": {
+    "title": "Gebaut für Team Awareness",
+    "subtitle": "Nutzen Sie bereits TAK für Notfallkoordination? Perfekt. NERV integriert sich direkt mit Ihren bestehenden Team Awareness Kit-Systemen.",
+    "integration": {
+      "native": {
+        "label": "Native TAK-Integration",
+        "description": "Erweitert Ihre aktuellen Workflows"
+      },
+      "noRetraining": {
+        "label": "Keine Umschulung erforderlich",
+        "description": "Vertraute Oberfläche mit KI-Superkräften"
+      },
+      "realTime": {
+        "label": "Echtzeit-Datenfusion",
+        "description": "Von Satelliten, Drohnen und Sensor-Feeds"
+      },
+      "natural": {
+        "label": "Natürliche Sprachschnittstelle",
+        "description": "Stellen Sie Fragen, erhalten Sie klare Antworten"
+      },
+      "portable": {
+        "label": "Tragbarer Feldeinsatz",
+        "description": "Funktioniert, wenn Konnektivität ausfällt"
+      }
+    },
+    "cta": "Integrationsdokumentation ansehen"
+  },
+  "takCallout": {
+    "label": "TAK/ATAK-Lösungen",
+    "title": "Suchen Sie nach TAK-Hosting & -Deployment?",
+    "description": "NERV bietet komplette TAK/ATAK-Lösungen für den asiatisch-pazifischen Raum: verwaltetes TAK-Server-Hosting ab $495/Monat, fachkundige Deployment-Beratung, Systemadministration, Operatorschulung und KI-erweiterte Funktionen durch NERVA-Integration.",
+    "benefits": {
+      "certified": {
+        "title": "TAK.gov zertifiziert",
+        "description": "Offizielle TAK-Deployments"
+      },
+      "asiaPacific": {
+        "title": "Asien-Pazifik-Fokus",
+        "description": "Regionale Expertise"
+      },
+      "aiEnhanced": {
+        "title": "KI-erweitert",
+        "description": "NERVA-Integration"
+      },
+      "uptime": {
+        "title": "99,9% Verfügbarkeit",
+        "description": "Enterprise-SLA"
+      }
+    },
+    "cta": "TAK-Lösungen erkunden →",
+    "stats": {
+      "hosting": {
+        "label": "MANAGED HOSTING",
+        "price": "$495/Mo.",
+        "description": "Enterprise-TAK-Server mit KI-Überwachung, 24/7-Support und NERVA-Integration"
+      },
+      "deployment": {
+        "label": "DEPLOYMENT",
+        "title": "Full Service",
+        "description": "Von der Erstbewertung bis zum Go-Live: TAK-Server-Setup, Plugin-Konfiguration, Schulung und Support"
+      },
+      "training": {
+        "label": "SCHULUNG",
+        "title": "Zertifiziert",
+        "description": "TAK-Operator-Grundlagen, erweiterte Operationen und NERVA-KI-Assistenten-Schulungsprogramme"
+      }
+    }
+  },
+  "partners": {
+    "title": "Vertrauen führender Organisationen",
+    "description": "NERV Systems wird unterstützt von NVIDIA Inception, Autodesk Foundation, inkubiert an der National University of Singapore und affiliiert mit King's College London War Studies",
+    "items": {
+      "nvidia": {
+        "name": "NVIDIA Inception",
+        "description": "Mitglied des NVIDIA Inception Programms für KI-Startups"
+      },
+      "nus": {
+        "name": "National University of Singapore",
+        "description": "Inkubiert bei NUS Enterprise"
+      },
+      "kcl": {
+        "name": "King's College London",
+        "description": "Affiliiert mit War Studies Department"
+      },
+      "autodesk": {
+        "name": "Autodesk Foundation",
+        "description": "Unterstützt von Autodesk Foundation"
+      }
+    }
+  },
+  "contact": {
+    "label": "Kontakt aufnehmen",
+    "title": "Bereit für taktische KI?",
+    "subtitle": "Ob Sie NERVA-KI-Integration, TAK-Lösungen benötigen oder Ihre operativen Anforderungen besprechen möchten—unser Team steht Ihnen zur Verfügung.",
+    "form": {
+      "label": "Allgemeine Anfrage",
+      "title": "Senden Sie uns eine Nachricht",
+      "description": "Füllen Sie unser Kontaktformular aus und unser Team antwortet innerhalb von 24 Stunden.",
+      "button": "Kontaktieren Sie uns →"
+    },
+    "direct": {
+      "label": "Direktkontakt",
+      "title": "Direkt erreichen",
+      "email": {
+        "label": "E-MAIL",
+        "value": "contact@nervsystems.com"
+      },
+      "region": {
+        "label": "REGION",
+        "value": "Asien-Pazifik-Operationen"
+      },
+      "affiliations": {
+        "label": "ZUGEHÖRIGKEITEN",
+        "nvidia": "NVIDIA Inception-Mitglied",
+        "nus": "NUS Enterprise inkubiert",
+        "kcl": "King's College London inkubiert"
+      }
+    },
+    "quickLinks": {
+      "title": "Suchen Sie etwas Bestimmtes?",
+      "nerva": "NERVA-KI-Plattform",
+      "tak": "TAK-Lösungen",
+      "resources": "Ressourcen & Leitfäden"
+    }
+  },
+  "footer": {
+    "tagline": "Taktische KI für Missionsplanung und Edge Intelligence",
+    "navigation": {
+      "title": "Navigation",
+      "nerva": "NERVA-KI",
+      "platform": "Plattform",
+      "takIntegration": "TAK-Integration",
+      "solutions": "Lösungen & Services"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "email": "E-Mail: contact@nervsystems.com",
+      "region": "Asien-Pazifik-Operationen",
+      "affiliations": {
+        "nvidia": "NVIDIA Inception-Mitglied",
+        "nus": "NUS Enterprise inkubiert",
+        "kcl": "King's College London inkubiert"
+      }
+    },
+    "copyright": "© 2025 NERV Systems. Alle Rechte vorbehalten.",
+    "taglineBottom": "Gebaut für den taktischen Edge"
+  }
+}
