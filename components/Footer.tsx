@@ -1,4 +1,10 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
+
 export default function Footer() {
+  const t = useTranslations('footer');
+
   return (
     <footer className="bg-tactical-surface border-t border-white/10 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,34 +19,34 @@ export default function Footer() {
               />
             </div>
             <p className="text-tactical-textDim text-sm leading-relaxed">
-              Tactical AI for Mission Planning and Edge Intelligence
+              {t('tagline')}
             </p>
           </div>
 
           {/* Links */}
           <div>
             <h3 className="text-sm font-bold text-white mb-4 uppercase tracking-wider">
-              Navigation
+              {t('navigation.title')}
             </h3>
             <ul className="space-y-3">
               <li>
                 <a href="#nerva" className="text-tactical-textDim hover:text-white transition-colors text-sm">
-                  NERVA AI
+                  {t('navigation.nerva')}
                 </a>
               </li>
               <li>
                 <a href="#features" className="text-tactical-textDim hover:text-white transition-colors text-sm">
-                  Platform
+                  {t('navigation.platform')}
                 </a>
               </li>
               <li>
                 <a href="#platform" className="text-tactical-textDim hover:text-white transition-colors text-sm">
-                  TAK Integration
+                  {t('navigation.takIntegration')}
                 </a>
               </li>
               <li>
                 <a href="#solutions" className="text-tactical-textDim hover:text-white transition-colors text-sm">
-                  Solutions & Services
+                  {t('navigation.solutions')}
                 </a>
               </li>
             </ul>
@@ -49,16 +55,16 @@ export default function Footer() {
           {/* Contact & Affiliations */}
           <div>
             <h3 className="text-sm font-bold text-white mb-4 uppercase tracking-wider">
-              Contact
+              {t('contact.title')}
             </h3>
             <div className="text-tactical-textDim text-sm space-y-2 mb-6">
-              <p>Email: contact@nervsystems.com</p>
-              <p>Asia Pacific Operations</p>
+              <p>{t('contact.email')}</p>
+              <p>{t('contact.region')}</p>
             </div>
             <div className="text-xs text-tactical-textDim/70 space-y-1">
-              <p className="font-mono">▸ NVIDIA Inception Member</p>
-              <p className="font-mono">▸ NUS Enterprise Incubated</p>
-              <p className="font-mono">▸ King&apos;s College London Incubated</p>
+              <p className="font-mono">▸ {t('contact.affiliations.nvidia')}</p>
+              <p className="font-mono">▸ {t('contact.affiliations.nus')}</p>
+              <p className="font-mono">▸ {t('contact.affiliations.kcl')}</p>
             </div>
           </div>
         </div>
@@ -67,10 +73,10 @@ export default function Footer() {
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center text-tactical-textDim text-sm">
             <p>
-              © 2025 NERV Systems. All rights reserved.
+              {t('copyright')}
             </p>
             <p className="mt-4 md:mt-0">
-              Built for the tactical edge
+              {t('taglineBottom')}
             </p>
           </div>
         </div>

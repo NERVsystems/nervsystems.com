@@ -1,10 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import RequestDemoForm from './RequestDemoForm';
 
 export default function TacticalNav() {
+  const t = useTranslations('nav');
   const [scrolled, setScrolled] = useState(false);
   const [showDemoForm, setShowDemoForm] = useState(false);
 
@@ -34,16 +36,16 @@ export default function TacticalNav() {
           {/* Nav Items */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/#features" className="text-sm text-tactical-textDim hover:text-white transition-colors">
-              Features
+              {t('features')}
             </Link>
             <Link href="/#platform" className="text-sm text-tactical-textDim hover:text-white transition-colors">
-              Platform
+              {t('platform')}
             </Link>
             <Link href="/solutions/tak" className="text-sm text-tactical-textDim hover:text-white transition-colors">
-              TAK Solutions
+              {t('takSolutions')}
             </Link>
             <Link href="/#contact" className="text-sm text-tactical-textDim hover:text-white transition-colors">
-              Contact
+              {t('contact')}
             </Link>
           </div>
 
@@ -52,7 +54,7 @@ export default function TacticalNav() {
             onClick={() => setShowDemoForm(true)}
             className="px-6 py-2 bg-white text-black hover:bg-tactical-textDim transition-all duration-300 text-sm font-medium"
           >
-            Request Demo
+            {t('requestDemo')}
           </button>
         </div>
       </div>

@@ -1,10 +1,12 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import RequestDemoForm from './RequestDemoForm';
 
 export default function ContactSection() {
+  const t = useTranslations('contact');
   const [showContactForm, setShowContactForm] = useState(false);
 
   return (
@@ -13,13 +15,13 @@ export default function ContactSection() {
         {/* Header */}
         <div className="text-center mb-12">
           <div className="font-mono text-sm text-tactical-accent mb-4 uppercase tracking-wider">
-            Get In Touch
+            {t('label')}
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Deploy Tactical AI?
+            {t('title')}
           </h2>
           <p className="text-tactical-textDim text-lg leading-relaxed max-w-2xl mx-auto">
-            Whether you need NERVA AI integration, TAK solutions, or want to discuss your operational requirements—our team is here to help.
+            {t('subtitle')}
           </p>
         </div>
 
@@ -28,58 +30,58 @@ export default function ContactSection() {
           {/* Contact Form CTA */}
           <div className="tactical-border p-8 bg-white/5 hover:bg-white/10 transition-all duration-300">
             <div className="font-mono text-tactical-accent text-sm mb-4 uppercase tracking-wider">
-              General Inquiry
+              {t('form.label')}
             </div>
             <h3 className="text-2xl font-bold text-white mb-3">
-              Send Us a Message
+              {t('form.title')}
             </h3>
             <p className="text-tactical-textDim mb-6">
-              Fill out our contact form and our team will respond within 24 hours.
+              {t('form.description')}
             </p>
             <button
               onClick={() => setShowContactForm(true)}
               className="px-8 py-4 bg-white text-black hover:bg-tactical-accent hover:text-black transition-all duration-300 text-sm font-medium"
             >
-              Contact Us →
+              {t('form.button')}
             </button>
           </div>
 
           {/* Direct Contact Info */}
           <div className="tactical-border p-8 bg-white/5">
             <div className="font-mono text-tactical-accent text-sm mb-4 uppercase tracking-wider">
-              Direct Contact
+              {t('direct.label')}
             </div>
             <h3 className="text-2xl font-bold text-white mb-6">
-              Reach Out Directly
+              {t('direct.title')}
             </h3>
 
             <div className="space-y-4">
               <div>
-                <div className="text-sm font-mono text-tactical-textDim mb-1">EMAIL</div>
+                <div className="text-sm font-mono text-tactical-textDim mb-1">{t('direct.email.label')}</div>
                 <a href="mailto:contact@nervsystems.com" className="text-white hover:text-tactical-accent transition-colors">
-                  contact@nervsystems.com
+                  {t('direct.email.value')}
                 </a>
               </div>
 
               <div>
-                <div className="text-sm font-mono text-tactical-textDim mb-1">REGION</div>
-                <div className="text-white">Asia Pacific Operations</div>
+                <div className="text-sm font-mono text-tactical-textDim mb-1">{t('direct.region.label')}</div>
+                <div className="text-white">{t('direct.region.value')}</div>
               </div>
 
               <div className="pt-4 border-t border-white/10">
-                <div className="text-sm font-mono text-tactical-textDim mb-3">AFFILIATIONS</div>
+                <div className="text-sm font-mono text-tactical-textDim mb-3">{t('direct.affiliations.label')}</div>
                 <div className="space-y-2 text-xs text-tactical-textDim">
                   <div className="flex items-center space-x-2">
                     <span className="text-tactical-accent">▸</span>
-                    <span>NVIDIA Inception Member</span>
+                    <span>{t('direct.affiliations.nvidia')}</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <span className="text-tactical-accent">▸</span>
-                    <span>NUS Enterprise Incubated</span>
+                    <span>{t('direct.affiliations.nus')}</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <span className="text-tactical-accent">▸</span>
-                    <span>King&apos;s College London Incubated</span>
+                    <span>{t('direct.affiliations.kcl')}</span>
                   </div>
                 </div>
               </div>
@@ -89,18 +91,18 @@ export default function ContactSection() {
 
         {/* Quick Links */}
         <div className="text-center text-sm text-tactical-textDim">
-          <p>Looking for something specific?</p>
+          <p>{t('quickLinks.title')}</p>
           <div className="flex flex-wrap justify-center gap-4 mt-4">
             <a href="#nerva" className="hover:text-white transition-colors">
-              NERVA AI Platform
+              {t('quickLinks.nerva')}
             </a>
             <span>•</span>
             <Link href="/solutions/tak" className="hover:text-white transition-colors">
-              TAK Solutions
+              {t('quickLinks.tak')}
             </Link>
             <span>•</span>
             <Link href="/solutions/tak#resources" className="hover:text-white transition-colors">
-              Resources & Guides
+              {t('quickLinks.resources')}
             </Link>
           </div>
         </div>

@@ -1,29 +1,35 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
+
 export default function PartnersSection() {
+  const t = useTranslations('partners');
+
   const partners = [
     {
-      name: "NVIDIA Inception",
-      description: "Member of NVIDIA Inception Program for AI startups",
+      name: t('items.nvidia.name'),
+      description: t('items.nvidia.description'),
       logo: "/img/brands/partners/NVIDIA Inception Program.jpeg",
       link: "https://www.nvidia.com/en-us/startups/",
       placeholder: false
     },
     {
-      name: "National University of Singapore",
-      description: "Incubated at NUS Enterprise",
+      name: t('items.nus.name'),
+      description: t('items.nus.description'),
       logo: "/img/brands/partners/B71_BrandSig_RGB.png",
       link: "https://enterprise.nus.edu.sg/",
       placeholder: false
     },
     {
-      name: "King's College London",
-      description: "Affiliated with War Studies Department",
+      name: t('items.kcl.name'),
+      description: t('items.kcl.description'),
       logo: "/img/brands/partners/king's college london (kcl) war studies.jpg",
       link: "https://www.kcl.ac.uk/warstudies",
       placeholder: false
     },
     {
-      name: "Autodesk Foundation",
-      description: "Supported by Autodesk Foundation",
+      name: t('items.autodesk.name'),
+      description: t('items.autodesk.description'),
       logo: "/img/brands/partners/autodesk foundation.jpg",
       link: "https://www.autodesk.org/",
       placeholder: false
@@ -36,10 +42,10 @@ export default function PartnersSection() {
         {/* Section Header */}
         <div className="mb-12 text-center">
           <h3 className="text-2xl font-bold text-white mb-3">
-            Trusted by Leading Organizations
+            {t('title')}
           </h3>
           <p className="text-tactical-textDim text-sm max-w-3xl mx-auto">
-            NERV Systems is backed by NVIDIA Inception, supported by Autodesk Foundation, incubated at National University of Singapore, and affiliated with King&apos;s College London War Studies
+            {t('description')}
           </p>
         </div>
 

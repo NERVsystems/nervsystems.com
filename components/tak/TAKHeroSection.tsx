@@ -1,9 +1,11 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import RequestDemoForm from '@/components/RequestDemoForm';
 
 export default function TAKHeroSection() {
+  const t = useTranslations('takSolutions.hero');
   const [showQuoteForm, setShowQuoteForm] = useState(false);
 
   return (
@@ -29,34 +31,34 @@ export default function TAKHeroSection() {
         <div className="text-center">
           {/* Eyebrow */}
           <div className="font-mono text-sm text-tactical-accent mb-4 uppercase tracking-wider">
-            TAK Solutions for Asia Pacific
+            {t('eyebrow')}
           </div>
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight tracking-tight">
-            <span className="text-white">Complete TAK/ATAK</span>
+            <span className="text-white">{t('title')}</span>
             <br />
-            <span className="text-white">Solutions & Services</span>
+            <span className="text-white">{t('titleLine2')}</span>
           </h1>
 
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-tactical-textDim max-w-4xl mx-auto mb-8 leading-relaxed">
-            Expert TAK server hosting, ATAK deployment consulting, system administration, and training for military, law enforcement, and emergency response teams across Asia Pacific.
+            {t('subtitle')}
           </p>
 
           {/* Key Features */}
           <div className="flex flex-wrap justify-center gap-4 mb-10 text-sm">
             <div className="px-4 py-2 bg-white/5 border border-white/20 rounded">
-              <span className="text-tactical-accent font-mono">✓</span> Managed TAK Hosting from $495/mo
+              <span className="text-tactical-accent font-mono">✓</span> {t('features.hosting')}
             </div>
             <div className="px-4 py-2 bg-white/5 border border-white/20 rounded">
-              <span className="text-tactical-accent font-mono">✓</span> AI-Enhanced with NERVA
+              <span className="text-tactical-accent font-mono">✓</span> {t('features.aiEnhanced')}
             </div>
             <div className="px-4 py-2 bg-white/5 border border-white/20 rounded">
-              <span className="text-tactical-accent font-mono">✓</span> Expert TAK Deployment
+              <span className="text-tactical-accent font-mono">✓</span> {t('features.deployment')}
             </div>
             <div className="px-4 py-2 bg-white/5 border border-white/20 rounded">
-              <span className="text-tactical-accent font-mono">✓</span> ATAK Training Programs
+              <span className="text-tactical-accent font-mono">✓</span> {t('features.training')}
             </div>
           </div>
 
@@ -66,13 +68,13 @@ export default function TAKHeroSection() {
               onClick={() => setShowQuoteForm(true)}
               className="px-8 py-4 bg-white text-black hover:bg-tactical-textDim transition-all duration-300 text-sm font-medium"
             >
-              Request Quote
+              {t('cta.quote')}
             </button>
             <a
               href="#services"
               className="px-8 py-4 bg-transparent border border-white/30 text-white hover:border-white hover:bg-white/10 transition-all duration-300 text-sm font-medium text-center"
             >
-              View Services
+              {t('cta.services')}
             </a>
           </div>
         </div>
