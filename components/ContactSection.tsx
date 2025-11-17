@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import RequestDemoForm from './RequestDemoForm';
 
 export default function ContactSection() {
@@ -94,13 +95,13 @@ export default function ContactSection() {
               NERVA AI Platform
             </a>
             <span>•</span>
-            <a href="/solutions/tak" className="hover:text-white transition-colors">
+            <Link href="/solutions/tak" className="hover:text-white transition-colors">
               TAK Solutions
-            </a>
+            </Link>
             <span>•</span>
-            <a href="/solutions/tak#resources" className="hover:text-white transition-colors">
+            <Link href="/solutions/tak#resources" className="hover:text-white transition-colors">
               Resources & Guides
-            </a>
+            </Link>
           </div>
         </div>
       </div>
