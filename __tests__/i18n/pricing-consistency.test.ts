@@ -1,9 +1,32 @@
+/**
+ * Pricing Consistency Tests
+ *
+ * PURPOSE:
+ * Ensures all languages have identical pricing values to maintain consistency
+ * across all markets until we're ready to diverge pricing by region.
+ *
+ * WHAT THIS TESTS:
+ * 1. Home page pricing (homeTakSolutions section)
+ * 2. TAK Solutions page pricing (takSolutions.services section)
+ * 3. All pricing tiers (hosting, deployment, training, additional services)
+ * 4. Structure completeness (all sections exist in all languages)
+ *
+ * WHEN TO UPDATE THIS FILE:
+ * - Adding a new pricing tier → add to relevant array
+ * - Removing a pricing tier → remove from relevant array
+ * - Enabling market-specific pricing → modify tests to allow divergence
+ *
+ * SEE: docs/PRICING.md for pricing update workflows
+ * SEE: docs/TESTING.md for test modification guide
+ */
+
 import enMessages from '@/messages/en.json';
 import jaMessages from '@/messages/ja.json';
 import koMessages from '@/messages/ko.json';
 import thMessages from '@/messages/th.json';
 
 describe('Pricing Consistency Across Languages', () => {
+  // All supported locales and their translation files
   const locales = [
     { name: 'English', messages: enMessages },
     { name: 'Japanese', messages: jaMessages },
@@ -11,7 +34,25 @@ describe('Pricing Consistency Across Languages', () => {
     { name: 'Thai', messages: thMessages },
   ];
 
+  /**
+   * HOME PAGE PRICING TESTS
+   *
+   * Tests pricing displayed on the main homepage TAK Solutions section.
+   * Location in JSON: messages/[locale].json → homeTakSolutions
+   * Component: components/TAKSolutionsSection.tsx
+   */
   describe('Home TAK Solutions Pricing', () => {
+    /**
+     * Test: Hosting Plans Consistency
+     *
+     * Validates: homeTakSolutions.hosting.plans.[tier].price
+     * Tiers: starter ($495), professional ($1,495), enterprise (Custom)
+     *
+     * TO ADD A NEW TIER:
+     * 1. Add tier name to hostingPlans array below
+     * 2. Add tier data to all 4 messages/*.json files
+     * 3. Update components/TAKSolutionsSection.tsx hostingPlans array
+     */
     it('should have identical hosting plan prices across all languages', () => {
       const hostingPlans = ['starter', 'professional', 'enterprise'];
       const enPrices = hostingPlans.map(
