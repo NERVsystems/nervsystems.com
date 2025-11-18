@@ -10,7 +10,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: "TAK Solutions & ATAK Hosting | NERV Systems Asia Pacific",
-  description: "Complete TAK/ATAK deployment, managed hosting, consulting and training services in Asia Pacific. AI-enhanced TAK server hosting from $495/month. Expert TAK deployment consulting, system administration, and operator training for military, law enforcement, and emergency response teams.",
+  description: "Complete TAK/ATAK deployment, managed hosting, consulting and training services in Asia Pacific. AI-enhanced TAK server hosting from $495/month. Expert TAK deployment consulting, system administration, and operator training for military, law enforcement, emergency response, and commercial operations.",
   keywords: [
     "TAK solutions",
     "ATAK platform",
@@ -35,7 +35,17 @@ export const metadata: Metadata = {
     "TAK ops",
     "TAKOps services",
     "AI-powered TAK",
-    "intelligent TAK platform"
+    "intelligent TAK platform",
+    "commercial TAK solutions",
+    "civilian TAK deployment",
+    "TAK fleet management",
+    "TAK asset tracking",
+    "private security TAK",
+    "critical infrastructure TAK",
+    "corporate TAK deployment",
+    "commercial ATAK applications",
+    "TAK private sector",
+    "enterprise TAK solutions"
   ],
   openGraph: {
     title: "TAK Solutions & ATAK Hosting | NERV Systems Asia Pacific",
