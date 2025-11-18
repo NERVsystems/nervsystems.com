@@ -43,7 +43,7 @@ export default function TAKIntegrationSection() {
             <div className="tactical-border bg-white/5 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80"
+                  src="/images/tak/military-helicopter.jpg"
                   alt="Military Tactical Operations"
                   className="w-full h-full object-cover"
                 />
@@ -66,7 +66,7 @@ export default function TAKIntegrationSection() {
             <div className="tactical-border bg-white/5 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80"
+                  src="/images/tak/law-enforcement.jpg"
                   alt="Law Enforcement Tactical Operations"
                   className="w-full h-full object-cover"
                 />
@@ -89,7 +89,7 @@ export default function TAKIntegrationSection() {
             <div className="tactical-border bg-white/5 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=800&q=80"
+                  src="/images/tak/emergency-flood.jpg"
                   alt="Emergency Management and Search & Rescue"
                   className="w-full h-full object-cover"
                 />
