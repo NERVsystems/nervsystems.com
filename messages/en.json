@@ -214,6 +214,167 @@
       }
     }
   },
+  "homeTakSolutions": {
+    "title": "TAK Solutions & Services",
+    "subtitle": "Complete TAK/ATAK deployment, managed hosting, consulting, and training for Asia Pacific",
+    "hosting": {
+      "title": "Managed TAK Hosting",
+      "description": "AI-enhanced TAK servers with NERVA integration. Your server doesn't just route data—it analyzes it.",
+      "plans": {
+        "starter": {
+          "name": "Starter",
+          "price": "$495",
+          "period": "/month",
+          "users": "Up to 50 users",
+          "ai": "NERVA Lite (3 capabilities)",
+          "features": [
+            "Basic TAK Server",
+            "Standard plugins",
+            "99% uptime SLA",
+            "Email support",
+            "Monthly security patches"
+          ],
+          "cta": "Get Started"
+        },
+        "professional": {
+          "name": "Professional",
+          "price": "$1,495",
+          "period": "/month",
+          "users": "Up to 250 users",
+          "ai": "Full NERVA (all 6 capabilities)",
+          "badge": "POPULAR",
+          "features": [
+            "Enterprise TAK Server",
+            "Premium plugins",
+            "99.9% uptime SLA",
+            "24/7 support",
+            "Federation support",
+            "AI system monitoring"
+          ],
+          "cta": "Get Started"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "price": "Custom",
+          "period": "pricing",
+          "users": "1,000+ users",
+          "ai": "Custom NERVA + Training",
+          "features": [
+            "Custom TAK infrastructure",
+            "White-label options",
+            "99.99% uptime SLA",
+            "Dedicated support",
+            "Multi-region deployment",
+            "Compliance packages"
+          ],
+          "cta": "Get Started"
+        }
+      }
+    },
+    "deployment": {
+      "title": "Deployment Consulting",
+      "description": "Expert TAK deployment with AI capability integration roadmap included",
+      "packages": {
+        "assessment": {
+          "name": "Assessment",
+          "price": "$4,500",
+          "duration": "1-day on-site",
+          "features": [
+            "TAK requirements assessment",
+            "Infrastructure design recommendations",
+            "User requirement documentation",
+            "Plugin selection guidance",
+            "30-day email support"
+          ],
+          "cta": "Request Quote"
+        },
+        "deployment": {
+          "name": "Deployment",
+          "price": "$15,000",
+          "duration": "Full deployment",
+          "badge": "POPULAR",
+          "features": [
+            "Everything in Assessment",
+            "TAK Server deployment (up to 100 users)",
+            "Plugin installation & configuration",
+            "System integration",
+            "Basic operator training (1 day)",
+            "90-day priority support"
+          ],
+          "cta": "Request Quote"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "price": "$45,000+",
+          "duration": "Large-scale",
+          "features": [
+            "Everything in Deployment",
+            "Large-scale deployment (100+ users)",
+            "AI capability integration roadmap",
+            "Custom plugin development",
+            "Advanced training program (3 days)",
+            "180-day dedicated support"
+          ],
+          "cta": "Request Quote"
+        }
+      }
+    },
+    "training": {
+      "title": "Training Programs",
+      "description": "TAK operator training with NERVA AI assistant certification",
+      "programs": {
+        "fundamentals": {
+          "name": "TAK Operator Fundamentals",
+          "duration": "1 day",
+          "price": "$595",
+          "period": "/student",
+          "description": "TAK interface basics, map navigation, team coordination, and plugin usage",
+          "cta": "Enroll Now"
+        },
+        "nerva": {
+          "name": "NERVA AI Assistant Training",
+          "duration": "1 day",
+          "price": "$795",
+          "period": "/student",
+          "description": "Natural language interface, automated mission planning, and AI workflows",
+          "cta": "Enroll Now"
+        },
+        "advanced": {
+          "name": "Advanced Mission Planning with AI",
+          "duration": "2 days",
+          "price": "$1,495",
+          "period": "/student",
+          "description": "Complex operations, intelligence fusion, edge computing, and scenario exercises",
+          "badge": "POPULAR",
+          "cta": "Enroll Now"
+        }
+      },
+      "volumeDiscounts": {
+        "label": "Volume Discounts:",
+        "tiers": "5-10 students (10% off) • 11-20 students (20% off) • 21+ students (30% off)"
+      }
+    },
+    "additionalServices": {
+      "title": "Additional TAK Services",
+      "services": {
+        "administration": {
+          "title": "System Administration",
+          "description": "Ongoing TAK server management with AI monitoring",
+          "price": "From $450/month"
+        },
+        "plugins": {
+          "title": "Plugin Development",
+          "description": "Custom TAK plugins with NERVA AI integration",
+          "price": "From $15,000"
+        },
+        "hardware": {
+          "title": "Edge Hardware",
+          "description": "NERV Edge compute (GPU in a helmet) for field deployment",
+          "price": "Contact for pricing"
+        }
+      }
+    }
+  },
   "partners": {
     "title": "Trusted by Leading Organizations",
     "description": "NERV Systems is backed by NVIDIA Inception, supported by Autodesk Foundation, incubated at National University of Singapore, and affiliated with King's College London War Studies",
