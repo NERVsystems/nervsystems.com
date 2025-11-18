@@ -20,6 +20,7 @@ describe('Translation Messages', () => {
       'features',
       'tak',
       'takCallout',
+      'homeTakSolutions',
       'partners',
       'contact',
       'footer',
