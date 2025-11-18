@@ -107,6 +107,29 @@ export default function TAKIntegrationSection() {
                 </div>
               </div>
             </div>
+
+            {/* Commercial & Private Sector */}
+            <div className="tactical-border bg-white/5 overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
+                  alt="Commercial Operations and Critical Infrastructure"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-tactical-bg to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-xl font-bold text-white mb-3">{t('useCases.commercial.title')}</h4>
+                <p className="text-tactical-textDim text-sm leading-relaxed mb-3">
+                  {t('useCases.commercial.description')}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {(t.raw('useCases.commercial.tags') as string[]).map((tag, idx) => (
+                    <span key={idx} className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
