@@ -454,8 +454,8 @@
     "copyright": "© 2025 NERV Systems. جميع الحقوق محفوظة.",
     "taglineBottom": "مصمم للحافة التكتيكية",
     "legal": {
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service"
+      "privacy": "سياسة الخصوصية",
+      "terms": "شروط الخدمة"
     }
   },
   "form": {
@@ -576,10 +576,10 @@
         "contact": "تم استلام رسالتك. سيتواصل فريقنا معك خلال 24 ساعة."
       },
       "error": "حدثت مشكلة أثناء إرسال النموذج. يرجى مراسلتنا مباشرة على contact@nervsystems.com",
-      "privacyPrefix": "By submitting this form, you agree to our",
-      "privacyLink": "Privacy Policy",
-      "privacyAnd": "and",
-      "termsLink": "Terms of Service"
+      "privacyPrefix": "بإرسال هذا النموذج، فإنك توافق على",
+      "privacyLink": "سياسة الخصوصية",
+      "privacyAnd": "و",
+      "termsLink": "شروط الخدمة"
     }
   },
   "takSolutions": {
@@ -765,22 +765,39 @@
         "military": {
           "title": "TAK للعمليات العسكرية",
           "description": "نشر أنظمة TAK/ATAK للقيادة والسيطرة، عمليات ISR، دعم جوي قريب، تنسيق CASEVAC، والعمليات متعددة المجالات مع تخطيط المهام المعزز بالذكاء الاصطناعي.",
-          "tags": ["C2", "ISR", "CASEVAC", "CAS"]
+          "tags": [
+            "C2",
+            "ISR",
+            "CASEVAC",
+            "CAS"
+          ]
         },
         "lawEnforcement": {
           "title": "TAK لإنفاذ القانون",
           "description": "حلول ATAK للعمليات التكتيكية، تنسيق SWAT، أمن الفعاليات، دوريات الحدود، ومشاركة المعلومات بين الوكالات مع الوعي بالموقف في الوقت الفعلي.",
-          "tags": ["SWAT", "الأمن", "الدورية"]
+          "tags": [
+            "SWAT",
+            "الأمن",
+            "الدورية"
+          ]
         },
         "emergency": {
           "title": "TAK لإدارة الطوارئ",
           "description": "أنظمة TAK للاستجابة للطوارئ لاستجابة الكوارث، البحث والإنقاذ (SAR)، عمليات الإطفاء، التنسيق الطبي، وإدارة الحوادث متعددة الوكالات.",
-          "tags": ["SAR", "الإطفاء", "EMS"]
+          "tags": [
+            "SAR",
+            "الإطفاء",
+            "EMS"
+          ]
         },
         "commercial": {
           "title": "TAK للقطاع التجاري والخاص",
           "description": "عمليات نشر TAK التجارية لتتبع الأساطيل، إدارة الأصول، عمليات الأمن الخاص، حماية البنية التحتية الحرجة، وتنسيق الفريق المؤسسي عبر المواقع الموزعة.",
-          "tags": ["الأسطول", "الأمن", "الأصول"]
+          "tags": [
+            "الأسطول",
+            "الأمن",
+            "الأصول"
+          ]
         }
       }
     },
@@ -855,7 +872,12 @@
           "pages": "24 صفحة",
           "format": "PDF",
           "category": "عائد الاستثمار",
-          "topics": ["تحليل التكلفة والفائدة", "توفير أتمتة الذكاء الاصطناعي", "جداول النشر الزمنية", "مقاييس الأداء"]
+          "topics": [
+            "تحليل التكلفة والفائدة",
+            "توفير أتمتة الذكاء الاصطناعي",
+            "جداول النشر الزمنية",
+            "مقاييس الأداء"
+          ]
         },
         {
           "title": "TAK مقابل البدائل التجارية: مقارنة كاملة",
@@ -863,7 +885,12 @@
           "pages": "32 صفحة",
           "format": "PDF",
           "category": "المقارنة",
-          "topics": ["مصفوفة مقارنة المنصات", "تحليل إجمالي تكلفة الملكية", "مقارنة الأمان", "قدرات التكامل"]
+          "topics": [
+            "مصفوفة مقارنة المنصات",
+            "تحليل إجمالي تكلفة الملكية",
+            "مقارنة الأمان",
+            "قدرات التكامل"
+          ]
         },
         {
           "title": "قائمة مراجعة نشر TAK: دليل التنفيذ الكامل",
@@ -871,7 +898,12 @@
           "pages": "18 صفحة",
           "format": "PDF",
           "category": "النشر",
-          "topics": ["التخطيط قبل النشر", "إعداد البنية التحتية", "تعزيز الأمان", "خطة تدريب المستخدمين"]
+          "topics": [
+            "التخطيط قبل النشر",
+            "إعداد البنية التحتية",
+            "تعزيز الأمان",
+            "خطة تدريب المستخدمين"
+          ]
         },
         {
           "title": "دليل هندسة تكامل NERVA بالذكاء الاصطناعي",
@@ -879,7 +911,12 @@
           "pages": "28 صفحة",
           "format": "PDF",
           "category": "تقني",
-          "topics": ["تكامل API", "هندسة الأمان", "أنماط النشر", "استراتيجيات الترحيل"]
+          "topics": [
+            "تكامل API",
+            "هندسة الأمان",
+            "أنماط النشر",
+            "استراتيجيات الترحيل"
+          ]
         },
         {
           "title": "دليل الامتثال واللوائح لـ TAK في آسيا والمحيط الهادئ",
@@ -887,7 +924,12 @@
           "pages": "22 صفحة",
           "format": "PDF",
           "category": "الامتثال",
-          "topics": ["اللوائح الإقليمية", "سيادة البيانات", "شهادات الأمان", "أطر الامتثال"]
+          "topics": [
+            "اللوائح الإقليمية",
+            "سيادة البيانات",
+            "شهادات الأمان",
+            "أطر الامتثال"
+          ]
         },
         {
           "title": "أفضل ممارسات إدارة نظام TAK",
@@ -895,7 +937,12 @@
           "pages": "36 صفحة",
           "format": "PDF",
           "category": "العمليات",
-          "topics": ["مراقبة النظام", "النسخ الاحتياطي والاستعادة", "تحسين الأداء", "عمليات الأمان"]
+          "topics": [
+            "مراقبة النظام",
+            "النسخ الاحتياطي والاستعادة",
+            "تحسين الأداء",
+            "عمليات الأمان"
+          ]
         }
       ],
       "cta": {
@@ -1003,170 +1050,170 @@
     }
   },
   "privacy": {
-    "metaTitle": "Privacy Policy - NERV Systems",
-    "metaDescription": "Privacy Policy for the NERV Systems website. Learn how we collect, use, and protect your information.",
-    "eyebrow": "LEGAL DOCUMENTATION",
-    "title": "Privacy Policy",
-    "effectiveDate": "Effective Date: November 19, 2025",
+    "metaTitle": "سياسة الخصوصية - NERV Systems",
+    "metaDescription": "سياسة الخصوصية لموقع NERV Systems. تعرف على كيفية جمع معلوماتك واستخدامها وحمايتها.",
+    "eyebrow": "الوثائق القانونية",
+    "title": "سياسة الخصوصية",
+    "effectiveDate": "تاريخ السريان: 19 نوفمبر 2025",
     "introduction": {
-      "title": "Introduction",
-      "p1": "NERV Systems, LLC (\"NERV,\" \"we,\" \"us,\" or \"our\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website nervsystems.com (the \"Website\").",
-      "p2": "Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access the Website.",
-      "note": "IMPORTANT: This Privacy Policy applies only to this website and information collected through it. Our products and services (including NERVA AI Platform and TAK Solutions) are governed by separate terms and privacy policies."
+      "title": "المقدمة",
+      "p1": "تلتزم NERV Systems, LLC (\"NERV\" أو \"نحن\" أو \"خاصتنا\") بحماية خصوصيتك. توضح سياسة الخصوصية هذه كيفية جمع معلوماتك واستخدامها والكشف عنها وحمايتها عند زيارتك لموقعنا nervsystems.com (\"الموقع\").",
+      "p2": "يرجى قراءة سياسة الخصوصية هذه بعناية. إذا كنت لا توافق على شروط سياسة الخصوصية هذه، يرجى عدم الوصول إلى الموقع.",
+      "note": "مهم: تنطبق سياسة الخصوصية هذه فقط على هذا الموقع والمعلومات التي يتم جمعها من خلاله. تخضع منتجاتنا وخدماتنا (بما في ذلك منصة NERVA AI وحلول TAK) لشروط وسياسات خصوصية منفصلة."
     },
     "informationWeCollect": {
-      "title": "Information We Collect",
-      "intro": "We only collect information that you voluntarily provide to us through our contact forms, demo requests, and quote requests. This may include:",
+      "title": "المعلومات التي نجمعها",
+      "intro": "نجمع فقط المعلومات التي تقدمها طواعية من خلال نماذج الاتصال وطلبات العروض التوضيحية وطلبات عروض الأسعار. قد يشمل ذلك:",
       "items": {
-        "name": "Name (first and last)",
-        "email": "Email address",
-        "organization": "Organization/company name",
-        "phone": "Phone number",
-        "jobTitle": "Job title",
-        "message": "Message content and other information you choose to provide"
+        "name": "الاسم (الأول والأخير)",
+        "email": "عنوان البريد الإلكتروني",
+        "organization": "اسم المنظمة/الشركة",
+        "phone": "رقم الهاتف",
+        "jobTitle": "المسمى الوظيفي",
+        "message": "محتوى الرسالة والمعلومات الأخرى التي تختار تقديمها"
       },
-      "analytics": "We also automatically collect certain information through analytics services (described below) such as IP address, browser type, device information, and pages visited."
+      "analytics": "نجمع أيضاً تلقائياً معلومات معينة من خلال خدمات التحليلات (الموضحة أدناه) مثل عنوان IP ونوع المتصفح ومعلومات الجهاز والصفحات التي تمت زيارتها."
     },
     "howWeUse": {
-      "title": "How We Use Your Information",
+      "title": "كيف نستخدم معلوماتك",
       "items": {
-        "respond": "To respond to your inquiries and requests",
-        "marketing": "To send you marketing communications about our products and services",
-        "improve": "To improve our Website and services",
-        "analytics": "To analyze Website usage and trends"
+        "respond": "للرد على استفساراتك وطلباتك",
+        "marketing": "لإرسال اتصالات تسويقية حول منتجاتنا وخدماتنا",
+        "improve": "لتحسين موقعنا وخدماتنا",
+        "analytics": "لتحليل استخدام الموقع والاتجاهات"
       },
-      "unsubscribe": "You may unsubscribe from marketing communications at any time by clicking the unsubscribe link in our emails or contacting us directly."
+      "unsubscribe": "يمكنك إلغاء الاشتراك في الاتصالات التسويقية في أي وقت من خلال النقر على رابط إلغاء الاشتراك في رسائل البريد الإلكتروني الخاصة بنا أو الاتصال بنا مباشرة."
     },
     "thirdParty": {
-      "title": "Third-Party Services",
-      "intro": "We use the following third-party services to process and store your information:",
+      "title": "خدمات الطرف الثالث",
+      "intro": "نستخدم خدمات الطرف الثالث التالية لمعالجة معلوماتك وتخزينها:",
       "items": {
-        "hubspot": "HubSpot - Form submissions and contact management",
-        "analytics": "Google Analytics - Website analytics and usage tracking"
+        "hubspot": "HubSpot - إرسال النماذج وإدارة جهات الاتصال",
+        "analytics": "Google Analytics - تحليلات الموقع وتتبع الاستخدام"
       },
-      "future": "We may add or change third-party service providers in the future to improve our services. This policy will be updated to reflect any material changes."
+      "future": "قد نضيف أو نغير مزودي خدمات الطرف الثالث في المستقبل لتحسين خدماتنا. سيتم تحديث هذه السياسة لتعكس أي تغييرات جوهرية."
     },
     "dataSecurity": {
-      "title": "Data Storage and Security",
-      "storage": "Your information is stored on servers located in the United States through our third-party service providers. We comply with applicable data protection laws, including Singapore's Personal Data Protection Act (PDPA), which permits personal data to be stored offshore when appropriate safeguards are in place.",
-      "protection": "We implement reasonable security measures to protect your information from unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is 100% secure.",
-      "disclaimer": "While we strive to protect your information, we cannot guarantee absolute security."
+      "title": "تخزين البيانات والأمان",
+      "storage": "يتم تخزين معلوماتك على خوادم موجودة في الولايات المتحدة من خلال مزودي خدمات الطرف الثالث. نحن نلتزم بقوانين حماية البيانات المعمول بها، بما في ذلك قانون حماية البيانات الشخصية في سنغافورة (PDPA)، الذي يسمح بتخزين البيانات الشخصية خارج البلاد عندما تكون هناك ضمانات مناسبة.",
+      "protection": "نطبق تدابير أمنية معقولة لحماية معلوماتك من الوصول غير المصرح به أو التغيير أو الكشف أو التدمير. ومع ذلك، لا توجد طريقة نقل عبر الإنترنت أو تخزين إلكتروني آمنة بنسبة 100٪.",
+      "disclaimer": "بينما نسعى جاهدين لحماية معلوماتك، لا يمكننا ضمان الأمان المطلق."
     },
     "yourRights": {
-      "title": "Your Rights",
-      "intro": "You have the right to:",
+      "title": "حقوقك",
+      "intro": "لديك الحق في:",
       "items": {
-        "access": "Access the personal information we hold about you",
-        "correction": "Request correction of inaccurate information",
-        "deletion": "Request deletion of your information",
-        "optOut": "Opt out of marketing communications"
+        "access": "الوصول إلى المعلومات الشخصية التي نحتفظ بها عنك",
+        "correction": "طلب تصحيح المعلومات غير الدقيقة",
+        "deletion": "طلب حذف معلوماتك",
+        "optOut": "إلغاء الاشتراك في الاتصالات التسويقية"
       },
-      "contact": "To exercise these rights, please contact us at contact@nervsystems.com."
+      "contact": "لممارسة هذه الحقوق، يرجى الاتصال بنا على contact@nervsystems.com."
     },
     "cookies": {
-      "title": "Cookies and Tracking Technologies",
-      "description": "We use cookies and similar tracking technologies to collect information about your browsing activities. This helps us analyze Website traffic and improve user experience.",
-      "control": "You can control cookies through your browser settings. However, disabling cookies may affect Website functionality."
+      "title": "ملفات تعريف الارتباط وتقنيات التتبع",
+      "description": "نستخدم ملفات تعريف الارتباط وتقنيات التتبع المماثلة لجمع معلومات حول أنشطة التصفح الخاصة بك. يساعدنا ذلك في تحليل حركة مرور الموقع وتحسين تجربة المستخدم.",
+      "control": "يمكنك التحكم في ملفات تعريف الارتباط من خلال إعدادات المتصفح الخاص بك. ومع ذلك، قد يؤثر تعطيل ملفات تعريف الارتباط على وظائف الموقع."
     },
     "international": {
-      "title": "International Data Transfers",
-      "description": "Your information may be transferred to and processed in countries other than your country of residence, including the United States. These countries may have different data protection laws.",
-      "consent": "By using our Website, you consent to the transfer of your information to the United States and other countries where our service providers operate."
+      "title": "عمليات نقل البيانات الدولية",
+      "description": "قد يتم نقل معلوماتك ومعالجتها في بلدان غير بلد إقامتك، بما في ذلك الولايات المتحدة. قد يكون لهذه البلدان قوانين حماية بيانات مختلفة.",
+      "consent": "باستخدامك لموقعنا، فإنك توافق على نقل معلوماتك إلى الولايات المتحدة والبلدان الأخرى حيث يعمل مزودو الخدمات لدينا."
     },
     "children": {
-      "title": "Children's Privacy",
-      "description": "Our Website is not intended for individuals under the age of 18. We do not knowingly collect personal information from children. If you believe we have collected information from a child, please contact us immediately."
+      "title": "خصوصية الأطفال",
+      "description": "موقعنا غير مخصص للأفراد الذين تقل أعمارهم عن 18 عاماً. لا نجمع معلومات شخصية عن قصد من الأطفال. إذا كنت تعتقد أننا جمعنا معلومات من طفل، يرجى الاتصال بنا على الفور."
     },
     "changes": {
-      "title": "Changes to This Privacy Policy",
-      "description": "We may update this Privacy Policy from time to time. The updated version will be indicated by an updated \"Effective Date\" at the top of this policy. We encourage you to review this Privacy Policy periodically for any changes."
+      "title": "التغييرات على سياسة الخصوصية هذه",
+      "description": "قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. سيتم الإشارة إلى النسخة المحدثة بتاريخ سريان محدث في أعلى هذه السياسة. نشجعك على مراجعة سياسة الخصوصية هذه بشكل دوري لأي تغييرات."
     },
     "contact": {
-      "title": "Contact Us",
-      "description": "If you have questions or concerns about this Privacy Policy, please contact us:",
+      "title": "اتصل بنا",
+      "description": "إذا كانت لديك أسئلة أو مخاوف بشأن سياسة الخصوصية هذه، يرجى الاتصال بنا:",
       "company": "NERV Systems, LLC",
-      "email": "Email: contact@nervsystems.com"
+      "email": "البريد الإلكتروني: contact@nervsystems.com"
     },
-    "backToHome": "← Back to Home"
+    "backToHome": "← العودة إلى الصفحة الرئيسية"
   },
   "terms": {
-    "metaTitle": "Terms of Service - NERV Systems",
-    "metaDescription": "Terms of Service for the NERV Systems website. Please read these terms carefully before using our website.",
-    "eyebrow": "LEGAL DOCUMENTATION",
-    "title": "Terms of Service",
-    "effectiveDate": "Effective Date: November 19, 2025",
+    "metaTitle": "شروط الخدمة - NERV Systems",
+    "metaDescription": "شروط الخدمة لموقع NERV Systems. يرجى قراءة هذه الشروط بعناية قبل استخدام موقعنا.",
+    "eyebrow": "الوثائق القانونية",
+    "title": "شروط الخدمة",
+    "effectiveDate": "تاريخ السريان: 19 نوفمبر 2025",
     "introduction": {
-      "title": "Introduction",
-      "p1": "These Terms of Service (\"Terms\") govern your access to and use of the NERV Systems, LLC (\"NERV,\" \"we,\" \"us,\" or \"our\") website located at nervsystems.com (the \"Website\").",
-      "p2": "By accessing or using the Website, you agree to be bound by these Terms. If you do not agree to these Terms, do not use the Website.",
-      "note": "IMPORTANT: These Terms apply only to this website. Use of our products and services (including NERVA AI Platform and TAK Solutions) is governed by separate agreements and terms of service."
+      "title": "المقدمة",
+      "p1": "تحكم شروط الخدمة هذه (\"الشروط\") وصولك إلى واستخدامك لموقع NERV Systems, LLC (\"NERV\" أو \"نحن\" أو \"خاصتنا\") الموجود على nervsystems.com (\"الموقع\").",
+      "p2": "من خلال الوصول إلى الموقع أو استخدامه، فإنك توافق على الالتزام بهذه الشروط. إذا كنت لا توافق على هذه الشروط، فلا تستخدم الموقع.",
+      "note": "مهم: تنطبق هذه الشروط فقط على هذا الموقع. يخضع استخدام منتجاتنا وخدماتنا (بما في ذلك منصة NERVA AI وحلول TAK) لاتفاقيات وشروط خدمة منفصلة."
     },
     "acceptance": {
-      "title": "Acceptance of Terms",
-      "description": "By accessing this Website, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy. We reserve the right to modify these Terms at any time. Your continued use of the Website after changes are posted constitutes acceptance of the modified Terms."
+      "title": "قبول الشروط",
+      "description": "من خلال الوصول إلى هذا الموقع، فإنك تقر بأنك قد قرأت وفهمت ووافقت على الالتزام بهذه الشروط وسياسة الخصوصية الخاصة بنا. نحتفظ بالحق في تعديل هذه الشروط في أي وقت. يشكل استمرارك في استخدام الموقع بعد نشر التغييرات قبولاً للشروط المعدلة."
     },
     "useOfWebsite": {
-      "title": "Use of Website",
-      "intro": "You agree to use the Website only for lawful purposes and in accordance with these Terms. You agree not to:",
+      "title": "استخدام الموقع",
+      "intro": "توافق على استخدام الموقع فقط للأغراض القانونية ووفقاً لهذه الشروط. توافق على عدم:",
       "items": {
-        "lawful": "Use the Website in any way that violates applicable laws or regulations",
-        "accurate": "Provide false, inaccurate, or misleading information",
-        "noHarm": "Transmit viruses, malware, or other harmful code",
-        "noUnauthorized": "Attempt to gain unauthorized access to the Website or its systems",
-        "noViolation": "Engage in any conduct that restricts or inhibits anyone's use of the Website"
+        "lawful": "استخدام الموقع بأي طريقة تنتهك القوانين أو اللوائح المعمول بها",
+        "accurate": "تقديم معلومات كاذبة أو غير دقيقة أو مضللة",
+        "noHarm": "نقل الفيروسات أو البرامج الضارة أو أي رمز ضار آخر",
+        "noUnauthorized": "محاولة الوصول غير المصرح به إلى الموقع أو أنظمته",
+        "noViolation": "الانخراط في أي سلوك يقيد أو يمنع استخدام أي شخص للموقع"
       }
     },
     "intellectualProperty": {
-      "title": "Intellectual Property Rights",
-      "ownership": "All content on this Website, including but not limited to text, graphics, logos, images, software, and design elements, is the property of NERV Systems, LLC and is protected by United States and international copyright, trademark, and other intellectual property laws.",
-      "restrictions": "You may not reproduce, distribute, modify, create derivative works of, publicly display, republish, download, store, or transmit any material from our Website without our prior written consent, except for personal, non-commercial use."
+      "title": "حقوق الملكية الفكرية",
+      "ownership": "جميع المحتويات على هذا الموقع، بما في ذلك على سبيل المثال لا الحصر النصوص والرسومات والشعارات والصور والبرامج وعناصر التصميم، هي ملك لـ NERV Systems, LLC ومحمية بموجب قوانين حقوق النشر والعلامات التجارية والملكية الفكرية الأخرى في الولايات المتحدة والدولية.",
+      "restrictions": "لا يجوز لك إعادة إنتاج أو توزيع أو تعديل أو إنشاء أعمال مشتقة أو عرض علني أو إعادة نشر أو تنزيل أو تخزين أو نقل أي مواد من موقعنا دون موافقتنا الخطية المسبقة، باستثناء الاستخدام الشخصي غير التجاري."
     },
     "thirdPartyLinks": {
-      "title": "Third-Party Links and Content",
-      "description": "The Website may contain links to third-party websites or services that are not owned or controlled by NERV. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party websites or services. You acknowledge and agree that NERV shall not be responsible or liable for any damage or loss caused by your use of any third-party content, goods, or services."
+      "title": "روابط ومحتوى الطرف الثالث",
+      "description": "قد يحتوي الموقع على روابط لمواقع أو خدمات تابعة لطرف ثالث لا نملكها أو نتحكم فيها. ليس لدينا أي سيطرة ولا نتحمل أي مسؤولية عن المحتوى أو سياسات الخصوصية أو ممارسات أي مواقع أو خدمات تابعة لطرف ثالث. أنت تقر وتوافق على أن NERV لن تكون مسؤولة عن أي ضرر أو خسارة ناتجة عن استخدامك لأي محتوى أو سلع أو خدمات تابعة لطرف ثالث."
     },
     "disclaimer": {
-      "title": "Disclaimer of Warranties",
-      "statement": "The website is provided on an \"as is\" and \"as available\" basis without warranties of any kind, either express or implied.",
-      "details": "NERV Systems, LLC disclaims all warranties, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the Website will be uninterrupted, secure, or error-free, or that any defects will be corrected. You use the Website at your own risk."
+      "title": "إخلاء المسؤولية عن الضمانات",
+      "statement": "يتم توفير الموقع على أساس \"كما هو\" و\"كما هو متاح\" دون ضمانات من أي نوع، صريحة أو ضمنية.",
+      "details": "تخلي NERV Systems, LLC مسؤوليتها عن جميع الضمانات، بما في ذلك على سبيل المثال لا الحصر الضمانات الضمنية للتسويق والملاءمة لغرض معين وعدم الانتهاك. لا نضمن أن الموقع سيكون غير منقطع أو آمن أو خالي من الأخطاء، أو أنه سيتم تصحيح أي عيوب. أنت تستخدم الموقع على مسؤوليتك الخاصة."
     },
     "liability": {
-      "title": "Limitation of Liability",
-      "statement": "To the maximum extent permitted by law, NERV Systems, LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues.",
-      "details": "In no event shall NERV's total liability to you for all damages, losses, and causes of action (whether in contract, tort, or otherwise) exceed the amount paid by you, if any, for accessing the Website. Some jurisdictions do not allow the exclusion of certain warranties or the limitation of liability for incidental or consequential damages, so the above limitations may not apply to you."
+      "title": "تحديد المسؤولية",
+      "statement": "إلى أقصى حد يسمح به القانون، لن تكون NERV Systems, LLC مسؤولة عن أي أضرار غير مباشرة أو عرضية أو خاصة أو تبعية أو عقابية، أو أي فقدان للأرباح أو الإيرادات.",
+      "details": "في أي حال من الأحوال، لن تتجاوز المسؤولية الإجمالية لـ NERV تجاهك عن جميع الأضرار والخسائر وأسباب الدعوى (سواء في العقد أو الضرر أو غير ذلك) المبلغ الذي دفعته، إن وجد، للوصول إلى الموقع. بعض الولايات القضائية لا تسمح باستبعاد ضمانات معينة أو تحديد المسؤولية عن الأضرار العرضية أو التبعية، لذلك قد لا تنطبق عليك القيود المذكورة أعلاه."
     },
     "indemnification": {
-      "title": "Indemnification",
-      "description": "You agree to defend, indemnify, and hold harmless NERV Systems, LLC and its officers, directors, employees, and agents from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms or your use of the Website."
+      "title": "التعويض",
+      "description": "توافق على الدفاع عن وتعويض وحماية NERV Systems, LLC ومسؤوليها ومديريها وموظفيها ووكلائها من وضد أي مطالبات أو التزامات أو أضرار أو أحكام أو جوائز أو خسائر أو تكاليف أو نفقات أو رسوم (بما في ذلك أتعاب المحاماة المعقولة) الناشئة عن أو المتعلقة بانتهاكك لهذه الشروط أو استخدامك للموقع."
     },
     "exportControl": {
-      "title": "Export Control and Compliance",
-      "description": "The information and technology presented on this Website may be subject to U.S. export control laws and regulations. You agree to comply with all applicable export and re-export control laws and regulations.",
-      "warning": "WARNING: Our products and services involve defense technology that may be subject to strict export controls. Unauthorized export or re-export may result in criminal and civil penalties."
+      "title": "مراقبة الصادرات والامتثال",
+      "description": "قد تخضع المعلومات والتكنولوجيا المقدمة على هذا الموقع لقوانين ولوائح مراقبة الصادرات الأمريكية. توافق على الامتثال لجميع قوانين ولوائح مراقبة الصادرات وإعادة التصدير المعمول بها.",
+      "warning": "تحذير: تتضمن منتجاتنا وخدماتنا تكنولوجيا دفاعية قد تخضع لضوابط صادرات صارمة. قد يؤدي التصدير أو إعادة التصدير غير المصرح به إلى عقوبات جنائية ومدنية."
     },
     "governingLaw": {
-      "title": "Governing Law and Jurisdiction",
-      "description": "These Terms shall be governed by and construed in accordance with the laws of the United States and the State of Delaware, without regard to conflict of law principles. Any disputes arising from these Terms or your use of the Website shall be subject to the exclusive jurisdiction of the courts located in Delaware.",
-      "future": "Note: NERV Systems, LLC is currently incorporated in the United States. Future incorporation in Singapore may result in updates to governing law and jurisdiction provisions."
+      "title": "القانون الحاكم والاختصاص القضائي",
+      "description": "تخضع هذه الشروط وتفسر وفقاً لقوانين الولايات المتحدة وولاية ديلاوير، دون النظر إلى مبادئ تنازع القوانين. تخضع أي نزاعات تنشأ عن هذه الشروط أو استخدامك للموقع للاختصاص القضائي الحصري للمحاكم الموجودة في ديلاوير.",
+      "future": "ملاحظة: NERV Systems, LLC مسجلة حالياً في الولايات المتحدة. قد يؤدي التسجيل المستقبلي في سنغافورة إلى تحديثات في أحكام القانون الحاكم والاختصاص القضائي."
     },
     "changes": {
-      "title": "Changes to Terms",
-      "description": "We reserve the right to modify or replace these Terms at any time at our sole discretion. Material changes will be indicated by updating the \"Effective Date\" at the top of these Terms. Your continued use of the Website after any changes constitutes acceptance of the new Terms."
+      "title": "التغييرات على الشروط",
+      "description": "نحتفظ بالحق في تعديل أو استبدال هذه الشروط في أي وقت وفقاً لتقديرنا الخاص. سيتم الإشارة إلى التغييرات الجوهرية من خلال تحديث \"تاريخ السريان\" في أعلى هذه الشروط. يشكل استمرارك في استخدام الموقع بعد أي تغييرات قبولاً للشروط الجديدة."
     },
     "severability": {
-      "title": "Severability",
-      "description": "If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect."
+      "title": "القابلية للفصل",
+      "description": "إذا تبين أن أي حكم من أحكام هذه الشروط غير قابل للتنفيذ أو غير صالح، فسيتم تحديد ذلك الحكم أو إزالته إلى الحد الأدنى الضروري، وستبقى الأحكام المتبقية سارية المفعول بالكامل."
     },
     "entireAgreement": {
-      "title": "Entire Agreement",
-      "description": "These Terms, together with our Privacy Policy, constitute the entire agreement between you and NERV Systems, LLC regarding the use of the Website and supersede all prior agreements and understandings, whether written or oral."
+      "title": "الاتفاقية الكاملة",
+      "description": "تشكل هذه الشروط، جنباً إلى جنب مع سياسة الخصوصية الخاصة بنا، الاتفاقية الكاملة بينك وبين NERV Systems, LLC فيما يتعلق باستخدام الموقع وتحل محل جميع الاتفاقيات والتفاهمات السابقة، سواء كانت مكتوبة أو شفهية."
     },
     "contact": {
-      "title": "Contact Information",
-      "description": "If you have questions about these Terms, please contact us:",
+      "title": "معلومات الاتصال",
+      "description": "إذا كانت لديك أسئلة حول هذه الشروط، يرجى الاتصال بنا:",
       "company": "NERV Systems, LLC",
-      "email": "Email: contact@nervsystems.com"
+      "email": "البريد الإلكتروني: contact@nervsystems.com"
     },
-    "backToHome": "← Back to Home"
+    "backToHome": "← العودة إلى الصفحة الرئيسية"
   }
 }

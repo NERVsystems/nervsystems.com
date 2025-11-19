@@ -454,8 +454,8 @@
     "copyright": "© 2025 NERV Systems. All rights reserved.",
     "taglineBottom": "戦術エッジのために構築",
     "legal": {
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service"
+      "privacy": "プライバシーポリシー",
+      "terms": "利用規約"
     }
   },
   "form": {
@@ -576,10 +576,10 @@
         "contact": "お問い合わせを受け付けました。担当者が24時間以内にご連絡いたします。"
       },
       "error": "フォームの送信中に問題が発生しました。contact@nervsystems.com まで直接メールでお問い合わせください。",
-      "privacyPrefix": "By submitting this form, you agree to our",
-      "privacyLink": "Privacy Policy",
-      "privacyAnd": "and",
-      "termsLink": "Terms of Service"
+      "privacyPrefix": "このフォームを送信することにより、お客様は当社の",
+      "privacyLink": "プライバシーポリシー",
+      "privacyAnd": "および",
+      "termsLink": "利用規約"
     }
   },
   "takSolutions": {
@@ -1050,170 +1050,170 @@
     }
   },
   "privacy": {
-    "metaTitle": "Privacy Policy - NERV Systems",
-    "metaDescription": "Privacy Policy for the NERV Systems website. Learn how we collect, use, and protect your information.",
-    "eyebrow": "LEGAL DOCUMENTATION",
-    "title": "Privacy Policy",
-    "effectiveDate": "Effective Date: November 19, 2025",
+    "metaTitle": "プライバシーポリシー - NERV Systems",
+    "metaDescription": "NERV Systemsウェブサイトのプライバシーポリシー。情報の収集、使用、保護方法について。",
+    "eyebrow": "法的文書",
+    "title": "プライバシーポリシー",
+    "effectiveDate": "発効日：2025年11月19日",
     "introduction": {
-      "title": "Introduction",
-      "p1": "NERV Systems, LLC (\"NERV,\" \"we,\" \"us,\" or \"our\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website nervsystems.com (the \"Website\").",
-      "p2": "Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access the Website.",
-      "note": "IMPORTANT: This Privacy Policy applies only to this website and information collected through it. Our products and services (including NERVA AI Platform and TAK Solutions) are governed by separate terms and privacy policies."
+      "title": "はじめに",
+      "p1": "NERV Systems, LLC（「NERV」、「当社」、「弊社」）は、お客様のプライバシー保護に取り組んでいます。本プライバシーポリシーは、お客様が当社のウェブサイトnervsystems.com（「ウェブサイト」）を訪問する際に、当社がお客様の情報をどのように収集、使用、開示、保護するかを説明するものです。",
+      "p2": "本プライバシーポリシーを注意深くお読みください。本プライバシーポリシーの条件に同意されない場合は、ウェブサイトにアクセスしないでください。",
+      "note": "重要：本プライバシーポリシーは、このウェブサイトおよびこれを通じて収集される情報のみに適用されます。当社の製品およびサービス（NERVA AIプラットフォームおよびTAKソリューションを含む）は、別個の条件およびプライバシーポリシーによって管理されます。"
     },
     "informationWeCollect": {
-      "title": "Information We Collect",
-      "intro": "We only collect information that you voluntarily provide to us through our contact forms, demo requests, and quote requests. This may include:",
+      "title": "収集する情報",
+      "intro": "当社は、お問い合わせフォーム、デモリクエスト、見積もりリクエストを通じてお客様が自発的に提供する情報のみを収集します。これには以下が含まれる場合があります：",
       "items": {
-        "name": "Name (first and last)",
-        "email": "Email address",
-        "organization": "Organization/company name",
-        "phone": "Phone number",
-        "jobTitle": "Job title",
-        "message": "Message content and other information you choose to provide"
+        "name": "氏名（姓名）",
+        "email": "メールアドレス",
+        "organization": "組織/会社名",
+        "phone": "電話番号",
+        "jobTitle": "役職",
+        "message": "メッセージ内容およびお客様が提供することを選択したその他の情報"
       },
-      "analytics": "We also automatically collect certain information through analytics services (described below) such as IP address, browser type, device information, and pages visited."
+      "analytics": "また、IPアドレス、ブラウザの種類、デバイス情報、訪問したページなど、分析サービス（以下に説明）を通じて特定の情報を自動的に収集します。"
     },
     "howWeUse": {
-      "title": "How We Use Your Information",
+      "title": "情報の使用方法",
       "items": {
-        "respond": "To respond to your inquiries and requests",
-        "marketing": "To send you marketing communications about our products and services",
-        "improve": "To improve our Website and services",
-        "analytics": "To analyze Website usage and trends"
+        "respond": "お問い合わせおよびリクエストに応答するため",
+        "marketing": "製品およびサービスに関するマーケティングコミュニケーションを送信するため",
+        "improve": "ウェブサイトおよびサービスを改善するため",
+        "analytics": "ウェブサイトの使用状況およびトレンドを分析するため"
       },
-      "unsubscribe": "You may unsubscribe from marketing communications at any time by clicking the unsubscribe link in our emails or contacting us directly."
+      "unsubscribe": "メール内の配信停止リンクをクリックするか、直接お問い合わせいただくことで、いつでもマーケティングコミュニケーションの配信を停止できます。"
     },
     "thirdParty": {
-      "title": "Third-Party Services",
-      "intro": "We use the following third-party services to process and store your information:",
+      "title": "第三者サービス",
+      "intro": "当社は、お客様の情報を処理および保存するために以下の第三者サービスを使用しています：",
       "items": {
-        "hubspot": "HubSpot - Form submissions and contact management",
-        "analytics": "Google Analytics - Website analytics and usage tracking"
+        "hubspot": "HubSpot - フォーム送信および連絡先管理",
+        "analytics": "Google Analytics - ウェブサイト分析および使用状況追跡"
       },
-      "future": "We may add or change third-party service providers in the future to improve our services. This policy will be updated to reflect any material changes."
+      "future": "サービスを改善するために、将来的に第三者サービスプロバイダーを追加または変更する場合があります。このポリシーは、重要な変更を反映するために更新されます。"
     },
     "dataSecurity": {
-      "title": "Data Storage and Security",
-      "storage": "Your information is stored on servers located in the United States through our third-party service providers. We comply with applicable data protection laws, including Singapore's Personal Data Protection Act (PDPA), which permits personal data to be stored offshore when appropriate safeguards are in place.",
-      "protection": "We implement reasonable security measures to protect your information from unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is 100% secure.",
-      "disclaimer": "While we strive to protect your information, we cannot guarantee absolute security."
+      "title": "データの保存とセキュリティ",
+      "storage": "お客様の情報は、第三者サービスプロバイダーを通じて米国内のサーバーに保存されます。当社は、適切な保護措置が講じられている場合に個人データをオフショアで保存することを許可するシンガポールの個人データ保護法（PDPA）を含む、適用されるデータ保護法に準拠しています。",
+      "protection": "当社は、お客様の情報を不正アクセス、改ざん、開示、または破壊から保護するために合理的なセキュリティ対策を実施しています。ただし、インターネット経由の送信方法または電子ストレージが100％安全であるとは限りません。",
+      "disclaimer": "お客様の情報を保護するよう努めていますが、絶対的なセキュリティを保証することはできません。"
     },
     "yourRights": {
-      "title": "Your Rights",
-      "intro": "You have the right to:",
+      "title": "お客様の権利",
+      "intro": "お客様には以下の権利があります：",
       "items": {
-        "access": "Access the personal information we hold about you",
-        "correction": "Request correction of inaccurate information",
-        "deletion": "Request deletion of your information",
-        "optOut": "Opt out of marketing communications"
+        "access": "当社が保有するお客様の個人情報へのアクセス",
+        "correction": "不正確な情報の訂正を要求する",
+        "deletion": "お客様の情報の削除を要求する",
+        "optOut": "マーケティングコミュニケーションの配信停止"
       },
-      "contact": "To exercise these rights, please contact us at contact@nervsystems.com."
+      "contact": "これらの権利を行使するには、contact@nervsystems.comまでお問い合わせください。"
     },
     "cookies": {
-      "title": "Cookies and Tracking Technologies",
-      "description": "We use cookies and similar tracking technologies to collect information about your browsing activities. This helps us analyze Website traffic and improve user experience.",
-      "control": "You can control cookies through your browser settings. However, disabling cookies may affect Website functionality."
+      "title": "Cookieおよび追跡技術",
+      "description": "当社は、お客様の閲覧活動に関する情報を収集するためにCookieおよび類似の追跡技術を使用しています。これにより、ウェブサイトのトラフィックを分析し、ユーザーエクスペリエンスを向上させることができます。",
+      "control": "ブラウザの設定でCookieを制御できます。ただし、Cookieを無効にすると、ウェブサイトの機能に影響を与える可能性があります。"
     },
     "international": {
-      "title": "International Data Transfers",
-      "description": "Your information may be transferred to and processed in countries other than your country of residence, including the United States. These countries may have different data protection laws.",
-      "consent": "By using our Website, you consent to the transfer of your information to the United States and other countries where our service providers operate."
+      "title": "国際データ転送",
+      "description": "お客様の情報は、米国を含むお客様の居住国以外の国に転送され、処理される場合があります。これらの国には、異なるデータ保護法が存在する可能性があります。",
+      "consent": "当社のウェブサイトを使用することにより、お客様は、米国およびサービスプロバイダーが運営するその他の国への情報の転送に同意したことになります。"
     },
     "children": {
-      "title": "Children's Privacy",
-      "description": "Our Website is not intended for individuals under the age of 18. We do not knowingly collect personal information from children. If you believe we have collected information from a child, please contact us immediately."
+      "title": "子供のプライバシー",
+      "description": "当社のウェブサイトは18歳未満の個人を対象としたものではありません。当社は意図的に子供から個人情報を収集することはありません。子供から情報を収集したと思われる場合は、すぐにお問い合わせください。"
     },
     "changes": {
-      "title": "Changes to This Privacy Policy",
-      "description": "We may update this Privacy Policy from time to time. The updated version will be indicated by an updated \"Effective Date\" at the top of this policy. We encourage you to review this Privacy Policy periodically for any changes."
+      "title": "本プライバシーポリシーの変更",
+      "description": "当社は、本プライバシーポリシーを随時更新する場合があります。更新版は、このポリシーの上部にある「発効日」を更新することで示されます。変更がないか、定期的に本プライバシーポリシーを確認することをお勧めします。"
     },
     "contact": {
-      "title": "Contact Us",
-      "description": "If you have questions or concerns about this Privacy Policy, please contact us:",
+      "title": "お問い合わせ",
+      "description": "本プライバシーポリシーに関するご質問やご不明な点がございましたら、お問い合わせください：",
       "company": "NERV Systems, LLC",
-      "email": "Email: contact@nervsystems.com"
+      "email": "メール：contact@nervsystems.com"
     },
-    "backToHome": "← Back to Home"
+    "backToHome": "← ホームに戻る"
   },
   "terms": {
-    "metaTitle": "Terms of Service - NERV Systems",
-    "metaDescription": "Terms of Service for the NERV Systems website. Please read these terms carefully before using our website.",
-    "eyebrow": "LEGAL DOCUMENTATION",
-    "title": "Terms of Service",
-    "effectiveDate": "Effective Date: November 19, 2025",
+    "metaTitle": "利用規約 - NERV Systems",
+    "metaDescription": "NERV Systemsウェブサイトの利用規約。ウェブサイトを使用する前に、これらの規約を注意深くお読みください。",
+    "eyebrow": "法的文書",
+    "title": "利用規約",
+    "effectiveDate": "発効日：2025年11月19日",
     "introduction": {
-      "title": "Introduction",
-      "p1": "These Terms of Service (\"Terms\") govern your access to and use of the NERV Systems, LLC (\"NERV,\" \"we,\" \"us,\" or \"our\") website located at nervsystems.com (the \"Website\").",
-      "p2": "By accessing or using the Website, you agree to be bound by these Terms. If you do not agree to these Terms, do not use the Website.",
-      "note": "IMPORTANT: These Terms apply only to this website. Use of our products and services (including NERVA AI Platform and TAK Solutions) is governed by separate agreements and terms of service."
+      "title": "はじめに",
+      "p1": "本利用規約（「規約」）は、nervsystems.com（「ウェブサイト」）にあるNERV Systems, LLC（「NERV」、「当社」、「弊社」）のウェブサイトへのアクセスおよび使用を管理します。",
+      "p2": "ウェブサイトにアクセスまたは使用することにより、お客様は本規約に拘束されることに同意したことになります。本規約に同意しない場合は、ウェブサイトを使用しないでください。",
+      "note": "重要：本規約はこのウェブサイトのみに適用されます。当社の製品およびサービス（NERVA AIプラットフォームおよびTAKソリューションを含む）の使用は、別個の契約および利用規約によって管理されます。"
     },
     "acceptance": {
-      "title": "Acceptance of Terms",
-      "description": "By accessing this Website, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy. We reserve the right to modify these Terms at any time. Your continued use of the Website after changes are posted constitutes acceptance of the modified Terms."
+      "title": "規約の承諾",
+      "description": "本ウェブサイトにアクセスすることにより、お客様は本規約および当社のプライバシーポリシーを読み、理解し、これらに拘束されることに同意したことを認めます。当社は、いつでも本規約を変更する権利を留保します。変更が投稿された後のウェブサイトの継続使用は、変更された規約の承諾を構成します。"
     },
     "useOfWebsite": {
-      "title": "Use of Website",
-      "intro": "You agree to use the Website only for lawful purposes and in accordance with these Terms. You agree not to:",
+      "title": "ウェブサイトの使用",
+      "intro": "お客様は、合法的な目的のためにのみ、本規約に従ってウェブサイトを使用することに同意します。お客様は以下を行わないことに同意します：",
       "items": {
-        "lawful": "Use the Website in any way that violates applicable laws or regulations",
-        "accurate": "Provide false, inaccurate, or misleading information",
-        "noHarm": "Transmit viruses, malware, or other harmful code",
-        "noUnauthorized": "Attempt to gain unauthorized access to the Website or its systems",
-        "noViolation": "Engage in any conduct that restricts or inhibits anyone's use of the Website"
+        "lawful": "適用される法律または規制に違反する方法でウェブサイトを使用すること",
+        "accurate": "虚偽、不正確、または誤解を招く情報を提供すること",
+        "noHarm": "ウイルス、マルウェア、またはその他の有害なコードを送信すること",
+        "noUnauthorized": "ウェブサイトまたはそのシステムへの不正アクセスを試みること",
+        "noViolation": "他者のウェブサイトの使用を制限または妨害する行為に従事すること"
       }
     },
     "intellectualProperty": {
-      "title": "Intellectual Property Rights",
-      "ownership": "All content on this Website, including but not limited to text, graphics, logos, images, software, and design elements, is the property of NERV Systems, LLC and is protected by United States and international copyright, trademark, and other intellectual property laws.",
-      "restrictions": "You may not reproduce, distribute, modify, create derivative works of, publicly display, republish, download, store, or transmit any material from our Website without our prior written consent, except for personal, non-commercial use."
+      "title": "知的財産権",
+      "ownership": "本ウェブサイト上のすべてのコンテンツ（テキスト、グラフィックス、ロゴ、画像、ソフトウェア、デザイン要素を含むがこれらに限定されない）は、NERV Systems, LLCの財産であり、米国および国際的な著作権、商標、およびその他の知的財産法によって保護されています。",
+      "restrictions": "個人的な非商業的使用を除き、当社の事前の書面による同意なしに、当社のウェブサイトから資料を複製、配布、変更、派生作品の作成、公開表示、再公開、ダウンロード、保存、または送信することはできません。"
     },
     "thirdPartyLinks": {
-      "title": "Third-Party Links and Content",
-      "description": "The Website may contain links to third-party websites or services that are not owned or controlled by NERV. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party websites or services. You acknowledge and agree that NERV shall not be responsible or liable for any damage or loss caused by your use of any third-party content, goods, or services."
+      "title": "第三者リンクおよびコンテンツ",
+      "description": "ウェブサイトには、NERVが所有または管理していない第三者のウェブサイトまたはサービスへのリンクが含まれている場合があります。当社は、第三者のウェブサイトまたはサービスのコンテンツ、プライバシーポリシー、または慣行について管理せず、責任を負いません。お客様は、第三者のコンテンツ、商品、またはサービスの使用によって引き起こされた損害または損失について、NERVが責任を負わないことを認め、同意します。"
     },
     "disclaimer": {
-      "title": "Disclaimer of Warranties",
-      "statement": "The website is provided on an \"as is\" and \"as available\" basis without warranties of any kind, either express or implied.",
-      "details": "NERV Systems, LLC disclaims all warranties, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the Website will be uninterrupted, secure, or error-free, or that any defects will be corrected. You use the Website at your own risk."
+      "title": "保証の免責",
+      "statement": "ウェブサイトは、明示的または黙示的を問わず、いかなる種類の保証もなく「現状のまま」および「利用可能な状態で」提供されます。",
+      "details": "NERV Systems, LLCは、商品性、特定目的への適合性、および非侵害の黙示的保証を含むがこれらに限定されない、すべての保証を否認します。当社は、ウェブサイトが中断されず、安全で、エラーがないこと、または欠陥が修正されることを保証しません。お客様は自己責任でウェブサイトを使用します。"
     },
     "liability": {
-      "title": "Limitation of Liability",
-      "statement": "To the maximum extent permitted by law, NERV Systems, LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues.",
-      "details": "In no event shall NERV's total liability to you for all damages, losses, and causes of action (whether in contract, tort, or otherwise) exceed the amount paid by you, if any, for accessing the Website. Some jurisdictions do not allow the exclusion of certain warranties or the limitation of liability for incidental or consequential damages, so the above limitations may not apply to you."
+      "title": "責任の制限",
+      "statement": "法律で許可される最大限の範囲で、NERV Systems, LLCは、間接的、付随的、特別、結果的、または懲罰的損害、または利益または収益の損失について責任を負いません。",
+      "details": "いかなる場合も、すべての損害、損失、および訴訟原因（契約、不法行為、またはその他）に対するNERVの総責任は、ウェブサイトへのアクセスのためにお客様が支払った金額（ある場合）を超えないものとします。一部の法域では、特定の保証の除外または付随的または結果的損害に対する責任の制限が認められていないため、上記の制限がお客様に適用されない場合があります。"
     },
     "indemnification": {
-      "title": "Indemnification",
-      "description": "You agree to defend, indemnify, and hold harmless NERV Systems, LLC and its officers, directors, employees, and agents from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms or your use of the Website."
+      "title": "補償",
+      "description": "お客様は、本規約の違反またはウェブサイトの使用に起因または関連するあらゆる請求、責任、損害、判決、裁定、損失、費用、経費、または料金（合理的な弁護士費用を含む）から、NERV Systems, LLCおよびその役員、取締役、従業員、および代理人を防御し、補償し、保護することに同意します。"
     },
     "exportControl": {
-      "title": "Export Control and Compliance",
-      "description": "The information and technology presented on this Website may be subject to U.S. export control laws and regulations. You agree to comply with all applicable export and re-export control laws and regulations.",
-      "warning": "WARNING: Our products and services involve defense technology that may be subject to strict export controls. Unauthorized export or re-export may result in criminal and civil penalties."
+      "title": "輸出管理およびコンプライアンス",
+      "description": "本ウェブサイトで提示される情報および技術は、米国の輸出管理法および規制の対象となる場合があります。お客様は、適用されるすべての輸出および再輸出管理法および規制を遵守することに同意します。",
+      "warning": "警告：当社の製品およびサービスには、厳格な輸出管理の対象となる可能性のある防衛技術が含まれています。無許可の輸出または再輸出は、刑事および民事罰の対象となる可能性があります。"
     },
     "governingLaw": {
-      "title": "Governing Law and Jurisdiction",
-      "description": "These Terms shall be governed by and construed in accordance with the laws of the United States and the State of Delaware, without regard to conflict of law principles. Any disputes arising from these Terms or your use of the Website shall be subject to the exclusive jurisdiction of the courts located in Delaware.",
-      "future": "Note: NERV Systems, LLC is currently incorporated in the United States. Future incorporation in Singapore may result in updates to governing law and jurisdiction provisions."
+      "title": "準拠法および管轄",
+      "description": "本規約は、法の抵触に関する原則にかかわらず、米国およびデラウェア州の法律に準拠し、解釈されるものとします。本規約またはウェブサイトの使用から生じる紛争は、デラウェア州に所在する裁判所の専属管轄に服するものとします。",
+      "future": "注：NERV Systems, LLCは現在米国に法人化されています。将来のシンガポールでの法人化により、準拠法および管轄条項が更新される可能性があります。"
     },
     "changes": {
-      "title": "Changes to Terms",
-      "description": "We reserve the right to modify or replace these Terms at any time at our sole discretion. Material changes will be indicated by updating the \"Effective Date\" at the top of these Terms. Your continued use of the Website after any changes constitutes acceptance of the new Terms."
+      "title": "規約の変更",
+      "description": "当社は、独自の裁量により、いつでも本規約を変更または置き換える権利を留保します。重要な変更は、本規約の上部にある「発効日」を更新することで示されます。変更後のウェブサイトの継続使用は、新しい規約の承諾を構成します。"
     },
     "severability": {
-      "title": "Severability",
-      "description": "If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect."
+      "title": "可分性",
+      "description": "本規約のいずれかの条項が執行不能または無効であることが判明した場合、その条項は必要最小限に制限または削除されるものとし、残りの条項は完全に有効に存続するものとします。"
     },
     "entireAgreement": {
-      "title": "Entire Agreement",
-      "description": "These Terms, together with our Privacy Policy, constitute the entire agreement between you and NERV Systems, LLC regarding the use of the Website and supersede all prior agreements and understandings, whether written or oral."
+      "title": "完全合意",
+      "description": "本規約は、当社のプライバシーポリシーとともに、ウェブサイトの使用に関するお客様とNERV Systems, LLCとの間の完全な合意を構成し、書面または口頭を問わず、すべての以前の合意および了解事項に優先します。"
     },
     "contact": {
-      "title": "Contact Information",
-      "description": "If you have questions about these Terms, please contact us:",
+      "title": "連絡先情報",
+      "description": "本規約に関するご質問がございましたら、お問い合わせください：",
       "company": "NERV Systems, LLC",
-      "email": "Email: contact@nervsystems.com"
+      "email": "メール：contact@nervsystems.com"
     },
-    "backToHome": "← Back to Home"
+    "backToHome": "← ホームに戻る"
   }
 }

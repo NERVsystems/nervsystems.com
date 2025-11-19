@@ -454,8 +454,8 @@
     "copyright": "© 2025 NERV Systems สงวนลิขสิทธิ์",
     "taglineBottom": "สร้างขึ้นสำหรับ tactical edge",
     "legal": {
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service"
+      "privacy": "นโยบายความเป็นส่วนตัว",
+      "terms": "ข้อกำหนดการให้บริการ"
     }
   },
   "form": {
@@ -576,10 +576,10 @@
         "contact": "เราได้รับข้อความของคุณแล้ว ทีมงานของเราจะติดต่อคุณภายใน 24 ชั่วโมง"
       },
       "error": "เกิดปัญหาในการส่งแบบฟอร์ม กรุณาส่งอีเมลโดยตรงมาที่ contact@nervsystems.com",
-      "privacyPrefix": "By submitting this form, you agree to our",
-      "privacyLink": "Privacy Policy",
-      "privacyAnd": "and",
-      "termsLink": "Terms of Service"
+      "privacyPrefix": "การส่งแบบฟอร์มนี้ คุณยอมรับ",
+      "privacyLink": "นโยบายความเป็นส่วนตัว",
+      "privacyAnd": "และ",
+      "termsLink": "ข้อกำหนดการให้บริการ"
     }
   },
   "takSolutions": {
@@ -1050,170 +1050,170 @@
     }
   },
   "privacy": {
-    "metaTitle": "Privacy Policy - NERV Systems",
-    "metaDescription": "Privacy Policy for the NERV Systems website. Learn how we collect, use, and protect your information.",
-    "eyebrow": "LEGAL DOCUMENTATION",
-    "title": "Privacy Policy",
-    "effectiveDate": "Effective Date: November 19, 2025",
+    "metaTitle": "นโยบายความเป็นส่วนตัว - NERV Systems",
+    "metaDescription": "นโยบายความเป็นส่วนตัวสำหรับเว็บไซต์ NERV Systems เรียนรู้วิธีที่เรารวบรวม ใช้ และปกป้องข้อมูลของคุณ",
+    "eyebrow": "เอกสารทางกฎหมาย",
+    "title": "นโยบายความเป็นส่วนตัว",
+    "effectiveDate": "วันที่มีผลบังคับใช้: 19 พฤศจิกายน 2025",
     "introduction": {
-      "title": "Introduction",
-      "p1": "NERV Systems, LLC (\"NERV,\" \"we,\" \"us,\" or \"our\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website nervsystems.com (the \"Website\").",
-      "p2": "Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access the Website.",
-      "note": "IMPORTANT: This Privacy Policy applies only to this website and information collected through it. Our products and services (including NERVA AI Platform and TAK Solutions) are governed by separate terms and privacy policies."
+      "title": "บทนำ",
+      "p1": "NERV Systems, LLC (\"NERV\", \"เรา\", \"ของเรา\") มุ่งมั่นในการปกป้องความเป็นส่วนตัวของคุณ นโยบายความเป็นส่วนตัวนี้อธิบายวิธีที่เรารวบรวม ใช้ เปิดเผย และปกป้องข้อมูลของคุณเมื่อคุณเข้าชมเว็บไซต์ของเรา nervsystems.com (\"เว็บไซต์\")",
+      "p2": "โปรดอ่านนโยบายความเป็นส่วนตัวนี้อย่างละเอียด หากคุณไม่เห็นด้วยกับข้อกำหนดของนโยบายความเป็นส่วนตัวนี้ โปรดอย่าเข้าถึงเว็บไซต์",
+      "note": "สำคัญ: นโยบายความเป็นส่วนตัวนี้ใช้กับเว็บไซต์นี้และข้อมูลที่รวบรวมผ่านเว็บไซต์เท่านั้น ผลิตภัณฑ์และบริการของเรา (รวมถึงแพลตฟอร์ม NERVA AI และโซลูชัน TAK) อยู่ภายใต้ข้อกำหนดและนโยบายความเป็นส่วนตัวแยกต่างหาก"
     },
     "informationWeCollect": {
-      "title": "Information We Collect",
-      "intro": "We only collect information that you voluntarily provide to us through our contact forms, demo requests, and quote requests. This may include:",
+      "title": "ข้อมูลที่เรารวบรวม",
+      "intro": "เรารวบรวมเฉพาะข้อมูลที่คุณให้โดยสมัครใจผ่านแบบฟอร์มติดต่อ คำขอสาธิต และคำขอใบเสนอราคา ซึ่งอาจรวมถึง:",
       "items": {
-        "name": "Name (first and last)",
-        "email": "Email address",
-        "organization": "Organization/company name",
-        "phone": "Phone number",
-        "jobTitle": "Job title",
-        "message": "Message content and other information you choose to provide"
+        "name": "ชื่อ (ชื่อและนามสกุล)",
+        "email": "ที่อยู่อีเมล",
+        "organization": "ชื่อองค์กร/บริษัท",
+        "phone": "หมายเลขโทรศัพท์",
+        "jobTitle": "ตำแหน่งงาน",
+        "message": "เนื้อหาข้อความและข้อมูลอื่นๆ ที่คุณเลือกให้"
       },
-      "analytics": "We also automatically collect certain information through analytics services (described below) such as IP address, browser type, device information, and pages visited."
+      "analytics": "เรายังรวบรวมข้อมูลบางอย่างโดยอัตโนมัติผ่านบริการวิเคราะห์ (อธิบายด้านล่าง) เช่น ที่อยู่ IP ประเภทเบราว์เซอร์ ข้อมูลอุปกรณ์ และหน้าที่เข้าชม"
     },
     "howWeUse": {
-      "title": "How We Use Your Information",
+      "title": "วิธีที่เราใช้ข้อมูลของคุณ",
       "items": {
-        "respond": "To respond to your inquiries and requests",
-        "marketing": "To send you marketing communications about our products and services",
-        "improve": "To improve our Website and services",
-        "analytics": "To analyze Website usage and trends"
+        "respond": "เพื่อตอบคำถามและคำขอของคุณ",
+        "marketing": "เพื่อส่งการสื่อสารทางการตลาดเกี่ยวกับผลิตภัณฑ์และบริการของเรา",
+        "improve": "เพื่อปรับปรุงเว็บไซต์และบริการของเรา",
+        "analytics": "เพื่อวิเคราะห์การใช้งานเว็บไซต์และแนวโน้ม"
       },
-      "unsubscribe": "You may unsubscribe from marketing communications at any time by clicking the unsubscribe link in our emails or contacting us directly."
+      "unsubscribe": "คุณสามารถยกเลิกการรับการสื่อสารทางการตลาดได้ตลอดเวลาโดยคลิกลิงก์ยกเลิกการสมัครในอีเมลของเราหรือติดต่อเราโดยตรง"
     },
     "thirdParty": {
-      "title": "Third-Party Services",
-      "intro": "We use the following third-party services to process and store your information:",
+      "title": "บริการบุคคลที่สาม",
+      "intro": "เราใช้บริการบุคคลที่สามต่อไปนี้เพื่อประมวลผลและจัดเก็บข้อมูลของคุณ:",
       "items": {
-        "hubspot": "HubSpot - Form submissions and contact management",
-        "analytics": "Google Analytics - Website analytics and usage tracking"
+        "hubspot": "HubSpot - การส่งแบบฟอร์มและการจัดการผู้ติดต่อ",
+        "analytics": "Google Analytics - การวิเคราะห์เว็บไซต์และการติดตามการใช้งาน"
       },
-      "future": "We may add or change third-party service providers in the future to improve our services. This policy will be updated to reflect any material changes."
+      "future": "เราอาจเพิ่มหรือเปลี่ยนผู้ให้บริการบุคคลที่สามในอนาคตเพื่อปรับปรุงบริการของเรา นโยบายนี้จะได้รับการอัปเดตเพื่อสะท้อนการเปลี่ยนแปลงที่สำคัญ"
     },
     "dataSecurity": {
-      "title": "Data Storage and Security",
-      "storage": "Your information is stored on servers located in the United States through our third-party service providers. We comply with applicable data protection laws, including Singapore's Personal Data Protection Act (PDPA), which permits personal data to be stored offshore when appropriate safeguards are in place.",
-      "protection": "We implement reasonable security measures to protect your information from unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is 100% secure.",
-      "disclaimer": "While we strive to protect your information, we cannot guarantee absolute security."
+      "title": "การจัดเก็บและความปลอดภัยของข้อมูล",
+      "storage": "ข้อมูลของคุณจัดเก็บบนเซิร์ฟเวอร์ที่ตั้งอยู่ในสหรัฐอเมริกาผ่านผู้ให้บริการบุคคลที่สาม เราปฏิบัติตามกฎหมายคุ้มครองข้อมูลที่ใช้บังคับ รวมถึงพระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคลของสิงคโปร์ (PDPA) ซึ่งอนุญาตให้จัดเก็บข้อมูลส่วนบุคคลในต่างประเทศเมื่อมีมาตรการรักษาความปลอดภัยที่เหมาะสม",
+      "protection": "เราใช้มาตรการรักษาความปลอดภัยที่เหมาะสมเพื่อปกป้องข้อมูลของคุณจากการเข้าถึง การเปลี่ยนแปลง การเปิดเผย หรือการทำลายที่ไม่ได้รับอนุญาต อย่างไรก็ตาม ไม่มีวิธีการส่งผ่านอินเทอร์เน็ตหรือการจัดเก็บอิเล็กทรอนิกส์ที่ปลอดภัย 100%",
+      "disclaimer": "แม้ว่าเราจะพยายามปกป้องข้อมูลของคุณ แต่เราไม่สามารถรับประกันความปลอดภัยแบบสมบูรณ์ได้"
     },
     "yourRights": {
-      "title": "Your Rights",
-      "intro": "You have the right to:",
+      "title": "สิทธิของคุณ",
+      "intro": "คุณมีสิทธิ์ในการ:",
       "items": {
-        "access": "Access the personal information we hold about you",
-        "correction": "Request correction of inaccurate information",
-        "deletion": "Request deletion of your information",
-        "optOut": "Opt out of marketing communications"
+        "access": "เข้าถึงข้อมูลส่วนบุคคลที่เราเก็บรักษาเกี่ยวกับคุณ",
+        "correction": "ขอแก้ไขข้อมูลที่ไม่ถูกต้อง",
+        "deletion": "ขอลบข้อมูลของคุณ",
+        "optOut": "เลือกไม่รับการสื่อสารทางการตลาด"
       },
-      "contact": "To exercise these rights, please contact us at contact@nervsystems.com."
+      "contact": "หากต้องการใช้สิทธิ์เหล่านี้ โปรดติดต่อเราที่ contact@nervsystems.com"
     },
     "cookies": {
-      "title": "Cookies and Tracking Technologies",
-      "description": "We use cookies and similar tracking technologies to collect information about your browsing activities. This helps us analyze Website traffic and improve user experience.",
-      "control": "You can control cookies through your browser settings. However, disabling cookies may affect Website functionality."
+      "title": "คุกกี้และเทคโนโลยีการติดตาม",
+      "description": "เราใช้คุกกี้และเทคโนโลยีการติดตามที่คล้ายกันเพื่อรวบรวมข้อมูลเกี่ยวกับกิจกรรมการเรียกดูของคุณ ซึ่งช่วยเราวิเคราะห์การเข้าชมเว็บไซต์และปรับปรุงประสบการณ์ผู้ใช้",
+      "control": "คุณสามารถควบคุมคุกกี้ผ่านการตั้งค่าเบราว์เซอร์ของคุณ อย่างไรก็ตาม การปิดใช้งานคุกกี้อาจส่งผลต่อการทำงานของเว็บไซต์"
     },
     "international": {
-      "title": "International Data Transfers",
-      "description": "Your information may be transferred to and processed in countries other than your country of residence, including the United States. These countries may have different data protection laws.",
-      "consent": "By using our Website, you consent to the transfer of your information to the United States and other countries where our service providers operate."
+      "title": "การถ่ายโอนข้อมูลระหว่างประเทศ",
+      "description": "ข้อมูลของคุณอาจถูกถ่ายโอนและประมวลผลในประเทศอื่นที่ไม่ใช่ประเทศที่คุณพำนักอาศัย รวมถึงสหรัฐอเมริกา ประเทศเหล่านี้อาจมีกฎหมายคุ้มครองข้อมูลที่แตกต่างกัน",
+      "consent": "การใช้เว็บไซต์ของเรา คุณยินยอมให้ถ่ายโอนข้อมูลของคุณไปยังสหรัฐอเมริกาและประเทศอื่นๆ ที่ผู้ให้บริการของเราดำเนินการ"
     },
     "children": {
-      "title": "Children's Privacy",
-      "description": "Our Website is not intended for individuals under the age of 18. We do not knowingly collect personal information from children. If you believe we have collected information from a child, please contact us immediately."
+      "title": "ความเป็นส่วนตัวของเด็ก",
+      "description": "เว็บไซต์ของเราไม่ได้มีไว้สำหรับบุคคลที่อายุต่ำกว่า 18 ปี เราไม่รวบรวมข้อมูลส่วนบุคคลจากเด็กโดยเจตนา หากคุณเชื่อว่าเรารวบรวมข้อมูลจากเด็ก โปรดติดต่อเราทันที"
     },
     "changes": {
-      "title": "Changes to This Privacy Policy",
-      "description": "We may update this Privacy Policy from time to time. The updated version will be indicated by an updated \"Effective Date\" at the top of this policy. We encourage you to review this Privacy Policy periodically for any changes."
+      "title": "การเปลี่ยนแปลงนโยบายความเป็นส่วนตัวนี้",
+      "description": "เราอาจอัปเดตนโยบายความเป็นส่วนตัวนี้เป็นครั้งคราว เวอร์ชันที่อัปเดตจะระบุโดยวันที่มีผลบังคับใช้ที่อัปเดตที่ด้านบนของนโยบายนี้ เราขอแนะนำให้คุณตรวจสอบนโยบายความเป็นส่วนตัวนี้เป็นระยะสำหรับการเปลี่ยนแปลงใดๆ"
     },
     "contact": {
-      "title": "Contact Us",
-      "description": "If you have questions or concerns about this Privacy Policy, please contact us:",
+      "title": "ติดต่อเรา",
+      "description": "หากคุณมีคำถามหรือข้อกังวลเกี่ยวกับนโยบายความเป็นส่วนตัวนี้ โปรดติดต่อเรา:",
       "company": "NERV Systems, LLC",
-      "email": "Email: contact@nervsystems.com"
+      "email": "อีเมล: contact@nervsystems.com"
     },
-    "backToHome": "← Back to Home"
+    "backToHome": "← กลับหน้าหลัก"
   },
   "terms": {
-    "metaTitle": "Terms of Service - NERV Systems",
-    "metaDescription": "Terms of Service for the NERV Systems website. Please read these terms carefully before using our website.",
-    "eyebrow": "LEGAL DOCUMENTATION",
-    "title": "Terms of Service",
-    "effectiveDate": "Effective Date: November 19, 2025",
+    "metaTitle": "ข้อกำหนดการให้บริการ - NERV Systems",
+    "metaDescription": "ข้อกำหนดการให้บริการสำหรับเว็บไซต์ NERV Systems โปรดอ่านข้อกำหนดเหล่านี้อย่างละเอียดก่อนใช้เว็บไซต์ของเรา",
+    "eyebrow": "เอกสารทางกฎหมาย",
+    "title": "ข้อกำหนดการให้บริการ",
+    "effectiveDate": "วันที่มีผลบังคับใช้: 19 พฤศจิกายน 2025",
     "introduction": {
-      "title": "Introduction",
-      "p1": "These Terms of Service (\"Terms\") govern your access to and use of the NERV Systems, LLC (\"NERV,\" \"we,\" \"us,\" or \"our\") website located at nervsystems.com (the \"Website\").",
-      "p2": "By accessing or using the Website, you agree to be bound by these Terms. If you do not agree to these Terms, do not use the Website.",
-      "note": "IMPORTANT: These Terms apply only to this website. Use of our products and services (including NERVA AI Platform and TAK Solutions) is governed by separate agreements and terms of service."
+      "title": "บทนำ",
+      "p1": "ข้อกำหนดการให้บริการนี้ (\"ข้อกำหนด\") ควบคุมการเข้าถึงและการใช้เว็บไซต์ของ NERV Systems, LLC (\"NERV\", \"เรา\", \"ของเรา\") ที่อยู่ที่ nervsystems.com (\"เว็บไซต์\")",
+      "p2": "การเข้าถึงหรือใช้เว็บไซต์ คุณตกลงที่จะผูกพันตามข้อกำหนดนี้ หากคุณไม่เห็นด้วยกับข้อกำหนดนี้ อย่าใช้เว็บไซต์",
+      "note": "สำคัญ: ข้อกำหนดนี้ใช้กับเว็บไซต์นี้เท่านั้น การใช้ผลิตภัณฑ์และบริการของเรา (รวมถึงแพลตฟอร์ม NERVA AI และโซลูชัน TAK) อยู่ภายใต้ข้อตกลงและข้อกำหนดการให้บริการแยกต่างหาก"
     },
     "acceptance": {
-      "title": "Acceptance of Terms",
-      "description": "By accessing this Website, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy. We reserve the right to modify these Terms at any time. Your continued use of the Website after changes are posted constitutes acceptance of the modified Terms."
+      "title": "การยอมรับข้อกำหนด",
+      "description": "การเข้าถึงเว็บไซต์นี้ คุณยอมรับว่าคุณได้อ่าน เข้าใจ และตกลงที่จะผูกพันตามข้อกำหนดนี้และนโยบายความเป็นส่วนตัวของเรา เราขอสงวนสิทธิ์ในการแก้ไขข้อกำหนดนี้ตลอดเวลา การใช้เว็บไซต์ต่อเนื่องของคุณหลังจากการเปลี่ยนแปลงถือเป็นการยอมรับข้อกำหนดที่แก้ไข"
     },
     "useOfWebsite": {
-      "title": "Use of Website",
-      "intro": "You agree to use the Website only for lawful purposes and in accordance with these Terms. You agree not to:",
+      "title": "การใช้เว็บไซต์",
+      "intro": "คุณตกลงที่จะใช้เว็บไซต์เพื่อวัตถุประสงค์ที่ถูกกฎหมายเท่านั้นและตามข้อกำหนดนี้ คุณตกลงที่จะไม่:",
       "items": {
-        "lawful": "Use the Website in any way that violates applicable laws or regulations",
-        "accurate": "Provide false, inaccurate, or misleading information",
-        "noHarm": "Transmit viruses, malware, or other harmful code",
-        "noUnauthorized": "Attempt to gain unauthorized access to the Website or its systems",
-        "noViolation": "Engage in any conduct that restricts or inhibits anyone's use of the Website"
+        "lawful": "ใช้เว็บไซต์ในทางที่ละเมิดกฎหมายหรือข้อบังคับที่ใช้บังคับ",
+        "accurate": "ให้ข้อมูลเท็จ ไม่ถูกต้อง หรือหลอกลวง",
+        "noHarm": "ส่งไวรัส มัลแวร์ หรือโค้ดที่เป็นอันตรายอื่นๆ",
+        "noUnauthorized": "พยายามเข้าถึงเว็บไซต์หรือระบบโดยไม่ได้รับอนุญาต",
+        "noViolation": "มีส่วนร่วมในการกระทำใดๆ ที่จำกัดหรือขัดขวางการใช้เว็บไซต์ของผู้อื่น"
       }
     },
     "intellectualProperty": {
-      "title": "Intellectual Property Rights",
-      "ownership": "All content on this Website, including but not limited to text, graphics, logos, images, software, and design elements, is the property of NERV Systems, LLC and is protected by United States and international copyright, trademark, and other intellectual property laws.",
-      "restrictions": "You may not reproduce, distribute, modify, create derivative works of, publicly display, republish, download, store, or transmit any material from our Website without our prior written consent, except for personal, non-commercial use."
+      "title": "สิทธิ์ทางทรัพย์สินทางปัญญา",
+      "ownership": "เนื้อหาทั้งหมดบนเว็บไซต์นี้ รวมถึงแต่ไม่จำกัดเพียงข้อความ กราฟิก โลโก้ รูปภาพ ซอฟต์แวร์ และองค์ประกอบการออกแบบ เป็นทรัพย์สินของ NERV Systems, LLC และได้รับการคุ้มครองโดยลิขสิทธิ์ เครื่องหมายการค้า และกฎหมายทรัพย์สินทางปัญญาอื่นๆ ของสหรัฐอเมริกาและระหว่างประเทศ",
+      "restrictions": "คุณไม่สามารถทำซ้ำ แจกจ่าย แก้ไข สร้างงานที่ได้มา แสดงต่อสาธารณะ เผยแพร่อีกครั้ง ดาวน์โหลด จัดเก็บ หรือส่งวัสดุใดๆ จากเว็บไซต์ของเราโดยไม่ได้รับความยินยอมเป็นลายลักษณ์อักษรล่วงหน้า ยกเว้นการใช้งานส่วนตัวที่ไม่ใช่เชิงพาณิชย์"
     },
     "thirdPartyLinks": {
-      "title": "Third-Party Links and Content",
-      "description": "The Website may contain links to third-party websites or services that are not owned or controlled by NERV. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party websites or services. You acknowledge and agree that NERV shall not be responsible or liable for any damage or loss caused by your use of any third-party content, goods, or services."
+      "title": "ลิงก์และเนื้อหาของบุคคลที่สาม",
+      "description": "เว็บไซต์อาจมีลิงก์ไปยังเว็บไซต์หรือบริการของบุคคลที่สามที่ NERV ไม่ได้เป็นเจ้าของหรือควบคุม เราไม่มีอำนาจควบคุมและไม่รับผิดชอบต่อเนื้อหา นโยบายความเป็นส่วนตัว หรือแนวปฏิบัติของเว็บไซต์หรือบริการของบุคคลที่สามใดๆ คุณยอมรับและตกลงว่า NERV จะไม่รับผิดชอบต่อความเสียหายหรือการสูญเสียใดๆ ที่เกิดจากการใช้เนื้อหา สินค้า หรือบริการของบุคคลที่สาม"
     },
     "disclaimer": {
-      "title": "Disclaimer of Warranties",
-      "statement": "The website is provided on an \"as is\" and \"as available\" basis without warranties of any kind, either express or implied.",
-      "details": "NERV Systems, LLC disclaims all warranties, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the Website will be uninterrupted, secure, or error-free, or that any defects will be corrected. You use the Website at your own risk."
+      "title": "การปฏิเสธการรับประกัน",
+      "statement": "เว็บไซต์ให้บริการ \"ตามสภาพ\" และ \"ตามที่มีอยู่\" โดยไม่มีการรับประกันใดๆ ไม่ว่าโดยชัดแจ้งหรือโดยนัย",
+      "details": "NERV Systems, LLC ปฏิเสธการรับประกันทั้งหมด รวมถึงแต่ไม่จำกัดเพียงการรับประกันโดยนัยของความสามารถในการขาย ความเหมาะสมสำหรับวัตถุประสงค์เฉพาะ และการไม่ละเมิด เราไม่รับประกันว่าเว็บไซต์จะไม่มีการหยุดชะงัก ปลอดภัย ปราศจากข้อผิดพลาด หรือข้อบกพร่องจะได้รับการแก้ไข คุณใช้เว็บไซต์โดยรับความเสี่ยงของคุณเอง"
     },
     "liability": {
-      "title": "Limitation of Liability",
-      "statement": "To the maximum extent permitted by law, NERV Systems, LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues.",
-      "details": "In no event shall NERV's total liability to you for all damages, losses, and causes of action (whether in contract, tort, or otherwise) exceed the amount paid by you, if any, for accessing the Website. Some jurisdictions do not allow the exclusion of certain warranties or the limitation of liability for incidental or consequential damages, so the above limitations may not apply to you."
+      "title": "ข้อจำกัดความรับผิด",
+      "statement": "ตามขอบเขตสูงสุดที่กฎหมายอนุญาต NERV Systems, LLC จะไม่รับผิดชอบต่อความเสียหายทางอ้อม ที่เกิดขึ้นตามมา พิเศษ ที่ตามมา หรือเพื่อลงโทษ หรือการสูญเสียกำไรหรือรายได้",
+      "details": "ในกรณีใดๆ ความรับผิดทั้งหมดของ NERV ต่อคุณสำหรับความเสียหาย การสูญเสีย และสาเหตุแห่งการฟ้องร้องทั้งหมด (ไม่ว่าจะในสัญญา ละเมิด หรืออื่นๆ) จะไม่เกินจำนวนเงินที่คุณจ่าย หากมี สำหรับการเข้าถึงเว็บไซต์ เขตอำนาจศาลบางแห่งไม่อนุญาตให้ยกเว้นการรับประกันบางอย่างหรือการจำกัดความรับผิดสำหรับความเสียหายที่เกิดขึ้นตามมาหรือผลที่ตามมา ดังนั้นข้อจำกัดข้างต้นอาจไม่ใช้กับคุณ"
     },
     "indemnification": {
-      "title": "Indemnification",
-      "description": "You agree to defend, indemnify, and hold harmless NERV Systems, LLC and its officers, directors, employees, and agents from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms or your use of the Website."
+      "title": "การชดใช้ค่าเสียหาย",
+      "description": "คุณตกลงที่จะป้องกัน ชดใช้ และปกป้อง NERV Systems, LLC และเจ้าหน้าที่ กรรมการ พนักงาน และตัวแทน จากและต่อต้านการเรียกร้อง หนี้สิน ความเสียหาย คำพิพากษา การตัดสิน การสูญเสีย ต้นทุน ค่าใช้จ่าย หรือค่าธรรมเนียม (รวมถึงค่าทนายความที่สมเหตุสมผล) ที่เกิดจากหรือเกี่ยวข้องกับการละเมิดข้อกำหนดนี้หรือการใช้เว็บไซต์ของคุณ"
     },
     "exportControl": {
-      "title": "Export Control and Compliance",
-      "description": "The information and technology presented on this Website may be subject to U.S. export control laws and regulations. You agree to comply with all applicable export and re-export control laws and regulations.",
-      "warning": "WARNING: Our products and services involve defense technology that may be subject to strict export controls. Unauthorized export or re-export may result in criminal and civil penalties."
+      "title": "การควบคุมการส่งออกและการปฏิบัติตาม",
+      "description": "ข้อมูลและเทคโนโลยีที่นำเสนอบนเว็บไซต์นี้อาจอยู่ภายใต้กฎหมายและข้อบังคับควบคุมการส่งออกของสหรัฐอเมริกา คุณตกลงที่จะปฏิบัติตามกฎหมายและข้อบังคับควบคุมการส่งออกและการส่งออกซ้ำทั้งหมดที่ใช้บังคับ",
+      "warning": "คำเตือน: ผลิตภัณฑ์และบริการของเราเกี่ยวข้องกับเทคโนโลยีการป้องกันประเทศที่อาจอยู่ภายใต้การควบคุมการส่งออกที่เข้มงวด การส่งออกหรือส่งออกซ้ำที่ไม่ได้รับอนุญาตอาจส่งผลให้ถูกลงโทษทางอาญาและทางแพ่ง"
     },
     "governingLaw": {
-      "title": "Governing Law and Jurisdiction",
-      "description": "These Terms shall be governed by and construed in accordance with the laws of the United States and the State of Delaware, without regard to conflict of law principles. Any disputes arising from these Terms or your use of the Website shall be subject to the exclusive jurisdiction of the courts located in Delaware.",
-      "future": "Note: NERV Systems, LLC is currently incorporated in the United States. Future incorporation in Singapore may result in updates to governing law and jurisdiction provisions."
+      "title": "กฎหมายที่ใช้บังคับและเขตอำนาจศาล",
+      "description": "ข้อกำหนดนี้จะอยู่ภายใต้และตีความตามกฎหมายของสหรัฐอเมริกาและรัฐเดลาแวร์ โดยไม่คำนึงถึงหลักการความขัดแย้งของกฎหมาย ข้อพิพาทใดๆ ที่เกิดขึ้นจากข้อกำหนดนี้หรือการใช้เว็บไซต์ของคุณจะอยู่ภายใต้เขตอำนาจศาลเฉพาะของศาลที่ตั้งอยู่ในเดลาแวร์",
+      "future": "หมายเหตุ: NERV Systems, LLC ปัจจุบันจดทะเบียนในสหรัฐอเมริกา การจดทะเบียนในสิงคโปร์ในอนาคตอาจส่งผลให้มีการอัปเดตบทบัญญัติเกี่ยวกับกฎหมายที่ใช้บังคับและเขตอำนาจศาล"
     },
     "changes": {
-      "title": "Changes to Terms",
-      "description": "We reserve the right to modify or replace these Terms at any time at our sole discretion. Material changes will be indicated by updating the \"Effective Date\" at the top of these Terms. Your continued use of the Website after any changes constitutes acceptance of the new Terms."
+      "title": "การเปลี่ยนแปลงข้อกำหนด",
+      "description": "เราขอสงวนสิทธิ์ในการแก้ไขหรือเปลี่ยนข้อกำหนดนี้ตลอดเวลาตามดุลยพินิจของเราแต่เพียงผู้เดียว การเปลี่ยนแปลงที่สำคัญจะระบุโดยการอัปเดต \"วันที่มีผลบังคับใช้\" ที่ด้านบนของข้อกำหนดนี้ การใช้เว็บไซต์ต่อเนื่องของคุณหลังจากการเปลี่ยนแปลงใดๆ ถือเป็นการยอมรับข้อกำหนดใหม่"
     },
     "severability": {
-      "title": "Severability",
-      "description": "If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect."
+      "title": "ความสามารถในการแยกออก",
+      "description": "หากพบว่าบทบัญญัติใดของข้อกำหนดนี้ไม่สามารถบังคับใช้หรือไม่ถูกต้อง บทบัญญัตินั้นจะถูกจำกัดหรือตัดออกให้เหลือน้อยที่สุดเท่าที่จำเป็น และบทบัญญัติที่เหลือจะยังคงมีผลบังคับใช้อย่างเต็มที่"
     },
     "entireAgreement": {
-      "title": "Entire Agreement",
-      "description": "These Terms, together with our Privacy Policy, constitute the entire agreement between you and NERV Systems, LLC regarding the use of the Website and supersede all prior agreements and understandings, whether written or oral."
+      "title": "ข้อตกลงทั้งหมด",
+      "description": "ข้อกำหนดนี้ร่วมกับนโยบายความเป็นส่วนตัวของเรา เป็นข้อตกลงทั้งหมดระหว่างคุณและ NERV Systems, LLC เกี่ยวกับการใช้เว็บไซต์และแทนที่ข้อตกลงและความเข้าใจก่อนหน้านี้ทั้งหมด ไม่ว่าจะเป็นลายลักษณ์อักษรหรือด้วยวาจา"
     },
     "contact": {
-      "title": "Contact Information",
-      "description": "If you have questions about these Terms, please contact us:",
+      "title": "ข้อมูลติดต่อ",
+      "description": "หากคุณมีคำถามเกี่ยวกับข้อกำหนดนี้ โปรดติดต่อเรา:",
       "company": "NERV Systems, LLC",
-      "email": "Email: contact@nervsystems.com"
+      "email": "อีเมล: contact@nervsystems.com"
     },
-    "backToHome": "← Back to Home"
+    "backToHome": "← กลับหน้าหลัก"
   }
 }
