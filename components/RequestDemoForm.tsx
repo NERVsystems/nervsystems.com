@@ -452,7 +452,15 @@ Submitted: ${new Date().toISOString()}
           </div>
 
           <p className="text-xs text-tactical-textDim text-center mt-4">
-            {t('messages.privacy')}
+            {t('messages.privacyPrefix')}{' '}
+            <a href="/privacy" target="_blank" className="text-tactical-accent hover:text-white underline">
+              {t('messages.privacyLink')}
+            </a>
+            {' '}{t('messages.privacyAnd')}{' '}
+            <a href="/terms" target="_blank" className="text-tactical-accent hover:text-white underline">
+              {t('messages.termsLink')}
+            </a>
+            .
           </p>
         </form>
       </div>

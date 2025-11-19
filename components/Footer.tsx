@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -72,9 +73,20 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center text-tactical-textDim text-sm">
-            <p>
-              {t('copyright')}
-            </p>
+            <div className="flex flex-col md:flex-row items-center gap-4">
+              <p>
+                {t('copyright')}
+              </p>
+              <div className="flex gap-4 text-xs">
+                <Link href="/privacy" className="hover:text-white transition-colors">
+                  {t('legal.privacy')}
+                </Link>
+                <span className="text-tactical-textDim/50">•</span>
+                <Link href="/terms" className="hover:text-white transition-colors">
+                  {t('legal.terms')}
+                </Link>
+              </div>
+            </div>
             <p className="mt-4 md:mt-0">
               {t('taglineBottom')}
             </p>
