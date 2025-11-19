@@ -454,6 +454,127 @@
     "copyright": "© 2025 NERV Systems. All rights reserved.",
     "taglineBottom": "戦術エッジのために構築"
   },
+  "form": {
+    "demo": {
+      "title": "デモを依頼",
+      "subtitle": "以下のフォームにご記入ください。担当者が24時間以内にご連絡いたします。"
+    },
+    "quote": {
+      "title": "見積もりを依頼",
+      "subtitle": "以下のフォームにご記入ください。担当者が24時間以内にご連絡いたします。"
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "subtitle": "以下のフォームにご記入ください。担当者が24時間以内にご連絡いたします。"
+    },
+    "fields": {
+      "firstName": {
+        "label": "名",
+        "required": "名 *"
+      },
+      "lastName": {
+        "label": "姓",
+        "required": "姓 *"
+      },
+      "email": {
+        "label": "メールアドレス",
+        "required": "メールアドレス *"
+      },
+      "organization": {
+        "label": "組織名",
+        "required": "組織名 *"
+      },
+      "phone": {
+        "label": "電話番号",
+        "required": "電話番号 *"
+      },
+      "jobTitle": {
+        "label": "役職"
+      },
+      "organisationType": {
+        "label": "組織タイプ",
+        "required": "組織タイプ *",
+        "placeholder": "組織タイプを選択..."
+      },
+      "currentTakUsage": {
+        "label": "現在のTAK使用状況",
+        "required": "現在のTAK使用状況 *",
+        "placeholder": "使用状況を選択..."
+      },
+      "estimatedTakUsers": {
+        "label": "推定TAKユーザー数",
+        "placeholder": "選択..."
+      },
+      "takDeploymentTimeline": {
+        "label": "展開スケジュール",
+        "placeholder": "選択..."
+      },
+      "interest": {
+        "label": "興味のある分野",
+        "required": "興味のある分野 *"
+      },
+      "message": {
+        "label": "メッセージ",
+        "required": "メッセージ *",
+        "placeholder": "ご要件についてお聞かせください..."
+      }
+    },
+    "options": {
+      "organisationType": {
+        "military": "軍事/防衛",
+        "lawEnforcement": "法執行機関",
+        "emergency": "緊急サービス",
+        "government": "政府機関",
+        "privateSecurity": "民間警備",
+        "commercial": "民間企業",
+        "other": "その他"
+      },
+      "currentTakUsage": {
+        "alreadyUsing": "既にTAKを使用中",
+        "readyToPurchase": "購入準備完了",
+        "evaluating": "ベンダー評価中",
+        "researching": "ソリューション調査中"
+      },
+      "estimatedTakUsers": {
+        "range1": "1-50ユーザー",
+        "range2": "51-250ユーザー",
+        "range3": "251-1000ユーザー",
+        "range4": "1000+ユーザー"
+      },
+      "takDeploymentTimeline": {
+        "immediate": "即時(0-1ヶ月)",
+        "shortTerm": "短期(1-3ヶ月)",
+        "mediumTerm": "中期(3-6ヶ月)",
+        "longTerm": "長期(6ヶ月以上)"
+      },
+      "interest": {
+        "nerva": "NERVA AIプラットフォーム",
+        "hosting": "マネージドTAKホスティング",
+        "deployment": "TAK展開コンサルティング",
+        "training": "TAKトレーニングプログラム",
+        "administration": "システム管理",
+        "plugins": "プラグイン開発",
+        "edge": "エッジハードウェア(ヘルメットGPU)",
+        "other": "その他"
+      }
+    },
+    "buttons": {
+      "submit": "送信",
+      "submitting": "送信中...",
+      "cancel": "キャンセル",
+      "close": "閉じる"
+    },
+    "messages": {
+      "success": {
+        "title": "ありがとうございます！",
+        "demo": "デモリクエストを受け付けました。担当者が24時間以内にご連絡いたします。",
+        "quote": "見積もりリクエストを受け付けました。担当者が24時間以内にご連絡いたします。",
+        "contact": "お問い合わせを受け付けました。担当者が24時間以内にご連絡いたします。"
+      },
+      "error": "フォームの送信中に問題が発生しました。contact@nervsystems.com まで直接メールでお問い合わせください。",
+      "privacy": "このフォームを送信することで、当社のプライバシーポリシーと利用規約に同意したものとみなされます。"
+    }
+  },
   "takSolutions": {
     "hero": {
       "eyebrow": "アジア太平洋地域向けTAKソリューション",
