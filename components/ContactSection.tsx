@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import RequestDemoForm from './RequestDemoForm';
@@ -8,6 +9,11 @@ import RequestDemoForm from './RequestDemoForm';
 export default function ContactSection() {
   const t = useTranslations('contact');
   const [showContactForm, setShowContactForm] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <section id="contact" className="relative py-24 bg-tactical-bg border-t border-white/10">
@@ -108,13 +114,14 @@ export default function ContactSection() {
         </div>
       </div>
 
-      {/* Contact Form Modal */}
-      {showContactForm && (
+      {/* Contact Form Modal - Rendered via Portal */}
+      {mounted && showContactForm && createPortal(
         <RequestDemoForm
           onClose={() => setShowContactForm(false)}
           formType="contact"
           formId={process.env.NEXT_PUBLIC_HUBSPOT_CONTACT_FORM_ID}
-        />
+        />,
+        document.body
       )}
     </section>
   );

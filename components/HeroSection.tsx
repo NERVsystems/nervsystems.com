@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { useTranslations } from 'next-intl';
 import RequestDemoForm from './RequestDemoForm';
 
@@ -68,13 +69,14 @@ export default function HeroSection() {
       {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-tactical-bg to-transparent pointer-events-none"></div>
 
-      {/* Demo Form Modal */}
-      {showDemoForm && (
+      {/* Demo Form Modal - Rendered via Portal */}
+      {mounted && showDemoForm && createPortal(
         <RequestDemoForm
           onClose={() => setShowDemoForm(false)}
           formType="demo"
           formId={process.env.NEXT_PUBLIC_HUBSPOT_DEMO_FORM_ID}
-        />
+        />,
+        document.body
       )}
     </section>
   );

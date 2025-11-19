@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import RequestDemoForm from './RequestDemoForm';
@@ -9,6 +10,11 @@ export default function TacticalNav() {
   const t = useTranslations('nav');
   const [scrolled, setScrolled] = useState(false);
   const [showDemoForm, setShowDemoForm] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,13 +65,14 @@ export default function TacticalNav() {
         </div>
       </div>
 
-      {/* Demo Form Modal */}
-      {showDemoForm && (
+      {/* Demo Form Modal - Rendered via Portal to avoid Safari positioning issues */}
+      {mounted && showDemoForm && createPortal(
         <RequestDemoForm
           onClose={() => setShowDemoForm(false)}
           formType="demo"
           formId={process.env.NEXT_PUBLIC_HUBSPOT_DEMO_FORM_ID}
-        />
+        />,
+        document.body
       )}
     </nav>
   );

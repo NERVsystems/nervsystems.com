@@ -1,12 +1,18 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { useTranslations } from 'next-intl';
 import RequestDemoForm from '@/components/RequestDemoForm';
 
 export default function TAKHeroSection() {
   const t = useTranslations('takSolutions.hero');
   const [showQuoteForm, setShowQuoteForm] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-24">
@@ -83,13 +89,14 @@ export default function TAKHeroSection() {
       {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-tactical-bg to-transparent pointer-events-none"></div>
 
-      {/* Quote Form Modal */}
-      {showQuoteForm && (
+      {/* Quote Form Modal - Rendered via Portal */}
+      {mounted && showQuoteForm && createPortal(
         <RequestDemoForm
           onClose={() => setShowQuoteForm(false)}
           formType="quote"
           formId={process.env.NEXT_PUBLIC_HUBSPOT_TAK_FORM_ID}
-        />
+        />,
+        document.body
       )}
     </section>
   );

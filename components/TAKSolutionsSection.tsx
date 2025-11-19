@@ -1,12 +1,18 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { useTranslations } from 'next-intl';
 import RequestDemoForm from './RequestDemoForm';
 
 export default function TAKSolutionsSection() {
   const t = useTranslations('homeTakSolutions');
   const [showQuoteForm, setShowQuoteForm] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Get plan keys for iteration
   const hostingPlans = ['starter', 'professional', 'enterprise'] as const;
@@ -219,13 +225,14 @@ export default function TAKSolutionsSection() {
         </div>
       </div>
 
-      {/* Quote Form Modal */}
-      {showQuoteForm && (
+      {/* Quote Form Modal - Rendered via Portal */}
+      {mounted && showQuoteForm && createPortal(
         <RequestDemoForm
           onClose={() => setShowQuoteForm(false)}
           formType="quote"
           formId={process.env.NEXT_PUBLIC_HUBSPOT_TAK_FORM_ID}
-        />
+        />,
+        document.body
       )}
     </section>
   );

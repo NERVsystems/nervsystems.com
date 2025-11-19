@@ -158,8 +158,14 @@ Submitted: ${new Date().toISOString()}
 
   if (submitted) {
     return (
-      <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-        <div className="bg-tactical-surface tactical-border max-w-md w-full p-8 relative">
+      <div
+        className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+        onClick={onClose}
+      >
+        <div
+          className="bg-tactical-surface tactical-border max-w-md w-full p-8 relative"
+          onClick={(e) => e.stopPropagation()}
+        >
           <button
             onClick={onClose}
             className="absolute top-4 right-4 text-tactical-textDim hover:text-white transition-colors"
@@ -186,8 +192,14 @@ Submitted: ${new Date().toISOString()}
   }
 
   return (
-    <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto">
-      <div className="bg-tactical-surface tactical-border max-w-2xl w-full p-8 my-8 relative">
+    <div
+      className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto"
+      onClick={onClose}
+    >
+      <div
+        className="bg-tactical-surface tactical-border max-w-2xl w-full p-8 my-8 relative"
+        onClick={(e) => e.stopPropagation()}
+      >
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-tactical-textDim hover:text-white transition-colors text-2xl"
