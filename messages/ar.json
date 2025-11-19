@@ -454,6 +454,127 @@
     "copyright": "© 2025 NERV Systems. جميع الحقوق محفوظة.",
     "taglineBottom": "مصمم للحافة التكتيكية"
   },
+  "form": {
+    "demo": {
+      "title": "طلب عرض توضيحي",
+      "subtitle": "املأ النموذج أدناه وسيتواصل فريقنا معك خلال 24 ساعة."
+    },
+    "quote": {
+      "title": "طلب عرض أسعار",
+      "subtitle": "املأ النموذج أدناه وسيتواصل فريقنا معك خلال 24 ساعة."
+    },
+    "contact": {
+      "title": "اتصل بنا",
+      "subtitle": "املأ النموذج أدناه وسيتواصل فريقنا معك خلال 24 ساعة."
+    },
+    "fields": {
+      "firstName": {
+        "label": "الاسم الأول",
+        "required": "الاسم الأول *"
+      },
+      "lastName": {
+        "label": "اسم العائلة",
+        "required": "اسم العائلة *"
+      },
+      "email": {
+        "label": "البريد الإلكتروني",
+        "required": "البريد الإلكتروني *"
+      },
+      "organization": {
+        "label": "المنظمة",
+        "required": "المنظمة *"
+      },
+      "phone": {
+        "label": "رقم الهاتف",
+        "required": "رقم الهاتف *"
+      },
+      "jobTitle": {
+        "label": "المسمى الوظيفي"
+      },
+      "organisationType": {
+        "label": "نوع المنظمة",
+        "required": "نوع المنظمة *",
+        "placeholder": "اختر نوع المنظمة..."
+      },
+      "currentTakUsage": {
+        "label": "استخدام TAK الحالي",
+        "required": "استخدام TAK الحالي *",
+        "placeholder": "اختر الاستخدام الحالي..."
+      },
+      "estimatedTakUsers": {
+        "label": "العدد المقدر لمستخدمي TAK",
+        "placeholder": "اختر..."
+      },
+      "takDeploymentTimeline": {
+        "label": "الجدول الزمني للنشر",
+        "placeholder": "اختر..."
+      },
+      "interest": {
+        "label": "مهتم بـ",
+        "required": "مهتم بـ *"
+      },
+      "message": {
+        "label": "الرسالة",
+        "required": "الرسالة *",
+        "placeholder": "أخبرنا عن متطلباتك..."
+      }
+    },
+    "options": {
+      "organisationType": {
+        "military": "عسكري/دفاع",
+        "lawEnforcement": "إنفاذ القانون",
+        "emergency": "خدمات الطوارئ",
+        "government": "حكومي",
+        "privateSecurity": "أمن خاص",
+        "commercial": "تجاري",
+        "other": "أخرى"
+      },
+      "currentTakUsage": {
+        "alreadyUsing": "نستخدم TAK بالفعل",
+        "readyToPurchase": "جاهز للشراء",
+        "evaluating": "تقييم الموردين",
+        "researching": "البحث عن الحلول"
+      },
+      "estimatedTakUsers": {
+        "range1": "1-50 مستخدم",
+        "range2": "51-250 مستخدم",
+        "range3": "251-1000 مستخدم",
+        "range4": "أكثر من 1000 مستخدم"
+      },
+      "takDeploymentTimeline": {
+        "immediate": "فوري (0-1 شهر)",
+        "shortTerm": "قصير المدى (1-3 أشهر)",
+        "mediumTerm": "متوسط المدى (3-6 أشهر)",
+        "longTerm": "طويل المدى (أكثر من 6 أشهر)"
+      },
+      "interest": {
+        "nerva": "منصة NERVA بالذكاء الاصطناعي",
+        "hosting": "استضافة TAK المُدارة",
+        "deployment": "استشارات نشر TAK",
+        "training": "برامج تدريب TAK",
+        "administration": "إدارة النظام",
+        "plugins": "تطوير الإضافات",
+        "edge": "أجهزة الحافة (GPU في خوذة)",
+        "other": "أخرى"
+      }
+    },
+    "buttons": {
+      "submit": "إرسال الطلب",
+      "submitting": "جارٍ الإرسال...",
+      "cancel": "إلغاء",
+      "close": "إغلاق"
+    },
+    "messages": {
+      "success": {
+        "title": "شكراً لك!",
+        "demo": "تم استلام طلب العرض التوضيحي. سيتواصل فريقنا معك خلال 24 ساعة.",
+        "quote": "تم استلام طلب عرض الأسعار. سيتواصل فريقنا معك خلال 24 ساعة.",
+        "contact": "تم استلام رسالتك. سيتواصل فريقنا معك خلال 24 ساعة."
+      },
+      "error": "حدثت مشكلة أثناء إرسال النموذج. يرجى مراسلتنا مباشرة على contact@nervsystems.com",
+      "privacy": "بإرسال هذا النموذج، فإنك توافق على سياسة الخصوصية وشروط الخدمة الخاصة بنا."
+    }
+  },
   "takSolutions": {
     "hero": {
       "eyebrow": "حلول TAK لمنطقة آسيا والمحيط الهادئ",

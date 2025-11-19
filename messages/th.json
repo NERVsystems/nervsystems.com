@@ -454,6 +454,127 @@
     "copyright": "© 2025 NERV Systems สงวนลิขสิทธิ์",
     "taglineBottom": "สร้างขึ้นสำหรับ tactical edge"
   },
+  "form": {
+    "demo": {
+      "title": "ขอดูสาธิต",
+      "subtitle": "กรุณากรอกแบบฟอร์มด้านล่าง ทีมงานของเราจะติดต่อกลับภายใน 24 ชั่วโมง"
+    },
+    "quote": {
+      "title": "ขอใบเสนอราคา",
+      "subtitle": "กรุณากรอกแบบฟอร์มด้านล่าง ทีมงานของเราจะติดต่อกลับภายใน 24 ชั่วโมง"
+    },
+    "contact": {
+      "title": "ติดต่อเรา",
+      "subtitle": "กรุณากรอกแบบฟอร์มด้านล่าง ทีมงานของเราจะติดต่อกลับภายใน 24 ชั่วโมง"
+    },
+    "fields": {
+      "firstName": {
+        "label": "ชื่อ",
+        "required": "ชื่อ *"
+      },
+      "lastName": {
+        "label": "นามสกุล",
+        "required": "นามสกุล *"
+      },
+      "email": {
+        "label": "อีเมล",
+        "required": "อีเมล *"
+      },
+      "organization": {
+        "label": "องค์กร",
+        "required": "องค์กร *"
+      },
+      "phone": {
+        "label": "เบอร์โทรศัพท์",
+        "required": "เบอร์โทรศัพท์ *"
+      },
+      "jobTitle": {
+        "label": "ตำแหน่งงาน"
+      },
+      "organisationType": {
+        "label": "ประเภทองค์กร",
+        "required": "ประเภทองค์กร *",
+        "placeholder": "เลือกประเภทองค์กร..."
+      },
+      "currentTakUsage": {
+        "label": "การใช้งาน TAK ปัจจุบัน",
+        "required": "การใช้งาน TAK ปัจจุบัน *",
+        "placeholder": "เลือกสถานะการใช้งาน..."
+      },
+      "estimatedTakUsers": {
+        "label": "จำนวนผู้ใช้ TAK โดยประมาณ",
+        "placeholder": "เลือก..."
+      },
+      "takDeploymentTimeline": {
+        "label": "กรอบเวลาการใช้งาน",
+        "placeholder": "เลือก..."
+      },
+      "interest": {
+        "label": "สนใจด้าน",
+        "required": "สนใจด้าน *"
+      },
+      "message": {
+        "label": "ข้อความ",
+        "required": "ข้อความ *",
+        "placeholder": "บอกเราเกี่ยวกับความต้องการของคุณ..."
+      }
+    },
+    "options": {
+      "organisationType": {
+        "military": "ทหาร/กลาโหม",
+        "lawEnforcement": "การบังคับใช้กฎหมาย",
+        "emergency": "บริการฉุกเฉิน",
+        "government": "หน่วยงานรัฐบาล",
+        "privateSecurity": "รักษาความปลอดภัยเอกชน",
+        "commercial": "เชิงพาณิชย์",
+        "other": "อื่นๆ"
+      },
+      "currentTakUsage": {
+        "alreadyUsing": "กำลังใช้งาน TAK อยู่แล้ว",
+        "readyToPurchase": "พร้อมซื้อ",
+        "evaluating": "กำลังประเมินผู้ให้บริการ",
+        "researching": "กำลังค้นคว้าโซลูชัน"
+      },
+      "estimatedTakUsers": {
+        "range1": "1-50 ผู้ใช้",
+        "range2": "51-250 ผู้ใช้",
+        "range3": "251-1000 ผู้ใช้",
+        "range4": "1000+ ผู้ใช้"
+      },
+      "takDeploymentTimeline": {
+        "immediate": "ทันที (0-1 เดือน)",
+        "shortTerm": "ระยะสั้น (1-3 เดือน)",
+        "mediumTerm": "ระยะกลาง (3-6 เดือน)",
+        "longTerm": "ระยะยาว (6 เดือนขึ้นไป)"
+      },
+      "interest": {
+        "nerva": "แพลตฟอร์ม NERVA AI",
+        "hosting": "Managed TAK Hosting",
+        "deployment": "TAK Deployment Consulting",
+        "training": "โปรแกรมฝึกอบรม TAK",
+        "administration": "การจัดการระบบ",
+        "plugins": "การพัฒนาปลั๊กอิน",
+        "edge": "Edge Hardware (GPU ในหมวก)",
+        "other": "อื่นๆ"
+      }
+    },
+    "buttons": {
+      "submit": "ส่ง",
+      "submitting": "กำลังส่ง...",
+      "cancel": "ยกเลิก",
+      "close": "ปิด"
+    },
+    "messages": {
+      "success": {
+        "title": "ขอบคุณ!",
+        "demo": "เราได้รับคำขอดูสาธิตของคุณแล้ว ทีมงานของเราจะติดต่อคุณภายใน 24 ชั่วโมง",
+        "quote": "เราได้รับคำขอใบเสนอราคาของคุณแล้ว ทีมงานของเราจะติดต่อคุณภายใน 24 ชั่วโมง",
+        "contact": "เราได้รับข้อความของคุณแล้ว ทีมงานของเราจะติดต่อคุณภายใน 24 ชั่วโมง"
+      },
+      "error": "เกิดปัญหาในการส่งแบบฟอร์ม กรุณาส่งอีเมลโดยตรงมาที่ contact@nervsystems.com",
+      "privacy": "การส่งแบบฟอร์มนี้ถือว่าคุณยอมรับนโยบายความเป็นส่วนตัวและข้อกำหนดการให้บริการของเรา"
+    }
+  },
   "takSolutions": {
     "hero": {
       "eyebrow": "โซลูชัน TAK สำหรับเอเชียแปซิฟิก",
