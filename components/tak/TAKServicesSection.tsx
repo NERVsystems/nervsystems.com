@@ -1,12 +1,18 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { useTranslations } from 'next-intl';
 import RequestDemoForm from '@/components/RequestDemoForm';
 
 export default function TAKServicesSection() {
   const t = useTranslations('takSolutions.services');
   const [showQuoteForm, setShowQuoteForm] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <section id="services" className="relative py-24 bg-tactical-surface border-t border-white/10">
@@ -285,13 +291,14 @@ export default function TAKServicesSection() {
 
       </div>
 
-      {/* Quote Form Modal */}
-      {showQuoteForm && (
+      {/* Quote Form Modal - Rendered via Portal */}
+      {mounted && showQuoteForm && createPortal(
         <RequestDemoForm
           onClose={() => setShowQuoteForm(false)}
           formType="quote"
           formId={process.env.NEXT_PUBLIC_HUBSPOT_TAK_FORM_ID}
-        />
+        />,
+        document.body
       )}
     </section>
   );

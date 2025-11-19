@@ -1,12 +1,18 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { useTranslations } from 'next-intl';
 import RequestDemoForm from './RequestDemoForm';
 
 export default function NERVASection() {
   const t = useTranslations('nerva');
   const [showDemoForm, setShowDemoForm] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const capabilities = ['uas', 'medevac', 'threat', 'sar', 'alert', 'airspace'];
 
@@ -129,13 +135,14 @@ export default function NERVASection() {
         </div>
       </div>
 
-      {/* Demo Form Modal */}
-      {showDemoForm && (
+      {/* Demo Form Modal - Rendered via Portal */}
+      {mounted && showDemoForm && createPortal(
         <RequestDemoForm
           onClose={() => setShowDemoForm(false)}
           formType="demo"
           formId={process.env.NEXT_PUBLIC_HUBSPOT_DEMO_FORM_ID}
-        />
+        />,
+        document.body
       )}
     </section>
   );
