@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { locales } from '@/i18n/config';
 import Analytics from "@/components/Analytics";
 import StructuredData from "@/components/StructuredData";
+import CookieNotice from "@/components/CookieNotice";
 
 export const metadata: Metadata = {
   title: "NERV Systems | AI-Powered TAK Platform for Mission Success",
@@ -94,6 +95,7 @@ export default async function LocaleLayout({
           <StructuredData />
           <Analytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
           {children}
+          <CookieNotice />
         </NextIntlClientProvider>
       </body>
     </html>

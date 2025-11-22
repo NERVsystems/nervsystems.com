@@ -1065,8 +1065,8 @@
     },
     "cookies": {
       "title": "Cookies and Tracking Technologies",
-      "description": "We use cookies and similar tracking technologies to collect information about your browsing activities. This helps us analyze Website traffic and improve user experience.",
-      "control": "You can control cookies through your browser settings. However, disabling cookies may affect Website functionality."
+      "description": "We use cookies primarily through our form submission system (HubSpot). These cookies are set when you interact with our contact forms and help us track form submissions and analyze inquiry sources. We may also use analytics cookies (such as Google Analytics) to understand website traffic and improve user experience.",
+      "control": "You can control cookies through your browser settings. However, disabling cookies may affect form functionality and prevent us from properly processing your inquiries."
     },
     "international": {
       "title": "International Data Transfers",
