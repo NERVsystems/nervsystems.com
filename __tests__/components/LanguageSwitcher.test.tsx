@@ -5,12 +5,15 @@ import enMessages from '@/messages/en.json';
 
 // Mock Next.js navigation hooks
 const mockPush = jest.fn();
-const mockPathname = '/';
-const mockParams = { locale: 'en' };
+let mockPathname = '/';
+let mockParams: { locale?: string } = { locale: 'en' };
+
+const mockUsePathname = jest.fn(() => mockPathname);
+const mockUseParams = jest.fn(() => mockParams);
 
 jest.mock('next/navigation', () => ({
-  useParams: () => mockParams,
-  usePathname: () => mockPathname,
+  useParams: () => mockUseParams(),
+  usePathname: () => mockUsePathname(),
   useRouter: () => ({
     push: mockPush,
   }),
@@ -34,6 +37,11 @@ describe('LanguageSwitcher Component', () => {
 
   beforeEach(() => {
     mockPush.mockClear();
+    // Reset to default values
+    mockPathname = '/';
+    mockParams = { locale: 'en' };
+    mockUsePathname.mockReturnValue(mockPathname);
+    mockUseParams.mockReturnValue(mockParams);
   });
 
   it('should render without crashing', () => {
@@ -207,5 +215,58 @@ describe('LanguageSwitcher Component', () => {
     expect(screen.getByText('ไทย')).toBeInTheDocument(); // Thai
     expect(screen.getByText('한국')).toBeInTheDocument(); // Korean
     expect(screen.getByText('عر')).toBeInTheDocument(); // Arabic
+  });
+
+  it('should generate correct English href when on Japanese page', () => {
+    // Mock being on Japanese homepage
+    mockPathname = '/ja';
+    mockParams = { locale: 'ja' };
+    mockUsePathname.mockReturnValue(mockPathname);
+    mockUseParams.mockReturnValue(mockParams);
+
+    renderWithIntl(<LanguageSwitcher />);
+    const button = screen.getByRole('button', { name: /select language/i });
+
+    // Button should show current language (Japanese)
+    expect(button).toHaveTextContent('日本');
+
+    // Open dropdown
+    fireEvent.click(button);
+
+    const links = screen.getAllByRole('link');
+
+    // English link should have href "/" (not "/en")
+    const enLink = links.find((link) => link.textContent === 'EN');
+    expect(enLink).toHaveAttribute('href', '/');
+
+    // Other links should have correct locale prefixes (with trailing slashes)
+    expect(links.find((link) => link.textContent === '日本')).toHaveAttribute('href', '/ja/');
+    expect(links.find((link) => link.textContent === 'ไทย')).toHaveAttribute('href', '/th/');
+    expect(links.find((link) => link.textContent === '한국')).toHaveAttribute('href', '/ko/');
+    expect(links.find((link) => link.textContent === 'عر')).toHaveAttribute('href', '/ar/');
+  });
+
+  it('should generate correct English href when on Japanese subpage', () => {
+    // Mock being on Japanese about page
+    mockPathname = '/ja/about';
+    mockParams = { locale: 'ja' };
+    mockUsePathname.mockReturnValue(mockPathname);
+    mockUseParams.mockReturnValue(mockParams);
+
+    renderWithIntl(<LanguageSwitcher />);
+    const button = screen.getByRole('button', { name: /select language/i });
+
+    // Open dropdown
+    fireEvent.click(button);
+
+    const links = screen.getAllByRole('link');
+
+    // English link should have href "/about" (preserving the path, removing locale)
+    const enLink = links.find((link) => link.textContent === 'EN');
+    expect(enLink).toHaveAttribute('href', '/about');
+
+    // Other links should preserve the path with their locale prefix
+    expect(links.find((link) => link.textContent === '日本')).toHaveAttribute('href', '/ja/about');
+    expect(links.find((link) => link.textContent === 'ไทย')).toHaveAttribute('href', '/th/about');
   });
 });
