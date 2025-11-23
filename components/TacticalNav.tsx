@@ -5,6 +5,7 @@ import { createPortal } from 'react-dom';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import RequestDemoForm from './RequestDemoForm';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function TacticalNav() {
   const t = useTranslations('nav');
@@ -55,13 +56,16 @@ export default function TacticalNav() {
             </Link>
           </div>
 
-          {/* CTA */}
-          <button
-            onClick={() => setShowDemoForm(true)}
-            className="px-6 py-2 bg-white text-black hover:bg-tactical-textDim transition-all duration-300 text-sm font-medium"
-          >
-            {t('requestDemo')}
-          </button>
+          {/* Language Switcher + CTA */}
+          <div className="flex items-center gap-4">
+            <LanguageSwitcher />
+            <button
+              onClick={() => setShowDemoForm(true)}
+              className="px-6 py-2 bg-white text-black hover:bg-tactical-textDim transition-all duration-300 text-sm font-medium"
+            >
+              {t('requestDemo')}
+            </button>
+          </div>
         </div>
       </div>
 

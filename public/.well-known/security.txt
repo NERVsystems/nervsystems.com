@@ -1,0 +1,19 @@
+# Security Policy for NERV Systems
+# https://www.nervsystems.com/.well-known/security.txt
+
+Contact: mailto:security@nervsystems.com
+Contact: mailto:contact@nervsystems.com
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: en, ja, th, ko, ar
+Canonical: https://www.nervsystems.com/.well-known/security.txt
+
+# Policy
+Policy: https://www.nervsystems.com/privacy
+
+# If you discover a security vulnerability, please report it to us via email.
+# We appreciate responsible disclosure and will respond promptly.
+#
+# For defense-related security concerns, please contact us directly.
+# Do not publicly disclose vulnerabilities before we have had time to address them.
+#
+# Thank you for helping keep NERV Systems and our users safe.
