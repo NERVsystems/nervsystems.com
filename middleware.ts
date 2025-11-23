@@ -9,7 +9,12 @@ export default createMiddleware({
   defaultLocale,
 
   // Never redirect to a prefix for the default locale
-  localePrefix: 'as-needed'
+  localePrefix: 'as-needed',
+
+  // Disable automatic locale detection to respect explicit user language selection
+  // Without this, the middleware uses cookies/headers to auto-detect language,
+  // which prevents users from manually switching back to the default locale
+  localeDetection: false
 });
 
 export const config = {
