@@ -458,6 +458,13 @@
       "terms": "Terms of Service"
     }
   },
+  "cookieBanner": {
+    "notice": "NOTICE:",
+    "message": "This site uses cookies for form functionality and analytics.",
+    "privacyLink": "Privacy Policy",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
   "form": {
     "demo": {
       "title": "Request a Demo",

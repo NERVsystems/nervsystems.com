@@ -2,16 +2,17 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function CookieNotice() {
   const [isVisible, setIsVisible] = useState(false);
   const locale = useLocale();
+  const t = useTranslations('cookieBanner');
 
   useEffect(() => {
-    // Check if user has already accepted cookies
-    const hasAccepted = localStorage.getItem('nerv-cookie-consent');
-    if (!hasAccepted) {
+    // Check if user has already made a choice
+    const userChoice = localStorage.getItem('nerv-cookie-consent');
+    if (!userChoice) {
       // Small delay for better UX
       setTimeout(() => setIsVisible(true), 1000);
     }
@@ -19,6 +20,11 @@ export default function CookieNotice() {
 
   const handleAccept = () => {
     localStorage.setItem('nerv-cookie-consent', 'accepted');
+    setIsVisible(false);
+  };
+
+  const handleDecline = () => {
+    localStorage.setItem('nerv-cookie-consent', 'declined');
     setIsVisible(false);
   };
 
@@ -32,24 +38,32 @@ export default function CookieNotice() {
             {/* Message */}
             <div className="flex-1 text-center sm:text-left">
               <p className="text-tactical-textDim text-sm">
-                <span className="font-mono text-tactical-accent">NOTICE:</span>{' '}
-                This site uses cookies for form functionality and analytics.{' '}
+                <span className="font-mono text-tactical-accent">{t('notice')}</span>{' '}
+                {t('message')}{' '}
                 <Link
-                  href={`/${locale}/privacy`}
+                  href={`/${locale === 'en' ? '' : locale + '/'}privacy`}
                   className="text-tactical-accent hover:text-white underline transition-colors"
                 >
-                  Privacy Policy
+                  {t('privacyLink')}
                 </Link>
               </p>
             </div>
 
-            {/* Accept Button */}
-            <button
-              onClick={handleAccept}
-              className="px-6 py-2 bg-tactical-accent text-black hover:bg-white font-medium text-sm transition-all duration-300 whitespace-nowrap"
-            >
-              Accept
-            </button>
+            {/* Action Buttons */}
+            <div className="flex gap-3">
+              <button
+                onClick={handleDecline}
+                className="px-6 py-2 border border-tactical-accent/50 text-tactical-accent hover:bg-tactical-accent/10 font-medium text-sm transition-all duration-300 whitespace-nowrap"
+              >
+                {t('decline')}
+              </button>
+              <button
+                onClick={handleAccept}
+                className="px-6 py-2 bg-tactical-accent text-black hover:bg-white font-medium text-sm transition-all duration-300 whitespace-nowrap"
+              >
+                {t('accept')}
+              </button>
+            </div>
           </div>
         </div>
       </div>

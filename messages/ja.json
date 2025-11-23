@@ -458,6 +458,13 @@
       "terms": "利用規約"
     }
   },
+  "cookieBanner": {
+    "notice": "通知:",
+    "message": "このサイトは、フォーム機能と分析のためにCookieを使用しています。",
+    "privacyLink": "プライバシーポリシー",
+    "accept": "同意する",
+    "decline": "拒否する"
+  },
   "form": {
     "demo": {
       "title": "デモを依頼",
