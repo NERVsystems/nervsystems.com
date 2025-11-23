@@ -458,6 +458,13 @@
       "terms": "서비스 약관"
     }
   },
+  "cookieBanner": {
+    "notice": "알림:",
+    "message": "이 사이트는 양식 기능 및 분석을 위해 쿠키를 사용합니다.",
+    "privacyLink": "개인정보 보호정책",
+    "accept": "동의",
+    "decline": "거부"
+  },
   "form": {
     "demo": {
       "title": "데모 요청",
