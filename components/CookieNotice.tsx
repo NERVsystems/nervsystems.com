@@ -9,9 +9,9 @@ export default function CookieNotice() {
   const locale = useLocale();
 
   useEffect(() => {
-    // Check if user has already accepted cookies
-    const hasAccepted = localStorage.getItem('nerv-cookie-consent');
-    if (!hasAccepted) {
+    // Check if user has already responded to cookie notice
+    const cookieConsent = localStorage.getItem('nerv-cookie-consent');
+    if (!cookieConsent) {
       // Small delay for better UX
       setTimeout(() => setIsVisible(true), 1000);
     }
@@ -19,6 +19,11 @@ export default function CookieNotice() {
 
   const handleAccept = () => {
     localStorage.setItem('nerv-cookie-consent', 'accepted');
+    setIsVisible(false);
+  };
+
+  const handleDecline = () => {
+    localStorage.setItem('nerv-cookie-consent', 'declined');
     setIsVisible(false);
   };
 
@@ -43,13 +48,21 @@ export default function CookieNotice() {
               </p>
             </div>
 
-            {/* Accept Button */}
-            <button
-              onClick={handleAccept}
-              className="px-6 py-2 bg-tactical-accent text-black hover:bg-white font-medium text-sm transition-all duration-300 whitespace-nowrap"
-            >
-              Accept
-            </button>
+            {/* Action Buttons */}
+            <div className="flex gap-3">
+              <button
+                onClick={handleDecline}
+                className="px-6 py-2 bg-transparent border border-white/30 text-white hover:border-white hover:bg-white/10 font-medium text-sm transition-all duration-300 whitespace-nowrap"
+              >
+                Decline
+              </button>
+              <button
+                onClick={handleAccept}
+                className="px-6 py-2 bg-tactical-accent text-black hover:bg-white font-medium text-sm transition-all duration-300 whitespace-nowrap"
+              >
+                Accept
+              </button>
+            </div>
           </div>
         </div>
       </div>
