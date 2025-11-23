@@ -45,7 +45,9 @@ export default function TAKResourcesSection() {
       const formId = process.env.NEXT_PUBLIC_HUBSPOT_RESOURCE_FORM_ID;
 
       if (!portalId || !formId) {
-        console.warn('HubSpot not configured for resource downloads');
+        if (process.env.NODE_ENV === 'development') {
+          console.warn('HubSpot not configured for resource downloads');
+        }
         setSubmitSuccess(true);
         setTimeout(() => {
           setShowDownloadForm(false);
@@ -91,11 +93,15 @@ export default function TAKResourcesSection() {
           setSelectedResource(null);
         }, 2000);
       } else {
-        console.error('HubSpot submission failed:', await response.text());
+        if (process.env.NODE_ENV === 'development') {
+          console.error('HubSpot submission failed:', await response.text());
+        }
         alert('There was an issue submitting the form. Please try again or contact us directly.');
       }
     } catch (error) {
-      console.error('Download form submission error:', error);
+      if (process.env.NODE_ENV === 'development') {
+        console.error('Download form submission error:', error);
+      }
       alert('There was an issue submitting the form. Please try again or contact us directly.');
     } finally {
       setIsSubmitting(false);

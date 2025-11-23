@@ -2,12 +2,33 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { locales } from '@/i18n/config';
+import { locales, defaultLocale } from '@/i18n/config';
 import Analytics from "@/components/Analytics";
 import StructuredData from "@/components/StructuredData";
 import CookieNotice from "@/components/CookieNotice";
 
-export const metadata: Metadata = {
+const baseUrl = 'https://www.nervsystems.com';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  // Build canonical URL - for default locale (en), don't include /en/ prefix
+  const canonicalUrl = locale === defaultLocale
+    ? baseUrl
+    : `${baseUrl}/${locale}`;
+
+  // Build language alternates for hreflang tags
+  const languages: Record<string, string> = {};
+  locales.forEach((loc) => {
+    languages[loc] = loc === defaultLocale ? baseUrl : `${baseUrl}/${loc}`;
+  });
+
+  return {
+  metadataBase: new URL(baseUrl),
   title: "NERV Systems | AI-Powered TAK Platform for Mission Success",
   description: "Advanced TAK/ATAK solutions with AI mission planning, autonomous operations, and intelligent drone integration. NERVA AI assistant, managed TAK hosting, deployment consulting, and training for Asia Pacific. TAK-native autonomous decision support.",
   keywords: [
@@ -33,6 +54,10 @@ export const metadata: Metadata = {
     "tactical edge computing"
   ],
   authors: [{ name: "NERV Systems" }],
+  alternates: {
+    canonical: canonicalUrl,
+    languages: languages,
+  },
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
@@ -49,9 +74,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "NERV Systems | AI-Powered TAK Platform for Mission Success",
     description: "Advanced TAK/ATAK solutions with AI mission planning, autonomous operations, and intelligent drone integration. Managed hosting, consulting & training for Asia Pacific.",
-    url: "https://www.nervsystems.com",
+    url: canonicalUrl,
     siteName: "NERV Systems",
     type: "website",
+    locale: locale,
     images: [
       {
         url: "/img/nerv-logo.png",
@@ -78,7 +104,8 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-};
+  };
+}
 
 export default async function LocaleLayout({
   children,
