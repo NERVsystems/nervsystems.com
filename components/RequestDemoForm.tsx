@@ -25,15 +25,45 @@ export default function RequestDemoForm({ onClose, formType = 'demo', formId }: 
     organisationType: '',
     currentTakUsage: '',
     estimatedTakUsers: '',
-    takDeploymentTimeline: ''
+    takDeploymentTimeline: '',
+    // Honeypot field (should remain empty)
+    website: ''
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [rateLimitError, setRateLimitError] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setRateLimitError(false);
+    setSubmitError(null);
+
+    // Honeypot check - if filled, it's likely a bot
+    if (formData.website) {
+      if (process.env.NODE_ENV === 'development') {
+        console.warn('Honeypot field filled - potential bot submission');
+      }
+      setIsSubmitting(false);
+      return;
+    }
+
+    // Rate limiting check - prevent rapid-fire submissions
+    const lastSubmitKey = 'nerv_last_form_submit';
+    const lastSubmitTime = localStorage.getItem(lastSubmitKey);
+    const now = Date.now();
+    const rateLimitWindow = 60000; // 1 minute between submissions
+
+    if (lastSubmitTime) {
+      const timeSinceLastSubmit = now - parseInt(lastSubmitTime, 10);
+      if (timeSinceLastSubmit < rateLimitWindow) {
+        setRateLimitError(true);
+        setIsSubmitting(false);
+        return;
+      }
+    }
 
     try {
       // Submit to HubSpot Forms API
@@ -133,17 +163,21 @@ Submitted: ${new Date().toISOString()}
       );
 
       if (response.ok) {
+        // Record submission time for rate limiting
+        localStorage.setItem(lastSubmitKey, now.toString());
         setSubmitted(true);
       } else {
         const errorText = await response.text();
-        console.error('HubSpot submission failed:', errorText);
-        // Fallback to mailto on error
-        alert(t('messages.error'));
+        if (process.env.NODE_ENV === 'development') {
+          console.error('HubSpot submission failed:', errorText);
+        }
+        setSubmitError(t('messages.error'));
       }
     } catch (error) {
-      console.error('Form submission error:', error);
-      // Fallback to mailto on error
-      alert(t('messages.error'));
+      if (process.env.NODE_ENV === 'development') {
+        console.error('Form submission error:', error);
+      }
+      setSubmitError(t('messages.error'));
     } finally {
       setIsSubmitting(false);
     }
@@ -433,6 +467,38 @@ Submitted: ${new Date().toISOString()}
               className="w-full bg-black/30 border border-white/20 text-white px-4 py-3 focus:border-tactical-accent focus:outline-none transition-colors resize-none"
             />
           </div>
+
+          {/* Honeypot field - hidden from users, catches bots */}
+          <div style={{ position: 'absolute', left: '-9999px' }} aria-hidden="true">
+            <label htmlFor="website">Website (leave blank)</label>
+            <input
+              type="text"
+              id="website"
+              name="website"
+              value={formData.website}
+              onChange={handleChange}
+              tabIndex={-1}
+              autoComplete="off"
+            />
+          </div>
+
+          {/* Rate limit error message */}
+          {rateLimitError && (
+            <div className="bg-red-900/20 border border-red-500/30 p-4 rounded text-center">
+              <p className="text-red-400 text-sm font-mono">
+                Please wait a moment before submitting another request. Rate limit: 1 submission per minute.
+              </p>
+            </div>
+          )}
+
+          {/* Submission error message */}
+          {submitError && (
+            <div className="bg-red-900/20 border border-red-500/30 p-4 rounded text-center">
+              <p className="text-red-400 text-sm">
+                {submitError}
+              </p>
+            </div>
+          )}
 
           <div className="flex gap-4 pt-4">
             <button

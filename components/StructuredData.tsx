@@ -18,7 +18,7 @@ export default function StructuredData() {
     "url": baseUrl,
     "logo": {
       "@type": "ImageObject",
-      "url": `${baseUrl}/img/Screenshot 2025-06-20 at 20.44.53.png`,
+      "url": `${baseUrl}/img/nerv-logo.png`,
       "caption": "NERV Systems Logo"
     },
     "description": "Advanced TAK/ATAK solutions with AI mission planning, autonomous operations, and intelligent drone integration. NERVA AI assistant, managed TAK hosting, deployment consulting, and training for Asia Pacific.",
