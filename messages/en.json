@@ -1002,6 +1002,13 @@
       }
     }
   },
+  "cookieNotice": {
+    "label": "NOTICE:",
+    "message": "This site uses cookies for form functionality and analytics.",
+    "privacyLink": "Privacy Policy",
+    "decline": "Decline",
+    "accept": "Accept"
+  },
   "privacy": {
     "metaTitle": "Privacy Policy - NERV Systems",
     "metaDescription": "Privacy Policy for the NERV Systems website. Learn how we collect, use, and protect your information.",

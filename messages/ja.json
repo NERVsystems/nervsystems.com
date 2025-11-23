@@ -1049,6 +1049,13 @@
       }
     }
   },
+  "cookieNotice": {
+    "label": "通知：",
+    "message": "このサイトはフォーム機能と分析のためにCookieを使用しています。",
+    "privacyLink": "プライバシーポリシー",
+    "decline": "拒否",
+    "accept": "同意"
+  },
   "privacy": {
     "metaTitle": "プライバシーポリシー - NERV Systems",
     "metaDescription": "NERV Systemsウェブサイトのプライバシーポリシー。情報の収集、使用、保護方法について。",

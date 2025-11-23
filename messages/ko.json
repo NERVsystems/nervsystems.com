@@ -1049,6 +1049,13 @@
       }
     }
   },
+  "cookieNotice": {
+    "label": "알림:",
+    "message": "이 사이트는 양식 기능 및 분석을 위해 쿠키를 사용합니다.",
+    "privacyLink": "개인정보 보호정책",
+    "decline": "거부",
+    "accept": "동의"
+  },
   "privacy": {
     "metaTitle": "개인정보 보호정책 - NERV Systems",
     "metaDescription": "NERV Systems 웹사이트의 개인정보 보호정책. 정보 수집, 사용 및 보호 방법에 대해 알아보세요.",

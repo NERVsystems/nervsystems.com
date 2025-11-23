@@ -2,11 +2,12 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function CookieNotice() {
   const [isVisible, setIsVisible] = useState(false);
   const locale = useLocale();
+  const t = useTranslations('cookieNotice');
 
   useEffect(() => {
     // Check if user has already responded to cookie notice
@@ -37,13 +38,13 @@ export default function CookieNotice() {
             {/* Message */}
             <div className="flex-1 text-center sm:text-left">
               <p className="text-tactical-textDim text-sm">
-                <span className="font-mono text-tactical-accent">NOTICE:</span>{' '}
-                This site uses cookies for form functionality and analytics.{' '}
+                <span className="font-mono text-tactical-accent">{t('label')}</span>{' '}
+                {t('message')}{' '}
                 <Link
                   href={`/${locale}/privacy`}
                   className="text-tactical-accent hover:text-white underline transition-colors"
                 >
-                  Privacy Policy
+                  {t('privacyLink')}
                 </Link>
               </p>
             </div>
@@ -54,13 +55,13 @@ export default function CookieNotice() {
                 onClick={handleDecline}
                 className="px-6 py-2 bg-transparent border border-white/30 text-white hover:border-white hover:bg-white/10 font-medium text-sm transition-all duration-300 whitespace-nowrap"
               >
-                Decline
+                {t('decline')}
               </button>
               <button
                 onClick={handleAccept}
                 className="px-6 py-2 bg-tactical-accent text-black hover:bg-white font-medium text-sm transition-all duration-300 whitespace-nowrap"
               >
-                Accept
+                {t('accept')}
               </button>
             </div>
           </div>
