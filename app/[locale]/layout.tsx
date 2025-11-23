@@ -52,11 +52,20 @@ export const metadata: Metadata = {
     url: "https://www.nervsystems.com",
     siteName: "NERV Systems",
     type: "website",
+    images: [
+      {
+        url: "/img/Screenshot 2025-06-20 at 20.44.53.png",
+        width: 1200,
+        height: 630,
+        alt: "NERV Systems - AI-Powered TAK Platform",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "NERV Systems | AI-Powered TAK Platform",
     description: "TAK/ATAK solutions with AI mission planning and autonomous operations",
+    images: ["/img/Screenshot 2025-06-20 at 20.44.53.png"],
   },
   robots: {
     index: true,

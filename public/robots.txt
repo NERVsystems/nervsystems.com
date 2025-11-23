@@ -1,0 +1,20 @@
+# robots.txt for NERV Systems
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.nervsystems.com/sitemap.xml
+
+# Prevent crawling of API routes and admin paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /_vercel/
+
+# Allow crawling of all public content
+Allow: /en/
+Allow: /ja/
+Allow: /th/
+Allow: /ko/
+Allow: /ar/
