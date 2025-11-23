@@ -8,13 +8,15 @@ export default createMiddleware({
   // Used when no locale matches
   defaultLocale,
 
-  // Never redirect to a prefix for the default locale
-  localePrefix: 'as-needed',
+  // Always use locale prefix (including /en/ for English)
+  // This makes all language choices explicit and unambiguous,
+  // allowing proper region detection while respecting manual overrides
+  localePrefix: 'always',
 
-  // Disable automatic locale detection to respect explicit user language selection
-  // Without this, the middleware uses cookies/headers to auto-detect language,
-  // which prevents users from manually switching back to the default locale
-  localeDetection: false
+  // Enable automatic locale detection for initial visits
+  // Uses browser language (Accept-Language header) and NEXT_LOCALE cookie
+  // When users explicitly select a language, their choice is stored and respected
+  localeDetection: true
 });
 
 export const config = {

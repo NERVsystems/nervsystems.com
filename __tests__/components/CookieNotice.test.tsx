@@ -115,7 +115,7 @@ describe('CookieNotice Component', () => {
     });
 
     it('should display English cookie message', () => {
-      expect(screen.getByText(/This site uses cookies for form functionality and analytics/i)).toBeInTheDocument();
+      expect(screen.getByText(/This site uses cookies for language preferences, form functionality, and analytics/i)).toBeInTheDocument();
     });
 
     it('should display English Privacy Policy link', () => {
@@ -131,9 +131,9 @@ describe('CookieNotice Component', () => {
       expect(screen.getByRole('button', { name: 'Decline' })).toBeInTheDocument();
     });
 
-    it('should link to English privacy page (no locale prefix)', () => {
+    it('should link to English privacy page with locale prefix', () => {
       const link = screen.getByRole('link', { name: /Privacy Policy/i });
-      expect(link).toHaveAttribute('href', '/privacy');
+      expect(link).toHaveAttribute('href', '/en/privacy');
     });
   });
 
@@ -355,8 +355,9 @@ describe('CookieNotice Component', () => {
 
   describe('Privacy Policy Link', () => {
     it('should correctly route to localized privacy pages', async () => {
+      // With localePrefix: 'always', all locales including English use locale prefix
       const testCases = [
-        { locale: 'en', messages: enMessages, expectedHref: '/privacy' },
+        { locale: 'en', messages: enMessages, expectedHref: '/en/privacy' },
         { locale: 'ja', messages: jaMessages, expectedHref: '/ja/privacy' },
         { locale: 'th', messages: thMessages, expectedHref: '/th/privacy' },
         { locale: 'ko', messages: koMessages, expectedHref: '/ko/privacy' },
