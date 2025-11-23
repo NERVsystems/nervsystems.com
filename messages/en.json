@@ -460,7 +460,7 @@
   },
   "cookieBanner": {
     "notice": "NOTICE:",
-    "message": "This site uses cookies for form functionality and analytics.",
+    "message": "This site uses cookies for language preferences, form functionality, and analytics.",
     "privacyLink": "Privacy Policy",
     "accept": "Accept",
     "decline": "Decline"
@@ -1072,8 +1072,8 @@
     },
     "cookies": {
       "title": "Cookies and Tracking Technologies",
-      "description": "We use cookies primarily through our form submission system (HubSpot). These cookies are set when you interact with our contact forms and help us track form submissions and analyze inquiry sources. We may also use analytics cookies (such as Google Analytics) to understand website traffic and improve user experience.",
-      "control": "You can control cookies through your browser settings. However, disabling cookies may affect form functionality and prevent us from properly processing your inquiries."
+      "description": "We use cookies for the following purposes: (1) Language Preference - We store your language selection in a cookie (NEXT_LOCALE) to remember your preferred language across visits; (2) Form Functionality - Our form submission system (HubSpot) uses cookies when you interact with our contact forms to track submissions and analyze inquiry sources; (3) Analytics - We may use analytics cookies (such as Google Analytics) to understand website traffic and improve user experience.",
+      "control": "You can control cookies through your browser settings. However, disabling cookies may affect form functionality, language preference retention, and prevent us from properly processing your inquiries."
     },
     "international": {
       "title": "International Data Transfers",

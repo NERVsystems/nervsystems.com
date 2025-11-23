@@ -40,11 +40,7 @@ export default function LanguageSwitcher() {
     // Remove current locale from pathname if it exists
     const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}(\/|$)/, '/');
 
-    // For default locale (en), don't add locale prefix
-    if (locale === 'en') {
-      return pathWithoutLocale || '/';
-    }
-
+    // With localePrefix: 'always', all locales (including English) use prefix
     return `/${locale}${pathWithoutLocale}`;
   };
 

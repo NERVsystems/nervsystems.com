@@ -41,7 +41,7 @@ export default function CookieNotice() {
                 <span className="font-mono text-tactical-accent">{t('notice')}</span>{' '}
                 {t('message')}{' '}
                 <Link
-                  href={`/${locale === 'en' ? '' : locale + '/'}privacy`}
+                  href={`/${locale}/privacy`}
                   className="text-tactical-accent hover:text-white underline transition-colors"
                 >
                   {t('privacyLink')}

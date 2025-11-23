@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default function PrivacyPolicy() {
   const t = useTranslations('privacy');
+  const locale = useLocale();
 
   return (
     <main className="min-h-screen bg-tactical-bg pt-24 pb-16">
@@ -149,7 +150,7 @@ export default function PrivacyPolicy() {
         {/* Back to Home */}
         <div className="mt-12 text-center">
           <Link
-            href="/"
+            href={`/${locale}`}
             className="inline-block px-8 py-3 bg-white text-black hover:bg-tactical-textDim transition-all duration-300 text-sm font-medium"
           >
             {t('backToHome')}

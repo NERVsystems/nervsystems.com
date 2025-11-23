@@ -111,10 +111,8 @@ describe('LanguageSwitcher Component', () => {
 
     const links = screen.getAllByRole('link');
 
-    // English (default locale) should have href "/"
-    expect(links[0]).toHaveAttribute('href', '/');
-
-    // Other locales should have href with locale prefix (trailing slash added by getLocalePath)
+    // With localePrefix: 'always', all locales including English have locale prefix
+    expect(links[0]).toHaveAttribute('href', '/en/');
     expect(links[1]).toHaveAttribute('href', '/ja/');
     expect(links[2]).toHaveAttribute('href', '/th/');
     expect(links[3]).toHaveAttribute('href', '/ko/');
@@ -235,9 +233,9 @@ describe('LanguageSwitcher Component', () => {
 
     const links = screen.getAllByRole('link');
 
-    // English link should have href "/" (not "/en")
+    // With localePrefix: 'always', English uses /en/ prefix
     const enLink = links.find((link) => link.textContent === 'EN');
-    expect(enLink).toHaveAttribute('href', '/');
+    expect(enLink).toHaveAttribute('href', '/en/');
 
     // Other links should have correct locale prefixes (with trailing slashes)
     expect(links.find((link) => link.textContent === '日本')).toHaveAttribute('href', '/ja/');
@@ -261,9 +259,9 @@ describe('LanguageSwitcher Component', () => {
 
     const links = screen.getAllByRole('link');
 
-    // English link should have href "/about" (preserving the path, removing locale)
+    // With localePrefix: 'always', English link includes /en/ prefix
     const enLink = links.find((link) => link.textContent === 'EN');
-    expect(enLink).toHaveAttribute('href', '/about');
+    expect(enLink).toHaveAttribute('href', '/en/about');
 
     // Other links should preserve the path with their locale prefix
     expect(links.find((link) => link.textContent === '日本')).toHaveAttribute('href', '/ja/about');
