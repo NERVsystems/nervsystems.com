@@ -33,7 +33,7 @@ export default function TacticalNav() {
           {/* Logo */}
           <div className="flex items-center">
             <img
-              src="/img/Screenshot 2025-06-20 at 20.44.53.png"
+              src="/img/nerv-logo.png"
               alt="NERV Systems"
               className="h-12 w-auto"
             />

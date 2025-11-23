@@ -77,7 +77,7 @@ describe('TacticalNav Component', () => {
 
     const logo = screen.getByAltText('NERV Systems');
     expect(logo).toBeInTheDocument();
-    expect(logo).toHaveAttribute('src', '/img/Screenshot 2025-06-20 at 20.44.53.png');
+    expect(logo).toHaveAttribute('src', '/img/nerv-logo.png');
   });
 
   it('should use translations from the nav namespace', () => {

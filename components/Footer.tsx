@@ -14,7 +14,7 @@ export default function Footer() {
           <div>
             <div className="mb-4">
               <img
-                src="/img/Screenshot 2025-06-20 at 20.44.53.png"
+                src="/img/nerv-logo.png"
                 alt="NERV Systems"
                 className="h-10 w-auto"
               />

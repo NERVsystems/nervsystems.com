@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/img/Screenshot 2025-06-20 at 20.44.53.png",
+        url: "/img/nerv-logo.png",
         width: 1200,
         height: 630,
         alt: "NERV Systems - AI-Powered TAK Platform",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "NERV Systems | AI-Powered TAK Platform",
     description: "TAK/ATAK solutions with AI mission planning and autonomous operations",
-    images: ["/img/Screenshot 2025-06-20 at 20.44.53.png"],
+    images: ["/img/nerv-logo.png"],
   },
   robots: {
     index: true,
