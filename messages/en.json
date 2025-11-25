@@ -4,7 +4,7 @@
     "platform": "Platform",
     "takSolutions": "TAK Solutions",
     "contact": "Contact",
-    "requestDemo": "Request Demo"
+    "requestDemo": "Schedule a Call"
   },
   "hero": {
     "title": "Tactical AI for Mission Success",
@@ -24,7 +24,7 @@
       }
     },
     "cta": {
-      "demo": "Request Demo",
+      "demo": "Schedule a Call",
       "learn": "Learn More"
     }
   },
@@ -467,8 +467,8 @@
   },
   "form": {
     "demo": {
-      "title": "Request a Demo",
-      "subtitle": "Fill out the form below and our team will get back to you within 24 hours."
+      "title": "Schedule a Call",
+      "subtitle": "Tell us about your requirements and we'll schedule a consultation within 24 hours."
     },
     "quote": {
       "title": "Request a Quote",
@@ -578,7 +578,7 @@
     "messages": {
       "success": {
         "title": "Thank You!",
-        "demo": "Your demo request has been received. Our team will contact you within 24 hours.",
+        "demo": "We've received your request. Our team will contact you within 24 hours to schedule your call.",
         "quote": "Your quote request has been received. Our team will contact you within 24 hours.",
         "contact": "Your contact request has been received. Our team will contact you within 24 hours."
       },
@@ -1023,7 +1023,7 @@
     },
     "informationWeCollect": {
       "title": "Information We Collect",
-      "intro": "We only collect information that you voluntarily provide to us through our contact forms, demo requests, and quote requests. This may include:",
+      "intro": "We only collect information that you voluntarily provide to us through our contact forms, consultation requests, and quote requests. This may include:",
       "items": {
         "name": "Name (first and last)",
         "email": "Email address",
