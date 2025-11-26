@@ -30,7 +30,7 @@ export async function generateMetadata({
   return {
   metadataBase: new URL(baseUrl),
   title: "NERV Systems | AI-Powered TAK Platform for Mission Success",
-  description: "Advanced TAK/ATAK solutions with AI mission planning, autonomous operations, and intelligent drone integration. NERVA AI assistant, managed TAK hosting, deployment consulting, and training for Asia Pacific. TAK-native autonomous decision support.",
+  description: "Advanced TAK/ATAK solutions with AI mission planning for defense, HADR, and emergency response. NERVA AI assistant for autonomous operations, disaster relief coordination, and search & rescue. Managed TAK hosting, deployment consulting, and training for Asia Pacific.",
   keywords: [
     "TAK solutions",
     "ATAK platform",
@@ -54,7 +54,17 @@ export async function generateMetadata({
     "tactical edge computing",
     "MOSA compliant",
     "Modular Open System Architecture",
-    "open systems architecture"
+    "open systems architecture",
+    "HADR operations",
+    "humanitarian assistance disaster relief",
+    "disaster response coordination",
+    "emergency response TAK",
+    "search and rescue technology",
+    "crisis response platform",
+    "humanitarian operations software",
+    "disaster relief coordination",
+    "emergency management TAK",
+    "SAR operations"
   ],
   authors: [{ name: "NERV Systems" }],
   alternates: {
@@ -76,7 +86,7 @@ export async function generateMetadata({
   },
   openGraph: {
     title: "NERV Systems | AI-Powered TAK Platform for Mission Success",
-    description: "Advanced TAK/ATAK solutions with AI mission planning, autonomous operations, and intelligent drone integration. Managed hosting, consulting & training for Asia Pacific.",
+    description: "TAK/ATAK solutions with AI mission planning for defense, HADR, and emergency response. Disaster relief coordination, search & rescue, and humanitarian operations across Asia Pacific.",
     url: canonicalUrl,
     siteName: "NERV Systems",
     type: "website",
@@ -93,7 +103,7 @@ export async function generateMetadata({
   twitter: {
     card: "summary_large_image",
     title: "NERV Systems | AI-Powered TAK Platform",
-    description: "TAK/ATAK solutions with AI mission planning and autonomous operations",
+    description: "TAK/ATAK solutions for defense, HADR, and emergency response. AI-powered disaster relief and search & rescue coordination.",
     images: ["/img/nerv-logo.png"],
   },
   robots: {

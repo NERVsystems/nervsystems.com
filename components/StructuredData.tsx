@@ -21,7 +21,7 @@ export default function StructuredData() {
       "url": `${baseUrl}/img/nerv-logo.png`,
       "caption": "NERV Systems Logo"
     },
-    "description": "Advanced TAK/ATAK solutions with AI mission planning, autonomous operations, and intelligent drone integration. NERVA AI assistant, managed TAK hosting, deployment consulting, and training for Asia Pacific.",
+    "description": "Advanced TAK/ATAK solutions with AI mission planning for defense, HADR, and emergency response. NERVA AI assistant for disaster relief coordination, search & rescue, and humanitarian operations. Managed TAK hosting, deployment consulting, and training for Asia Pacific.",
     "email": "contact@nervsystems.com",
     "areaServed": {
       "@type": "Place",
@@ -35,7 +35,14 @@ export default function StructuredData() {
       "Edge Computing",
       "Drone Integration",
       "Defense Technology",
-      "Team Awareness Kit"
+      "Team Awareness Kit",
+      "HADR Operations",
+      "Humanitarian Assistance and Disaster Relief",
+      "Emergency Response Coordination",
+      "Search and Rescue Technology",
+      "Disaster Relief Operations",
+      "Crisis Response",
+      "Emergency Management"
     ],
     "sameAs": [],
     "memberOf": [
@@ -86,6 +93,14 @@ export default function StructuredData() {
           "applicationCategory": "BusinessApplication",
           "operatingSystem": "TAK, ATAK"
         }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "HADR Operations Support",
+          "description": "TAK solutions for humanitarian assistance, disaster relief, emergency response, and search & rescue operations"
+        }
       }
     ]
   };
@@ -128,7 +143,11 @@ export default function StructuredData() {
       "TAK Integration",
       "Edge AI Computing",
       "Drone Integration",
-      "Tactical Decision Support"
+      "Tactical Decision Support",
+      "HADR Coordination",
+      "Search and Rescue Operations",
+      "Disaster Response Planning",
+      "Emergency Management"
     ]
   };
 

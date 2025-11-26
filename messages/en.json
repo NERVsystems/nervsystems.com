@@ -148,7 +148,7 @@
   },
   "tak": {
     "title": "Built for Team Awareness",
-    "subtitle": "Already using TAK for emergency coordination? Perfect. NERV integrates directly with your existing Team Awareness Kit systems.",
+    "subtitle": "Already using TAK for emergency coordination or HADR operations? Perfect. NERV integrates directly with your existing Team Awareness Kit systems.",
     "integration": {
       "native": {
         "label": "Native TAK Integration",
@@ -598,7 +598,7 @@
       "eyebrow": "TAK Solutions for Asia Pacific",
       "title": "Complete TAK/ATAK",
       "titleLine2": "Solutions & Services",
-      "subtitle": "Expert TAK server hosting, ATAK deployment consulting, system administration, and training for military, law enforcement, and emergency response teams across Asia Pacific.",
+      "subtitle": "Expert TAK server hosting, ATAK deployment consulting, system administration, and training for military, law enforcement, HADR, and emergency response teams across Asia Pacific.",
       "features": {
         "hosting": "Managed TAK Hosting from $495/mo",
         "aiEnhanced": "AI-Enhanced with NERVA",
@@ -612,10 +612,10 @@
     },
     "services": {
       "title": "Professional TAK Solutions for Asia Pacific",
-      "introduction": "NERV Systems provides comprehensive TAK (Team Awareness Kit) and ATAK (Android Team Awareness Kit) solutions including managed TAK server hosting, ATAK deployment consulting, TAK system administration, operator training programs, and custom TAK plugin development. Our AI-enhanced TAK platform combines traditional TAK capabilities with intelligent automation through NERVA.",
+      "introduction": "NERV Systems provides comprehensive TAK (Team Awareness Kit) and ATAK (Android Team Awareness Kit) solutions including managed TAK server hosting, ATAK deployment consulting, TAK system administration, operator training programs, and custom TAK plugin development. Our AI-enhanced TAK platform combines traditional TAK capabilities with intelligent automation through NERVA, supporting defense operations, humanitarian assistance and disaster relief (HADR), and emergency response.",
       "hosting": {
         "title": "Managed TAK Server Hosting",
-        "description": "Enterprise-grade TAK server hosting with 99.9% uptime SLA. Our managed TAK hosting service eliminates the complexity of TAK server administration while providing AI-enhanced capabilities through NERVA integration. Perfect for organizations deploying TAK/ATAK systems across military, law enforcement, emergency management, and public safety operations.",
+        "description": "Enterprise-grade TAK server hosting with 99.9% uptime SLA. Our managed TAK hosting service eliminates the complexity of TAK server administration while providing AI-enhanced capabilities through NERVA integration. Perfect for organizations deploying TAK/ATAK systems for military operations, law enforcement, HADR missions, and emergency management.",
         "plans": {
           "starter": {
             "name": "Starter",
@@ -669,7 +669,7 @@
       },
       "deployment": {
         "title": "TAK Deployment Consulting",
-        "description": "Expert TAK deployment services from initial requirements assessment to full operational capability. Our TAK consulting team brings extensive experience deploying ATAK systems for defense, law enforcement, and emergency management organizations. Every TAK deployment includes an AI capability integration roadmap showing how NERVA enhances your TAK operations.",
+        "description": "Expert TAK deployment services from initial requirements assessment to full operational capability. Our TAK consulting team brings extensive experience deploying ATAK systems for defense, law enforcement, HADR operations, and emergency management organizations. Every TAK deployment includes an AI capability integration roadmap showing how NERVA enhances your TAK operations.",
         "plans": {
           "assessment": {
             "name": "TAK Assessment",
@@ -784,9 +784,9 @@
           "tags": ["SWAT", "SECURITY", "PATROL"]
         },
         "emergency": {
-          "title": "TAK for Emergency Management",
-          "description": "Emergency response TAK systems for disaster response, search and rescue (SAR), fire operations, medical coordination, and multi-agency incident management.",
-          "tags": ["SAR", "FIRE", "EMS"]
+          "title": "TAK for HADR & Emergency Management",
+          "description": "TAK systems for humanitarian assistance and disaster relief (HADR), emergency response, search and rescue (SAR), fire operations, medical coordination, and multi-agency crisis management.",
+          "tags": ["HADR", "SAR", "EMS"]
         },
         "commercial": {
           "title": "TAK for Commercial & Private Sector",
@@ -977,7 +977,7 @@
       "items": [
         {
           "question": "What is TAK/ATAK and why do I need it?",
-          "answer": "TAK (Team Awareness Kit) is a geospatial collaboration platform developed by the U.S. Air Force Research Lab for military and tactical operations. ATAK (Android Team Awareness Kit) is the mobile Android version that provides real-time situational awareness, mapping, location sharing, and mission coordination. Organizations need TAK/ATAK when they require secure, real-time geospatial coordination across distributed teams—whether for military operations, law enforcement tactical teams, search and rescue, or emergency management. NERV enhances standard TAK deployments with NERVA AI capabilities for intelligent mission planning and automated decision support."
+          "answer": "TAK (Team Awareness Kit) is a geospatial collaboration platform developed by the U.S. Air Force Research Lab for military and tactical operations. ATAK (Android Team Awareness Kit) is the mobile Android version that provides real-time situational awareness, mapping, location sharing, and mission coordination. Organizations need TAK/ATAK when they require secure, real-time geospatial coordination across distributed teams—whether for military operations, law enforcement tactical teams, humanitarian assistance and disaster relief (HADR), search and rescue, or emergency management. NERV enhances standard TAK deployments with NERVA AI capabilities for intelligent mission planning and automated decision support."
         },
         {
           "question": "What are the requirements for TAK server hosting?",
@@ -1005,7 +1005,7 @@
         },
         {
           "question": "What TAK/ATAK use cases do you support?",
-          "answer": "NERV supports the full spectrum of TAK/ATAK applications across defense, public safety, and emergency services. Military TAK use cases include: command and control (C2), intelligence/surveillance/reconnaissance (ISR), close air support (CAS) coordination, CASEVAC/MEDEVAC operations, multi-domain operations, and training exercises. Law enforcement ATAK applications include: SWAT team coordination, event security management, border patrol operations, fugitive tracking, and inter-agency collaboration. Emergency management TAK deployments cover: search and rescue (SAR), wildfire response, disaster relief coordination, EMS operations, and multi-agency incident management. Every use case is enhanced with NERVA AI capabilities for smarter mission execution."
+          "answer": "NERV supports the full spectrum of TAK/ATAK applications across defense, HADR, public safety, and emergency services. Military TAK use cases include: command and control (C2), intelligence/surveillance/reconnaissance (ISR), close air support (CAS) coordination, CASEVAC/MEDEVAC operations, multi-domain operations, and training exercises. Law enforcement ATAK applications include: SWAT team coordination, event security management, border patrol operations, fugitive tracking, and inter-agency collaboration. Humanitarian assistance and disaster relief (HADR) and emergency management TAK deployments cover: search and rescue (SAR), wildfire response, flood and earthquake response, disaster relief coordination, refugee operations, EMS coordination, and multi-agency incident management. Every use case is enhanced with NERVA AI capabilities for smarter mission execution."
         },
         {
           "question": "How does NERVA AI integration enhance TAK systems?",
