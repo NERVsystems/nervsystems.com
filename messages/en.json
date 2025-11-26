@@ -118,7 +118,7 @@
   },
   "features": {
     "title": "Complete Platform",
-    "subtitle": "Software + Hardware for Tactical Edge Deployment",
+    "subtitle": "MOSA-compliant software and hardware for tactical edge deployment",
     "items": {
       "planning": {
         "icon": "01",
@@ -169,6 +169,10 @@
       "portable": {
         "label": "Portable Field Deployment",
         "description": "Works when connectivity fails"
+      },
+      "mosa": {
+        "label": "MOSA-Compliant Architecture",
+        "description": "Open standards for flexible integration"
       }
     },
     "cta": "View Integration Docs"
@@ -760,7 +764,7 @@
         {
           "number": "04",
           "title": "Enterprise-Grade TAK Infrastructure",
-          "description": "99.9% uptime SLA, automated TAK backups, DDoS protection, SSL certificates, and compliance with TAK.gov security standards"
+          "description": "99.9% uptime SLA, automated TAK backups, DDoS protection, SSL certificates, TAK.gov security compliance, and MOSA-aligned architecture for interoperability"
         },
         {
           "number": "05",
@@ -825,6 +829,11 @@
           "category": "Edge Computing",
           "traditional": "Cloud-only or static on-premise",
           "nerv": "Flexible: cloud, on-premise, hybrid, or GPU-in-a-helmet edge deployment"
+        },
+        {
+          "category": "Architecture Standards",
+          "traditional": "Proprietary closed systems",
+          "nerv": "MOSA-compliant open architecture for vendor flexibility and future-proof integration"
         },
         {
           "category": "Training Programs",

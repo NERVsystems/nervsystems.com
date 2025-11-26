@@ -51,7 +51,10 @@ export async function generateMetadata({
     "TAK Asia",
     "autonomous mission planning",
     "defense technology",
-    "tactical edge computing"
+    "tactical edge computing",
+    "MOSA compliant",
+    "Modular Open System Architecture",
+    "open systems architecture"
   ],
   authors: [{ name: "NERV Systems" }],
   alternates: {

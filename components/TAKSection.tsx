@@ -10,7 +10,8 @@ export default function TAKSection() {
     { key: 'noRetraining', label: t('integration.noRetraining.label'), desc: t('integration.noRetraining.description') },
     { key: 'realTime', label: t('integration.realTime.label'), desc: t('integration.realTime.description') },
     { key: 'natural', label: t('integration.natural.label'), desc: t('integration.natural.description') },
-    { key: 'portable', label: t('integration.portable.label'), desc: t('integration.portable.description') }
+    { key: 'portable', label: t('integration.portable.label'), desc: t('integration.portable.description') },
+    { key: 'mosa', label: t('integration.mosa.label'), desc: t('integration.mosa.description') }
   ];
 
   return (

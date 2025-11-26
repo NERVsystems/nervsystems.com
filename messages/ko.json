@@ -118,7 +118,7 @@
   },
   "features": {
     "title": "완전한 플랫폼",
-    "subtitle": "전술 엣지 배치를 위한 소프트웨어 + 하드웨어",
+    "subtitle": "전술 엣지 배치를 위한 MOSA 준수 소프트웨어 및 하드웨어",
     "items": {
       "planning": {
         "icon": "01",
@@ -169,6 +169,10 @@
       "portable": {
         "label": "휴대용 현장 배치",
         "description": "연결이 실패할 때 작동"
+      },
+      "mosa": {
+        "label": "MOSA 준수 아키텍처",
+        "description": "유연한 통합을 위한 개방형 표준"
       }
     },
     "cta": "통합 문서 보기"
