@@ -66,6 +66,16 @@ export default function Footer() {
               <p className="font-mono">▸ {t('contact.affiliations.nvidia')}</p>
               <p className="font-mono">▸ {t('contact.affiliations.nus')}</p>
               <p className="font-mono">▸ {t('contact.affiliations.kcl')}</p>
+              <p className="font-mono">
+                <a
+                  href="https://github.com/NERVsystems"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-tactical-accent transition-colors"
+                >
+                  ▸ {t('contact.affiliations.github')}
+                </a>
+              </p>
             </div>
           </div>
         </div>

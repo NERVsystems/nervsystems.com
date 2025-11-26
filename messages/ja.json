@@ -452,7 +452,8 @@
       "affiliations": {
         "nvidia": "NVIDIA Inceptionメンバー",
         "nus": "NUS Enterpriseインキュベート",
-        "kcl": "キングス・カレッジ・ロンドンインキュベート"
+        "kcl": "キングス・カレッジ・ロンドンインキュベート",
+        "github": "github.com/NERVsystems"
       }
     },
     "copyright": "© 2025 NERV Systems. All rights reserved.",

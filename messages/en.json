@@ -452,7 +452,8 @@
       "affiliations": {
         "nvidia": "NVIDIA Inception Member",
         "nus": "NUS Enterprise Incubated",
-        "kcl": "King's College London Incubated"
+        "kcl": "King's College London Incubated",
+        "github": "github.com/NERVsystems"
       }
     },
     "copyright": "© 2025 NERV Systems. All rights reserved.",
