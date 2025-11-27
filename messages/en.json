@@ -66,9 +66,9 @@
         "icon": "THREAT",
         "title": "Hostile Unit Intelligence",
         "command": "Identify enemy unit → NERVA acts",
-        "description": "Automatic lookup from Jane's Defence databases, plots range-of-fire rings, alerts all units in danger zones, and provides recommended countermeasures based on threat capabilities.",
+        "description": "Integrates with defense intelligence databases to plot range-of-fire rings, alert all units in danger zones, and provide recommended countermeasures based on threat capabilities.",
         "features": [
-          "Jane's database integration",
+          "Defense database compatibility",
           "Range-of-fire analysis",
           "Automatic alerts",
           "Countermeasure recommendations"
