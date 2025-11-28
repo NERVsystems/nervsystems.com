@@ -23,8 +23,7 @@ export default function TAKResourcesSection() {
     email: '',
     organization: '',
     jobtitle: '',
-    role: '',
-    currentStage: ''
+    role: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
@@ -36,13 +35,26 @@ export default function TAKResourcesSection() {
     setShowDownloadForm(true);
   };
 
+  // Map resource category to form ID environment variable
+  const getFormIdForResource = (category: string): string | undefined => {
+    const formIdMap: Record<string, string | undefined> = {
+      'ROI': process.env.NEXT_PUBLIC_HUBSPOT_RESOURCE_ROI_FORM_ID,
+      'COMPARISON': process.env.NEXT_PUBLIC_HUBSPOT_RESOURCE_COMPARISON_FORM_ID,
+      'DEPLOYMENT': process.env.NEXT_PUBLIC_HUBSPOT_RESOURCE_DEPLOYMENT_FORM_ID,
+      'TECHNICAL': process.env.NEXT_PUBLIC_HUBSPOT_RESOURCE_TECHNICAL_FORM_ID,
+      'COMPLIANCE': process.env.NEXT_PUBLIC_HUBSPOT_RESOURCE_COMPLIANCE_FORM_ID,
+      'OPERATIONS': process.env.NEXT_PUBLIC_HUBSPOT_RESOURCE_OPERATIONS_FORM_ID,
+    };
+    return formIdMap[category];
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
       const portalId = process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID;
-      const formId = process.env.NEXT_PUBLIC_HUBSPOT_RESOURCE_FORM_ID;
+      const formId = selectedResource ? getFormIdForResource(selectedResource.category) : undefined;
 
       if (!portalId || !formId) {
         if (process.env.NODE_ENV === 'development') {
@@ -52,7 +64,7 @@ export default function TAKResourcesSection() {
         setTimeout(() => {
           setShowDownloadForm(false);
           setSubmitSuccess(false);
-          setFormData({ firstname: '', lastname: '', email: '', organization: '', jobtitle: '', role: '', currentStage: '' });
+          setFormData({ firstname: '', lastname: '', email: '', organization: '', jobtitle: '', role: '' });
           setSelectedResource(null);
         }, 2000);
         return;
@@ -73,7 +85,6 @@ export default function TAKResourcesSection() {
               { name: 'company', value: formData.organization },
               { name: 'jobtitle', value: formData.jobtitle },
               { name: 'hs_role', value: formData.role },
-              { name: 'current_stage', value: formData.currentStage },
               { name: 'resource_requested', value: selectedResource?.title || '' },
             ],
             context: {
@@ -89,7 +100,7 @@ export default function TAKResourcesSection() {
         setTimeout(() => {
           setShowDownloadForm(false);
           setSubmitSuccess(false);
-          setFormData({ firstname: '', lastname: '', email: '', organization: '', jobtitle: '', role: '', currentStage: '' });
+          setFormData({ firstname: '', lastname: '', email: '', organization: '', jobtitle: '', role: '' });
           setSelectedResource(null);
         }, 2000);
       } else {
@@ -303,24 +314,6 @@ export default function TAKResourcesSection() {
                       {Object.keys(t.raw('downloadForm.roles') as object).map((roleKey) => (
                         <option key={roleKey} value={t(`downloadForm.roles.${roleKey}`)}>
                           {t(`downloadForm.roles.${roleKey}`)}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block text-white text-sm font-medium mb-2">
-                      {t('downloadForm.fields.currentStage')}
-                    </label>
-                    <select
-                      value={formData.currentStage}
-                      onChange={(e) => setFormData({ ...formData, currentStage: e.target.value })}
-                      className="w-full px-4 py-2 bg-black/30 border border-white/20 text-white focus:border-tactical-accent focus:outline-none"
-                    >
-                      <option value="">{t('downloadForm.fields.selectStage')}</option>
-                      {Object.keys(t.raw('downloadForm.stages') as object).map((stageKey) => (
-                        <option key={stageKey} value={t(`downloadForm.stages.${stageKey}`)}>
-                          {t(`downloadForm.stages.${stageKey}`)}
                         </option>
                       ))}
                     </select>
