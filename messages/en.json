@@ -965,8 +965,8 @@
         "submitting": "Processing...",
         "privacyNote": "We respect your privacy. Your information will only be used to send you relevant TAK resources and updates.",
         "success": {
-          "title": "Download Starting...",
-          "description": "Your download should begin automatically. Check your email for additional resources."
+          "title": "Check Your Email",
+          "description": "We've sent the download link to your email address. Please check your inbox."
         }
       },
       "coversLabel": "COVERS:"
