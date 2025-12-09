@@ -16,6 +16,17 @@ export default function NERVASection() {
 
   const capabilities = ['uas', 'medevac', 'threat', 'sar', 'alert', 'airspace'];
 
+  // Video files available for each capability (add more as they become available)
+  const videoFiles: Record<string, string> = {
+    airspace: 'nerva-airspace',
+    // Add more videos here as they become available:
+    // uas: 'nerva-uas',
+    // medevac: 'nerva-medevac',
+    // threat: 'nerva-threat',
+    // sar: 'nerva-sar',
+    // alert: 'nerva-alert',
+  };
+
   return (
     <section id="nerva" className="relative py-24 bg-tactical-surface border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -97,13 +108,28 @@ export default function NERVASection() {
                   {capabilityData.description}
                 </p>
 
-                {/* Video Placeholder */}
-                <div className="mb-4 bg-black/50 border border-white/10 rounded aspect-video flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-tactical-textDim text-sm mb-2">{t('videoPlaceholder.title')}</div>
-                    <div className="text-xs text-tactical-textDim/50">{t('videoPlaceholder.comingSoon')}</div>
+                {/* Video or Placeholder */}
+                {videoFiles[capability] ? (
+                  <div className="mb-4 bg-black/50 border border-white/10 rounded overflow-hidden aspect-video">
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    >
+                      <source src={`/videos/${videoFiles[capability]}.mp4`} type="video/mp4" />
+                      <source src={`/videos/${videoFiles[capability]}.webm`} type="video/webm" />
+                    </video>
                   </div>
-                </div>
+                ) : (
+                  <div className="mb-4 bg-black/50 border border-white/10 rounded aspect-video flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="text-tactical-textDim text-sm mb-2">{t('videoPlaceholder.title')}</div>
+                      <div className="text-xs text-tactical-textDim/50">{t('videoPlaceholder.comingSoon')}</div>
+                    </div>
+                  </div>
+                )}
 
                 {/* Features List */}
                 <div className="space-y-2">
