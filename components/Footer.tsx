@@ -76,6 +76,16 @@ export default function Footer() {
                   ▸ {t('contact.affiliations.github')}
                 </a>
               </p>
+              <p className="font-mono">
+                <a
+                  href="https://x.com/NERVSysOffical"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-tactical-accent transition-colors"
+                >
+                  ▸ {t('contact.affiliations.x')}
+                </a>
+              </p>
             </div>
           </div>
         </div>
