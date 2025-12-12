@@ -64,7 +64,20 @@ export async function generateMetadata({
     "humanitarian operations software",
     "disaster relief coordination",
     "emergency management TAK",
-    "SAR operations"
+    "SAR operations",
+    "OSINT platform",
+    "open source intelligence",
+    "OSINT tools",
+    "geospatial intelligence",
+    "GEOINT software",
+    "intelligence analysis TAK",
+    "investigative journalism tools",
+    "OSINT mapping",
+    "entity tracking",
+    "multi-source intelligence fusion",
+    "OSINT visualization",
+    "research team collaboration",
+    "intelligence gathering platform"
   ],
   authors: [{ name: "NERV Systems" }],
   alternates: {
