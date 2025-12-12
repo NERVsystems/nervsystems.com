@@ -130,6 +130,29 @@ export default function TAKIntegrationSection() {
                 </div>
               </div>
             </div>
+
+            {/* Intelligence & OSINT */}
+            <div className="tactical-border bg-white/5 overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                  alt="Intelligence Analysis and OSINT Operations"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-tactical-bg to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-xl font-bold text-white mb-3">{t('useCases.intelligence.title')}</h4>
+                <p className="text-tactical-textDim text-sm leading-relaxed mb-3">
+                  {t('useCases.intelligence.description')}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {(t.raw('useCases.intelligence.tags') as string[]).map((tag, idx) => (
+                    <span key={idx} className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

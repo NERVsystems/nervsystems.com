@@ -794,6 +794,11 @@
           "title": "TAK for Commercial & Private Sector",
           "description": "Commercial TAK deployments for fleet tracking, asset management, private security operations, critical infrastructure protection, and corporate team coordination across distributed sites.",
           "tags": ["FLEET", "SECURITY", "ASSETS"]
+        },
+        "intelligence": {
+          "title": "TAK for Intelligence & OSINT",
+          "description": "Geospatial intelligence fusion for open source intelligence (OSINT) analysts, investigative journalists, and research teams. Correlate multi-source data, track entities of interest, and visualize complex networks with real-time collaborative mapping and AI-powered pattern recognition.",
+          "tags": ["OSINT", "GEOINT", "ANALYSIS", "INTEL"]
         }
       }
     },
