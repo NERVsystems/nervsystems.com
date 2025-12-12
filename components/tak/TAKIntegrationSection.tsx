@@ -135,7 +135,7 @@ export default function TAKIntegrationSection() {
             <div className="tactical-border bg-white/5 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
+                  src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?auto=format&fit=crop&w=800&q=80"
                   alt="Geospatial Intelligence and OSINT Operations"
                   className="w-full h-full object-cover"
                 />
