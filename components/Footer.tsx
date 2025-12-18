@@ -98,7 +98,7 @@ export default function Footer() {
               href="https://tak.gov"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mb-4 hover:opacity-80 transition-opacity"
+              className="inline-block mb-4 hover:opacity-80 transition-opacity border border-tactical-accent/30 p-2 rounded"
             >
               <img
                 src="/img/tak-badge.svg"
