@@ -70,12 +70,12 @@ export default function PartnersSection() {
               ) : partner.secondaryLogo ? (
                 <div className="h-20 flex items-center justify-center gap-3 mb-4">
                   <img
-                    src={partner.logo}
+                    src={partner.secondaryLogo}
                     alt={partner.name}
                     className="max-h-full max-w-[45%] object-contain"
                   />
                   <img
-                    src={partner.secondaryLogo}
+                    src={partner.logo}
                     alt={partner.name}
                     className="max-h-full max-w-[45%] object-contain"
                   />
