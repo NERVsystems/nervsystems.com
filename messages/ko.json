@@ -457,6 +457,14 @@
         "x": "x.com/NERVSysOffical"
       }
     },
+    "takProvider": {
+      "title": "TAK 서비스 제공업체",
+      "description": "공인 TAK 서비스 제공업체",
+      "regions": {
+        "singapore": "싱가포르",
+        "thailand": "태국"
+      }
+    },
     "copyright": "© 2025 NERV Systems. All rights reserved.",
     "taglineBottom": "전술 엣지를 위해 구축됨",
     "legal": {

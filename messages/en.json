@@ -457,6 +457,14 @@
         "x": "x.com/NERVSysOffical"
       }
     },
+    "takProvider": {
+      "title": "TAK Service Provider",
+      "description": "Authorised TAK Service Provider",
+      "regions": {
+        "singapore": "Singapore",
+        "thailand": "Thailand"
+      }
+    },
     "copyright": "© 2025 NERV Systems. All rights reserved.",
     "taglineBottom": "Built for the tactical edge",
     "legal": {

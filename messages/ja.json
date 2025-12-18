@@ -457,6 +457,14 @@
         "x": "x.com/NERVSysOffical"
       }
     },
+    "takProvider": {
+      "title": "TAKサービスプロバイダー",
+      "description": "認定TAKサービスプロバイダー",
+      "regions": {
+        "singapore": "シンガポール",
+        "thailand": "タイ"
+      }
+    },
     "copyright": "© 2025 NERV Systems. All rights reserved.",
     "taglineBottom": "戦術エッジのために構築",
     "legal": {

@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="bg-tactical-surface border-t border-white/10 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+        <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
             <div className="mb-4">
@@ -87,6 +87,32 @@ export default function Footer() {
                 </a>
               </p>
             </div>
+          </div>
+
+          {/* TAK Service Provider */}
+          <div>
+            <h3 className="text-sm font-bold text-white mb-4 uppercase tracking-wider">
+              {t('takProvider.title')}
+            </h3>
+            <a
+              href="https://tak.gov"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mb-4 hover:opacity-80 transition-opacity"
+            >
+              <img
+                src="/img/tak-badge.svg"
+                alt="TAK.gov Authorized Service Provider"
+                className="h-16 w-auto"
+              />
+            </a>
+            <p className="text-tactical-textDim text-sm mb-3">
+              {t('takProvider.description')}
+            </p>
+            <ul className="text-xs text-tactical-textDim/80 space-y-1 font-mono">
+              <li>▸ {t('takProvider.regions.singapore')}</li>
+              <li>▸ {t('takProvider.regions.thailand')}</li>
+            </ul>
           </div>
         </div>
 

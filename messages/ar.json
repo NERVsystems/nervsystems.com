@@ -457,6 +457,14 @@
         "x": "x.com/NERVSysOffical"
       }
     },
+    "takProvider": {
+      "title": "مزود خدمة TAK",
+      "description": "مزود خدمة TAK معتمد",
+      "regions": {
+        "singapore": "سنغافورة",
+        "thailand": "تايلاند"
+      }
+    },
     "copyright": "© 2025 NERV Systems. جميع الحقوق محفوظة.",
     "taglineBottom": "مصمم للحافة التكتيكية",
     "legal": {

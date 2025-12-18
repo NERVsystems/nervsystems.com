@@ -457,6 +457,14 @@
         "x": "x.com/NERVSysOffical"
       }
     },
+    "takProvider": {
+      "title": "ผู้ให้บริการ TAK",
+      "description": "ผู้ให้บริการ TAK ที่ได้รับอนุญาต",
+      "regions": {
+        "singapore": "สิงคโปร์",
+        "thailand": "ประเทศไทย"
+      }
+    },
     "copyright": "© 2025 NERV Systems สงวนลิขสิทธิ์",
     "taglineBottom": "สร้างขึ้นสำหรับ tactical edge",
     "legal": {
