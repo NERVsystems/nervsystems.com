@@ -17,6 +17,7 @@ export default function PartnersSection() {
       name: t('items.nus.name'),
       description: t('items.nus.description'),
       logo: "/img/brands/partners/B71_BrandSig_RGB.png",
+      secondaryLogo: "/img/brands/partners/nus-logo.png",
       link: "https://enterprise.nus.edu.sg/",
       placeholder: false
     },
@@ -65,6 +66,19 @@ export default function PartnersSection() {
                   <span className="text-tactical-textDim text-xs font-mono">
                     {partner.name} Logo
                   </span>
+                </div>
+              ) : partner.secondaryLogo ? (
+                <div className="h-20 flex items-center justify-center gap-3 mb-4">
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="max-h-full max-w-[45%] object-contain"
+                  />
+                  <img
+                    src={partner.secondaryLogo}
+                    alt={partner.name}
+                    className="max-h-full max-w-[45%] object-contain"
+                  />
                 </div>
               ) : (
                 <div className="h-20 flex items-center justify-center mb-4">
