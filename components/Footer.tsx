@@ -86,6 +86,16 @@ export default function Footer() {
                   ▸ {t('contact.affiliations.x')}
                 </a>
               </p>
+              <p className="font-mono">
+                <a
+                  href="https://www.youtube.com/@nervsystems"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-tactical-accent transition-colors"
+                >
+                  ▸ {t('contact.affiliations.youtube')}
+                </a>
+              </p>
             </div>
           </div>
 
