@@ -16,15 +16,14 @@ export default function NERVASection() {
 
   const capabilities = ['uas', 'medevac', 'threat', 'sar', 'alert', 'airspace'];
 
-  // Video files available for each capability (add more as they become available)
+  // Video files available for each capability
   const videoFiles: Record<string, string> = {
     airspace: 'nerva-airspace',
     uas: 'nerva-sar', // UAS demo (SAR scenario)
     threat: 'nerva-threat', // Hostile Unit Identification
     alert: 'nerva-alert', // Geofence construction
     sar: 'nerva-sar-demo', // Search and Rescue
-    // Add more videos here as they become available:
-    // medevac: 'nerva-medevac',
+    medevac: 'nerva-medevac', // CASEVAC
   };
 
   return (
