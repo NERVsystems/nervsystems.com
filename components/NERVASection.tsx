@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { useTranslations } from 'next-intl';
 import RequestDemoForm from './RequestDemoForm';
@@ -9,10 +9,34 @@ export default function NERVASection() {
   const t = useTranslations('nerva');
   const [showDemoForm, setShowDemoForm] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [visibleVideos, setVisibleVideos] = useState<Set<string>>(new Set());
+  const videoRefs = useRef<Map<string, HTMLDivElement>>(new Map());
 
   useEffect(() => {
     setMounted(true);
-  }, []);
+
+    // Lazy load videos using IntersectionObserver
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const capability = entry.target.getAttribute('data-capability');
+            if (capability) {
+              setVisibleVideos((prev) => new Set(prev).add(capability));
+              observer.unobserve(entry.target);
+            }
+          }
+        });
+      },
+      { rootMargin: '100px' } // Start loading 100px before visible
+    );
+
+    videoRefs.current.forEach((element) => {
+      observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, [mounted]);
 
   const capabilities = ['uas', 'medevac', 'threat', 'sar', 'alert', 'airspace'];
 
@@ -109,17 +133,24 @@ export default function NERVASection() {
 
                 {/* Video or Placeholder */}
                 {videoFiles[capability] ? (
-                  <div className="mb-4 bg-black/50 border border-white/10 rounded overflow-hidden aspect-video">
-                    <video
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="w-full h-full object-cover"
-                    >
-                      <source src={`/videos/${videoFiles[capability]}.mp4`} type="video/mp4" />
-                      <source src={`/videos/${videoFiles[capability]}.webm`} type="video/webm" />
-                    </video>
+                  <div
+                    ref={(el) => {
+                      if (el) videoRefs.current.set(capability, el);
+                    }}
+                    data-capability={capability}
+                    className="mb-4 bg-black/50 border border-white/10 rounded overflow-hidden aspect-video"
+                  >
+                    {visibleVideos.has(capability) && (
+                      <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-full object-cover"
+                      >
+                        <source src={`/videos/${videoFiles[capability]}.mp4`} type="video/mp4" />
+                      </video>
+                    )}
                   </div>
                 ) : (
                   <div className="mb-4 bg-black/50 border border-white/10 rounded aspect-video flex items-center justify-center">
