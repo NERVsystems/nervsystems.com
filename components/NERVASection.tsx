@@ -21,10 +21,10 @@ export default function NERVASection() {
     airspace: 'nerva-airspace',
     uas: 'nerva-sar', // UAS demo (SAR scenario)
     threat: 'nerva-threat', // Hostile Unit Identification
+    alert: 'nerva-alert', // Geofence construction
     // Add more videos here as they become available:
     // medevac: 'nerva-medevac',
     // sar: 'nerva-sar',
-    // alert: 'nerva-alert',
   };
 
   return (
