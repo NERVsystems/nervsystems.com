@@ -61,7 +61,7 @@ const nextConfig: NextConfig = {
               "style-src 'self' 'unsafe-inline'",
               "img-src 'self' data: https: blob:",
               "font-src 'self' data:",
-              "connect-src 'self' https://www.google-analytics.com https://api.hsforms.com https://forms.hsforms.com",
+              "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://api.hsforms.com https://forms.hsforms.com",
               "frame-src https://forms.hsforms.com",
               "object-src 'none'",
               "base-uri 'self'",
