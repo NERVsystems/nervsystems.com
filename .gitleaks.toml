@@ -1,0 +1,22 @@
+# Gitleaks configuration
+# https://github.com/gitleaks/gitleaks
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Allowlist for NERV Systems"
+
+# HubSpot Portal IDs and Form IDs are public identifiers, not secrets
+regexes = [
+  '''NEXT_PUBLIC_HUBSPOT_PORTAL_ID=\d+''',
+  '''NEXT_PUBLIC_HUBSPOT.*FORM_ID=[a-f0-9-]+''',
+  '''portalId.*\d{8,9}''',
+  '''formId.*[a-f0-9-]{36}''',
+]
+
+# Ignore example/template files
+paths = [
+  '''\.env\.local\.example''',
+  '''ENV-SETUP\.md''',
+]
