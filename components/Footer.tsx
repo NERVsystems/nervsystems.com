@@ -60,6 +60,8 @@ export default function Footer() {
             </h3>
             <div className="text-tactical-textDim text-sm space-y-2 mb-6">
               <p>{t('contact.email')}</p>
+              <p>{t('contact.phone')}</p>
+              <p>{t('contact.address')}</p>
               <p>{t('contact.region')}</p>
             </div>
             <div className="text-xs text-tactical-textDim/70 space-y-1">

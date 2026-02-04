@@ -418,9 +418,17 @@
         "label": "البريد الإلكتروني",
         "value": "contact@nervsystems.com"
       },
+      "phone": {
+        "label": "الهاتف",
+        "value": "(703) 977-7097"
+      },
+      "address": {
+        "label": "المكتب الأمريكي",
+        "value": "8 The Green Suite B, Dover, DE 19901"
+      },
       "region": {
-        "label": "المنطقة",
-        "value": "عمليات آسيا والمحيط الهادئ"
+        "label": "العمليات",
+        "value": "الولايات المتحدة وآسيا والمحيط الهادئ"
       },
       "affiliations": {
         "label": "الانتماءات",
@@ -448,7 +456,9 @@
     "contact": {
       "title": "اتصل",
       "email": "البريد الإلكتروني: contact@nervsystems.com",
-      "region": "عمليات آسيا والمحيط الهادئ",
+      "phone": "الهاتف: (703) 977-7097",
+      "address": "8 The Green Suite B, Dover, DE 19901",
+      "region": "الولايات المتحدة وآسيا والمحيط الهادئ",
       "affiliations": {
         "nvidia": "عضو NVIDIA Inception",
         "nus": "محتضنة في NUS Enterprise",

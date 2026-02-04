@@ -70,6 +70,18 @@ export default function ContactSection() {
               </div>
 
               <div>
+                <div className="text-sm font-mono text-tactical-textDim mb-1">{t('direct.phone.label')}</div>
+                <a href="tel:+17039777097" className="text-white hover:text-tactical-accent transition-colors">
+                  {t('direct.phone.value')}
+                </a>
+              </div>
+
+              <div>
+                <div className="text-sm font-mono text-tactical-textDim mb-1">{t('direct.address.label')}</div>
+                <div className="text-white">{t('direct.address.value')}</div>
+              </div>
+
+              <div>
                 <div className="text-sm font-mono text-tactical-textDim mb-1">{t('direct.region.label')}</div>
                 <div className="text-white">{t('direct.region.value')}</div>
               </div>
