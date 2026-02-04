@@ -426,6 +426,10 @@
         "label": "สำนักงานสหรัฐฯ",
         "value": "8 The Green Suite B, Dover, DE 19901"
       },
+      "addressSG": {
+        "label": "สำนักงานสิงคโปร์",
+        "value": "71 Ayer Rajah Crescent #01-20, 139951"
+      },
       "region": {
         "label": "ภูมิภาค",
         "value": "เอเชียแปซิฟิก"
@@ -458,6 +462,7 @@
       "email": "อีเมล: contact@nervsystems.com",
       "phone": "โทรศัพท์: (703) 977-7097",
       "address": "8 The Green Suite B, Dover, DE 19901",
+      "addressSG": "71 Ayer Rajah Crescent #01-20, 139951",
       "region": "เอเชียแปซิฟิก",
       "affiliations": {
         "nvidia": "สมาชิก NVIDIA Inception",

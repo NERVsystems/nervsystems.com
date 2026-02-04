@@ -82,6 +82,11 @@ export default function ContactSection() {
               </div>
 
               <div>
+                <div className="text-sm font-mono text-tactical-textDim mb-1">{t('direct.addressSG.label')}</div>
+                <div className="text-white">{t('direct.addressSG.value')}</div>
+              </div>
+
+              <div>
                 <div className="text-sm font-mono text-tactical-textDim mb-1">{t('direct.region.label')}</div>
                 <div className="text-white">{t('direct.region.value')}</div>
               </div>

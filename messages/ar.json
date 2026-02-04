@@ -426,6 +426,10 @@
         "label": "المكتب الأمريكي",
         "value": "8 The Green Suite B, Dover, DE 19901"
       },
+      "addressSG": {
+        "label": "مكتب سنغافورة",
+        "value": "71 Ayer Rajah Crescent #01-20, 139951"
+      },
       "region": {
         "label": "المنطقة",
         "value": "آسيا والمحيط الهادئ"
@@ -458,6 +462,7 @@
       "email": "البريد الإلكتروني: contact@nervsystems.com",
       "phone": "الهاتف: (703) 977-7097",
       "address": "8 The Green Suite B, Dover, DE 19901",
+      "addressSG": "71 Ayer Rajah Crescent #01-20, 139951",
       "region": "آسيا والمحيط الهادئ",
       "affiliations": {
         "nvidia": "عضو NVIDIA Inception",

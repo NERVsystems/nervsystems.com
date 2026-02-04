@@ -426,6 +426,10 @@
         "label": "米国オフィス",
         "value": "8 The Green Suite B, Dover, DE 19901"
       },
+      "addressSG": {
+        "label": "シンガポールオフィス",
+        "value": "71 Ayer Rajah Crescent #01-20, 139951"
+      },
       "region": {
         "label": "地域",
         "value": "アジア太平洋"
@@ -458,6 +462,7 @@
       "email": "メール: contact@nervsystems.com",
       "phone": "電話: (703) 977-7097",
       "address": "8 The Green Suite B, Dover, DE 19901",
+      "addressSG": "71 Ayer Rajah Crescent #01-20, 139951",
       "region": "アジア太平洋",
       "affiliations": {
         "nvidia": "NVIDIA Inceptionメンバー",
