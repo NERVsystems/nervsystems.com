@@ -123,6 +123,7 @@ export default function Footer() {
               {t('takProvider.description')}
             </p>
             <ul className="text-xs text-tactical-textDim/80 space-y-1 font-mono">
+              <li>▸ {t('takProvider.regions.usa')}</li>
               <li>▸ {t('takProvider.regions.singapore')}</li>
               <li>▸ {t('takProvider.regions.thailand')}</li>
             </ul>

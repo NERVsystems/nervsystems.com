@@ -477,6 +477,7 @@
       "title": "مزود خدمة TAK",
       "description": "مزود خدمة TAK معتمد",
       "regions": {
+        "usa": "الولايات المتحدة",
         "singapore": "سنغافورة",
         "thailand": "تايلاند"
       }

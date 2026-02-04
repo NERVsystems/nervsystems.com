@@ -477,6 +477,7 @@
       "title": "TAKサービスプロバイダー",
       "description": "認定TAKサービスプロバイダー",
       "regions": {
+        "usa": "アメリカ",
         "singapore": "シンガポール",
         "thailand": "タイ"
       }
