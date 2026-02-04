@@ -427,8 +427,8 @@
         "value": "8 The Green Suite B, Dover, DE 19901"
       },
       "region": {
-        "label": "OPERATIONS",
-        "value": "United States & Asia Pacific"
+        "label": "REGION",
+        "value": "Asia Pacific"
       },
       "affiliations": {
         "label": "AFFILIATIONS",
@@ -458,7 +458,7 @@
       "email": "Email: contact@nervsystems.com",
       "phone": "Phone: (703) 977-7097",
       "address": "8 The Green Suite B, Dover, DE 19901",
-      "region": "United States & Asia Pacific",
+      "region": "Asia Pacific",
       "affiliations": {
         "nvidia": "NVIDIA Inception Member",
         "nus": "NUS Enterprise Incubated",
