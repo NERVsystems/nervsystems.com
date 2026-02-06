@@ -180,15 +180,15 @@
   "takCallout": {
     "label": "TAK/ATAK Solutions",
     "title": "Looking for TAK Hosting & Deployment?",
-    "description": "NERV provides complete TAK/ATAK solutions for Asia Pacific: managed TAK server hosting from $495/month, expert deployment consulting, system administration, operator training, and AI-enhanced capabilities through NERVA integration.",
+    "description": "NERV provides complete TAK/ATAK solutions across North America and Asia Pacific: managed TAK server hosting from $495/month, expert deployment consulting, system administration, operator training, and AI-enhanced capabilities through NERVA integration.",
     "benefits": {
       "certified": {
         "title": "TAK.gov Certified",
         "description": "Official TAK deployments"
       },
       "asiaPacific": {
-        "title": "Asia Pacific Focus",
-        "description": "Regional expertise"
+        "title": "Global Coverage",
+        "description": "NA & APAC expertise"
       },
       "aiEnhanced": {
         "title": "AI-Enhanced",
@@ -220,7 +220,7 @@
   },
   "homeTakSolutions": {
     "title": "TAK Solutions & Services",
-    "subtitle": "Complete TAK/ATAK deployment, managed hosting, consulting, and training for Asia Pacific",
+    "subtitle": "Complete TAK/ATAK deployment, managed hosting, consulting, and training across North America and Asia Pacific",
     "hosting": {
       "title": "Managed TAK Hosting",
       "description": "AI-enhanced TAK servers with NERVA integration. Your server doesn't just route data—it analyzes it.",
@@ -622,10 +622,10 @@
   },
   "takSolutions": {
     "hero": {
-      "eyebrow": "TAK Solutions for Asia Pacific",
+      "eyebrow": "Global TAK Solutions",
       "title": "Complete TAK/ATAK",
       "titleLine2": "Solutions & Services",
-      "subtitle": "Expert TAK server hosting, ATAK deployment consulting, system administration, and training for military, law enforcement, HADR, and emergency response teams across Asia Pacific.",
+      "subtitle": "Expert TAK server hosting, ATAK deployment consulting, system administration, and training for military, law enforcement, HADR, and emergency response teams across North America and Asia Pacific.",
       "features": {
         "hosting": "Managed TAK Hosting from $495/mo",
         "aiEnhanced": "AI-Enhanced with NERVA",
@@ -638,8 +638,8 @@
       }
     },
     "services": {
-      "title": "Professional TAK Solutions for Asia Pacific",
-      "introduction": "NERV Systems provides comprehensive TAK (Team Awareness Kit) and ATAK (Android Team Awareness Kit) solutions including managed TAK server hosting, ATAK deployment consulting, TAK system administration, operator training programs, and custom TAK plugin development. Our AI-enhanced TAK platform combines traditional TAK capabilities with intelligent automation through NERVA, supporting defense operations, humanitarian assistance and disaster relief (HADR), and emergency response.",
+      "title": "Professional TAK Solutions",
+      "introduction": "NERV Systems provides comprehensive TAK (Team Awareness Kit) and ATAK (Android Team Awareness Kit) solutions including managed TAK server hosting, ATAK deployment consulting, TAK system administration, operator training programs, and custom TAK plugin development. With offices in the United States and Singapore, we serve organizations across North America and Asia Pacific. Our AI-enhanced TAK platform combines traditional TAK capabilities with intelligent automation through NERVA, supporting defense operations, humanitarian assistance and disaster relief (HADR), and emergency response.",
       "hosting": {
         "title": "Managed TAK Server Hosting",
         "description": "Enterprise-grade TAK server hosting with 99.9% uptime SLA. Our managed TAK hosting service eliminates the complexity of TAK server administration while providing AI-enhanced capabilities through NERVA integration. Perfect for organizations deploying TAK/ATAK systems for military operations, law enforcement, HADR missions, and emergency management.",
@@ -780,8 +780,8 @@
         },
         {
           "number": "02",
-          "title": "Asia Pacific Expertise",
-          "description": "Local TAK deployment expertise across Singapore, Hong Kong, Japan, and the broader Asia Pacific region with understanding of regional requirements"
+          "title": "Global Regional Expertise",
+          "description": "TAK deployment expertise across North America and Asia Pacific, with offices in the United States and Singapore serving diverse operational and regulatory requirements"
         },
         {
           "number": "03",
@@ -848,9 +848,9 @@
           "nerv": "24/7 real-time support with AI system monitoring and predictive alerts"
         },
         {
-          "category": "Asia Pacific Presence",
-          "traditional": "Limited regional support, US-based infrastructure",
-          "nerv": "Local TAK hosting in Singapore, Hong Kong, regional compliance expertise"
+          "category": "Global Presence",
+          "traditional": "Single-region infrastructure",
+          "nerv": "US and Singapore offices, multi-region TAK hosting, local compliance expertise"
         },
         {
           "category": "TAK Integration",
@@ -930,12 +930,12 @@
           "topics": ["API integration", "Security architecture", "Deployment patterns", "Migration strategies"]
         },
         {
-          "title": "Asia Pacific TAK Compliance & Regulations Guide",
-          "description": "Comprehensive guide to regulatory requirements, data sovereignty considerations, and compliance frameworks for TAK deployments across Asia Pacific. Covers Singapore, Hong Kong, Japan, Australia, and regional requirements. Includes compliance checklists and certification guidance.",
+          "title": "TAK Compliance & Regulations Guide",
+          "description": "Comprehensive guide to regulatory requirements, data sovereignty considerations, and compliance frameworks for TAK deployments. Covers US federal requirements, FedRAMP considerations, and international frameworks including Asia Pacific regional requirements. Includes compliance checklists and certification guidance.",
           "pages": "22 pages",
           "format": "PDF",
           "category": "COMPLIANCE",
-          "topics": ["Regional regulations", "Data sovereignty", "Security certifications", "Compliance frameworks"]
+          "topics": ["Regulatory frameworks", "Data sovereignty", "Security certifications", "Compliance requirements"]
         },
         {
           "title": "TAK System Administration Best Practices",
@@ -1025,7 +1025,7 @@
         },
         {
           "question": "What makes NERV's TAK solutions different from other TAK hosting providers?",
-          "answer": "Unlike traditional TAK hosting companies, NERV combines expert TAK deployment services with AI-powered intelligence through NERVA integration. Every NERV TAK solution includes autonomous mission planning, automated CASEVAC coordination, real-time threat intelligence, intelligent geofencing, and 3D airspace visualization—capabilities not available from standard TAK providers. We also specialize in the Asia Pacific region with local TAK server hosting in Singapore, understanding of regional compliance requirements, and Asia-focused TAK deployment expertise. Additionally, our flexible deployment options include cloud TAK hosting, on-premise TAK servers, hybrid architectures, and edge-deployed TAK systems with our GPU-enabled hardware."
+          "answer": "Unlike traditional TAK hosting companies, NERV combines expert TAK deployment services with AI-powered intelligence through NERVA integration. Every NERV TAK solution includes autonomous mission planning, automated CASEVAC coordination, real-time threat intelligence, intelligent geofencing, and 3D airspace visualization—capabilities not available from standard TAK providers. With offices in the United States and Singapore, we serve organizations across North America and Asia Pacific, offering multi-region TAK hosting with local compliance expertise. Our flexible deployment options include cloud TAK hosting, on-premise TAK servers, hybrid architectures, and edge-deployed TAK systems with our GPU-enabled hardware."
         },
         {
           "question": "Can you develop custom TAK plugins?",

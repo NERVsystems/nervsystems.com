@@ -9,8 +9,8 @@ import TAKFAQSection from '@/components/tak/TAKFAQSection';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: "TAK Solutions & ATAK Hosting | NERV Systems Asia Pacific",
-  description: "Complete TAK/ATAK deployment, managed hosting, consulting and training services in Asia Pacific. AI-enhanced TAK server hosting from $495/month. Expert TAK deployment consulting, system administration, and operator training for military, law enforcement, emergency response, and commercial operations.",
+  title: "TAK Solutions & ATAK Hosting | NERV Systems",
+  description: "Complete TAK/ATAK deployment, managed hosting, consulting and training services across North America and Asia Pacific. AI-enhanced TAK server hosting from $495/month. Expert TAK deployment consulting, system administration, and operator training for military, law enforcement, emergency response, and commercial operations.",
   keywords: [
     "TAK solutions",
     "ATAK platform",
@@ -22,7 +22,9 @@ export const metadata: Metadata = {
     "ATAK consulting",
     "TAK training",
     "ATAK training",
+    "TAK server North America",
     "TAK server Asia Pacific",
+    "ATAK solutions USA",
     "ATAK solutions Singapore",
     "TAK system administration",
     "TAK plugin development",
@@ -48,8 +50,8 @@ export const metadata: Metadata = {
     "enterprise TAK solutions"
   ],
   openGraph: {
-    title: "TAK Solutions & ATAK Hosting | NERV Systems Asia Pacific",
-    description: "Complete TAK/ATAK deployment, managed hosting, consulting and training in Asia Pacific. AI-enhanced solutions from $495/month.",
+    title: "TAK Solutions & ATAK Hosting | NERV Systems",
+    description: "Complete TAK/ATAK deployment, managed hosting, consulting and training across North America and Asia Pacific. AI-enhanced solutions from $495/month.",
     url: "https://www.nervsystems.com/solutions/tak",
     siteName: "NERV Systems",
     type: "website",
