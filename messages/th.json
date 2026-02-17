@@ -230,7 +230,7 @@
           "price": "$495",
           "period": "/month",
           "users": "Up to 50 users",
-          "ai": "NERVA Lite (3 capabilities)",
+          "ai": "NERVA AI-ready",
           "features": [
             "Basic TAK Server",
             "Standard plugins",
@@ -245,7 +245,7 @@
           "price": "$1,495",
           "period": "/month",
           "users": "Up to 250 users",
-          "ai": "Full NERVA (all 6 capabilities)",
+          "ai": "NERVA AI-ready",
           "badge": "POPULAR",
           "features": [
             "Enterprise TAK Server",
@@ -262,7 +262,7 @@
           "price": "Custom",
           "period": "pricing",
           "users": "1,000+ users",
-          "ai": "Custom NERVA + Training",
+          "ai": "NERVA AI-ready",
           "features": [
             "Custom TAK infrastructure",
             "White-label options",
@@ -330,7 +330,7 @@
         "fundamentals": {
           "name": "TAK Operator Fundamentals",
           "duration": "1 day",
-          "price": "$595",
+          "price": "$395",
           "period": "/student",
           "description": "TAK interface basics, map navigation, team coordination, and plugin usage",
           "cta": "Enroll Now"
@@ -338,7 +338,7 @@
         "nerva": {
           "name": "NERVA AI Assistant Training",
           "duration": "1 day",
-          "price": "$795",
+          "price": "$495",
           "period": "/student",
           "description": "Natural language interface, automated mission planning, and AI workflows",
           "cta": "Enroll Now"
@@ -346,7 +346,7 @@
         "advanced": {
           "name": "Advanced Mission Planning with AI",
           "duration": "2 days",
-          "price": "$1,495",
+          "price": "$895",
           "period": "/student",
           "description": "Complex operations, intelligence fusion, edge computing, and scenario exercises",
           "badge": "POPULAR",
@@ -649,7 +649,7 @@
             "price": "$495",
             "period": "/เดือน",
             "users": "ผู้ใช้ TAK สูงสุด 50 คน",
-            "ai": "NERVA Lite (ความสามารถ AI 3 อย่าง)",
+            "ai": "NERVA AI-ready",
             "features": [
               "การปรับใช้เซิร์ฟเวอร์ TAK พื้นฐาน",
               "ปลั๊กอิน ATAK มาตรฐานรวมอยู่ด้วย",
@@ -664,7 +664,7 @@
             "price": "$1,495",
             "period": "/เดือน",
             "users": "ผู้ใช้ ATAK สูงสุด 250 คน",
-            "ai": "NERVA เต็มรูปแบบ (ความสามารถ AI ทั้ง 6 อย่าง)",
+            "ai": "NERVA AI-ready",
             "badge": "ยอดนิยม",
             "features": [
               "เซิร์ฟเวอร์ TAK ระดับองค์กร",
@@ -680,7 +680,7 @@
             "name": "องค์กร",
             "price": "Custom",
             "users": "ผู้ใช้ TAK/ATAK 1,000+ คน",
-            "ai": "NERVA กำหนดเอง + การฝึกอบรม",
+            "ai": "NERVA AI-ready",
             "features": [
               "โครงสร้าง TAK แบบกำหนดเอง",
               "ตัวเลือก TAK แบบ White-label",
@@ -746,14 +746,14 @@
         "programs": {
           "fundamentals": {
             "name": "พื้นฐาน TAK",
-            "price": "$595",
+            "price": "$395",
             "period": "/ผู้เรียน",
             "duration": "หลักสูตร ATAK พื้นฐาน 1 วัน",
             "cta": "ลงทะเบียนการฝึกอบรม TAK"
           },
           "nerva": {
             "name": "การฝึกอบรม NERVA AI",
-            "price": "$795",
+            "price": "$495",
             "period": "/ผู้เรียน",
             "duration": "หลักสูตร TAK ที่ปรับปรุงด้วย AI 1 วัน",
             "badge": "แนะนำ",
@@ -761,7 +761,7 @@
           },
           "advanced": {
             "name": "ปฏิบัติการ TAK ขั้นสูง",
-            "price": "$1,495",
+            "price": "$895",
             "period": "/ผู้เรียน",
             "duration": "หลักสูตร ATAK ขั้นสูง 2 วัน",
             "cta": "ลงทะเบียนการฝึกอบรมขั้นสูง"

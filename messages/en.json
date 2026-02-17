@@ -223,14 +223,14 @@
     "subtitle": "Complete TAK/ATAK deployment, managed hosting, consulting, and training across North America and Asia Pacific",
     "hosting": {
       "title": "Managed TAK Hosting",
-      "description": "AI-enhanced TAK servers with NERVA integration. Your server doesn't just route data—it analyzes it.",
+      "description": "Enterprise-grade managed TAK servers, ready for NERVA AI integration. We handle the infrastructure so you can focus on operations.",
       "plans": {
         "starter": {
           "name": "Starter",
           "price": "$495",
           "period": "/month",
           "users": "Up to 50 users",
-          "ai": "NERVA Lite (3 capabilities)",
+          "ai": "NERVA AI-ready",
           "features": [
             "Basic TAK Server",
             "Standard plugins",
@@ -245,7 +245,7 @@
           "price": "$1,495",
           "period": "/month",
           "users": "Up to 250 users",
-          "ai": "Full NERVA (all 6 capabilities)",
+          "ai": "NERVA AI-ready",
           "badge": "POPULAR",
           "features": [
             "Enterprise TAK Server",
@@ -253,7 +253,7 @@
             "99.9% uptime SLA",
             "24/7 support",
             "Federation support",
-            "AI system monitoring"
+            "System monitoring"
           ],
           "cta": "Get Started"
         },
@@ -262,7 +262,7 @@
           "price": "Custom",
           "period": "pricing",
           "users": "1,000+ users",
-          "ai": "Custom NERVA + Training",
+          "ai": "NERVA AI-ready",
           "features": [
             "Custom TAK infrastructure",
             "White-label options",
@@ -277,7 +277,7 @@
     },
     "deployment": {
       "title": "Deployment Consulting",
-      "description": "Expert TAK deployment with AI capability integration roadmap included",
+      "description": "Expert TAK deployment from assessment to full operational capability",
       "packages": {
         "assessment": {
           "name": "Assessment",
@@ -328,25 +328,25 @@
       "description": "TAK operator training with NERVA AI assistant certification",
       "programs": {
         "fundamentals": {
-          "name": "TAK Operator Fundamentals",
+          "name": "TAK Fundamentals",
           "duration": "1 day",
-          "price": "$595",
+          "price": "$395",
           "period": "/student",
           "description": "TAK interface basics, map navigation, team coordination, and plugin usage",
           "cta": "Enroll Now"
         },
         "nerva": {
-          "name": "NERVA AI Assistant Training",
+          "name": "NERVA AI Operations",
           "duration": "1 day",
-          "price": "$795",
+          "price": "$495",
           "period": "/student",
           "description": "Natural language interface, automated mission planning, and AI workflows",
           "cta": "Enroll Now"
         },
         "advanced": {
-          "name": "Advanced Mission Planning with AI",
+          "name": "Advanced TAK Ops",
           "duration": "2 days",
-          "price": "$1,495",
+          "price": "$895",
           "period": "/student",
           "description": "Complex operations, intelligence fusion, edge computing, and scenario exercises",
           "badge": "POPULAR",
@@ -642,14 +642,14 @@
       "introduction": "NERV Systems provides comprehensive TAK (Team Awareness Kit) and ATAK (Android Team Awareness Kit) solutions including managed TAK server hosting, ATAK deployment consulting, TAK system administration, operator training programs, and custom TAK plugin development. With offices in the United States and Singapore, we serve organizations across North America and Asia Pacific. Our AI-enhanced TAK platform combines traditional TAK capabilities with intelligent automation through NERVA, supporting defense operations, humanitarian assistance and disaster relief (HADR), and emergency response.",
       "hosting": {
         "title": "Managed TAK Server Hosting",
-        "description": "Enterprise-grade TAK server hosting with 99.9% uptime SLA. Our managed TAK hosting service eliminates the complexity of TAK server administration while providing AI-enhanced capabilities through NERVA integration. Perfect for organizations deploying TAK/ATAK systems for military operations, law enforcement, HADR missions, and emergency management.",
+        "description": "Enterprise-grade TAK server hosting with 99.9% uptime SLA. Our managed TAK hosting service eliminates the complexity of TAK server administration. Perfect for organizations deploying TAK/ATAK systems for military operations, law enforcement, HADR missions, and emergency management.",
         "plans": {
           "starter": {
             "name": "Starter",
             "price": "$495",
             "period": "/month",
             "users": "Up to 50 TAK users",
-            "ai": "NERVA Lite (3 AI capabilities)",
+            "ai": "NERVA AI-ready",
             "features": [
               "Basic TAK Server deployment",
               "Standard ATAK plugins included",
@@ -664,7 +664,7 @@
             "price": "$1,495",
             "period": "/month",
             "users": "Up to 250 ATAK users",
-            "ai": "Full NERVA (all 6 AI capabilities)",
+            "ai": "NERVA AI-ready",
             "badge": "POPULAR",
             "features": [
               "Enterprise TAK Server",
@@ -672,7 +672,7 @@
               "99.9% TAK uptime SLA",
               "24/7 TAK support",
               "TAK federation support",
-              "AI system health monitoring"
+              "System health monitoring"
             ],
             "cta": "Start Professional TAK"
           },
@@ -680,7 +680,7 @@
             "name": "Enterprise",
             "price": "Custom",
             "users": "1,000+ TAK/ATAK users",
-            "ai": "Custom NERVA + Training",
+            "ai": "NERVA AI-ready",
             "features": [
               "Custom TAK infrastructure",
               "White-label TAK options",
@@ -696,7 +696,7 @@
       },
       "deployment": {
         "title": "TAK Deployment Consulting",
-        "description": "Expert TAK deployment services from initial requirements assessment to full operational capability. Our TAK consulting team brings extensive experience deploying ATAK systems for defense, law enforcement, HADR operations, and emergency management organizations. Every TAK deployment includes an AI capability integration roadmap showing how NERVA enhances your TAK operations.",
+        "description": "Expert TAK deployment services from initial requirements assessment to full operational capability. Our TAK consulting team brings extensive experience deploying ATAK systems for defense, law enforcement, HADR operations, and emergency management organizations.",
         "plans": {
           "assessment": {
             "name": "TAK Assessment",
@@ -746,14 +746,14 @@
         "programs": {
           "fundamentals": {
             "name": "TAK Fundamentals",
-            "price": "$595",
+            "price": "$395",
             "period": "/student",
             "duration": "1-day ATAK basics course",
             "cta": "Enroll in TAK Training"
           },
           "nerva": {
-            "name": "NERVA AI Training",
-            "price": "$795",
+            "name": "NERVA AI Operations",
+            "price": "$495",
             "period": "/student",
             "duration": "1-day AI-enhanced TAK course",
             "badge": "RECOMMENDED",
@@ -761,7 +761,7 @@
           },
           "advanced": {
             "name": "Advanced TAK Ops",
-            "price": "$1,495",
+            "price": "$895",
             "period": "/student",
             "duration": "2-day advanced ATAK course",
             "cta": "Enroll in Advanced Training"
