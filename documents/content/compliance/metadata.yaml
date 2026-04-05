@@ -1,0 +1,279 @@
+# TAK Compliance & Regulations Guide Metadata
+# This YAML file provides structured metadata for AI-assisted PDF generation
+
+document:
+  title: "TAK Compliance & Regulations Guide"
+  subtitle: "Regulatory Requirements for TAK Deployments"
+  category: "COMPLIANCE"
+  version: "1.0"
+  pages: "22"
+  format: "PDF"
+  template: "nerv-guide"
+
+  description: >
+    Comprehensive guide to regulatory requirements, data sovereignty considerations,
+    and compliance frameworks for TAK deployments. Covers US federal requirements,
+    FedRAMP considerations, and international frameworks including Asia Pacific
+    regional requirements. Includes compliance checklists and certification guidance.
+
+  topics:
+    - "Regulatory frameworks"
+    - "Data sovereignty"
+    - "Security certifications"
+    - "Compliance requirements"
+
+  author: "NERV Systems"
+  date: "2025-11-11"
+  classification: "UNCLASSIFIED"
+
+  target_page_count: 22
+  reading_time: "55 minutes"
+  implementation_time: "Ongoing compliance program"
+
+phases:
+  - id: 1
+    name: "US Federal Requirements"
+    duration: "Reference"
+    priority: "CRITICAL"
+    sections:
+      - title: "ITAR (International Traffic in Arms Regulations)"
+        items:
+          - "TAK Server software classification under USML"
+          - "Export control requirements for TAK deployments"
+          - "Licensing requirements for foreign national access"
+          - "Record-keeping and reporting obligations"
+          - "Penalties for non-compliance"
+
+      - title: "EAR (Export Administration Regulations)"
+        items:
+          - "Commercial TAK components under EAR jurisdiction"
+          - "Classification of AI/ML components (ECCN determination)"
+          - "License exception eligibility assessment"
+          - "End-user and end-use screening requirements"
+          - "Technology transfer considerations"
+
+      - title: "FedRAMP Considerations"
+        items:
+          - "FedRAMP authorization levels (Low, Moderate, High)"
+          - "Applicability to TAK cloud hosting environments"
+          - "Continuous monitoring requirements"
+          - "Third-party assessment organization (3PAO) requirements"
+          - "Path to FedRAMP authorization for TAK hosting"
+
+      - title: "NIST Cybersecurity Framework"
+        items:
+          - "NIST 800-53 security controls for TAK systems"
+          - "NIST 800-171 for Controlled Unclassified Information (CUI)"
+          - "Risk management framework (RMF) application"
+          - "Security control assessment procedures"
+          - "Continuous monitoring and reporting requirements"
+
+  - id: 2
+    name: "Department of Defense Requirements"
+    duration: "Reference"
+    priority: "CRITICAL"
+    sections:
+      - title: "CMMC (Cybersecurity Maturity Model Certification)"
+        items:
+          - "CMMC level requirements for TAK service providers"
+          - "Assessment scope for TAK hosting infrastructure"
+          - "CUI handling requirements in TAK deployments"
+          - "Supply chain security requirements"
+          - "Certification and recertification timeline"
+
+      - title: "DISA STIG Compliance"
+        items:
+          - "Applicable STIGs for TAK Server operating systems"
+          - "Database STIG requirements for TAK data stores"
+          - "Web server STIGs for TAK web interfaces"
+          - "Network device STIGs for TAK infrastructure"
+          - "STIG implementation and validation procedures"
+
+      - title: "ATO (Authority to Operate)"
+        items:
+          - "ATO process for TAK system deployments"
+          - "System security plan (SSP) requirements"
+          - "Risk assessment and mitigation documentation"
+          - "Security control implementation evidence"
+          - "Ongoing authorization maintenance requirements"
+
+  - id: 3
+    name: "International Compliance Frameworks"
+    duration: "Reference"
+    priority: "HIGH"
+    sections:
+      - title: "Singapore PDPA"
+        items:
+          - "Personal Data Protection Act applicability to TAK"
+          - "Consent and notification requirements"
+          - "Cross-border data transfer provisions"
+          - "Data protection officer (DPO) requirements"
+          - "Breach notification obligations"
+
+      - title: "Australia Defence Security"
+        items:
+          - "Australian Defence Security Framework alignment"
+          - "Information Security Manual (ISM) controls"
+          - "IRAP assessment requirements for cloud hosting"
+          - "Defence Industry Security Program (DISP) membership"
+          - "Cross-domain solution requirements"
+
+      - title: "Five Eyes / Coalition Compliance"
+        items:
+          - "Information sharing agreements and controls"
+          - "Releasability markings and handling procedures"
+          - "Coalition network integration requirements"
+          - "Multinational information systems security"
+          - "Cross-domain information exchange"
+
+      - title: "GDPR Considerations"
+        items:
+          - "Applicability to TAK deployments in EU operations"
+          - "Data processing agreements for TAK hosting"
+          - "Data subject rights and obligations"
+          - "Cross-border data transfer mechanisms"
+          - "Data protection impact assessment (DPIA) requirements"
+
+  - id: 4
+    name: "Data Sovereignty & Residency"
+    duration: "Reference"
+    priority: "CRITICAL"
+    sections:
+      - title: "Data Classification"
+        items:
+          - "Classify TAK operational data by sensitivity level"
+          - "Identify personally identifiable information (PII) in TAK"
+          - "Classify geospatial and location data"
+          - "Determine classification of AI model data"
+          - "Document data handling procedures per classification"
+
+      - title: "Data Residency Requirements"
+        items:
+          - "US data residency requirements for federal data"
+          - "Singapore data residency provisions"
+          - "Australia data sovereignty requirements"
+          - "Multi-region hosting with data residency controls"
+          - "Cloud provider data center location verification"
+
+      - title: "Cross-Border Data Transfers"
+        items:
+          - "Establish legal basis for cross-border transfers"
+          - "Implement appropriate safeguards (SCCs, BCRs)"
+          - "Document data flow maps across jurisdictions"
+          - "Maintain transfer impact assessments"
+          - "Monitor regulatory changes affecting transfers"
+
+  - id: 5
+    name: "Security Certifications"
+    duration: "Reference"
+    priority: "HIGH"
+    sections:
+      - title: "ISO 27001 Information Security"
+        items:
+          - "Information security management system (ISMS) requirements"
+          - "Applicability to TAK hosting operations"
+          - "Certification process and timeline"
+          - "Ongoing surveillance audit requirements"
+          - "Integration with existing security programs"
+
+      - title: "SOC 2 Type II"
+        items:
+          - "Trust service criteria for TAK hosting"
+          - "Security, availability, and confidentiality controls"
+          - "Audit scope and testing procedures"
+          - "Report distribution and customer requirements"
+          - "Continuous monitoring and evidence collection"
+
+      - title: "Industry-Specific Certifications"
+        items:
+          - "CJIS compliance for law enforcement TAK deployments"
+          - "HIPAA considerations for medical data in CASEVAC"
+          - "PCI DSS applicability for payment processing"
+          - "StateRAMP for state and local government"
+          - "Sector-specific regulatory requirements"
+
+  - id: 6
+    name: "Compliance Program Implementation"
+    duration: "3-6 months"
+    priority: "HIGH"
+    sections:
+      - title: "Governance Framework"
+        items:
+          - "Establish compliance governance structure"
+          - "Define roles and responsibilities"
+          - "Develop compliance policies and procedures"
+          - "Implement risk management process"
+          - "Establish compliance monitoring and reporting"
+
+      - title: "Technical Controls"
+        items:
+          - "Implement access control and authentication"
+          - "Deploy encryption for data at rest and in transit"
+          - "Configure audit logging and monitoring"
+          - "Implement vulnerability management program"
+          - "Deploy intrusion detection and prevention"
+
+      - title: "Administrative Controls"
+        items:
+          - "Develop security awareness training program"
+          - "Implement incident response procedures"
+          - "Establish change management process"
+          - "Develop business continuity plan"
+          - "Implement vendor risk management"
+
+      - title: "Ongoing Compliance Maintenance"
+        items:
+          - "Schedule regular compliance assessments"
+          - "Implement continuous monitoring program"
+          - "Track regulatory changes and update controls"
+          - "Maintain evidence collection and documentation"
+          - "Conduct regular compliance training updates"
+
+appendices:
+  - title: "Compliance Checklist Templates"
+    description: "Fillable compliance checklists for each regulatory framework"
+
+  - title: "Data Classification Guide"
+    description: "Guide for classifying TAK operational data"
+
+  - title: "Regulatory Contact Directory"
+    description: "Key regulatory bodies and contact information by jurisdiction"
+
+  - title: "Sample Security Policies"
+    description: "Template security policies for TAK deployment organizations"
+
+  - title: "Certification Timeline Reference"
+    description: "Typical timelines and costs for major security certifications"
+
+common_pitfalls:
+  - issue: "Assuming TAK is exempt from export controls"
+    impact: "Potential ITAR/EAR violations with severe penalties"
+    mitigation: "Conduct export classification review before any international deployment"
+
+  - issue: "Neglecting data sovereignty requirements"
+    impact: "Regulatory violations and potential operational disruption"
+    mitigation: "Map data flows and verify residency compliance for each jurisdiction"
+
+  - issue: "Treating compliance as a one-time activity"
+    impact: "Compliance drift and failed audits"
+    mitigation: "Implement continuous monitoring and regular compliance reviews"
+
+  - issue: "Insufficient documentation of security controls"
+    impact: "Failed audits and delayed certifications"
+    mitigation: "Maintain comprehensive, up-to-date documentation of all controls"
+
+  - issue: "Ignoring AI-specific regulatory requirements"
+    impact: "Non-compliance with emerging AI governance frameworks"
+    mitigation: "Monitor AI regulatory developments and assess applicability"
+
+best_practices:
+  - "Engage compliance counsel early in deployment planning"
+  - "Maintain comprehensive data flow documentation"
+  - "Implement security controls that satisfy multiple frameworks"
+  - "Automate compliance monitoring where possible"
+  - "Conduct regular gap assessments against applicable frameworks"
+  - "Maintain relationships with assessors and auditors"
+  - "Track emerging regulations, especially for AI and defense technology"
+  - "Document all compliance decisions and rationale"
+  - "Include compliance requirements in procurement and vendor management"
+  - "Train all personnel on applicable compliance requirements"

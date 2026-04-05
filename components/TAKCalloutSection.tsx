@@ -1,10 +1,11 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 
 export default function TAKCalloutSection() {
   const t = useTranslations('takCallout');
+  const locale = useLocale();
 
   const benefits = [
     { key: 'certified', title: t('benefits.certified.title'), description: t('benefits.certified.description') },
@@ -48,7 +49,7 @@ export default function TAKCalloutSection() {
             </div>
 
             <Link
-              href="/solutions/tak"
+              href={`/${locale}/solutions/tak`}
               className="inline-block px-8 py-4 bg-white text-black hover:bg-tactical-accent hover:text-black transition-all duration-300 text-sm font-medium"
             >
               {t('cta')}

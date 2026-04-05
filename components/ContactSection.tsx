@@ -2,12 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 import RequestDemoForm from './RequestDemoForm';
 
 export default function ContactSection() {
   const t = useTranslations('contact');
+  const locale = useLocale();
   const [showContactForm, setShowContactForm] = useState(false);
   const [mounted, setMounted] = useState(false);
 
@@ -120,11 +121,11 @@ export default function ContactSection() {
               {t('quickLinks.nerva')}
             </a>
             <span>•</span>
-            <Link href="/solutions/tak" className="hover:text-white transition-colors">
+            <Link href={`/${locale}/solutions/tak`} className="hover:text-white transition-colors">
               {t('quickLinks.tak')}
             </Link>
             <span>•</span>
-            <Link href="/solutions/tak#resources" className="hover:text-white transition-colors">
+            <Link href={`/${locale}/solutions/tak#resources`} className="hover:text-white transition-colors">
               {t('quickLinks.resources')}
             </Link>
           </div>

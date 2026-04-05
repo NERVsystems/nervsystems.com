@@ -1,0 +1,391 @@
+# TAK System Administration Best Practices Metadata
+# This YAML file provides structured metadata for AI-assisted PDF generation
+
+document:
+  title: "TAK System Administration Best Practices"
+  subtitle: "Operations Manual for TAK Administrators"
+  category: "OPERATIONS"
+  version: "1.0"
+  pages: "36"
+  format: "PDF"
+  template: "nerv-guide"
+
+  description: >
+    Operations manual for TAK system administrators. Covers monitoring,
+    backup strategies, performance tuning, security patching, user management,
+    federation setup, and troubleshooting. Includes automation scripts
+    and operational runbooks.
+
+  topics:
+    - "System monitoring"
+    - "Backup & recovery"
+    - "Performance optimization"
+    - "Security operations"
+
+  author: "NERV Systems"
+  date: "2025-11-11"
+  classification: "UNCLASSIFIED"
+
+  target_page_count: 36
+  reading_time: "90 minutes"
+  implementation_time: "Ongoing operational guide"
+
+phases:
+  - id: 1
+    name: "System Monitoring"
+    duration: "Ongoing"
+    priority: "CRITICAL"
+    sections:
+      - title: "TAK Server Health Monitoring"
+        items:
+          - "Monitor TAK Server process status and uptime"
+          - "Track JVM heap usage and garbage collection"
+          - "Monitor active client connections and session count"
+          - "Track CoT message throughput and processing latency"
+          - "Monitor API endpoint response times"
+
+      - title: "Infrastructure Monitoring"
+        items:
+          - "Monitor CPU utilization across all nodes"
+          - "Track memory usage and swap utilization"
+          - "Monitor disk I/O and storage capacity"
+          - "Track network bandwidth and connection states"
+          - "Monitor DNS resolution and external connectivity"
+
+      - title: "Database Monitoring"
+        items:
+          - "Monitor PostgreSQL connection pool utilization"
+          - "Track query performance and slow queries"
+          - "Monitor table sizes and index health"
+          - "Track replication lag (if configured)"
+          - "Monitor transaction rates and deadlocks"
+
+      - title: "Alerting Configuration"
+        items:
+          - "Configure critical alerts: service down, disk full, cert expiry"
+          - "Set warning thresholds: CPU >80%, memory >85%, disk >75%"
+          - "Configure escalation procedures for unacknowledged alerts"
+          - "Set up on-call rotation and notification channels"
+          - "Test alerting pipeline regularly"
+
+  - id: 2
+    name: "Backup & Disaster Recovery"
+    duration: "Ongoing"
+    priority: "CRITICAL"
+    sections:
+      - title: "Backup Strategy"
+        items:
+          - "Implement daily automated database backups"
+          - "Back up TAK Server configuration files"
+          - "Back up SSL/TLS certificates and private keys"
+          - "Back up plugin configurations and data packages"
+          - "Back up NERVA AI model data and configuration"
+
+      - title: "Backup Verification"
+        items:
+          - "Test backup restoration monthly"
+          - "Verify backup integrity with checksums"
+          - "Document restoration time (RTO) metrics"
+          - "Verify data completeness after restoration (RPO)"
+          - "Maintain backup restoration runbook"
+
+      - title: "Disaster Recovery Planning"
+        items:
+          - "Document disaster recovery procedures"
+          - "Establish recovery time objective (RTO)"
+          - "Define recovery point objective (RPO)"
+          - "Maintain hot/warm/cold standby options"
+          - "Conduct quarterly DR drills"
+
+      - title: "Backup Retention & Storage"
+        items:
+          - "Define retention policy: daily (7 days), weekly (4 weeks), monthly (12 months)"
+          - "Store backups in geographically separate location"
+          - "Encrypt backup data at rest"
+          - "Monitor backup storage utilization"
+          - "Implement automated backup pruning"
+
+  - id: 3
+    name: "User Management"
+    duration: "Ongoing"
+    priority: "HIGH"
+    sections:
+      - title: "Account Lifecycle"
+        items:
+          - "Establish user provisioning procedures"
+          - "Implement role-based access control (RBAC)"
+          - "Configure group-based permissions"
+          - "Implement account deprovisioning procedures"
+          - "Conduct regular access reviews (quarterly)"
+
+      - title: "Certificate Management"
+        items:
+          - "Generate and distribute client certificates"
+          - "Track certificate expiration dates"
+          - "Implement certificate renewal procedures"
+          - "Manage certificate revocation list (CRL)"
+          - "Automate certificate lifecycle where possible"
+
+      - title: "Data Package Management"
+        items:
+          - "Maintain data package versioning"
+          - "Distribute updated map packages to clients"
+          - "Manage plugin distribution packages"
+          - "Track data package deployment status"
+          - "Archive deprecated data packages"
+
+  - id: 4
+    name: "Performance Tuning"
+    duration: "Ongoing"
+    priority: "HIGH"
+    sections:
+      - title: "TAK Server Optimization"
+        items:
+          - "Tune JVM heap size based on user count"
+          - "Optimize thread pool configuration"
+          - "Configure CoT message batching and compression"
+          - "Tune connection timeouts and keep-alive settings"
+          - "Optimize plugin loading and resource allocation"
+
+      - title: "Database Optimization"
+        items:
+          - "Optimize PostgreSQL shared_buffers and work_mem"
+          - "Configure effective_cache_size for available memory"
+          - "Implement regular VACUUM and ANALYZE schedules"
+          - "Optimize frequently-used queries and indexes"
+          - "Configure connection pooling (PgBouncer)"
+
+      - title: "Network Optimization"
+        items:
+          - "Optimize TCP buffer sizes for TAK traffic"
+          - "Configure QoS policies for TAK traffic priority"
+          - "Optimize TLS session caching"
+          - "Tune connection timeouts for mobile clients"
+          - "Implement bandwidth throttling for non-critical traffic"
+
+      - title: "NERVA AI Performance"
+        items:
+          - "Monitor AI inference latency and throughput"
+          - "Optimize GPU utilization for AI workloads"
+          - "Tune model batch sizes for optimal performance"
+          - "Configure AI processing priority queues"
+          - "Monitor and optimize memory usage for AI models"
+
+  - id: 5
+    name: "Security Operations"
+    duration: "Ongoing"
+    priority: "CRITICAL"
+    sections:
+      - title: "Patch Management"
+        items:
+          - "Monitor TAK Server security advisories"
+          - "Establish patch testing procedures"
+          - "Implement maintenance window scheduling"
+          - "Apply OS security patches within SLA"
+          - "Document patch history and rollback procedures"
+
+      - title: "Vulnerability Management"
+        items:
+          - "Conduct regular vulnerability scans"
+          - "Prioritize vulnerabilities by CVSS score"
+          - "Track remediation progress and SLAs"
+          - "Conduct penetration testing annually"
+          - "Maintain vulnerability management documentation"
+
+      - title: "Security Monitoring"
+        items:
+          - "Monitor authentication events and failures"
+          - "Track privileged account usage"
+          - "Monitor for unauthorized access attempts"
+          - "Review security logs daily"
+          - "Implement SIEM integration for correlation"
+
+      - title: "Incident Response"
+        items:
+          - "Maintain incident response procedures"
+          - "Define incident severity classifications"
+          - "Establish communication and escalation procedures"
+          - "Conduct post-incident reviews and lessons learned"
+          - "Update procedures based on incident findings"
+
+  - id: 6
+    name: "Federation Management"
+    duration: "Ongoing"
+    priority: "HIGH"
+    sections:
+      - title: "Federation Setup"
+        items:
+          - "Configure federation connections between TAK Servers"
+          - "Establish trust relationships and certificate exchange"
+          - "Define data sharing policies and filters"
+          - "Configure bandwidth allocation for federation traffic"
+          - "Test bidirectional data flow"
+
+      - title: "Federation Monitoring"
+        items:
+          - "Monitor federation connection health"
+          - "Track data synchronization status"
+          - "Monitor federation bandwidth utilization"
+          - "Alert on federation connection failures"
+          - "Review federation audit logs"
+
+      - title: "Multi-Agency Coordination"
+        items:
+          - "Establish data sharing agreements"
+          - "Configure information release controls"
+          - "Manage cross-agency user access"
+          - "Document interoperability procedures"
+          - "Conduct regular interoperability testing"
+
+  - id: 7
+    name: "Plugin & Extension Management"
+    duration: "Ongoing"
+    priority: "MEDIUM"
+    sections:
+      - title: "Plugin Lifecycle"
+        items:
+          - "Maintain plugin inventory and version tracking"
+          - "Test plugins in staging before production deployment"
+          - "Monitor plugin resource usage and performance impact"
+          - "Manage plugin updates and compatibility"
+          - "Document plugin configuration and dependencies"
+
+      - title: "Custom Plugin Maintenance"
+        items:
+          - "Maintain source code version control"
+          - "Track plugin dependencies and library updates"
+          - "Conduct security reviews for custom plugins"
+          - "Maintain plugin documentation and API references"
+          - "Plan for TAK Server version compatibility"
+
+  - id: 8
+    name: "Operational Procedures"
+    duration: "Ongoing"
+    priority: "HIGH"
+    sections:
+      - title: "Routine Maintenance"
+        items:
+          - "Schedule weekly system health reviews"
+          - "Perform monthly security patch assessments"
+          - "Conduct quarterly access reviews"
+          - "Execute semi-annual DR drills"
+          - "Perform annual security audit and penetration test"
+
+      - title: "Change Management"
+        items:
+          - "Document all configuration changes"
+          - "Implement change approval process"
+          - "Maintain change log and rollback procedures"
+          - "Test changes in staging environment first"
+          - "Communicate changes to affected users"
+
+      - title: "Capacity Planning"
+        items:
+          - "Track user growth trends"
+          - "Monitor resource utilization trends"
+          - "Plan infrastructure scaling 3-6 months ahead"
+          - "Budget for hardware and licensing growth"
+          - "Document capacity planning assumptions"
+
+      - title: "Documentation Management"
+        items:
+          - "Maintain up-to-date system architecture diagrams"
+          - "Document all operational procedures as runbooks"
+          - "Keep contact lists and escalation procedures current"
+          - "Maintain vendor contact and support information"
+          - "Review and update documentation quarterly"
+
+  - id: 9
+    name: "Troubleshooting"
+    duration: "Reference"
+    priority: "HIGH"
+    sections:
+      - title: "Common TAK Server Issues"
+        items:
+          - "Client connection failures: check certificates, network, ports"
+          - "High memory usage: review JVM settings, check for leaks"
+          - "Slow CoT processing: check database, network, plugin load"
+          - "Federation sync failures: verify connectivity, certificates, policies"
+          - "Plugin errors: check logs, compatibility, resource conflicts"
+
+      - title: "Database Troubleshooting"
+        items:
+          - "Connection pool exhaustion: check max_connections, pool size"
+          - "Slow queries: analyze with EXPLAIN, check indexes"
+          - "Replication lag: check network, write volume, configuration"
+          - "Disk space issues: check retention policies, VACUUM schedule"
+          - "Lock contention: identify blocking queries, optimize transactions"
+
+      - title: "Network Troubleshooting"
+        items:
+          - "Client timeout issues: check firewall rules, MTU, keep-alive"
+          - "Certificate errors: verify chain, expiration, revocation"
+          - "DNS resolution failures: check configuration, fallback servers"
+          - "VPN connectivity: verify tunnel status, routing tables"
+          - "Federation connectivity: check ports, certificates, firewall rules"
+
+      - title: "NERVA AI Troubleshooting"
+        items:
+          - "AI inference timeout: check GPU utilization, model size, queue depth"
+          - "Incorrect AI outputs: verify model version, input data quality"
+          - "Sensor feed errors: check connector config, data format, network"
+          - "Natural language misinterpretation: review command logs, retrain"
+          - "Edge device issues: check power, thermal, storage, connectivity"
+
+appendices:
+  - title: "Monitoring Dashboard Templates"
+    description: "Grafana/Prometheus dashboard configurations for TAK monitoring"
+
+  - title: "Automation Scripts"
+    description: "Shell scripts for common administrative tasks"
+
+  - title: "Runbook Templates"
+    description: "Standardized runbook templates for operational procedures"
+
+  - title: "Performance Baseline Reference"
+    description: "Expected performance metrics for TAK deployments by scale"
+
+  - title: "Log Analysis Guide"
+    description: "Guide to TAK Server and NERVA log formats and analysis"
+
+  - title: "Vendor Support Contacts"
+    description: "Support contact information for TAK ecosystem vendors"
+
+common_pitfalls:
+  - issue: "No automated monitoring or alerting"
+    impact: "Issues go undetected until users report outages"
+    mitigation: "Implement comprehensive monitoring with proactive alerting from day one"
+
+  - issue: "Untested backups"
+    impact: "Backups fail during actual disaster recovery"
+    mitigation: "Test backup restoration monthly and document RTO/RPO metrics"
+
+  - issue: "Certificate expiration"
+    impact: "Service outage when certificates expire"
+    mitigation: "Implement certificate monitoring with 30/14/7 day expiry alerts"
+
+  - issue: "Unpatched systems"
+    impact: "Vulnerability exploitation and security breaches"
+    mitigation: "Establish patch management SLAs and maintenance windows"
+
+  - issue: "Insufficient logging"
+    impact: "Unable to diagnose issues or conduct forensic analysis"
+    mitigation: "Configure comprehensive logging with adequate retention periods"
+
+  - issue: "No capacity planning"
+    impact: "Performance degradation as user base grows"
+    mitigation: "Track trends and plan infrastructure scaling 3-6 months ahead"
+
+best_practices:
+  - "Automate everything that can be automated"
+  - "Monitor proactively, not reactively"
+  - "Test backups regularly; untested backups are not backups"
+  - "Document all procedures as runbooks"
+  - "Implement change management for all production changes"
+  - "Maintain a staging environment that mirrors production"
+  - "Keep certificates, patches, and software versions current"
+  - "Conduct regular security audits and access reviews"
+  - "Track metrics and trends for capacity planning"
+  - "Maintain vendor relationships and support contracts"
+  - "Invest in training for system administrators"
+  - "Participate in TAK community for knowledge sharing"

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 interface RequestDemoFormProps {
   onClose: () => void;
@@ -11,6 +11,7 @@ interface RequestDemoFormProps {
 
 export default function RequestDemoForm({ onClose, formType = 'demo', formId }: RequestDemoFormProps) {
   const t = useTranslations('form');
+  const locale = useLocale();
 
   const [formData, setFormData] = useState({
     firstname: '',
@@ -519,11 +520,11 @@ Submitted: ${new Date().toISOString()}
 
           <p className="text-xs text-tactical-textDim text-center mt-4">
             {t('messages.privacyPrefix')}{' '}
-            <a href="/privacy" target="_blank" className="text-tactical-accent hover:text-white underline">
+            <a href={`/${locale}/privacy`} target="_blank" className="text-tactical-accent hover:text-white underline">
               {t('messages.privacyLink')}
             </a>
             {' '}{t('messages.privacyAnd')}{' '}
-            <a href="/terms" target="_blank" className="text-tactical-accent hover:text-white underline">
+            <a href={`/${locale}/terms`} target="_blank" className="text-tactical-accent hover:text-white underline">
               {t('messages.termsLink')}
             </a>
             .

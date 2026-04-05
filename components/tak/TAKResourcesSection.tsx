@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 
 interface Resource {
@@ -28,6 +28,7 @@ export default function TAKResourcesSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
+  const locale = useLocale();
   const resources = t.raw('items') as Resource[];
 
   const handleDownloadClick = (resource: Resource) => {
@@ -197,7 +198,7 @@ export default function TAKResourcesSection() {
             {t('cta.description')}
           </p>
           <Link
-            href="/#contact"
+            href={`/${locale}/#contact`}
             className="inline-block px-8 py-4 bg-white text-black hover:bg-tactical-accent hover:text-black transition-all duration-300 text-sm font-medium"
           >
             {t('cta.button')}

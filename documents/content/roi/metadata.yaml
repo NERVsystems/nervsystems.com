@@ -1,0 +1,260 @@
+# Tactical AI ROI Calculator & Guide Metadata
+# This YAML file provides structured metadata for AI-assisted PDF generation
+
+document:
+  title: "Tactical AI ROI Calculator & Guide"
+  subtitle: "Cost-Benefit Analysis for AI-Enhanced TAK Operations"
+  category: "ROI"
+  version: "1.0"
+  pages: "24"
+  format: "PDF"
+  template: "nerv-guide"
+
+  description: >
+    Comprehensive analysis of AI integration ROI for tactical operations.
+    Calculate cost savings from automated mission planning, reduced planning time,
+    improved decision accuracy, and enhanced operational tempo.
+    Includes real-world case studies and deployment scenarios.
+
+  topics:
+    - "Cost-benefit analysis"
+    - "AI automation savings"
+    - "Deployment timelines"
+    - "Performance metrics"
+
+  author: "NERV Systems"
+  date: "2025-11-11"
+  classification: "UNCLASSIFIED"
+
+  target_page_count: 24
+  reading_time: "60 minutes"
+  implementation_time: "Varies by deployment"
+
+phases:
+  - id: 1
+    name: "Understanding Current Operational Costs"
+    duration: "Assessment"
+    priority: "CRITICAL"
+    sections:
+      - title: "Mission Planning Cost Baseline"
+        items:
+          - "Document average time per mission planning cycle"
+          - "Calculate personnel hours devoted to manual planning"
+          - "Identify recurring planning tasks suitable for automation"
+          - "Measure current planning accuracy and revision rates"
+          - "Quantify cost of planning delays on operational tempo"
+
+      - title: "Intelligence Processing Costs"
+        items:
+          - "Measure time to fuse multi-source intelligence feeds"
+          - "Document analyst hours spent on manual data correlation"
+          - "Calculate cost of delayed intelligence dissemination"
+          - "Identify redundant analysis across operational units"
+          - "Quantify missed intelligence due to information overload"
+
+      - title: "Communication & Coordination Overhead"
+        items:
+          - "Document time spent on manual status reporting"
+          - "Calculate cost of radio/voice coordination for CASEVAC"
+          - "Measure delays in threat dissemination across units"
+          - "Identify coordination bottlenecks in multi-agency operations"
+          - "Quantify cost of situational awareness gaps"
+
+  - id: 2
+    name: "AI Automation Savings Analysis"
+    duration: "Calculation"
+    priority: "CRITICAL"
+    sections:
+      - title: "Mission Planning Automation"
+        items:
+          - "Calculate time savings from <30s AI planning cycles"
+          - "Estimate reduction in planning revision cycles"
+          - "Quantify improved planning accuracy with AI assistance"
+          - "Model cost savings from parallel planning capabilities"
+          - "Project annual savings from automated route optimization"
+
+      - title: "CASEVAC Coordination Savings"
+        items:
+          - "Calculate time savings from automated LZ identification"
+          - "Estimate reduction in CASEVAC coordination time"
+          - "Quantify value of faster medical evacuation response"
+          - "Model savings from automated team notification"
+          - "Project annual savings from reduced coordination overhead"
+
+      - title: "Threat Intelligence Automation"
+        items:
+          - "Calculate time savings from automated threat plotting"
+          - "Estimate reduction in manual range-of-fire analysis"
+          - "Quantify value of instant danger zone alerts"
+          - "Model savings from automated countermeasure recommendations"
+          - "Project annual savings from reduced analyst workload"
+
+      - title: "Search & Rescue Optimization"
+        items:
+          - "Calculate time savings from AI-generated search areas"
+          - "Estimate improvement in search zone accuracy"
+          - "Quantify value of faster SAR response initiation"
+          - "Model savings from optimized resource allocation"
+          - "Project annual savings from reduced search duration"
+
+  - id: 3
+    name: "Total Cost of Ownership"
+    duration: "Calculation"
+    priority: "HIGH"
+    sections:
+      - title: "NERVA Platform Costs"
+        items:
+          - "Document software licensing costs by tier"
+          - "Calculate infrastructure hosting requirements"
+          - "Estimate training and onboarding costs"
+          - "Include ongoing support and maintenance costs"
+          - "Factor in upgrade and scaling costs over 3-5 years"
+
+      - title: "Infrastructure Requirements"
+        items:
+          - "Calculate cloud hosting costs for NERVA deployment"
+          - "Estimate on-premise hardware costs if applicable"
+          - "Include network infrastructure upgrades"
+          - "Factor in edge compute hardware (GPU-in-a-helmet)"
+          - "Document bandwidth and connectivity requirements"
+
+      - title: "Personnel & Training Investment"
+        items:
+          - "Estimate TAK Fundamentals training costs per operator"
+          - "Calculate NERVA AI Operations training investment"
+          - "Include Advanced TAK Ops certification costs"
+          - "Factor in ongoing skills development"
+          - "Document administrator training requirements"
+
+  - id: 4
+    name: "ROI Calculation Framework"
+    duration: "Analysis"
+    priority: "CRITICAL"
+    sections:
+      - title: "Direct Cost Savings"
+        items:
+          - "Sum all automation-driven personnel hour reductions"
+          - "Calculate reduced equipment and infrastructure costs"
+          - "Quantify savings from improved operational efficiency"
+          - "Include reduced error rates and rework costs"
+          - "Document elimination of redundant tools and systems"
+
+      - title: "Indirect Value Gains"
+        items:
+          - "Quantify improved decision speed and accuracy"
+          - "Estimate value of enhanced situational awareness"
+          - "Calculate benefit of reduced response times"
+          - "Model improved mission success rates"
+          - "Document enhanced interoperability value"
+
+      - title: "ROI Timeline Modeling"
+        items:
+          - "Calculate break-even point for AI investment"
+          - "Model 1-year, 3-year, and 5-year ROI projections"
+          - "Include sensitivity analysis for key variables"
+          - "Document assumptions and risk factors"
+          - "Project cumulative savings over deployment lifecycle"
+
+  - id: 5
+    name: "Deployment Scenario Analysis"
+    duration: "Reference"
+    priority: "HIGH"
+    sections:
+      - title: "Small Team Deployment (10-50 Users)"
+        items:
+          - "Starter tier hosting: $495/month baseline"
+          - "Training investment: 1-2 days per operator"
+          - "Expected ROI timeline: 6-9 months to break-even"
+          - "Primary savings: planning time reduction, coordination"
+          - "Typical use: law enforcement, small emergency teams"
+
+      - title: "Mid-Size Deployment (50-250 Users)"
+        items:
+          - "Professional tier hosting: $1,495/month baseline"
+          - "Training investment: multi-tier program recommended"
+          - "Expected ROI timeline: 4-6 months to break-even"
+          - "Primary savings: intelligence fusion, multi-unit coordination"
+          - "Typical use: military units, large emergency services"
+
+      - title: "Enterprise Deployment (250+ Users)"
+        items:
+          - "Custom infrastructure pricing"
+          - "Training investment: comprehensive certification program"
+          - "Expected ROI timeline: 3-6 months to break-even"
+          - "Primary savings: enterprise-wide operational efficiency"
+          - "Typical use: defense organizations, multi-agency operations"
+
+  - id: 6
+    name: "Building Your Business Case"
+    duration: "1-2 weeks"
+    priority: "HIGH"
+    sections:
+      - title: "Executive Summary Preparation"
+        items:
+          - "Summarize current operational pain points"
+          - "Present quantified cost of status quo"
+          - "Highlight projected savings with AI integration"
+          - "Include competitive analysis of alternatives"
+          - "Prepare risk mitigation strategy"
+
+      - title: "Stakeholder Presentation"
+        items:
+          - "Tailor ROI presentation for decision makers"
+          - "Include visual cost-savings dashboards"
+          - "Prepare scenario comparisons (with/without AI)"
+          - "Document quick wins and phased implementation plan"
+          - "Include references and case study summaries"
+
+      - title: "Implementation Roadmap"
+        items:
+          - "Define phased rollout plan"
+          - "Establish success metrics and milestones"
+          - "Identify pilot group and success criteria"
+          - "Plan for scaling from pilot to full deployment"
+          - "Document governance and review procedures"
+
+appendices:
+  - title: "ROI Calculation Worksheets"
+    description: "Fillable worksheets for calculating organization-specific ROI"
+
+  - title: "Cost Comparison Tables"
+    description: "Detailed cost comparison across deployment tiers and scenarios"
+
+  - title: "Case Study Summaries"
+    description: "Anonymized case studies from defense, law enforcement, and emergency management"
+
+  - title: "Glossary of Terms"
+    description: "Definitions of financial and operational terms used in this guide"
+
+common_pitfalls:
+  - issue: "Underestimating current operational costs"
+    impact: "ROI projections appear less compelling than reality"
+    mitigation: "Conduct thorough baseline assessment including indirect costs"
+
+  - issue: "Ignoring indirect benefits"
+    impact: "Business case fails to capture full value of AI integration"
+    mitigation: "Include improved decision quality, response time, and mission success rates"
+
+  - issue: "Unrealistic deployment timelines"
+    impact: "Delayed ROI realization and stakeholder disappointment"
+    mitigation: "Use conservative estimates and plan for phased implementation"
+
+  - issue: "Failing to account for training investment"
+    impact: "Budget overruns and reduced user adoption"
+    mitigation: "Include comprehensive training costs in TCO calculation"
+
+  - issue: "Not establishing baseline metrics before deployment"
+    impact: "Unable to demonstrate measurable improvement"
+    mitigation: "Document key performance indicators before AI integration"
+
+best_practices:
+  - "Establish measurable baseline metrics before AI deployment"
+  - "Include both direct cost savings and indirect value gains"
+  - "Use conservative estimates for initial projections"
+  - "Plan for phased implementation to demonstrate early wins"
+  - "Review and update ROI calculations quarterly"
+  - "Document lessons learned for future deployments"
+  - "Engage stakeholders early in the business case development"
+  - "Include risk factors and sensitivity analysis"
+  - "Benchmark against industry standards where available"
+  - "Plan for ongoing optimization and scaling"

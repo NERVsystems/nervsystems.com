@@ -1,10 +1,10 @@
 # NERV Systems Document Builder Makefile
 # Builds PDF documents from YAML metadata using XeLaTeX
 
-.PHONY: all clean help deployment-checklist docker-build docker-shell install-fonts
+.PHONY: all clean help deployment-checklist roi comparison technical compliance operations docker-build docker-shell install-fonts
 
 # Document targets
-DOCUMENTS := deployment-checklist
+DOCUMENTS := deployment-checklist roi comparison technical compliance operations
 OUTPUT_DIR := ../public/downloads
 BUILD_DIR := build/outputs
 
@@ -15,6 +15,11 @@ help:
 	@echo "Available targets:"
 	@echo "  make all                    - Build all documents"
 	@echo "  make deployment-checklist   - Build TAK Deployment Checklist"
+	@echo "  make roi                    - Build Tactical AI ROI Calculator & Guide"
+	@echo "  make comparison             - Build TAK vs. Commercial Alternatives"
+	@echo "  make technical              - Build NERVA AI Integration Architecture Guide"
+	@echo "  make compliance             - Build TAK Compliance & Regulations Guide"
+	@echo "  make operations             - Build TAK System Administration Best Practices"
 	@echo "  make clean                  - Clean build artifacts"
 	@echo "  make docker-build           - Build Docker image with XeLaTeX"
 	@echo "  make docker-shell           - Enter Docker container for building"
@@ -30,25 +35,36 @@ help:
 
 all: $(DOCUMENTS)
 
-# Generate LaTeX from YAML and build PDF
-deployment-checklist:
-	@echo "Building TAK Deployment Checklist..."
-	@python3 build_document.py deployment-checklist
-	@cd content/deployment-checklist && \
-		xelatex -interaction=nonstopmode deployment-checklist.tex && \
-		xelatex -interaction=nonstopmode deployment-checklist.tex
-	@mkdir -p $(OUTPUT_DIR)
-	@cp content/deployment-checklist/deployment-checklist.pdf $(OUTPUT_DIR)/deployment.pdf
-	@cp content/deployment-checklist/deployment-checklist.pdf $(BUILD_DIR)/
-	@echo "✓ PDF generated: $(OUTPUT_DIR)/deployment.pdf"
+# Generic document build rule
+define BUILD_DOC
+$(1):
+	@echo "Building $(1)..."
+	@python3 build_document.py $(1)
+	-@cd content/$(1) && \
+		TEXINPUTS="../../templates:" xelatex -interaction=nonstopmode $(1).tex && \
+		TEXINPUTS="../../templates:" xelatex -interaction=nonstopmode $(1).tex || true
+	@test -f content/$(1)/$(1).pdf || (echo "ERROR: PDF not generated for $(1)" && exit 1)
+	@mkdir -p $$(OUTPUT_DIR)
+	@mkdir -p $$(BUILD_DIR)
+	@cp content/$(1)/$(1).pdf $$(OUTPUT_DIR)/$(2).pdf
+	@cp content/$(1)/$(1).pdf $$(BUILD_DIR)/
+	@echo "✓ PDF generated: $$(OUTPUT_DIR)/$(2).pdf"
+endef
+
+$(eval $(call BUILD_DOC,deployment-checklist,deployment))
+$(eval $(call BUILD_DOC,roi,roi))
+$(eval $(call BUILD_DOC,comparison,comparison))
+$(eval $(call BUILD_DOC,technical,technical))
+$(eval $(call BUILD_DOC,compliance,compliance))
+$(eval $(call BUILD_DOC,operations,operations))
 
 # Build using Docker (if local LaTeX not available)
 docker-build:
 	docker build -t nerv-latex-builder .
 
-docker-deployment-checklist: docker-build
+docker-all: docker-build
 	docker run --rm -v $(PWD):/documents nerv-latex-builder \
-		make deployment-checklist
+		make all
 
 docker-shell: docker-build
 	docker run --rm -it -v $(PWD):/documents nerv-latex-builder bash
@@ -66,9 +82,9 @@ clean:
 	@echo "✓ Clean complete"
 
 # Development: Watch for changes and rebuild
-watch-deployment-checklist:
-	@echo "Watching deployment-checklist for changes..."
+watch-%:
+	@echo "Watching $* for changes..."
 	@while true; do \
-		inotifywait -e modify content/deployment-checklist/metadata.yaml; \
-		make deployment-checklist; \
+		inotifywait -e modify content/$*/metadata.yaml; \
+		make $*; \
 	done

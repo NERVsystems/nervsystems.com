@@ -48,7 +48,7 @@ def generate_checklist_document(metadata):
     latex = []
 
     # Document class and template
-    latex.append(r'\input{../templates/nerv-guide.tex}')
+    latex.append(r'\input{nerv-guide.tex}')
     latex.append('')
 
     # Document metadata

@@ -1,11 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 
 export default function TAKFAQSection() {
   const t = useTranslations('takSolutions.faq');
+  const locale = useLocale();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
@@ -79,7 +80,7 @@ export default function TAKFAQSection() {
             {t('cta.text')}
           </p>
           <Link
-            href="/#contact"
+            href={`/${locale}/#contact`}
             className="inline-block px-8 py-4 bg-white text-black hover:bg-tactical-textDim transition-all duration-300 text-sm font-medium"
           >
             {t('cta.button')}
