@@ -11,6 +11,7 @@ const localeLabels: Record<Locale, string> = {
   th: 'ไทย',
   ko: '한국',
   ar: 'عر',
+  sv: 'SV',
 };
 
 export default function LanguageSwitcher() {

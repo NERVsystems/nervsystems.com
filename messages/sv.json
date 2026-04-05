@@ -1,0 +1,1220 @@
+{
+  "nav": {
+    "features": "Funktioner",
+    "platform": "Plattform",
+    "takSolutions": "TAK-losningar",
+    "contact": "Kontakt",
+    "requestDemo": "Boka ett samtal"
+  },
+  "hero": {
+    "title": "Taktisk AI for uppdragsframgang",
+    "subtitle": "TAK-nativ AI-driven beslutsstod som omvandlar informationsoverbelastning till tydlig handling for kritiska operationer.",
+    "stats": {
+      "planning": {
+        "value": "<30s",
+        "label": "Planeringscykler"
+      },
+      "edge": {
+        "value": "100%",
+        "label": "Edge-kapabel"
+      },
+      "tak": {
+        "value": "TAK",
+        "label": "Nativ integration"
+      }
+    },
+    "cta": {
+      "demo": "Boka ett samtal",
+      "learn": "Las mer"
+    }
+  },
+  "nerva": {
+    "tagline": "Forvandar fiendens OODA-loopar till sten",
+    "subtitle": "Din taktiska AI-assistent",
+    "description": "NERVA ar en AI-forlangning av ditt team. Inte bara lamplighetsbild - {decisionAdvantage}.",
+    "decisionAdvantage": "beslutsfordel",
+    "bottomCta": {
+      "text": "Anvander du redan TAK? NERVA gor det intelligent.",
+      "button": "Se NERVA i aktion"
+    },
+    "capabilities": {
+      "uas": {
+        "icon": "UAS",
+        "title": "Autonoma dronoperationer",
+        "command": "\"NERVA, starta spaningsmonster Alpha\"",
+        "description": "Autonom flygvagplanering for ISR, spaning och counter-UAS-operationer. NERVA overvakar drontelemetri, utfardar direkta kommandon och kan omedelbart omdirigera vanliga UAS fran overvakning till avlyssningsuppdrag - plottar angreppsbanor for neutralisering av fientliga droner eller forsvar av kritiska tillgangar.",
+        "features": [
+          "Autonom flygplanering",
+          "Realtidstelemetri-overvakning",
+          "Automatiserad avlyssningsplanering",
+          "UAS-ledning och kontroll"
+        ]
+      },
+      "medevac": {
+        "icon": "MEDEVAC",
+        "title": "Automatiserad CASEVAC-samordning",
+        "command": "\"NERVA, vi behover en CASEVAC!\"",
+        "description": "Identifierar optimala helikopterlandningszoner pa under 30 sekunder, meddelar automatiskt sjukvards- och flygteam, overvakar raddningsforlopp och uppdaterar alla TAK-klienter i realtid.",
+        "features": [
+          "LZ-identifiering <30s",
+          "Automatiska teamaviseringar",
+          "Realtidsovervakning",
+          "TAK-natomfattande uppdateringar"
+        ]
+      },
+      "threat": {
+        "icon": "THREAT",
+        "title": "Fientlig enhetsunderrattelsetjanst",
+        "command": "Identifiera fientlig enhet -> NERVA agerar",
+        "description": "Integrerar med forsvarsunderrattelsedatabaser for att plotta rackviddsringar, varna alla enheter i farozoner och ge rekommenderade motmedel baserat pa hotets formaga.",
+        "features": [
+          "Forsvarsdatabaskompatibilitet",
+          "Rackviddsanalys",
+          "Automatiska varningar",
+          "Motmedelsrekommendationer"
+        ]
+      },
+      "sar": {
+        "icon": "SAR",
+        "title": "Sokområdesberakning",
+        "command": "\"NERVA, berakna sokområde for saknad enhet\"",
+        "description": "Sannolikhetsbaserad sokzongenerering med terranganalys, vaderforhallanden och enhetsformaga. Fungerar for bade militara operationer och civil sok och raddning (SAR).",
+        "features": [
+          "Sannolikhetsmodellering",
+          "Terranganalys",
+          "Resursfordelning",
+          "Militar och civil SAR"
+        ]
+      },
+      "alert": {
+        "icon": "ALERT",
+        "title": "Geofence-overvakning och respons",
+        "command": "\"NERVA, varna om nagot spar gar in i den forbjudna zonen\"",
+        "description": "Virtuellt perimeterforsvar med 2D/3D-geofence-overvakning. NERVA integrerar med tredjepartssensorer (ADS-B, RF-detektering, radar) for att spara flygplan och UAS. Nar ett spar bryter mot virtuella granser varnar NERVA omedelbart alla natverksanslutna resurser och samordnar respons - fran vanliga UAS-avlyssningar till integration med C-UAS-effektorer.",
+        "features": [
+          "2D/3D-virtuella geofences",
+          "Tredjepartssensorintegration",
+          "Omedelbara natverksvarningar",
+          "Samordnad responsplanering"
+        ]
+      },
+      "airspace": {
+        "icon": "AIRSPACE",
+        "title": "3D-luftrumsvisualisering",
+        "command": "Visa karta -> NERVA renderar 3D-luftrum",
+        "description": "Multimodal rendering av komplext luftrum fran sektionskartor, NOTAM och TFR. NERVA extraherar geospatial data, visualiserar 3D-begransade zoner och overlagger realtids-UAS-spar for total luftrumsmedvetenhet - kritiskt for counter-UAS-operationer och flygdekonflikt.",
+        "features": [
+          "AI-karttolkning",
+          "3D-rendering av begransade zoner",
+          "Realtids-sparoverlagring",
+          "C-UAS-luftrumsmedvetenhet"
+        ]
+      }
+    },
+    "videoPlaceholder": {
+      "title": "Demovideo",
+      "comingSoon": "[Kommer snart]"
+    }
+  },
+  "features": {
+    "title": "Komplett plattform",
+    "subtitle": "MOSA-kompatibel mjukvara och hardvara for taktisk edge-driftsattning",
+    "items": {
+      "planning": {
+        "icon": "01",
+        "title": "REALTIDSUPPDRAGSPLANERING",
+        "description": "Automatiserad generering av taktiska alternativ fran live ATAK-data. 30 sekunders planeringscykler for tidskritiska operationer.",
+        "code": "MAGI-01"
+      },
+      "fusion": {
+        "icon": "02",
+        "title": "MULTIKALLS-UNDERRATTELSEFUSION",
+        "description": "Enhetlig analys over dronfoder, sensornatverk och operatorsrapporter. En enda operativ bild fran distribuerade datakallor.",
+        "code": "MAGI-02"
+      },
+      "assessment": {
+        "icon": "03",
+        "title": "AUTONOM UTVARDERING",
+        "description": "Monsterigankanningsning och anomalidetektering for prediktiv analys av operativa miljoer.",
+        "code": "MAGI-03"
+      },
+      "edge": {
+        "icon": "04",
+        "title": "EDGE-BERAKNING",
+        "description": "Faltdeplojbar 'GPU-i-en-hjalm' for saker, privat AI vid kanten. Fungerar nar anslutning fallerar.",
+        "code": "HARDWARE-01"
+      }
+    }
+  },
+  "tak": {
+    "title": "Byggt for teammedvetenhet",
+    "subtitle": "Anvander du redan TAK for nod-samordning eller HADR-operationer? Perfekt. NERV integrerar direkt med dina befintliga Team Awareness Kit-system.",
+    "integration": {
+      "native": {
+        "label": "Nativ TAK-integration",
+        "description": "Forstarker dina nuvarande arbetsfloden"
+      },
+      "noRetraining": {
+        "label": "Ingen omskolning kravs",
+        "description": "Bekant granssnitt med AI-superkrafter"
+      },
+      "realTime": {
+        "label": "Realtidsdatafusion",
+        "description": "Fran satelliter, droner och sensorfoder"
+      },
+      "natural": {
+        "label": "Naturligt sprakgranssnitt",
+        "description": "Stall fragor, fa tydliga svar"
+      },
+      "portable": {
+        "label": "Barbar faltdriftsattning",
+        "description": "Fungerar nar anslutning fallerar"
+      },
+      "mosa": {
+        "label": "MOSA-kompatibel arkitektur",
+        "description": "Oppna standarder for flexibel integration"
+      }
+    },
+    "cta": "Visa integrationsdokument"
+  },
+  "takCallout": {
+    "label": "TAK/ATAK-losningar",
+    "title": "Letar du efter TAK-hosting och driftsattning?",
+    "description": "NERV tillhandahaller kompletta TAK/ATAK-losningar over Nordamerika och Asien-Stillahavsomradet: hanterad TAK-serverhosting fran $495/manad, expertdriftsattningskonsulting, systemadministration, operatorsutbildning och AI-forstarkta funktioner genom NERVA-integration.",
+    "benefits": {
+      "certified": {
+        "title": "TAK.gov-certifierad",
+        "description": "Officiella TAK-driftsattningar"
+      },
+      "asiaPacific": {
+        "title": "Global tackning",
+        "description": "NA & APAC-expertis"
+      },
+      "aiEnhanced": {
+        "title": "AI-forstarkt",
+        "description": "NERVA-integration"
+      },
+      "uptime": {
+        "title": "99,9% drifttid",
+        "description": "Foretagsniva SLA"
+      }
+    },
+    "cta": "Utforska TAK-losningar ->",
+    "stats": {
+      "hosting": {
+        "label": "HANTERAD HOSTING",
+        "price": "$495/man",
+        "description": "TAK-servrar pa foretagsniva med AI-overvakning, 24/7-support och NERVA-integration"
+      },
+      "deployment": {
+        "label": "DRIFTSATTNING",
+        "title": "Full service",
+        "description": "Fran initial utvardering till produktionsstart: TAK-serverinstallation, pluginkonfiguration, utbildning och support"
+      },
+      "training": {
+        "label": "UTBILDNING",
+        "title": "Certifierad",
+        "description": "TAK-operatorsgrunder, avancerade operationer och NERVA AI-assistentutbildningsprogram"
+      }
+    }
+  },
+  "homeTakSolutions": {
+    "title": "TAK-losningar och tjanster",
+    "subtitle": "Komplett TAK/ATAK-driftsattning, hanterad hosting, konsulting och utbildning over Nordamerika och Asien-Stillahavsomradet",
+    "hosting": {
+      "title": "Hanterad TAK-hosting",
+      "description": "TAK-servrar pa foretagsniva, redo for NERVA AI-integration. Vi hanterar infrastrukturen sa att du kan fokusera pa operationer.",
+      "plans": {
+        "starter": {
+          "name": "Starter",
+          "price": "$495",
+          "period": "/manad",
+          "users": "Upp till 50 anvandare",
+          "ai": "NERVA AI-redo",
+          "features": [
+            "Grundlaggande TAK-server",
+            "Standardplugins",
+            "99% drifttids-SLA",
+            "E-postsupport",
+            "Manatliga sakerhetsuppdateringar"
+          ],
+          "cta": "Kom igang"
+        },
+        "professional": {
+          "name": "Professional",
+          "price": "$1 495",
+          "period": "/manad",
+          "users": "Upp till 250 anvandare",
+          "ai": "NERVA AI-redo",
+          "badge": "POPULAR",
+          "features": [
+            "Enterprise TAK-server",
+            "Premiumplugins",
+            "99,9% drifttids-SLA",
+            "24/7-support",
+            "Federationsstod",
+            "Systemovervakning"
+          ],
+          "cta": "Kom igang"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "price": "Anpassat",
+          "period": "pris",
+          "users": "1 000+ anvandare",
+          "ai": "NERVA AI-redo",
+          "features": [
+            "Anpassad TAK-infrastruktur",
+            "White-label-alternativ",
+            "99,99% drifttids-SLA",
+            "Dedikerad support",
+            "Multiregional driftsattning",
+            "Efterlevnadspaket"
+          ],
+          "cta": "Kom igang"
+        }
+      }
+    },
+    "deployment": {
+      "title": "Driftsattningskonsulting",
+      "description": "Expert-TAK-driftsattning fran utvardering till full operativ formaga",
+      "packages": {
+        "assessment": {
+          "name": "Utvardering",
+          "price": "$4 500",
+          "duration": "1 dags besok pa plats",
+          "features": [
+            "TAK-kravutvardering",
+            "Infrastrukturdesignrekommendationer",
+            "Anvandarkravsdokumentation",
+            "Pluginvalsradgivning",
+            "30 dagars e-postsupport"
+          ],
+          "cta": "Begar offert"
+        },
+        "deployment": {
+          "name": "Driftsattning",
+          "price": "$15 000",
+          "duration": "Komplett driftsattning",
+          "badge": "POPULAR",
+          "features": [
+            "Allt i Utvardering",
+            "TAK-serverdriftsattning (upp till 100 anvandare)",
+            "Plugininstallation och konfiguration",
+            "Systemintegration",
+            "Grundlaggande operatorsutbildning (1 dag)",
+            "90 dagars prioritetssupport"
+          ],
+          "cta": "Begar offert"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "price": "$45 000+",
+          "duration": "Storskalig",
+          "features": [
+            "Allt i Driftsattning",
+            "Storskalig driftsattning (100+ anvandare)",
+            "AI-kapabilitetsintegrationsplan",
+            "Anpassad pluginutveckling",
+            "Avancerat utbildningsprogram (3 dagar)",
+            "180 dagars dedikerad support"
+          ],
+          "cta": "Begar offert"
+        }
+      }
+    },
+    "training": {
+      "title": "Utbildningsprogram",
+      "description": "TAK-operatorsutbildning med NERVA AI-assistentcertifiering",
+      "programs": {
+        "fundamentals": {
+          "name": "TAK-grunder",
+          "duration": "1 dag",
+          "price": "$395",
+          "period": "/student",
+          "description": "TAK-granssnittets grunder, kartnavigering, teamsamordning och pluginanvandning",
+          "cta": "Anmal dig nu"
+        },
+        "nerva": {
+          "name": "NERVA AI-operationer",
+          "duration": "1 dag",
+          "price": "$495",
+          "period": "/student",
+          "description": "Naturligt sprakgranssnitt, automatiserad uppdragsplanering och AI-arbetsfloden",
+          "cta": "Anmal dig nu"
+        },
+        "advanced": {
+          "name": "Avancerade TAK-operationer",
+          "duration": "2 dagar",
+          "price": "$895",
+          "period": "/student",
+          "description": "Komplexa operationer, underrattelsefusion, edge-berakning och scenarioovningar",
+          "badge": "POPULAR",
+          "cta": "Anmal dig nu"
+        }
+      },
+      "volumeDiscounts": {
+        "label": "Volymrabatter:",
+        "tiers": "5-10 studenter (10% rabatt) - 11-20 studenter (20% rabatt) - 21+ studenter (30% rabatt)"
+      }
+    },
+    "additionalServices": {
+      "title": "Ytterligare TAK-tjanster",
+      "services": {
+        "administration": {
+          "title": "Systemadministration",
+          "description": "Lopande TAK-serverhantering med AI-overvakning",
+          "price": "Fran $450/manad"
+        },
+        "plugins": {
+          "title": "Pluginutveckling",
+          "description": "Anpassade TAK-plugins med NERVA AI-integration",
+          "price": "Fran $15 000"
+        },
+        "hardware": {
+          "title": "Edge-hardvara",
+          "description": "NERV Edge-berakning (GPU i en hjalm) for faltdriftsattning",
+          "price": "Kontakta for pris"
+        }
+      }
+    }
+  },
+  "partners": {
+    "title": "Betrodda av ledande organisationer",
+    "description": "NERV Systems stods av NVIDIA Inception, stottas av Autodesk Foundation, inkuberad vid National University of Singapore och affilierad med King's College London War Studies",
+    "items": {
+      "nvidia": {
+        "name": "NVIDIA Inception",
+        "description": "Medlem i NVIDIA Inception-programmet for AI-startups"
+      },
+      "nus": {
+        "name": "National University of Singapore",
+        "description": "Inkuberad vid NUS Enterprise"
+      },
+      "kcl": {
+        "name": "King's College London",
+        "description": "Affilierad med institutionen for krigsstudier"
+      },
+      "autodesk": {
+        "name": "Autodesk Foundation",
+        "description": "Stottad av Autodesk Foundation"
+      }
+    }
+  },
+  "contact": {
+    "label": "Kontakta oss",
+    "title": "Redo att driftsatta taktisk AI?",
+    "subtitle": "Oavsett om du behover NERVA AI-integration, TAK-losningar eller vill diskutera dina operativa krav - vart team ar har for att hjalpa.",
+    "form": {
+      "label": "Allman forfragan",
+      "title": "Skicka ett meddelande",
+      "description": "Fyll i vart kontaktformular sa svarar vart team inom 24 timmar.",
+      "button": "Kontakta oss ->"
+    },
+    "direct": {
+      "label": "Direktkontakt",
+      "title": "Kontakta oss direkt",
+      "email": {
+        "label": "E-POST",
+        "value": "contact@nervsystems.com"
+      },
+      "phone": {
+        "label": "TELEFON",
+        "value": "(703) 977-7097"
+      },
+      "address": {
+        "label": "US-KONTOR",
+        "value": "8 The Green Suite B, Dover, DE 19901"
+      },
+      "addressSG": {
+        "label": "SINGAPORE-KONTOR",
+        "value": "71 Ayer Rajah Crescent #01-20, 159773"
+      },
+      "region": {
+        "label": "REGION",
+        "value": "Asien-Stillahavsomradet"
+      },
+      "affiliations": {
+        "label": "AFFILIERINGAR",
+        "nvidia": "NVIDIA Inception-medlem",
+        "nus": "NUS Enterprise-inkuberad",
+        "kcl": "King's College London-inkuberad"
+      }
+    },
+    "quickLinks": {
+      "title": "Letar du efter nagot specifikt?",
+      "nerva": "NERVA AI-plattform",
+      "tak": "TAK-losningar",
+      "resources": "Resurser och guider"
+    }
+  },
+  "footer": {
+    "tagline": "Taktisk AI for uppdragsplanering och edge-underrattelsetjanst",
+    "navigation": {
+      "title": "Navigering",
+      "nerva": "NERVA AI",
+      "platform": "Plattform",
+      "takIntegration": "TAK-integration",
+      "solutions": "Losningar och tjanster"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "email": "E-post: contact@nervsystems.com",
+      "phone": "Telefon: (703) 977-7097",
+      "address": "US: 8 The Green Suite B, Dover, DE 19901",
+      "addressSG": "SG: 71 Ayer Rajah Crescent #01-20, 159773",
+      "region": "Asien-Stillahavsomradet",
+      "affiliations": {
+        "nvidia": "NVIDIA Inception-medlem",
+        "nus": "NUS Enterprise-inkuberad",
+        "kcl": "King's College London-inkuberad",
+        "github": "github.com/NERVsystems",
+        "x": "x.com/NERVSysOffical",
+        "youtube": "youtube.com/@nervsystems"
+      }
+    },
+    "takProvider": {
+      "title": "TAK-tjanstleverantor",
+      "description": "Auktoriserad TAK-tjanstleverantor",
+      "regions": {
+        "usa": "USA",
+        "singapore": "Singapore",
+        "thailand": "Thailand"
+      }
+    },
+    "copyright": "© 2026 NERV Systems. Alla rattigheter forbehallna.",
+    "taglineBottom": "Byggt for den taktiska kanten",
+    "legal": {
+      "privacy": "Integritetspolicy",
+      "terms": "Anvandarvillkor"
+    }
+  },
+  "cookieBanner": {
+    "notice": "MEDDELANDE:",
+    "message": "Denna webbplats anvander cookies for sprakinstellningar, formularfunktionalitet och analys.",
+    "privacyLink": "Integritetspolicy",
+    "accept": "Acceptera",
+    "decline": "Avboj"
+  },
+  "form": {
+    "demo": {
+      "title": "Boka ett samtal",
+      "subtitle": "Beratta om dina krav sa bokar vi en konsultation inom 24 timmar."
+    },
+    "quote": {
+      "title": "Begar offert",
+      "subtitle": "Fyll i formularet nedan sa aterkommer vart team inom 24 timmar."
+    },
+    "contact": {
+      "title": "Kontakta oss",
+      "subtitle": "Fyll i formularet nedan sa aterommer vart team inom 24 timmar."
+    },
+    "fields": {
+      "firstName": {
+        "label": "FORNAMN",
+        "required": "FORNAMN *"
+      },
+      "lastName": {
+        "label": "EFTERNAMN",
+        "required": "EFTERNAMN *"
+      },
+      "email": {
+        "label": "E-POST",
+        "required": "E-POST *"
+      },
+      "organization": {
+        "label": "ORGANISATION",
+        "required": "ORGANISATION *"
+      },
+      "phone": {
+        "label": "TELEFON",
+        "required": "TELEFON *"
+      },
+      "jobTitle": {
+        "label": "BEFATTNING"
+      },
+      "organisationType": {
+        "label": "ORGANISATIONSTYP",
+        "required": "ORGANISATIONSTYP *",
+        "placeholder": "Valj organisationstyp..."
+      },
+      "currentTakUsage": {
+        "label": "NUVARANDE TAK-ANVANDNING",
+        "required": "NUVARANDE TAK-ANVANDNING *",
+        "placeholder": "Valj nuvarande anvandning..."
+      },
+      "estimatedTakUsers": {
+        "label": "UPPSKATTAT ANTAL TAK-ANVANDARE",
+        "placeholder": "Valj..."
+      },
+      "takDeploymentTimeline": {
+        "label": "DRIFTSATTNINGSTIDSLINJE",
+        "placeholder": "Valj..."
+      },
+      "interest": {
+        "label": "INTRESSERAD AV",
+        "required": "INTRESSERAD AV *"
+      },
+      "message": {
+        "label": "MEDDELANDE",
+        "required": "MEDDELANDE *",
+        "placeholder": "Beratta om dina krav..."
+      }
+    },
+    "options": {
+      "organisationType": {
+        "military": "Militar/forsvar",
+        "lawEnforcement": "Rattsvasendet",
+        "emergency": "Raddningstjanst",
+        "government": "Myndighet",
+        "privateSecurity": "Privat sakerhet",
+        "commercial": "Kommersiell",
+        "other": "Ovrigt"
+      },
+      "currentTakUsage": {
+        "alreadyUsing": "Anvander redan TAK",
+        "readyToPurchase": "Redo att kopa",
+        "evaluating": "Utvarderar leverantorer",
+        "researching": "Undersoker losningar"
+      },
+      "estimatedTakUsers": {
+        "range1": "1-50 anvandare",
+        "range2": "51-250 anvandare",
+        "range3": "251-1000 anvandare",
+        "range4": "1000+ anvandare"
+      },
+      "takDeploymentTimeline": {
+        "immediate": "Omedelbart (0-1 manad)",
+        "shortTerm": "Kort sikt (1-3 manader)",
+        "mediumTerm": "Medellang sikt (3-6 manader)",
+        "longTerm": "Lang sikt (6+ manader)"
+      },
+      "interest": {
+        "nerva": "NERVA AI-plattform",
+        "hosting": "Hanterad TAK-hosting",
+        "deployment": "TAK-driftsattningskonsulting",
+        "training": "TAK-utbildningsprogram",
+        "administration": "Systemadministration",
+        "plugins": "Pluginutveckling",
+        "edge": "Edge-hardvara (GPU i en hjalm)",
+        "other": "Ovrigt"
+      }
+    },
+    "buttons": {
+      "submit": "Skicka forfragan",
+      "submitting": "Skickar...",
+      "cancel": "Avbryt",
+      "close": "Stang"
+    },
+    "messages": {
+      "success": {
+        "title": "Tack!",
+        "demo": "Vi har tagit emot din forfragan. Vart team kontaktar dig inom 24 timmar for att boka ditt samtal.",
+        "quote": "Din offertforfragan har tagits emot. Vart team kontaktar dig inom 24 timmar.",
+        "contact": "Din kontaktforfragan har tagits emot. Vart team kontaktar dig inom 24 timmar."
+      },
+      "error": "Det uppstod ett problem vid inskickning av formularet. Var vanlig e-posta oss direkt pa contact@nervsystems.com",
+      "privacyPrefix": "Genom att skicka detta formular godkanner du var",
+      "privacyLink": "Integritetspolicy",
+      "privacyAnd": "och",
+      "termsLink": "Anvandarvillkor"
+    }
+  },
+  "takSolutions": {
+    "hero": {
+      "eyebrow": "Globala TAK-losningar",
+      "title": "Kompletta TAK/ATAK",
+      "titleLine2": "losningar och tjanster",
+      "subtitle": "Expert-TAK-serverhosting, ATAK-driftsattningskonsulting, systemadministration och utbildning for militar, rattsvasendet, HADR och raddningstjanstteam over Nordamerika och Asien-Stillahavsomradet.",
+      "features": {
+        "hosting": "Hanterad TAK-hosting fran $495/man",
+        "aiEnhanced": "AI-forstarkt med NERVA",
+        "deployment": "Expert-TAK-driftsattning",
+        "training": "ATAK-utbildningsprogram"
+      },
+      "cta": {
+        "quote": "Begar offert",
+        "services": "Visa tjanster"
+      }
+    },
+    "services": {
+      "title": "Professionella TAK-losningar",
+      "introduction": "NERV Systems tillhandahaller omfattande TAK- (Team Awareness Kit) och ATAK- (Android Team Awareness Kit) losningar inklusive hanterad TAK-serverhosting, ATAK-driftsattningskonsulting, TAK-systemadministration, operatorsutbildningsprogram och anpassad TAK-pluginutveckling. Med kontor i USA och Singapore betjanar vi organisationer over Nordamerika och Asien-Stillahavsomradet. Var AI-forstarkta TAK-plattform kombinerar traditionella TAK-funktioner med intelligent automatisering genom NERVA, och stodjer forsvarsoperationer, humanitart bistand och katastrofhjalp (HADR) samt nod-respons.",
+      "hosting": {
+        "title": "Hanterad TAK-serverhosting",
+        "description": "TAK-serverhosting pa foretagsniva med 99,9% drifttids-SLA. Var hanterade TAK-hostingtjanst eliminerar komplexiteten i TAK-serveradministration. Perfekt for organisationer som driftsatter TAK/ATAK-system for militara operationer, rattsvasendet, HADR-uppdrag och nod-hantering.",
+        "plans": {
+          "starter": {
+            "name": "Starter",
+            "price": "$495",
+            "period": "/manad",
+            "users": "Upp till 50 TAK-anvandare",
+            "ai": "NERVA AI-redo",
+            "features": [
+              "Grundlaggande TAK-serverdriftsattning",
+              "Standard ATAK-plugins inkluderade",
+              "99% TAK-serverdrifttids-SLA",
+              "E-postsupport for TAK-problem",
+              "Manatliga TAK-sakerhetsuppdateringar"
+            ],
+            "cta": "Kom igang med TAK"
+          },
+          "professional": {
+            "name": "Professional",
+            "price": "$1 495",
+            "period": "/manad",
+            "users": "Upp till 250 ATAK-anvandare",
+            "ai": "NERVA AI-redo",
+            "badge": "POPULAR",
+            "features": [
+              "Enterprise TAK-server",
+              "Premium ATAK-plugins",
+              "99,9% TAK-drifttids-SLA",
+              "24/7 TAK-support",
+              "TAK-federationsstod",
+              "Systemhalsoovervakning"
+            ],
+            "cta": "Starta Professional TAK"
+          },
+          "enterprise": {
+            "name": "Enterprise",
+            "price": "Anpassat",
+            "users": "1 000+ TAK/ATAK-anvandare",
+            "ai": "NERVA AI-redo",
+            "features": [
+              "Anpassad TAK-infrastruktur",
+              "White-label TAK-alternativ",
+              "99,99% TAK-drifttids-SLA",
+              "Dedikerat TAK-supportteam",
+              "Multiregional TAK-driftsattning",
+              "TAK-efterlevnadspaket"
+            ],
+            "cta": "Kontakta for Enterprise TAK"
+          }
+        },
+        "note": "Alla TAK-hostingplaner inkluderar: SSL-certifikat, automatiserade sakerhetskopiering, DDoS-skydd och atkomst till TAK.gov-uppdateringar"
+      },
+      "deployment": {
+        "title": "TAK-driftsattningskonsulting",
+        "description": "Expert-TAK-driftsattningstjanster fran initial kravutvardering till full operativ formaga. Vart TAK-konsultteam har omfattande erfarenhet av att driftsatta ATAK-system for forsvar, rattsvasendet, HADR-operationer och nod-hanteringsorganisationer.",
+        "plans": {
+          "assessment": {
+            "name": "TAK-utvardering",
+            "price": "$4 500",
+            "description": "1 dags TAK-utvardering pa plats",
+            "features": [
+              "TAK-kravutvardering",
+              "TAK-infrastrukturdesign",
+              "ATAK-anvandarkrav",
+              "TAK-pluginvalsradgivning",
+              "30 dagars TAK-support"
+            ],
+            "cta": "Begar TAK-utvardering"
+          },
+          "deployment": {
+            "name": "TAK-driftsattning",
+            "price": "$15 000",
+            "description": "Komplett TAK-systeminstallation",
+            "badge": "POPULAR",
+            "features": [
+              "Komplett TAK-serverdriftsattning (100 anvandare)",
+              "ATAK-plugininstallation",
+              "TAK-systemintegration",
+              "Grundlaggande ATAK-operatorsutbildning",
+              "90 dagars TAK-prioritetssupport"
+            ],
+            "cta": "Driftsatt TAK-system"
+          },
+          "enterprise": {
+            "name": "Enterprise TAK",
+            "price": "$45 000+",
+            "description": "Storskalig TAK-driftsattning",
+            "features": [
+              "Storskalig TAK-driftsattning (100+ anvandare)",
+              "AI-integrationsplan",
+              "Anpassad TAK-pluginutveckling",
+              "Avancerad ATAK-utbildning (3 dagar)",
+              "180 dagars dedikerad TAK-support"
+            ],
+            "cta": "Planera Enterprise TAK"
+          }
+        }
+      },
+      "training": {
+        "title": "TAK- och ATAK-utbildningsprogram",
+        "description": "Omfattande TAK-operatorsutbildning och ATAK-certifieringsprogram. Var TAK-utbildning tacker allt fran grundlaggande ATAK-granssnittsfunktioner till avancerad uppdragsplanering med NERVA AI-assistans. Volymrabatter tillgangliga for teamutbildning: 10% rabatt for 5-10 studenter, 20% rabatt for 11-20 studenter, 30% rabatt for 21+ studenter.",
+        "programs": {
+          "fundamentals": {
+            "name": "TAK-grunder",
+            "price": "$395",
+            "period": "/student",
+            "duration": "1 dags ATAK-grundkurs",
+            "cta": "Anmal dig till TAK-utbildning"
+          },
+          "nerva": {
+            "name": "NERVA AI-operationer",
+            "price": "$495",
+            "period": "/student",
+            "duration": "1 dags AI-forstarkt TAK-kurs",
+            "badge": "REKOMMENDERAD",
+            "cta": "Anmal dig till AI-utbildning"
+          },
+          "advanced": {
+            "name": "Avancerade TAK-operationer",
+            "price": "$895",
+            "period": "/student",
+            "duration": "2 dagars avancerad ATAK-kurs",
+            "cta": "Anmal dig till avancerad utbildning"
+          }
+        }
+      }
+    },
+    "integration": {
+      "title": "Varfor valja NERV for TAK-losningar?",
+      "description": "Till skillnad fran traditionella TAK-hostingleverantorer kombinerar NERV Systems expert-TAK-driftsattningstjanster med AI-driven underrattelsetjanst. Varje TAK-losning inkluderar NERVA-integration, som omvandlar ditt TAK/ATAK-system fran grundlaggande lamplighetsbild till en intelligent beslutsstodsplattform.",
+      "benefits": [
+        {
+          "number": "01",
+          "title": "AI-forstarkt TAK-plattform",
+          "description": "NERVA lagger till autonom uppdragsplanering, automatiserad CASEVAC-samordning, hotunderrattelsetjanst och realtidsbeslutsstod till ditt TAK-system"
+        },
+        {
+          "number": "02",
+          "title": "Global regional expertis",
+          "description": "TAK-driftsattningsexpertis over Nordamerika och Asien-Stillahavsomradet, med kontor i USA och Singapore som betjanar manga operativa och regulatoriska krav"
+        },
+        {
+          "number": "03",
+          "title": "Komplett TAK-livscykelsupport",
+          "description": "Fran initial TAK-utvardering genom driftsattning, utbildning och lopande systemadministration - omfattande support for hela din TAK-resa"
+        },
+        {
+          "number": "04",
+          "title": "TAK-infrastruktur pa foretagsniva",
+          "description": "99,9% drifttids-SLA, automatiserade TAK-sakerhetskopiering, DDoS-skydd, SSL-certifikat, TAK.gov-sakerhetsefterlevnad och MOSA-anpassad arkitektur for interoperabilitet"
+        },
+        {
+          "number": "05",
+          "title": "Flexibla TAK-driftsattningsalternativ",
+          "description": "Molnhostad TAK, lokala TAK-servrar, hybrid-TAK-arkitekturer eller edge-driftsatta TAK-system med var GPU-i-en-hjalm-hardvara"
+        }
+      ],
+      "useCases": {
+        "military": {
+          "title": "TAK for militara operationer",
+          "description": "Driftsatt TAK/ATAK-system for ledning och kontroll, ISR-operationer, narstridsstod, CASEVAC-samordning och multidomansoperationer med AI-forstarkt uppdragsplanering.",
+          "tags": ["C2", "ISR", "CASEVAC", "CAS"]
+        },
+        "lawEnforcement": {
+          "title": "TAK for rattsvasendet",
+          "description": "ATAK-losningar for taktiska operationer, insatsstyrkesamordning, evenemangsakerhet, gransbevakning och myndighetsoverskridande informationsdelning med realtids lamplighetsbild.",
+          "tags": ["INSATS", "SAKERHET", "PATRULL"]
+        },
+        "emergency": {
+          "title": "TAK for HADR och nod-hantering",
+          "description": "TAK-system for humanitart bistand och katastrofhjalp (HADR), nod-respons, sok och raddning (SAR), brandoperationer, medicinsk samordning och myndighetsoverskridande krishantering.",
+          "tags": ["HADR", "SAR", "AKUT"]
+        },
+        "commercial": {
+          "title": "TAK for kommersiell och privat sektor",
+          "description": "Kommersiella TAK-driftsattningar for flottstyrning, tillgangshantering, privata sakerhetsoperationer, skydd av kritisk infrastruktur och foretagsteamsamordning over distribuerade platser.",
+          "tags": ["FLOTTA", "SAKERHET", "TILLGANGAR"]
+        },
+        "intelligence": {
+          "title": "TAK for underrattelsetjanst och OSINT",
+          "description": "Geospatial underrattelsefusion for oppna kallor-underrattelseanalytiker (OSINT), undersokande journalister och forskarteam. Korrelera multikallsdata, spara enheter av intresse och visualisera komplexa natverk med realtids samarbetskartlaggning och AI-driven monsterigankanningsning.",
+          "tags": ["OSINT", "GEOINT", "ANALYS", "UNDERRATTELSE"]
+        }
+      }
+    },
+    "competitive": {
+      "eyebrow": "Konkurrensfrdel",
+      "title": "Varfor NERV for TAK-losningar?",
+      "subtitle": "Traditionella TAK-hostingleverantorer erbjuder infrastruktur. NERV erbjuder underrattelsetjanst. Se hur var AI-forstarkta TAK-plattform jamfor med konventionella TAK-losningsleverantorer.",
+      "tableHeaders": {
+        "capability": "Formaga",
+        "traditional": "Traditionella TAK-leverantorer",
+        "nerv": "NERV TAK-losningar"
+      },
+      "comparisons": [
+        {
+          "category": "AI-formaga",
+          "traditional": "Manuell uppdragsplanering och analys",
+          "nerv": "Autonom uppdragsplanering med NERVA AI: automatiserad CASEVAC, hotunderrattelsetjanst, SAR-berakningar"
+        },
+        {
+          "category": "Responstid",
+          "traditional": "24-48 timmars supportrespons",
+          "nerv": "24/7 realtidssupport med AI-systemovervakning och prediktiva varningar"
+        },
+        {
+          "category": "Global narvaro",
+          "traditional": "Enregional infrastruktur",
+          "nerv": "Kontor i USA och Singapore, multiregional TAK-hosting, lokal efterlevnadsexpertis"
+        },
+        {
+          "category": "TAK-integration",
+          "traditional": "Standard TAK-serverdriftsattning",
+          "nerv": "Forstarkt TAK med NERVA-integration, intelligent datafusion, naturligt sprakgranssnitt"
+        },
+        {
+          "category": "Edge-berakning",
+          "traditional": "Enbart moln eller statisk lokal",
+          "nerv": "Flexibelt: moln, lokalt, hybrid eller GPU-i-en-hjalm edge-driftsattning"
+        },
+        {
+          "category": "Arkitekturstandarder",
+          "traditional": "Proprietara slutna system",
+          "nerv": "MOSA-kompatibel oppen arkitektur for leverantorsflexibilitet och framtidssakrad integration"
+        },
+        {
+          "category": "Utbildningsprogram",
+          "traditional": "Generisk TAK-operatorsutbildning",
+          "nerv": "TAK-grunder + NERVA AI-assistentutbildning + avancerad uppdragsplanering med AI"
+        },
+        {
+          "category": "Systemadministration",
+          "traditional": "Manuell patchning och overvakning",
+          "nerv": "AI-driven overvakning, automatiserade sakerhetskopiering, prediktivt underhall, intelligent varning"
+        },
+        {
+          "category": "Pluginutveckling",
+          "traditional": "Enbart standard TAK-plugins",
+          "nerv": "Anpassade NERVA-integrerade plugins med AI-formaga och intelligent automatisering"
+        }
+      ],
+      "cta": {
+        "title": "Redo att uppgradera din TAK-infrastruktur?",
+        "description": "Kom igang med NERVs AI-forstarkta TAK-plattform och upplev skillnaden som intelligent infrastruktur gor.",
+        "buttons": {
+          "pricing": "Visa priser och tjanster",
+          "guide": "Ladda ner jamforelseguide"
+        }
+      }
+    },
+    "resources": {
+      "eyebrow": "Gratisresurser",
+      "title": "TAK-underrattelsebibliotek",
+      "subtitle": "Ladda ner omfattande guider, teknisk dokumentation och strategiska resurser for att paskynda din TAK-driftsattning och maximera ROI fran AI-integration.",
+      "items": [
+        {
+          "title": "Taktisk AI ROI-kalkylator och guide",
+          "description": "Omfattande analys av AI-integrations-ROI for taktiska operationer. Berakna kostnadsbesparingar fran automatiserad uppdragsplanering, minskad planeringstid, forbattrad beslutsnoggrannhet och forstarkt operativt tempo. Inkluderar verkliga fallstudier och driftsattningsscenarier.",
+          "pages": "24 sidor",
+          "format": "PDF",
+          "category": "ROI",
+          "topics": ["Kostnad-nyttoanalys", "AI-automatiseringsbesparingar", "Driftsattningstidslinjer", "Prestandamattal"]
+        },
+        {
+          "title": "TAK vs. kommersiella alternativ: Komplett jamforelse",
+          "description": "Djupgaende jamforelse av TAK/ATAK mot kommersiella C2-plattformar, nod-hanteringssystem och proprietara losningar. Tacker funktionalitet, total agandekostnad, sakerhetsovervaganden, interoperabilitet och integrationsmojligheter. Inkluderar beslutsramverk for plattformsval.",
+          "pages": "32 sidor",
+          "format": "PDF",
+          "category": "JAMFORELSE",
+          "topics": ["Plattformsjamforelsematris", "TCO-analys", "Sakerhetsjamforelse", "Integrationsmojligheter"]
+        },
+        {
+          "title": "TAK-driftsattningschecklista: Komplett implementeringsguide",
+          "description": "Steg-for-steg-driftsattningschecklista for TAK/ATAK-implementeringar. Tacker kravinhemtning, infrastrukturplanering, sakerhetskonfiguration, anvandaronboarding, utbildningsprogram och produktionsstartsprocedurer. Inkluderar mallar, konfigurationsexempel och vanliga fallgropar.",
+          "pages": "18 sidor",
+          "format": "PDF",
+          "category": "DRIFTSATTNING",
+          "topics": ["Forplanering", "Infrastrukturinstallation", "Sakerhetsharadning", "Anvandarutbildningsplan"]
+        },
+        {
+          "title": "NERVA AI-integrationsarkitekturguide",
+          "description": "Teknisk arkitekturdokumentation for NERVA-integration med befintliga TAK-driftsattningar. Tacker API-specifikationer, datafloden, sakerhetsarkitektur, driftsattningsmonster (moln/lokal/edge) och migreringsstrategier. Inkluderar referensimplementeringar och kodexempel.",
+          "pages": "28 sidor",
+          "format": "PDF",
+          "category": "TEKNISK",
+          "topics": ["API-integration", "Sakerhetsarkitektur", "Driftsattningsmonster", "Migreringsstrategier"]
+        },
+        {
+          "title": "TAK-efterlevnad och regelverk",
+          "description": "Omfattande guide till regulatoriska krav, datasuveranitetsovervaganden och efterlevnadsramverk for TAK-driftsattningar. Tacker amerikanska federala krav, FedRAMP-overvaganden och internationella ramverk inklusive regionala krav for Asien-Stillahavsomradet. Inkluderar efterlevnadschecklistor och certifieringsradgivning.",
+          "pages": "22 sidor",
+          "format": "PDF",
+          "category": "EFTERLEVNAD",
+          "topics": ["Regulatoriska ramverk", "Datasuveranitet", "Sakerhetscertifieringar", "Efterlevnadskrav"]
+        },
+        {
+          "title": "TAK-systemadministration - basta praxis",
+          "description": "Driftmanual for TAK-systemadministratorer. Tacker overvakning, sakerhetskopiering, prestandaoptimering, sakerhetspatchning, anvandarhantering, federationskonfiguration och felsokning. Inkluderar automatiseringsskript och operativa handbocker.",
+          "pages": "36 sidor",
+          "format": "PDF",
+          "category": "DRIFT",
+          "topics": ["Systemovervakning", "Sakerhetskopering och aterstallning", "Prestandaoptimering", "Sakerhetsdrift"]
+        }
+      ],
+      "cta": {
+        "title": "Behover du anpassad analys for din organisation?",
+        "description": "Vart TAK-konsultteam kan tillhandahalla skraddarsydda utvarderingar, ROI-analyser och driftsattningsplanering specifikt for dina operativa krav.",
+        "button": "Boka konsultation"
+      },
+      "downloadForm": {
+        "eyebrow": "{category}",
+        "title": "Ladda ner resurs",
+        "fields": {
+          "firstName": "Fornamn",
+          "lastName": "Efternamn",
+          "email": "E-post",
+          "company": "Foretagsnamn",
+          "jobTitle": "Befattning",
+          "role": "Anstallningsroll",
+          "currentStage": "Nuvarande fas",
+          "selectRole": "Valj din roll",
+          "selectStage": "Valj fas...",
+          "required": "*"
+        },
+        "roles": {
+          "support": "Support",
+          "sales": "Forsaljning",
+          "retired": "Pensionerad",
+          "research": "Forskning",
+          "recruiting": "Rekrytering",
+          "productManagement": "Produktledning",
+          "marketing": "Marknadsforing",
+          "it": "IT",
+          "hr": "Personal",
+          "finance": "Ekonomi",
+          "executive": "Foretagsledning",
+          "engineering": "Teknik",
+          "education": "Utbildning",
+          "design": "Design",
+          "customerSuccess": "Kundframgang",
+          "consulting": "Konsulting",
+          "businessDevelopment": "Affarsutveckling",
+          "other": "Ovrigt"
+        },
+        "stages": {
+          "researching": "Undersoker losningar",
+          "evaluating": "Utvarderar leverantorer",
+          "readyToPurchase": "Redo att kopa",
+          "alreadyUsingTAK": "Anvander redan TAK"
+        },
+        "submitButton": "Ladda ner PDF ->",
+        "submitting": "Bearbetar...",
+        "privacyNote": "Vi respekterar din integritet. Din information anvands enbart for att skicka dig relevanta TAK-resurser och uppdateringar.",
+        "success": {
+          "title": "Kontrollera din e-post",
+          "description": "Vi har skickat nedladdningslanken till din e-postadress. Var vanlig kontrollera din inkorg."
+        }
+      },
+      "coversLabel": "INKLUDERAR:"
+    },
+    "faq": {
+      "eyebrow": "Vanliga fragor",
+      "title": "TAK-losningar FAQ",
+      "subtitle": "Vanliga fragor om TAK/ATAK-hosting, driftsattning, utbildning och NERVA AI-integration",
+      "items": [
+        {
+          "question": "Vad ar TAK/ATAK och varfor behover jag det?",
+          "answer": "TAK (Team Awareness Kit) ar en geospatial samarbetsplattform utvecklad av US Air Force Research Lab for militara och taktiska operationer. ATAK (Android Team Awareness Kit) ar mobilversionen for Android som ger realtids lamplighetsbild, kartlaggning, platsdelning och uppdragssamordning. Organisationer behover TAK/ATAK nar de kraver saker, realtids geospatial samordning over distribuerade team - oavsett om det galler militara operationer, taktiska polisenheter, humanitart bistand och katastrofhjalp (HADR), sok och raddning eller nod-hantering. NERV forstarker standard TAK-driftsattningar med NERVA AI-formaga for intelligent uppdragsplanering och automatiserat beslutsstod."
+        },
+        {
+          "question": "Vilka ar kraven for TAK-serverhosting?",
+          "answer": "Professionell TAK-serverhosting kraver: ett TAK.gov-konto for officiella TAK Server-mjukvarunedladdningar, SSL-certifikat for krypterad TAK-kommunikation, dedikerad serverinfrastruktur med 99,9% drifttid, DDoS-skydd for operativ sakerhet, automatiserade sakerhetskopiering for TAK-data och expertis inom TAK Server-konfiguration och systemadministration. NERVs hanterade TAK-hosting inkluderar alla dessa krav plus AI-forstarkta funktioner genom NERVA-integration, fran $495/manad for sma team upp till $1 495/manad for storskaliga TAK-driftsattningar."
+        },
+        {
+          "question": "Hur lang tid tar TAK-driftsattning?",
+          "answer": "TAK-driftsattningstidslinjer varierar beroende pa komplexitet. Grundlaggande TAK-serverinstallation kan slutforas pa 1-2 veckor for enkla driftsattningar. Omfattande TAK/ATAK-implementering inklusive serverkonfiguration, klientenhetsinstallation, anvandarutbildning, pluginintegration och anpassad TAK-datapaketutveckling tar vanligtvis 4-8 veckor. Enterprise TAK-driftsattningar med omfattande anpassning, flersitesarkitektur, integrering av arvssystem och avancerad ATAK-pluginutveckling kan krava 3-6 manader. NERVs TAK-driftsattningskonsulttjanster inkluderar detaljerad projektplanering, tidslinjeuppskattning och milstolpesuppfoljning genom hela din TAK-implementeringsresa."
+        },
+        {
+          "question": "Erbjuder ni ATAK-utbildning och certifiering?",
+          "answer": "Ja, NERV erbjuder omfattande ATAK-utbildningsprogram for alla kompetensnavaer. Var kurs TAK Operator Fundamentals ($595 per operator) tacker ATAK-granssnittnavigering, karthantering, markorplacering, platsdelning och grundlaggande TAK-kommunikation - perfekt for nya ATAK-anvandare. Kursen Advanced TAK Operations ($995 per operator) inkluderar uppdragsplanering i ATAK, datapaketskapande, pluginanvandning, TAK-videointegration och taktiska arbetsfloden. For tekniska team ger var TAK Administrator Certification ($1 495 per admin) djupgaende utbildning i TAK Server-administration, anvandarhantering, sakerhetskonfiguration, plugindriftsattning och systemfelsokning. All ATAK-utbildning inkluderar praktiska ovningar med verkliga TAK/ATAK-system."
+        },
+        {
+          "question": "Vad gor NERVs TAK-losningar annorlunda jamfort med andra TAK-hostingleverantorer?",
+          "answer": "Till skillnad fran traditionella TAK-hostingforetag kombinerar NERV expert-TAK-driftsattningstjanster med AI-driven underrattelsetjanst genom NERVA-integration. Varje NERV TAK-losning inkluderar autonom uppdragsplanering, automatiserad CASEVAC-samordning, realtids hotunderrattelsetjanst, intelligent geofencing och 3D-luftrumsvisualisering - formaga som inte ar tillganglig fran standard TAK-leverantorer. Med kontor i USA och Singapore betjanar vi organisationer over Nordamerika och Asien-Stillahavsomradet och erbjuder multiregional TAK-hosting med lokal efterlevnadsexpertis. Vara flexibla driftsattningsalternativ inkluderar moln-TAK-hosting, lokala TAK-servrar, hybridarkitekturer och edge-driftsatta TAK-system med var GPU-aktiverade hardvara."
+        },
+        {
+          "question": "Kan ni utveckla anpassade TAK-plugins?",
+          "answer": "Absolut. NERV tillhandahaller professionella TAK-pluginutvecklingstjanster som en del av vart TAK Solutions Engineering-erbjudande. Vi utvecklar anpassade ATAK-plugins for Android-enheter, TAK Server-plugins for backendintegration, WinTAK-plugins for Windows-miljoer och iTAK-plugins for iOS. Var TAK-pluginutvecklingsexpertis inkluderar: integration med befintliga foretagssystem, anpassade datakallor och foder, specialiserade uppdragsplaneringsverktyg, automatiserade arbetsflodesplugins, sensor- och hardvaruintegration samt AI-forstarkta TAK-formaga genom NERVA. TAK-pluginutvecklingsprojekt borjar pa $15 000 for grundlaggande plugins upp till $100 000+ for omfattande TAK-plattformsutvidgningar med lopande support."
+        },
+        {
+          "question": "Erbjuder ni TAK-systemadministrationssupport?",
+          "answer": "Ja, omfattande TAK-systemadministration ingår i alla vara hanterade TAK-hostingplaner. Vara TAK-sysadmin-tjanster tacker: TAK Server-mjukvaruuppdateringar och patchar, anvandarkonto-hantering och atkomstkontroll, SSL-certifikathantering och fornyelse, TAK-datapaketdriftsattning och uppdateringar, plugininstallation och konfiguration, prestandaovervakning och optimering, sakerhetsrevision och efterlevnad, sakerhetskopiering och katastrofaterstallning samt 24/7 TAK-systemovervakning. For organisationer som driver sin egen TAK-infrastruktur erbjuder vi aven fristaende TAK-systemadministrationskonsulting till $195/timme eller manatliga TAK-supportavtal fran $2 500/manad."
+        },
+        {
+          "question": "Vilka TAK/ATAK-anvandningsfall stodjer ni?",
+          "answer": "NERV stodjer hela spektrumet av TAK/ATAK-tillampningar over forsvar, HADR, allman sakerhet och raddningstjanst. Militara TAK-anvandningsfall inkluderar: ledning och kontroll (C2), underrattelse/overvakning/spaning (ISR), narstridsstod (CAS), CASEVAC/MEDEVAC-operationer, multidomansoperationer och utbildningsovningar. ATAK-tillampningar for rattsvasendet inkluderar: insatsstyrkesamordning, evenemangsakerhet, gransbevakning, efterlysningssparning och myndighetsoverskridande samarbete. Humanitart bistand och katastrofhjalp (HADR) och nod-hanterings TAK-driftsattningar tacker: sok och raddning (SAR), skogsbrandsrespons, oversvamnings- och jordbavningsrespons, katastrofhjalpssamordning, flyktingoperationer, ambulanssamordning och myndighetsoverskridande incidenthantering. Varje anvandningsfall forstarks med NERVA AI-formaga for smartare uppdragsutforande."
+        },
+        {
+          "question": "Hur forstarker NERVA AI-integration TAK-system?",
+          "answer": "NERVA omvandlar standard TAK/ATAK fran grundlaggande lamplighetsbild till en intelligent beslutsstodsplattform. NERVA analyserar TAK-data i realtid for att ge: autonom uppdragsplanering med optimerade rutter och tidplanering, automatiserad CASEVAC-samordning med berakning av basta LZ-platser och flygrutter, fientlig enhetsunderrattelsetjanst med hotprediktion och motmedelsrekommendationer, intelligent sokområdesberakning for SAR-operationer, geofencing med automatiska varningar for luftrumsovertraddelser och 3D-luftrumsvisualisering for UAS-dekonflikt. NERVA kors pa molninfrastruktur, lokala servrar eller var edge-driftsatta GPU-hardvara och integreras somlost med befintliga TAK Server-driftsattningar genom standard TAK-protokoll och API:er."
+        }
+      ],
+      "cta": {
+        "text": "Har du fler fragor om TAK-hosting, ATAK-driftsattning eller NERVA-integration?",
+        "button": "Kontakta vara TAK-experter"
+      }
+    }
+  },
+  "privacy": {
+    "metaTitle": "Integritetspolicy - NERV Systems",
+    "metaDescription": "Integritetspolicy for NERV Systems webbplats. Las om hur vi samlar in, anvander och skyddar din information.",
+    "eyebrow": "JURIDISK DOKUMENTATION",
+    "title": "Integritetspolicy",
+    "effectiveDate": "Ikraftradandedatum: 19 november 2025",
+    "introduction": {
+      "title": "Introduktion",
+      "p1": "NERV Systems, LLC (\"NERV\", \"vi\", \"oss\" eller \"var\") ar engagerade i att skydda din integritet. Denna integritetspolicy forklarar hur vi samlar in, anvander, lamnar ut och skyddar din information nar du besoker var webbplats nervsystems.com (\"Webbplatsen\").",
+      "p2": "Var vanlig las denna integritetspolicy noggrant. Om du inte godkanner villkoren i denna integritetspolicy, var vanlig anvand inte Webbplatsen.",
+      "note": "VIKTIGT: Denna integritetspolicy galler enbart denna webbplats och information som samlas in genom den. Vara produkter och tjanster (inklusive NERVA AI-plattform och TAK-losningar) regleras av separata villkor och integritetspolicyer."
+    },
+    "informationWeCollect": {
+      "title": "Information vi samlar in",
+      "intro": "Vi samlar enbart in information som du frivilligt tillhandahaller till oss genom vara kontaktformular, konsultationsforfragan och offertforfragan. Detta kan inkludera:",
+      "items": {
+        "name": "Namn (for- och efternamn)",
+        "email": "E-postadress",
+        "organization": "Organisation/foretagsnamn",
+        "phone": "Telefonnummer",
+        "jobTitle": "Befattning",
+        "message": "Meddelandeinnehall och annan information du valjer att tillhandahalla"
+      },
+      "analytics": "Vi samlar ocksa automatiskt in viss information genom analystjanster (beskrivna nedan) sasom IP-adress, webblasartyp, enhetsinformation och besokta sidor."
+    },
+    "howWeUse": {
+      "title": "Hur vi anvander din information",
+      "items": {
+        "respond": "For att svara pa dina forfragan och forfragan",
+        "marketing": "For att skicka dig marknadskommunikation om vara produkter och tjanster",
+        "improve": "For att forbattra var webbplats och vara tjanster",
+        "analytics": "For att analysera webbplatsanvandning och trender"
+      },
+      "unsubscribe": "Du kan nar som helst avanmala dig fran marknadskommunikation genom att klicka pa avanmalningslanken i vara e-postmeddelanden eller kontakta oss direkt."
+    },
+    "thirdParty": {
+      "title": "Tredjepartstjanster",
+      "intro": "Vi anvander foljande tredjepartstjanster for att bearbeta och lagra din information:",
+      "items": {
+        "hubspot": "HubSpot - Formularinskickning och kontakthantering",
+        "analytics": "Google Analytics - Webbplatsanalys och anvandningsspaning"
+      },
+      "future": "Vi kan lagga till eller andra tredjepartstjansteleverantorer i framtiden for att forbattra vara tjanster. Denna policy kommer att uppdateras for att ateranspegla vasentliga anddingar."
+    },
+    "dataSecurity": {
+      "title": "Datalagring och sakerhet",
+      "storage": "Din information lagras pa servrar i USA genom vara tredjepartstjansteleverantorer. Vi uppfyller tillampliga dataskyddslagar, inklusive Singapores Personal Data Protection Act (PDPA), som tillater att personuppgifter lagras utomlands nar lampliga skyddsatgarder finns pa plats.",
+      "protection": "Vi implementerar rimliga sakerhetsatgarder for att skydda din information fran obehorig atkomst, andring, utlamning eller forstorelse. Ingen overfoeingsmetod over internet eller elektronisk lagring ar dock 100% saker.",
+      "disclaimer": "Aven om vi stravar efter att skydda din information kan vi inte garantera absolut sakerhet."
+    },
+    "yourRights": {
+      "title": "Dina rattigheter",
+      "intro": "Du har ratt att:",
+      "items": {
+        "access": "Fa tillgang till de personuppgifter vi har om dig",
+        "correction": "Begara rattelse av felaktig information",
+        "deletion": "Begara radering av din information",
+        "optOut": "Avanmala dig fran marknadskommunikation"
+      },
+      "contact": "For att utova dessa rattigheter, var vanlig kontakta oss pa contact@nervsystems.com."
+    },
+    "cookies": {
+      "title": "Cookies och sparningsteknik",
+      "description": "Vi anvander cookies for foljande andamal: (1) Sprakinstellning - Vi lagrar ditt sprakval i en cookie (NEXT_LOCALE) for att komma ihag ditt foerdragna sprak over besok; (2) Formularfunktionalitet - Vart formularinskickningssystem (HubSpot) anvander cookies nar du interagerar med vara kontaktformular for att spara inskickningar och analysera forfragankallor; (3) Analys - Vi kan anvanda analyticscookies (sasom Google Analytics) for att forsta webbplatstrafik och forbattra anvandarupplevelsen.",
+      "control": "Du kan kontrollera cookies genom dina webblasarinstallningar. Att inaktivera cookies kan dock paverka formularfunktionalitet, lagring av sprakinstellningar och forhindra oss fran att korrekt behandla dina forfragam."
+    },
+    "international": {
+      "title": "Internationella dataoverfoeingar",
+      "description": "Din information kan overfoeras till och bearbetas i andra lander an ditt hemland, inklusive USA. Dessa lander kan ha andra dataskyddslagar.",
+      "consent": "Genom att anvanda var webbplats samtycker du till overforing av din information till USA och andra lander dar vara tjansteleverantorer verkar."
+    },
+    "children": {
+      "title": "Barns integritet",
+      "description": "Var webbplats ar inte avsedd for personer under 18 ar. Vi samlar inte medvetet in personuppgifter fran barn. Om du tror att vi har samlat in information fran ett barn, var vanlig kontakta oss omedelbart."
+    },
+    "changes": {
+      "title": "Anddingar av denna integritetspolicy",
+      "description": "Vi kan uppdatera denna integritetspolicy fran tid till annan. Den uppdaterade versionen kommer att anges med ett uppdaterat \"Ikraftradandedatum\" langst upp i denna policy. Vi uppmanar dig att regelbundet granska denna integritetspolicy for eventuella anddingar."
+    },
+    "contact": {
+      "title": "Kontakta oss",
+      "description": "Om du har fragor eller funderingar angaende denna integritetspolicy, var vanlig kontakta oss:",
+      "company": "NERV Systems, LLC",
+      "email": "E-post: contact@nervsystems.com"
+    },
+    "backToHome": "<- Tillbaka till startsidan"
+  },
+  "terms": {
+    "metaTitle": "Anvandarvillkor - NERV Systems",
+    "metaDescription": "Anvandarvillkor for NERV Systems webbplats. Var vanlig las dessa villkor noggrant innan du anvander var webbplats.",
+    "eyebrow": "JURIDISK DOKUMENTATION",
+    "title": "Anvandarvillkor",
+    "effectiveDate": "Ikraftradandedatum: 19 november 2025",
+    "introduction": {
+      "title": "Introduktion",
+      "p1": "Dessa anvandarvillkor (\"Villkoren\") reglerar din atkomst till och anvandning av NERV Systems, LLC (\"NERV\", \"vi\", \"oss\" eller \"var\") webbplats pa nervsystems.com (\"Webbplatsen\").",
+      "p2": "Genom att besoka eller anvanda Webbplatsen godkanner du att vara bunden av dessa villkor. Om du inte godkanner dessa villkor, anvand inte Webbplatsen.",
+      "note": "VIKTIGT: Dessa villkor galler enbart denna webbplats. Anvandning av vara produkter och tjanster (inklusive NERVA AI-plattform och TAK-losningar) regleras av separata avtal och anvandarvillkor."
+    },
+    "acceptance": {
+      "title": "Godkannande av villkor",
+      "description": "Genom att besoka denna webbplats bekraftar du att du har last, forstat och godkanner att vara bunden av dessa villkor och var integritetspolicy. Vi forbehaller oss ratten att andra dessa villkor nar som helst. Din fortsatta anvandning av Webbplatsen efter att andringar publicerats utgor godkannande av de andrade villkoren."
+    },
+    "useOfWebsite": {
+      "title": "Anvandning av webbplatsen",
+      "intro": "Du godkanner att anvanda Webbplatsen enbart for lagliga andamal och i enlighet med dessa villkor. Du godkanner att inte:",
+      "items": {
+        "lawful": "Anvanda Webbplatsen pa nagot satt som bryter mot tillampliga lagar eller foreskrifter",
+        "accurate": "Tillhandahalla falsk, felaktig eller vilseledande information",
+        "noHarm": "Overfora virus, skadlig programvara eller annan skadlig kod",
+        "noUnauthorized": "Forsoka fa obehorig atkomst till Webbplatsen eller dess system",
+        "noViolation": "Delta i nagot beteende som begransar eller hindrar nagons anvandning av Webbplatsen"
+      }
+    },
+    "intellectualProperty": {
+      "title": "Immaterialrattigheter",
+      "ownership": "Allt innehall pa denna webbplats, inklusive men inte begransat till text, grafik, logotyper, bilder, programvara och designelement, ar egendom tillhorande NERV Systems, LLC och skyddas av USA:s och internationella upphovsratts-, varumarkes- och andra immaterialrattslagar.",
+      "restrictions": "Du far inte reproducera, distribuera, andra, skapa haerledda verk av, offentligt visa, aterupppublicera, ladda ner, lagra eller overfora nagot material fran var webbplats utan vart tidigare skriftliga samtycke, forrutom for personligt, icke-kommersiellt bruk."
+    },
+    "thirdPartyLinks": {
+      "title": "Tredjepartslänkar och innehall",
+      "description": "Webbplatsen kan innehalla lankar till tredjepartswebbplatser eller tjanster som inte ags eller kontrolleras av NERV. Vi har ingen kontroll over och tar inget ansvar for innehallet, integritetspolicyer eller praxis pa nagra tredjepartswebbplatser eller tjanster. Du bekraftar och godkanner att NERV inte ska vara ansvarigt for nagon skada eller forlust orsakad av din anvandning av nagot tredjepartsinnehall, varor eller tjanster."
+    },
+    "disclaimer": {
+      "title": "Friskrivning fran garantier",
+      "statement": "Webbplatsen tillhandahalls \"i befintligt skick\" och \"som tillganglig\" utan garantier av nagot slag, vare sig uttryckliga eller underforstadda.",
+      "details": "NERV Systems, LLC friskriver sig fran alla garantier, inklusive men inte begransat till underforstadda garantier om saljbarhet, lamplighet for ett visst andamal och icke-intrang. Vi garanterar inte att Webbplatsen kommer att vara oavbruten, saker eller felfri, eller att eventuella defekter kommer att rattas till. Du anvander Webbplatsen pa egen risk."
+    },
+    "liability": {
+      "title": "Ansvarsbegransning",
+      "statement": "I maximal utsträckning som tillatsen enligt lag ska NERV Systems, LLC inte vara ansvarigt for nagra indirekta, tillfälliga, sarskilda, foljdmassiga eller straffskadestand, eller nagra förluster av vinster eller intäkter.",
+      "details": "Under inga omstandigheter ska NERVs totala ansvar gentemot dig for alla skador, forluster och rattskrav (oavsett om det galler avtal, skadestand eller annat) overstiga det belopp du har betalat, om nagot, for atkomst till Webbplatsen. Vissa jurisdiktioner tillater inte uteslutning av vissa garantier eller begransning av ansvar for tillfälliga eller foljdmassiga skador, sa ovanstaende begransningar kanske inte galler for dig."
+    },
+    "indemnification": {
+      "title": "Skadesloshet",
+      "description": "Du godkanner att forsvara, halla skadeslos och befria NERV Systems, LLC och dess befattningshavare, styrelseledamoter, anstallda och agenter fran alla krav, skulder, skador, domar, utmarkelser, forluster, kostnader, utgifter eller avgifter (inklusive rimliga advokatarvoden) som uppstar av eller ar relaterade till din overtradelse av dessa villkor eller din anvandning av Webbplatsen."
+    },
+    "exportControl": {
+      "title": "Exportkontroll och efterlevnad",
+      "description": "Informationen och teknologin som presenteras pa denna webbplats kan vara foremal for amerikanska exportkontrollagar och foreskrifter. Du godkanner att folja alla tillampliga export- och aterexportkontrollagar och foreskrifter.",
+      "warning": "VARNING: Vara produkter och tjanster involverar forsvarsteknologi som kan vara foremal for strikta exportkontroller. Obehorig export eller aterexport kan leda till straffrattliga och civilrattliga pafoljder."
+    },
+    "governingLaw": {
+      "title": "Tillamplig lag och jurisdiktion",
+      "description": "Dessa villkor ska styras av och tolkas i enlighet med lagarna i USA och delstaten Delaware, utan hansyn till lagvalsprinciper. Eventuella tvister som uppstar fran dessa villkor eller din anvandning av Webbplatsen ska vara foremal for exklusiv jurisdiktion av domstolarna i Delaware.",
+      "future": "Obs: NERV Systems, LLC ar for narvarande registrerat i USA. Framtida registrering i Singapore kan resultera i uppdateringar av bestammelser om tillamplig lag och jurisdiktion."
+    },
+    "changes": {
+      "title": "Andringar av villkor",
+      "description": "Vi forbehaller oss ratten att andra eller ersatta dessa villkor nar som helst efter eget godtycke. Vasentliga andringar kommer att anges genom att uppdatera \"Ikraftradandedatum\" langst upp i dessa villkor. Din fortsatta anvandning av Webbplatsen efter eventuella andringar utgor godkannande av de nya villkoren."
+    },
+    "severability": {
+      "title": "Avskiljbarhet",
+      "description": "Om nagon bestammelse i dessa villkor befinns vara overkstallbar eller ogiltig, ska den bestammelsen begransas eller elimineras i minsta nodvandiga utstrackning, och ovriga bestammelser ska forbli i full kraft och verkan."
+    },
+    "entireAgreement": {
+      "title": "Hela avtalet",
+      "description": "Dessa villkor, tillsammans med var integritetspolicy, utgor hela avtalet mellan dig och NERV Systems, LLC avseende anvandningen av Webbplatsen och ersatter alla tidigare avtal och overenskommelser, vare sig skriftliga eller muntliga."
+    },
+    "contact": {
+      "title": "Kontaktinformation",
+      "description": "Om du har fragor om dessa villkor, var vanlig kontakta oss:",
+      "company": "NERV Systems, LLC",
+      "email": "E-post: contact@nervsystems.com"
+    },
+    "backToHome": "<- Tillbaka till startsidan"
+  }
+}
