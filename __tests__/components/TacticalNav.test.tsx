@@ -60,16 +60,16 @@ describe('TacticalNav Component', () => {
     renderWithIntl(<TacticalNav />);
 
     const featuresLink = screen.getByText(enMessages.nav.features).closest('a');
-    expect(featuresLink).toHaveAttribute('href', '/#features');
+    expect(featuresLink).toHaveAttribute('href', '/en/#features');
 
     const platformLink = screen.getByText(enMessages.nav.platform).closest('a');
-    expect(platformLink).toHaveAttribute('href', '/#platform');
+    expect(platformLink).toHaveAttribute('href', '/en/#platform');
 
     const takSolutionsLink = screen.getByText(enMessages.nav.takSolutions).closest('a');
-    expect(takSolutionsLink).toHaveAttribute('href', '/solutions/tak');
+    expect(takSolutionsLink).toHaveAttribute('href', '/en/solutions/tak');
 
     const contactLink = screen.getByText(enMessages.nav.contact).closest('a');
-    expect(contactLink).toHaveAttribute('href', '/#contact');
+    expect(contactLink).toHaveAttribute('href', '/en/#contact');
   });
 
   it('should display the logo image', () => {
