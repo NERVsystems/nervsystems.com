@@ -78,16 +78,17 @@ describe('LanguageSwitcher Component', () => {
     expect(screen.getByText('ไทย')).toBeInTheDocument();
     expect(screen.getByText('한국')).toBeInTheDocument();
     expect(screen.getByText('عر')).toBeInTheDocument();
+    expect(screen.getByText('SV')).toBeInTheDocument();
   });
 
-  it('should display all 5 supported languages in dropdown', () => {
+  it('should display all supported languages in dropdown', () => {
     renderWithIntl(<LanguageSwitcher />);
     const button = screen.getByRole('button', { name: /select language/i });
     fireEvent.click(button);
 
     // Check all language options are present
     const links = screen.getAllByRole('link');
-    expect(links).toHaveLength(5); // en, ja, th, ko, ar
+    expect(links).toHaveLength(6); // en, ja, th, ko, ar, sv
   });
 
   it('should highlight current language in dropdown', () => {
@@ -97,7 +98,7 @@ describe('LanguageSwitcher Component', () => {
 
     // Verify all languages appear in dropdown
     const links = screen.getAllByRole('link');
-    expect(links).toHaveLength(5);
+    expect(links).toHaveLength(6);
 
     // Verify current language (EN) appears in dropdown
     const enLinks = screen.getAllByText('EN');
@@ -117,6 +118,7 @@ describe('LanguageSwitcher Component', () => {
     expect(links[2]).toHaveAttribute('href', '/th/');
     expect(links[3]).toHaveAttribute('href', '/ko/');
     expect(links[4]).toHaveAttribute('href', '/ar/');
+    expect(links[5]).toHaveAttribute('href', '/sv/');
   });
 
   it('should close dropdown when clicking outside', async () => {
