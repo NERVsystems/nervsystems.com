@@ -120,7 +120,7 @@
     "label": "InferNode",
     "title": "Säkra agenter är fria agenter.",
     "p1": "I den taktiska kanten är en AI-agent som läcker referenser, exfiltrerar underrättelser eller bryter sig ur sin sandbox inte en bugg—det är en förlust. Konventionella skyddsräcken räcker inte när agenten kör inuti ditt operativsystem.",
-    "p2": "InferNode är vår lättviktiga, distribuerade agentruntime med formellt verifierad namespace-isolering. Varje AI-agent ser endast de resurser du uttryckligen beviljar. Allt annat existerar inte. Det är det som gör autonomi säker att driftsätta.",
+    "p2": "InferNode är vår lättviktiga, distribuerade runtime för AI-agenter, byggd på formellt verifierad namespace-isolering. En agents räckvidd definieras av en liten konfiguration som ryms på en sida—granskningsbar av människor, kontrollerbar av maskiner, och upprätthållen av operativsystemet självt. Det går att bevisa vad agenten kan röra innan den ens körs.",
     "ctaPrimary": "Utforska InferNode →",
     "ctaSecondary": "Läs säkerhetsmodellen →",
     "pillars": {
@@ -132,7 +132,7 @@
       "isolated": {
         "label": "ISOLERAD",
         "title": "Namespace-Native",
-        "description": "Varje agent kör i sitt eget namespace. Ingen ambient auktoritet. Inga delade referenser. Ingen attackyta att härda."
+        "description": "Varje agent kör i sitt eget namespace, definierat av en enkel konfiguration som kan granskas före driftsättning. OS:et upprätthåller gränsen självt—inte policylager, inte goda föresatser."
       },
       "edge": {
         "label": "EDGE-REDO",

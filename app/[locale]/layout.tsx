@@ -77,7 +77,17 @@ export async function generateMetadata({
     "multi-source intelligence fusion",
     "OSINT visualization",
     "research team collaboration",
-    "intelligence gathering platform"
+    "intelligence gathering platform",
+    "InferNode",
+    "secure AI agent runtime",
+    "AI agent isolation",
+    "AI agent security",
+    "verifiable AI safety",
+    "namespace isolation",
+    "formally verified AI",
+    "agent sandbox",
+    "AI guardrails",
+    "agent operating system"
   ],
   authors: [{ name: "NERV Systems" }],
   alternates: {

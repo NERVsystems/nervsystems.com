@@ -42,7 +42,12 @@ export default function StructuredData() {
       "Search and Rescue Technology",
       "Disaster Relief Operations",
       "Crisis Response",
-      "Emergency Management"
+      "Emergency Management",
+      "AI Agent Security",
+      "Verifiable AI Safety",
+      "Namespace Isolation",
+      "Formally Verified Systems",
+      "Secure AI Agent Runtime"
     ],
     "sameAs": [],
     "memberOf": [
@@ -101,6 +106,16 @@ export default function StructuredData() {
           "name": "HADR Operations Support",
           "description": "TAK solutions for humanitarian assistance, disaster relief, emergency response, and search & rescue operations"
         }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "SoftwareApplication",
+          "name": "InferNode",
+          "description": "Lightweight, distributed runtime for AI agents with formally verified namespace isolation. Each agent's reach is defined by an inspectable configuration and enforced by the operating system.",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "Linux, Edge"
+        }
       }
     ]
   };
@@ -151,6 +166,41 @@ export default function StructuredData() {
     ]
   };
 
+  // Software Application Schema for InferNode
+  const infernodeSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": `${baseUrl}/#infernode`,
+    "name": "InferNode",
+    "applicationCategory": "DeveloperApplication",
+    "description": "Lightweight, distributed runtime for AI agents with formally verified namespace isolation. Each agent's reach is defined by an inspectable configuration—reviewable by humans, checkable by machines, and enforced by the operating system itself.",
+    "operatingSystem": "Linux, Edge",
+    "url": "https://infernode.io",
+    "sameAs": [
+      "https://infernode.io",
+      "https://github.com/pdfinn/infernode.io"
+    ],
+    "license": "https://opensource.org/licenses/MIT",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    "provider": {
+      "@id": `${baseUrl}/#organization`
+    },
+    "featureList": [
+      "Formally Verified Namespace Isolation",
+      "TLA+ / SPIN / CBMC Verification",
+      "Inspectable Agent Configuration",
+      "OS-Enforced Boundaries",
+      "Distributed Agent Runtime",
+      "Edge Deployment",
+      "Open Source (MIT Licensed)"
+    ]
+  };
+
   return (
     <>
       <script
@@ -164,6 +214,10 @@ export default function StructuredData() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(infernodeSchema) }}
       />
     </>
   );

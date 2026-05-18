@@ -120,7 +120,7 @@
     "label": "InferNode",
     "title": "Safe agents. Free to operate.",
     "p1": "On the tactical edge, an AI agent that leaks credentials, exfiltrates intelligence, or escapes its sandbox is not a bug—it's a casualty. Conventional guardrails are not enough when the agent runs inside your operating system.",
-    "p2": "InferNode is our lightweight, distributed agent runtime with formally verified namespace isolation. Each AI agent sees only the resources you grant. Everything else does not exist. That is what makes autonomy safe to deploy.",
+    "p2": "InferNode is our lightweight, distributed runtime for AI agents, built on formally verified namespace isolation. An agent's reach is set by a small configuration that fits on one page—reviewable by a human, checkable by a machine, and enforced by the operating system itself. What the agent can touch is provable before it ever runs.",
     "ctaPrimary": "Explore InferNode →",
     "ctaSecondary": "Read the Security Model →",
     "pillars": {
@@ -132,7 +132,7 @@
       "isolated": {
         "label": "ISOLATED",
         "title": "Namespace-Native",
-        "description": "Every agent runs in its own namespace. No ambient authority. No shared credentials. No attack surface to harden."
+        "description": "Each agent runs in its own namespace, defined by a plain configuration auditable before deployment. The OS enforces the boundary—not policy layers, not good intentions."
       },
       "edge": {
         "label": "EDGE-READY",

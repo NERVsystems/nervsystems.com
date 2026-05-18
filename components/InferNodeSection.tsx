@@ -58,9 +58,9 @@ export default function InferNodeSection() {
                 <div className="font-mono text-tactical-accent text-sm mb-2">
                   {t(`pillars.${key}.label`)}
                 </div>
-                <div className="text-2xl font-bold text-white mb-2">
+                <h3 className="text-2xl font-bold text-white mb-2">
                   {t(`pillars.${key}.title`)}
-                </div>
+                </h3>
                 <div className="text-tactical-textDim text-sm">
                   {t(`pillars.${key}.description`)}
                 </div>
