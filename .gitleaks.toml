@@ -15,8 +15,10 @@ regexes = [
   '''formId.*[a-f0-9-]{36}''',
 ]
 
-# Ignore example/template files
+# Ignore example/template files and historical diagnostic docs that only
+# contained NEXT_PUBLIC_* HubSpot form IDs (deliberately client-bundled, not secrets)
 paths = [
   '''\.env\.local\.example''',
   '''ENV-SETUP\.md''',
+  '''FORM_DIAGNOSTIC\.md''',
 ]
