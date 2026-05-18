@@ -116,6 +116,31 @@
       "comingSoon": "[Coming Soon]"
     }
   },
+  "infernode": {
+    "label": "InferNode",
+    "title": "Safe agents. Free to operate.",
+    "p1": "On the tactical edge, an AI agent that leaks credentials, exfiltrates intelligence, or escapes its sandbox is not a bug—it's a casualty. Conventional guardrails are not enough when the agent runs inside your operating system.",
+    "p2": "InferNode is our lightweight, distributed agent runtime with formally verified namespace isolation. Each AI agent sees only the resources you grant. Everything else does not exist. That is what makes autonomy safe to deploy.",
+    "ctaPrimary": "Explore InferNode →",
+    "ctaSecondary": "Read the Security Model →",
+    "pillars": {
+      "proven": {
+        "label": "VERIFIED",
+        "title": "TLA+ / SPIN / CBMC",
+        "description": "Isolation model proven across three independent formal-methods tools. Verification runs in CI on every push."
+      },
+      "isolated": {
+        "label": "ISOLATED",
+        "title": "Namespace-Native",
+        "description": "Every agent runs in its own namespace. No ambient authority. No shared credentials. No attack surface to harden."
+      },
+      "edge": {
+        "label": "EDGE-READY",
+        "title": "15 MB · MIT",
+        "description": "Base runtime fits the same hardware NERVA already targets. Open source, deployable from disconnected edge to cloud."
+      }
+    }
+  },
   "features": {
     "title": "Complete Platform",
     "subtitle": "MOSA-compliant software and hardware for tactical edge deployment",

@@ -116,6 +116,31 @@
       "comingSoon": "[Kommer snart]"
     }
   },
+  "infernode": {
+    "label": "InferNode",
+    "title": "Säkra agenter är fria agenter.",
+    "p1": "I den taktiska kanten är en AI-agent som läcker referenser, exfiltrerar underrättelser eller bryter sig ur sin sandbox inte en bugg—det är en förlust. Konventionella skyddsräcken räcker inte när agenten kör inuti ditt operativsystem.",
+    "p2": "InferNode är vår lättviktiga, distribuerade agentruntime med formellt verifierad namespace-isolering. Varje AI-agent ser endast de resurser du uttryckligen beviljar. Allt annat existerar inte. Det är det som gör autonomi säker att driftsätta.",
+    "ctaPrimary": "Utforska InferNode →",
+    "ctaSecondary": "Läs säkerhetsmodellen →",
+    "pillars": {
+      "proven": {
+        "label": "VERIFIERAD",
+        "title": "TLA+ / SPIN / CBMC",
+        "description": "Isoleringsmodellen är bevisad med tre oberoende formella verktyg. Verifiering körs i CI vid varje push."
+      },
+      "isolated": {
+        "label": "ISOLERAD",
+        "title": "Namespace-Native",
+        "description": "Varje agent kör i sitt eget namespace. Ingen ambient auktoritet. Inga delade referenser. Ingen attackyta att härda."
+      },
+      "edge": {
+        "label": "EDGE-REDO",
+        "title": "15 MB · MIT",
+        "description": "Bas-runtime passar samma hårdvara som NERVA siktar på. Öppen källkod, driftsättbar från frånkopplad edge till moln."
+      }
+    }
+  },
   "features": {
     "title": "Komplett plattform",
     "subtitle": "MOSA-kompatibel programvara och hårdvara för taktisk lokal driftsättning",
