@@ -406,7 +406,7 @@
   },
   "partners": {
     "title": "Trusted by Leading Organizations",
-    "description": "NERV Systems is backed by NVIDIA Inception, supported by Autodesk Foundation, incubated at National University of Singapore, and affiliated with King's College London War Studies",
+    "description": "NERV Systems is backed by NVIDIA Inception, incubated at National University of Singapore, affiliated with King's College London War Studies, and partners with the European Defense Tech Hub and the Singapore Defence Tech Hackathon",
     "items": {
       "nvidia": {
         "name": "NVIDIA Inception",
@@ -420,9 +420,13 @@
         "name": "King's College London",
         "description": "Affiliated with War Studies Department"
       },
-      "autodesk": {
-        "name": "Autodesk Foundation",
-        "description": "Supported by Autodesk Foundation"
+      "edth": {
+        "name": "European Defense Tech Hub",
+        "description": "Partner in the European Defense Tech Hub network"
+      },
+      "hackathon": {
+        "name": "Singapore Defence Tech Hackathon",
+        "description": "Co-organising partner, SDTH 2026"
       }
     }
   },

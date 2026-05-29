@@ -406,7 +406,7 @@
   },
   "partners": {
     "title": "Förtroende från ledande organisationer",
-    "description": "NERV Systems backas av NVIDIA Inception, stöds av Autodesk Foundation, är inkuberat vid National University of Singapore och är affilierat med King's College London War Studies",
+    "description": "NERV Systems backas av NVIDIA Inception, är inkuberat vid National University of Singapore, är affilierat med King's College London War Studies och samarbetar med European Defense Tech Hub och Singapore Defence Tech Hackathon",
     "items": {
       "nvidia": {
         "name": "NVIDIA Inception",
@@ -420,9 +420,13 @@
         "name": "King's College London",
         "description": "Affilierad med institutionen för krigsstudier"
       },
-      "autodesk": {
-        "name": "Autodesk Foundation",
-        "description": "Stöttad av Autodesk Foundation"
+      "edth": {
+        "name": "European Defense Tech Hub",
+        "description": "Partner i nätverket European Defense Tech Hub"
+      },
+      "hackathon": {
+        "name": "Singapore Defence Tech Hackathon",
+        "description": "Medarrangör, SDTH 2026"
       }
     }
   },
