@@ -406,7 +406,7 @@
   },
   "partners": {
     "title": "主要組織から信頼されています",
-    "description": "NERV SystemsはNVIDIA Inceptionの支援を受け、シンガポール国立大学でインキュベートされ、キングス・カレッジ・ロンドン戦争研究所と提携し、European Defense Tech HubおよびSingapore Defence Tech Hackathonのパートナーです",
+    "description": "NERV SystemsはNVIDIA Inceptionの支援を受け、シンガポール国立大学でインキュベートされ、キングス・カレッジ・ロンドン起業家精神研究所のアクセラレーターに選出され、European Defense Tech Hubと提携し、Singapore Defence Tech Hackathonに参加しています",
     "items": {
       "nvidia": {
         "name": "NVIDIA Inception",
@@ -418,15 +418,15 @@
       },
       "kcl": {
         "name": "キングス・カレッジ・ロンドン",
-        "description": "戦争研究学部と提携"
+        "description": "キングス起業家精神研究所のアクセラレーターに選出"
       },
       "edth": {
         "name": "European Defense Tech Hub",
-        "description": "European Defense Tech Hub ネットワークのパートナー"
+        "description": "European Defense Tech Hubと提携"
       },
       "hackathon": {
         "name": "Singapore Defence Tech Hackathon",
-        "description": "共同主催パートナー、SDTH 2026"
+        "description": "SDTH 2026 参加"
       }
     }
   },

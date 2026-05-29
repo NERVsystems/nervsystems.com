@@ -406,7 +406,7 @@
   },
   "partners": {
     "title": "موثوق به من قبل المنظمات الرائدة",
-    "description": "NERV Systems مدعومة من NVIDIA Inception، محتضنة في الجامعة الوطنية في سنغافورة، منتسبة إلى قسم دراسات الحرب في King's College London، وشريكة مع European Defense Tech Hub وSingapore Defence Tech Hackathon",
+    "description": "NERV Systems مدعومة من NVIDIA Inception، محتضنة في الجامعة الوطنية في سنغافورة، مختارة لمسرّعة معهد ريادة الأعمال في King's College London، ومنتسبة إلى European Defense Tech Hub، ومشاركة في Singapore Defence Tech Hackathon",
     "items": {
       "nvidia": {
         "name": "NVIDIA Inception",
@@ -418,15 +418,15 @@
       },
       "kcl": {
         "name": "King's College London",
-        "description": "منتسبة إلى قسم دراسات الحرب"
+        "description": "مختارة لمسرّعة معهد ريادة الأعمال في King's"
       },
       "edth": {
         "name": "European Defense Tech Hub",
-        "description": "شريكة في شبكة European Defense Tech Hub"
+        "description": "منتسبة إلى European Defense Tech Hub"
       },
       "hackathon": {
         "name": "Singapore Defence Tech Hackathon",
-        "description": "شريكة في التنظيم، SDTH 2026"
+        "description": "مشاركة في SDTH 2026"
       }
     }
   },

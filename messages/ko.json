@@ -406,7 +406,7 @@
   },
   "partners": {
     "title": "주요 조직의 신뢰",
-    "description": "NERV Systems는 NVIDIA Inception의 지원을 받고, 싱가포르 국립대학교에서 인큐베이션되며, King's College London 전쟁 연구와 제휴하고, European Defense Tech Hub 및 Singapore Defence Tech Hackathon과 파트너십을 맺고 있습니다",
+    "description": "NERV Systems는 NVIDIA Inception의 지원을 받고, 싱가포르 국립대학교에서 인큐베이션되며, King's College London 창업가정신연구소 액셀러레이터에 선정되었고, European Defense Tech Hub와 제휴하며, Singapore Defence Tech Hackathon에 참가하고 있습니다",
     "items": {
       "nvidia": {
         "name": "NVIDIA Inception",
@@ -418,15 +418,15 @@
       },
       "kcl": {
         "name": "King's College London",
-        "description": "전쟁 연구 부서와 제휴"
+        "description": "King's 창업가정신연구소 액셀러레이터 선정"
       },
       "edth": {
         "name": "European Defense Tech Hub",
-        "description": "European Defense Tech Hub 네트워크 파트너"
+        "description": "European Defense Tech Hub와 제휴"
       },
       "hackathon": {
         "name": "Singapore Defence Tech Hackathon",
-        "description": "공동 주최 파트너, SDTH 2026"
+        "description": "SDTH 2026 참가"
       }
     }
   },
