@@ -39,12 +39,12 @@ export default function TAKIntegrationSection() {
 
           {/* Right: Use Cases */}
           <div className="space-y-6">
-            {/* Military Operations */}
+            {/* Public Safety & Civil Defence */}
             <div className="tactical-border bg-white/5 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="/images/tak/military-helicopter.jpg"
-                  alt="Military Tactical Operations"
+                  src="/images/tak/emergency-flood.jpg"
+                  alt="Public Safety and Civil Defence Operations"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-tactical-bg to-transparent"></div>
@@ -89,7 +89,7 @@ export default function TAKIntegrationSection() {
             <div className="tactical-border bg-white/5 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="/images/tak/emergency-flood.jpg"
+                  src="/img/photo-1521661488642-d86e85a90de2.jpg"
                   alt="Emergency Management and Search & Rescue"
                   className="w-full h-full object-cover"
                 />
