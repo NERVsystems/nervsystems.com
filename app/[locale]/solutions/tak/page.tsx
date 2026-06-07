@@ -10,7 +10,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: "TAK Solutions & ATAK Hosting | NERV Systems",
-  description: "Complete TAK/ATAK deployment, managed hosting, consulting and training services across North America and Asia Pacific. AI-enhanced TAK server hosting from $495/month. Expert TAK deployment consulting, system administration, and operator training for military, law enforcement, emergency response, and commercial operations.",
+  description: "Complete TAK/ATAK deployment, managed hosting, consulting and training services across North America and Asia Pacific. AI-enhanced TAK server hosting from $495/month. Expert TAK deployment consulting, system administration, and operator training for public safety, law enforcement, search & rescue, and emergency response operations.",
   keywords: [
     "TAK solutions",
     "ATAK platform",

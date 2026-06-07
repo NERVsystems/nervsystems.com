@@ -21,7 +21,7 @@ export default function StructuredData() {
       "url": `${baseUrl}/img/nerv-logo.png`,
       "caption": "NERV Systems Logo"
     },
-    "description": "Advanced TAK/ATAK solutions with AI mission planning for defense, HADR, and emergency response. NERVA AI assistant for disaster relief coordination, search & rescue, and humanitarian operations. Managed TAK hosting, deployment consulting, and training for Asia Pacific.",
+    "description": "AI-enhanced TAK/ATAK solutions with AI mission planning for public safety, civil defence, search & rescue, and emergency response. NERVA AI assistant for disaster relief coordination, search & rescue, and humanitarian operations. Managed TAK hosting, deployment consulting, and training for Asia Pacific.",
     "email": "contact@nervsystems.com",
     "areaServed": {
       "@type": "Place",
@@ -34,7 +34,8 @@ export default function StructuredData() {
       "Tactical AI",
       "Edge Computing",
       "Drone Integration",
-      "Defense Technology",
+      "Public Safety Technology",
+      "Civil Defence Technology",
       "Team Awareness Kit",
       "HADR Operations",
       "Humanitarian Assistance and Disaster Relief",
@@ -104,7 +105,7 @@ export default function StructuredData() {
         "itemOffered": {
           "@type": "Service",
           "name": "HADR Operations Support",
-          "description": "TAK solutions for humanitarian assistance, disaster relief, emergency response, and search & rescue operations"
+          "description": "TAK solutions for public safety, humanitarian assistance, disaster relief, emergency response, and search & rescue operations"
         }
       },
       {
