@@ -52,6 +52,9 @@ export default function TacticalNav() {
             <Link href={`/${locale}/solutions/tak`} className="text-sm text-tactical-textDim hover:text-white transition-colors">
               {t('takSolutions')}
             </Link>
+            <Link href={`/${locale}/#sdg`} className="text-sm text-tactical-textDim hover:text-white transition-colors">
+              {t('impact')}
+            </Link>
             <Link href={`/${locale}/#contact`} className="text-sm text-tactical-textDim hover:text-white transition-colors">
               {t('contact')}
             </Link>
