@@ -3,7 +3,7 @@
     "features": "Funktioner",
     "platform": "Plattform",
     "takSolutions": "TAK-lösningar",
-    "impact": "Påverkan",
+    "about": "Om oss",
     "contact": "Kontakt",
     "requestDemo": "Boka ett möte"
   },
@@ -655,7 +655,7 @@
     }
   },
   "takSolutions": {
-    "impact": "Påverkan",
+  "about": "Om oss",
     "hero": {
       "eyebrow": "Globala TAK-lösningar",
       "title": "Kompletta TAK/ATAK",
@@ -1356,5 +1356,11 @@
       }
     },
     "footnote": "NERV Systems är ett oberoende företag. Hänvisningar till FN:s globala mål beskriver hur vår teknik stödjer dessa mål och innebär inte något godkännande från FN."
+  },
+  "about": {
+    "eyebrow": "Om NERV Systems",
+    "title": "Avancerad AI för uppdrag som betyder något",
+    "lead": "NERV Systems är ett försvarsteknikföretag som tillför AI-förstärkning till TAK och ATAK. Vi bygger NERVA, en AI-assistent för uppdragsplanering och autonoma operationer, och InferNode, en formellt verifierad runtime som håller AI-agenter bevisbart inom sina gränser.",
+    "body": "Vår teknik är byggd för de tuffaste operativa miljöerna—och samma förmågor som ger taktiska team ett övertag hjälper insatspersonal att rädda liv vid katastrofhjälp, sök och räddning och humanitära kriser. Det dubbla syftet är varför vi mäter vårt arbete inte bara i operativt övertag, utan i global påverkan."
   }
 }
