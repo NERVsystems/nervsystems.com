@@ -7,10 +7,34 @@ import TAKCompetitiveSection from '@/components/tak/TAKCompetitiveSection';
 import TAKResourcesSection from '@/components/tak/TAKResourcesSection';
 import TAKFAQSection from '@/components/tak/TAKFAQSection';
 import Footer from '@/components/Footer';
+import { locales, defaultLocale } from '@/i18n/config';
 
-export const metadata: Metadata = {
+const baseUrl = 'https://www.nervsystems.com';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  const path = '/solutions/tak';
+  const canonicalUrl = locale === defaultLocale
+    ? `${baseUrl}${path}`
+    : `${baseUrl}/${locale}${path}`;
+
+  const languages: Record<string, string> = {};
+  locales.forEach((loc) => {
+    languages[loc] = loc === defaultLocale ? `${baseUrl}${path}` : `${baseUrl}/${loc}${path}`;
+  });
+
+  return {
   title: "TAK Solutions & ATAK Hosting | NERV Systems",
   description: "Complete TAK/ATAK deployment, managed hosting, consulting and training services across North America and Asia Pacific. AI-enhanced TAK server hosting from $495/month. Expert TAK deployment consulting, system administration, and operator training for military, law enforcement, emergency response, and commercial operations.",
+  alternates: {
+    canonical: canonicalUrl,
+    languages,
+  },
   keywords: [
     "TAK solutions",
     "ATAK platform",
@@ -52,11 +76,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "TAK Solutions & ATAK Hosting | NERV Systems",
     description: "Complete TAK/ATAK deployment, managed hosting, consulting and training across North America and Asia Pacific. AI-enhanced solutions from $495/month.",
-    url: "https://www.nervsystems.com/solutions/tak",
+    url: canonicalUrl,
     siteName: "NERV Systems",
     type: "website",
   },
-};
+  };
+}
 
 export default function TAKSolutionsPage() {
   return (

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import TacticalNav from '@/components/TacticalNav';
 import AboutIntroSection from '@/components/about/AboutIntroSection';
+import AboutStructuredData from '@/components/about/AboutStructuredData';
 import SDGSection from '@/components/SDGSection';
 import Footer from '@/components/Footer';
 import { locales, defaultLocale } from '@/i18n/config';
@@ -53,9 +54,16 @@ export async function generateMetadata({
   };
 }
 
-export default function AboutPage() {
+export default async function AboutPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+
   return (
     <main className="min-h-screen bg-tactical-bg">
+      <AboutStructuredData locale={locale} />
       <TacticalNav />
       <AboutIntroSection />
       <SDGSection />
