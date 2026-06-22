@@ -3,7 +3,6 @@
     "features": "ฟีเจอร์",
     "platform": "แพลตฟอร์ม",
     "takSolutions": "โซลูชัน TAK",
-    "impact": "Impact",
     "contact": "ติดต่อ",
     "requestDemo": "นัดหมายปรึกษา"
   },
@@ -431,44 +430,6 @@
       }
     }
   },
-  "sdg": {
-    "eyebrow": "Global Impact",
-    "title": "Aligned with the UN Sustainable Development Goals",
-    "subtitle": "NERV builds technology for life-saving missions. Our work supports the United Nations 2030 Agenda for Sustainable Development—helping communities respond faster, recover sooner, and stay safe.",
-    "goals": {
-      "health": {
-        "number": "03",
-        "title": "Good Health & Well-being",
-        "description": "Faster medical evacuation coordination and real-time response cut the time between incident and care—improving survival in mass-casualty, wilderness, and disaster scenarios."
-      },
-      "infrastructure": {
-        "number": "09",
-        "title": "Industry, Innovation & Infrastructure",
-        "description": "Open-architecture, edge-capable systems strengthen critical infrastructure and keep coordination running even when networks and power fail."
-      },
-      "cities": {
-        "number": "11",
-        "title": "Sustainable Cities & Communities",
-        "description": "Multi-agency situational awareness and evacuation planning help reduce the deaths, injuries, and losses caused by disasters, in line with SDG Target 11.5 on resilient communities."
-      },
-      "climate": {
-        "number": "13",
-        "title": "Climate Action",
-        "description": "AI-assisted wildfire, flood, and extreme-weather response strengthens resilience and adaptive capacity to climate-related hazards, in line with SDG Target 13.1."
-      },
-      "institutions": {
-        "number": "16",
-        "title": "Peace, Justice & Strong Institutions",
-        "description": "Verifiable, transparent AI—through InferNode's formally verified isolation—supports accountable, trustworthy public institutions and lawful operations."
-      },
-      "partnerships": {
-        "number": "17",
-        "title": "Partnerships for the Goals",
-        "description": "TAK-native interoperability connects responders, agencies, and humanitarian partners around a single operational picture for coordinated action."
-      }
-    },
-    "footnote": "NERV Systems is an independent company. References to the UN Sustainable Development Goals describe how our technology supports these objectives and do not imply endorsement by the United Nations."
-  },
   "contact": {
     "label": "ติดต่อเรา",
     "title": "พร้อมปรับใช้ Tactical AI แล้วหรือยัง?",
@@ -631,10 +592,7 @@
     },
     "options": {
       "organisationType": {
-        "publicSafety": "Public Safety",
-        "civilDefence": "Civil Defence",
-        "searchRescue": "Search & Rescue",
-        "fireRescue": "Fire & Rescue Service",
+        "military": "ทหาร/กลาโหม",
         "lawEnforcement": "การบังคับใช้กฎหมาย",
         "emergency": "บริการฉุกเฉิน",
         "government": "หน่วยงานรัฐบาล",
@@ -911,12 +869,7 @@
         "intelligence": {
           "title": "TAK สำหรับข่าวกรองและ OSINT",
           "description": "การรวมข่าวกรองภูมิสารสนเทศสำหรับนักวิเคราะห์ข่าวกรองจากแหล่งเปิด (OSINT) นักข่าวสืบสวน และทีมวิจัย เชื่อมโยงข้อมูลจากหลายแหล่ง ติดตามหน่วยงานที่สนใจ และแสดงภาพเครือข่ายที่ซับซ้อนด้วยการทำแผนที่ร่วมกันแบบเรียลไทม์และการจดจำรูปแบบด้วย AI",
-          "tags": [
-            "OSINT",
-            "GEOINT",
-            "การวิเคราะห์",
-            "อินเทล"
-          ]
+          "tags": ["OSINT", "GEOINT", "การวิเคราะห์", "อินเทล"]
         }
       }
     },

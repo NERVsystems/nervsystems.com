@@ -25,7 +25,21 @@ export default function PartnersSection() {
       name: t('items.kcl.name'),
       description: t('items.kcl.description'),
       logo: "/img/brands/partners/king's college london (kcl) war studies.jpg",
-      link: "https://www.kcl.ac.uk/",
+      link: "https://www.kcl.ac.uk/warstudies",
+      placeholder: false
+    },
+    {
+      name: t('items.edth.name'),
+      description: t('items.edth.description'),
+      logo: "/img/brands/partners/edth-white.png",
+      link: "https://eurodefense.tech/",
+      placeholder: false
+    },
+    {
+      name: t('items.hackathon.name'),
+      description: t('items.hackathon.description'),
+      logo: "/img/brands/partners/singapore-defence-tech-hackathon.png",
+      link: "https://enterprise.nus.edu.sg/event/sdth2026/",
       placeholder: false
     }
   ];

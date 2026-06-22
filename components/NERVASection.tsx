@@ -41,14 +41,13 @@ export default function NERVASection() {
   const capabilities = ['uas', 'medevac', 'threat', 'sar', 'alert', 'airspace'];
 
   // Video files available for each capability
-  // Note: the former "threat" (hostile-unit) demo has been removed for the
-  // public-safety build; that card now shows the "coming soon" placeholder.
   const videoFiles: Record<string, string> = {
     airspace: 'nerva-airspace',
-    uas: 'nerva-sar', // Drone demo (SAR scenario)
+    uas: 'nerva-sar', // UAS demo (SAR scenario)
+    threat: 'nerva-threat', // Hostile Unit Identification
     alert: 'nerva-alert', // Geofence construction
     sar: 'nerva-sar-demo', // Search and Rescue
-    medevac: 'nerva-medevac', // Medical evacuation
+    medevac: 'nerva-medevac', // CASEVAC
   };
 
   return (
