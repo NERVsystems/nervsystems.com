@@ -14,6 +14,13 @@ export default function PartnersSection() {
       placeholder: false
     },
     {
+      name: t('items.autodesk.name'),
+      description: t('items.autodesk.description'),
+      logo: "/img/brands/partners/autodesk foundation.jpg",
+      link: "https://www.autodesk.com/company/autodesk-foundation",
+      placeholder: false
+    },
+    {
       name: t('items.nus.name'),
       description: t('items.nus.description'),
       logo: "/img/brands/partners/B71_BrandSig_RGB.png",

@@ -407,11 +407,15 @@
   },
   "partners": {
     "title": "主要組織から信頼されています",
-    "description": "NERV SystemsはNVIDIA Inceptionの支援を受け、シンガポール国立大学でインキュベートされ、キングス・カレッジ・ロンドン起業家精神研究所のアクセラレーターに選出され、European Defense Tech Hubと提携し、Singapore Defence Tech Hackathonに参加しています",
+    "description": "NERV SystemsはNVIDIA Inceptionの支援を受け、シンガポール国立大学でインキュベートされ、キングス・カレッジ・ロンドン起業家精神研究所のアクセラレーターに選出され、European Defense Tech Hubと提携し、Singapore Defence Tech Hackathonに参加しています、Autodesk Foundation の支援を受けています",
     "items": {
       "nvidia": {
         "name": "NVIDIA Inception",
         "description": "AIスタートアップ向けNVIDIA Inceptionプログラムのメンバー"
+      },
+      "autodesk": {
+        "name": "Autodesk Foundation",
+        "description": "Autodesk Foundation の支援を受けています"
       },
       "nus": {
         "name": "シンガポール国立大学",

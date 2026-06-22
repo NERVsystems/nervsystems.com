@@ -407,11 +407,15 @@
   },
   "partners": {
     "title": "ได้รับความไว้วางใจจากองค์กรชั้นนำ",
-    "description": "NERV Systems ได้รับการสนับสนุนจาก NVIDIA Inception บ่มเพาะที่มหาวิทยาลัยแห่งชาติสิงคโปร์ ได้รับคัดเลือกเข้าโครงการเร่งรัดของสถาบันผู้ประกอบการ King's College London มีความร่วมมือกับ European Defense Tech Hub และเข้าร่วม Singapore Defence Tech Hackathon",
+    "description": "NERV Systems ได้รับการสนับสนุนจาก NVIDIA Inception บ่มเพาะที่มหาวิทยาลัยแห่งชาติสิงคโปร์ ได้รับคัดเลือกเข้าโครงการเร่งรัดของสถาบันผู้ประกอบการ King's College London มีความร่วมมือกับ European Defense Tech Hub และเข้าร่วม Singapore Defence Tech Hackathon และได้รับการสนับสนุนจาก Autodesk Foundation",
     "items": {
       "nvidia": {
         "name": "NVIDIA Inception",
         "description": "สมาชิกของโปรแกรม NVIDIA Inception สำหรับสตาร์ทอัพ AI"
+      },
+      "autodesk": {
+        "name": "Autodesk Foundation",
+        "description": "ได้รับการสนับสนุนจาก Autodesk Foundation"
       },
       "nus": {
         "name": "มหาวิทยาลัยแห่งชาติสิงคโปร์",

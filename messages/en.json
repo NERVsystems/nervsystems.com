@@ -407,11 +407,15 @@
   },
   "partners": {
     "title": "Trusted by Leading Organizations",
-    "description": "NERV Systems is backed by NVIDIA Inception, incubated at National University of Singapore, selected for the King's College London Entrepreneurship Institute accelerator, affiliated with the European Defense Tech Hub, and a participant in the Singapore Defence Tech Hackathon",
+    "description": "NERV Systems is backed by NVIDIA Inception, supported by the Autodesk Foundation, incubated at National University of Singapore, selected for the King's College London Entrepreneurship Institute accelerator, affiliated with the European Defense Tech Hub, and a participant in the Singapore Defence Tech Hackathon",
     "items": {
       "nvidia": {
         "name": "NVIDIA Inception",
         "description": "Member of NVIDIA Inception Program for AI startups"
+      },
+      "autodesk": {
+        "name": "Autodesk Foundation",
+        "description": "Supported by the Autodesk Foundation"
       },
       "nus": {
         "name": "National University of Singapore",

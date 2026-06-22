@@ -407,11 +407,15 @@
   },
   "partners": {
     "title": "주요 조직의 신뢰",
-    "description": "NERV Systems는 NVIDIA Inception의 지원을 받고, 싱가포르 국립대학교에서 인큐베이션되며, King's College London 창업가정신연구소 액셀러레이터에 선정되었고, European Defense Tech Hub와 제휴하며, Singapore Defence Tech Hackathon에 참가하고 있습니다",
+    "description": "NERV Systems는 NVIDIA Inception의 지원을 받고, 싱가포르 국립대학교에서 인큐베이션되며, King's College London 창업가정신연구소 액셀러레이터에 선정되었고, European Defense Tech Hub와 제휴하며, Singapore Defence Tech Hackathon에 참가하고 있습니다, Autodesk Foundation의 지원을 받고 있습니다",
     "items": {
       "nvidia": {
         "name": "NVIDIA Inception",
         "description": "AI 스타트업을 위한 NVIDIA Inception 프로그램 회원"
+      },
+      "autodesk": {
+        "name": "Autodesk Foundation",
+        "description": "Autodesk Foundation의 지원을 받음"
       },
       "nus": {
         "name": "싱가포르 국립대학교",
