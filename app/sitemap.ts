@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Define all routes
   const routes = [
     '',  // home
+    '/about',
     '/privacy',
     '/terms',
     '/solutions/tak',
