@@ -464,6 +464,10 @@
         "label": "สำนักงานสิงคโปร์",
         "value": "71 Ayer Rajah Crescent #01-20, 159773"
       },
+      "addressUK": {
+        "label": "สำนักงานลอนดอน",
+        "value": "BH (N) 1.01 Bush House, 30 Aldwych, London WC2B 4BG, United Kingdom"
+      },
       "region": {
         "label": "ภูมิภาค",
         "value": "เอเชียแปซิฟิก"
@@ -497,6 +501,7 @@
       "phone": "โทรศัพท์: (703) 977-7097",
       "address": "US: 8 The Green Suite B, Dover, DE 19901",
       "addressSG": "SG: 71 Ayer Rajah Crescent #01-20, 159773",
+      "addressUK": "UK: BH (N) 1.01 Bush House, 30 Aldwych, London WC2B 4BG",
       "region": "เอเชียแปซิฟิก",
       "affiliations": {
         "nvidia": "สมาชิก NVIDIA Inception",
