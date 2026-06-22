@@ -79,7 +79,7 @@ export default function StructuredData() {
     "funder": {
       "@type": "Organization",
       "name": "Autodesk Foundation",
-      "url": "https://www.autodesk.com/company/autodesk-foundation"
+      "url": "https://www.autodesk.org/"
     },
     "makesOffer": [
       {
