@@ -358,11 +358,8 @@ Submitted: ${new Date().toISOString()}
                   className="w-full bg-black/30 border border-white/20 text-white px-4 py-3 focus:border-tactical-accent focus:outline-none transition-colors"
                 >
                   <option value="">{t('fields.organisationType.placeholder')}</option>
-                  <option value="Public Safety">{t('options.organisationType.publicSafety')}</option>
-                  <option value="Civil Defence">{t('options.organisationType.civilDefence')}</option>
+                  <option value="Military/Defense">{t('options.organisationType.military')}</option>
                   <option value="Law Enforcement">{t('options.organisationType.lawEnforcement')}</option>
-                  <option value="Search & Rescue">{t('options.organisationType.searchRescue')}</option>
-                  <option value="Fire & Rescue Service">{t('options.organisationType.fireRescue')}</option>
                   <option value="Emergency Services">{t('options.organisationType.emergency')}</option>
                   <option value="Government">{t('options.organisationType.government')}</option>
                   <option value="Private Security">{t('options.organisationType.privateSecurity')}</option>

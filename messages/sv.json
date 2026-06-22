@@ -3,7 +3,7 @@
     "features": "Funktioner",
     "platform": "Plattform",
     "takSolutions": "TAK-lösningar",
-    "impact": "Impact",
+    "impact": "Påverkan",
     "contact": "Kontakt",
     "requestDemo": "Boka ett möte"
   },
@@ -407,11 +407,15 @@
   },
   "partners": {
     "title": "Förtroende från ledande organisationer",
-    "description": "NERV Systems backas av NVIDIA Inception, är inkuberat vid National University of Singapore, är antaget till King's College London Entrepreneurship Institute-acceleratorn, är affilierat med European Defense Tech Hub och deltar i Singapore Defence Tech Hackathon",
+    "description": "NERV Systems backas av NVIDIA Inception, stöds av Autodesk Foundation, är inkuberat vid National University of Singapore, är antaget till King's College London Entrepreneurship Institute-acceleratorn, är affilierat med European Defense Tech Hub och deltar i Singapore Defence Tech Hackathon",
     "items": {
       "nvidia": {
         "name": "NVIDIA Inception",
         "description": "Medlem i NVIDIA Inception-programmet för AI-startups"
+      },
+      "autodesk": {
+        "name": "Autodesk Foundation",
+        "description": "Stöds av Autodesk Foundation"
       },
       "nus": {
         "name": "National University of Singapore",
@@ -430,44 +434,6 @@
         "description": "Deltagare i SDTH 2026"
       }
     }
-  },
-  "sdg": {
-    "eyebrow": "Global Impact",
-    "title": "Aligned with the UN Sustainable Development Goals",
-    "subtitle": "NERV builds technology for life-saving missions. Our work supports the United Nations 2030 Agenda for Sustainable Development—helping communities respond faster, recover sooner, and stay safe.",
-    "goals": {
-      "health": {
-        "number": "03",
-        "title": "Good Health & Well-being",
-        "description": "Faster medical evacuation coordination and real-time response cut the time between incident and care—improving survival in mass-casualty, wilderness, and disaster scenarios."
-      },
-      "infrastructure": {
-        "number": "09",
-        "title": "Industry, Innovation & Infrastructure",
-        "description": "Open-architecture, edge-capable systems strengthen critical infrastructure and keep coordination running even when networks and power fail."
-      },
-      "cities": {
-        "number": "11",
-        "title": "Sustainable Cities & Communities",
-        "description": "Multi-agency situational awareness and evacuation planning help reduce the deaths, injuries, and losses caused by disasters, in line with SDG Target 11.5 on resilient communities."
-      },
-      "climate": {
-        "number": "13",
-        "title": "Climate Action",
-        "description": "AI-assisted wildfire, flood, and extreme-weather response strengthens resilience and adaptive capacity to climate-related hazards, in line with SDG Target 13.1."
-      },
-      "institutions": {
-        "number": "16",
-        "title": "Peace, Justice & Strong Institutions",
-        "description": "Verifiable, transparent AI—through InferNode's formally verified isolation—supports accountable, trustworthy public institutions and lawful operations."
-      },
-      "partnerships": {
-        "number": "17",
-        "title": "Partnerships for the Goals",
-        "description": "TAK-native interoperability connects responders, agencies, and humanitarian partners around a single operational picture for coordinated action."
-      }
-    },
-    "footnote": "NERV Systems is an independent company. References to the UN Sustainable Development Goals describe how our technology supports these objectives and do not imply endorsement by the United Nations."
   },
   "contact": {
     "label": "Kontakta oss",
@@ -631,10 +597,7 @@
     },
     "options": {
       "organisationType": {
-        "publicSafety": "Public Safety",
-        "civilDefence": "Civil Defence",
-        "searchRescue": "Search & Rescue",
-        "fireRescue": "Fire & Rescue Service",
+        "military": "Militär/försvar",
         "lawEnforcement": "Polisiär myndighet",
         "emergency": "Räddningstjänst",
         "government": "Myndighet",
@@ -692,6 +655,7 @@
     }
   },
   "takSolutions": {
+  "impact": "Påverkan",
     "hero": {
       "eyebrow": "Globala TAK-lösningar",
       "title": "Kompletta TAK/ATAK",
@@ -1339,5 +1303,37 @@
       "email": "E-post: contact@nervsystems.com"
     },
     "backToHome": "← Tillbaka till startsidan"
+  },
+  "sdg": {
+    "eyebrow": "Global påverkan",
+    "title": "I linje med FN:s globala mål för hållbar utveckling",
+    "subtitle": "NERV bygger teknik för livräddande uppdrag. Vårt arbete stödjer FN:s Agenda 2030 för hållbar utveckling—och hjälper samhällen att agera snabbare, återhämta sig tidigare och hålla sig trygga.",
+    "goals": {
+      "health": {
+        "title": "God hälsa och välbefinnande",
+        "description": "Snabbare samordning av medicinsk evakuering och realtidsrespons kortar tiden mellan händelse och vård—och förbättrar överlevnaden vid masskadehändelser, i vildmark och vid katastrofer."
+      },
+      "infrastructure": {
+        "title": "Hållbar industri, innovationer och infrastruktur",
+        "description": "System med öppen arkitektur och edge-kapacitet stärker kritisk infrastruktur och håller samordningen igång även när nätverk och elförsörjning slås ut."
+      },
+      "cities": {
+        "title": "Hållbara städer och samhällen",
+        "description": "Lägesbild över flera myndigheter och evakueringsplanering bidrar till att minska dödsfall, skador och förluster orsakade av katastrofer, i linje med delmål 11.5 om motståndskraftiga samhällen."
+      },
+      "climate": {
+        "title": "Bekämpa klimatförändringarna",
+        "description": "AI-stödd insats vid skogsbränder, översvämningar och extremväder stärker motståndskraften och anpassningsförmågan till klimatrelaterade risker, i linje med delmål 13.1."
+      },
+      "institutions": {
+        "title": "Fredliga och inkluderande samhällen",
+        "description": "Verifierbar och transparent AI—genom InferNodes formellt verifierade isolering—stödjer ansvarsfulla, pålitliga offentliga institutioner och laglig verksamhet."
+      },
+      "partnerships": {
+        "title": "Genomförande och globalt partnerskap",
+        "description": "TAK-nativ interoperabilitet kopplar samman insatspersonal, myndigheter och humanitära partners kring en gemensam lägesbild för samordnad handling."
+      }
+    },
+    "footnote": "NERV Systems är ett oberoende företag. Hänvisningar till FN:s globala mål beskriver hur vår teknik stödjer dessa mål och innebär inte något godkännande från FN."
   }
 }

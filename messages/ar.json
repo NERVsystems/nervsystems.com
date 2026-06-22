@@ -3,7 +3,7 @@
     "features": "المزايا",
     "platform": "المنصة",
     "takSolutions": "حلول TAK",
-    "impact": "Impact",
+    "impact": "الأثر",
     "contact": "اتصل بنا",
     "requestDemo": "جدولة مكالمة"
   },
@@ -407,11 +407,15 @@
   },
   "partners": {
     "title": "موثوق به من قبل المنظمات الرائدة",
-    "description": "NERV Systems مدعومة من NVIDIA Inception، محتضنة في الجامعة الوطنية في سنغافورة، مختارة لمسرّعة معهد ريادة الأعمال في King's College London، ومنتسبة إلى European Defense Tech Hub، ومشاركة في Singapore Defence Tech Hackathon",
+    "description": "NERV Systems مدعومة من NVIDIA Inception، محتضنة في الجامعة الوطنية في سنغافورة، مختارة لمسرّعة معهد ريادة الأعمال في King's College London، ومنتسبة إلى European Defense Tech Hub، ومشاركة في Singapore Defence Tech Hackathon، ومدعومة من مؤسسة Autodesk Foundation",
     "items": {
       "nvidia": {
         "name": "NVIDIA Inception",
         "description": "عضو في برنامج NVIDIA Inception للشركات الناشئة في مجال الذكاء الاصطناعي"
+      },
+      "autodesk": {
+        "name": "Autodesk Foundation",
+        "description": "مدعومة من مؤسسة Autodesk Foundation"
       },
       "nus": {
         "name": "الجامعة الوطنية في سنغافورة",
@@ -430,44 +434,6 @@
         "description": "مشاركة في SDTH 2026"
       }
     }
-  },
-  "sdg": {
-    "eyebrow": "Global Impact",
-    "title": "Aligned with the UN Sustainable Development Goals",
-    "subtitle": "NERV builds technology for life-saving missions. Our work supports the United Nations 2030 Agenda for Sustainable Development—helping communities respond faster, recover sooner, and stay safe.",
-    "goals": {
-      "health": {
-        "number": "03",
-        "title": "Good Health & Well-being",
-        "description": "Faster medical evacuation coordination and real-time response cut the time between incident and care—improving survival in mass-casualty, wilderness, and disaster scenarios."
-      },
-      "infrastructure": {
-        "number": "09",
-        "title": "Industry, Innovation & Infrastructure",
-        "description": "Open-architecture, edge-capable systems strengthen critical infrastructure and keep coordination running even when networks and power fail."
-      },
-      "cities": {
-        "number": "11",
-        "title": "Sustainable Cities & Communities",
-        "description": "Multi-agency situational awareness and evacuation planning help reduce the deaths, injuries, and losses caused by disasters, in line with SDG Target 11.5 on resilient communities."
-      },
-      "climate": {
-        "number": "13",
-        "title": "Climate Action",
-        "description": "AI-assisted wildfire, flood, and extreme-weather response strengthens resilience and adaptive capacity to climate-related hazards, in line with SDG Target 13.1."
-      },
-      "institutions": {
-        "number": "16",
-        "title": "Peace, Justice & Strong Institutions",
-        "description": "Verifiable, transparent AI—through InferNode's formally verified isolation—supports accountable, trustworthy public institutions and lawful operations."
-      },
-      "partnerships": {
-        "number": "17",
-        "title": "Partnerships for the Goals",
-        "description": "TAK-native interoperability connects responders, agencies, and humanitarian partners around a single operational picture for coordinated action."
-      }
-    },
-    "footnote": "NERV Systems is an independent company. References to the UN Sustainable Development Goals describe how our technology supports these objectives and do not imply endorsement by the United Nations."
   },
   "contact": {
     "label": "ابق على اتصال",
@@ -631,10 +597,7 @@
     },
     "options": {
       "organisationType": {
-        "publicSafety": "Public Safety",
-        "civilDefence": "Civil Defence",
-        "searchRescue": "Search & Rescue",
-        "fireRescue": "Fire & Rescue Service",
+        "military": "عسكري/دفاع",
         "lawEnforcement": "إنفاذ القانون",
         "emergency": "خدمات الطوارئ",
         "government": "حكومي",
@@ -692,6 +655,7 @@
     }
   },
   "takSolutions": {
+  "impact": "الأثر",
     "hero": {
       "eyebrow": "حلول TAK لمنطقة آسيا والمحيط الهادئ",
       "title": "حلول وخدمات",
@@ -911,12 +875,7 @@
         "intelligence": {
           "title": "TAK للاستخبارات و OSINT",
           "description": "دمج الاستخبارات الجيومكانية لمحللي الاستخبارات مفتوحة المصدر (OSINT)، والصحفيين الاستقصائيين، وفرق البحث. ربط البيانات متعددة المصادر، وتتبع الكيانات محل الاهتمام، وتصور الشبكات المعقدة مع رسم الخرائط التعاوني في الوقت الفعلي والتعرف على الأنماط بالذكاء الاصطناعي.",
-          "tags": [
-            "OSINT",
-            "GEOINT",
-            "التحليل",
-            "إنتل"
-          ]
+          "tags": ["OSINT", "GEOINT", "التحليل", "إنتل"]
         }
       }
     },
@@ -1334,5 +1293,37 @@
       "email": "البريد الإلكتروني: contact@nervsystems.com"
     },
     "backToHome": "← العودة إلى الصفحة الرئيسية"
+  },
+  "sdg": {
+    "eyebrow": "الأثر العالمي",
+    "title": "متوافق مع أهداف الأمم المتحدة للتنمية المستدامة",
+    "subtitle": "تبني NERV تقنيات لمهام إنقاذ الأرواح. يدعم عملنا خطة الأمم المتحدة للتنمية المستدامة لعام 2030—بمساعدة المجتمعات على الاستجابة بشكل أسرع، والتعافي في وقت أقرب، والبقاء آمنة.",
+    "goals": {
+      "health": {
+        "title": "الصحة الجيدة والرفاه",
+        "description": "تنسيق أسرع لعمليات الإجلاء الطبي واستجابة في الوقت الفعلي يقلّلان الوقت بين وقوع الحادث وتقديم الرعاية—مما يحسّن فرص النجاة في حالات الإصابات الجماعية والمناطق النائية والكوارث."
+      },
+      "infrastructure": {
+        "title": "الصناعة والابتكار والهياكل الأساسية",
+        "description": "الأنظمة ذات البنية المفتوحة والقادرة على العمل عند الحافة تعزّز البنية التحتية الحيوية وتُبقي التنسيق قائمًا حتى عند انقطاع الشبكات والطاقة."
+      },
+      "cities": {
+        "title": "مدن ومجتمعات محلية مستدامة",
+        "description": "الوعي الظرفي متعدد الوكالات وتخطيط الإخلاء يساعدان على تقليل الوفيات والإصابات والخسائر الناجمة عن الكوارث، بما يتماشى مع غاية الهدف 11.5 بشأن المجتمعات القادرة على الصمود."
+      },
+      "climate": {
+        "title": "العمل المناخي",
+        "description": "الاستجابة المدعومة بالذكاء الاصطناعي لحرائق الغابات والفيضانات والطقس المتطرف تعزّز القدرة على الصمود والتكيّف مع المخاطر المرتبطة بالمناخ، بما يتماشى مع غاية الهدف 13.1."
+      },
+      "institutions": {
+        "title": "السلام والعدل والمؤسسات القوية",
+        "description": "ذكاء اصطناعي قابل للتحقق وشفّاف—عبر العزل المُتحقَّق منه شكليًا في InferNode—يدعم مؤسسات عامة موثوقة وخاضعة للمساءلة وعمليات قانونية."
+      },
+      "partnerships": {
+        "title": "عقد الشراكات لتحقيق الأهداف",
+        "description": "قابلية التشغيل البيني الأصلية مع TAK تربط المستجيبين والوكالات والشركاء الإنسانيين حول صورة عملياتية موحّدة لعمل منسّق."
+      }
+    },
+    "footnote": "NERV Systems شركة مستقلة. تصف الإشارات إلى أهداف الأمم المتحدة للتنمية المستدامة كيفية دعم تقنيتنا لهذه الأهداف ولا تعني تأييدًا من الأمم المتحدة."
   }
 }

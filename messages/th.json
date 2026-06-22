@@ -3,7 +3,7 @@
     "features": "ฟีเจอร์",
     "platform": "แพลตฟอร์ม",
     "takSolutions": "โซลูชัน TAK",
-    "impact": "Impact",
+    "impact": "ผลกระทบ",
     "contact": "ติดต่อ",
     "requestDemo": "นัดหมายปรึกษา"
   },
@@ -407,11 +407,15 @@
   },
   "partners": {
     "title": "ได้รับความไว้วางใจจากองค์กรชั้นนำ",
-    "description": "NERV Systems ได้รับการสนับสนุนจาก NVIDIA Inception บ่มเพาะที่มหาวิทยาลัยแห่งชาติสิงคโปร์ ได้รับคัดเลือกเข้าโครงการเร่งรัดของสถาบันผู้ประกอบการ King's College London มีความร่วมมือกับ European Defense Tech Hub และเข้าร่วม Singapore Defence Tech Hackathon",
+    "description": "NERV Systems ได้รับการสนับสนุนจาก NVIDIA Inception บ่มเพาะที่มหาวิทยาลัยแห่งชาติสิงคโปร์ ได้รับคัดเลือกเข้าโครงการเร่งรัดของสถาบันผู้ประกอบการ King's College London มีความร่วมมือกับ European Defense Tech Hub และเข้าร่วม Singapore Defence Tech Hackathon และได้รับการสนับสนุนจาก Autodesk Foundation",
     "items": {
       "nvidia": {
         "name": "NVIDIA Inception",
         "description": "สมาชิกของโปรแกรม NVIDIA Inception สำหรับสตาร์ทอัพ AI"
+      },
+      "autodesk": {
+        "name": "Autodesk Foundation",
+        "description": "ได้รับการสนับสนุนจาก Autodesk Foundation"
       },
       "nus": {
         "name": "มหาวิทยาลัยแห่งชาติสิงคโปร์",
@@ -430,44 +434,6 @@
         "description": "ผู้เข้าร่วม SDTH 2026"
       }
     }
-  },
-  "sdg": {
-    "eyebrow": "Global Impact",
-    "title": "Aligned with the UN Sustainable Development Goals",
-    "subtitle": "NERV builds technology for life-saving missions. Our work supports the United Nations 2030 Agenda for Sustainable Development—helping communities respond faster, recover sooner, and stay safe.",
-    "goals": {
-      "health": {
-        "number": "03",
-        "title": "Good Health & Well-being",
-        "description": "Faster medical evacuation coordination and real-time response cut the time between incident and care—improving survival in mass-casualty, wilderness, and disaster scenarios."
-      },
-      "infrastructure": {
-        "number": "09",
-        "title": "Industry, Innovation & Infrastructure",
-        "description": "Open-architecture, edge-capable systems strengthen critical infrastructure and keep coordination running even when networks and power fail."
-      },
-      "cities": {
-        "number": "11",
-        "title": "Sustainable Cities & Communities",
-        "description": "Multi-agency situational awareness and evacuation planning help reduce the deaths, injuries, and losses caused by disasters, in line with SDG Target 11.5 on resilient communities."
-      },
-      "climate": {
-        "number": "13",
-        "title": "Climate Action",
-        "description": "AI-assisted wildfire, flood, and extreme-weather response strengthens resilience and adaptive capacity to climate-related hazards, in line with SDG Target 13.1."
-      },
-      "institutions": {
-        "number": "16",
-        "title": "Peace, Justice & Strong Institutions",
-        "description": "Verifiable, transparent AI—through InferNode's formally verified isolation—supports accountable, trustworthy public institutions and lawful operations."
-      },
-      "partnerships": {
-        "number": "17",
-        "title": "Partnerships for the Goals",
-        "description": "TAK-native interoperability connects responders, agencies, and humanitarian partners around a single operational picture for coordinated action."
-      }
-    },
-    "footnote": "NERV Systems is an independent company. References to the UN Sustainable Development Goals describe how our technology supports these objectives and do not imply endorsement by the United Nations."
   },
   "contact": {
     "label": "ติดต่อเรา",
@@ -631,10 +597,7 @@
     },
     "options": {
       "organisationType": {
-        "publicSafety": "Public Safety",
-        "civilDefence": "Civil Defence",
-        "searchRescue": "Search & Rescue",
-        "fireRescue": "Fire & Rescue Service",
+        "military": "ทหาร/กลาโหม",
         "lawEnforcement": "การบังคับใช้กฎหมาย",
         "emergency": "บริการฉุกเฉิน",
         "government": "หน่วยงานรัฐบาล",
@@ -692,6 +655,7 @@
     }
   },
   "takSolutions": {
+  "impact": "ผลกระทบ",
     "hero": {
       "eyebrow": "โซลูชัน TAK สำหรับเอเชียแปซิฟิก",
       "title": "โซลูชัน TAK/ATAK",
@@ -911,12 +875,7 @@
         "intelligence": {
           "title": "TAK สำหรับข่าวกรองและ OSINT",
           "description": "การรวมข่าวกรองภูมิสารสนเทศสำหรับนักวิเคราะห์ข่าวกรองจากแหล่งเปิด (OSINT) นักข่าวสืบสวน และทีมวิจัย เชื่อมโยงข้อมูลจากหลายแหล่ง ติดตามหน่วยงานที่สนใจ และแสดงภาพเครือข่ายที่ซับซ้อนด้วยการทำแผนที่ร่วมกันแบบเรียลไทม์และการจดจำรูปแบบด้วย AI",
-          "tags": [
-            "OSINT",
-            "GEOINT",
-            "การวิเคราะห์",
-            "อินเทล"
-          ]
+          "tags": ["OSINT", "GEOINT", "การวิเคราะห์", "อินเทล"]
         }
       }
     },
@@ -1334,5 +1293,37 @@
       "email": "อีเมล: contact@nervsystems.com"
     },
     "backToHome": "← กลับหน้าหลัก"
+  },
+  "sdg": {
+    "eyebrow": "ผลกระทบระดับโลก",
+    "title": "สอดคล้องกับเป้าหมายการพัฒนาที่ยั่งยืนของสหประชาชาติ",
+    "subtitle": "NERV สร้างเทคโนโลยีเพื่อภารกิจช่วยชีวิต งานของเราสนับสนุนวาระการพัฒนาที่ยั่งยืน ค.ศ. 2030 ของสหประชาชาติ—ช่วยให้ชุมชนตอบสนองได้เร็วขึ้น ฟื้นตัวได้เร็วขึ้น และปลอดภัย",
+    "goals": {
+      "health": {
+        "title": "การมีสุขภาพและความเป็นอยู่ที่ดี",
+        "description": "การประสานงานการลำเลียงผู้ป่วยที่รวดเร็วขึ้นและการตอบสนองแบบเรียลไทม์ช่วยลดเวลาระหว่างเหตุการณ์กับการดูแลรักษา—เพิ่มโอกาสรอดชีวิตในสถานการณ์ผู้บาดเจ็บจำนวนมาก พื้นที่ทุรกันดาร และภัยพิบัติ"
+      },
+      "infrastructure": {
+        "title": "อุตสาหกรรม นวัตกรรม โครงสร้างพื้นฐาน",
+        "description": "ระบบสถาปัตยกรรมแบบเปิดที่ทำงานที่ขอบเครือข่ายได้ ช่วยเสริมความแข็งแกร่งของโครงสร้างพื้นฐานที่สำคัญ และคงการประสานงานไว้แม้เครือข่ายและไฟฟ้าจะขัดข้อง"
+      },
+      "cities": {
+        "title": "เมืองและถิ่นฐานมนุษย์อย่างยั่งยืน",
+        "description": "การรับรู้สถานการณ์ร่วมหลายหน่วยงานและการวางแผนอพยพช่วยลดการเสียชีวิต การบาดเจ็บ และความสูญเสียจากภัยพิบัติ สอดคล้องกับเป้าหมายย่อย 11.5 ว่าด้วยชุมชนที่มีภูมิต้านทาน"
+      },
+      "climate": {
+        "title": "การรับมือการเปลี่ยนแปลงสภาพภูมิอากาศ",
+        "description": "การตอบสนองต่อไฟป่า น้ำท่วม และสภาพอากาศสุดขั้วที่ขับเคลื่อนด้วย AI ช่วยเสริมภูมิต้านทานและขีดความสามารถในการปรับตัวต่อภัยที่เกี่ยวข้องกับสภาพภูมิอากาศ สอดคล้องกับเป้าหมายย่อย 13.1"
+      },
+      "institutions": {
+        "title": "ความสงบสุข ยุติธรรม และสถาบันเข้มแข็ง",
+        "description": "AI ที่ตรวจสอบได้และโปร่งใส—ผ่านการแยกระบบที่ผ่านการพิสูจน์อย่างเป็นทางการของ InferNode—สนับสนุนสถาบันสาธารณะที่น่าเชื่อถือ มีความรับผิดชอบ และการปฏิบัติงานที่ชอบด้วยกฎหมาย"
+      },
+      "partnerships": {
+        "title": "ความร่วมมือเพื่อการพัฒนาที่ยั่งยืน",
+        "description": "การทำงานร่วมกันแบบ TAK-native เชื่อมโยงเจ้าหน้าที่ตอบสนอง หน่วยงาน และพันธมิตรด้านมนุษยธรรมเข้ากับภาพปฏิบัติการเดียวกันเพื่อการดำเนินการที่ประสานสอดคล้อง"
+      }
+    },
+    "footnote": "NERV Systems เป็นบริษัทอิสระ การอ้างอิงถึงเป้าหมายการพัฒนาที่ยั่งยืนของสหประชาชาติเป็นการอธิบายว่าเทคโนโลยีของเราสนับสนุนเป้าหมายเหล่านี้อย่างไร และไม่ได้หมายถึงการรับรองโดยสหประชาชาติ"
   }
 }

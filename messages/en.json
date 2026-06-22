@@ -8,8 +8,8 @@
     "requestDemo": "Schedule a Call"
   },
   "hero": {
-    "title": "AI for Life-Saving Missions",
-    "subtitle": "TAK-native AI-powered decision support that turns information overload into clear action for public safety, civil defence, and search & rescue teams.",
+    "title": "Tactical AI for Mission Success",
+    "subtitle": "TAK-native AI-powered decision support that turns information overload into clear action for critical operations.",
     "stats": {
       "planning": {
         "value": "<30s",
@@ -30,8 +30,8 @@
     }
   },
   "nerva": {
-    "tagline": "Clear decisions when every second counts",
-    "subtitle": "Your AI Mission Assistant",
+    "tagline": "Turning bad guy OODA loops to stone",
+    "subtitle": "Your AI Tactical Assistant",
     "description": "NERVA is an AI extension of your team. Not just situational awareness—{decisionAdvantage}.",
     "decisionAdvantage": "decision advantage",
     "bottomCta": {
@@ -41,21 +41,21 @@
     "capabilities": {
       "uas": {
         "icon": "UAS",
-        "title": "Drone Operations for Search & Awareness",
-        "command": "\"NERVA, launch search pattern Alpha\"",
-        "description": "Autonomous flight-path planning for search, scene mapping, and situational awareness. NERVA monitors drone telemetry, issues direct commands, and can instantly retask drones from area survey to following a located subject—keeping eyes on the scene while crews move in.",
+        "title": "Autonomous Drone Operations",
+        "command": "\"NERVA, launch reconnaissance pattern Alpha\"",
+        "description": "Autonomous flight path planning for ISR, reconnaissance, and counter-UAS operations. NERVA monitors drone telemetry, issues direct commands, and can instantly retask friendly UAS from surveillance to intercept missions—plotting engagement courses for hostile drone neutralization or critical asset defense.",
         "features": [
           "Autonomous flight planning",
           "Real-time telemetry monitoring",
-          "Automated search patterns",
-          "Drone command & control"
+          "Automated intercept planning",
+          "UAS command & control"
         ]
       },
       "medevac": {
         "icon": "MEDEVAC",
-        "title": "Automated Medical Evacuation Coordination",
-        "command": "\"NERVA, we need a medevac!\"",
-        "description": "Identifies optimal helicopter landing zones in under 30 seconds, automatically notifies medical and aviation teams, monitors evacuation progress, and updates all TAK clients in real-time.",
+        "title": "Automated CASEVAC Coordination",
+        "command": "\"NERVA, we need a CASEVAC!\"",
+        "description": "Identifies optimal helicopter landing zones in under 30 seconds, automatically notifies medical and aviation teams, monitors rescue progress, and updates all TAK clients in real-time.",
         "features": [
           "LZ identification <30s",
           "Automatic team notifications",
@@ -64,34 +64,34 @@
         ]
       },
       "threat": {
-        "icon": "HAZARD",
-        "title": "Hazard & Incident Awareness",
-        "command": "Mark a hazard → NERVA acts",
-        "description": "Integrates with hazard and mapping data to plot affected areas—wildfire spread, flood extent, hazmat plumes, and exclusion zones—alert every team inside the danger area, and recommend safer routes and staging based on current conditions.",
+        "icon": "THREAT",
+        "title": "Hostile Unit Intelligence",
+        "command": "Identify enemy unit → NERVA acts",
+        "description": "Integrates with defense intelligence databases to plot range-of-fire rings, alert all units in danger zones, and provide recommended countermeasures based on threat capabilities.",
         "features": [
-          "Hazard zone mapping",
-          "Affected-area analysis",
+          "Defense database compatibility",
+          "Range-of-fire analysis",
           "Automatic alerts",
-          "Safe-route recommendations"
+          "Countermeasure recommendations"
         ]
       },
       "sar": {
         "icon": "SAR",
         "title": "Search Area Calculation",
-        "command": "\"NERVA, calculate search area for missing person\"",
-        "description": "Probability-based search zone generation using terrain analysis, weather conditions, and subject profile. Built for civilian Search & Rescue (SAR) across wilderness, water, and urban environments.",
+        "command": "\"NERVA, calculate search area for missing unit\"",
+        "description": "Probability-based search zone generation using terrain analysis, weather conditions, and unit capabilities. Works for both military operations and civilian Search & Rescue (SAR).",
         "features": [
           "Probabilistic modeling",
           "Terrain analysis",
           "Resource allocation",
-          "Wilderness & urban SAR"
+          "Military & civilian SAR"
         ]
       },
       "alert": {
         "icon": "ALERT",
-        "title": "Geofence & Perimeter Monitoring",
+        "title": "Geofence Enforcement & Response",
         "command": "\"NERVA, alert if any track enters the exclusion zone\"",
-        "description": "2D/3D geofence monitoring for incident perimeters, evacuation zones, and restricted airspace around emergencies. NERVA integrates with third-party sensors (ADS-B, RF detection, radar) to track aircraft and drones, instantly alerts all networked teams when a boundary is crossed, and coordinates the response.",
+        "description": "Virtual perimeter defense with 2D/3D geofence monitoring. NERVA integrates with third-party sensors (ADS-B, RF detection, radar) to track aircraft and UAS. When any track violates virtual boundaries, NERVA instantly alerts all networked assets and coordinates response—from friendly UAS intercepts to integration with C-UAS effectors.",
         "features": [
           "2D/3D virtual geofences",
           "Third-party sensor integration",
@@ -103,12 +103,12 @@
         "icon": "AIRSPACE",
         "title": "3D Airspace Visualization",
         "command": "Show chart → NERVA renders 3D airspace",
-        "description": "Multi-modal rendering of complex airspace from sectional charts, NOTAMs, and TFRs. NERVA extracts geospatial data, visualizes 3D restricted zones, and overlays real-time drone tracks for total airspace awareness—critical for safe flight coordination and deconfliction over an incident.",
+        "description": "Multi-modal rendering of complex airspace from sectional charts, NOTAMs, and TFRs. NERVA extracts geospatial data, visualizes 3D restricted zones, and overlays real-time UAS tracks for total airspace awareness—critical for counter-UAS operations and flight deconfliction.",
         "features": [
           "AI chart interpretation",
           "3D restricted zone rendering",
           "Real-time track overlay",
-          "Flight deconfliction"
+          "C-UAS airspace awareness"
         ]
       }
     },
@@ -120,7 +120,7 @@
   "infernode": {
     "label": "InferNode",
     "title": "Safe agents. Free to operate.",
-    "p1": "On the operational edge, an AI agent that leaks credentials, exfiltrates sensitive data, or escapes its sandbox is not a bug—it's a liability. Conventional guardrails are not enough when the agent runs inside your operating system.",
+    "p1": "On the tactical edge, an AI agent that leaks credentials, exfiltrates intelligence, or escapes its sandbox is not a bug—it's a casualty. Conventional guardrails are not enough when the agent runs inside your operating system.",
     "p2": "InferNode is our lightweight, distributed runtime for AI agents, built on formally verified namespace isolation. An agent's reach is set by a small configuration that fits on one page—reviewable by a human, checkable by a machine, and enforced by the operating system itself. What the agent can touch is provable before it ever runs.",
     "ctaPrimary": "Explore InferNode →",
     "ctaSecondary": "Read the Security Model →",
@@ -144,18 +144,18 @@
   },
   "features": {
     "title": "Complete Platform",
-    "subtitle": "Open-architecture software and hardware for the operational edge",
+    "subtitle": "MOSA-compliant software and hardware for tactical edge deployment",
     "items": {
       "planning": {
         "icon": "01",
         "title": "REAL-TIME MISSION PLANNING",
-        "description": "Automated generation of response options from live ATAK data. 30-second planning cycles for time-critical operations.",
+        "description": "Automated generation of tactical options from live ATAK data. 30-second planning cycles for time-critical operations.",
         "code": "MAGI-01"
       },
       "fusion": {
         "icon": "02",
-        "title": "MULTI-SOURCE DATA FUSION",
-        "description": "Unified analysis across drone feeds, sensor networks, and responder reports. Single operational picture from distributed data sources.",
+        "title": "MULTI-SOURCE INTELLIGENCE FUSION",
+        "description": "Unified analysis across drone feeds, sensor networks, and operator reports. Single operational picture from distributed data sources.",
         "code": "MAGI-02"
       },
       "assessment": {
@@ -174,7 +174,7 @@
   },
   "tak": {
     "title": "Built for Team Awareness",
-    "subtitle": "Already using TAK for emergency coordination or disaster response? Perfect. NERV integrates directly with your existing Team Awareness Kit systems.",
+    "subtitle": "Already using TAK for emergency coordination or HADR operations? Perfect. NERV integrates directly with your existing Team Awareness Kit systems.",
     "integration": {
       "native": {
         "label": "Native TAK Integration",
@@ -197,7 +197,7 @@
         "description": "Works when connectivity fails"
       },
       "mosa": {
-        "label": "Open-Standards Architecture",
+        "label": "MOSA-Compliant Architecture",
         "description": "Open standards for flexible integration"
       }
     },
@@ -374,7 +374,7 @@
           "duration": "2 days",
           "price": "$895",
           "period": "/student",
-          "description": "Complex operations, data fusion, edge computing, and scenario exercises",
+          "description": "Complex operations, intelligence fusion, edge computing, and scenario exercises",
           "badge": "POPULAR",
           "cta": "Enroll Now"
         }
@@ -407,11 +407,15 @@
   },
   "partners": {
     "title": "Trusted by Leading Organizations",
-    "description": "NERV Systems is backed by NVIDIA Inception, incubated at the National University of Singapore, and selected for the King's College London Entrepreneurship Institute accelerator",
+    "description": "NERV Systems is backed by NVIDIA Inception, supported by the Autodesk Foundation, incubated at National University of Singapore, selected for the King's College London Entrepreneurship Institute accelerator, affiliated with the European Defense Tech Hub, and a participant in the Singapore Defence Tech Hackathon",
     "items": {
       "nvidia": {
         "name": "NVIDIA Inception",
         "description": "Member of NVIDIA Inception Program for AI startups"
+      },
+      "autodesk": {
+        "name": "Autodesk Foundation",
+        "description": "Supported by the Autodesk Foundation"
       },
       "nus": {
         "name": "National University of Singapore",
@@ -420,50 +424,20 @@
       "kcl": {
         "name": "King's College London",
         "description": "Selected for the King's Entrepreneurship Institute accelerator"
+      },
+      "edth": {
+        "name": "European Defense Tech Hub",
+        "description": "Affiliated with the European Defense Tech Hub"
+      },
+      "hackathon": {
+        "name": "Singapore Defence Tech Hackathon",
+        "description": "Participant in SDTH 2026"
       }
     }
   },
-  "sdg": {
-    "eyebrow": "Global Impact",
-    "title": "Aligned with the UN Sustainable Development Goals",
-    "subtitle": "NERV builds technology for life-saving missions. Our work supports the United Nations 2030 Agenda for Sustainable Development—helping communities respond faster, recover sooner, and stay safe.",
-    "goals": {
-      "health": {
-        "number": "03",
-        "title": "Good Health & Well-being",
-        "description": "Faster medical evacuation coordination and real-time response cut the time between incident and care—improving survival in mass-casualty, wilderness, and disaster scenarios."
-      },
-      "infrastructure": {
-        "number": "09",
-        "title": "Industry, Innovation & Infrastructure",
-        "description": "Open-architecture, edge-capable systems strengthen critical infrastructure and keep coordination running even when networks and power fail."
-      },
-      "cities": {
-        "number": "11",
-        "title": "Sustainable Cities & Communities",
-        "description": "Multi-agency situational awareness and evacuation planning help reduce the deaths, injuries, and losses caused by disasters, in line with SDG Target 11.5 on resilient communities."
-      },
-      "climate": {
-        "number": "13",
-        "title": "Climate Action",
-        "description": "AI-assisted wildfire, flood, and extreme-weather response strengthens resilience and adaptive capacity to climate-related hazards, in line with SDG Target 13.1."
-      },
-      "institutions": {
-        "number": "16",
-        "title": "Peace, Justice & Strong Institutions",
-        "description": "Verifiable, transparent AI—through InferNode's formally verified isolation—supports accountable, trustworthy public institutions and lawful operations."
-      },
-      "partnerships": {
-        "number": "17",
-        "title": "Partnerships for the Goals",
-        "description": "TAK-native interoperability connects responders, agencies, and humanitarian partners around a single operational picture for coordinated action."
-      }
-    },
-    "footnote": "NERV Systems is an independent company. References to the UN Sustainable Development Goals describe how our technology supports these objectives and do not imply endorsement by the United Nations."
-  },
   "contact": {
     "label": "Get In Touch",
-    "title": "Ready to Deploy Life-Saving AI?",
+    "title": "Ready to Deploy Tactical AI?",
     "subtitle": "Whether you need NERVA AI integration, TAK solutions, or want to discuss your operational requirements—our team is here to help.",
     "form": {
       "label": "General Inquiry",
@@ -509,7 +483,7 @@
     }
   },
   "footer": {
-    "tagline": "AI for Life-Saving Missions and Edge Intelligence",
+    "tagline": "Tactical AI for Mission Planning and Edge Intelligence",
     "navigation": {
       "title": "Navigation",
       "nerva": "NERVA AI",
@@ -543,7 +517,7 @@
       }
     },
     "copyright": "© 2026 NERV Systems. All rights reserved.",
-    "taglineBottom": "Built for the operational edge",
+    "taglineBottom": "Built for the tactical edge",
     "legal": {
       "privacy": "Privacy Policy",
       "terms": "Terms of Service"
@@ -623,11 +597,8 @@
     },
     "options": {
       "organisationType": {
-        "publicSafety": "Public Safety",
-        "civilDefence": "Civil Defence",
+        "military": "Military/Defense",
         "lawEnforcement": "Law Enforcement",
-        "searchRescue": "Search & Rescue",
-        "fireRescue": "Fire & Rescue Service",
         "emergency": "Emergency Services",
         "government": "Government",
         "privateSecurity": "Private Security",
@@ -684,11 +655,12 @@
     }
   },
   "takSolutions": {
+  "impact": "Impact",
     "hero": {
       "eyebrow": "Global TAK Solutions",
       "title": "Complete TAK/ATAK",
       "titleLine2": "Solutions & Services",
-      "subtitle": "Expert TAK server hosting, ATAK deployment consulting, system administration, and training for public safety, law enforcement, civil defence, search & rescue, and emergency response teams across North America and Asia Pacific.",
+      "subtitle": "Expert TAK server hosting, ATAK deployment consulting, system administration, and training for military, law enforcement, HADR, and emergency response teams across North America and Asia Pacific.",
       "features": {
         "hosting": "Managed TAK Hosting from $495/mo",
         "aiEnhanced": "AI-Enhanced with NERVA",
@@ -702,10 +674,10 @@
     },
     "services": {
       "title": "Professional TAK Solutions",
-      "introduction": "NERV Systems provides comprehensive TAK (Team Awareness Kit) and ATAK (Android Team Awareness Kit) solutions including managed TAK server hosting, ATAK deployment consulting, TAK system administration, operator training programs, and custom TAK plugin development. With offices in the United States and Singapore, we serve organizations across North America and Asia Pacific. Our AI-enhanced TAK platform combines traditional TAK capabilities with intelligent automation through NERVA, supporting public safety, search and rescue, humanitarian assistance and disaster relief (HADR), and emergency response.",
+      "introduction": "NERV Systems provides comprehensive TAK (Team Awareness Kit) and ATAK (Android Team Awareness Kit) solutions including managed TAK server hosting, ATAK deployment consulting, TAK system administration, operator training programs, and custom TAK plugin development. With offices in the United States and Singapore, we serve organizations across North America and Asia Pacific. Our AI-enhanced TAK platform combines traditional TAK capabilities with intelligent automation through NERVA, supporting defense operations, humanitarian assistance and disaster relief (HADR), and emergency response.",
       "hosting": {
         "title": "Managed TAK Server Hosting",
-        "description": "Enterprise-grade TAK server hosting with 99.9% uptime SLA. Our managed TAK hosting service eliminates the complexity of TAK server administration. Perfect for organizations deploying TAK/ATAK systems for public safety, law enforcement, search and rescue, HADR missions, and emergency management.",
+        "description": "Enterprise-grade TAK server hosting with 99.9% uptime SLA. Our managed TAK hosting service eliminates the complexity of TAK server administration. Perfect for organizations deploying TAK/ATAK systems for military operations, law enforcement, HADR missions, and emergency management.",
         "plans": {
           "starter": {
             "name": "Starter",
@@ -759,7 +731,7 @@
       },
       "deployment": {
         "title": "TAK Deployment Consulting",
-        "description": "Expert TAK deployment services from initial requirements assessment to full operational capability. Our TAK consulting team brings extensive experience deploying ATAK systems for public safety, law enforcement, search and rescue, HADR operations, and emergency management organizations.",
+        "description": "Expert TAK deployment services from initial requirements assessment to full operational capability. Our TAK consulting team brings extensive experience deploying ATAK systems for defense, law enforcement, HADR operations, and emergency management organizations.",
         "plans": {
           "assessment": {
             "name": "TAK Assessment",
@@ -839,7 +811,7 @@
         {
           "number": "01",
           "title": "AI-Enhanced TAK Platform",
-          "description": "NERVA adds autonomous mission planning, automated medical evacuation coordination, hazard awareness, and real-time decision support to your TAK system"
+          "description": "NERVA adds autonomous mission planning, automated CASEVAC coordination, threat intelligence, and real-time decision support to your TAK system"
         },
         {
           "number": "02",
@@ -854,7 +826,7 @@
         {
           "number": "04",
           "title": "Enterprise-Grade TAK Infrastructure",
-          "description": "99.9% uptime SLA, automated TAK backups, DDoS protection, SSL certificates, TAK.gov security compliance, and open architecture for interoperability"
+          "description": "99.9% uptime SLA, automated TAK backups, DDoS protection, SSL certificates, TAK.gov security compliance, and MOSA-aligned architecture for interoperability"
         },
         {
           "number": "05",
@@ -864,14 +836,14 @@
       ],
       "useCases": {
         "military": {
-          "title": "TAK for Public Safety & Civil Defence",
-          "description": "Deploy TAK/ATAK systems for incident command, situational awareness, resource coordination, evacuation management, and multi-agency response with AI-enhanced planning.",
-          "tags": ["IC", "EVAC", "MULTI-AGENCY"]
+          "title": "TAK for Military Operations",
+          "description": "Deploy TAK/ATAK systems for command and control, ISR operations, close air support, CASEVAC coordination, and multi-domain operations with AI-enhanced mission planning.",
+          "tags": ["C2", "ISR", "CASEVAC", "CAS"]
         },
         "lawEnforcement": {
           "title": "TAK for Law Enforcement",
-          "description": "ATAK solutions for tactical team coordination, event security, missing-person operations, and inter-agency information sharing with real-time situational awareness.",
-          "tags": ["TACTICAL", "SECURITY", "PATROL"]
+          "description": "ATAK solutions for tactical operations, SWAT coordination, event security, border patrol, and inter-agency information sharing with real-time situational awareness.",
+          "tags": ["SWAT", "SECURITY", "PATROL"]
         },
         "emergency": {
           "title": "TAK for HADR & Emergency Management",
@@ -879,14 +851,14 @@
           "tags": ["HADR", "SAR", "EMS"]
         },
         "commercial": {
-          "title": "TAK for Critical Infrastructure & Private Sector",
-          "description": "Commercial TAK deployments for fleet tracking, asset management, site security, critical infrastructure protection, and corporate team coordination across distributed sites.",
+          "title": "TAK for Commercial & Private Sector",
+          "description": "Commercial TAK deployments for fleet tracking, asset management, private security operations, critical infrastructure protection, and corporate team coordination across distributed sites.",
           "tags": ["FLEET", "SECURITY", "ASSETS"]
         },
         "intelligence": {
-          "title": "TAK for Geospatial Analysis & OSINT",
-          "description": "Geospatial data fusion for open source intelligence (OSINT) analysts, investigative journalists, and research teams. Correlate multi-source data, track entities of interest, and visualize complex networks with real-time collaborative mapping and AI-powered pattern recognition.",
-          "tags": ["OSINT", "GEOINT", "ANALYSIS"]
+          "title": "TAK for Intelligence & OSINT",
+          "description": "Geospatial intelligence fusion for open source intelligence (OSINT) analysts, investigative journalists, and research teams. Correlate multi-source data, track entities of interest, and visualize complex networks with real-time collaborative mapping and AI-powered pattern recognition.",
+          "tags": ["OSINT", "GEOINT", "ANALYSIS", "INTEL"]
         }
       }
     },
@@ -903,7 +875,7 @@
         {
           "category": "AI Capabilities",
           "traditional": "Manual mission planning and analysis",
-          "nerv": "Autonomous mission planning with NERVA AI: automated medevac, hazard awareness, SAR calculations"
+          "nerv": "Autonomous mission planning with NERVA AI: automated CASEVAC, threat intel, SAR calculations"
         },
         {
           "category": "Response Time",
@@ -928,7 +900,7 @@
         {
           "category": "Architecture Standards",
           "traditional": "Proprietary closed systems",
-          "nerv": "Open architecture for vendor flexibility and future-proof integration"
+          "nerv": "MOSA-compliant open architecture for vendor flexibility and future-proof integration"
         },
         {
           "category": "Training Programs",
@@ -957,12 +929,12 @@
     },
     "resources": {
       "eyebrow": "Free Resources",
-      "title": "TAK Resource Library",
+      "title": "TAK Intelligence Library",
       "subtitle": "Download comprehensive guides, technical documentation, and strategic resources to accelerate your TAK deployment and maximize ROI from AI integration.",
       "items": [
         {
-          "title": "Response AI ROI Calculator & Guide",
-          "description": "Comprehensive analysis of AI integration ROI for response operations. Calculate cost savings from automated mission planning, reduced planning time, improved decision accuracy, and enhanced operational tempo. Includes real-world case studies and deployment scenarios.",
+          "title": "Tactical AI ROI Calculator & Guide",
+          "description": "Comprehensive analysis of AI integration ROI for tactical operations. Calculate cost savings from automated mission planning, reduced planning time, improved decision accuracy, and enhanced operational tempo. Includes real-world case studies and deployment scenarios.",
           "pages": "24 pages",
           "format": "PDF",
           "category": "ROI",
@@ -970,7 +942,7 @@
         },
         {
           "title": "TAK vs. Commercial Alternatives: Complete Comparison",
-          "description": "In-depth comparison of TAK/ATAK against commercial coordination platforms, emergency management systems, and proprietary solutions. Covers functionality, total cost of ownership, security considerations, interoperability, and integration capabilities. Includes decision framework for platform selection.",
+          "description": "In-depth comparison of TAK/ATAK against commercial C2 platforms, emergency management systems, and proprietary solutions. Covers functionality, total cost of ownership, security considerations, interoperability, and integration capabilities. Includes decision framework for platform selection.",
           "pages": "32 pages",
           "format": "PDF",
           "category": "COMPARISON",
@@ -1072,7 +1044,7 @@
       "items": [
         {
           "question": "What is TAK/ATAK and why do I need it?",
-          "answer": "TAK (Team Awareness Kit) is a geospatial collaboration platform that provides real-time situational awareness, mapping, location sharing, and mission coordination. ATAK (Android Team Awareness Kit) is the mobile Android version. Organizations need TAK/ATAK when they require secure, real-time geospatial coordination across distributed teams—whether for public safety, law enforcement, civil defence, search and rescue, humanitarian assistance and disaster relief (HADR), or emergency management. NERV enhances standard TAK deployments with NERVA AI capabilities for intelligent mission planning and automated decision support."
+          "answer": "TAK (Team Awareness Kit) is a geospatial collaboration platform developed by the U.S. Air Force Research Lab for military and tactical operations. ATAK (Android Team Awareness Kit) is the mobile Android version that provides real-time situational awareness, mapping, location sharing, and mission coordination. Organizations need TAK/ATAK when they require secure, real-time geospatial coordination across distributed teams—whether for military operations, law enforcement tactical teams, humanitarian assistance and disaster relief (HADR), search and rescue, or emergency management. NERV enhances standard TAK deployments with NERVA AI capabilities for intelligent mission planning and automated decision support."
         },
         {
           "question": "What are the requirements for TAK server hosting?",
@@ -1084,11 +1056,11 @@
         },
         {
           "question": "Do you provide ATAK training and certification?",
-          "answer": "Yes, NERV offers comprehensive ATAK training programs for all skill levels. Our TAK Operator Fundamentals course ($595 per operator) covers ATAK interface navigation, map management, marker placement, location sharing, and basic TAK communications—perfect for new ATAK users. The Advanced TAK Operations course ($995 per operator) includes mission planning in ATAK, data package creation, plugin usage, TAK video integration, and response workflows. For technical teams, our TAK Administrator Certification ($1,495 per admin) provides deep training in TAK Server administration, user management, security configuration, plugin deployment, and system troubleshooting. All ATAK training includes hands-on exercises with real TAK/ATAK systems."
+          "answer": "Yes, NERV offers comprehensive ATAK training programs for all skill levels. Our TAK Operator Fundamentals course ($595 per operator) covers ATAK interface navigation, map management, marker placement, location sharing, and basic TAK communications—perfect for new ATAK users. The Advanced TAK Operations course ($995 per operator) includes mission planning in ATAK, data package creation, plugin usage, TAK video integration, and tactical workflows. For technical teams, our TAK Administrator Certification ($1,495 per admin) provides deep training in TAK Server administration, user management, security configuration, plugin deployment, and system troubleshooting. All ATAK training includes hands-on exercises with real TAK/ATAK systems."
         },
         {
           "question": "What makes NERV's TAK solutions different from other TAK hosting providers?",
-          "answer": "Unlike traditional TAK hosting companies, NERV combines expert TAK deployment services with AI-powered intelligence through NERVA integration. Every NERV TAK solution includes autonomous mission planning, automated medical evacuation coordination, real-time hazard awareness, intelligent geofencing, and 3D airspace visualization—capabilities not available from standard TAK providers. With offices in the United States and Singapore, we serve organizations across North America and Asia Pacific, offering multi-region TAK hosting with local compliance expertise. Our flexible deployment options include cloud TAK hosting, on-premise TAK servers, hybrid architectures, and edge-deployed TAK systems with our GPU-enabled hardware."
+          "answer": "Unlike traditional TAK hosting companies, NERV combines expert TAK deployment services with AI-powered intelligence through NERVA integration. Every NERV TAK solution includes autonomous mission planning, automated CASEVAC coordination, real-time threat intelligence, intelligent geofencing, and 3D airspace visualization—capabilities not available from standard TAK providers. With offices in the United States and Singapore, we serve organizations across North America and Asia Pacific, offering multi-region TAK hosting with local compliance expertise. Our flexible deployment options include cloud TAK hosting, on-premise TAK servers, hybrid architectures, and edge-deployed TAK systems with our GPU-enabled hardware."
         },
         {
           "question": "Can you develop custom TAK plugins?",
@@ -1100,11 +1072,11 @@
         },
         {
           "question": "What TAK/ATAK use cases do you support?",
-          "answer": "NERV supports the full spectrum of TAK/ATAK applications across public safety, civil defence, HADR, and emergency services. Public safety and civil defence TAK use cases include: incident command, situational awareness, resource coordination, evacuation management, and multi-agency response. Law enforcement ATAK applications include: tactical team coordination, event security management, missing-person operations, and inter-agency collaboration. Humanitarian assistance and disaster relief (HADR) and emergency management TAK deployments cover: search and rescue (SAR), wildfire response, flood and earthquake response, disaster relief coordination, EMS coordination, and multi-agency incident management. Every use case is enhanced with NERVA AI capabilities for smarter mission execution."
+          "answer": "NERV supports the full spectrum of TAK/ATAK applications across defense, HADR, public safety, and emergency services. Military TAK use cases include: command and control (C2), intelligence/surveillance/reconnaissance (ISR), close air support (CAS) coordination, CASEVAC/MEDEVAC operations, multi-domain operations, and training exercises. Law enforcement ATAK applications include: SWAT team coordination, event security management, border patrol operations, fugitive tracking, and inter-agency collaboration. Humanitarian assistance and disaster relief (HADR) and emergency management TAK deployments cover: search and rescue (SAR), wildfire response, flood and earthquake response, disaster relief coordination, refugee operations, EMS coordination, and multi-agency incident management. Every use case is enhanced with NERVA AI capabilities for smarter mission execution."
         },
         {
           "question": "How does NERVA AI integration enhance TAK systems?",
-          "answer": "NERVA transforms standard TAK/ATAK from basic situational awareness into an intelligent decision support platform. NERVA analyzes TAK data in real-time to provide: autonomous mission planning with optimized routes and timing, automated medical evacuation coordination calculating best LZ locations and flight paths, hazard and incident awareness with affected-area prediction and safe-route recommendations, intelligent search area calculation for SAR operations, geofencing with automatic alerts for perimeter and airspace violations, and 3D airspace visualization for drone deconfliction. NERVA runs on cloud infrastructure, on-premise servers, or our edge-deployed GPU hardware, integrating seamlessly with existing TAK Server deployments through standard TAK protocols and APIs."
+          "answer": "NERVA transforms standard TAK/ATAK from basic situational awareness into an intelligent decision support platform. NERVA analyzes TAK data in real-time to provide: autonomous mission planning with optimized routes and timing, automated CASEVAC coordination calculating best LZ locations and flight paths, hostile unit intelligence with threat prediction and countermeasure recommendations, intelligent search area calculation for SAR operations, geofencing with automatic alerts for airspace violations, and 3D airspace visualization for UAS deconfliction. NERVA runs on cloud infrastructure, on-premise servers, or our edge-deployed GPU hardware, integrating seamlessly with existing TAK Server deployments through standard TAK protocols and APIs."
         }
       ],
       "cta": {
@@ -1253,7 +1225,7 @@
     "exportControl": {
       "title": "Export Control and Compliance",
       "description": "The information and technology presented on this Website may be subject to U.S. export control laws and regulations. You agree to comply with all applicable export and re-export control laws and regulations.",
-      "warning": "Our public-safety products and services are designed for civil, humanitarian, and life-saving applications. Certain commercial technologies may still be subject to the U.S. Export Administration Regulations (EAR) and other applicable laws; you agree to comply with all applicable export and re-export control requirements."
+      "warning": "WARNING: Our products and services involve defense technology that may be subject to strict export controls. Unauthorized export or re-export may result in criminal and civil penalties."
     },
     "governingLaw": {
       "title": "Governing Law and Jurisdiction",
@@ -1279,5 +1251,37 @@
       "email": "Email: contact@nervsystems.com"
     },
     "backToHome": "← Back to Home"
+  },
+  "sdg": {
+    "eyebrow": "Global Impact",
+    "title": "Aligned with the UN Sustainable Development Goals",
+    "subtitle": "NERV builds technology for life-saving missions. Our work supports the United Nations 2030 Agenda for Sustainable Development—helping communities respond faster, recover sooner, and stay safe.",
+    "goals": {
+      "health": {
+        "title": "Good Health & Well-being",
+        "description": "Faster medical evacuation coordination and real-time response cut the time between incident and care—improving survival in mass-casualty, wilderness, and disaster scenarios."
+      },
+      "infrastructure": {
+        "title": "Industry, Innovation & Infrastructure",
+        "description": "Open-architecture, edge-capable systems strengthen critical infrastructure and keep coordination running even when networks and power fail."
+      },
+      "cities": {
+        "title": "Sustainable Cities & Communities",
+        "description": "Multi-agency situational awareness and evacuation planning help reduce the deaths, injuries, and losses caused by disasters, in line with SDG Target 11.5 on resilient communities."
+      },
+      "climate": {
+        "title": "Climate Action",
+        "description": "AI-assisted wildfire, flood, and extreme-weather response strengthens resilience and adaptive capacity to climate-related hazards, in line with SDG Target 13.1."
+      },
+      "institutions": {
+        "title": "Peace, Justice & Strong Institutions",
+        "description": "Verifiable, transparent AI—through InferNode's formally verified isolation—supports accountable, trustworthy public institutions and lawful operations."
+      },
+      "partnerships": {
+        "title": "Partnerships for the Goals",
+        "description": "TAK-native interoperability connects responders, agencies, and humanitarian partners around a single operational picture for coordinated action."
+      }
+    },
+    "footnote": "NERV Systems is an independent company. References to the UN Sustainable Development Goals describe how our technology supports these objectives and do not imply endorsement by the United Nations."
   }
 }
