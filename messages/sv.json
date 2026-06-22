@@ -30,7 +30,7 @@
     }
   },
   "nerva": {
-    "tagline": "Turning bad guy OODA loops to stone",
+    "tagline": "Beslutsövertag i uppdragets tempo",
     "subtitle": "Din taktiska AI-assistent",
     "description": "NERVA är en förlängning av ditt team. Den ger dig inte bara en bättre lägesbild, utan även bättre {decisionAdvantage}.",
     "decisionAdvantage": "beslut",
@@ -43,19 +43,19 @@
         "icon": "UAS",
         "title": "Automatiserade uppdrag för drönare",
         "command": "\"NERVA, starta sökmönster Alpha\"",
-        "description": "Autonom ruttplanering för flygning inom ISR, spaning och motåtgärder mot drönare. NERVA övervakar drönardata i realtid, ger direkta kommandon och kan snabbt omdirigera egna drönare från övervakning till insats - till exempel för att oskadliggöra fientliga drönare eller skydda viktiga resurser.",
+        "description": "Autonom ruttplanering för ISR och spaning. NERVA övervakar drönardata, samordnar sensortilldelning och upprätthåller en realtidsbild av egna och oidentifierade spår för luftrumsöverblick.",
         "features": [
           "Autonom flygplanering",
           "Övervakar drönardata i realtid",
-          "Planerar automatiskt genskjutning av fientliga drönare",
+          "Automatiserad ruttplanering",
           "Ledning och kontroll av UAS"
         ]
       },
       "medevac": {
         "icon": "MEDEVAC",
-        "title": "Automatiserad CASEVAC-samordning",
-        "command": "\"NERVA, vi behöver en CASEVAC!\"",
-        "description": "Identifierar optimala landningszoner för helikoptrar på under 30 sekunder, meddelar automatiskt sjukvårds- och flygteam, följer räddningsinsatsen och uppdaterar alla TAK-klienter i realtid.",
+        "title": "Automatiserad MEDEVAC-samordning",
+        "command": "\"NERVA, vi behöver en medicinsk evakuering\"",
+        "description": "Identifierar optimala landningszoner för helikopter på under 30 sekunder, meddelar automatiskt medicinska team och flygteam, övervakar räddningsförloppet och uppdaterar alla ATAK/TAK-klienter i realtid.",
         "features": [
           "LZ-identifiering <30s",
           "Automatiska teamuppdateringar",
@@ -64,15 +64,15 @@
         ]
       },
       "threat": {
-        "icon": "HOT",
-        "title": "Underrättelse om fientliga enheter",
-        "command": "Identifiera fiendeenhet → NERVA agerar",
-        "description": "Kopplas till försvarsdatabaser, visar hotets räckvidd, varnar enheter i farliga områden och föreslår lämpliga åtgärder.",
+        "icon": "RISK",
+        "title": "Lägesbild och riskzoner",
+        "command": "Identifiera ett spår av intresse → NERVA agerar",
+        "description": "Ritar upp medvetenhets- och säkerhetsavståndszoner från användartillhandahållna data, varnar alla enheter i berörda områden och rekommenderar dekonfliktering och säkerhetsåtgärder utifrån den operativa lägesbilden.",
         "features": [
-          "Kompatibel med försvarsdatabaser",
-          "Räckviddsanalys",
+          "Användartillhandahållna datakällor",
+          "Analys av säkerhetsavståndszoner",
           "Automatiska varningar",
-          "Rekommenderade åtgärder"
+          "Rekommendationer för dekonfliktering"
         ]
       },
       "sar": {
@@ -91,7 +91,7 @@
         "icon": "ALERT",
         "title": "Geofence-övervakning och insats",
         "command": "\"NERVA, varna om något spår går in i den förbjudna zonen\"",
-        "description": "Virtuellt perimeterskydd med 2D/3D-övervakning av geofence-zoner. NERVA integrerar med tredjepartssensorer (ADS-B, RF-detektering, radar) för att spåra flygplan och UAS. När ett spår bryter mot en virtuell gräns varnar NERVA omedelbart alla nätverksanslutna resurser och samordnar insatsen - från genskjutning med egna UAS till integration med C-UAS-effektorer.",
+        "description": "Virtuell perimeterövervakning med 2D/3D-geofence-zoner. NERVA integrerar med tredjepartssensorer (ADS-B, RF-detektering, radar) för att spåra flygplan och UAS. När ett spår bryter mot en virtuell gräns varnar NERVA omedelbart alla nätverksanslutna resurser och stödjer samordnade insats- och aviseringsarbetsflöden.",
         "features": [
           "Virtuella 2D/3D-geofence-zoner",
           "Integration med tredjepartssensorer",
@@ -103,12 +103,12 @@
         "icon": "AIRSPACE",
         "title": "3D-luftrumsvisualisering",
         "command": "Visa karta → NERVA renderar luftrummet i 3D",
-        "description": "Multimodal rendering av komplext luftrum från sektionskartor, NOTAM och TFR. NERVA extraherar geospatial data, visualiserar 3D-zoner med restriktioner och lägger realtidsspår från UAS ovanpå kartan för fullständig luftrumsöverblick - avgörande för C-UAS-operationer och samordning av flygtrafik.",
+        "description": "Multimodal rendering av komplext luftrum från sektionskartor, NOTAM och TFR. NERVA extraherar geospatial data, visualiserar 3D-zoner med restriktioner och lägger realtidsspår från UAS ovanpå kartan för fullständig luftrumsöverblick och dekonfliktering av flygtrafik.",
         "features": [
           "AI-karttolkning",
           "3D-rendering av zoner med restriktioner",
           "Överlagring av realtidsspår",
-          "Luftrumsöverblick för C-UAS"
+          "Luftrumsöverblick och dekonfliktering"
         ]
       }
     },
@@ -655,7 +655,7 @@
     }
   },
   "takSolutions": {
-  "impact": "Påverkan",
+    "impact": "Påverkan",
     "hero": {
       "eyebrow": "Globala TAK-lösningar",
       "title": "Kompletta TAK/ATAK",
@@ -674,7 +674,7 @@
     },
     "services": {
       "title": "Professionella TAK-lösningar",
-      "introduction": "NERV Systems tillhandahåller heltäckande lösningar för TAK (Team Awareness Kit) och ATAK (Android Team Awareness Kit), inklusive hanterad TAK-serverhosting, konsulttjänster för ATAK-driftsättning, TAK-systemadministration, utbildningsprogram för operatörer och utveckling av anpassade TAK-plugins. Med kontor i USA och Singapore stödjer vi organisationer i Nordamerika och Asien-Stillahavsområdet. Vår AI-förstärkta TAK-plattform kombinerar traditionella TAK-funktioner med intelligent automatisering genom NERVA och stödjer försvarsoperationer, humanitärt bistånd och katastrofhjälp (HADR) samt räddnings- och krisinsatser.",
+      "introduction": "NERV Systems tillhandahåller heltäckande TAK-lösningar (Team Awareness Kit) över hela produktfamiljen – ATAK (Android), WinTAK (Windows), iTAK (iOS), WebTAK och TAK Server – inklusive hanterad TAK Server-hosting, konsulttjänster för driftsättning av ATAK-CIV och WinTAK-CIV, TAK-systemadministration, utbildningsprogram för operatörer och utveckling av anpassade plugins. Med kontor i USA och Singapore betjänar vi organisationer i Nordamerika och Asien-Stillahavsområdet. Vår AI-förstärkta TAK-plattform kombinerar traditionella TAK-funktioner med intelligent automatisering genom NERVA, och stöder försvarsoperationer, humanitärt bistånd och katastrofhjälp (HADR) samt krisinsatser.",
       "hosting": {
         "title": "Hanterad TAK-serverhosting",
         "description": "TAK-serverhosting på företagsnivå med SLA på 99,9 % upptid. Vår hanterade TAK-hostingtjänst eliminerar komplexiteten i TAK-serveradministration. Perfekt för organisationer som driftsätter TAK/ATAK-system för militära operationer, polis och rättsvårdande myndigheter, HADR-uppdrag och krishantering.",
@@ -811,7 +811,7 @@
         {
           "number": "01",
           "title": "AI-förstärkt TAK-plattform",
-          "description": "NERVA tillför autonom uppdragsplanering, automatiserad CASEVAC-samordning, hotunderrättelser och beslutsstöd i realtid till ert TAK-system."
+          "description": "NERVA tillför autonom uppdragsplanering, automatiserad samordning av medicinsk evakuering, lägesbild och beslutsstöd i realtid till din ATAK/TAK-driftsättning"
         },
         {
           "number": "02",
@@ -835,19 +835,28 @@
         }
       ],
       "useCases": {
+        "note": "NERVA integreras med de allmänt tillgängliga civila TAK-byggena över standardiserade, öppet publicerade TAK-protokoll. Försvarskunder kör NERVA mot sina egna ATAK-GOV-/ATAK-MIL-distributioner.",
         "military": {
-          "title": "TAK för militära operationer",
-          "description": "Driftsätt TAK/ATAK-system för ledning och kontroll (C2), ISR-operationer, närunderstöd (CAS), CASEVAC-samordning och multidomänoperationer med AI-förstärkt uppdragsplanering.",
+          "title": "ATAK för militära operationer",
+          "description": "Driftsätt ATAK (Android Tactical Assault Kit) och WinTAK för ledning och kontroll (C2), ISR-operationer, CASEVAC-samordning och multidomän lägesbild med AI-förstärkt uppdragsplanering.",
+          "products": [
+            "ATAK-CIV*",
+            "WinTAK-CIV"
+          ],
           "tags": [
             "C2",
             "ISR",
             "CASEVAC",
-            "CAS"
+            "SA"
           ]
         },
         "lawEnforcement": {
-          "title": "TAK för polisiära myndigheter",
-          "description": "ATAK-lösningar för taktiska insatser, samordning av insatsstyrkor, evenemangssäkerhet, gränsbevakning och informationsdelning mellan myndigheter med lägesbild i realtid.",
+          "title": "ATAK för polisiära myndigheter",
+          "description": "ATAK-CIV- och WinTAK-CIV-lösningar för taktiska insatser, samordning av insatsstyrkor, evenemangssäkerhet, gränsbevakning och informationsdelning mellan myndigheter med lägesbild i realtid.",
+          "products": [
+            "ATAK-CIV",
+            "WinTAK-CIV"
+          ],
           "tags": [
             "INSATS",
             "SÄKERHET",
@@ -855,8 +864,12 @@
           ]
         },
         "emergency": {
-          "title": "TAK för HADR och krishantering",
-          "description": "TAK-system för humanitärt bistånd och katastrofhjälp (HADR), räddningsinsatser, sök och räddning (SAR), brandinsatser, medicinsk samordning och krishantering över myndighetsgränser.",
+          "title": "ATAK för HADR och krishantering",
+          "description": "ATAK-CIV och iTAK för humanitärt bistånd och katastrofhjälp (HADR), krisinsatser, sök och räddning (SAR), brandinsatser, medicinsk samordning och krishantering över myndighetsgränser.",
+          "products": [
+            "ATAK-CIV",
+            "iTAK"
+          ],
           "tags": [
             "HADR",
             "SAR",
@@ -865,7 +878,11 @@
         },
         "commercial": {
           "title": "TAK för kommersiell och privat sektor",
-          "description": "Kommersiella TAK-driftsättningar för flottspårning, tillgångshantering, privata säkerhetsinsatser, skydd av kritisk infrastruktur och samordning av företagsteam på geografiskt spridda platser.",
+          "description": "Kommersiella ATAK-CIV- och WinTAK-CIV-driftsättningar för flottspårning, tillgångshantering, privata säkerhetsinsatser, skydd av kritisk infrastruktur och samordning av företagsteam på geografiskt spridda platser.",
+          "products": [
+            "ATAK-CIV",
+            "WinTAK-CIV"
+          ],
           "tags": [
             "FLOTTA",
             "SÄKERHET",
@@ -874,7 +891,11 @@
         },
         "intelligence": {
           "title": "TAK för underrättelse och OSINT",
-          "description": "Geospatial dataintegration (GEOINT) för OSINT-analytiker, grävande journalister och forskarteam. Korrelera data från flera källor, spåra relevanta objekt och visualisera komplexa nätverk med samverkande kartläggning i realtid och AI-driven mönsterigenkänning.",
+          "description": "Geospatial underrättelsefusion i WebTAK och ATAK-CIV för OSINT-analytiker (open source-underrättelser), grävande journalister och forskarteam. Korrelera data från flera källor, spåra relevanta objekt och visualisera komplexa nätverk med samverkande kartläggning i realtid och AI-driven mönsterigenkänning.",
+          "products": [
+            "WebTAK",
+            "ATAK-CIV"
+          ],
           "tags": [
             "OSINT",
             "GEOINT",
@@ -897,7 +918,7 @@
         {
           "category": "AI-förmågor",
           "traditional": "Manuell uppdragsplanering och analys",
-          "nerv": "Autonom uppdragsplanering med NERVA AI: automatiserad CASEVAC, hotunderrättelser och SAR-beräkningar"
+          "nerv": "Autonom uppdragsplanering med NERVA AI: automatiserad medicinsk evakuering, lägesbild, SAR-beräkningar"
         },
         {
           "category": "Responstid",
@@ -969,7 +990,7 @@
         },
         {
           "title": "TAK jämfört med kommersiella alternativ: komplett jämförelse",
-          "description": "Djupgående jämförelse av TAK/ATAK med kommersiella C2-plattformar, krishanteringssystem och proprietära lösningar. Täcker funktionalitet, total ägandekostnad (TCO), säkerhetsaspekter, interoperabilitet och integrationsmöjligheter. Innehåller ett beslutsramverk för plattformsval.",
+          "description": "Djupgående jämförelse av TAK/ATAK mot kommersiella samordningsplattformar, krishanteringssystem och proprietära lösningar. Täcker funktionalitet, total ägandekostnad, säkerhetsaspekter, interoperabilitet och integrationsmöjligheter. Inkluderar beslutsramverk för plattformsval.",
           "pages": "32 sidor",
           "format": "PDF",
           "category": "JÄMFÖRELSE",
@@ -1096,7 +1117,7 @@
       "items": [
         {
           "question": "Vad är TAK/ATAK och varför behöver jag det?",
-          "answer": "TAK (Team Awareness Kit) är en geospatial samarbetsplattform utvecklad av US Air Force Research Lab för militära och taktiska operationer. ATAK (Android Team Awareness Kit) är den mobila Android-versionen, som ger lägesbild i realtid, kartläggning, platsdelning och uppdragssamordning. Organisationer behöver TAK/ATAK när de behöver säker geospatial samordning i realtid mellan spridda team - oavsett om det gäller militära operationer, taktiska polisenheter, humanitärt bistånd och katastrofhjälp (HADR), sök och räddning (SAR) eller krishantering. NERV förstärker standarddriftsättningar av TAK med NERVA AI-funktioner för intelligent uppdragsplanering och automatiserat beslutsstöd."
+          "answer": "TAK (Team Awareness Kit) är en familj av geospatial samverkansprogramvara som underhålls av amerikanska statens TAK Product Center och ursprungligen utvecklades av Air Force Research Laboratory. Familjen omfattar ATAK på Android, WinTAK på Windows, iTAK på iOS, WebTAK i webbläsaren och TAK Server i backend. ATAK distribueras i olika utgåvor: ATAK-CIV (den civila \"Android Team Awareness Kit\", allmänt tillgänglig på Google Play Store för räddningspersonal och licensierade kommersiella utvecklare), ATAK-GOV och ATAK-MIL (de statliga och militära \"Android Tactical Assault Kit\"-utgåvorna, som har begränsade, ITAR-kontrollerade funktioner). Organisationer inför TAK när de behöver säker geospatial samordning i realtid mellan distribuerade team – oavsett om det gäller krishantering, sök och räddning, humanitärt bistånd och katastrofhjälp (HADR), kommersiell verksamhet eller försvar. NERV driftsätter och förstärker de allmänt tillgängliga civila byggena (ATAK-CIV, WinTAK-CIV, iTAK) med NERVA AI över standardiserade, öppet publicerade TAK-protokoll; försvarskunder kör NERVA mot sina egna ATAK-GOV/MIL-distributioner."
         },
         {
           "question": "Vilka är kraven för hosting av en TAK-server?",
@@ -1112,7 +1133,7 @@
         },
         {
           "question": "Vad gör NERVs TAK-lösningar annorlunda jämfört med andra TAK-hostingleverantörer?",
-          "answer": "Till skillnad från traditionella TAK-hostingleverantörer kombinerar NERV expertstöd för TAK-driftsättning med AI-driven underrättelse genom NERVA-integration. Varje NERV TAK-lösning inkluderar autonom uppdragsplanering, automatiserad CASEVAC-samordning, hotunderrättelser i realtid, intelligent geofencing och 3D-luftrumsvisualisering - funktioner som inte finns hos vanliga TAK-leverantörer. Med kontor i USA och Singapore stödjer vi organisationer i Nordamerika och Asien-Stillahavsområdet och erbjuder multiregional TAK-hosting med lokal expertis inom regelefterlevnad. Våra flexibla driftsättningsalternativ omfattar molnhostad TAK, lokala TAK-servrar, hybridarkitekturer och fältdriftsatta TAK-system med vår hårdvara."
+          "answer": "Till skillnad från traditionella TAK-hostingföretag kombinerar NERV expertis inom TAK-driftsättning med AI-driven intelligens genom NERVA-integration. Varje TAK-lösning från NERV inkluderar autonom uppdragsplanering, automatiserad samordning av medicinsk evakuering, lägesbild i realtid, intelligent geofencing och 3D-visualisering av luftrum – funktioner som inte är tillgängliga från standardleverantörer av TAK. Med kontor i USA och Singapore betjänar vi organisationer i Nordamerika och Asien-Stillahavsområdet, och erbjuder TAK-hosting i flera regioner med lokal efterlevnadsexpertis. Våra flexibla driftsättningsalternativ omfattar TAK-hosting i molnet, lokala TAK-servrar, hybridarkitekturer och edge-driftsatta TAK-system med vår GPU-aktiverade hårdvara."
         },
         {
           "question": "Kan ni utveckla anpassade TAK-plugins?",
@@ -1124,11 +1145,11 @@
         },
         {
           "question": "Vilka användningsområden för TAK/ATAK stödjer ni?",
-          "answer": "NERV stödjer hela spektrumet av TAK/ATAK-tillämpningar inom försvar, HADR, allmän säkerhet och räddningstjänst. Militära TAK-användningsområden omfattar ledning och kontroll (C2), underrättelse/övervakning/spaning (ISR), närunderstöd (CAS), CASEVAC/MEDEVAC-operationer, multidomänoperationer och utbildningsövningar. ATAK-tillämpningar för polis och rättsvårdande myndigheter omfattar samordning av insatsstyrkor, evenemangssäkerhet, gränsbevakning, spårning av efterlysta personer och samarbete över myndighetsgränser. TAK-driftsättningar för humanitärt bistånd och katastrofhjälp (HADR) och krishantering täcker sök och räddning (SAR), bekämpning av skogsbränder, insatser vid översvämningar och jordbävningar, samordning av katastrofhjälp, flyktinginsatser, ambulanssamordning (EMS) och myndighetsöverskridande incidenthantering. Varje användningsområde förstärks med NERVA AI-funktioner för smartare uppdragsgenomförande."
+          "answer": "NERV stödjer hela spektrumet av TAK/ATAK-tillämpningar inom försvar, HADR, allmän säkerhet och räddningstjänst. Militära TAK-användningsområden omfattar ledning och kontroll (C2), underrättelse/övervakning/spaning (ISR), CASEVAC/MEDEVAC-samordning, multidomän lägesbild och utbildningsövningar. ATAK-tillämpningar för polis och rättsvårdande myndigheter omfattar samordning av insatsstyrkor, evenemangssäkerhet, gränsbevakning, spårning av efterlysta personer och samarbete över myndighetsgränser. TAK-driftsättningar för humanitärt bistånd och katastrofhjälp (HADR) och krishantering täcker sök och räddning (SAR), bekämpning av skogsbränder, insatser vid översvämningar och jordbävningar, samordning av katastrofhjälp, flyktinginsatser, ambulanssamordning (EMS) och myndighetsöverskridande incidenthantering. Varje användningsområde förstärks med NERVA AI-funktioner för smartare uppdragsgenomförande."
         },
         {
           "question": "Hur förstärker NERVA AI-integration TAK-system?",
-          "answer": "NERVA förvandlar standard-TAK/ATAK från grundläggande lägesbild till en intelligent plattform för beslutsstöd. NERVA analyserar TAK-data i realtid och erbjuder autonom uppdragsplanering med optimerade rutter och tidsplaner, automatiserad CASEVAC-samordning som beräknar de bästa landningszonerna och flygrutterna, underrättelser om fientliga enheter med hotberäkningar och rekommenderade motåtgärder, intelligent beräkning av sökområden för SAR-operationer, geofencing med automatiska varningar vid luftrumsöverträdelser samt 3D-luftrumsvisualisering för dekonfliktering av UAS. NERVA kan köras i molninfrastruktur, på lokala servrar eller på vår edge-driftsatta GPU-hårdvara och integreras sömlöst med befintliga TAK Server-driftsättningar genom TAK-standardprotokoll och API:er."
+          "answer": "NERVA omvandlar standard-TAK/ATAK från grundläggande lägesbild till en intelligent beslutsstödsplattform. NERVA analyserar TAK-data i realtid för att tillhandahålla: autonom uppdragsplanering med optimerade rutter och tidsplaner, automatiserad samordning av medicinsk evakuering som beräknar bästa LZ-platser och flygvägar, lägesbild med riskzonsanalys och rekommendationer för dekonflikthantering, intelligent beräkning av sökområde för SAR-operationer, geofencing med automatiska varningar för luftrumsintrång och 3D-visualisering av luftrum för UAS-dekonflikthantering. NERVA körs på molninfrastruktur, lokala servrar eller vår edge-driftsatta GPU-hårdvara, och integreras sömlöst med befintliga TAK Server-driftsättningar genom standardiserade TAK-protokoll och API:er."
         }
       ],
       "cta": {
@@ -1276,8 +1297,8 @@
     },
     "exportControl": {
       "title": "Exportkontroll och efterlevnad",
-      "description": "Informationen och tekniken som presenteras på denna webbplats kan omfattas av amerikanska exportkontrollagar och föreskrifter. Du samtycker till att följa alla tillämpliga lagar och föreskrifter om export- och återexportkontroll.",
-      "warning": "VARNING: Våra produkter och tjänster omfattar försvarsteknik som kan omfattas av strikta exportkontroller. Obehörig export eller återexport kan leda till straffrättsliga och civilrättsliga påföljder."
+      "description": "Viss information och teknik som presenteras på denna webbplats kan omfattas av amerikanska exportkontrollagar och föreskrifter, inklusive Export Administration Regulations (EAR) och, där det är tillämpligt, International Traffic in Arms Regulations (ITAR). Du samtycker till att följa alla tillämpliga lagar och föreskrifter om export- och återexportkontroll.",
+      "warning": "OBS: Vissa produkter och tjänster kan omfattas av exportkontroller. Användare ansvarar för att följa alla tillämpliga krav på export och återexport. Obehörig export eller återexport kan leda till civilrättsliga eller straffrättsliga påföljder."
     },
     "governingLaw": {
       "title": "Tillämplig lag och jurisdiktion",

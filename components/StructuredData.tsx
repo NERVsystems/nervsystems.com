@@ -34,7 +34,7 @@ export default function StructuredData() {
       "Tactical AI",
       "Edge Computing",
       "Drone Integration",
-      "Defense Technology",
+      "Defense and Public Safety Technology",
       "Team Awareness Kit",
       "HADR Operations",
       "Humanitarian Assistance and Disaster Relief",

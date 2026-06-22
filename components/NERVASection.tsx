@@ -44,7 +44,7 @@ export default function NERVASection() {
   const videoFiles: Record<string, string> = {
     airspace: 'nerva-airspace',
     uas: 'nerva-sar', // UAS demo (SAR scenario)
-    threat: 'nerva-threat', // Hostile Unit Identification
+    threat: 'nerva-threat', // Situational Awareness & Risk Zones
     alert: 'nerva-alert', // Geofence construction
     sar: 'nerva-sar-demo', // Search and Rescue
     medevac: 'nerva-medevac', // CASEVAC
