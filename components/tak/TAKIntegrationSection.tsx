@@ -54,6 +54,11 @@ export default function TAKIntegrationSection() {
                 <p className="text-tactical-textDim text-sm leading-relaxed mb-3">
                   {t('useCases.military.description')}
                 </p>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {(t.raw('useCases.military.products') as string[]).map((product, idx) => (
+                    <span key={idx} className="text-xs font-mono text-white border border-tactical-accent/40 bg-tactical-accent/10 px-2 py-1 rounded">{product}</span>
+                  ))}
+                </div>
                 <div className="flex flex-wrap gap-2">
                   {(t.raw('useCases.military.tags') as string[]).map((tag, idx) => (
                     <span key={idx} className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">{tag}</span>
@@ -77,6 +82,11 @@ export default function TAKIntegrationSection() {
                 <p className="text-tactical-textDim text-sm leading-relaxed mb-3">
                   {t('useCases.lawEnforcement.description')}
                 </p>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {(t.raw('useCases.lawEnforcement.products') as string[]).map((product, idx) => (
+                    <span key={idx} className="text-xs font-mono text-white border border-tactical-accent/40 bg-tactical-accent/10 px-2 py-1 rounded">{product}</span>
+                  ))}
+                </div>
                 <div className="flex flex-wrap gap-2">
                   {(t.raw('useCases.lawEnforcement.tags') as string[]).map((tag, idx) => (
                     <span key={idx} className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">{tag}</span>
@@ -100,6 +110,11 @@ export default function TAKIntegrationSection() {
                 <p className="text-tactical-textDim text-sm leading-relaxed mb-3">
                   {t('useCases.emergency.description')}
                 </p>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {(t.raw('useCases.emergency.products') as string[]).map((product, idx) => (
+                    <span key={idx} className="text-xs font-mono text-white border border-tactical-accent/40 bg-tactical-accent/10 px-2 py-1 rounded">{product}</span>
+                  ))}
+                </div>
                 <div className="flex flex-wrap gap-2">
                   {(t.raw('useCases.emergency.tags') as string[]).map((tag, idx) => (
                     <span key={idx} className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">{tag}</span>
@@ -123,6 +138,11 @@ export default function TAKIntegrationSection() {
                 <p className="text-tactical-textDim text-sm leading-relaxed mb-3">
                   {t('useCases.commercial.description')}
                 </p>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {(t.raw('useCases.commercial.products') as string[]).map((product, idx) => (
+                    <span key={idx} className="text-xs font-mono text-white border border-tactical-accent/40 bg-tactical-accent/10 px-2 py-1 rounded">{product}</span>
+                  ))}
+                </div>
                 <div className="flex flex-wrap gap-2">
                   {(t.raw('useCases.commercial.tags') as string[]).map((tag, idx) => (
                     <span key={idx} className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">{tag}</span>
@@ -146,6 +166,11 @@ export default function TAKIntegrationSection() {
                 <p className="text-tactical-textDim text-sm leading-relaxed mb-3">
                   {t('useCases.intelligence.description')}
                 </p>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {(t.raw('useCases.intelligence.products') as string[]).map((product, idx) => (
+                    <span key={idx} className="text-xs font-mono text-white border border-tactical-accent/40 bg-tactical-accent/10 px-2 py-1 rounded">{product}</span>
+                  ))}
+                </div>
                 <div className="flex flex-wrap gap-2">
                   {(t.raw('useCases.intelligence.tags') as string[]).map((tag, idx) => (
                     <span key={idx} className="text-xs font-mono text-tactical-accent bg-black/30 px-2 py-1 rounded">{tag}</span>
@@ -153,6 +178,8 @@ export default function TAKIntegrationSection() {
                 </div>
               </div>
             </div>
+
+            <p className="text-xs text-tactical-textDim leading-relaxed">{t('useCases.note')}</p>
           </div>
         </div>
       </div>
