@@ -3,7 +3,7 @@
     "features": "Features",
     "platform": "Platform",
     "takSolutions": "TAK Solutions",
-    "impact": "Impact",
+    "about": "About",
     "contact": "Contact",
     "requestDemo": "Schedule a Call"
   },
@@ -655,7 +655,7 @@
     }
   },
   "takSolutions": {
-  "impact": "Impact",
+  "about": "About",
     "hero": {
       "eyebrow": "Global TAK Solutions",
       "title": "Complete TAK/ATAK",
@@ -1283,5 +1283,11 @@
       }
     },
     "footnote": "NERV Systems is an independent company. References to the UN Sustainable Development Goals describe how our technology supports these objectives and do not imply endorsement by the United Nations."
+  },
+  "about": {
+    "eyebrow": "About NERV Systems",
+    "title": "Advanced AI for missions that matter",
+    "lead": "NERV Systems is a defence technology company bringing AI augmentation to TAK and ATAK. We build NERVA, an AI assistant for mission planning and autonomous operations, and InferNode, a formally verified runtime that keeps AI agents provably within their boundaries.",
+    "body": "Our technology is built for the hardest operational environments—and the same capabilities that give tactical teams the edge help responders save lives in disaster relief, search and rescue, and humanitarian crises. That dual purpose is why we measure our work not only in operational advantage, but in global impact."
   }
 }

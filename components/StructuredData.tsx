@@ -49,7 +49,11 @@ export default function StructuredData() {
       "Formally Verified Systems",
       "Secure AI Agent Runtime"
     ],
-    "sameAs": [],
+    "sameAs": [
+      "https://github.com/NERVsystems",
+      "https://www.youtube.com/@nervsystems",
+      "https://x.com/NERVSysOffical"
+    ],
     "memberOf": [
       {
         "@type": "Organization",
@@ -62,8 +66,21 @@ export default function StructuredData() {
       {
         "@type": "Organization",
         "name": "King's College London"
+      },
+      {
+        "@type": "Organization",
+        "name": "European Defense Tech Hub"
+      },
+      {
+        "@type": "Organization",
+        "name": "Singapore Defence Tech Hackathon"
       }
     ],
+    "funder": {
+      "@type": "Organization",
+      "name": "Autodesk Foundation",
+      "url": "https://www.autodesk.com/company/autodesk-foundation"
+    },
     "makesOffer": [
       {
         "@type": "Offer",
