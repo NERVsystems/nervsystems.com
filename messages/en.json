@@ -8,7 +8,7 @@
     "requestDemo": "Schedule a Call"
   },
   "hero": {
-    "title": "Tactical AI for Mission Success",
+    "title": "Tactical AI for Mission Planning",
     "subtitle": "TAK-native AI-powered decision support that turns information overload into clear action for critical operations.",
     "stats": {
       "planning": {
@@ -41,13 +41,13 @@
     "capabilities": {
       "uas": {
         "icon": "UAS",
-        "title": "Autonomous Drone Operations",
-        "command": "\"NERVA, launch reconnaissance pattern Alpha\"",
-        "description": "Autonomous flight-path planning for ISR and reconnaissance. NERVA monitors drone telemetry, coordinates sensor tasking, and maintains a real-time picture of friendly and unidentified tracks for airspace awareness.",
+        "title": "Drone Operations Support",
+        "command": "\"NERVA, draft tasking for reconnaissance pattern Alpha\"",
+        "description": "Decision support for ISR and reconnaissance. NERVA monitors drone telemetry, drafts sensor-tasking options for operator approval, and maintains a real-time picture of friendly and unidentified tracks for airspace awareness.",
         "features": [
-          "Autonomous flight planning",
+          "Flight-plan recommendations",
           "Real-time telemetry monitoring",
-          "Automated flight-path planning",
+          "Flight-path recommendations",
           "UAS command & control"
         ]
       },
@@ -66,7 +66,7 @@
       "threat": {
         "icon": "RISK",
         "title": "Situational Awareness & Risk Zones",
-        "command": "Identify a track of interest → NERVA acts",
+        "command": "Identify a track of interest → NERVA flags, the operator acts",
         "description": "Plots awareness and standoff zones from user-provided data, alerts all units in affected areas, and recommends de-confliction and safety actions based on the operating picture.",
         "features": [
           "User-provided data sources",
@@ -143,7 +143,7 @@
     }
   },
   "features": {
-    "title": "Complete Platform",
+    "title": "The Full Toolkit",
     "subtitle": "MOSA-compliant software and hardware for tactical edge deployment",
     "items": {
       "planning": {
@@ -155,12 +155,12 @@
       "fusion": {
         "icon": "02",
         "title": "MULTI-SOURCE INTELLIGENCE FUSION",
-        "description": "Unified analysis across drone feeds, sensor networks, and operator reports. Single operational picture from distributed data sources.",
+        "description": "Unified analysis across drone feeds, sensor networks, and operator reports. One picture on the map you already run, fused from distributed data sources.",
         "code": "MAGI-02"
       },
       "assessment": {
         "icon": "03",
-        "title": "AUTONOMOUS ASSESSMENT",
+        "title": "CONTINUOUS ASSESSMENT",
         "description": "Pattern recognition and anomaly detection for predictive analysis of operational environments.",
         "code": "MAGI-03"
       },
@@ -811,12 +811,12 @@
     },
     "integration": {
       "title": "Why Choose NERV for TAK Solutions?",
-      "description": "Unlike traditional TAK hosting providers, NERV Systems combines expert TAK deployment services with AI-powered intelligence. Every TAK solution includes NERVA integration, transforming your TAK/ATAK system from basic situational awareness into an intelligent decision support platform.",
+      "description": "Unlike traditional TAK hosting providers, NERV Systems combines expert TAK deployment services with AI-powered intelligence. Every TAK solution includes NERVA integration, transforming your TAK/ATAK system from basic situational awareness by adding intelligent decision support.",
       "benefits": [
         {
           "number": "01",
           "title": "AI-Enhanced TAK Platform",
-          "description": "NERVA adds autonomous mission planning, automated medical-evacuation coordination, situational awareness, and real-time decision support to your ATAK/TAK deployment"
+          "description": "NERVA adds mission planning support, automated medical-evacuation coordination, situational awareness, and real-time decision support to your ATAK/TAK deployment"
         },
         {
           "number": "02",
@@ -886,7 +886,7 @@
         {
           "category": "AI Capabilities",
           "traditional": "Manual mission planning and analysis",
-          "nerv": "Autonomous mission planning with NERVA AI: automated medical evacuation, situational awareness, SAR calculations"
+          "nerv": "Mission planning support with NERVA AI: automated medical evacuation, situational awareness, SAR calculations"
         },
         {
           "category": "Response Time",
@@ -1071,7 +1071,7 @@
         },
         {
           "question": "What makes NERV's TAK solutions different from other TAK hosting providers?",
-          "answer": "Unlike traditional TAK hosting companies, NERV combines expert TAK deployment services with AI-powered intelligence through NERVA integration. Every NERV TAK solution includes autonomous mission planning, automated medical-evacuation coordination, real-time situational awareness, intelligent geofencing, and 3D airspace visualization—capabilities not available from standard TAK providers. With offices in the United States and Singapore, we serve organizations across North America and Asia Pacific, offering multi-region TAK hosting with local compliance expertise. Our flexible deployment options include cloud TAK hosting, on-premise TAK servers, hybrid architectures, and edge-deployed TAK systems with our GPU-enabled hardware."
+          "answer": "Unlike traditional TAK hosting companies, NERV combines expert TAK deployment services with AI-powered intelligence through NERVA integration. Every NERV TAK solution includes mission planning support, medical-evacuation coordination support, real-time situational awareness, intelligent geofencing, and 3D airspace visualization—capabilities not available from standard TAK providers. With offices in the United States and Singapore, we serve organizations across North America and Asia Pacific, offering multi-region TAK hosting with local compliance expertise. Our flexible deployment options include cloud TAK hosting, on-premise TAK servers, hybrid architectures, and edge-deployed TAK systems with our GPU-enabled hardware."
         },
         {
           "question": "Can you develop custom TAK plugins?",
@@ -1087,7 +1087,7 @@
         },
         {
           "question": "How does NERVA AI integration enhance TAK systems?",
-          "answer": "NERVA transforms standard TAK/ATAK from basic situational awareness into an intelligent decision support platform. NERVA analyzes TAK data in real-time to provide: autonomous mission planning with optimized routes and timing, automated medical-evacuation coordination calculating best LZ locations and flight paths, situational awareness with risk-zone analysis and de-confliction recommendations, intelligent search area calculation for SAR operations, geofencing with automatic alerts for airspace violations, and 3D airspace visualization for UAS deconfliction. NERVA runs on cloud infrastructure, on-premise servers, or our edge-deployed GPU hardware, integrating seamlessly with existing TAK Server deployments through standard TAK protocols and APIs."
+          "answer": "NERVA transforms standard TAK/ATAK from basic situational awareness by adding intelligent decision support. NERVA analyzes TAK data in real-time to provide: mission planning support with optimized routes and timing, automated medical-evacuation coordination calculating best LZ locations and flight paths, situational awareness with risk-zone analysis and de-confliction recommendations, intelligent search area calculation for SAR operations, geofencing with automatic alerts for airspace violations, and 3D airspace visualization for UAS deconfliction. NERVA runs on cloud infrastructure, on-premise servers, or our edge-deployed GPU hardware, integrating seamlessly with existing TAK Server deployments through standard TAK protocols and APIs."
         }
       ],
       "cta": {
@@ -1290,7 +1290,7 @@
       },
       "partnerships": {
         "title": "Partnerships for the Goals",
-        "description": "TAK-native interoperability connects responders, agencies, and humanitarian partners around a single operational picture for coordinated action."
+        "description": "TAK-native interoperability connects responders, agencies, and humanitarian partners around a common operating picture for coordinated action."
       }
     },
     "footnote": "NERV Systems is an independent company. References to the UN Sustainable Development Goals describe how our technology supports these objectives and do not imply endorsement by the United Nations."
@@ -1298,7 +1298,7 @@
   "about": {
     "eyebrow": "About NERV Systems",
     "title": "Advanced AI for missions that matter",
-    "lead": "NERV Systems is a defence technology company bringing AI augmentation to TAK and ATAK. We build NERVA, an AI assistant for mission planning and autonomous operations, and InferNode, a formally verified runtime that keeps AI agents provably within their boundaries.",
+    "lead": "NERV Systems is a defence technology company bringing AI augmentation to TAK and ATAK. We build NERVA, an AI assistant for mission planning and decision support — staff, not command, and InferNode, a formally verified runtime that keeps AI agents provably within their boundaries.",
     "body": "Our technology is built for the hardest operational environments—and the same capabilities that give tactical teams the edge help responders save lives in disaster relief, search and rescue, and humanitarian crises. That dual purpose is why we measure our work not only in operational advantage, but in global impact."
   }
 }
