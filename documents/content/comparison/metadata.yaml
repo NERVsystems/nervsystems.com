@@ -104,7 +104,7 @@ phases:
           - "Evaluate automated threat assessment"
           - "Assess natural language interfaces"
           - "Compare predictive analytics capabilities"
-          - "Evaluate autonomous operation support"
+          - "Evaluate operator-approved tasking workflows"
 
   - id: 3
     name: "Total Cost of Ownership Analysis"
@@ -245,7 +245,7 @@ phases:
     sections:
       - title: "AI-Enhanced TAK Capabilities"
         items:
-          - "Autonomous mission planning unavailable in alternatives"
+          - "Mission planning support unavailable in alternatives"
           - "Automated CASEVAC coordination unique to NERVA"
           - "Natural language interface for TAK operations"
           - "Real-time threat intelligence with AI analysis"

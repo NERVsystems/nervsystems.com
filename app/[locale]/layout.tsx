@@ -29,8 +29,8 @@ export async function generateMetadata({
 
   return {
   metadataBase: new URL(baseUrl),
-  title: "NERV Systems | AI-Powered TAK Platform for Mission Success",
-  description: "Advanced TAK/ATAK solutions with AI mission planning for defense, HADR, and emergency response. NERVA AI assistant for autonomous operations, disaster relief coordination, and search & rescue. Managed TAK hosting, deployment consulting, and training for Asia Pacific.",
+  title: "NERV Systems | AI-Powered TAK Decision Support for Mission Planning",
+  description: "Advanced TAK/ATAK solutions with AI mission planning support for defense, HADR, and emergency response. NERVA AI assistant for decision support, disaster relief coordination, and search & rescue. Managed TAK hosting, deployment consulting, and training for Asia Pacific.",
   keywords: [
     "TAK solutions",
     "ATAK platform",
@@ -49,7 +49,8 @@ export async function generateMetadata({
     "Team Awareness Kit",
     "TAK Singapore",
     "TAK Asia",
-    "autonomous mission planning",
+    "AI decision support",
+    "TAK-native",
     "defense technology",
     "tactical edge computing",
     "MOSA compliant",
@@ -108,7 +109,7 @@ export async function generateMetadata({
     ]
   },
   openGraph: {
-    title: "NERV Systems | AI-Powered TAK Platform for Mission Success",
+    title: "NERV Systems | AI-Powered TAK Decision Support for Mission Planning",
     description: "TAK/ATAK solutions with AI mission planning for defense, HADR, and emergency response. Disaster relief coordination, search & rescue, and humanitarian operations across Asia Pacific.",
     url: canonicalUrl,
     siteName: "NERV Systems",

@@ -127,7 +127,7 @@ export default function StructuredData() {
     "@id": `${baseUrl}/#website`,
     "url": baseUrl,
     "name": "NERV Systems",
-    "description": "AI-Powered TAK Platform for Mission Success",
+    "description": "AI-Powered TAK Decision Support for Mission Planning",
     "publisher": {
       "@id": `${baseUrl}/#organization`
     },
@@ -141,7 +141,7 @@ export default function StructuredData() {
     "@id": `${baseUrl}/#nerva`,
     "name": "NERVA",
     "applicationCategory": "BusinessApplication",
-    "description": "AI assistant for mission planning, autonomous operations, and intelligent decision support integrated with TAK/ATAK platforms",
+    "description": "AI assistant for mission planning support, operator-approved tasking, and intelligent decision support integrated with TAK/ATAK platforms. Works offline at the edge.",
     "operatingSystem": "TAK, ATAK",
     "offers": {
       "@type": "Offer",
@@ -154,7 +154,7 @@ export default function StructuredData() {
     },
     "featureList": [
       "AI Mission Planning",
-      "Autonomous Operations",
+      "Operator-Approved Tasking",
       "TAK Integration",
       "Edge AI Computing",
       "Drone Integration",

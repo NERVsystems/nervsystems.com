@@ -7,7 +7,7 @@
     "requestDemo": "Schedule a Call"
   },
   "hero": {
-    "title": "Tactical AI for Mission Success",
+    "title": "Tactical AI for Mission Planning",
     "subtitle": "TAK-native AI-powered decision support that turns information overload into clear action for critical operations.",
     "stats": {
       "planning": {
@@ -40,14 +40,14 @@
     "capabilities": {
       "uas": {
         "icon": "UAS",
-        "title": "Autonomous Drone Operations",
-        "command": "\"NERVA, launch reconnaissance pattern Alpha\"",
-        "description": "Autonomous flight path planning for ISR, reconnaissance, and counter-UAS operations. NERVA monitors drone telemetry, issues direct commands, and can instantly retask friendly UAS from surveillance to intercept missions—plotting engagement courses for hostile drone neutralization or critical asset defense.",
+        "title": "Drone Operations Support",
+        "command": "\"NERVA, draft tasking for reconnaissance pattern Alpha\"",
+        "description": "Decision support for ISR, reconnaissance, and counter-UAS operations. NERVA monitors drone telemetry, fuses every drone track into the operator's picture, drafts tasking options and flight-plan recommendations, and flags conflicts before they become problems. The operator approves every command. Execution runs through your own ground-control systems.",
         "features": [
-          "Autonomous flight planning",
+          "Flight-plan recommendations",
           "Real-time telemetry monitoring",
-          "Automated intercept planning",
-          "UAS command & control"
+          "Operator-approved tasking options",
+          "Works with your ground-control systems"
         ]
       },
       "medevac": {
@@ -65,7 +65,7 @@
       "threat": {
         "icon": "THREAT",
         "title": "Hostile Unit Intelligence",
-        "command": "Identify enemy unit → NERVA acts",
+        "command": "Identify enemy unit → NERVA flags, the operator acts",
         "description": "Integrates with defense intelligence databases to plot range-of-fire rings, alert all units in danger zones, and provide recommended countermeasures based on threat capabilities.",
         "features": [
           "Defense database compatibility",
@@ -90,12 +90,12 @@
         "icon": "ALERT",
         "title": "Geofence Enforcement & Response",
         "command": "\"NERVA, alert if any track enters the exclusion zone\"",
-        "description": "Virtual perimeter defense with 2D/3D geofence monitoring. NERVA integrates with third-party sensors (ADS-B, RF detection, radar) to track aircraft and UAS. When any track violates virtual boundaries, NERVA instantly alerts all networked assets and coordinates response—from friendly UAS intercepts to integration with C-UAS effectors.",
+        "description": "Virtual perimeter defense with 2D/3D geofence monitoring. NERVA integrates with third-party sensors (ADS-B, RF detection, radar) to track aircraft and UAS. When any track violates virtual boundaries, NERVA instantly alerts all networked assets and assembles the decision options. Mitigation stays with your own systems and their human operators.",
         "features": [
           "2D/3D virtual geofences",
           "Third-party sensor integration",
           "Instant network-wide alerts",
-          "Coordinated response planning"
+          "Decision options for the operator"
         ]
       },
       "airspace": {
@@ -142,7 +142,7 @@
     }
   },
   "features": {
-    "title": "Complete Platform",
+    "title": "The Full Toolkit",
     "subtitle": "MOSA-compliant software and hardware for tactical edge deployment",
     "items": {
       "planning": {
@@ -154,12 +154,12 @@
       "fusion": {
         "icon": "02",
         "title": "MULTI-SOURCE INTELLIGENCE FUSION",
-        "description": "Unified analysis across drone feeds, sensor networks, and operator reports. Single operational picture from distributed data sources.",
+        "description": "Unified analysis across drone feeds, sensor networks, and operator reports. One picture on the map you already run, fused from distributed data sources.",
         "code": "MAGI-02"
       },
       "assessment": {
         "icon": "03",
-        "title": "AUTONOMOUS ASSESSMENT",
+        "title": "CONTINUOUS ASSESSMENT",
         "description": "Pattern recognition and anomaly detection for predictive analysis of operational environments.",
         "code": "MAGI-03"
       },
@@ -800,12 +800,12 @@
     },
     "integration": {
       "title": "Why Choose NERV for TAK Solutions?",
-      "description": "Unlike traditional TAK hosting providers, NERV Systems combines expert TAK deployment services with AI-powered intelligence. Every TAK solution includes NERVA integration, transforming your TAK/ATAK system from basic situational awareness into an intelligent decision support platform.",
+      "description": "Unlike traditional TAK hosting providers, NERV Systems combines expert TAK deployment services with AI-powered intelligence. Every TAK solution includes NERVA integration, adding intelligent decision support to the TAK/ATAK system you already run.",
       "benefits": [
         {
           "number": "01",
           "title": "AI-Enhanced TAK Platform",
-          "description": "NERVA adds autonomous mission planning, automated CASEVAC coordination, threat intelligence, and real-time decision support to your TAK system"
+          "description": "NERVA adds mission planning support, automated CASEVAC coordination, threat intelligence, and real-time decision support to your TAK system"
         },
         {
           "number": "02",
@@ -869,7 +869,7 @@
         {
           "category": "AI Capabilities",
           "traditional": "Manual mission planning and analysis",
-          "nerv": "Autonomous mission planning with NERVA AI: automated CASEVAC, threat intel, SAR calculations"
+          "nerv": "Mission planning support with NERVA AI: automated CASEVAC coordination, threat intel, SAR calculations"
         },
         {
           "category": "Response Time",
@@ -1054,7 +1054,7 @@
         },
         {
           "question": "What makes NERV's TAK solutions different from other TAK hosting providers?",
-          "answer": "Unlike traditional TAK hosting companies, NERV combines expert TAK deployment services with AI-powered intelligence through NERVA integration. Every NERV TAK solution includes autonomous mission planning, automated CASEVAC coordination, real-time threat intelligence, intelligent geofencing, and 3D airspace visualization—capabilities not available from standard TAK providers. With offices in the United States and Singapore, we serve organizations across North America and Asia Pacific, offering multi-region TAK hosting with local compliance expertise. Our flexible deployment options include cloud TAK hosting, on-premise TAK servers, hybrid architectures, and edge-deployed TAK systems with our GPU-enabled hardware."
+          "answer": "Unlike traditional TAK hosting companies, NERV combines expert TAK deployment services with AI-powered intelligence through NERVA integration. Every NERV TAK solution includes mission planning support, automated CASEVAC coordination, real-time threat intelligence, intelligent geofencing, and 3D airspace visualization—capabilities not available from standard TAK providers. With offices in the United States and Singapore, we serve organizations across North America and Asia Pacific, offering multi-region TAK hosting with local compliance expertise. Our flexible deployment options include cloud TAK hosting, on-premise TAK servers, hybrid architectures, and edge-deployed TAK systems with our GPU-enabled hardware."
         },
         {
           "question": "Can you develop custom TAK plugins?",
@@ -1070,7 +1070,7 @@
         },
         {
           "question": "How does NERVA AI integration enhance TAK systems?",
-          "answer": "NERVA transforms standard TAK/ATAK from basic situational awareness into an intelligent decision support platform. NERVA analyzes TAK data in real-time to provide: autonomous mission planning with optimized routes and timing, automated CASEVAC coordination calculating best LZ locations and flight paths, hostile unit intelligence with threat prediction and countermeasure recommendations, intelligent search area calculation for SAR operations, geofencing with automatic alerts for airspace violations, and 3D airspace visualization for UAS deconfliction. NERVA runs on cloud infrastructure, on-premise servers, or our edge-deployed GPU hardware, integrating seamlessly with existing TAK Server deployments through standard TAK protocols and APIs."
+          "answer": "NERVA adds intelligent decision support to standard TAK/ATAK. NERVA analyzes TAK data in real-time to provide: mission planning support with candidate routes and timing options, CASEVAC coordination support with candidate LZs and route options, hostile unit intelligence with threat prediction and countermeasure recommendations, intelligent search area calculation for SAR operations, geofencing with automatic alerts for airspace violations, and 3D airspace visualization for UAS deconfliction. The operator approves every recommendation before it becomes action. NERVA runs on cloud infrastructure, on-premise servers, or our edge-deployed GPU hardware, integrating seamlessly with existing TAK Server deployments through standard TAK protocols and APIs."
         }
       ],
       "cta": {
