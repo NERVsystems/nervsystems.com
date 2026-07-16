@@ -55,26 +55,12 @@ export default function NERVASection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mb-16 text-center">
-          <div className="flex items-center justify-center mb-4 gap-4">
-            {/* NERVA Face Logo with Hover Effect */}
-            <div className="relative group cursor-pointer">
-              <img
-                src="/img/NERVA WHT Calm.png"
-                alt="NERVA Calm"
-                className="h-20 md:h-28 w-auto transition-opacity duration-300 group-hover:opacity-0"
-              />
-              <img
-                src="/img/NERVA WHT Fierce.png"
-                alt="NERVA Fierce"
-                className="h-20 md:h-28 w-auto absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-              />
-            </div>
-
-            {/* NERVA Logotype */}
+          <div className="flex items-center justify-center mb-4">
+            {/* NERVA Logo + Logotype lockup */}
             <img
-              src="/img/NERVA WHT Logotype.png"
+              src="/img/NERVA WHT Lockup.png"
               alt="NERVA"
-              className="h-16 md:h-24 w-auto"
+              className="h-24 md:h-32 w-auto"
             />
           </div>
 
