@@ -2,10 +2,11 @@
   "nav": {
     "features": "Funktioner",
     "platform": "Plattform",
-    "takSolutions": "TAK-lösningar",
+    "takSolutions": "ATAK/TAK-lösningar",
     "about": "Om oss",
     "contact": "Kontakt",
-    "requestDemo": "Boka ett möte"
+    "requestDemo": "Boka ett möte",
+    "nervCentre": "On-premise-lösningar"
   },
   "hero": {
     "title": "Taktisk AI som skapar lyckade uppdrag",
@@ -636,7 +637,8 @@
         "administration": "Systemadministration",
         "plugins": "Pluginutveckling",
         "edge": "Hårdvara för lokal drift",
-        "other": "Övrigt"
+        "other": "Övrigt",
+        "nervCentre": "NERV Centre (lokal beräkningskraft)"
       }
     },
     "buttons": {
@@ -650,17 +652,22 @@
         "title": "Tack!",
         "demo": "Vi har tagit emot din förfrågan. Vårt team kontaktar dig inom 24 timmar för att boka samtalet.",
         "quote": "Din offertförfrågan har tagits emot. Vårt team kontaktar dig inom 24 timmar.",
-        "contact": "Din kontaktförfrågan har tagits emot. Vårt team kontaktar dig inom 24 timmar."
+        "contact": "Din kontaktförfrågan har tagits emot. Vårt team kontaktar dig inom 24 timmar.",
+        "nervCentre": "Tack — er förfrågan om NERV Centre har tagits emot. Vårt team kontaktar er inom 24 timmar med dimensionering och prissättning."
       },
       "error": "Det uppstod ett problem när formuläret skulle skickas. Mejla oss direkt på contact@nervsystems.com",
       "privacyPrefix": "Genom att skicka detta formulär godkänner du vår",
       "privacyLink": "Integritetspolicy",
       "privacyAnd": "och",
       "termsLink": "Användarvillkor"
+    },
+    "nervCentre": {
+      "title": "Begär offert",
+      "subtitle": "Berätta om er anläggning, arbetslast och förutsättningar så dimensionerar vi ett NERV Centre och skickar prisuppgifter — köp eller leasing."
     }
   },
   "takSolutions": {
-  "about": "Om oss",
+    "about": "Om oss",
     "hero": {
       "eyebrow": "Globala TAK-lösningar",
       "title": "Kompletta TAK/ATAK",
@@ -1367,5 +1374,216 @@
     "title": "Avancerad AI för uppdrag som betyder något",
     "lead": "NERV Systems är ett försvarsteknikföretag som tillför AI-förstärkning till TAK och ATAK. Vi bygger NERVA, en AI-assistent för uppdragsplanering och autonoma operationer, och InferNode, en formellt verifierad runtime som håller AI-agenter bevisbart inom sina gränser.",
     "body": "Vår teknik är byggd för de tuffaste operativa miljöerna—och samma förmågor som ger taktiska team ett övertag hjälper insatspersonal att rädda liv vid katastrofhjälp, sök och räddning och humanitära kriser. Det dubbla syftet är varför vi mäter vårt arbete inte bara i operativt övertag, utan i global påverkan."
+  },
+  "nervCentre": {
+    "meta": {
+      "title": "NERV Centre | Privat lokal och suverän AI-beräkningskraft | NERV Systems",
+      "description": "NERV Centre är ett förseglat, fristående datacenter för privat, lokal AI: suverän beräkningskraft som ni äger eller leasar (HaaS). Kör NERVA och AI-agenter bakom er egen perimeter med datasuveränitet, motståndskraft och hög upptid — även helt offline. Jämför den verkliga kostnaden mot publikt moln."
+    },
+    "hero": {
+      "eyebrow": "NERV CENTRE · PRIVAT LOKAL BERÄKNINGSKRAFT",
+      "title": "Er AI. Er byggnad.",
+      "titleLine2": "Era data — och ingen annans.",
+      "subtitle": "NERV Centre är ett förseglat, fristående datacenter som kör er AI och er infrastruktur innanför väggar ni själva kontrollerar. Ingen hyperscaler. Ingen hyresvärd. Ingen upplänk att kapa.",
+      "features": {
+        "sealed": "IP65-förseglad kapsling",
+        "efficient": "PUE 1.3 effektivitet",
+        "offline": "Körs helt offline",
+        "aiReady": "Redo för NERVA och InferNode"
+      },
+      "cta": {
+        "quote": "Begär offert",
+        "calculator": "Beräkna er verkliga kostnad"
+      }
+    },
+    "value": {
+      "eyebrow": "VARFÖR ON-PREMISE",
+      "title": "Molnet är någon annans dator. Den här är er.",
+      "subtitle": "För team som inte har råd att skicka sina data någon annanstans — eller att sluta arbeta när uppkopplingen gör det.",
+      "pillars": {
+        "sovereignty": {
+          "code": "01",
+          "title": "Datasuveränitet från grunden",
+          "description": "Era data skapas, bearbetas och lagras innanför er perimeter. Inget kopieras till ett tredjepartsmoln, exponeras för en annan jurisdiktion eller blir åtkomligt för någon ni inte själva släppt in."
+        },
+        "resilience": {
+          "code": "02",
+          "title": "Fungerar när länken kapas",
+          "description": "Förseglad beräkningskraft på ert eget golv fortsätter fungera när internet, elnätet eller upplänken faller. Molnet stannar vid WAN. NERV Centre gör det inte."
+        },
+        "physical": {
+          "code": "03",
+          "title": "Fysiskt säkrad",
+          "description": "Förseglat stål enligt IP65/NEMA 4, magnetlås klassade för ett halvt ton, inpassering med kodpanel och bricka samt sabotagedetektering med kamerainspelning. Ett låst, övervakat datacenter — inte ett rack i en korridor."
+        },
+        "aiReady": {
+          "code": "04",
+          "title": "Suverän AI i kanten",
+          "description": "Dimensionerat för GPU-inferens. Kör NERVA och InferNodes AI-agenter på noder i H100- och L40S-klass, alldeles intill de människor som använder dem — suverän AI med lokal latens och ingen kostnad per token."
+        }
+      }
+    },
+    "products": {
+      "eyebrow": "SORTIMENTET",
+      "title": "En plattform, tre formfaktorer",
+      "subtitle": "Samma förseglade, övervakade kärna — inomhus, utomhus eller containeriserad i stor skala.",
+      "specsLabel": "SPECIFIKATIONER",
+      "items": {
+        "pro": {
+          "name": "NERV Centre Pro",
+          "tag": "INOMHUS",
+          "description": "Fristående mikrodatacenter för inomhusbruk. Placeras direkt i ett kontor, en klinik eller ett ledningsrum och kräver ingen utbyggnad av serverrum.",
+          "specs": {
+            "capacity": "12–38 RU användbart",
+            "cooling": "Upp till 7 kW förseglad kylning",
+            "power": "Integrerad PDU, UPS och elcentral"
+          }
+        },
+        "outdoor": {
+          "name": "NERV Centre Outdoor",
+          "tag": "FÄLT / FRÄMRE",
+          "description": "Väderbeständig för fält eller främre bas. Samma förseglade kärna, IP-klassad för placering utomhus — vit, grå, svart eller MultiCam.",
+          "specs": {
+            "rating": "IP65 / NEMA 4 väderbeständig",
+            "finish": "Vit, grå, svart eller MultiCam",
+            "siting": "Ingen byggnad krävs"
+          }
+        },
+        "max": {
+          "name": "NERV Centre Max",
+          "tag": "CONTAINERISERAD",
+          "description": "Containeriserad kapacitet med flera rack för större driftsättningar och snabb uppstart. Konfigurerad efter er last, levererad driftklar.",
+          "specs": {
+            "capacity": "Flera rack, 20-fots container",
+            "scale": "Upp till sex förseglade rack",
+            "deploy": "Specialkonfigurerad, offereras"
+          }
+        }
+      }
+    },
+    "anatomy": {
+      "eyebrow": "VAD FINNS INUTI",
+      "title": "Ett förseglat datacenter, inte en serverskrubb",
+      "description": "Varje NERV Centre integrerar strömförsörjning, kylning, säkerhet och övervakning i en enda förseglad kapsling. Kylning, brandskydd, UPS och passerkontroll är konstruerade som en helhet — så att den skyddar er hårdvara och fungerar utan tillsyn, var ni än placerar den.",
+      "imageAlt": "NERV Centre Pro med integrerat brandskydd, PDU, passersäkerhet, batteri och UPS, elcentral, precisionskylning, kabelhantering och låsbara hjul",
+      "specs": {
+        "rating": {
+          "k": "IP-KLASS",
+          "v": "IP65 / NEMA 4"
+        },
+        "efficiency": {
+          "k": "EFFEKTIVITET",
+          "v": "PUE 1.3 typiskt"
+        },
+        "enclosure": {
+          "k": "KAPSLING",
+          "v": "2 mm pulverlackerat stål"
+        },
+        "capacity": {
+          "k": "KAPACITET",
+          "v": "12–38 RU · upp till 7 kW"
+        },
+        "access": {
+          "k": "INPASSERING",
+          "v": "Magnetlås · kodpanel + bricka"
+        },
+        "protection": {
+          "k": "SKYDD",
+          "v": "Sabotage- + branddetektering"
+        }
+      }
+    },
+    "sense": {
+      "eyebrow": "NERV SENSE",
+      "title": "Varje enhet övervakar sig själv",
+      "description": "NERV Sense är det övervaknings- och automationslager som är inbyggt i varje NERV Centre. Det håller kapslingen i gott skick och säker och rapporterar hela lägesbilden till ert team — lokalt eller på distans.",
+      "items": {
+        "power": {
+          "title": "Intelligent kraftövervakning",
+          "description": "Analys av last, kapacitet och effektivitet i realtid över sju effektzoner, med statuskartor och rapportering."
+        },
+        "environment": {
+          "title": "Miljöövervakning",
+          "description": "Temperatur, luftfuktighet, vibration, vatten, lufttryck, luftflöde och damm — mäts kontinuerligt och larmar vid avvikelser."
+        },
+        "security": {
+          "title": "Passer- och sabotagekontroll",
+          "description": "Åtkomst med PIN och bricka, användarprofiler, RBAC, IP-tillåtelselistor och TLS — med sabotage- och rörelsedetektering kopplad till kamerainspelning."
+        },
+        "automation": {
+          "title": "Autonom respons",
+          "description": "Automatiserad brandinsats, återställning av förlorade servrar, säker fjärrstyrning av dörrar och optimering av energieffektivitet — utan operatör."
+        }
+      },
+      "securityNote": "Härdad som standard: TLS 1.2 med AES-256, SSH-autentisering med publik nyckel, SNMPv3, LDAP/Active Directory över TLS, IPv4/IPv6-brandvägg, utelåsning vid misslyckade inloggningar och tvingande lösenordspolicy."
+    },
+    "calculator": {
+      "eyebrow": "KALKYLATOR FÖR VERKLIG KOSTNAD",
+      "title": "Vad kostar er infrastruktur egentligen?",
+      "description": "Jämför fem år av publikt moln, ett byggt serverrum, colocation och ett NERV Centre — köpt direkt eller leasat med support inkluderad. Varje antagande är synligt och redigerbart, prissatt för er region och arbetslast.",
+      "point": "En sak diagrammet gör uppenbar: när upplänken kapas stannar molnalternativet. De alternativ där hårdvaran finns på ert eget golv fortsätter att köra.",
+      "button": "Öppna kalkylatorn",
+      "note": "Öppnar den interaktiva kalkylatorn. Uppskattningar för jämförelse, inte en offert."
+    },
+    "calculatorPage": {
+      "metaTitle": "Kalkylator för verklig kostnad | NERV Centre lokal beräkningskraft | NERV Systems",
+      "metaDescription": "Jämför den verkliga femårskostnaden för publikt moln, ett lokalt serverrum, colocation och ett NERV Centre — köpt eller leasat (HaaS). Varje antagande är redigerbart, prissatt för er region och AI-arbetslast.",
+      "back": "← Tillbaka till NERV Centre"
+    },
+    "haas": {
+      "eyebrow": "HARDWARE-AS-A-SERVICE",
+      "title": "Äg förmågan, inte kapitalkostnaden",
+      "description": "Alla team vill inte ha ett kapitalköp i böckerna. Med NERV Centre Hardware-as-a-Service driftsätter ni samma förseglade, suveräna beräkningskraft för en fast månadsavgift — support och underhåll ingår, hårdvaran byts ut vid förnyelse — så att förmågan finns i era egna lokaler samtidigt som den hålls utanför er balansräkning.",
+      "points": {
+        "opex": {
+          "title": "OpEx, inte CapEx",
+          "description": "En förutsägbar månadsavgift i stället för ett kapitalutlägg — och ingen investeringsprocess att vänta ut."
+        },
+        "bundled": {
+          "title": "Support och underhåll ingår",
+          "description": "Övervakning, underhåll och support för NERV Sense ingår i avtalet — en post, inga överraskningar."
+        },
+        "refresh": {
+          "title": "Byts ut vid förnyelse",
+          "description": "Hårdvaran byts ut när avtalet förnyas, så att er AI-beräkningskraft aldrig föråldras obemärkt mitt i ett uppdrag."
+        },
+        "term": {
+          "title": "36-månadersavtal",
+          "description": "Ordnas genom etablerade finansieringspartner för utrustning, med villkor anpassade efter er budgetcykel."
+        }
+      },
+      "cta": "Jämför köp och leasing"
+    },
+    "closing": {
+      "eyebrow": "DRIFTSÄTT PÅ ERA VILLKOR",
+      "title": "Äg den eller leasa den — support ingår",
+      "description": "Köp den direkt, eller ta den som Hardware-as-a-Service på ett 36-månadersavtal med underhåll och utbyte inkluderat. Oavsett vilket finns beräkningskraften där ni finns. Berätta om er anläggning, last och förutsättningar så dimensionerar vi den.",
+      "quote": "Begär offert",
+      "contact": "Prata med en ingenjör"
+    },
+    "callout": {
+      "label": "NERV CENTRE",
+      "title": "Privat, lokal AI-beräkningskraft",
+      "description": "Ett förseglat, fristående datacenter som kör NERVA och er infrastruktur i lokaler ni själva kontrollerar — suveränt, offline-kapabelt och fysiskt säkrat.",
+      "benefits": {
+        "onSite": {
+          "title": "Data stannar på plats",
+          "description": "Inget lämnar er perimeter"
+        },
+        "offline": {
+          "title": "Körs offline",
+          "description": "Fungerar när upplänken kapas"
+        },
+        "sealed": {
+          "title": "IP65-förseglad",
+          "description": "Låst, övervakad, sabotageskyddad"
+        },
+        "aiReady": {
+          "title": "AI-redo",
+          "description": "GPU-noder för NERVA och InferNode"
+        }
+      },
+      "cta": "Utforska NERV Centre →"
+    }
   }
 }
