@@ -22,10 +22,12 @@ const nextConfig: NextConfig = {
       {
         source: '/:path*',
         headers: [
-          // Prevent clickjacking attacks
+          // Prevent clickjacking attacks (SAMEORIGIN allows our own pages to
+          // embed same-origin tools like the NERV Centre calculator, while
+          // still blocking cross-site framing)
           {
             key: 'X-Frame-Options',
-            value: 'DENY',
+            value: 'SAMEORIGIN',
           },
           // Prevent MIME type sniffing
           {
@@ -62,11 +64,11 @@ const nextConfig: NextConfig = {
               "img-src 'self' data: https: blob:",
               "font-src 'self' data:",
               "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://api.hsforms.com https://forms.hsforms.com",
-              "frame-src https://forms.hsforms.com",
+              "frame-src 'self' https://forms.hsforms.com",
               "object-src 'none'",
               "base-uri 'self'",
               "form-action 'self' https://forms.hsforms.com",
-              "frame-ancestors 'none'",
+              "frame-ancestors 'self'",
               "upgrade-insecure-requests",
             ].join('; '),
           },

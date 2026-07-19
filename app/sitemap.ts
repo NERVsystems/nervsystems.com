@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/privacy',
     '/terms',
     '/solutions/tak',
+    '/solutions/nerv-centre',
   ];
 
   // Generate sitemap entries for all locales
