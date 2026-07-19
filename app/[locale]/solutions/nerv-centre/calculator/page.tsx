@@ -64,25 +64,18 @@ export default async function NervCentreCalculatorPage({
     <main className="min-h-screen bg-tactical-bg">
       <TacticalNav />
 
-      {/* Intro header */}
-      <section className="relative pt-32 pb-8 bg-tactical-bg overflow-hidden">
-        <div className="absolute inset-0 grid-bg opacity-20"></div>
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Slim header only — the embedded tool carries its own title/intro,
+          so we do not repeat it here (avoids a duplicated headline). */}
+      <section className="relative pt-28 pb-4 bg-tactical-bg">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             href={`/${locale}/solutions/nerv-centre`}
             className="font-mono text-xs text-tactical-textDim hover:text-tactical-accent transition-colors"
           >
             {t('calculatorPage.back')}
           </Link>
-          <div className="font-mono text-sm text-tactical-accent mt-6 mb-4 uppercase tracking-wider">
-            {t('calculator.eyebrow')}
-          </div>
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-5">
-            {t('calculator.title')}
-          </h1>
-          <p className="text-tactical-textDim text-lg leading-relaxed max-w-3xl">
-            {t('calculator.description')}
-          </p>
+          {/* h1 for SEO/accessibility; the visible headline lives in the tool below */}
+          <h1 className="sr-only">{t('calculator.title')}</h1>
         </div>
       </section>
 
