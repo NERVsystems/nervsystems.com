@@ -5,11 +5,12 @@ import { useTranslations, useLocale } from 'next-intl';
 
 interface RequestDemoFormProps {
   onClose: () => void;
-  formType?: 'demo' | 'quote' | 'contact';
+  formType?: 'demo' | 'quote' | 'contact' | 'nervCentre';
   formId?: string; // Optional: specify which HubSpot form to use
+  defaultInterest?: string; // Optional: pre-select the "interested in" value
 }
 
-export default function RequestDemoForm({ onClose, formType = 'demo', formId }: RequestDemoFormProps) {
+export default function RequestDemoForm({ onClose, formType = 'demo', formId, defaultInterest }: RequestDemoFormProps) {
   const t = useTranslations('form');
   const locale = useLocale();
 
@@ -20,7 +21,7 @@ export default function RequestDemoForm({ onClose, formType = 'demo', formId }: 
     organization: '',
     phone: '',
     jobtitle: '',
-    interest: formType === 'quote' ? t('options.interest.hosting') : t('options.interest.nerva'),
+    interest: defaultInterest ?? (formType === 'quote' ? t('options.interest.hosting') : t('options.interest.nerva')),
     message: '',
     // TAK-specific fields
     organisationType: '',
@@ -108,14 +109,14 @@ Submitted: ${new Date().toISOString()}
         fields.push({ name: 'phone', value: formData.phone });
       }
 
-      // Add job title if provided (for demo form)
-      if (formData.jobtitle && formType === 'demo') {
+      // Add job title if provided (for demo / NERV Centre forms)
+      if (formData.jobtitle && (formType === 'demo' || formType === 'nervCentre')) {
         fields.push({ name: 'jobtitle', value: formData.jobtitle });
       }
 
       // Add form-specific fields
-      if (formType === 'demo') {
-        // Demo Request Form fields
+      if (formType === 'demo' || formType === 'nervCentre') {
+        // Demo / NERV Centre lead fields
         if (formData.interest) {
           fields.push({ name: 'use_case', value: formData.interest });
         }
@@ -443,6 +444,7 @@ Submitted: ${new Date().toISOString()}
               className="w-full bg-black/30 border border-white/20 text-white px-4 py-3 focus:border-tactical-accent focus:outline-none transition-colors"
             >
               <option value="NERVA AI Platform">{t('options.interest.nerva')}</option>
+              <option value="NERV Centre (On-Prem Compute)">{t('options.interest.nervCentre')}</option>
               <option value="TAK Hosting">{t('options.interest.hosting')}</option>
               <option value="TAK Deployment">{t('options.interest.deployment')}</option>
               <option value="TAK Training">{t('options.interest.training')}</option>

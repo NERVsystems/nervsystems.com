@@ -1,0 +1,800 @@
+<title>NERV Centre — True Cost Calculator</title>
+<style>
+  :root {
+    color-scheme: light;
+    --ground: #fcfcfb;
+    --panel: #f0f0ee;
+    --panel-2: #e7e7e3;
+    --ink: #0b0b0b;
+    --ink-2: #52514e;
+    --ink-3: #8a8a84;
+    --line: #d8d8d2;
+    --accent: #008300;
+    --accent-ink: #006a00;
+    --s1: #eb6834;  /* Public cloud */
+    --s2: #2a78d6;  /* On-prem server room */
+    --s3: #eda100;  /* Colocation */
+    --s4: #008300;  /* NERV Centre — buy */
+    --s5: #e87ba4;  /* NERV Centre — HaaS */
+    --grid: rgba(0,0,0,0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --ground: #1a1a19;
+      --panel: #242423;
+      --panel-2: #2b2828;
+      --ink: #ffffff;
+      --ink-2: #c3c2b7;
+      --ink-3: #8a897e;
+      --line: #3a3a37;
+      --accent: #00c832;
+      --accent-ink: #35d95e;
+      --s1: #d95926;
+      --s2: #3987e5;
+      --s3: #c98500;
+      --s4: #008300;
+      --s5: #d55181;
+      --grid: rgba(255,255,255,0.09);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --ground: #1a1a19;
+    --panel: #242423;
+    --panel-2: #2b2828;
+    --ink: #ffffff;
+    --ink-2: #c3c2b7;
+    --ink-3: #8a897e;
+    --line: #3a3a37;
+    --accent: #00c832;
+    --accent-ink: #35d95e;
+    --s1: #d95926;
+    --s2: #3987e5;
+    --s3: #c98500;
+    --s4: #008300;
+    --s5: #d55181;
+    --grid: rgba(255,255,255,0.09);
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --ground: #fcfcfb;
+    --panel: #f0f0ee;
+    --panel-2: #e7e7e3;
+    --ink: #0b0b0b;
+    --ink-2: #52514e;
+    --ink-3: #8a8a84;
+    --line: #d8d8d2;
+    --accent: #008300;
+    --accent-ink: #006a00;
+    --s1: #eb6834;
+    --s2: #2a78d6;
+    --s3: #eda100;
+    --s4: #008300;
+    --s5: #e87ba4;
+    --grid: rgba(0,0,0,0.08);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 32px 20px 64px; }
+
+  .eyebrow {
+    font-family: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 12px; letter-spacing: 0.14em; color: var(--accent-ink);
+    text-transform: uppercase; margin: 0 0 10px;
+  }
+  h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+    font-size: clamp(30px, 5vw, 44px); font-weight: 700; letter-spacing: -0.015em;
+    margin: 0 0 10px; line-height: 1.12; text-wrap: balance;
+  }
+  .lede { color: var(--ink-2); max-width: 64ch; margin: 0 0 28px; font-size: 17px; }
+
+  .controls {
+    display: flex; flex-wrap: wrap; gap: 14px 18px;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+    padding: 16px 18px; margin-bottom: 8px;
+  }
+  .ctl { display: flex; flex-direction: column; gap: 4px; min-width: 120px; flex: 1; }
+  .ctl label {
+    font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-2);
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+  }
+  .ctl select, .ctl input[type=number] {
+    font: 15px "Helvetica Neue", Helvetica, system-ui, sans-serif;
+    color: var(--ink); background: var(--ground);
+    border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px;
+  }
+  .ctl input[type=range] { accent-color: var(--accent); margin-top: 10px; }
+  .ctl .rangeval {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 13px; color: var(--ink);
+  }
+  .ctl select:focus-visible, .ctl input:focus-visible, button:focus-visible,
+  details summary:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px;
+  }
+  .tierdesc {
+    font-size: 13.5px; color: var(--ink-2); margin: 0 0 22px; padding: 0 4px;
+  }
+  .tierdesc b { color: var(--ink); }
+
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 22px; }
+  .tile {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+    padding: 14px 16px;
+  }
+  .tile .k {
+    font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-2); margin-bottom: 6px;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+  }
+  .tile .v {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+    font-size: 24px; font-weight: 700; line-height: 1.15;
+  }
+  .tile .d { font-size: 13px; color: var(--ink-2); margin-top: 4px; }
+
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+    padding: 18px 18px 14px; margin-bottom: 22px;
+  }
+  .card h2 { font-size: 17px; margin: 0 0 2px; font-weight: 600; }
+  .card .sub { font-size: 13px; color: var(--ink-2); margin: 0 0 14px; }
+
+  /* Bar chart (HTML) */
+  .barrow { display: grid; grid-template-columns: 172px 1fr; gap: 10px; align-items: center; margin-bottom: 10px; }
+  .barlabel { font-size: 13px; color: var(--ink); text-align: right; line-height: 1.25; }
+  .barlabel .win {
+    display: inline-block; font-size: 10px; letter-spacing: 0.08em;
+    color: var(--accent-ink); border: 1px solid var(--accent-ink);
+    border-radius: 999px; padding: 1px 7px; margin-top: 2px;
+    font-family: "JetBrains Mono", ui-monospace, monospace; text-transform: uppercase;
+  }
+  .bartrack { position: relative; height: 22px; }
+  .barfill { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 0 4px 4px 0; min-width: 2px; }
+  .barval {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-variant-numeric: tabular-nums; font-size: 12.5px; color: var(--ink);
+    white-space: nowrap; padding-left: 8px;
+  }
+
+  /* Line chart */
+  .linewrap { position: relative; }
+  svg text {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 11px; fill: var(--ink-2);
+  }
+  svg .endlabel { font-size: 11.5px; fill: var(--ink); }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 10px; }
+  .legend span { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; color: var(--ink-2); }
+  .legend i { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
+  .tooltip {
+    position: absolute; pointer-events: none; display: none;
+    background: var(--ground); border: 1px solid var(--line); border-radius: 6px;
+    padding: 8px 10px; font-size: 12.5px; box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+    min-width: 220px; z-index: 5;
+  }
+  .tooltip .tt-y { font-weight: 700; margin-bottom: 4px; font-family: "JetBrains Mono", ui-monospace, monospace; }
+  .tooltip .row { display: flex; justify-content: space-between; gap: 14px; align-items: center; }
+  .tooltip .row b {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-variant-numeric: tabular-nums; font-weight: 500;
+  }
+  .tooltip .row .nm { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-2); }
+  .tooltip i { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
+
+  details {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+    margin-bottom: 14px; padding: 0 18px;
+  }
+  details summary {
+    cursor: pointer; padding: 13px 0; font-weight: 600; font-size: 15px;
+    list-style-position: outside;
+  }
+  details .inner { padding: 2px 0 16px; }
+  .assump { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px 22px; font-size: 13.5px; color: var(--ink-2); }
+  .assump b { color: var(--ink); font-weight: 600; }
+  .assump .edit { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .assump input {
+    width: 84px; font: 13px "JetBrains Mono", ui-monospace, monospace;
+    color: var(--ink); background: var(--ground);
+    border: 1px solid var(--line); border-radius: 5px; padding: 4px 7px;
+  }
+  .assump .full { grid-column: 1 / -1; }
+  .tablewrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td {
+    text-align: right; padding: 6px 10px; border-bottom: 1px solid var(--line);
+    font-variant-numeric: tabular-nums;
+    font-family: "JetBrains Mono", ui-monospace, monospace; white-space: nowrap;
+  }
+  th { color: var(--ink-2); font-weight: 600; font-family: "Helvetica Neue", Helvetica, system-ui, sans-serif; }
+  th:first-child, td:first-child { text-align: left; }
+
+  .cta {
+    border: 1px solid var(--accent-ink); border-radius: 8px; padding: 18px;
+    display: flex; flex-wrap: wrap; gap: 14px; align-items: center;
+    justify-content: space-between; margin-bottom: 22px;
+  }
+  .cta p { margin: 0; max-width: 58ch; }
+  .cta a {
+    display: inline-block; background: var(--accent); color: #fff;
+    text-decoration: none; font-weight: 600; border-radius: 6px;
+    padding: 10px 18px; white-space: nowrap;
+  }
+  .cta a:hover { filter: brightness(1.1); }
+  .cta-btn {
+    background: var(--accent); color: #fff; cursor: pointer;
+    font: 600 15px "Helvetica Neue", Helvetica, system-ui, sans-serif;
+    border: none; border-radius: 6px; padding: 10px 18px; white-space: nowrap;
+  }
+  .cta-btn:hover { filter: brightness(1.1); }
+  #lead-form { width: 100%; border-top: 1px solid var(--line); padding-top: 14px; }
+  .lead-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  .lf { display: flex; flex-direction: column; gap: 4px; }
+  .lf label {
+    font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-2);
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+  }
+  .lf input {
+    font: 15px "Helvetica Neue", Helvetica, system-ui, sans-serif; color: var(--ink);
+    background: var(--ground); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px;
+  }
+  .lf input:focus-visible, .cta-btn:focus-visible, .lead-send:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px;
+  }
+  .cta .lf-note { font-size: 12.5px; color: var(--ink-2); margin: 12px 0 0; max-width: none; }
+  .lead-send {
+    margin-top: 12px; background: var(--accent); color: #fff; cursor: pointer;
+    font: 600 15px "Helvetica Neue", Helvetica, system-ui, sans-serif;
+    border: none; border-radius: 6px; padding: 10px 20px;
+  }
+  .lead-send:hover { filter: brightness(1.1); }
+  .lead-send:disabled { opacity: 0.6; cursor: default; }
+  .cta .lead-thanks { color: var(--accent-ink); font-size: 14px; margin: 12px 0 0; max-width: none; }
+  .cta .lead-fallback { color: var(--ink-2); font-size: 13px; margin: 12px 0 0; max-width: none; }
+  .cta .lead-fallback a { color: var(--accent-ink); }
+
+  footer { color: var(--ink-3); font-size: 12.5px; max-width: 76ch; }
+  footer p { margin: 6px 0; }
+  footer b { color: var(--ink-2); }
+  @media (max-width: 600px) {
+    .barrow { grid-template-columns: 118px 1fr; }
+    .barlabel { font-size: 12px; }
+  }
+</style>
+
+<script>
+  // Honour ?theme=dark|light so the page can be embedded to match a host site.
+  (function () {
+    try {
+      var m = /[?&]theme=(dark|light)/.exec(location.search);
+      if (m) document.documentElement.setAttribute("data-theme", m[1]);
+    } catch (e) { /* ignore */ }
+  })();
+</script>
+
+<div class="wrap">
+  <p class="eyebrow">NERV Systems · NERV Centre</p>
+  <h1>What does your infrastructure really cost?</h1>
+  <p class="lede">
+    Rent it from a hyperscaler. Build a server room. Rack it in a colo.
+    Or run it in a NERV&nbsp;Centre on premises you control — bought outright,
+    or leased monthly with support included. Same capability, five ways to
+    pay for it. Every assumption is visible below, and you can change it.
+  </p>
+
+  <div class="controls" role="group" aria-label="Scenario inputs">
+    <div class="ctl">
+      <label for="tier">Deployment</label>
+      <select id="tier">
+        <option value="t1">Single AI node — up to 100 connected users</option>
+        <option value="t2" selected>Dual-GPU AI node — up to 500 connected users</option>
+        <option value="t3">Multi-node AI + video — 2,000+ connected users</option>
+      </select>
+    </div>
+    <div class="ctl">
+      <label for="place">Placement</label>
+      <select id="place">
+        <option value="pro" selected>Indoor (Pro)</option>
+        <option value="out">Outdoor</option>
+      </select>
+    </div>
+    <div class="ctl">
+      <label for="region">Region</label>
+      <select id="region">
+        <option value="US" selected>United States</option>
+        <option value="GB">United Kingdom</option>
+        <option value="SG">Singapore</option>
+        <option value="AU">Australia</option>
+        <option value="CA">Canada</option>
+        <option value="DE">Germany</option>
+        <option value="SE">Sweden</option>
+      </select>
+    </div>
+    <div class="ctl" style="min-width:150px">
+      <label for="term">Term — <span class="rangeval" id="termval">5 years</span></label>
+      <input type="range" id="term" min="3" max="15" step="1" value="5">
+    </div>
+  </div>
+  <p class="tierdesc" id="tierdesc"></p>
+
+  <div class="tiles" id="tiles"></div>
+
+  <div class="card">
+    <h2>Total cost of ownership</h2>
+    <p class="sub" id="barsub"></p>
+    <div id="barchart"></div>
+  </div>
+
+  <div class="card">
+    <h2>Cumulative cost by year</h2>
+    <p class="sub">Where the cloud line crosses the owned lines is where renting stops making sense.</p>
+    <div class="linewrap">
+      <svg id="linechart" viewBox="0 0 900 360" width="100%" role="img" aria-label="Cumulative cost by year for all five options"></svg>
+      <div class="tooltip" id="tooltip"></div>
+    </div>
+    <div class="legend" id="legend"></div>
+  </div>
+
+  <details>
+    <summary>Model assumptions (editable)</summary>
+    <div class="inner">
+      <div class="assump" id="assump"></div>
+    </div>
+  </details>
+
+  <details>
+    <summary>Data table — every year, every option</summary>
+    <div class="inner tablewrap"><table id="datatable"></table></div>
+  </details>
+
+  <div class="cta">
+    <p><b>Want this run properly for your site?</b> We'll prepare a full
+    engineering breakdown for your region, power tariff, workload, and
+    floor plan — including what happens to each option when the uplink
+    is cut.</p>
+    <button id="cta-open" class="cta-btn" type="button">Request the full breakdown</button>
+    <form id="lead-form" hidden>
+      <div class="lead-grid">
+        <div class="lf"><label for="lf-name">Name</label>
+          <input id="lf-name" type="text" autocomplete="name"></div>
+        <div class="lf"><label for="lf-email">Work email</label>
+          <input id="lf-email" type="email" autocomplete="email" required></div>
+        <div class="lf"><label for="lf-org">Organisation</label>
+          <input id="lf-org" type="text" autocomplete="organization"></div>
+        <div class="lf"><label for="lf-role">Role</label>
+          <input id="lf-role" type="text" autocomplete="organization-title"></div>
+      </div>
+      <p class="lf-note">We'll include the configuration you built above, so the
+      breakdown matches what you were pricing. A person replies — no automated sequence.</p>
+      <button class="lead-send" type="submit">Send request</button>
+      <p class="lead-thanks" id="lead-thanks" hidden>Sent — thank you. We'll be in
+      touch from contact@nervsystems.com.</p>
+      <p class="lead-fallback" id="lead-fallback" hidden>Direct send didn't work from
+      here. <a id="lead-mailto" href="#">This link opens a prefilled email</a> with your
+      details and configuration — or write to contact@nervsystems.com.</p>
+    </form>
+  </div>
+
+  <footer>
+    <p><b>How to read this.</b> Estimates for comparison only, not a quote.
+    All five options price the same reference capability — the AI inference
+    node(s), the operations/database node, and storage — so the software
+    running on it is excluded everywhere equally. Hardware uses NERV list pricing;
+    cloud and maintenance rates use published market figures (July 2026)
+    and are editable above. FX rates dated 2026-04-01. GPU markets move;
+    a live quote is the standard before any decision.</p>
+    <p><b>We lean the model toward cloud.</b> The cloud figure excludes
+    egress, storage growth, snapshots, support plans, and multi-region
+    high availability — the lines that usually grow real bills. If cloud
+    still costs more here, it costs more.</p>
+    <p><b>Leasing.</b> NERV Centre HaaS is a 36-month term with support and
+    maintenance bundled, hardware refreshed at renewal, arranged through
+    established equipment-finance partners — your capability stays OpEx and
+    off your balance sheet, and there is no capital approval to wait for.</p>
+    <p><b>One difference the chart can't show.</b> When the uplink is cut,
+    the cloud option stops. The other four keep working where the hardware
+    lives. Judge any vendor by that question.</p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // --- Engagement telemetry (anonymous, cookieless; no-ops if endpoint absent) ---
+  const TRACK = (function () {
+    const EP = "/api/event", APP = "tco";
+    const sid = Math.random().toString(36).slice(2) + Date.now().toString(36);
+    return function (event, data) {
+      try {
+        fetch(EP, {
+          method: "POST", headers: { "Content-Type": "application/json" }, keepalive: true,
+          body: JSON.stringify({ app: APP, session: sid, event: event, data: data || null })
+        }).catch(function () {});
+      } catch (e) { /* preview / offline — ignore */ }
+    };
+  })();
+
+  // ---- Reference configurations (NERV Centre capability brief) ----
+  // Enclosure figures are NERV list pricing (partner AUD list,
+  // Apr 2025; outdoor modelled as indoor + published list delta), converted
+  // at the FX table below. Node = one rack server; licensing is per node.
+  const TIERS = {
+    t1: { label: "Single AI node — up to 100 connected users", kw: 1.2, ru: 12,
+          h100: 0, l40s: 1, storTB: 1,
+          sell: 58000, haasMo: 2325, enclPro: 16500, enclOut: 24700,
+          desc: "<b>2 nodes</b> — operations/database node + single-GPU AI inference node (L40S-class) · 50–100 connected users · 2–4 live video feeds (1–2 with AI detection) · 1 TB NVMe — <b>1.2 kW</b> in a sealed 12 RU unit" },
+    t2: { label: "Dual-GPU AI node — up to 500 connected users", kw: 3.3, ru: 25,
+          h100: 2, l40s: 0, storTB: 20,
+          sell: 141700, haasMo: 5950, enclPro: 22200, enclOut: 31100,
+          desc: "<b>2 nodes + storage</b> — operations/database node + dual-H100 AI inference node · 100–500 connected users · AI assistant for 25–40 concurrent users · 10+ video feeds (4–6 with AI detection) · 20 TB — <b>3.3 kW</b> in a sealed 25 RU unit" },
+    t3: { label: "Multi-node AI + video — 2,000+ connected users", kw: 6.1, ru: 38,
+          h100: 4, l40s: 2, storTB: 100,
+          sell: 265000, haasMo: 11100, enclPro: 34000, enclOut: 47300,
+          desc: "<b>3 nodes + storage</b> — operations/database node + quad-H100 AI inference node + dual-L40S video node · 500–2,000+ connected users · 20+ video feeds (10–15 with AI detection) · 100 TB — <b>6.1 kW</b> in a sealed 38 RU unit" }
+  };
+  const INSTALL = { pro: 4000, out: 4500 };
+
+  const REGIONS = {
+    US: { country: "United States",  currency: "USD", sym: "$",  pre: true,  power: 0.17, floor: 300 },
+    AU: { country: "Australia",      currency: "AUD", sym: "A$", pre: true,  power: 0.24, floor: 250 },
+    CA: { country: "Canada",         currency: "CAD", sym: "C$", pre: true,  power: 0.13, floor: 280 },
+    GB: { country: "United Kingdom", currency: "GBP", sym: "£",  pre: true,  power: 0.44, floor: 400 },
+    SG: { country: "Singapore",      currency: "SGD", sym: "S$", pre: true,  power: 0.22, floor: 500 },
+    SE: { country: "Sweden",         currency: "SEK", sym: " kr", pre: false, power: 0.20, floor: 350 },
+    DE: { country: "Germany",        currency: "EUR", sym: "€",  pre: true,  power: 0.40, floor: 320 }
+  };
+  const FX = { USD: 1.0, AUD: 1.58, CAD: 1.44, GBP: 0.79, SGD: 1.34, SEK: 10.30, EUR: 0.92 };
+  const HOURS_YR = 8760;
+
+  // Editable market-rate assumptions (USD). Defaults documented in the panel.
+  const DEFAULTS = {
+    rH100: 7.00,    // $/GPU-hr, blended hyperscaler committed/on-demand
+    rL40S: 1.80,    // $/GPU-hr
+    stack: 150,     // $/mo, cloud core stack (operations server VM, DB, networking)
+    stor: 0.05,     // $/GB-mo, blended block+object storage
+    maint: 18       // %/yr of hardware value, owned-hardware support contract
+  };
+  const ovr = {};   // user overrides; region change clears power/floor only
+
+  function coloFeeMo(kw) {
+    if (kw <= 3) return 1200;
+    if (kw <= 5) return 1400;
+    if (kw <= 7) return 1800;
+    return 2000;
+  }
+
+  function yearly(label, establishment, recurring, term) {
+    const ys = [];
+    for (let y = 0; y <= term; y++) ys.push(establishment + recurring * y);
+    return { label, establishment, recurring, tco: ys[term], yearly: ys };
+  }
+
+  function compute(tier, place, term, power, floor, a) {
+    const t = TIERS[tier];
+    const outdoor = place === "out";
+    const uplift = outdoor ? (t.enclOut - t.enclPro) : 0;
+    const stackHW = t.sell - t.enclPro;             // stack without the enclosure
+    const maint = a.maint / 100;
+    const powerCost = pue => t.kw * pue * power * HOURS_YR;
+    const floorCentre = outdoor ? 0 : 4 * floor;    // Pro takes 4 m² of office
+
+    // 1. Public cloud — equivalent rented capability, always-on
+    const gpuYr = (t.h100 * a.rH100 + t.l40s * a.rL40S) * HOURS_YR;
+    const cloud = yearly("Public cloud", 0,
+      gpuYr + a.stack * 12 + t.storTB * 1000 * a.stor * 12, term);
+
+    // 2. On-prem server room — partition a room, host the same stack
+    const roomBuild = 15000 + 2700 + 6500 + 4500 + 10000 + 3200 + 2900;
+    const room = yearly("On-prem server room", roomBuild + stackHW,
+      9 * floor + maint * stackHW + powerCost(2.5), term);
+
+    // 3. Colocation — rent rack space for the same stack
+    const colo = yearly("Colocation", 1300 + stackHW,
+      coloFeeMo(t.kw) * 12 + 12000 + maint * stackHW, term);
+
+    // 4. NERV Centre — buy outright
+    const buyBase = t.sell + uplift;
+    const buy = yearly("NERV Centre — buy", buyBase + INSTALL[place],
+      maint * buyBase + powerCost(1.3) + floorCentre, term);
+
+    // 5. NERV Centre — HaaS (36-month lease, support & maintenance bundled)
+    const haasMo = t.haasMo + uplift / 36;
+    const haas = yearly("NERV Centre — HaaS", 0,
+      haasMo * 12 + powerCost(1.3) + floorCentre, term);
+
+    return { results: [cloud, room, colo, buy, haas], haasMo };
+  }
+
+  // ---- State + rendering ----
+  const els = {};
+  ["tier", "place", "region", "term", "termval", "tierdesc", "tiles",
+   "barchart", "barsub", "linechart", "tooltip", "legend", "assump",
+   "datatable"].forEach(id => { els[id] = document.getElementById(id); });
+
+  const SERIES_VARS = ["--s1", "--s2", "--s3", "--s4", "--s5"];
+  let results = [], fx = 1, sym = "$", pre = true, lastConfig = {};
+
+  function money(usd, compact) {
+    const v = usd * fx;
+    let s;
+    if (compact) {
+      const a = Math.abs(v);
+      if (a >= 1e6) s = (v / 1e6).toFixed(v >= 1e7 ? 0 : 1) + "M";
+      else if (a >= 1e3) s = Math.round(v / 1e3) + "k";
+      else s = Math.round(v).toString();
+    } else {
+      s = Math.round(v).toLocaleString("en-US");
+    }
+    return pre ? sym + s : s + sym;
+  }
+
+  function recompute() {
+    const R = REGIONS[els.region.value];
+    fx = FX[R.currency]; sym = R.sym; pre = R.pre;
+    const tier = els.tier.value;
+    const place = els.place.value;
+    const term = +els.term.value;
+    const power = ovr.power !== undefined ? ovr.power : R.power;
+    const floor = ovr.floor !== undefined ? ovr.floor : R.floor;
+    const a = {
+      rH100: ovr.rH100 !== undefined ? ovr.rH100 : DEFAULTS.rH100,
+      rL40S: ovr.rL40S !== undefined ? ovr.rL40S : DEFAULTS.rL40S,
+      stack: ovr.stack !== undefined ? ovr.stack : DEFAULTS.stack,
+      stor:  ovr.stor  !== undefined ? ovr.stor  : DEFAULTS.stor,
+      maint: ovr.maint !== undefined ? ovr.maint : DEFAULTS.maint
+    };
+    lastConfig = { tier, place, region: els.region.value, term };
+    els.termval.textContent = term + " years";
+    els.tierdesc.innerHTML = TIERS[tier].desc + " · placement: " +
+      (place === "pro" ? "indoor" : "outdoor, IP-rated");
+
+    const out = compute(tier, place, term, power, floor, a);
+    results = out.results;
+    renderTiles(term, out.haasMo);
+    renderBars(term);
+    renderLines(term);
+    renderAssumptions(R, power, floor, a, tier);
+    renderTable(term);
+  }
+
+  function renderTiles(term, haasMo) {
+    const min = results.reduce((x, b) => (b.tco < x.tco ? b : x));
+    const cloud = results[0];
+    const premium = cloud.tco - min.tco;
+    els.tiles.innerHTML = `
+      <div class="tile"><div class="k">Lowest-cost option</div>
+        <div class="v">${min.label}</div>
+        <div class="d">${money(min.tco)} over ${term} years</div></div>
+      <div class="tile"><div class="k">Public cloud premium</div>
+        <div class="v">${premium > 0 ? "+" + money(premium) : "—"}</div>
+        <div class="d">${premium > 0
+          ? "cloud runs " + (cloud.tco / min.tco).toFixed(1) + "× the lowest-cost option"
+          : "cloud is lowest at these assumptions — check the GPU rate you actually pay"}</div></div>
+      <div class="tile"><div class="k">Or lease it — HaaS</div>
+        <div class="v">${money(haasMo)}/mo</div>
+        <div class="d">no capital outlay · support bundled · 36-month terms</div></div>`;
+  }
+
+  function renderBars(term) {
+    els.barsub.textContent = `${term}-year total, ${REGIONS[els.region.value].currency}. Establishment plus every year of running costs.`;
+    const max = Math.max(...results.map(r => r.tco));
+    const minv = Math.min(...results.map(r => r.tco));
+    els.barchart.innerHTML = results.map((r, i) => {
+      const pct = Math.max(2, (r.tco / max) * 70);
+      const win = r.tco === minv ? '<br><span class="win">Lowest</span>' : "";
+      return `<div class="barrow">
+        <div class="barlabel">${r.label}${win}</div>
+        <div class="bartrack">
+          <div class="barfill" style="width:${pct}%; background:var(${SERIES_VARS[i]})"></div>
+          <div class="barval" style="left:${pct}%">${money(r.tco)}</div>
+        </div></div>`;
+    }).join("");
+  }
+
+  function renderLines(term) {
+    const svg = els.linechart;
+    const W = 900, H = 360, padL = 64, padR = 172, padT = 16, padB = 34;
+    const iw = W - padL - padR, ih = H - padT - padB;
+    const maxY = Math.max(...results.map(r => r.yearly[term])) * 1.04;
+    const x = y => padL + (y / term) * iw;
+    const yy = v => padT + ih - (v / maxY) * ih;
+
+    let s = "";
+    const ticks = 4;
+    for (let t = 0; t <= ticks; t++) {
+      const v = (maxY / ticks) * t, gy = yy(v);
+      s += `<line x1="${padL}" y1="${gy}" x2="${W - padR}" y2="${gy}" stroke="var(--grid)" stroke-width="1"/>`;
+      s += `<text x="${padL - 8}" y="${gy + 4}" text-anchor="end">${money(v, true)}</text>`;
+    }
+    for (let y = 0; y <= term; y++) {
+      if (term > 10 && y % 2 === 1) continue;
+      s += `<text x="${x(y)}" y="${H - 10}" text-anchor="middle">${y === 0 ? "Setup" : "Yr " + y}</text>`;
+    }
+    const endLs = [];
+    results.forEach((r, i) => {
+      const pts = r.yearly.map((v, y) => `${x(y)},${yy(v)}`).join(" ");
+      s += `<polyline points="${pts}" fill="none" stroke="var(${SERIES_VARS[i]})" stroke-width="2" stroke-linejoin="round"/>`;
+      const ey = yy(r.yearly[term]);
+      s += `<circle cx="${x(term)}" cy="${ey}" r="4" fill="var(${SERIES_VARS[i]})" stroke="var(--panel)" stroke-width="2"/>`;
+      endLs.push({ y: ey, label: r.label, i });
+    });
+    endLs.sort((a, b) => a.y - b.y);
+    for (let k = 1; k < endLs.length; k++) {
+      if (endLs[k].y - endLs[k - 1].y < 15) endLs[k].y = endLs[k - 1].y + 15;
+    }
+    endLs.forEach(e => {
+      s += `<text class="endlabel" x="${W - padR + 12}" y="${e.y + 4}">${e.label}</text>`;
+    });
+    s += `<rect id="hover" x="${padL}" y="${padT}" width="${iw}" height="${ih}" fill="transparent"/>`;
+    s += `<line id="xline" y1="${padT}" y2="${padT + ih}" stroke="var(--ink-3)" stroke-width="1" stroke-dasharray="3 3" style="display:none"/>`;
+    svg.innerHTML = s;
+
+    const hover = svg.querySelector("#hover");
+    const xline = svg.querySelector("#xline");
+    const tt = els.tooltip;
+    function show(evt) {
+      const rect = svg.getBoundingClientRect();
+      const sx = (evt.clientX - rect.left) * (W / rect.width);
+      let year = Math.round(((sx - padL) / iw) * term);
+      year = Math.max(0, Math.min(term, year));
+      xline.setAttribute("x1", x(year)); xline.setAttribute("x2", x(year));
+      xline.style.display = "block";
+      tt.innerHTML = `<div class="tt-y">${year === 0 ? "Setup" : "Year " + year}</div>` +
+        results.map((r, i) =>
+          `<div class="row"><span class="nm"><i style="background:var(${SERIES_VARS[i]})"></i>${r.label}</span><b>${money(r.yearly[year])}</b></div>`
+        ).join("");
+      tt.style.display = "block";
+      const wrapRect = svg.parentElement.getBoundingClientRect();
+      let left = ((x(year) / W) * rect.width) + 14;
+      if (left + 250 > wrapRect.width) left -= 280;
+      tt.style.left = left + "px";
+      tt.style.top = "24px";
+    }
+    hover.addEventListener("mousemove", show);
+    hover.addEventListener("mouseleave", () => {
+      tt.style.display = "none"; xline.style.display = "none";
+    });
+
+    els.legend.innerHTML = results.map((r, i) =>
+      `<span><i style="background:var(${SERIES_VARS[i]})"></i>${r.label}</span>`).join("");
+  }
+
+  function renderAssumptions(R, power, floor, a, tier) {
+    const t = TIERS[tier];
+    els.assump.innerHTML = `
+      <div class="edit"><b>H100-class cloud rate</b>
+        <input id="in-rH100" type="number" step="0.25" min="0.5" value="${a.rH100}"> USD/GPU-hr</div>
+      <div class="edit"><b>L40S-class cloud rate</b>
+        <input id="in-rL40S" type="number" step="0.10" min="0.2" value="${a.rL40S}"> USD/GPU-hr</div>
+      <div class="edit"><b>Cloud core stack</b>
+        <input id="in-stack" type="number" step="10" min="0" value="${a.stack}"> USD/mo</div>
+      <div class="edit"><b>Cloud storage</b>
+        <input id="in-stor" type="number" step="0.01" min="0" value="${a.stor}"> USD/GB-mo (${t.storTB} TB)</div>
+      <div class="edit"><b>Hardware support contract</b>
+        <input id="in-maint" type="number" step="1" min="0" max="40" value="${a.maint}"> %/yr of hardware value</div>
+      <div class="edit"><b>Power tariff</b>
+        <input id="in-power" type="number" step="0.01" min="0.01" value="${power}"> USD/kWh</div>
+      <div class="edit"><b>Office floor cost</b>
+        <input id="in-floor" type="number" step="10" min="0" value="${floor}"> USD/m²/yr</div>
+      <div class="full"><b>Cloud rates:</b> defaults are blended hyperscaler figures for always-on use
+        (on-demand H100-class runs ~$10–12/GPU-hr, 1–3-yr committed ~$5–8; discounted
+        GPU clouds are cheaper but rarely accreditable for government or regulated
+        workloads). Storage default blends block and object tiers. Cloud runs 24/7 —
+        an always-on operations picture doesn't clock off.</div>
+      <div class="full"><b>Owned options:</b> server room PUE 2.5, 9 m² and full build-out
+        (partition, fire suppression, cooling, UPS); colocation at market per-rack fees for
+        this power tier plus a 1 Gbps link back to site ($12k/yr); NERV Centre PUE 1.3,
+        indoor unit takes 4 m², outdoor takes none. Enclosure reference prices are
+        NERV list (partner AUD price list, April 2025; outdoor modelled as indoor plus the
+        published list delta). Support contract on owned hardware defaults to 18%/yr
+        (industry band 15–20%); it is bundled inside the HaaS lease.</div>
+      <div class="full"><b>Users vs concurrency:</b> tier labels count <i>connected users</i> —
+        devices served by the operations node with the shared picture, comms, and video.
+        Simultaneous AI sessions are a separate, GPU-bound figure (roughly 4–8, 25–40, and
+        50–80 on a 70B-class model across the three tiers; several times higher on an
+        8B-class model). An assistant each user touches for a few minutes per hour means a
+        500-user network typically presents ~25–40 simultaneous sessions, so the two figures
+        describe the same deployment.</div>
+      <div class="full"><b>Common to all:</b> the same reference stack is priced everywhere
+        (server room and colo host it without the sealed enclosure); the software licence is
+        excluded everywhere equally; ${REGIONS[els.region.value].currency} at FX 2026-04-01.</div>`;
+    [["in-rH100", "rH100"], ["in-rL40S", "rL40S"], ["in-stack", "stack"],
+     ["in-stor", "stor"], ["in-maint", "maint"], ["in-power", "power"],
+     ["in-floor", "floor"]].forEach(([id, key]) => {
+      document.getElementById(id).addEventListener("change", e => {
+        const v = parseFloat(e.target.value);
+        if (!isNaN(v)) ovr[key] = v; else delete ovr[key];
+        recompute();
+      });
+    });
+  }
+
+  function renderTable(term) {
+    let h = "<tr><th>Option</th><th>Setup</th>";
+    for (let y = 1; y <= term; y++) h += `<th>Yr ${y}</th>`;
+    h += "</tr>";
+    results.forEach(r => {
+      h += `<tr><td>${r.label}</td>` +
+        r.yearly.map(v => `<td>${money(v, true)}</td>`).join("") + "</tr>";
+    });
+    els.datatable.innerHTML = h;
+  }
+
+  let cfgTimer = null;
+  function trackConfig() {
+    clearTimeout(cfgTimer);
+    cfgTimer = setTimeout(() => TRACK("configure", lastConfig), 1200);
+  }
+
+  ["tier", "place", "region", "term"].forEach(id => {
+    els[id].addEventListener("input", () => {
+      if (id === "region") { delete ovr.power; delete ovr.floor; }
+      recompute();
+      trackConfig();
+    });
+  });
+
+  // ---- Lead capture: HubSpot contact form (same pipeline as nervsystems.com) ----
+  const HS_ENDPOINT = "https://api.hsforms.com/submissions/v3/integration/submit/244297257/1a7c3b50-4df4-4b3e-ac7a-99937b52415b";
+  function configSummary() {
+    const t = TIERS[lastConfig.tier], R = REGIONS[lastConfig.region];
+    return "Tier: " + t.label + "; Placement: " + (lastConfig.place === "pro" ? "indoor" : "outdoor") +
+      "; Region: " + R.country + "; Term: " + lastConfig.term + " yr";
+  }
+  document.getElementById("cta-open").addEventListener("click", () => {
+    document.getElementById("lead-form").hidden = false;
+    document.getElementById("cta-open").hidden = true;
+    document.getElementById("lf-name").focus();
+    TRACK("cta_open", lastConfig);
+  });
+  document.getElementById("lead-form").addEventListener("submit", async e => {
+    e.preventDefault();
+    const val = id => document.getElementById(id).value.trim();
+    const name = val("lf-name"), email = val("lf-email"), org = val("lf-org"), role = val("lf-role");
+    const message = "[NERV Centre TCO breakdown request]\n" + configSummary();
+    const fields = [{ name: "message", value: message }, { name: "email", value: email }];
+    if (name) {
+      const sp = name.indexOf(" ");
+      fields.push({ name: "firstname", value: sp > 0 ? name.slice(0, sp) : name });
+      if (sp > 0) fields.push({ name: "lastname", value: name.slice(sp + 1) });
+    }
+    if (org) fields.push({ name: "company", value: org });
+    if (role) fields.push({ name: "jobtitle", value: role });
+    const btn = e.target.querySelector(".lead-send");
+    btn.disabled = true;
+    try {
+      const r = await fetch(HS_ENDPOINT, {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ fields, context: { pageUri: window.location.href, pageName: document.title } })
+      });
+      if (!r.ok) throw new Error("submit failed");
+      document.getElementById("lead-thanks").hidden = false;
+      document.getElementById("lead-fallback").hidden = true;
+      TRACK("lead", { tier: lastConfig.tier, region: lastConfig.region });
+    } catch (err) {
+      const subj = encodeURIComponent("NERV Centre TCO breakdown");
+      const body = encodeURIComponent(message + (name ? "\n\n— " + name : "") + (org ? "\n" + org : "") + (email ? "\n" + email : ""));
+      document.getElementById("lead-mailto").href = "mailto:contact@nervsystems.com?subject=" + subj + "&body=" + body;
+      document.getElementById("lead-fallback").hidden = false;
+      btn.disabled = false;
+    }
+  });
+
+  TRACK("view");
+  recompute();
+})();
+</script>

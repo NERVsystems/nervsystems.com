@@ -2,7 +2,8 @@
   "nav": {
     "features": "Features",
     "platform": "Platform",
-    "takSolutions": "TAK Solutions",
+    "takSolutions": "ATAK/TAK Solutions",
+    "nervCentre": "On-Prem Solutions",
     "about": "About",
     "contact": "Contact",
     "requestDemo": "Schedule a Call"
@@ -548,6 +549,10 @@
       "title": "Contact Us",
       "subtitle": "Fill out the form below and our team will get back to you within 24 hours."
     },
+    "nervCentre": {
+      "title": "Request a Quote",
+      "subtitle": "Tell us about your site, workload, and constraints and we'll size a NERV Centre and send pricing — buy or lease."
+    },
     "fields": {
       "firstName": {
         "label": "FIRST NAME",
@@ -630,6 +635,7 @@
       },
       "interest": {
         "nerva": "NERVA AI Platform",
+        "nervCentre": "NERV Centre (On-Prem Compute)",
         "hosting": "Managed TAK Hosting",
         "deployment": "TAK Deployment Consulting",
         "training": "TAK Training Programs",
@@ -650,7 +656,8 @@
         "title": "Thank You!",
         "demo": "We've received your request. Our team will contact you within 24 hours to schedule your call.",
         "quote": "Your quote request has been received. Our team will contact you within 24 hours.",
-        "contact": "Your contact request has been received. Our team will contact you within 24 hours."
+        "contact": "Your contact request has been received. Our team will contact you within 24 hours.",
+        "nervCentre": "Thanks — your NERV Centre enquiry is in. Our team will be in touch within 24 hours with sizing and pricing."
       },
       "error": "There was an issue submitting the form. Please email us directly at contact@nervsystems.com",
       "privacyPrefix": "By submitting this form, you agree to our",
@@ -1300,5 +1307,186 @@
     "title": "Advanced AI for missions that matter",
     "lead": "NERV Systems is a defence technology company bringing AI augmentation to TAK and ATAK. We build NERVA, an AI assistant for mission planning and decision support — staff, not command, and InferNode, a formally verified runtime that keeps AI agents provably within their boundaries.",
     "body": "Our technology is built for the hardest operational environments—and the same capabilities that give tactical teams the edge help responders save lives in disaster relief, search and rescue, and humanitarian crises. That dual purpose is why we measure our work not only in operational advantage, but in global impact."
+  },
+  "nervCentre": {
+    "meta": {
+      "title": "NERV Centre | Private On-Prem & Sovereign AI Compute | NERV Systems",
+      "description": "NERV Centre is a sealed, self-contained data centre for private, on-premise AI: sovereign compute you own or lease (HaaS). Run NERVA and AI agents behind your own perimeter with data sovereignty, resilience, and high uptime — even fully offline. Compare the true cost against public cloud."
+    },
+    "hero": {
+      "eyebrow": "NERV CENTRE · PRIVATE ON-PREM COMPUTE",
+      "title": "Your AI. Your building.",
+      "titleLine2": "Your data — and nobody else's.",
+      "subtitle": "NERV Centre is a sealed, self-contained data centre that runs your AI and your infrastructure inside the walls you control. No hyperscaler. No landlord. No uplink to cut.",
+      "features": {
+        "sealed": "IP65 sealed enclosure",
+        "efficient": "PUE 1.3 efficiency",
+        "offline": "Runs fully offline",
+        "aiReady": "NERVA & InferNode ready"
+      },
+      "cta": {
+        "quote": "Request a quote",
+        "calculator": "Calculate your true cost"
+      }
+    },
+    "value": {
+      "eyebrow": "WHY ON-PREM",
+      "title": "The cloud is someone else's computer. This one is yours.",
+      "subtitle": "For teams that can't afford to send their data somewhere else — or to stop working when the connection does.",
+      "pillars": {
+        "sovereignty": {
+          "code": "01",
+          "title": "Data sovereignty by design",
+          "description": "Your data is created, processed, and stored inside your perimeter. Nothing is copied to a third-party cloud, exposed to another jurisdiction, or reachable by anyone you didn't let in the door."
+        },
+        "resilience": {
+          "code": "02",
+          "title": "Runs when the link is cut",
+          "description": "Sealed compute on your floor keeps working when the internet, the grid, or the uplink go down. The cloud stops at the WAN. NERV Centre doesn't."
+        },
+        "physical": {
+          "code": "03",
+          "title": "Physically secured",
+          "description": "IP65/NEMA-4 sealed steel, magnetic locks rated to half a tonne, keypad-and-fob entry, and tamper detection with camera capture. A locked, monitored data centre — not a rack in a hallway."
+        },
+        "aiReady": {
+          "code": "04",
+          "title": "Sovereign AI at the edge",
+          "description": "Sized for GPU inference. Run NERVA and InferNode's AI agents on H100- and L40S-class nodes beside the people who use them — sovereign AI with local latency and no per-token bill."
+        }
+      }
+    },
+    "products": {
+      "eyebrow": "THE RANGE",
+      "title": "One platform, three form factors",
+      "subtitle": "The same sealed, monitored core — indoors, outdoors, or containerised at scale.",
+      "specsLabel": "SPECIFICATIONS",
+      "items": {
+        "pro": {
+          "name": "NERV Centre Pro",
+          "tag": "INDOOR",
+          "description": "Self-contained indoor micro data centre. Drops into an office, clinic, or operations room and needs no server-room build-out.",
+          "specs": {
+            "capacity": "12–38 RU usable",
+            "cooling": "Up to 7 kW sealed cooling",
+            "power": "Integrated PDU, UPS & switchboard"
+          }
+        },
+        "outdoor": {
+          "name": "NERV Centre Outdoor",
+          "tag": "FIELD / FORWARD",
+          "description": "Weatherproof for the field or the forward site. The same sealed core, IP-rated for outdoor placement — white, grey, black, or MultiCam.",
+          "specs": {
+            "rating": "IP65 / NEMA 4 weatherproof",
+            "finish": "White, grey, black or MultiCam",
+            "siting": "No building required"
+          }
+        },
+        "max": {
+          "name": "NERV Centre Max",
+          "tag": "CONTAINERISED",
+          "description": "Containerised multi-rack capacity for larger deployments and rapid standup. Configured to your load, delivered ready to run.",
+          "specs": {
+            "capacity": "Multi-rack, 20-ft container",
+            "scale": "Up to six sealed racks",
+            "deploy": "Custom-configured, quoted"
+          }
+        }
+      }
+    },
+    "anatomy": {
+      "eyebrow": "WHAT'S INSIDE",
+      "title": "A sealed data centre, not a server closet",
+      "description": "Every NERV Centre integrates power, cooling, security, and monitoring into one sealed enclosure. Cooling, fire protection, UPS, and access control are engineered together — so it protects your hardware and runs unattended, wherever you place it.",
+      "imageAlt": "NERV Centre Pro showing integrated fire protection, PDU, access security, battery and UPS, switchboard, precision cooling, cable management, and lockable wheels",
+      "specs": {
+        "rating": { "k": "IP RATING", "v": "IP65 / NEMA 4" },
+        "efficiency": { "k": "EFFICIENCY", "v": "PUE 1.3 typical" },
+        "enclosure": { "k": "ENCLOSURE", "v": "2 mm powder-coated steel" },
+        "capacity": { "k": "CAPACITY", "v": "12–38 RU · up to 7 kW" },
+        "access": { "k": "ACCESS", "v": "Mag locks · keypad + fob" },
+        "protection": { "k": "PROTECTION", "v": "Tamper + fire detection" }
+      }
+    },
+    "sense": {
+      "eyebrow": "NERV SENSE",
+      "title": "Every unit watches itself",
+      "description": "NERV Sense is the monitoring and automation layer built into every NERV Centre. It keeps the enclosure healthy and secure, and reports the whole picture to your team — locally or remotely.",
+      "items": {
+        "power": {
+          "title": "Power intelligence",
+          "description": "Real-time load, capacity, and efficiency analytics across seven power zones, with health maps and reporting."
+        },
+        "environment": {
+          "title": "Environmental sensing",
+          "description": "Temperature, humidity, vibration, water, air pressure, airflow, and dust — sensed continuously and alerted on."
+        },
+        "security": {
+          "title": "Access & tamper control",
+          "description": "PIN and fob access, user profiles, RBAC, IP allow-lists, and TLS — with tamper and motion detection tied to camera capture."
+        },
+        "automation": {
+          "title": "Autonomous response",
+          "description": "Automated fire response, lost-server recovery, secure remote door control, and power-efficiency optimisation — no operator required."
+        }
+      },
+      "securityNote": "Hardened by default: TLS 1.2 with AES-256, SSH public-key auth, SNMPv3, LDAP/Active Directory over TLS, IPv4/IPv6 firewalling, failed-login lockout, and enforced password policy."
+    },
+    "calculator": {
+      "eyebrow": "TRUE COST CALCULATOR",
+      "title": "What does your infrastructure really cost?",
+      "description": "Compare five years of public cloud, a built server room, colocation, and a NERV Centre — bought outright or leased with support bundled. Every assumption is visible and editable, priced for your region and workload.",
+      "point": "One line the chart makes obvious: when the uplink is cut, the cloud option stops. The ones where the hardware lives on your floor keep running.",
+      "button": "Open the calculator",
+      "note": "Opens the interactive calculator. Estimates for comparison, not a quote."
+    },
+    "calculatorPage": {
+      "metaTitle": "True Cost Calculator | NERV Centre On-Prem Compute | NERV Systems",
+      "metaDescription": "Compare the five-year true cost of public cloud, an on-prem server room, colocation, and a NERV Centre — bought or leased (HaaS). Every assumption editable, priced for your region and AI workload.",
+      "back": "← Back to NERV Centre"
+    },
+    "haas": {
+      "eyebrow": "HARDWARE-AS-A-SERVICE",
+      "title": "Own the capability, not the capital cost",
+      "description": "Not every team wants a capital purchase on the books. With NERV Centre Hardware-as-a-Service, you deploy the same sealed, sovereign compute for a fixed monthly fee — support and maintenance bundled, hardware refreshed at renewal — so the capability lives on your floor while staying off your balance sheet.",
+      "points": {
+        "opex": {
+          "title": "OpEx, not CapEx",
+          "description": "A predictable monthly fee instead of a capital outlay — and no capital-approval cycle to wait through."
+        },
+        "bundled": {
+          "title": "Support & maintenance included",
+          "description": "Monitoring, maintenance, and NERV Sense support are bundled into the term — one line, no surprises."
+        },
+        "refresh": {
+          "title": "Refreshed at renewal",
+          "description": "Hardware is refreshed when the term renews, so your AI compute never quietly ages out mid-mission."
+        },
+        "term": {
+          "title": "36-month terms",
+          "description": "Arranged through established equipment-finance partners, with terms sized to your budget cycle."
+        }
+      },
+      "cta": "Compare buy vs. lease"
+    },
+    "closing": {
+      "eyebrow": "DEPLOY ON YOUR TERMS",
+      "title": "Own it, or lease it — support included",
+      "description": "Buy outright, or take it as Hardware-as-a-Service on a 36-month term with maintenance and refresh bundled. Either way, the compute lives where you do. Tell us your site, load, and constraints and we'll size it.",
+      "quote": "Request a quote",
+      "contact": "Talk to an engineer"
+    },
+    "callout": {
+      "label": "NERV CENTRE",
+      "title": "Private, on-prem AI compute",
+      "description": "A sealed, self-contained data centre that runs NERVA and your infrastructure on premises you control — sovereign, offline-capable, and physically secured.",
+      "benefits": {
+        "onSite": { "title": "Data stays on-site", "description": "Nothing leaves your perimeter" },
+        "offline": { "title": "Runs offline", "description": "Works when the uplink is cut" },
+        "sealed": { "title": "IP65 sealed", "description": "Locked, monitored, tamper-aware" },
+        "aiReady": { "title": "AI-ready", "description": "GPU nodes for NERVA & InferNode" }
+      },
+      "cta": "Explore NERV Centre →"
+    }
   }
 }
