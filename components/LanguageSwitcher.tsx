@@ -12,6 +12,7 @@ const localeLabels: Record<Locale, string> = {
   ko: '한국',
   ar: 'عر',
   sv: 'SV',
+  uk: 'УКР',
 };
 
 export default function LanguageSwitcher() {
