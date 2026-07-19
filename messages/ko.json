@@ -2,10 +2,11 @@
   "nav": {
     "features": "기능",
     "platform": "플랫폼",
-    "takSolutions": "TAK 솔루션",
+    "takSolutions": "ATAK/TAK 솔루션",
     "about": "회사 소개",
     "contact": "문의",
-    "requestDemo": "상담 예약"
+    "requestDemo": "상담 예약",
+    "nervCentre": "온프레미스 솔루션"
   },
   "hero": {
     "title": "임무 성공을 위한 전술 AI",
@@ -636,7 +637,8 @@
         "administration": "시스템 관리",
         "plugins": "플러그인 개발",
         "edge": "엣지 하드웨어 (헬멧 GPU)",
-        "other": "기타"
+        "other": "기타",
+        "nervCentre": "NERV Centre (온프레미스 컴퓨트)"
       }
     },
     "buttons": {
@@ -650,17 +652,22 @@
         "title": "감사합니다!",
         "demo": "요청이 접수되었습니다. 담당자가 24시간 내에 상담 일정을 안내드리겠습니다.",
         "quote": "견적 요청이 접수되었습니다. 담당자가 24시간 내에 연락드리겠습니다.",
-        "contact": "문의가 접수되었습니다. 담당자가 24시간 내에 연락드리겠습니다."
+        "contact": "문의가 접수되었습니다. 담당자가 24시간 내에 연락드리겠습니다.",
+        "nervCentre": "감사합니다. NERV Centre 문의가 접수되었습니다. 담당 팀이 24시간 내에 사이징 및 가격 정보와 함께 연락드리겠습니다."
       },
       "error": "양식 제출 중 문제가 발생했습니다. contact@nervsystems.com으로 직접 이메일을 보내주세요.",
       "privacyPrefix": "이 양식을 제출함으로써 귀하는 당사의",
       "privacyLink": "개인정보 보호정책",
       "privacyAnd": "및",
       "termsLink": "서비스 약관"
+    },
+    "nervCentre": {
+      "title": "견적 요청",
+      "subtitle": "사이트, 워크로드, 제약 조건을 알려주시면 귀사에 맞는 NERV Centre를 산정하여 구매 또는 리스 가격을 보내드립니다."
     }
   },
   "takSolutions": {
-  "about": "회사 소개",
+    "about": "회사 소개",
     "hero": {
       "eyebrow": "아시아 태평양 TAK 솔루션",
       "title": "완전한 TAK/ATAK",
@@ -1362,5 +1369,216 @@
     "title": "중요한 임무를 위한 첨단 AI",
     "lead": "NERV Systems는 TAK 및 ATAK에 AI 증강을 제공하는 방위 기술 기업입니다. 우리는 임무 계획과 자율 운용을 위한 AI 어시스턴트 NERVA와, AI 에이전트를 증명 가능한 방식으로 경계 안에 두는 형식적으로 검증된 런타임 InferNode를 개발합니다.",
     "body": "우리의 기술은 가장 가혹한 운용 환경을 위해 만들어졌습니다. 전술 팀에게 우위를 제공하는 동일한 역량이 재난 구호, 수색 구조, 인도주의 위기에서 대응 인력이 생명을 구하도록 돕습니다. 이러한 이중 목적이 바로 우리가 우리의 일을 운용상의 우위뿐 아니라 글로벌 임팩트로도 측정하는 이유입니다."
+  },
+  "nervCentre": {
+    "meta": {
+      "title": "NERV Centre | 프라이빗 온프레미스 및 소버린 AI 컴퓨트 | NERV Systems",
+      "description": "NERV Centre는 프라이빗 온프레미스 AI를 위한 밀폐형 독립 데이터센터입니다. 직접 소유하거나 리스(HaaS)하는 소버린 컴퓨트로, 완전 오프라인 상태에서도 데이터 주권, 복원력, 높은 가동률을 갖추고 자체 경계 안에서 NERVA와 AI 에이전트를 운영하세요. 퍼블릭 클라우드와 실제 비용을 비교해 보세요."
+    },
+    "hero": {
+      "eyebrow": "NERV CENTRE · 프라이빗 온프레미스 컴퓨트",
+      "title": "당신의 AI. 당신의 건물.",
+      "titleLine2": "당신의 데이터 — 오직 당신만의 것.",
+      "subtitle": "NERV Centre는 당신이 통제하는 벽 안에서 당신의 AI와 인프라를 운영하는 밀폐형 독립 데이터센터입니다. 하이퍼스케일러도, 임대주도, 끊길 업링크도 없습니다.",
+      "features": {
+        "sealed": "IP65 밀폐 인클로저",
+        "efficient": "PUE 1.3 효율",
+        "offline": "완전 오프라인 작동",
+        "aiReady": "NERVA 및 InferNode 지원"
+      },
+      "cta": {
+        "quote": "견적 요청",
+        "calculator": "실제 비용 계산하기"
+      }
+    },
+    "value": {
+      "eyebrow": "온프레미스가 필요한 이유",
+      "title": "클라우드는 남의 컴퓨터입니다. 이것은 당신의 것입니다.",
+      "subtitle": "데이터를 외부로 보낼 수 없거나, 연결이 끊겼다고 작업을 멈출 수 없는 팀을 위해.",
+      "pillars": {
+        "sovereignty": {
+          "code": "01",
+          "title": "설계 단계부터 보장되는 데이터 주권",
+          "description": "데이터는 당신의 경계 안에서 생성, 처리, 저장됩니다. 그 무엇도 제3자 클라우드로 복사되거나, 다른 관할권에 노출되거나, 당신이 들여보내지 않은 누군가에게 접근되지 않습니다."
+        },
+        "resilience": {
+          "code": "02",
+          "title": "연결이 끊겨도 작동합니다",
+          "description": "당신의 현장에 자리한 밀폐형 컴퓨트는 인터넷, 전력망, 업링크가 다운되어도 계속 작동합니다. 클라우드는 WAN에서 멈춥니다. NERV Centre는 멈추지 않습니다."
+        },
+        "physical": {
+          "code": "03",
+          "title": "물리적으로 보호됩니다",
+          "description": "IP65/NEMA-4 밀폐 강철, 0.5톤 등급의 전자석 잠금장치, 키패드 및 포브 출입, 카메라 캡처를 동반한 변조 감지. 복도에 놓인 랙이 아니라, 잠기고 감시되는 데이터센터입니다."
+        },
+        "aiReady": {
+          "code": "04",
+          "title": "엣지의 소버린 AI",
+          "description": "GPU 추론에 맞게 산정되었습니다. H100 및 L40S급 노드에서 NERVA와 InferNode의 AI 에이전트를 사용자 바로 곁에서 운영하세요 — 로컬 지연시간과 토큰당 요금 없는 소버린 AI."
+        }
+      }
+    },
+    "products": {
+      "eyebrow": "제품 라인업",
+      "title": "하나의 플랫폼, 세 가지 폼 팩터",
+      "subtitle": "동일한 밀폐형 감시 코어 — 실내, 실외, 또는 대규모 컨테이너형으로.",
+      "specsLabel": "사양",
+      "items": {
+        "pro": {
+          "name": "NERV Centre Pro",
+          "tag": "실내",
+          "description": "독립형 실내 마이크로 데이터센터. 사무실, 진료실, 작전실에 바로 설치할 수 있으며 별도의 서버실 구축이 필요 없습니다.",
+          "specs": {
+            "capacity": "가용 12–38 RU",
+            "cooling": "최대 7 kW 밀폐 냉각",
+            "power": "통합 PDU, UPS 및 배전반"
+          }
+        },
+        "outdoor": {
+          "name": "NERV Centre Outdoor",
+          "tag": "현장 / 전방",
+          "description": "현장이나 전방 거점을 위한 내후성 설계. 동일한 밀폐형 코어에 실외 설치용 IP 등급을 갖췄으며 — 화이트, 그레이, 블랙 또는 MultiCam으로 제공됩니다.",
+          "specs": {
+            "rating": "IP65 / NEMA 4 내후성",
+            "finish": "화이트, 그레이, 블랙 또는 MultiCam",
+            "siting": "건물 불필요"
+          }
+        },
+        "max": {
+          "name": "NERV Centre Max",
+          "tag": "컨테이너형",
+          "description": "대규모 배치와 신속한 구축을 위한 컨테이너형 멀티랙 용량. 부하에 맞게 구성되어 즉시 가동 가능한 상태로 제공됩니다.",
+          "specs": {
+            "capacity": "멀티랙, 20피트 컨테이너",
+            "scale": "최대 6개 밀폐형 랙",
+            "deploy": "맞춤 구성, 견적 제공"
+          }
+        }
+      }
+    },
+    "anatomy": {
+      "eyebrow": "내부 구성",
+      "title": "서버 캐비닛이 아닌, 밀폐형 데이터센터",
+      "description": "모든 NERV Centre는 전력, 냉각, 보안, 모니터링을 하나의 밀폐형 인클로저에 통합합니다. 냉각, 화재 방지, UPS, 출입 통제가 함께 설계되어 — 하드웨어를 보호하고 어디에 설치하든 무인으로 작동합니다.",
+      "imageAlt": "통합 화재 방지, PDU, 출입 보안, 배터리 및 UPS, 배전반, 정밀 냉각, 케이블 정리, 잠금식 바퀴를 보여주는 NERV Centre Pro",
+      "specs": {
+        "rating": {
+          "k": "IP 등급",
+          "v": "IP65 / NEMA 4"
+        },
+        "efficiency": {
+          "k": "효율",
+          "v": "PUE 1.3 (일반)"
+        },
+        "enclosure": {
+          "k": "인클로저",
+          "v": "2 mm 분체도장 강철"
+        },
+        "capacity": {
+          "k": "용량",
+          "v": "12–38 RU · 최대 7 kW"
+        },
+        "access": {
+          "k": "출입",
+          "v": "전자석 잠금 · 키패드 + 포브"
+        },
+        "protection": {
+          "k": "보호",
+          "v": "변조 + 화재 감지"
+        }
+      }
+    },
+    "sense": {
+      "eyebrow": "NERV SENSE",
+      "title": "모든 유닛이 스스로를 감시합니다",
+      "description": "NERV Sense는 모든 NERV Centre에 내장된 모니터링 및 자동화 계층입니다. 인클로저를 정상적이고 안전하게 유지하며, 로컬이나 원격으로 전체 상황을 팀에 보고합니다.",
+      "items": {
+        "power": {
+          "title": "전력 인텔리전스",
+          "description": "7개 전력 존 전반의 실시간 부하, 용량, 효율 분석을 상태 맵 및 리포팅과 함께 제공합니다."
+        },
+        "environment": {
+          "title": "환경 센싱",
+          "description": "온도, 습도, 진동, 침수, 기압, 기류, 먼지 — 지속적으로 감지하고 경보를 제공합니다."
+        },
+        "security": {
+          "title": "출입 및 변조 통제",
+          "description": "PIN 및 포브 출입, 사용자 프로필, RBAC, IP 허용 목록, TLS — 카메라 캡처와 연동된 변조 및 움직임 감지를 함께 제공합니다."
+        },
+        "automation": {
+          "title": "자율 대응",
+          "description": "자동 화재 대응, 서버 유실 복구, 안전한 원격 도어 제어, 전력 효율 최적화 — 운영자가 필요 없습니다."
+        }
+      },
+      "securityNote": "기본적으로 강화된 보안: AES-256을 적용한 TLS 1.2, SSH 공개키 인증, SNMPv3, TLS 기반 LDAP/Active Directory, IPv4/IPv6 방화벽, 로그인 실패 잠금, 강제 비밀번호 정책."
+    },
+    "calculator": {
+      "eyebrow": "실제 비용 계산기",
+      "title": "당신의 인프라는 실제로 얼마입니까?",
+      "description": "5년간의 퍼블릭 클라우드, 자체 구축 서버실, 코로케이션, 그리고 NERV Centre를 비교하세요 — 완전 구매하거나 지원이 포함된 리스로. 모든 가정은 공개되어 편집 가능하며, 귀사의 지역과 워크로드에 맞춰 산정됩니다.",
+      "point": "차트가 분명히 보여주는 한 가지: 업링크가 끊기면 클라우드 옵션은 멈춥니다. 하드웨어가 당신의 현장에 있는 옵션은 계속 작동합니다.",
+      "button": "계산기 열기",
+      "note": "인터랙티브 계산기를 엽니다. 견적이 아닌 비교용 추정치입니다."
+    },
+    "calculatorPage": {
+      "metaTitle": "실제 비용 계산기 | NERV Centre 온프레미스 컴퓨트 | NERV Systems",
+      "metaDescription": "퍼블릭 클라우드, 온프레미스 서버실, 코로케이션, 그리고 NERV Centre의 5년 실제 비용을 비교하세요 — 구매 또는 리스(HaaS). 모든 가정은 편집 가능하며, 귀사의 지역과 AI 워크로드에 맞춰 산정됩니다.",
+      "back": "← NERV Centre로 돌아가기"
+    },
+    "haas": {
+      "eyebrow": "서비스형 하드웨어(HaaS)",
+      "title": "자본 비용이 아닌, 역량을 소유하세요",
+      "description": "모든 팀이 장부에 자본 구매를 기록하길 원하는 것은 아닙니다. NERV Centre 서비스형 하드웨어(HaaS)를 이용하면 동일한 밀폐형 소버린 컴퓨트를 고정 월 요금으로 배치할 수 있습니다 — 지원과 유지보수가 포함되고 갱신 시 하드웨어가 교체됩니다 — 덕분에 역량은 당신의 현장에 자리하면서도 대차대조표에는 남지 않습니다.",
+      "points": {
+        "opex": {
+          "title": "CapEx가 아닌 OpEx",
+          "description": "자본 지출 대신 예측 가능한 월 요금 — 게다가 기다려야 할 자본 승인 절차도 없습니다."
+        },
+        "bundled": {
+          "title": "지원 및 유지보수 포함",
+          "description": "모니터링, 유지보수, NERV Sense 지원이 계약 기간에 포함됩니다 — 한 줄로, 예상치 못한 비용 없이."
+        },
+        "refresh": {
+          "title": "갱신 시 교체",
+          "description": "계약이 갱신될 때 하드웨어가 교체되므로, AI 컴퓨트가 임무 도중 조용히 노후화되는 일이 없습니다."
+        },
+        "term": {
+          "title": "36개월 계약",
+          "description": "검증된 장비 금융 파트너를 통해 마련되며, 예산 주기에 맞춰 계약 조건이 조정됩니다."
+        }
+      },
+      "cta": "구매 vs. 리스 비교"
+    },
+    "closing": {
+      "eyebrow": "원하는 방식으로 배치",
+      "title": "구매하거나 리스하거나 — 지원 포함",
+      "description": "완전 구매하거나, 유지보수와 교체가 포함된 36개월 서비스형 하드웨어(HaaS)로 이용하세요. 어느 쪽이든 컴퓨트는 당신이 있는 곳에 자리합니다. 사이트, 부하, 제약 조건을 알려주시면 규모를 산정해 드립니다.",
+      "quote": "견적 요청",
+      "contact": "엔지니어와 상담하기"
+    },
+    "callout": {
+      "label": "NERV CENTRE",
+      "title": "프라이빗 온프레미스 AI 컴퓨트",
+      "description": "당신이 통제하는 구내에서 NERVA와 인프라를 운영하는 밀폐형 독립 데이터센터 — 소버린, 오프라인 지원, 물리적 보호.",
+      "benefits": {
+        "onSite": {
+          "title": "데이터는 현장에 유지",
+          "description": "그 무엇도 경계를 벗어나지 않습니다"
+        },
+        "offline": {
+          "title": "오프라인 작동",
+          "description": "업링크가 끊겨도 작동"
+        },
+        "sealed": {
+          "title": "IP65 밀폐",
+          "description": "잠금, 감시, 변조 감지"
+        },
+        "aiReady": {
+          "title": "AI 지원",
+          "description": "NERVA 및 InferNode를 위한 GPU 노드"
+        }
+      },
+      "cta": "NERV Centre 살펴보기 →"
+    }
   }
 }
