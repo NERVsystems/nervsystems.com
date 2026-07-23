@@ -123,9 +123,28 @@
     outline: 2px solid var(--accent); outline-offset: 2px;
   }
   .tierdesc {
-    font-size: 13.5px; color: var(--ink-2); margin: 0 0 22px; padding: 0 4px;
+    font-size: 13.5px; color: var(--ink-2); margin: 0 0 12px; padding: 0 4px;
   }
   .tierdesc b { color: var(--ink); }
+  .refresh-row {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px;
+    margin: 0 0 22px; padding: 10px 14px;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+    font-size: 13.5px; color: var(--ink-2);
+  }
+  .refresh-row .rf-toggle {
+    display: inline-flex; align-items: center; gap: 7px;
+    color: var(--ink); font-weight: 600; cursor: pointer;
+  }
+  .refresh-row input[type=checkbox] { accent-color: var(--accent); width: 15px; height: 15px; cursor: pointer; }
+  .refresh-row .rf-when { display: inline-flex; align-items: center; gap: 6px; }
+  .refresh-row .rf-when input {
+    width: 52px; text-align: center;
+    font: 13px "JetBrains Mono", ui-monospace, monospace; color: var(--ink);
+    background: var(--ground); border: 1px solid var(--line); border-radius: 5px; padding: 3px 6px;
+  }
+  .refresh-row .rf-note { color: var(--ink-3); font-size: 12.5px; flex: 1 1 240px; min-width: 200px; }
+  .refresh-row input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
   .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 22px; }
   .tile {
@@ -330,6 +349,13 @@
   </div>
   <p class="tierdesc" id="tierdesc"></p>
 
+  <div class="refresh-row">
+    <label class="rf-toggle"><input type="checkbox" id="refreshOn"> Include GPU refresh</label>
+    <span class="rf-when">every
+      <input type="number" id="refreshYears" min="2" max="10" step="1" value="5"> years</span>
+    <span class="rf-note">re-buys the GPUs on the three owned options — cloud &amp; HaaS already bundle refresh into their rates</span>
+  </div>
+
   <div class="tiles" id="tiles"></div>
 
   <div class="card">
@@ -466,7 +492,10 @@
     rL40S: 1.80,    // $/GPU-hr
     stack: 150,     // $/mo, cloud core stack (operations server VM, DB, networking)
     stor: 0.05,     // $/GB-mo, blended block+object storage
-    maint: 18       // %/yr of hardware value, owned-hardware support contract
+    maint: 18,      // %/yr of hardware value, owned-hardware support contract
+    refreshCadence: 5,     // yr between GPU refreshes when enabled
+    refreshPriceH: 25000,  // $/GPU, H100-class refresh (market; value-build ~$13k halves it)
+    refreshPriceL: 8000    // $/GPU, L40S-class refresh
   };
   const ovr = {};   // user overrides; region change clears power/floor only
 
@@ -477,9 +506,15 @@
     return 2000;
   }
 
-  function yearly(label, establishment, recurring, term) {
+  function yearly(label, establishment, recurring, term, refreshCost, refreshYears) {
     const ys = [];
-    for (let y = 0; y <= term; y++) ys.push(establishment + recurring * y);
+    for (let y = 0; y <= term; y++) {
+      let extra = 0;
+      if (refreshCost && refreshYears) {
+        for (const ry of refreshYears) if (ry <= y) extra += refreshCost;
+      }
+      ys.push(establishment + recurring * y + extra);
+    }
     return { label, establishment, recurring, tco: ys[term], yearly: ys };
   }
 
@@ -492,6 +527,15 @@
     const powerCost = pue => t.kw * pue * power * HOURS_YR;
     const floorCentre = outdoor ? 0 : 4 * floor;    // Pro takes 4 m² of office
 
+    // GPU refresh on the OWNED options only (cloud & HaaS bundle refresh into
+    // their rates). Re-buys the GPUs every `refreshCadence` years; a refresh
+    // at year Y steps the cumulative up from Y onward.
+    const gpuRefresh = a.refreshOn ? (t.h100 * a.refreshPriceH + t.l40s * a.refreshPriceL) : 0;
+    const refreshYears = [];
+    if (gpuRefresh > 0 && a.refreshCadence > 0) {
+      for (let y = a.refreshCadence; y < term; y += a.refreshCadence) refreshYears.push(y);
+    }
+
     // 1. Public cloud — equivalent rented capability, always-on
     const gpuYr = (t.h100 * a.rH100 + t.l40s * a.rL40S) * HOURS_YR;
     const cloud = yearly("Public cloud", 0,
@@ -500,16 +544,16 @@
     // 2. On-prem server room — partition a room, host the same stack
     const roomBuild = 15000 + 2700 + 6500 + 4500 + 10000 + 3200 + 2900;
     const room = yearly("On-prem server room", roomBuild + stackHW,
-      9 * floor + maint * stackHW + powerCost(2.5), term);
+      9 * floor + maint * stackHW + powerCost(2.5), term, gpuRefresh, refreshYears);
 
     // 3. Colocation — rent rack space for the same stack
     const colo = yearly("Colocation", 1300 + stackHW,
-      coloFeeMo(t.kw) * 12 + 12000 + maint * stackHW, term);
+      coloFeeMo(t.kw) * 12 + 12000 + maint * stackHW, term, gpuRefresh, refreshYears);
 
     // 4. NERV Centre — buy outright
     const buyBase = t.sell + uplift;
     const buy = yearly("NERV Centre — buy", buyBase + INSTALL[place],
-      maint * buyBase + powerCost(1.3) + floorCentre, term);
+      maint * buyBase + powerCost(1.3) + floorCentre, term, gpuRefresh, refreshYears);
 
     // 5. NERV Centre — HaaS (36-month lease, support & maintenance bundled)
     const haasMo = t.haasMo + uplift / 36;
@@ -523,7 +567,7 @@
   const els = {};
   ["tier", "place", "region", "term", "termval", "tierdesc", "tiles",
    "barchart", "barsub", "linechart", "tooltip", "legend", "assump",
-   "datatable"].forEach(id => { els[id] = document.getElementById(id); });
+   "datatable", "refreshOn", "refreshYears"].forEach(id => { els[id] = document.getElementById(id); });
 
   const SERIES_VARS = ["--s1", "--s2", "--s3", "--s4", "--s5"];
   let results = [], fx = 1, sym = "$", pre = true, lastConfig = {};
@@ -555,9 +599,13 @@
       rL40S: ovr.rL40S !== undefined ? ovr.rL40S : DEFAULTS.rL40S,
       stack: ovr.stack !== undefined ? ovr.stack : DEFAULTS.stack,
       stor:  ovr.stor  !== undefined ? ovr.stor  : DEFAULTS.stor,
-      maint: ovr.maint !== undefined ? ovr.maint : DEFAULTS.maint
+      maint: ovr.maint !== undefined ? ovr.maint : DEFAULTS.maint,
+      refreshOn: els.refreshOn.checked,
+      refreshCadence: Math.max(1, +els.refreshYears.value || DEFAULTS.refreshCadence),
+      refreshPriceH: ovr.refreshPriceH !== undefined ? ovr.refreshPriceH : DEFAULTS.refreshPriceH,
+      refreshPriceL: ovr.refreshPriceL !== undefined ? ovr.refreshPriceL : DEFAULTS.refreshPriceL
     };
-    lastConfig = { tier, place, region: els.region.value, term };
+    lastConfig = { tier, place, region: els.region.value, term, refresh: els.refreshOn.checked };
     els.termval.textContent = term + " years";
     els.tierdesc.innerHTML = TIERS[tier].desc + " · placement: " +
       (place === "pro" ? "indoor" : "outdoor, IP-rated");
@@ -591,6 +639,9 @@
 
   function renderBars(term) {
     els.barsub.textContent = `${term}-year total, ${REGIONS[els.region.value].currency}. Establishment plus every year of running costs.`;
+    if (els.refreshOn.checked) {
+      els.barsub.textContent += ` Owned options include a GPU refresh every ${Math.max(1, +els.refreshYears.value || 5)} years; cloud and HaaS already bundle it.`;
+    }
     const max = Math.max(...results.map(r => r.tco));
     const minv = Math.min(...results.map(r => r.tco));
     els.barchart.innerHTML = results.map((r, i) => {
@@ -686,6 +737,10 @@
         <input id="in-stor" type="number" step="0.01" min="0" value="${a.stor}"> USD/GB-mo (${t.storTB} TB)</div>
       <div class="edit"><b>Hardware support contract</b>
         <input id="in-maint" type="number" step="1" min="0" max="40" value="${a.maint}"> %/yr of hardware value</div>
+      <div class="edit"><b>GPU refresh — H100-class</b>
+        <input id="in-refreshH" type="number" step="1000" min="0" value="${a.refreshPriceH}"> USD/GPU</div>
+      <div class="edit"><b>GPU refresh — L40S-class</b>
+        <input id="in-refreshL" type="number" step="500" min="0" value="${a.refreshPriceL}"> USD/GPU</div>
       <div class="edit"><b>Power tariff</b>
         <input id="in-power" type="number" step="0.01" min="0.01" value="${power}"> USD/kWh</div>
       <div class="edit"><b>Office floor cost</b>
@@ -702,6 +757,13 @@
         NERV list (partner AUD price list, April 2025; outdoor modelled as indoor plus the
         published list delta). Support contract on owned hardware defaults to 18%/yr
         (industry band 15–20%); it is bundled inside the HaaS lease.</div>
+      <div class="full"><b>GPU refresh:</b> by default the owned options are modelled as
+        bought once plus maintenance, with no generational GPU refresh — realistic for a
+        3–6 year horizon. Tick <i>Include GPU refresh</i> above to re-buy the GPUs on the
+        three owned options at the cadence and prices set here; cloud and HaaS already
+        bundle refresh into their flat rates. Default prices are market H100-class / L40S;
+        the value-build cards NERV would actually ship (~$13k) roughly halve the impact.
+        Even with two refreshes over 15 years, owning stays well under cloud.</div>
       <div class="full"><b>Users vs concurrency:</b> tier labels count <i>connected users</i> —
         devices served by the operations node with the shared picture, comms, and video.
         Simultaneous AI sessions are a separate, GPU-bound figure (roughly 4–8, 25–40, and
@@ -714,7 +776,7 @@
         excluded everywhere equally; ${REGIONS[els.region.value].currency} at FX 2026-04-01.</div>`;
     [["in-rH100", "rH100"], ["in-rL40S", "rL40S"], ["in-stack", "stack"],
      ["in-stor", "stor"], ["in-maint", "maint"], ["in-power", "power"],
-     ["in-floor", "floor"]].forEach(([id, key]) => {
+     ["in-floor", "floor"], ["in-refreshH", "refreshPriceH"], ["in-refreshL", "refreshPriceL"]].forEach(([id, key]) => {
       document.getElementById(id).addEventListener("change", e => {
         const v = parseFloat(e.target.value);
         if (!isNaN(v)) ovr[key] = v; else delete ovr[key];
@@ -747,6 +809,8 @@
       trackConfig();
     });
   });
+  els.refreshOn.addEventListener("change", () => { recompute(); trackConfig(); });
+  els.refreshYears.addEventListener("input", () => { recompute(); trackConfig(); });
 
   // ---- Lead capture: HubSpot contact form (same pipeline as nervsystems.com) ----
   const HS_ENDPOINT = "https://api.hsforms.com/submissions/v3/integration/submit/244297257/1a7c3b50-4df4-4b3e-ac7a-99937b52415b";
