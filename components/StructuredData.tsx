@@ -133,6 +133,17 @@ export default function StructuredData() {
           "applicationCategory": "DeveloperApplication",
           "operatingSystem": "Linux, Edge"
         }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "NERV Centre",
+          "category": "Private on-premise AI compute / micro data centre",
+          "url": `${baseUrl}/solutions/nerv-centre`,
+          "image": `${baseUrl}/img/nerv-centre/outdoor-camo.png`,
+          "description": "Sealed, self-contained on-premise data centre for private, sovereign AI. Runs NERVA and AI agents behind your own perimeter — offline-capable, IP65-secured, and available to buy outright or lease as Hardware-as-a-Service."
+        }
       }
     ]
   };
