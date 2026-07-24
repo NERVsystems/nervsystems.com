@@ -560,7 +560,7 @@
     const haas = yearly("NERV Centre — HaaS", 0,
       haasMo * 12 + powerCost(1.3) + floorCentre, term);
 
-    return { results: [cloud, room, colo, buy, haas], haasMo };
+    return { results: [cloud, room, colo, buy, haas], haasMo, refreshYears };
   }
 
   // ---- State + rendering ----
@@ -570,7 +570,7 @@
    "datatable", "refreshOn", "refreshYears"].forEach(id => { els[id] = document.getElementById(id); });
 
   const SERIES_VARS = ["--s1", "--s2", "--s3", "--s4", "--s5"];
-  let results = [], fx = 1, sym = "$", pre = true, lastConfig = {};
+  let results = [], fx = 1, sym = "$", pre = true, lastConfig = {}, refreshApplied = [];
 
   function money(usd, compact) {
     const v = usd * fx;
@@ -612,6 +612,7 @@
 
     const out = compute(tier, place, term, power, floor, a);
     results = out.results;
+    refreshApplied = out.refreshYears;
     renderTiles(term, out.haasMo);
     renderBars(term);
     renderLines(term);
@@ -640,7 +641,15 @@
   function renderBars(term) {
     els.barsub.textContent = `${term}-year total, ${REGIONS[els.region.value].currency}. Establishment plus every year of running costs.`;
     if (els.refreshOn.checked) {
-      els.barsub.textContent += ` Owned options include a GPU refresh every ${Math.max(1, +els.refreshYears.value || 5)} years; cloud and HaaS already bundle it.`;
+      const cadence = Math.max(1, +els.refreshYears.value || DEFAULTS.refreshCadence);
+      const n = refreshApplied.length;
+      if (n) {
+        els.barsub.textContent += n === 1
+          ? ` Owned options include one GPU refresh, in year ${refreshApplied[0]}; cloud and HaaS already bundle it.`
+          : ` Owned options include ${n} GPU refreshes, in years ${refreshApplied.join(", ")}; cloud and HaaS already bundle it.`;
+      } else {
+        els.barsub.textContent += ` A ${cadence}-year refresh cadence puts no refresh inside a ${term}-year term, so the totals are unchanged — lengthen the term or shorten the cadence to see its effect.`;
+      }
     }
     const max = Math.max(...results.map(r => r.tco));
     const minv = Math.min(...results.map(r => r.tco));

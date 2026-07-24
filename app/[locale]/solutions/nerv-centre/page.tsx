@@ -91,26 +91,9 @@ export async function generateMetadata({
   };
 }
 
-const productJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  name: "NERV Centre",
-  category: "Private on-premise AI compute / micro data centre",
-  brand: { "@type": "Brand", name: "NERV Systems" },
-  manufacturer: { "@type": "Organization", name: "NERV Systems", url: baseUrl },
-  url: `${baseUrl}/solutions/nerv-centre`,
-  image: `${baseUrl}/img/nerv-centre/outdoor-camo.png`,
-  description:
-    "Sealed, self-contained on-premise data centre for private, sovereign AI. Runs NERVA and AI agents behind your own perimeter — offline-capable, IP65-secured, and available to buy outright or lease as Hardware-as-a-Service.",
-};
-
 export default function NervCentrePage() {
   return (
     <main className="min-h-screen bg-tactical-bg">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
-      />
       <TacticalNav />
       <NervCentreHero />
       <NervCentreValue />
