@@ -16,7 +16,7 @@ export default function PartnersSection() {
     {
       name: t('items.autodesk.name'),
       description: t('items.autodesk.description'),
-      logo: "/img/brands/partners/autodesk foundation.jpg",
+      logo: "/img/brands/partners/autodesk-technology-impact-white.png",
       link: "https://www.autodesk.org",
       placeholder: false
     },
