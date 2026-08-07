@@ -65,7 +65,6 @@ export default function Footer() {
               <p>{t('contact.address')}</p>
               <p>{t('contact.addressSG')}</p>
               <p>{t('contact.addressUK')}</p>
-              <p>{t('contact.region')}</p>
             </div>
             <div className="text-xs text-tactical-textDim/70 space-y-1">
               <p className="font-mono">▸ {t('contact.affiliations.nvidia')}</p>

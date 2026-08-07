@@ -469,10 +469,6 @@
         "label": "LONDON-KONTOR",
         "value": "BH (N) 1.01 Bush House, 30 Aldwych, London WC2B 4BG, United Kingdom"
       },
-      "region": {
-        "label": "REGION",
-        "value": "Asien-Stillahavsområdet"
-      },
       "affiliations": {
         "label": "AFFILIERINGAR",
         "nvidia": "NVIDIA Inception-medlem",
@@ -503,7 +499,6 @@
       "address": "US: 8 The Green Suite B, Dover, DE 19901",
       "addressSG": "SG: 71 Ayer Rajah Crescent #01-20, 159773",
       "addressUK": "UK: BH (N) 1.01 Bush House, 30 Aldwych, London WC2B 4BG",
-      "region": "Asien-Stillahavsområdet",
       "affiliations": {
         "nvidia": "NVIDIA Inception-medlem",
         "nus": "NUS Enterprise-inkuberad",

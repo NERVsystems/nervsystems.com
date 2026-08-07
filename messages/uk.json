@@ -469,10 +469,6 @@
         "label": "ОФІС У ЛОНДОНІ",
         "value": "BH (N) 1.01 Bush House, 30 Aldwych, London WC2B 4BG, United Kingdom"
       },
-      "region": {
-        "label": "РЕГІОН",
-        "value": "Азіатсько-Тихоокеанський регіон"
-      },
       "affiliations": {
         "label": "АФІЛІАЦІЇ",
         "nvidia": "Учасник NVIDIA Inception",
@@ -503,7 +499,6 @@
       "address": "США: 8 The Green Suite B, Dover, DE 19901",
       "addressSG": "Сінгапур: 71 Ayer Rajah Crescent #01-20, 159773",
       "addressUK": "Велика Британія: BH (N) 1.01 Bush House, 30 Aldwych, London WC2B 4BG",
-      "region": "Азіатсько-Тихоокеанський регіон",
       "affiliations": {
         "nvidia": "Учасник NVIDIA Inception",
         "nus": "Інкубовано в NUS Enterprise",
