@@ -9,8 +9,8 @@
     "nervCentre": "온프레미스 솔루션"
   },
   "hero": {
-    "title": "임무 성공을 위한 전술 AI",
-    "subtitle": "TAK 네이티브 AI 기반 의사결정 지원 시스템으로 정보 과부하를 중요 작전을 위한 명확한 행동으로 전환합니다.",
+    "title": "임무 계획 지원을 위한 전술 AI",
+    "subtitle": "TAK 네이티브 의사결정 지원으로 정보 과부하를 중요 작전을 위한 명확한 선택지로 전환합니다. NERVA는 초안을 제시하고, 결정은 운영자가 내립니다.",
     "stats": {
       "planning": {
         "value": "<30초",
@@ -42,24 +42,24 @@
     "capabilities": {
       "uas": {
         "icon": "UAS",
-        "title": "자율 드론 운용",
+        "title": "드론 운용 지원",
         "command": "\"NERVA, 정찰 패턴 알파 발진\"",
-        "description": "ISR 및 정찰을 위한 자율 비행 경로 계획. NERVA는 드론 텔레메트리를 모니터링하고, 센서 임무 할당을 조정하며, 공역 인식을 위해 우호적 트랙과 미식별 트랙의 실시간 상황도를 유지합니다.",
+        "description": "ISR 및 정찰을 위한 의사결정 지원. NERVA는 드론 텔레메트리를 모니터링하고, 운영자 승인을 위한 센서 임무 할당 선택지 초안을 작성하며, 공역 인식을 위해 우호적 트랙과 미식별 트랙의 실시간 상황도를 유지합니다.",
         "features": [
-          "자율 비행 계획",
+          "비행 계획 추천",
           "실시간 텔레메트리 모니터링",
-          "자동화된 비행 경로 계획",
+          "비행 경로 추천",
           "UAS 지휘 통제"
         ]
       },
       "medevac": {
         "icon": "MEDEVAC",
-        "title": "자동화된 MEDEVAC 조정",
+        "title": "MEDEVAC 조정 지원",
         "command": "\"NERVA, 의료 후송이 필요합니다\"",
-        "description": "30초 이내에 최적의 헬리콥터 착륙 지점을 식별하고, 의료 및 항공팀에 자동으로 통보하며, 구조 진행 상황을 모니터링하고, 모든 ATAK/TAK 클라이언트를 실시간으로 업데이트합니다.",
+        "description": "30초 이내에 헬리콥터 착륙 지점을 추천합니다. 운영자 승인 시 NERVA가 의료 및 항공팀에 통보하고, 구조 진행 상황을 모니터링하며, 모든 ATAK/TAK 클라이언트를 실시간으로 업데이트합니다.",
         "features": [
-          "30초 이내 LZ 식별",
-          "자동 팀 알림",
+          "30초 이내 LZ 추천",
+          "운영자 승인 기반 알림",
           "실시간 모니터링",
           "TAK 전체 업데이트"
         ]
@@ -149,8 +149,8 @@
     "items": {
       "planning": {
         "icon": "01",
-        "title": "실시간 임무 계획",
-        "description": "실시간 ATAK 데이터에서 전술 옵션 자동 생성. 시간 중요 작전을 위한 30초 계획 주기.",
+        "title": "실시간 계획 지원",
+        "description": "실시간 ATAK 데이터에서 운영자 검토를 위한 전술 옵션 초안 생성. 시간 중요 작전을 위한 30초 계획 주기.",
         "code": "MAGI-01"
       },
       "fusion": {
@@ -161,7 +161,7 @@
       },
       "assessment": {
         "icon": "03",
-        "title": "자율 평가",
+        "title": "지속적 평가",
         "description": "작전 환경의 예측 분석을 위한 패턴 인식 및 이상 탐지.",
         "code": "MAGI-03"
       },
@@ -367,7 +367,7 @@
           "duration": "1 day",
           "price": "$495",
           "period": "/student",
-          "description": "Natural language interface, automated mission planning, and AI workflows",
+          "description": "Natural language interface, AI planning support, and operator-in-the-loop workflows",
           "cta": "Enroll Now"
         },
         "advanced": {
@@ -408,7 +408,7 @@
   },
   "partners": {
     "title": "주요 조직의 신뢰",
-    "description": "NERV Systems는 NVIDIA Inception의 지원을 받고, 싱가포르 국립대학교에서 인큐베이션되며, King's College London 창업가정신연구소 액셀러레이터에 선정되었고, European Defense Tech Hub와 제휴하며, Singapore Defence Tech Hackathon에 참가하고 있습니다, Autodesk Foundation의 지원을 받고 있습니다",
+    "description": "NERV Systems는 NVIDIA Inception의 지원을 받고, 싱가포르 국립대학교의 NUS Enterprise 및 Defence Venture Lab(DVL)에서 인큐베이션되며, King's College London 창업가정신연구소 액셀러레이터에 선정되었고, European Defense Tech Hub와 제휴하며, Singapore Defence Tech Hackathon에 참가하고 있습니다, Autodesk Foundation의 지원을 받고 있습니다",
     "items": {
       "nvidia": {
         "name": "NVIDIA Inception",
@@ -420,7 +420,7 @@
       },
       "nus": {
         "name": "싱가포르 국립대학교",
-        "description": "NUS Enterprise에서 인큐베이션"
+        "description": "NUS Enterprise 및 Defence Venture Lab(DVL)에서 인큐베이션"
       },
       "kcl": {
         "name": "King's College London",
@@ -488,7 +488,7 @@
     }
   },
   "footer": {
-    "tagline": "임무 계획 및 엣지 인텔리전스를 위한 전술 AI",
+    "tagline": "계획 지원 및 엣지 인텔리전스를 위한 전술 AI",
     "navigation": {
       "title": "탐색",
       "nerva": "NERVA AI",
@@ -823,7 +823,7 @@
         {
           "number": "01",
           "title": "AI 강화 TAK 플랫폼",
-          "description": "NERVA는 귀하의 ATAK/TAK 배치에 자율 임무 계획, 자동화된 의료 후송 조정, 상황 인식, 실시간 의사결정 지원을 추가합니다"
+          "description": "NERVA는 귀하의 ATAK/TAK 배치에 임무 계획 지원, 의료 후송 조정 지원, 상황 인식, 실시간 의사결정 지원을 추가합니다"
         },
         {
           "number": "02",
@@ -930,7 +930,7 @@
         {
           "category": "AI 기능",
           "traditional": "수동 임무 계획 및 분석",
-          "nerv": "NERVA AI를 통한 자율 임무 계획: 자동화된 의료 후송, 상황 인식, SAR 계산"
+          "nerv": "NERVA AI를 통한 임무 계획 지원: 의료 후송 조정, 상황 인식, SAR 계산"
         },
         {
           "category": "응답 시간",
@@ -955,7 +955,7 @@
         {
           "category": "교육 프로그램",
           "traditional": "일반 TAK 운영자 교육",
-          "nerv": "TAK 기초 + NERVA AI 보조 교육 + AI를 통한 고급 임무 계획"
+          "nerv": "TAK 기초 + NERVA AI 보조 교육 + AI 지원 임무 계획"
         },
         {
           "category": "시스템 관리",
@@ -984,7 +984,7 @@
       "items": [
         {
           "title": "전술 AI ROI 계산기 및 가이드",
-          "description": "전술 작전을 위한 AI 통합 ROI에 대한 포괄적인 분석. 자동화된 임무 계획, 단축된 계획 시간, 개선된 의사결정 정확도 및 향상된 작전 템포로부터의 비용 절감을 계산합니다. 실제 사례 연구 및 배치 시나리오 포함.",
+          "description": "전술 작전을 위한 AI 통합 ROI에 대한 포괄적인 분석. AI 계획 지원, 단축된 계획 시간, 개선된 의사결정 정확도 및 향상된 작전 템포로부터의 비용 절감을 계산합니다. 실제 사례 연구 및 배치 시나리오 포함.",
           "pages": "24페이지",
           "format": "PDF",
           "category": "ROI",
@@ -1140,7 +1140,7 @@
         },
         {
           "question": "NERV의 TAK 솔루션이 다른 TAK 호스팅 제공업체와 다른 점은 무엇인가요?",
-          "answer": "전통적인 TAK 호스팅 기업과 달리, NERV는 전문적인 TAK 배치 서비스와 NERVA 통합을 통한 AI 기반 인텔리전스를 결합합니다. 모든 NERV TAK 솔루션에는 자율 임무 계획, 자동화된 의료 후송 조정, 실시간 상황 인식, 지능형 지오펜싱, 3D 공역 시각화가 포함되며, 이는 표준 TAK 제공업체에서는 제공되지 않는 기능입니다. 미국과 싱가포르에 사무소를 두고 북미와 아시아 태평양 전역의 조직을 지원하며, 현지 규정 준수 전문성을 갖춘 다중 지역 TAK 호스팅을 제공합니다. 유연한 배치 옵션으로는 클라우드 TAK 호스팅, 온프레미스 TAK 서버, 하이브리드 아키텍처, 그리고 당사의 GPU 지원 하드웨어를 활용한 엣지 배치 TAK 시스템이 있습니다."
+          "answer": "전통적인 TAK 호스팅 기업과 달리, NERV는 전문적인 TAK 배치 서비스와 NERVA 통합을 통한 AI 기반 인텔리전스를 결합합니다. 모든 NERV TAK 솔루션에는 임무 계획 지원, 의료 후송 조정 지원, 실시간 상황 인식, 지능형 지오펜싱, 3D 공역 시각화가 포함되며, 이는 표준 TAK 제공업체에서는 제공되지 않는 기능입니다. 미국과 싱가포르에 사무소를 두고 북미와 아시아 태평양 전역의 조직을 지원하며, 현지 규정 준수 전문성을 갖춘 다중 지역 TAK 호스팅을 제공합니다. 유연한 배치 옵션으로는 클라우드 TAK 호스팅, 온프레미스 TAK 서버, 하이브리드 아키텍처, 그리고 당사의 GPU 지원 하드웨어를 활용한 엣지 배치 TAK 시스템이 있습니다."
         },
         {
           "question": "맞춤형 TAK 플러그인을 개발할 수 있나요?",
@@ -1156,7 +1156,7 @@
         },
         {
           "question": "NERVA AI 통합은 TAK 시스템을 어떻게 향상시키나요?",
-          "answer": "NERVA는 표준 TAK/ATAK을 기본적인 상황 인식에서 지능형 의사결정 지원 플랫폼으로 전환합니다. NERVA는 TAK 데이터를 실시간으로 분석하여 다음을 제공합니다: 최적화된 경로와 타이밍을 갖춘 자율 임무 계획, 최적의 LZ 위치와 비행 경로를 계산하는 자동화된 의료 후송 조정, 위험 구역 분석 및 충돌 회피 권고를 포함한 상황 인식, SAR 작전을 위한 지능형 수색 구역 계산, 공역 침범에 대한 자동 알림 기능을 갖춘 지오펜싱, UAS 충돌 회피를 위한 3D 공역 시각화. NERVA는 클라우드 인프라, 온프레미스 서버 또는 당사의 엣지 배치 GPU 하드웨어에서 실행되며, 표준 TAK 프로토콜과 API를 통해 기존 TAK Server 배치와 원활하게 통합됩니다."
+          "answer": "NERVA는 표준 TAK/ATAK을 기본적인 상황 인식에서 지능형 의사결정 지원 플랫폼으로 전환합니다. NERVA는 TAK 데이터를 실시간으로 분석하여 다음을 제공합니다: 권장 경로와 타이밍을 제시하는 임무 계획 지원, 운영자 승인을 위해 LZ 위치와 비행 경로를 제안하는 의료 후송 조정 지원, 위험 구역 분석 및 충돌 회피 권고를 포함한 상황 인식, SAR 작전을 위한 지능형 수색 구역 계산, 공역 침범에 대한 자동 알림 기능을 갖춘 지오펜싱, UAS 충돌 회피를 위한 3D 공역 시각화. NERVA는 클라우드 인프라, 온프레미스 서버 또는 당사의 엣지 배치 GPU 하드웨어에서 실행되며, 표준 TAK 프로토콜과 API를 통해 기존 TAK Server 배치와 원활하게 통합됩니다."
         }
       ],
       "cta": {
@@ -1335,7 +1335,7 @@
   "sdg": {
     "eyebrow": "글로벌 임팩트",
     "title": "UN 지속가능발전목표(SDGs)와의 연계",
-    "subtitle": "NERV는 생명을 구하는 임무를 위한 기술을 개발합니다. 우리의 활동은 유엔 2030 지속가능발전 의제를 지원하여 지역사회가 더 빠르게 대응하고, 더 빨리 회복하며, 안전을 유지하도록 돕습니다.",
+    "subtitle": "전술 팀을 위한 바로 그 시스템이 지역사회가 더 빠르게 대응하고, 더 빨리 회복하며, 안전을 유지하도록 돕습니다. 이러한 이중 활용이 우리가 우리의 일을 유엔 2030 지속가능발전 의제와 연계하는 이유입니다.",
     "goals": {
       "health": {
         "title": "건강과 웰빙",
@@ -1367,8 +1367,75 @@
   "about": {
     "eyebrow": "NERV Systems 소개",
     "title": "중요한 임무를 위한 첨단 AI",
-    "lead": "NERV Systems는 TAK 및 ATAK에 AI 증강을 제공하는 방위 기술 기업입니다. 우리는 임무 계획과 자율 운용을 위한 AI 어시스턴트 NERVA와, AI 에이전트를 증명 가능한 방식으로 경계 안에 두는 형식적으로 검증된 런타임 InferNode를 개발합니다.",
-    "body": "우리의 기술은 가장 가혹한 운용 환경을 위해 만들어졌습니다. 전술 팀에게 우위를 제공하는 동일한 역량이 재난 구호, 수색 구조, 인도주의 위기에서 대응 인력이 생명을 구하도록 돕습니다. 이러한 이중 목적이 바로 우리가 우리의 일을 운용상의 우위뿐 아니라 글로벌 임팩트로도 측정하는 이유입니다."
+    "lead": "NERV Systems는 TAK 및 ATAK에 AI 증강을 제공하는 방위 기술 기업입니다. 우리가 만드는 모든 것은 하나의 원칙을 따릅니다. AI는 선택지 초안을 제시하고 위험을 드러내며 세부 사항을 조율하여 운영자를 지원하되, 지휘는 언제나 사람이 맡습니다.",
+    "body": "우리의 기술은 가장 가혹한 운용 환경을 위해 만들어졌습니다. 전술 팀에게 우위를 제공하는 동일한 역량이 재난 구호, 수색 구조, 인도주의 위기에서 대응 인력이 생명을 구하도록 돕습니다. 이러한 이중 목적이 바로 우리가 우리의 일을 운용상의 우위뿐 아니라 글로벌 임팩트로도 측정하는 이유입니다.",
+    "build": {
+      "eyebrow": "우리가 만드는 것",
+      "title": "엣지 하드웨어부터 검증 가능한 AI까지, 하나의 스택",
+      "items": {
+        "nerva": {
+          "label": "NERVA",
+          "title": "계획 및 의사결정 지원",
+          "description": "행동 방책 초안을 작성하고, MEDEVAC 조정을 지원하며, 공통 작전 상황도를 최신으로 유지하는 TAK 네이티브 AI 어시스턴트입니다. NERVA는 추천하고, 결정은 운영자가 내립니다.",
+          "cta": "NERVA 살펴보기"
+        },
+        "infernode": {
+          "label": "INFERNODE",
+          "title": "검증 가능한 AI 런타임",
+          "description": "AI 에이전트를 증명 가능한 방식으로 경계 안에 머물게 하는 경량의 정형 검증된 런타임입니다. 경계는 운영체제가 시행하며, 배포 전에 감사할 수 있습니다.",
+          "cta": "InferNode 살펴보기"
+        },
+        "nervCentre": {
+          "label": "NERV CENTRE",
+          "title": "프라이빗 온프레미스 컴퓨트",
+          "description": "프라이빗 AI를 귀하의 현장으로 가져오는 컨테이너형 GPU 인프라입니다. 데이터 주권을 보장하고, 비연결 환경에서도 작동하며, 임무 규모에 맞게 구성됩니다.",
+          "cta": "NERV Centre 살펴보기"
+        }
+      }
+    },
+    "principles": {
+      "eyebrow": "우리의 운영 방식",
+      "title": "우리가 내놓는 모든 것 뒤에 있는 네 가지 약속",
+      "items": {
+        "command": {
+          "number": "01",
+          "title": "지휘는 운영자에게",
+          "description": "참모 역할이지, 지휘 역할이 아닙니다. NERVA는 선택지 초안을 작성하고 세부 사항을 조율하지만, 결정은 언제나 운영자의 몫입니다. 우리는 자동화가 그것이 섬기는 사람 위에 서도록 만들지 않습니다."
+        },
+        "edge": {
+          "number": "02",
+          "title": "엣지 우선",
+          "description": "임무가 있는 곳에서 실행되도록 구축되었습니다. 비연결, 성능 저하, 대역폭 부족 환경도 예외가 아닙니다."
+        },
+        "open": {
+          "number": "03",
+          "title": "개방형 아키텍처",
+          "description": "TAK 네이티브이자 MOSA 준수. 벤더 종속 대신 개방형 표준과 상호운용성을 택합니다."
+        },
+        "verifiable": {
+          "number": "04",
+          "title": "설계 단계부터 검증 가능",
+          "description": "직접 확인할 수 있는 주장: 정형 검증된 격리, 감사 가능한 구성, 그리고 우리가 배포하는 모든 AI 에이전트에 대한 증명 가능한 경계."
+        }
+      }
+    },
+    "presence": {
+      "eyebrow": "글로벌 거점",
+      "offices": {
+        "us": {
+          "label": "미국",
+          "value": "델라웨어주 도버"
+        },
+        "sg": {
+          "label": "싱가포르",
+          "value": "Block71, Ayer Rajah Crescent"
+        },
+        "uk": {
+          "label": "영국",
+          "value": "Bush House, 런던"
+        }
+      }
+    }
   },
   "nervCentre": {
     "meta": {

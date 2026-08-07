@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import TacticalNav from '@/components/TacticalNav';
 import AboutIntroSection from '@/components/about/AboutIntroSection';
+import AboutBuildSection from '@/components/about/AboutBuildSection';
+import AboutPrinciplesSection from '@/components/about/AboutPrinciplesSection';
+import AboutPresenceSection from '@/components/about/AboutPresenceSection';
 import AboutStructuredData from '@/components/about/AboutStructuredData';
 import SDGSection from '@/components/SDGSection';
 import Footer from '@/components/Footer';
@@ -27,7 +30,7 @@ export async function generateMetadata({
 
   return {
     title: "About | NERV Systems",
-    description: "NERV Systems builds AI-augmented TAK/ATAK technology for defence and life-saving missions—from NERVA mission planning to InferNode's verifiable AI. Learn about our mission and alignment with the UN Sustainable Development Goals.",
+    description: "NERV Systems builds AI-augmented TAK/ATAK technology for defence and life-saving missions—from NERVA planning support to InferNode's verifiable AI. Learn about our mission and alignment with the UN Sustainable Development Goals.",
     keywords: [
       "NERV Systems",
       "about NERV Systems",
@@ -66,6 +69,9 @@ export default async function AboutPage({
       <AboutStructuredData locale={locale} />
       <TacticalNav />
       <AboutIntroSection />
+      <AboutBuildSection />
+      <AboutPrinciplesSection />
+      <AboutPresenceSection />
       <SDGSection />
       <Footer />
     </main>

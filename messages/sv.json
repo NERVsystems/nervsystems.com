@@ -9,8 +9,8 @@
     "nervCentre": "On-premise-lösningar"
   },
   "hero": {
-    "title": "Taktisk AI som skapar lyckade uppdrag",
-    "subtitle": "TAK-integrerad AI som hjälper dig gå från informationskaos till klara beslut i kritiska lägen.",
+    "title": "Taktisk AI för stöd i uppdragsplaneringen",
+    "subtitle": "TAK-nativt beslutsstöd som omvandlar informationsöverflöd till tydliga handlingsalternativ i kritiska operationer. NERVA föreslår; operatörerna beslutar.",
     "stats": {
       "planning": {
         "value": "<30s",
@@ -42,24 +42,24 @@
     "capabilities": {
       "uas": {
         "icon": "UAS",
-        "title": "Automatiserade uppdrag för drönare",
+        "title": "Stöd för drönaroperationer",
         "command": "\"NERVA, starta sökmönster Alpha\"",
-        "description": "Autonom ruttplanering för ISR och spaning. NERVA övervakar drönardata, samordnar sensortilldelning och upprätthåller en realtidsbild av egna och oidentifierade spår för luftrumsöverblick.",
+        "description": "Beslutsstöd för ISR och spaning. NERVA övervakar drönartelemetri, tar fram förslag till sensortilldelning för operatörens godkännande och upprätthåller en realtidsbild av egna och oidentifierade spår för luftrumsöverblick.",
         "features": [
-          "Autonom flygplanering",
+          "Färdplansrekommendationer",
           "Övervakar drönardata i realtid",
-          "Automatiserad ruttplanering",
+          "Flygvägsrekommendationer",
           "Ledning och kontroll av UAS"
         ]
       },
       "medevac": {
         "icon": "MEDEVAC",
-        "title": "Automatiserad MEDEVAC-samordning",
+        "title": "Stöd för MEDEVAC-samordning",
         "command": "\"NERVA, vi behöver en medicinsk evakuering\"",
-        "description": "Identifierar optimala landningszoner för helikopter på under 30 sekunder, meddelar automatiskt medicinska team och flygteam, övervakar räddningsförloppet och uppdaterar alla ATAK/TAK-klienter i realtid.",
+        "description": "Rekommenderar landningszoner för helikopter på under 30 sekunder. Efter operatörens godkännande meddelar NERVA medicinska team och flygteam, övervakar räddningsförloppet och uppdaterar alla ATAK/TAK-klienter i realtid.",
         "features": [
-          "LZ-identifiering <30s",
-          "Automatiska teamuppdateringar",
+          "LZ-rekommendationer <30s",
+          "Operatörsgodkända aviseringar",
           "Realtidsövervakning",
           "Uppdaterar kopplade TAK-klienter i realtid"
         ]
@@ -149,8 +149,8 @@
     "items": {
       "planning": {
         "icon": "01",
-        "title": "Uppdragsplanering i realtid",
-        "description": "Automatiserad generering av förslag på valmöjligheter från live-ATAK-data. 30 sekunders planeringscykler för tidskritiska operationer.",
+        "title": "Planeringsstöd i realtid",
+        "description": "Taktiska handlingsalternativ tas fram ur live-ATAK-data för operatörens granskning. 30 sekunders planeringscykler för tidskritiska operationer.",
         "code": "MAGI-01"
       },
       "fusion": {
@@ -161,7 +161,7 @@
       },
       "assessment": {
         "icon": "03",
-        "title": "Autonom bedömning",
+        "title": "Kontinuerlig bedömning",
         "description": "Mönsterigenkänning och avvikelsedetektering för prognostisk analys av operativa miljöer.",
         "code": "MAGI-03"
       },
@@ -367,7 +367,7 @@
           "duration": "1 dag",
           "price": "$495",
           "period": "/deltagare",
-          "description": "Naturligt språkgränssnitt, automatiserad uppdragsplanering och AI-arbetsflöden",
+          "description": "Naturligt språkgränssnitt, AI-stöd för planering och arbetsflöden med operatören i loopen",
           "cta": "Anmälan"
         },
         "advanced": {
@@ -408,7 +408,7 @@
   },
   "partners": {
     "title": "Förtroende från ledande organisationer",
-    "description": "NERV Systems backas av NVIDIA Inception, stöds av Autodesk Foundation, är inkuberat vid National University of Singapore, är antaget till King's College London Entrepreneurship Institute-acceleratorn, är affilierat med European Defense Tech Hub och deltar i Singapore Defence Tech Hackathon",
+    "description": "NERV Systems backas av NVIDIA Inception, stöds av Autodesk Foundation, är inkuberat vid National University of Singapore genom NUS Enterprise och Defence Venture Lab (DVL), är antaget till King's College London Entrepreneurship Institute-acceleratorn, är affilierat med European Defense Tech Hub och deltar i Singapore Defence Tech Hackathon",
     "items": {
       "nvidia": {
         "name": "NVIDIA Inception",
@@ -420,7 +420,7 @@
       },
       "nus": {
         "name": "National University of Singapore",
-        "description": "Inkuberad vid NUS Enterprise"
+        "description": "Inkuberad vid NUS Enterprise och Defence Venture Lab (DVL)"
       },
       "kcl": {
         "name": "King's College London",
@@ -488,7 +488,7 @@
     }
   },
   "footer": {
-    "tagline": "Taktisk AI för uppdragsplanering och underrättelser",
+    "tagline": "Taktisk AI för planeringsstöd och edge-intelligens",
     "navigation": {
       "title": "Navigering",
       "nerva": "NERVA AI",
@@ -823,7 +823,7 @@
         {
           "number": "01",
           "title": "AI-förstärkt TAK-plattform",
-          "description": "NERVA tillför autonom uppdragsplanering, automatiserad samordning av medicinsk evakuering, lägesbild och beslutsstöd i realtid till din ATAK/TAK-driftsättning"
+          "description": "NERVA tillför stöd för uppdragsplanering, stöd för samordning av medicinsk evakuering, lägesbild och beslutsstöd i realtid till din ATAK/TAK-driftsättning"
         },
         {
           "number": "02",
@@ -930,7 +930,7 @@
         {
           "category": "AI-förmågor",
           "traditional": "Manuell uppdragsplanering och analys",
-          "nerv": "Autonom uppdragsplanering med NERVA AI: automatiserad medicinsk evakuering, lägesbild, SAR-beräkningar"
+          "nerv": "Stöd för uppdragsplanering med NERVA AI: samordning av medicinsk evakuering, lägesbild, SAR-beräkningar"
         },
         {
           "category": "Responstid",
@@ -960,7 +960,7 @@
         {
           "category": "Utbildningsprogram",
           "traditional": "Generisk operatörsutbildning för TAK",
-          "nerv": "Grunderna i TAK + utbildning i NERVA AI-assistenten + avancerad uppdragsplanering med AI"
+          "nerv": "Grunderna i TAK + utbildning i NERVA AI-assistenten + AI-assisterad uppdragsplanering"
         },
         {
           "category": "Systemadministration",
@@ -989,7 +989,7 @@
       "items": [
         {
           "title": "ROI-kalkylator och guide för taktisk AI",
-          "description": "Heltäckande analys av avkastningen på AI-integration för taktiska operationer. Beräkna kostnadsbesparingar från automatiserad uppdragsplanering, kortare planeringstid, bättre beslutsnoggrannhet och högre operativt tempo. Innehåller verkliga fallstudier och driftsättningsscenarier.",
+          "description": "Heltäckande analys av avkastningen på AI-integration för taktiska operationer. Beräkna kostnadsbesparingar från AI-stöd i planeringen, kortare planeringstid, bättre beslutsnoggrannhet och högre operativt tempo. Innehåller verkliga fallstudier och driftsättningsscenarier.",
           "pages": "24 sidor",
           "format": "PDF",
           "category": "ROI",
@@ -1145,7 +1145,7 @@
         },
         {
           "question": "Vad gör NERVs TAK-lösningar annorlunda jämfört med andra TAK-hostingleverantörer?",
-          "answer": "Till skillnad från traditionella TAK-hostingföretag kombinerar NERV expertis inom TAK-driftsättning med AI-driven intelligens genom NERVA-integration. Varje TAK-lösning från NERV inkluderar autonom uppdragsplanering, automatiserad samordning av medicinsk evakuering, lägesbild i realtid, intelligent geofencing och 3D-visualisering av luftrum – funktioner som inte är tillgängliga från standardleverantörer av TAK. Med kontor i USA och Singapore betjänar vi organisationer i Nordamerika och Asien-Stillahavsområdet, och erbjuder TAK-hosting i flera regioner med lokal efterlevnadsexpertis. Våra flexibla driftsättningsalternativ omfattar TAK-hosting i molnet, lokala TAK-servrar, hybridarkitekturer och edge-driftsatta TAK-system med vår GPU-aktiverade hårdvara."
+          "answer": "Till skillnad från traditionella TAK-hostingföretag kombinerar NERV expertis inom TAK-driftsättning med AI-driven intelligens genom NERVA-integration. Varje TAK-lösning från NERV inkluderar stöd för uppdragsplanering, stöd för samordning av medicinsk evakuering, lägesbild i realtid, intelligent geofencing och 3D-visualisering av luftrum – funktioner som inte är tillgängliga från standardleverantörer av TAK. Med kontor i USA och Singapore betjänar vi organisationer i Nordamerika och Asien-Stillahavsområdet, och erbjuder TAK-hosting i flera regioner med lokal efterlevnadsexpertis. Våra flexibla driftsättningsalternativ omfattar TAK-hosting i molnet, lokala TAK-servrar, hybridarkitekturer och edge-driftsatta TAK-system med vår GPU-aktiverade hårdvara."
         },
         {
           "question": "Kan ni utveckla anpassade TAK-plugins?",
@@ -1161,7 +1161,7 @@
         },
         {
           "question": "Hur förstärker NERVA AI-integration TAK-system?",
-          "answer": "NERVA omvandlar standard-TAK/ATAK från grundläggande lägesbild till en intelligent beslutsstödsplattform. NERVA analyserar TAK-data i realtid för att tillhandahålla: autonom uppdragsplanering med optimerade rutter och tidsplaner, automatiserad samordning av medicinsk evakuering som beräknar bästa LZ-platser och flygvägar, lägesbild med riskzonsanalys och rekommendationer för dekonflikthantering, intelligent beräkning av sökområde för SAR-operationer, geofencing med automatiska varningar för luftrumsintrång och 3D-visualisering av luftrum för UAS-dekonflikthantering. NERVA körs på molninfrastruktur, lokala servrar eller vår edge-driftsatta GPU-hårdvara, och integreras sömlöst med befintliga TAK Server-driftsättningar genom standardiserade TAK-protokoll och API:er."
+          "answer": "NERVA omvandlar standard-TAK/ATAK från grundläggande lägesbild till en intelligent beslutsstödsplattform. NERVA analyserar TAK-data i realtid för att tillhandahålla: stöd för uppdragsplanering med rekommenderade rutter och tidsplaner, stöd för samordning av medicinsk evakuering som föreslår LZ-platser och flygvägar för operatörens godkännande, lägesbild med riskzonsanalys och rekommendationer för dekonflikthantering, intelligent beräkning av sökområde för SAR-operationer, geofencing med automatiska varningar för luftrumsintrång och 3D-visualisering av luftrum för UAS-dekonflikthantering. NERVA körs på molninfrastruktur, lokala servrar eller vår edge-driftsatta GPU-hårdvara, och integreras sömlöst med befintliga TAK Server-driftsättningar genom standardiserade TAK-protokoll och API:er."
         }
       ],
       "cta": {
@@ -1340,7 +1340,7 @@
   "sdg": {
     "eyebrow": "Global påverkan",
     "title": "I linje med FN:s globala mål för hållbar utveckling",
-    "subtitle": "NERV bygger teknik för livräddande uppdrag. Vårt arbete stödjer FN:s Agenda 2030 för hållbar utveckling—och hjälper samhällen att agera snabbare, återhämta sig tidigare och hålla sig trygga.",
+    "subtitle": "Samma system som tjänar taktiska team hjälper samhällen att agera snabbare, återhämta sig tidigare och hålla sig trygga. Den dubbla användningen är skälet till att vi anpassar vårt arbete efter FN:s Agenda 2030 för hållbar utveckling.",
     "goals": {
       "health": {
         "title": "God hälsa och välbefinnande",
@@ -1372,8 +1372,75 @@
   "about": {
     "eyebrow": "Om NERV Systems",
     "title": "Avancerad AI för uppdrag som betyder något",
-    "lead": "NERV Systems är ett försvarsteknikföretag som tillför AI-förstärkning till TAK och ATAK. Vi bygger NERVA, en AI-assistent för uppdragsplanering och autonoma operationer, och InferNode, en formellt verifierad runtime som håller AI-agenter bevisbart inom sina gränser.",
-    "body": "Vår teknik är byggd för de tuffaste operativa miljöerna—och samma förmågor som ger taktiska team ett övertag hjälper insatspersonal att rädda liv vid katastrofhjälp, sök och räddning och humanitära kriser. Det dubbla syftet är varför vi mäter vårt arbete inte bara i operativt övertag, utan i global påverkan."
+    "lead": "NERV Systems är ett försvarsteknikföretag som tillför AI-förstärkning till TAK och ATAK. Allt vi bygger följer en regel: AI stödjer operatören—tar fram förslag, synliggör risker och samordnar detaljer—medan människan behåller befälet.",
+    "body": "Vår teknik är byggd för de tuffaste operativa miljöerna—och samma förmågor som ger taktiska team ett övertag hjälper insatspersonal att rädda liv vid katastrofhjälp, sök och räddning och humanitära kriser. Det dubbla syftet är varför vi mäter vårt arbete inte bara i operativt övertag, utan i global påverkan.",
+    "build": {
+      "eyebrow": "Vad vi bygger",
+      "title": "En teknikstack, från edge-hårdvara till verifierbar AI",
+      "items": {
+        "nerva": {
+          "label": "NERVA",
+          "title": "Planerings- och beslutsstöd",
+          "description": "En TAK-nativ AI-assistent som tar fram förslag till handlingsalternativ, stödjer MEDEVAC-samordning och håller den gemensamma operativa lägesbilden aktuell. NERVA rekommenderar; operatörerna beslutar.",
+          "cta": "Utforska NERVA"
+        },
+        "infernode": {
+          "label": "INFERNODE",
+          "title": "Verifierbar AI-runtime",
+          "description": "En lättviktig, formellt verifierad runtime som håller AI-agenter bevisbart inom sina gränser—upprätthålls av operativsystemet och kan granskas före driftsättning.",
+          "cta": "Utforska InferNode"
+        },
+        "nervCentre": {
+          "label": "NERV CENTRE",
+          "title": "Privat lokal beräkningskraft",
+          "description": "Containerbaserad GPU-infrastruktur som tar privat AI till er anläggning—suverän, kapabel att köras frånkopplad och dimensionerad efter uppdraget.",
+          "cta": "Utforska NERV Centre"
+        }
+      }
+    },
+    "principles": {
+      "eyebrow": "Hur vi arbetar",
+      "title": "Fyra åtaganden bakom allt vi levererar",
+      "items": {
+        "command": {
+          "number": "01",
+          "title": "Operatören har befälet",
+          "description": "Stab, inte befäl. NERVA tar fram handlingsalternativ och samordnar detaljer—beslutet tillhör alltid operatören. Vi bygger ingen automation som står över de människor den tjänar."
+        },
+        "edge": {
+          "number": "02",
+          "title": "Edge först",
+          "description": "Byggt för att köras där uppdraget är—även i frånkopplade, störda och bandbreddsfattiga miljöer."
+        },
+        "open": {
+          "number": "03",
+          "title": "Öppen arkitektur",
+          "description": "TAK-nativ och MOSA-anpassad. Öppna standarder och interoperabilitet framför leverantörsinlåsning."
+        },
+        "verifiable": {
+          "number": "04",
+          "title": "Inbyggd verifierbarhet",
+          "description": "Påståenden som går att kontrollera: formellt verifierad isolering, granskningsbara konfigurationer och bevisbara gränser för varje AI-agent vi driftsätter."
+        }
+      }
+    },
+    "presence": {
+      "eyebrow": "Global närvaro",
+      "offices": {
+        "us": {
+          "label": "USA",
+          "value": "Dover, Delaware"
+        },
+        "sg": {
+          "label": "SINGAPORE",
+          "value": "Block71, Ayer Rajah Crescent"
+        },
+        "uk": {
+          "label": "STORBRITANNIEN",
+          "value": "Bush House, London"
+        }
+      }
+    }
   },
   "nervCentre": {
     "meta": {

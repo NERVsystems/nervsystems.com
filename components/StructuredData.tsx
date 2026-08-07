@@ -21,7 +21,7 @@ export default function StructuredData() {
       "url": `${baseUrl}/img/nerv-logo.png`,
       "caption": "NERV Systems Logo"
     },
-    "description": "Advanced TAK/ATAK solutions with AI mission planning for defense, HADR, and emergency response. NERVA AI assistant for disaster relief coordination, search & rescue, and humanitarian operations. Managed TAK hosting, deployment consulting, and training for Asia Pacific.",
+    "description": "Advanced TAK/ATAK solutions with AI mission planning support for defense, HADR, and emergency response. NERVA AI assistant for disaster relief coordination, search & rescue, and humanitarian operations. Managed TAK hosting, deployment consulting, and training for Asia Pacific.",
     "email": "contact@nervsystems.com",
     "areaServed": {
       "@type": "Place",
@@ -62,6 +62,10 @@ export default function StructuredData() {
       {
         "@type": "Organization",
         "name": "NUS Enterprise"
+      },
+      {
+        "@type": "Organization",
+        "name": "Defence Venture Lab (DVL)"
       },
       {
         "@type": "Organization",
@@ -111,7 +115,7 @@ export default function StructuredData() {
         "itemOffered": {
           "@type": "SoftwareApplication",
           "name": "NERVA AI Assistant",
-          "description": "AI-powered mission planning and tactical decision support",
+          "description": "AI-powered mission planning support and tactical decision support",
           "applicationCategory": "BusinessApplication",
           "operatingSystem": "TAK, ATAK"
         }

@@ -64,15 +64,15 @@ export default function PartnersSection() {
           </p>
         </div>
 
-        {/* Partners Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Partners Grid — wrapping flex so a partial last row centers itself */}
+        <div className="flex flex-wrap justify-center gap-8">
           {partners.map((partner, index) => (
             <a
               key={index}
               href={partner.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group tactical-border p-6 bg-white/5 hover:bg-white/10 transition-all duration-300 text-center"
+              className="group tactical-border p-6 bg-white/5 hover:bg-white/10 transition-all duration-300 text-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)]"
             >
               {/* Logo Placeholder */}
               {partner.placeholder ? (

@@ -9,8 +9,8 @@
     "requestDemo": "Schedule a Call"
   },
   "hero": {
-    "title": "Tactical AI for Mission Planning",
-    "subtitle": "TAK-native AI-powered decision support that turns information overload into clear action for critical operations.",
+    "title": "Tactical AI for Mission Planning Support",
+    "subtitle": "TAK-native decision support that turns information overload into clear options for critical operations. NERVA drafts; operators decide.",
     "stats": {
       "planning": {
         "value": "<30s",
@@ -54,12 +54,12 @@
       },
       "medevac": {
         "icon": "MEDEVAC",
-        "title": "Automated MEDEVAC Coordination",
+        "title": "MEDEVAC Coordination Support",
         "command": "\"NERVA, we need a medical evacuation\"",
-        "description": "Identifies optimal helicopter landing zones in under 30 seconds, automatically notifies medical and aviation teams, monitors rescue progress, and updates all ATAK/TAK clients in real-time.",
+        "description": "Recommends helicopter landing zones in under 30 seconds. On operator approval, NERVA notifies medical and aviation teams, monitors rescue progress, and updates all ATAK/TAK clients in real-time.",
         "features": [
-          "LZ identification <30s",
-          "Automatic team notifications",
+          "LZ recommendations <30s",
+          "Operator-approved notifications",
           "Real-time monitoring",
           "TAK-wide updates"
         ]
@@ -149,8 +149,8 @@
     "items": {
       "planning": {
         "icon": "01",
-        "title": "REAL-TIME MISSION PLANNING",
-        "description": "Automated generation of tactical options from live ATAK data. 30-second planning cycles for time-critical operations.",
+        "title": "REAL-TIME PLANNING SUPPORT",
+        "description": "Tactical options drafted from live ATAK data for operator review. 30-second planning cycles for time-critical operations.",
         "code": "MAGI-01"
       },
       "fusion": {
@@ -367,7 +367,7 @@
           "duration": "1 day",
           "price": "$495",
           "period": "/student",
-          "description": "Natural language interface, automated mission planning, and AI workflows",
+          "description": "Natural language interface, AI planning support, and operator-in-the-loop workflows",
           "cta": "Enroll Now"
         },
         "advanced": {
@@ -408,7 +408,7 @@
   },
   "partners": {
     "title": "Trusted by Leading Organizations",
-    "description": "NERV Systems is backed by NVIDIA Inception, supported by the Autodesk Foundation, incubated at National University of Singapore, selected for the King's College London Entrepreneurship Institute accelerator, affiliated with the European Defense Tech Hub, and a participant in the Singapore Defence Tech Hackathon",
+    "description": "NERV Systems is backed by NVIDIA Inception, supported by the Autodesk Foundation, incubated at National University of Singapore through NUS Enterprise and the Defence Venture Lab (DVL), selected for the King's College London Entrepreneurship Institute accelerator, affiliated with the European Defense Tech Hub, and a participant in the Singapore Defence Tech Hackathon",
     "items": {
       "nvidia": {
         "name": "NVIDIA Inception",
@@ -420,7 +420,7 @@
       },
       "nus": {
         "name": "National University of Singapore",
-        "description": "Incubated at NUS Enterprise"
+        "description": "Incubated at NUS Enterprise and the Defence Venture Lab (DVL)"
       },
       "kcl": {
         "name": "King's College London",
@@ -488,7 +488,7 @@
     }
   },
   "footer": {
-    "tagline": "Tactical AI for Mission Planning and Edge Intelligence",
+    "tagline": "Tactical AI for Planning Support and Edge Intelligence",
     "navigation": {
       "title": "Navigation",
       "nerva": "NERVA AI",
@@ -823,7 +823,7 @@
         {
           "number": "01",
           "title": "AI-Enhanced TAK Platform",
-          "description": "NERVA adds mission planning support, automated medical-evacuation coordination, situational awareness, and real-time decision support to your ATAK/TAK deployment"
+          "description": "NERVA adds mission planning support, medical-evacuation coordination support, situational awareness, and real-time decision support to your ATAK/TAK deployment"
         },
         {
           "number": "02",
@@ -893,7 +893,7 @@
         {
           "category": "AI Capabilities",
           "traditional": "Manual mission planning and analysis",
-          "nerv": "Mission planning support with NERVA AI: automated medical evacuation, situational awareness, SAR calculations"
+          "nerv": "Mission planning support with NERVA AI: medical-evacuation coordination, situational awareness, SAR calculations"
         },
         {
           "category": "Response Time",
@@ -923,7 +923,7 @@
         {
           "category": "Training Programs",
           "traditional": "Generic TAK operator training",
-          "nerv": "TAK fundamentals + NERVA AI assistant training + advanced mission planning with AI"
+          "nerv": "TAK fundamentals + NERVA AI assistant training + AI-assisted mission planning"
         },
         {
           "category": "System Administration",
@@ -952,7 +952,7 @@
       "items": [
         {
           "title": "Tactical AI ROI Calculator & Guide",
-          "description": "Comprehensive analysis of AI integration ROI for tactical operations. Calculate cost savings from automated mission planning, reduced planning time, improved decision accuracy, and enhanced operational tempo. Includes real-world case studies and deployment scenarios.",
+          "description": "Comprehensive analysis of AI integration ROI for tactical operations. Calculate cost savings from AI planning support, reduced planning time, improved decision accuracy, and enhanced operational tempo. Includes real-world case studies and deployment scenarios.",
           "pages": "24 pages",
           "format": "PDF",
           "category": "ROI",
@@ -1094,7 +1094,7 @@
         },
         {
           "question": "How does NERVA AI integration enhance TAK systems?",
-          "answer": "NERVA transforms standard TAK/ATAK from basic situational awareness by adding intelligent decision support. NERVA analyzes TAK data in real-time to provide: mission planning support with optimized routes and timing, automated medical-evacuation coordination calculating best LZ locations and flight paths, situational awareness with risk-zone analysis and de-confliction recommendations, intelligent search area calculation for SAR operations, geofencing with automatic alerts for airspace violations, and 3D airspace visualization for UAS deconfliction. NERVA runs on cloud infrastructure, on-premise servers, or our edge-deployed GPU hardware, integrating seamlessly with existing TAK Server deployments through standard TAK protocols and APIs."
+          "answer": "NERVA transforms standard TAK/ATAK from basic situational awareness by adding intelligent decision support. NERVA analyzes TAK data in real-time to provide: mission planning support with recommended routes and timing, medical-evacuation coordination support that proposes LZ locations and flight paths for operator approval, situational awareness with risk-zone analysis and de-confliction recommendations, intelligent search area calculation for SAR operations, geofencing with automatic alerts for airspace violations, and 3D airspace visualization for UAS deconfliction. NERVA runs on cloud infrastructure, on-premise servers, or our edge-deployed GPU hardware, integrating seamlessly with existing TAK Server deployments through standard TAK protocols and APIs."
         }
       ],
       "cta": {
@@ -1273,7 +1273,7 @@
   "sdg": {
     "eyebrow": "Global Impact",
     "title": "Aligned with the UN Sustainable Development Goals",
-    "subtitle": "NERV builds technology for life-saving missions. Our work supports the United Nations 2030 Agenda for Sustainable Development—helping communities respond faster, recover sooner, and stay safe.",
+    "subtitle": "The same systems that serve tactical teams help communities respond faster, recover sooner, and stay safe. That dual use is why we align our work with the United Nations 2030 Agenda for Sustainable Development.",
     "goals": {
       "health": {
         "title": "Good Health & Well-being",
@@ -1305,8 +1305,75 @@
   "about": {
     "eyebrow": "About NERV Systems",
     "title": "Advanced AI for missions that matter",
-    "lead": "NERV Systems is a defence technology company bringing AI augmentation to TAK and ATAK. We build NERVA, an AI assistant for mission planning and decision support — staff, not command, and InferNode, a formally verified runtime that keeps AI agents provably within their boundaries.",
-    "body": "Our technology is built for the hardest operational environments—and the same capabilities that give tactical teams the edge help responders save lives in disaster relief, search and rescue, and humanitarian crises. That dual purpose is why we measure our work not only in operational advantage, but in global impact."
+    "lead": "NERV Systems is a defence technology company bringing AI augmentation to TAK and ATAK. Everything we build follows one rule: AI supports the operator—drafting options, surfacing risks, and coordinating detail—while humans stay in command.",
+    "body": "Our technology is built for the hardest operational environments—and the same capabilities that give tactical teams the edge help responders save lives in disaster relief, search and rescue, and humanitarian crises. That dual purpose is why we measure our work not only in operational advantage, but in global impact.",
+    "build": {
+      "eyebrow": "What We Build",
+      "title": "One stack, from edge hardware to verifiable AI",
+      "items": {
+        "nerva": {
+          "label": "NERVA",
+          "title": "Planning & Decision Support",
+          "description": "A TAK-native AI assistant that drafts courses of action, supports MEDEVAC coordination, and keeps the common operating picture current. NERVA recommends; operators decide.",
+          "cta": "Explore NERVA"
+        },
+        "infernode": {
+          "label": "INFERNODE",
+          "title": "Verifiable AI Runtime",
+          "description": "A lightweight, formally verified runtime that keeps AI agents provably inside their boundaries—enforced by the operating system and auditable before deployment.",
+          "cta": "Explore InferNode"
+        },
+        "nervCentre": {
+          "label": "NERV CENTRE",
+          "title": "Private On-Prem Compute",
+          "description": "Containerised GPU infrastructure that brings private AI to your site—sovereign, disconnected-capable, and sized to the mission.",
+          "cta": "Explore NERV Centre"
+        }
+      }
+    },
+    "principles": {
+      "eyebrow": "How We Operate",
+      "title": "Four commitments behind everything we ship",
+      "items": {
+        "command": {
+          "number": "01",
+          "title": "Operators in Command",
+          "description": "Staff, not command. NERVA drafts options and coordinates detail—the decision always belongs to the operator. We do not build automation that outranks the humans it serves."
+        },
+        "edge": {
+          "number": "02",
+          "title": "Edge First",
+          "description": "Built to run where the mission is—including disconnected, degraded, and bandwidth-starved environments."
+        },
+        "open": {
+          "number": "03",
+          "title": "Open Architecture",
+          "description": "TAK-native and MOSA-aligned. Open standards and interoperability over vendor lock-in."
+        },
+        "verifiable": {
+          "number": "04",
+          "title": "Verifiable by Design",
+          "description": "Claims you can check: formally verified isolation, auditable configurations, and provable boundaries for every AI agent we deploy."
+        }
+      }
+    },
+    "presence": {
+      "eyebrow": "Global Presence",
+      "offices": {
+        "us": {
+          "label": "UNITED STATES",
+          "value": "Dover, Delaware"
+        },
+        "sg": {
+          "label": "SINGAPORE",
+          "value": "Block71, Ayer Rajah Crescent"
+        },
+        "uk": {
+          "label": "UNITED KINGDOM",
+          "value": "Bush House, London"
+        }
+      }
+    }
   },
   "nervCentre": {
     "meta": {

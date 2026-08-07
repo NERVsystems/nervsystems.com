@@ -34,9 +34,11 @@ function SDGWheel({ size = 96 }: { size?: number }) {
   const step = (2 * Math.PI) / n;
   const gap = 0.012; // radians of separation between segments
 
+  // Fixed precision keeps the server- and client-rendered path strings
+  // identical (raw float formatting can differ and break hydration).
   const point = (angle: number, r: number) => [
-    cx + r * Math.cos(angle - Math.PI / 2),
-    cy + r * Math.sin(angle - Math.PI / 2),
+    (cx + r * Math.cos(angle - Math.PI / 2)).toFixed(3),
+    (cy + r * Math.sin(angle - Math.PI / 2)).toFixed(3),
   ];
 
   const segments = SDG_WHEEL_COLORS.map((color, i) => {
@@ -89,7 +91,7 @@ export default function SDGSection() {
           >
             {t('eyebrow')}
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 max-w-4xl mx-auto">
             {t('title')}
           </h2>
           <p className="text-tactical-textDim text-lg max-w-3xl mx-auto">
@@ -97,7 +99,9 @@ export default function SDGSection() {
           </p>
         </div>
 
-        {/* Goals Grid — styled after the official UN SDG colour tiles */}
+        {/* Goals Grid — styled after the official UN SDG colour tiles.
+            Cards subgrid onto three shared rows (header / description / underline)
+            so the colour headers stay equal-height across each row. */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {GOALS.map(({ key, number, color }) => {
             const goal = t.raw(`goals.${key}`) as {
@@ -108,7 +112,7 @@ export default function SDGSection() {
             return (
               <div
                 key={key}
-                className="group relative flex flex-col overflow-hidden rounded-sm border border-white/10 bg-white/[0.03] transition-all duration-300 hover:-translate-y-1"
+                className="group relative grid row-span-3 grid-rows-subgrid gap-0 overflow-hidden rounded-sm border border-white/10 bg-white/[0.03] transition-all duration-300 hover:-translate-y-1"
                 style={{ ['--sdg' as string]: color }}
               >
                 {/* Official-style colour block: large goal number + title */}
@@ -130,7 +134,7 @@ export default function SDGSection() {
                 </div>
 
                 {/* Description */}
-                <div className="flex-1 p-5">
+                <div className="p-5">
                   <p className="text-sm leading-relaxed text-tactical-textDim">
                     {goal.description}
                   </p>
