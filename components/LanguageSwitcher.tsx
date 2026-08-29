@@ -13,6 +13,7 @@ const localeLabels: Record<Locale, string> = {
   ar: 'عر',
   sv: 'SV',
   uk: 'УКР',
+  es: 'ES',
 };
 
 export default function LanguageSwitcher() {

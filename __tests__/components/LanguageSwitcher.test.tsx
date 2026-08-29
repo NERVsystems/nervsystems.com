@@ -2,6 +2,7 @@ import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { NextIntlClientProvider } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import enMessages from '@/messages/en.json';
+import { locales } from '@/i18n/config';
 
 // Mock Next.js navigation hooks
 const mockPush = jest.fn();
@@ -79,6 +80,8 @@ describe('LanguageSwitcher Component', () => {
     expect(screen.getByText('한국')).toBeInTheDocument();
     expect(screen.getByText('عر')).toBeInTheDocument();
     expect(screen.getByText('SV')).toBeInTheDocument();
+    expect(screen.getByText('УКР')).toBeInTheDocument();
+    expect(screen.getByText('ES')).toBeInTheDocument();
   });
 
   it('should display all supported languages in dropdown', () => {
@@ -88,7 +91,8 @@ describe('LanguageSwitcher Component', () => {
 
     // Check all language options are present
     const links = screen.getAllByRole('link');
-    expect(links).toHaveLength(6); // en, ja, th, ko, ar, sv
+    // One link per supported locale, so adding a locale doesn't stale this test
+    expect(links).toHaveLength(locales.length);
   });
 
   it('should highlight current language in dropdown', () => {
@@ -98,7 +102,7 @@ describe('LanguageSwitcher Component', () => {
 
     // Verify all languages appear in dropdown
     const links = screen.getAllByRole('link');
-    expect(links).toHaveLength(6);
+    expect(links).toHaveLength(locales.length);
 
     // Verify current language (EN) appears in dropdown
     const enLinks = screen.getAllByText('EN');

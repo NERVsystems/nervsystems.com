@@ -1,0 +1,1651 @@
+{
+  "nav": {
+    "features": "Capacidades",
+    "platform": "Plataforma",
+    "takSolutions": "Soluciones ATAK/TAK",
+    "nervCentre": "Soluciones on-premise",
+    "about": "Quiénes somos",
+    "contact": "Contacto",
+    "requestDemo": "Agendar una llamada"
+  },
+  "hero": {
+    "title": "IA táctica para el apoyo a la planificación de misiones",
+    "subtitle": "Apoyo a la decisión nativo de TAK que convierte la sobrecarga de información en opciones claras para operaciones críticas. NERVA propone; el operador decide.",
+    "stats": {
+      "planning": {
+        "value": "<30s",
+        "label": "Ciclos de planificación"
+      },
+      "edge": {
+        "value": "100%",
+        "label": "Operable en el borde"
+      },
+      "tak": {
+        "value": "TAK",
+        "label": "Integración nativa"
+      }
+    },
+    "cta": {
+      "demo": "Agendar una llamada",
+      "learn": "Más información"
+    }
+  },
+  "nerva": {
+    "tagline": "Ventaja en la decisión al ritmo de la misión",
+    "subtitle": "Su asistente táctico de IA",
+    "description": "NERVA es una extensión de IA para su equipo. No solo conciencia situacional: {decisionAdvantage}.",
+    "decisionAdvantage": "ventaja en la decisión",
+    "bottomCta": {
+      "text": "¿Ya utiliza TAK? NERVA lo hace inteligente.",
+      "button": "Ver NERVA en acción"
+    },
+    "capabilities": {
+      "uas": {
+        "icon": "UAS",
+        "title": "Apoyo a operaciones con drones",
+        "command": "«NERVA, prepara la asignación para el patrón de reconocimiento Alfa»",
+        "description": "Apoyo a la decisión para ISR y reconocimiento. NERVA supervisa la telemetría de los drones, propone opciones de asignación de sensores para su aprobación por el operador y mantiene una imagen en tiempo real de las trazas propias y no identificadas para la conciencia del espacio aéreo.",
+        "features": [
+          "Recomendaciones de plan de vuelo",
+          "Supervisión de telemetría en tiempo real",
+          "Recomendaciones de trayectoria",
+          "Mando y control de UAS"
+        ]
+      },
+      "medevac": {
+        "icon": "MEDEVAC",
+        "title": "Apoyo a la coordinación MEDEVAC",
+        "command": "«NERVA, necesitamos una evacuación médica»",
+        "description": "Recomienda zonas de aterrizaje de helicóptero en menos de 30 segundos. Con la aprobación del operador, NERVA notifica a los equipos sanitarios y de aviación, supervisa el avance del rescate y actualiza todos los clientes ATAK/TAK en tiempo real.",
+        "features": [
+          "Recomendaciones de LZ en <30 s",
+          "Notificaciones aprobadas por el operador",
+          "Supervisión en tiempo real",
+          "Actualizaciones en toda la red TAK"
+        ]
+      },
+      "threat": {
+        "icon": "RISK",
+        "title": "Conciencia situacional y zonas de riesgo",
+        "command": "Identifique una traza de interés → NERVA la señala, el operador actúa",
+        "description": "Traza zonas de conciencia y de seguridad a partir de los datos aportados por el usuario, alerta a todas las unidades en las áreas afectadas y recomienda medidas de desconflicción y seguridad según la imagen operativa.",
+        "features": [
+          "Fuentes de datos aportadas por el usuario",
+          "Análisis de zonas de seguridad",
+          "Alertas automáticas",
+          "Recomendaciones de desconflicción"
+        ]
+      },
+      "sar": {
+        "icon": "SAR",
+        "title": "Cálculo del área de búsqueda",
+        "command": "«NERVA, calcula el área de búsqueda de la unidad desaparecida»",
+        "description": "Generación de zonas de búsqueda basada en probabilidad, mediante análisis del terreno, condiciones meteorológicas y capacidades de la unidad. Válido tanto para operaciones militares como para búsqueda y rescate (SAR) civil.",
+        "features": [
+          "Modelado probabilístico",
+          "Análisis del terreno",
+          "Asignación de recursos",
+          "SAR militar y civil"
+        ]
+      },
+      "alert": {
+        "icon": "ALERT",
+        "title": "Control de geocercas y respuesta",
+        "command": "«NERVA, avisa si alguna traza entra en la zona de exclusión»",
+        "description": "Supervisión de perímetros virtuales con geocercas 2D/3D. NERVA se integra con sensores de terceros (ADS-B, detección RF, radar) para seguir aeronaves y UAS. Cuando una traza vulnera los límites virtuales, NERVA alerta al instante a todos los medios conectados y da soporte a los flujos de respuesta y notificación coordinadas.",
+        "features": [
+          "Geocercas virtuales 2D/3D",
+          "Integración de sensores de terceros",
+          "Alertas instantáneas en toda la red",
+          "Planificación de respuesta coordinada"
+        ]
+      },
+      "airspace": {
+        "icon": "AIRSPACE",
+        "title": "Visualización 3D del espacio aéreo",
+        "command": "Muestre la carta → NERVA representa el espacio aéreo en 3D",
+        "description": "Representación multimodal de espacios aéreos complejos a partir de cartas seccionales, NOTAM y TFR. NERVA extrae los datos geoespaciales, visualiza en 3D las zonas restringidas y superpone las trazas de UAS en tiempo real para una conciencia total del espacio aéreo y la desconflicción de vuelos.",
+        "features": [
+          "Interpretación de cartas con IA",
+          "Representación 3D de zonas restringidas",
+          "Superposición de trazas en tiempo real",
+          "Conciencia del espacio aéreo y desconflicción"
+        ]
+      }
+    },
+    "videoPlaceholder": {
+      "title": "Vídeo de demostración",
+      "comingSoon": "[Próximamente]"
+    }
+  },
+  "infernode": {
+    "label": "InferNode",
+    "title": "Agentes seguros. Libertad para operar.",
+    "p1": "En el borde táctico, un agente de IA que filtra credenciales, exfiltra inteligencia o escapa de su entorno aislado no es un fallo: es una baja. Las barreras de seguridad convencionales no bastan cuando el agente se ejecuta dentro de su sistema operativo.",
+    "p2": "InferNode es nuestro entorno de ejecución ligero y distribuido para agentes de IA, construido sobre un aislamiento de espacios de nombres formalmente verificado. El alcance de un agente se define en una configuración breve que cabe en una página: revisable por una persona, comprobable por una máquina y aplicada por el propio sistema operativo. Lo que el agente puede tocar es demostrable antes de que llegue a ejecutarse.",
+    "ctaPrimary": "Explorar InferNode →",
+    "ctaSecondary": "Leer el modelo de seguridad →",
+    "pillars": {
+      "proven": {
+        "label": "VERIFICADO",
+        "title": "TLA+ / SPIN / CBMC",
+        "description": "Modelo de aislamiento demostrado con tres herramientas independientes de métodos formales. La verificación se ejecuta en CI con cada push."
+      },
+      "isolated": {
+        "label": "AISLADO",
+        "title": "Nativo de espacios de nombres",
+        "description": "Cada agente se ejecuta en su propio espacio de nombres, definido por una configuración sencilla y auditable antes del despliegue. El sistema operativo impone el límite: ni capas de políticas, ni buenas intenciones."
+      },
+      "edge": {
+        "label": "LISTO PARA EL BORDE",
+        "title": "15 MB · MIT",
+        "description": "El entorno de ejecución base cabe en el mismo hardware al que ya se dirige NERVA. Código abierto, desplegable desde el borde desconectado hasta la nube."
+      }
+    }
+  },
+  "features": {
+    "title": "El conjunto completo de herramientas",
+    "subtitle": "Software y hardware conformes con MOSA para el despliegue en el borde táctico",
+    "items": {
+      "planning": {
+        "icon": "01",
+        "title": "APOYO A LA PLANIFICACIÓN EN TIEMPO REAL",
+        "description": "Opciones tácticas elaboradas a partir de datos ATAK en vivo para su revisión por el operador. Ciclos de planificación de 30 segundos para operaciones con premura de tiempo.",
+        "code": "MAGI-01"
+      },
+      "fusion": {
+        "icon": "02",
+        "title": "FUSIÓN DE INTELIGENCIA MULTIFUENTE",
+        "description": "Análisis unificado de señales de drones, redes de sensores e informes de operadores. Una sola imagen sobre el mapa que ya utiliza, fusionada a partir de fuentes de datos distribuidas.",
+        "code": "MAGI-02"
+      },
+      "assessment": {
+        "icon": "03",
+        "title": "EVALUACIÓN CONTINUA",
+        "description": "Reconocimiento de patrones y detección de anomalías para el análisis predictivo de los entornos operativos.",
+        "code": "MAGI-03"
+      },
+      "edge": {
+        "icon": "04",
+        "title": "CÓMPUTO EN EL BORDE",
+        "description": "«GPU en un casco» desplegable en campo para una IA segura y privada en el borde. Funciona cuando falla la conectividad.",
+        "code": "HARDWARE-01"
+      }
+    }
+  },
+  "tak": {
+    "title": "Diseñado para la conciencia compartida",
+    "subtitle": "¿Ya utiliza TAK para la coordinación de emergencias u operaciones HADR? Perfecto. NERV se integra directamente con sus sistemas Team Awareness Kit existentes.",
+    "integration": {
+      "native": {
+        "label": "Integración nativa con TAK",
+        "description": "Potencia sus flujos de trabajo actuales"
+      },
+      "noRetraining": {
+        "label": "Sin necesidad de reciclaje",
+        "description": "La interfaz de siempre, con superpoderes de IA"
+      },
+      "realTime": {
+        "label": "Fusión de datos en tiempo real",
+        "description": "De satélites, drones y señales de sensores"
+      },
+      "natural": {
+        "label": "Interfaz en lenguaje natural",
+        "description": "Haga preguntas, obtenga respuestas claras"
+      },
+      "portable": {
+        "label": "Despliegue portátil en campo",
+        "description": "Funciona cuando falla la conectividad"
+      },
+      "mosa": {
+        "label": "Arquitectura conforme con MOSA",
+        "description": "Estándares abiertos para una integración flexible"
+      }
+    },
+    "cta": "Ver documentación de integración"
+  },
+  "takCallout": {
+    "label": "Soluciones TAK/ATAK",
+    "title": "¿Busca alojamiento y despliegue de TAK?",
+    "description": "NERV ofrece soluciones TAK/ATAK completas en Norteamérica y Asia-Pacífico: alojamiento gestionado de servidores TAK desde $495/mes, consultoría experta de despliegue, administración de sistemas, formación de operadores y capacidades potenciadas por IA mediante la integración de NERVA.",
+    "benefits": {
+      "certified": {
+        "title": "Certificado por TAK.gov",
+        "description": "Despliegues TAK oficiales"
+      },
+      "asiaPacific": {
+        "title": "Cobertura global",
+        "description": "Experiencia en NA y APAC"
+      },
+      "aiEnhanced": {
+        "title": "Potenciado por IA",
+        "description": "Integración con NERVA"
+      },
+      "uptime": {
+        "title": "99,9 % de disponibilidad",
+        "description": "SLA empresarial"
+      }
+    },
+    "cta": "Explorar soluciones TAK →",
+    "stats": {
+      "hosting": {
+        "label": "ALOJAMIENTO GESTIONADO",
+        "price": "$495/mes",
+        "description": "Servidores TAK empresariales con supervisión mediante IA, soporte 24/7 e integración con NERVA"
+      },
+      "deployment": {
+        "label": "DESPLIEGUE",
+        "title": "Servicio integral",
+        "description": "De la evaluación inicial a la puesta en marcha: instalación del servidor TAK, configuración de plugins, formación y soporte"
+      },
+      "training": {
+        "label": "FORMACIÓN",
+        "title": "Certificada",
+        "description": "Fundamentos para operadores TAK, operaciones avanzadas y programas de formación en el asistente de IA NERVA"
+      }
+    }
+  },
+  "homeTakSolutions": {
+    "title": "Soluciones y servicios TAK",
+    "subtitle": "Despliegue TAK/ATAK completo, alojamiento gestionado, consultoría y formación en Norteamérica y Asia-Pacífico",
+    "hosting": {
+      "title": "Alojamiento TAK gestionado",
+      "description": "Servidores TAK gestionados de nivel empresarial, listos para la integración con la IA de NERVA. Nosotros nos ocupamos de la infraestructura para que usted se centre en las operaciones.",
+      "plans": {
+        "starter": {
+          "name": "Starter",
+          "price": "$495",
+          "period": "/mes",
+          "users": "Hasta 50 usuarios",
+          "ai": "Preparado para NERVA IA",
+          "features": [
+            "TAK Server básico",
+            "Plugins estándar",
+            "SLA de 99 % de disponibilidad",
+            "Soporte por correo electrónico",
+            "Parches de seguridad mensuales"
+          ],
+          "cta": "Empezar"
+        },
+        "professional": {
+          "name": "Professional",
+          "price": "$1,495",
+          "period": "/mes",
+          "users": "Hasta 250 usuarios",
+          "ai": "Preparado para NERVA IA",
+          "badge": "POPULAR",
+          "features": [
+            "TAK Server empresarial",
+            "Plugins premium",
+            "SLA de 99,9 % de disponibilidad",
+            "Soporte 24/7",
+            "Soporte de federación",
+            "Supervisión del sistema"
+          ],
+          "cta": "Empezar"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "price": "A medida",
+          "period": "precio",
+          "users": "Más de 1.000 usuarios",
+          "ai": "Preparado para NERVA IA",
+          "features": [
+            "Infraestructura TAK a medida",
+            "Opciones de marca blanca",
+            "SLA de 99,99 % de disponibilidad",
+            "Soporte dedicado",
+            "Despliegue multirregión",
+            "Paquetes de cumplimiento normativo"
+          ],
+          "cta": "Empezar"
+        }
+      }
+    },
+    "deployment": {
+      "title": "Consultoría de despliegue",
+      "description": "Despliegue TAK experto, de la evaluación a la plena capacidad operativa",
+      "packages": {
+        "assessment": {
+          "name": "Evaluación",
+          "price": "$4,500",
+          "duration": "1 día in situ",
+          "features": [
+            "Evaluación de requisitos TAK",
+            "Recomendaciones de diseño de infraestructura",
+            "Documentación de requisitos de usuario",
+            "Orientación en la selección de plugins",
+            "30 días de soporte por correo electrónico"
+          ],
+          "cta": "Solicitar presupuesto"
+        },
+        "deployment": {
+          "name": "Despliegue",
+          "price": "$15,000",
+          "duration": "Despliegue completo",
+          "badge": "POPULAR",
+          "features": [
+            "Todo lo incluido en Evaluación",
+            "Despliegue de TAK Server (hasta 100 usuarios)",
+            "Instalación y configuración de plugins",
+            "Integración de sistemas",
+            "Formación básica de operadores (1 día)",
+            "90 días de soporte prioritario"
+          ],
+          "cta": "Solicitar presupuesto"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "price": "$45,000+",
+          "duration": "Gran escala",
+          "features": [
+            "Todo lo incluido en Despliegue",
+            "Despliegue a gran escala (más de 100 usuarios)",
+            "Hoja de ruta de integración de capacidades de IA",
+            "Desarrollo de plugins a medida",
+            "Programa de formación avanzada (3 días)",
+            "180 días de soporte dedicado"
+          ],
+          "cta": "Solicitar presupuesto"
+        }
+      }
+    },
+    "training": {
+      "title": "Programas de formación",
+      "description": "Formación de operadores TAK con certificación en el asistente de IA NERVA",
+      "programs": {
+        "fundamentals": {
+          "name": "Fundamentos de TAK",
+          "duration": "1 día",
+          "price": "$395",
+          "period": "/alumno",
+          "description": "Nociones básicas de la interfaz TAK, navegación cartográfica, coordinación de equipos y uso de plugins",
+          "cta": "Inscribirse"
+        },
+        "nerva": {
+          "name": "Operaciones con NERVA IA",
+          "duration": "1 día",
+          "price": "$495",
+          "period": "/alumno",
+          "description": "Interfaz en lenguaje natural, apoyo a la planificación con IA y flujos de trabajo con el operador en el bucle",
+          "cta": "Inscribirse"
+        },
+        "advanced": {
+          "name": "Operaciones TAK avanzadas",
+          "duration": "2 días",
+          "price": "$895",
+          "period": "/alumno",
+          "description": "Operaciones complejas, fusión de inteligencia, cómputo en el borde y ejercicios de escenario",
+          "badge": "POPULAR",
+          "cta": "Inscribirse"
+        }
+      },
+      "volumeDiscounts": {
+        "label": "Descuentos por volumen:",
+        "tiers": "5-10 alumnos (10 % dto.) • 11-20 alumnos (20 % dto.) • más de 21 alumnos (30 % dto.)"
+      }
+    },
+    "additionalServices": {
+      "title": "Otros servicios TAK",
+      "services": {
+        "administration": {
+          "title": "Administración de sistemas",
+          "description": "Gestión continua del servidor TAK con supervisión mediante IA",
+          "price": "Desde $450/mes"
+        },
+        "plugins": {
+          "title": "Desarrollo de plugins",
+          "description": "Plugins TAK a medida con integración de la IA de NERVA",
+          "price": "Desde $15,000"
+        },
+        "hardware": {
+          "title": "Hardware de borde",
+          "description": "Cómputo NERV Edge (GPU en un casco) para despliegue en campo",
+          "price": "Precio a consultar"
+        }
+      }
+    }
+  },
+  "partners": {
+    "title": "La confianza de organizaciones de referencia",
+    "description": "NERV Systems cuenta con el respaldo de NVIDIA Inception y el apoyo de la Autodesk Foundation, ha sido incubada en la National University of Singapore a través de NUS Enterprise y el Defence Venture Lab (DVL), fue seleccionada para la aceleradora del Entrepreneurship Institute del King's College London, está afiliada al European Defense Tech Hub y participa en el Singapore Defence Tech Hackathon",
+    "items": {
+      "nvidia": {
+        "name": "NVIDIA Inception",
+        "description": "Miembro del programa NVIDIA Inception para startups de IA"
+      },
+      "autodesk": {
+        "name": "Autodesk Foundation",
+        "description": "Con el apoyo de la Autodesk Foundation"
+      },
+      "nus": {
+        "name": "National University of Singapore",
+        "description": "Incubada en NUS Enterprise y el Defence Venture Lab (DVL)"
+      },
+      "kcl": {
+        "name": "King's College London",
+        "description": "Seleccionada para la aceleradora del King's Entrepreneurship Institute"
+      },
+      "edth": {
+        "name": "European Defense Tech Hub",
+        "description": "Afiliada al European Defense Tech Hub"
+      },
+      "hackathon": {
+        "name": "Singapore Defence Tech Hackathon",
+        "description": "Participante en el SDTH 2026"
+      }
+    }
+  },
+  "contact": {
+    "label": "Hablemos",
+    "title": "¿Listo para desplegar IA táctica?",
+    "subtitle": "Tanto si necesita la integración de la IA de NERVA o soluciones TAK, como si desea plantearnos sus requisitos operativos, nuestro equipo está a su disposición.",
+    "form": {
+      "label": "Consulta general",
+      "title": "Envíenos un mensaje",
+      "description": "Rellene nuestro formulario de contacto y nuestro equipo le responderá en menos de 24 horas.",
+      "button": "Contactar →"
+    },
+    "direct": {
+      "label": "Contacto directo",
+      "title": "Escríbanos directamente",
+      "email": {
+        "label": "CORREO ELECTRÓNICO",
+        "value": "contact@nervsystems.com"
+      },
+      "phone": {
+        "label": "TELÉFONO",
+        "value": "(703) 977-7097"
+      },
+      "address": {
+        "label": "OFICINA DE EE. UU.",
+        "value": "8 The Green Suite B, Dover, DE 19901"
+      },
+      "addressSG": {
+        "label": "OFICINA DE SINGAPUR",
+        "value": "71 Ayer Rajah Crescent #01-20, 159773"
+      },
+      "addressUK": {
+        "label": "OFICINA DE LONDRES",
+        "value": "BH (N) 1.01 Bush House, 30 Aldwych, London WC2B 4BG, United Kingdom"
+      },
+      "affiliations": {
+        "label": "AFILIACIONES",
+        "nvidia": "Miembro de NVIDIA Inception",
+        "nus": "Incubada en NUS Enterprise",
+        "kcl": "Incubada en King's College London"
+      }
+    },
+    "quickLinks": {
+      "title": "¿Busca algo concreto?",
+      "nerva": "Plataforma NERVA IA",
+      "tak": "Soluciones TAK",
+      "resources": "Recursos y guías"
+    }
+  },
+  "footer": {
+    "tagline": "IA táctica para el apoyo a la planificación y la inteligencia en el borde",
+    "navigation": {
+      "title": "Navegación",
+      "nerva": "NERVA IA",
+      "platform": "Plataforma",
+      "takIntegration": "Integración TAK",
+      "solutions": "Soluciones y servicios"
+    },
+    "contact": {
+      "title": "Contacto",
+      "email": "Correo electrónico: contact@nervsystems.com",
+      "phone": "Teléfono: (703) 977-7097",
+      "address": "EE. UU.: 8 The Green Suite B, Dover, DE 19901",
+      "addressSG": "Singapur: 71 Ayer Rajah Crescent #01-20, 159773",
+      "addressUK": "Reino Unido: BH (N) 1.01 Bush House, 30 Aldwych, London WC2B 4BG",
+      "affiliations": {
+        "nvidia": "Miembro de NVIDIA Inception",
+        "nus": "Incubada en NUS Enterprise",
+        "kcl": "Incubada en King's College London",
+        "github": "github.com/NERVsystems",
+        "x": "x.com/NERVSysOffical",
+        "youtube": "youtube.com/@nervsystems"
+      }
+    },
+    "takProvider": {
+      "title": "Proveedor de servicios TAK",
+      "description": "Proveedor autorizado de servicios TAK",
+      "regions": {
+        "usa": "EE. UU.",
+        "singapore": "Singapur",
+        "thailand": "Tailandia"
+      }
+    },
+    "copyright": "© 2026 NERV Systems. Todos los derechos reservados.",
+    "taglineBottom": "Diseñado para el borde táctico",
+    "legal": {
+      "privacy": "Política de privacidad",
+      "terms": "Condiciones del servicio"
+    }
+  },
+  "cookieBanner": {
+    "notice": "AVISO:",
+    "message": "Este sitio utiliza cookies para las preferencias de idioma, el funcionamiento de los formularios y la analítica.",
+    "privacyLink": "Política de privacidad",
+    "accept": "Aceptar",
+    "decline": "Rechazar"
+  },
+  "form": {
+    "demo": {
+      "title": "Agendar una llamada",
+      "subtitle": "Cuéntenos sus requisitos y concertaremos una consulta en menos de 24 horas."
+    },
+    "quote": {
+      "title": "Solicitar presupuesto",
+      "subtitle": "Rellene el siguiente formulario y nuestro equipo le responderá en menos de 24 horas."
+    },
+    "contact": {
+      "title": "Contactar",
+      "subtitle": "Rellene el siguiente formulario y nuestro equipo le responderá en menos de 24 horas."
+    },
+    "nervCentre": {
+      "title": "Solicitar presupuesto",
+      "subtitle": "Cuéntenos cómo es su emplazamiento, su carga de trabajo y sus limitaciones: dimensionaremos un NERV Centre y le enviaremos el precio, en compra o en arrendamiento."
+    },
+    "fields": {
+      "firstName": {
+        "label": "NOMBRE",
+        "required": "NOMBRE *"
+      },
+      "lastName": {
+        "label": "APELLIDOS",
+        "required": "APELLIDOS *"
+      },
+      "email": {
+        "label": "CORREO ELECTRÓNICO",
+        "required": "CORREO ELECTRÓNICO *"
+      },
+      "organization": {
+        "label": "ORGANIZACIÓN",
+        "required": "ORGANIZACIÓN *"
+      },
+      "phone": {
+        "label": "TELÉFONO",
+        "required": "TELÉFONO *"
+      },
+      "jobTitle": {
+        "label": "CARGO"
+      },
+      "organisationType": {
+        "label": "TIPO DE ORGANIZACIÓN",
+        "required": "TIPO DE ORGANIZACIÓN *",
+        "placeholder": "Seleccione el tipo de organización..."
+      },
+      "currentTakUsage": {
+        "label": "USO ACTUAL DE TAK",
+        "required": "USO ACTUAL DE TAK *",
+        "placeholder": "Seleccione el uso actual..."
+      },
+      "estimatedTakUsers": {
+        "label": "USUARIOS TAK ESTIMADOS",
+        "placeholder": "Seleccione..."
+      },
+      "takDeploymentTimeline": {
+        "label": "PLAZO DE DESPLIEGUE",
+        "placeholder": "Seleccione..."
+      },
+      "interest": {
+        "label": "ÁREA DE INTERÉS",
+        "required": "ÁREA DE INTERÉS *"
+      },
+      "message": {
+        "label": "MENSAJE",
+        "required": "MENSAJE *",
+        "placeholder": "Cuéntenos sus requisitos..."
+      }
+    },
+    "options": {
+      "organisationType": {
+        "military": "Fuerzas armadas / Defensa",
+        "lawEnforcement": "Fuerzas y cuerpos de seguridad",
+        "emergency": "Servicios de emergencia",
+        "government": "Administración pública",
+        "privateSecurity": "Seguridad privada",
+        "commercial": "Empresa privada",
+        "other": "Otro"
+      },
+      "currentTakUsage": {
+        "alreadyUsing": "Ya utilizamos TAK",
+        "readyToPurchase": "Listos para comprar",
+        "evaluating": "Evaluando proveedores",
+        "researching": "Investigando soluciones"
+      },
+      "estimatedTakUsers": {
+        "range1": "1-50 usuarios",
+        "range2": "51-250 usuarios",
+        "range3": "251-1000 usuarios",
+        "range4": "Más de 1000 usuarios"
+      },
+      "takDeploymentTimeline": {
+        "immediate": "Inmediato (0-1 mes)",
+        "shortTerm": "Corto plazo (1-3 meses)",
+        "mediumTerm": "Medio plazo (3-6 meses)",
+        "longTerm": "Largo plazo (más de 6 meses)"
+      },
+      "interest": {
+        "nerva": "Plataforma NERVA IA",
+        "nervCentre": "NERV Centre (cómputo on-premise)",
+        "hosting": "Alojamiento TAK gestionado",
+        "deployment": "Consultoría de despliegue TAK",
+        "training": "Programas de formación TAK",
+        "administration": "Administración de sistemas",
+        "plugins": "Desarrollo de plugins",
+        "edge": "Hardware de borde (GPU en un casco)",
+        "other": "Otro"
+      }
+    },
+    "buttons": {
+      "submit": "Enviar solicitud",
+      "submitting": "Enviando...",
+      "cancel": "Cancelar",
+      "close": "Cerrar"
+    },
+    "messages": {
+      "success": {
+        "title": "¡Gracias!",
+        "demo": "Hemos recibido su solicitud. Nuestro equipo se pondrá en contacto con usted en menos de 24 horas para concertar la llamada.",
+        "quote": "Hemos recibido su solicitud de presupuesto. Nuestro equipo se pondrá en contacto con usted en menos de 24 horas.",
+        "contact": "Hemos recibido su solicitud de contacto. Nuestro equipo se pondrá en contacto con usted en menos de 24 horas.",
+        "nervCentre": "Gracias: hemos recibido su consulta sobre NERV Centre. Nuestro equipo se pondrá en contacto con usted en menos de 24 horas con el dimensionamiento y el precio."
+      },
+      "error": "Se ha producido un problema al enviar el formulario. Escríbanos directamente a contact@nervsystems.com",
+      "privacyPrefix": "Al enviar este formulario, acepta nuestra",
+      "privacyLink": "Política de privacidad",
+      "privacyAnd": "y las",
+      "termsLink": "Condiciones del servicio"
+    }
+  },
+  "takSolutions": {
+    "about": "Quiénes somos",
+    "hero": {
+      "eyebrow": "Soluciones TAK globales",
+      "title": "Soluciones y servicios",
+      "titleLine2": "TAK/ATAK completos",
+      "subtitle": "Alojamiento experto de servidores TAK, consultoría de despliegue de ATAK, administración de sistemas y formación para equipos militares, de fuerzas de seguridad, de HADR y de respuesta ante emergencias en Norteamérica y Asia-Pacífico.",
+      "features": {
+        "hosting": "Alojamiento TAK gestionado desde $495/mes",
+        "aiEnhanced": "Potenciado por la IA de NERVA",
+        "deployment": "Despliegue TAK experto",
+        "training": "Programas de formación ATAK"
+      },
+      "cta": {
+        "quote": "Solicitar presupuesto",
+        "services": "Ver servicios"
+      }
+    },
+    "services": {
+      "title": "Soluciones TAK profesionales",
+      "introduction": "NERV Systems ofrece soluciones TAK (Team Awareness Kit) integrales en toda la familia de productos —ATAK (Android), WinTAK (Windows), iTAK (iOS), WebTAK y TAK Server—, incluidos el alojamiento gestionado de TAK Server, la consultoría de despliegue de ATAK-CIV y WinTAK-CIV, la administración de sistemas TAK, los programas de formación de operadores y el desarrollo de plugins a medida. Con oficinas en Estados Unidos y Singapur, damos servicio a organizaciones de Norteamérica y Asia-Pacífico. Nuestra plataforma TAK potenciada por IA combina las capacidades TAK tradicionales con la automatización inteligente de NERVA, en apoyo de operaciones de defensa, ayuda humanitaria y respuesta ante desastres (HADR) y respuesta ante emergencias.",
+      "hosting": {
+        "title": "Alojamiento gestionado de TAK Server",
+        "description": "Alojamiento de servidores TAK de nivel empresarial con un SLA de 99,9 % de disponibilidad. Nuestro servicio de alojamiento TAK gestionado elimina la complejidad de administrar un servidor TAK. Ideal para organizaciones que despliegan sistemas TAK/ATAK en operaciones militares, fuerzas de seguridad, misiones HADR y gestión de emergencias.",
+        "plans": {
+          "starter": {
+            "name": "Starter",
+            "price": "$495",
+            "period": "/mes",
+            "users": "Hasta 50 usuarios TAK",
+            "ai": "Preparado para NERVA IA",
+            "features": [
+              "Despliegue básico de TAK Server",
+              "Plugins ATAK estándar incluidos",
+              "SLA de 99 % de disponibilidad del servidor TAK",
+              "Soporte por correo para incidencias TAK",
+              "Parches de seguridad TAK mensuales"
+            ],
+            "cta": "Empezar con TAK"
+          },
+          "professional": {
+            "name": "Professional",
+            "price": "$1,495",
+            "period": "/mes",
+            "users": "Hasta 250 usuarios ATAK",
+            "ai": "Preparado para NERVA IA",
+            "badge": "POPULAR",
+            "features": [
+              "TAK Server empresarial",
+              "Plugins ATAK premium",
+              "SLA de 99,9 % de disponibilidad TAK",
+              "Soporte TAK 24/7",
+              "Soporte de federación TAK",
+              "Supervisión del estado del sistema"
+            ],
+            "cta": "Empezar con Professional TAK"
+          },
+          "enterprise": {
+            "name": "Enterprise",
+            "price": "A medida",
+            "users": "Más de 1.000 usuarios TAK/ATAK",
+            "ai": "Preparado para NERVA IA",
+            "features": [
+              "Infraestructura TAK a medida",
+              "Opciones TAK de marca blanca",
+              "SLA de 99,99 % de disponibilidad TAK",
+              "Equipo de soporte TAK dedicado",
+              "Despliegue TAK multirregión",
+              "Paquetes de cumplimiento normativo TAK"
+            ],
+            "cta": "Consultar TAK Enterprise"
+          }
+        },
+        "note": "Todos los planes de alojamiento TAK incluyen: certificados SSL, copias de seguridad automáticas, protección contra DDoS y acceso a las actualizaciones de TAK.gov"
+      },
+      "deployment": {
+        "title": "Consultoría de despliegue TAK",
+        "description": "Servicios expertos de despliegue TAK, desde la evaluación inicial de requisitos hasta la plena capacidad operativa. Nuestro equipo de consultoría TAK aporta una amplia experiencia desplegando sistemas ATAK para organizaciones de defensa, fuerzas de seguridad, operaciones HADR y gestión de emergencias.",
+        "plans": {
+          "assessment": {
+            "name": "Evaluación TAK",
+            "price": "$4,500",
+            "description": "Evaluación TAK in situ de 1 día",
+            "features": [
+              "Evaluación de requisitos TAK",
+              "Diseño de infraestructura TAK",
+              "Requisitos de los usuarios ATAK",
+              "Orientación en la selección de plugins TAK",
+              "30 días de soporte TAK"
+            ],
+            "cta": "Solicitar evaluación TAK"
+          },
+          "deployment": {
+            "name": "Despliegue TAK",
+            "price": "$15,000",
+            "description": "Instalación completa del sistema TAK",
+            "badge": "POPULAR",
+            "features": [
+              "Despliegue completo de TAK Server (100 usuarios)",
+              "Instalación de plugins ATAK",
+              "Integración del sistema TAK",
+              "Formación básica de operadores ATAK",
+              "90 días de soporte prioritario TAK"
+            ],
+            "cta": "Desplegar sistema TAK"
+          },
+          "enterprise": {
+            "name": "TAK Enterprise",
+            "price": "$45,000+",
+            "description": "Despliegue TAK a gran escala",
+            "features": [
+              "Despliegue TAK amplio (más de 100 usuarios)",
+              "Hoja de ruta de integración de IA",
+              "Desarrollo de plugins TAK a medida",
+              "Formación ATAK avanzada (3 días)",
+              "180 días de soporte TAK dedicado"
+            ],
+            "cta": "Planificar TAK Enterprise"
+          }
+        }
+      },
+      "training": {
+        "title": "Programas de formación TAK y ATAK",
+        "description": "Formación integral de operadores TAK y programas de certificación ATAK. Nuestra formación TAK abarca desde el manejo básico de la interfaz ATAK hasta la planificación avanzada de misiones con el apoyo de la IA de NERVA. Descuentos por volumen para la formación de equipos: 10 % para 5-10 alumnos, 20 % para 11-20 alumnos y 30 % a partir de 21 alumnos.",
+        "programs": {
+          "fundamentals": {
+            "name": "Fundamentos de TAK",
+            "price": "$395",
+            "period": "/alumno",
+            "duration": "Curso de iniciación a ATAK de 1 día",
+            "cta": "Inscribirse en la formación TAK"
+          },
+          "nerva": {
+            "name": "Operaciones con NERVA IA",
+            "price": "$495",
+            "period": "/alumno",
+            "duration": "Curso TAK con IA de 1 día",
+            "badge": "RECOMENDADO",
+            "cta": "Inscribirse en la formación de IA"
+          },
+          "advanced": {
+            "name": "Operaciones TAK avanzadas",
+            "price": "$895",
+            "period": "/alumno",
+            "duration": "Curso ATAK avanzado de 2 días",
+            "cta": "Inscribirse en la formación avanzada"
+          }
+        }
+      }
+    },
+    "integration": {
+      "title": "¿Por qué elegir NERV para sus soluciones TAK?",
+      "description": "A diferencia de los proveedores tradicionales de alojamiento TAK, NERV Systems combina servicios expertos de despliegue TAK con inteligencia impulsada por IA. Toda solución TAK incluye la integración de NERVA, que transforma su sistema TAK/ATAK más allá de la conciencia situacional básica al añadirle apoyo inteligente a la decisión.",
+      "benefits": [
+        {
+          "number": "01",
+          "title": "Plataforma TAK potenciada por IA",
+          "description": "NERVA aporta a su despliegue ATAK/TAK apoyo a la planificación de misiones, apoyo a la coordinación de evacuaciones médicas, conciencia situacional y apoyo a la decisión en tiempo real"
+        },
+        {
+          "number": "02",
+          "title": "Experiencia regional global",
+          "description": "Experiencia en despliegues TAK en Norteamérica y Asia-Pacífico, con oficinas en Estados Unidos y Singapur que atienden requisitos operativos y normativos muy diversos"
+        },
+        {
+          "number": "03",
+          "title": "Soporte de todo el ciclo de vida TAK",
+          "description": "De la evaluación TAK inicial al despliegue, la formación y la administración continua del sistema: acompañamiento integral en todo su recorrido con TAK"
+        },
+        {
+          "number": "04",
+          "title": "Infraestructura TAK de nivel empresarial",
+          "description": "SLA de 99,9 % de disponibilidad, copias de seguridad TAK automáticas, protección contra DDoS, certificados SSL, cumplimiento de seguridad de TAK.gov y arquitectura alineada con MOSA para la interoperabilidad"
+        },
+        {
+          "number": "05",
+          "title": "Opciones de despliegue TAK flexibles",
+          "description": "TAK alojado en la nube, servidores TAK on-premise, arquitecturas TAK híbridas o sistemas TAK desplegados en el borde con nuestro hardware GPU en un casco"
+        }
+      ],
+      "useCases": {
+        "note": "NERVA se integra con las versiones civiles de TAK, de disponibilidad pública, mediante protocolos TAK estándar y publicados abiertamente. Los clientes de defensa ejecutan NERVA sobre sus propias distribuciones ATAK-GOV / ATAK-MIL.",
+        "military": {
+          "title": "ATAK para operaciones militares",
+          "description": "Despliegue ATAK (Android Tactical Assault Kit) y WinTAK para mando y control (C2), operaciones ISR, coordinación de CASEVAC y conciencia situacional multidominio, con planificación de misiones potenciada por IA.",
+          "products": [
+            "ATAK-CIV*",
+            "WinTAK-CIV"
+          ],
+          "tags": [
+            "C2",
+            "ISR",
+            "CASEVAC",
+            "SA"
+          ]
+        },
+        "lawEnforcement": {
+          "title": "ATAK para fuerzas de seguridad",
+          "description": "Soluciones ATAK-CIV y WinTAK-CIV para operaciones tácticas, coordinación de unidades de intervención, seguridad de eventos, vigilancia de fronteras e intercambio de información entre organismos con conciencia situacional en tiempo real.",
+          "products": [
+            "ATAK-CIV",
+            "WinTAK-CIV"
+          ],
+          "tags": [
+            "INTERVENCIÓN",
+            "SEGURIDAD",
+            "PATRULLA"
+          ]
+        },
+        "emergency": {
+          "title": "ATAK para HADR y gestión de emergencias",
+          "description": "ATAK-CIV e iTAK para ayuda humanitaria y respuesta ante desastres (HADR), respuesta ante emergencias, búsqueda y rescate (SAR), operaciones contra incendios, coordinación sanitaria y gestión de crisis multiagencia.",
+          "products": [
+            "ATAK-CIV",
+            "iTAK"
+          ],
+          "tags": [
+            "HADR",
+            "SAR",
+            "EMERGENCIAS"
+          ]
+        },
+        "commercial": {
+          "title": "TAK para el sector privado y comercial",
+          "description": "Despliegues comerciales de ATAK-CIV y WinTAK-CIV para el seguimiento de flotas, la gestión de activos, las operaciones de seguridad privada, la protección de infraestructuras críticas y la coordinación de equipos corporativos repartidos por varias sedes.",
+          "products": [
+            "ATAK-CIV",
+            "WinTAK-CIV"
+          ],
+          "tags": [
+            "FLOTAS",
+            "SEGURIDAD",
+            "ACTIVOS"
+          ]
+        },
+        "intelligence": {
+          "title": "TAK para inteligencia y OSINT",
+          "description": "Fusión de inteligencia geoespacial en WebTAK y ATAK-CIV para analistas de fuentes abiertas (OSINT), periodistas de investigación y equipos de investigación. Correlacione datos multifuente, siga entidades de interés y visualice redes complejas con cartografía colaborativa en tiempo real y reconocimiento de patrones mediante IA.",
+          "products": [
+            "WebTAK",
+            "ATAK-CIV"
+          ],
+          "tags": [
+            "OSINT",
+            "GEOINT",
+            "ANÁLISIS",
+            "INTEL"
+          ]
+        }
+      }
+    },
+    "competitive": {
+      "eyebrow": "Ventaja competitiva",
+      "title": "¿Por qué NERV para sus soluciones TAK?",
+      "subtitle": "Los proveedores tradicionales de alojamiento TAK ofrecen infraestructura. NERV ofrece inteligencia. Compare nuestra plataforma TAK potenciada por IA con los proveedores convencionales de soluciones TAK.",
+      "tableHeaders": {
+        "capability": "Capacidad",
+        "traditional": "Proveedores TAK tradicionales",
+        "nerv": "Soluciones TAK de NERV"
+      },
+      "comparisons": [
+        {
+          "category": "Capacidades de IA",
+          "traditional": "Planificación y análisis de misiones manuales",
+          "nerv": "Apoyo a la planificación de misiones con la IA de NERVA: coordinación de evacuaciones médicas, conciencia situacional y cálculos SAR"
+        },
+        {
+          "category": "Tiempo de respuesta",
+          "traditional": "Respuesta de soporte en 24-48 horas",
+          "nerv": "Soporte 24/7 en tiempo real con supervisión del sistema mediante IA y alertas predictivas"
+        },
+        {
+          "category": "Presencia global",
+          "traditional": "Infraestructura en una sola región",
+          "nerv": "Oficinas en EE. UU. y Singapur, alojamiento TAK multirregión y experiencia en el cumplimiento normativo local"
+        },
+        {
+          "category": "Integración TAK",
+          "traditional": "Despliegue estándar de TAK Server",
+          "nerv": "TAK ampliado con la integración de NERVA, fusión inteligente de datos e interfaz en lenguaje natural"
+        },
+        {
+          "category": "Cómputo en el borde",
+          "traditional": "Solo nube u on-premise estático",
+          "nerv": "Flexible: nube, on-premise, híbrido o despliegue en el borde con GPU en un casco"
+        },
+        {
+          "category": "Estándares de arquitectura",
+          "traditional": "Sistemas propietarios cerrados",
+          "nerv": "Arquitectura abierta conforme con MOSA, con libertad de proveedor e integración preparada para el futuro"
+        },
+        {
+          "category": "Programas de formación",
+          "traditional": "Formación genérica de operadores TAK",
+          "nerv": "Fundamentos de TAK + formación en el asistente de IA NERVA + planificación de misiones asistida por IA"
+        },
+        {
+          "category": "Administración de sistemas",
+          "traditional": "Parcheo y supervisión manuales",
+          "nerv": "Supervisión mediante IA, copias de seguridad automáticas, mantenimiento predictivo y alertas inteligentes"
+        },
+        {
+          "category": "Desarrollo de plugins",
+          "traditional": "Solo plugins TAK estándar",
+          "nerv": "Plugins a medida integrados con NERVA, con capacidades de IA y automatización inteligente"
+        }
+      ],
+      "cta": {
+        "title": "¿Listo para mejorar su infraestructura TAK?",
+        "description": "Empiece a trabajar con la plataforma TAK potenciada por IA de NERV y compruebe la diferencia que marca una infraestructura inteligente.",
+        "buttons": {
+          "pricing": "Ver precios y servicios",
+          "guide": "Descargar la guía comparativa"
+        }
+      }
+    },
+    "resources": {
+      "eyebrow": "Recursos gratuitos",
+      "title": "Biblioteca de inteligencia TAK",
+      "subtitle": "Descargue guías completas, documentación técnica y recursos estratégicos para acelerar su despliegue TAK y maximizar el retorno de la integración de IA.",
+      "items": [
+        {
+          "title": "Calculadora y guía de ROI de la IA táctica",
+          "description": "Análisis exhaustivo del retorno de la inversión de la integración de IA en operaciones tácticas. Calcule el ahorro derivado del apoyo a la planificación con IA, la reducción del tiempo de planificación, la mayor precisión de las decisiones y un tempo operativo más alto. Incluye casos reales y escenarios de despliegue.",
+          "pages": "24 páginas",
+          "format": "PDF",
+          "category": "ROI",
+          "topics": [
+            "Análisis coste-beneficio",
+            "Ahorro por automatización con IA",
+            "Plazos de despliegue",
+            "Métricas de rendimiento"
+          ]
+        },
+        {
+          "title": "TAK frente a las alternativas comerciales: comparativa completa",
+          "description": "Comparativa en profundidad de TAK/ATAK frente a plataformas comerciales de coordinación, sistemas de gestión de emergencias y soluciones propietarias. Abarca funcionalidad, coste total de propiedad, consideraciones de seguridad, interoperabilidad y capacidades de integración. Incluye un marco de decisión para la selección de plataforma.",
+          "pages": "32 páginas",
+          "format": "PDF",
+          "category": "COMPARATIVA",
+          "topics": [
+            "Matriz comparativa de plataformas",
+            "Análisis de TCO",
+            "Comparativa de seguridad",
+            "Capacidades de integración"
+          ]
+        },
+        {
+          "title": "Lista de comprobación de despliegue TAK: guía de implantación completa",
+          "description": "Lista de comprobación paso a paso para implantaciones de TAK/ATAK. Abarca la recogida de requisitos, la planificación de la infraestructura, la configuración de seguridad, la incorporación de usuarios, los programas de formación y los procedimientos de puesta en marcha. Incluye plantillas, ejemplos de configuración y cómo evitar los errores más habituales.",
+          "pages": "18 páginas",
+          "format": "PDF",
+          "category": "DESPLIEGUE",
+          "topics": [
+            "Planificación previa al despliegue",
+            "Puesta en marcha de la infraestructura",
+            "Fortificación de la seguridad",
+            "Plan de formación de usuarios"
+          ]
+        },
+        {
+          "title": "Guía de arquitectura de integración de NERVA IA",
+          "description": "Documentación de arquitectura técnica para integrar NERVA en despliegues TAK existentes. Abarca especificaciones de API, flujos de datos, arquitectura de seguridad, patrones de despliegue (nube/on-premise/borde) y estrategias de migración. Incluye implementaciones de referencia y ejemplos de código.",
+          "pages": "28 páginas",
+          "format": "PDF",
+          "category": "TÉCNICA",
+          "topics": [
+            "Integración de API",
+            "Arquitectura de seguridad",
+            "Patrones de despliegue",
+            "Estrategias de migración"
+          ]
+        },
+        {
+          "title": "Guía de cumplimiento normativo y regulación TAK",
+          "description": "Guía completa de los requisitos regulatorios, las consideraciones de soberanía del dato y los marcos de cumplimiento aplicables a los despliegues TAK. Abarca los requisitos federales de EE. UU., las consideraciones sobre FedRAMP y los marcos internacionales, incluidos los requisitos regionales de Asia-Pacífico. Incluye listas de comprobación de cumplimiento y orientación sobre certificaciones.",
+          "pages": "22 páginas",
+          "format": "PDF",
+          "category": "CUMPLIMIENTO",
+          "topics": [
+            "Marcos regulatorios",
+            "Soberanía del dato",
+            "Certificaciones de seguridad",
+            "Requisitos de cumplimiento"
+          ]
+        },
+        {
+          "title": "Buenas prácticas de administración de sistemas TAK",
+          "description": "Manual de operación para administradores de sistemas TAK. Abarca supervisión, estrategias de copia de seguridad, ajuste del rendimiento, parcheo de seguridad, gestión de usuarios, configuración de federación y resolución de incidencias. Incluye scripts de automatización y manuales operativos.",
+          "pages": "36 páginas",
+          "format": "PDF",
+          "category": "OPERACIONES",
+          "topics": [
+            "Supervisión del sistema",
+            "Copia de seguridad y recuperación",
+            "Optimización del rendimiento",
+            "Operaciones de seguridad"
+          ]
+        }
+      ],
+      "cta": {
+        "title": "¿Necesita un análisis a medida para su organización?",
+        "description": "Nuestro equipo de consultoría TAK puede ofrecerle evaluaciones personalizadas, análisis de ROI y planificación del despliegue adaptados a sus requisitos operativos.",
+        "button": "Agendar una consulta"
+      },
+      "downloadForm": {
+        "eyebrow": "{category}",
+        "title": "Descargar recurso",
+        "fields": {
+          "firstName": "Nombre",
+          "lastName": "Apellidos",
+          "email": "Correo electrónico",
+          "company": "Nombre de la empresa",
+          "jobTitle": "Cargo",
+          "role": "Área profesional",
+          "currentStage": "Fase actual",
+          "selectRole": "Seleccione su área",
+          "selectStage": "Seleccione la fase...",
+          "required": "*"
+        },
+        "roles": {
+          "support": "Soporte",
+          "sales": "Ventas",
+          "retired": "Jubilado",
+          "research": "Investigación",
+          "recruiting": "Selección de personal",
+          "productManagement": "Gestión de producto",
+          "marketing": "Marketing",
+          "it": "TI",
+          "hr": "Recursos humanos",
+          "finance": "Finanzas",
+          "executive": "Alta dirección",
+          "engineering": "Ingeniería",
+          "education": "Educación",
+          "design": "Diseño",
+          "customerSuccess": "Éxito del cliente",
+          "consulting": "Consultoría",
+          "businessDevelopment": "Desarrollo de negocio",
+          "other": "Otra"
+        },
+        "stages": {
+          "researching": "Investigando soluciones",
+          "evaluating": "Evaluando proveedores",
+          "readyToPurchase": "Listos para comprar",
+          "alreadyUsingTAK": "Ya utilizamos TAK"
+        },
+        "submitButton": "Descargar PDF →",
+        "submitting": "Procesando...",
+        "privacyNote": "Respetamos su privacidad. Sus datos solo se utilizarán para enviarle recursos y novedades relevantes sobre TAK.",
+        "success": {
+          "title": "Consulte su correo",
+          "description": "Hemos enviado el enlace de descarga a su dirección de correo electrónico. Revise su bandeja de entrada."
+        }
+      },
+      "coversLabel": "CONTENIDOS:"
+    },
+    "faq": {
+      "eyebrow": "Preguntas frecuentes",
+      "title": "Preguntas frecuentes sobre soluciones TAK",
+      "subtitle": "Dudas habituales sobre alojamiento, despliegue y formación de TAK/ATAK y la integración de la IA de NERVA",
+      "items": [
+        {
+          "question": "¿Qué es TAK/ATAK y por qué lo necesito?",
+          "answer": "TAK (Team Awareness Kit) es una familia de software de colaboración geoespacial mantenida por el TAK Product Center del Gobierno de EE. UU. y desarrollada originalmente por el Air Force Research Laboratory. La familia incluye ATAK en Android, WinTAK en Windows, iTAK en iOS, WebTAK en el navegador y TAK Server en el backend. ATAK se distribuye en ediciones diferenciadas: ATAK-CIV (la versión civil, «Android Team Awareness Kit», disponible públicamente en Google Play para servicios de emergencia y desarrolladores comerciales con licencia) y ATAK-GOV y ATAK-MIL (las ediciones gubernamental y militar, «Android Tactical Assault Kit», que incorporan capacidades restringidas y sujetas a ITAR). Las organizaciones adoptan TAK cuando necesitan una coordinación geoespacial segura y en tiempo real entre equipos distribuidos, ya sea para la gestión de emergencias, la búsqueda y rescate, la ayuda humanitaria y respuesta ante desastres (HADR), operaciones comerciales o defensa. NERV despliega y potencia con la IA de NERVA las versiones civiles de disponibilidad pública (ATAK-CIV, WinTAK-CIV, iTAK) mediante protocolos TAK estándar y publicados abiertamente; los clientes de defensa ejecutan NERVA sobre sus propias distribuciones ATAK-GOV/MIL."
+        },
+        {
+          "question": "¿Qué requisitos tiene el alojamiento de un servidor TAK?",
+          "answer": "El alojamiento profesional de un servidor TAK requiere: una cuenta de TAK.gov para descargar el software oficial de TAK Server, certificados SSL para cifrar las comunicaciones TAK, infraestructura de servidor dedicada con un 99,9 % de disponibilidad, protección contra DDoS para la seguridad de las operaciones, sistemas de copia de seguridad automática de los datos TAK y experiencia en la configuración y administración de TAK Server. El alojamiento TAK gestionado de NERV cubre todos estos requisitos y añade funciones potenciadas por IA mediante la integración de NERVA, desde $495/mes para equipos pequeños hasta $1,495/mes para despliegues TAK a gran escala."
+        },
+        {
+          "question": "¿Cuánto tarda un despliegue TAK?",
+          "answer": "Los plazos de despliegue TAK varían según la complejidad. La instalación básica de un servidor TAK puede completarse en 1-2 semanas en despliegues sencillos. Una implantación integral de TAK/ATAK que incluya la configuración del servidor, la preparación de los dispositivos cliente, la formación de usuarios, la integración de plugins y el desarrollo de paquetes de datos TAK a medida suele llevar entre 4 y 8 semanas. Los despliegues TAK empresariales con una personalización extensa, arquitectura multisede, integración con sistemas heredados y desarrollo avanzado de plugins ATAK pueden requerir entre 3 y 6 meses. Los servicios de consultoría de despliegue TAK de NERV incluyen una planificación detallada del proyecto, la estimación de plazos y el seguimiento de hitos durante toda la implantación."
+        },
+        {
+          "question": "¿Ofrecen formación y certificación en ATAK?",
+          "answer": "Sí, NERV ofrece programas integrales de formación en ATAK para todos los niveles. Nuestro curso Fundamentos para Operadores TAK (595 $ por operador) abarca la navegación por la interfaz de ATAK, la gestión de mapas, la colocación de marcadores, el uso compartido de la posición y las comunicaciones TAK básicas: ideal para nuevos usuarios de ATAK. El curso Operaciones TAK Avanzadas (995 $ por operador) incluye la planificación de misiones en ATAK, la creación de paquetes de datos, el uso de plugins, la integración de vídeo en TAK y los flujos de trabajo tácticos. Para los equipos técnicos, nuestra Certificación de Administrador TAK (1.495 $ por administrador) ofrece formación en profundidad sobre la administración de TAK Server, la gestión de usuarios, la configuración de seguridad, el despliegue de plugins y la resolución de incidencias del sistema. Toda la formación en ATAK incluye ejercicios prácticos con sistemas TAK/ATAK reales."
+        },
+        {
+          "question": "¿Qué diferencia a las soluciones TAK de NERV de las de otros proveedores de alojamiento TAK?",
+          "answer": "A diferencia de las empresas tradicionales de alojamiento TAK, NERV combina servicios expertos de despliegue TAK con inteligencia impulsada por IA gracias a la integración de NERVA. Toda solución TAK de NERV incluye apoyo a la planificación de misiones, apoyo a la coordinación de evacuaciones médicas, conciencia situacional en tiempo real, geocercas inteligentes y visualización 3D del espacio aéreo: capacidades que los proveedores TAK estándar no ofrecen. Con oficinas en Estados Unidos y Singapur, damos servicio a organizaciones de Norteamérica y Asia-Pacífico, con alojamiento TAK multirregión y experiencia en el cumplimiento normativo local. Nuestras opciones de despliegue flexibles incluyen alojamiento TAK en la nube, servidores TAK on-premise, arquitecturas híbridas y sistemas TAK desplegados en el borde con nuestro hardware con GPU."
+        },
+        {
+          "question": "¿Pueden desarrollar plugins TAK a medida?",
+          "answer": "Por supuesto. NERV ofrece servicios profesionales de desarrollo de plugins TAK dentro de su propuesta de ingeniería de soluciones TAK. Desarrollamos plugins ATAK a medida para dispositivos Android, plugins de TAK Server para la integración en el backend, plugins de WinTAK para entornos Windows y plugins de iTAK para iOS. Nuestra experiencia en desarrollo de plugins TAK abarca: la integración con sistemas corporativos existentes, fuentes y flujos de datos a medida, herramientas especializadas de planificación de misiones, plugins de automatización de flujos de trabajo, la integración de sensores y hardware y capacidades TAK potenciadas por IA mediante NERVA. Los proyectos de desarrollo de plugins TAK parten de 15.000 $ para plugins básicos y llegan a más de 100.000 $ para extensiones integrales de la plataforma TAK con soporte continuo."
+        },
+        {
+          "question": "¿Ofrecen soporte de administración de sistemas TAK?",
+          "answer": "Sí, todos nuestros planes de alojamiento TAK gestionado incluyen una administración integral del sistema TAK. Nuestros servicios de administración TAK abarcan: actualizaciones y parches del software de TAK Server, gestión de cuentas de usuario y control de acceso, gestión y renovación de certificados SSL, despliegue y actualización de paquetes de datos TAK, instalación y configuración de plugins, supervisión y optimización del rendimiento, auditoría de seguridad y cumplimiento normativo, verificación de copias de seguridad y recuperación ante desastres, y supervisión del sistema TAK 24/7. Para organizaciones que operan su propia infraestructura TAK, también ofrecemos consultoría independiente de administración de sistemas TAK a 195 $/hora o contratos mensuales de soporte TAK desde 2.500 $/mes."
+        },
+        {
+          "question": "¿Qué casos de uso de TAK/ATAK cubren?",
+          "answer": "NERV cubre todo el espectro de aplicaciones TAK/ATAK en defensa, HADR, seguridad pública y servicios de emergencia. Los casos de uso militares de TAK incluyen: mando y control (C2), inteligencia, vigilancia y reconocimiento (ISR), coordinación de CASEVAC/MEDEVAC, conciencia situacional multidominio y ejercicios de instrucción. Las aplicaciones de ATAK en fuerzas de seguridad incluyen: coordinación de unidades de intervención, gestión de la seguridad de eventos, operaciones de vigilancia fronteriza, seguimiento de prófugos y colaboración entre organismos. Los despliegues TAK de ayuda humanitaria y respuesta ante desastres (HADR) y de gestión de emergencias abarcan: búsqueda y rescate (SAR), respuesta ante incendios forestales, respuesta ante inundaciones y terremotos, coordinación de la ayuda humanitaria, operaciones con población refugiada, coordinación de servicios médicos de urgencia y gestión multiagencia de incidentes. Todos los casos de uso se potencian con las capacidades de IA de NERVA para una ejecución más inteligente de la misión."
+        },
+        {
+          "question": "¿Cómo mejora la integración de la IA de NERVA los sistemas TAK?",
+          "answer": "NERVA transforma un sistema TAK/ATAK estándar más allá de la conciencia situacional básica al añadirle apoyo inteligente a la decisión. NERVA analiza los datos TAK en tiempo real para ofrecer: apoyo a la planificación de misiones con rutas y horarios recomendados, apoyo a la coordinación de evacuaciones médicas que propone ubicaciones de LZ y trayectorias de vuelo para la aprobación del operador, conciencia situacional con análisis de zonas de riesgo y recomendaciones de desconflicción, cálculo inteligente del área de búsqueda para operaciones SAR, geocercas con alertas automáticas ante vulneraciones del espacio aéreo y visualización 3D del espacio aéreo para la desconflicción de UAS. NERVA se ejecuta en infraestructura en la nube, en servidores on-premise o en nuestro hardware con GPU desplegado en el borde, y se integra sin fricción con despliegues de TAK Server existentes mediante protocolos y API estándar de TAK."
+        }
+      ],
+      "cta": {
+        "text": "¿Tiene más dudas sobre el alojamiento TAK, el despliegue de ATAK o la integración de NERVA?",
+        "button": "Hable con nuestros expertos en TAK"
+      }
+    }
+  },
+  "privacy": {
+    "metaTitle": "Política de privacidad - NERV Systems",
+    "metaDescription": "Política de privacidad del sitio web de NERV Systems. Descubra cómo recogemos, utilizamos y protegemos su información.",
+    "eyebrow": "DOCUMENTACIÓN LEGAL",
+    "title": "Política de privacidad",
+    "effectiveDate": "Fecha de entrada en vigor: 19 de noviembre de 2025",
+    "introduction": {
+      "title": "Introducción",
+      "p1": "NERV Systems, LLC («NERV», «nosotros» o «nuestro») se compromete a proteger su privacidad. Esta Política de privacidad explica cómo recogemos, utilizamos, divulgamos y salvaguardamos su información cuando visita nuestro sitio web nervsystems.com (el «Sitio web»).",
+      "p2": "Lea atentamente esta Política de privacidad. Si no está de acuerdo con sus términos, le rogamos que no acceda al Sitio web.",
+      "note": "IMPORTANTE: Esta Política de privacidad se aplica únicamente a este sitio web y a la información recogida a través de él. Nuestros productos y servicios (incluidas la plataforma NERVA IA y las soluciones TAK) se rigen por términos y políticas de privacidad independientes."
+    },
+    "informationWeCollect": {
+      "title": "Información que recogemos",
+      "intro": "Solo recogemos la información que usted nos facilita voluntariamente a través de nuestros formularios de contacto, solicitudes de consulta y solicitudes de presupuesto. Puede incluir:",
+      "items": {
+        "name": "Nombre y apellidos",
+        "email": "Dirección de correo electrónico",
+        "organization": "Nombre de la organización o empresa",
+        "phone": "Número de teléfono",
+        "jobTitle": "Cargo",
+        "message": "Contenido del mensaje y demás información que decida facilitar"
+      },
+      "analytics": "También recogemos automáticamente determinada información mediante servicios de analítica (descritos más abajo), como la dirección IP, el tipo de navegador, los datos del dispositivo y las páginas visitadas."
+    },
+    "howWeUse": {
+      "title": "Cómo utilizamos su información",
+      "items": {
+        "respond": "Para responder a sus consultas y solicitudes",
+        "marketing": "Para enviarle comunicaciones comerciales sobre nuestros productos y servicios",
+        "improve": "Para mejorar nuestro Sitio web y nuestros servicios",
+        "analytics": "Para analizar el uso y las tendencias del Sitio web"
+      },
+      "unsubscribe": "Puede darse de baja de las comunicaciones comerciales en cualquier momento haciendo clic en el enlace de baja de nuestros correos o poniéndose en contacto con nosotros directamente."
+    },
+    "thirdParty": {
+      "title": "Servicios de terceros",
+      "intro": "Utilizamos los siguientes servicios de terceros para tratar y almacenar su información:",
+      "items": {
+        "hubspot": "HubSpot: envío de formularios y gestión de contactos",
+        "analytics": "Google Analytics: analítica del sitio web y seguimiento de uso"
+      },
+      "future": "Es posible que en el futuro añadamos o cambiemos proveedores de servicios de terceros para mejorar nuestros servicios. Esta política se actualizará para reflejar cualquier cambio sustancial."
+    },
+    "dataSecurity": {
+      "title": "Almacenamiento y seguridad de los datos",
+      "storage": "Su información se almacena en servidores situados en Estados Unidos a través de nuestros proveedores de servicios externos. Cumplimos la normativa de protección de datos aplicable, incluida la Personal Data Protection Act (PDPA) de Singapur, que permite almacenar datos personales en el extranjero cuando existen garantías adecuadas.",
+      "protection": "Aplicamos medidas de seguridad razonables para proteger su información frente al acceso, la alteración, la divulgación o la destrucción no autorizados. No obstante, ningún método de transmisión por Internet ni de almacenamiento electrónico es seguro al 100 %.",
+      "disclaimer": "Aunque nos esforzamos por proteger su información, no podemos garantizar una seguridad absoluta."
+    },
+    "yourRights": {
+      "title": "Sus derechos",
+      "intro": "Usted tiene derecho a:",
+      "items": {
+        "access": "Acceder a los datos personales que conservamos sobre usted",
+        "correction": "Solicitar la rectificación de información inexacta",
+        "deletion": "Solicitar la supresión de su información",
+        "optOut": "Oponerse a las comunicaciones comerciales"
+      },
+      "contact": "Para ejercer estos derechos, escríbanos a contact@nervsystems.com."
+    },
+    "cookies": {
+      "title": "Cookies y tecnologías de seguimiento",
+      "description": "Utilizamos cookies con los siguientes fines: (1) Preferencia de idioma: guardamos su selección de idioma en una cookie (NEXT_LOCALE) para recordar su idioma preferido entre visitas; (2) Funcionamiento de los formularios: nuestro sistema de envío de formularios (HubSpot) utiliza cookies cuando usted interactúa con nuestros formularios de contacto, con el fin de registrar los envíos y analizar el origen de las consultas; (3) Analítica: podemos utilizar cookies de analítica (como las de Google Analytics) para comprender el tráfico del sitio web y mejorar la experiencia de usuario.",
+      "control": "Puede controlar las cookies desde la configuración de su navegador. No obstante, desactivarlas puede afectar al funcionamiento de los formularios y a la conservación de su preferencia de idioma, e impedirnos tramitar correctamente sus consultas."
+    },
+    "international": {
+      "title": "Transferencias internacionales de datos",
+      "description": "Su información puede transferirse y tratarse en países distintos de su país de residencia, incluido Estados Unidos. Estos países pueden tener leyes de protección de datos diferentes.",
+      "consent": "Al utilizar nuestro Sitio web, usted consiente la transferencia de su información a Estados Unidos y a otros países en los que operan nuestros proveedores de servicios."
+    },
+    "children": {
+      "title": "Privacidad de los menores",
+      "description": "Nuestro Sitio web no está dirigido a menores de 18 años. No recogemos conscientemente datos personales de menores. Si cree que hemos recogido información de un menor, póngase en contacto con nosotros de inmediato."
+    },
+    "changes": {
+      "title": "Cambios en esta Política de privacidad",
+      "description": "Podemos actualizar esta Política de privacidad cada cierto tiempo. La versión actualizada se identificará mediante una nueva «Fecha de entrada en vigor» al inicio de la política. Le recomendamos revisar periódicamente esta Política de privacidad para conocer cualquier cambio."
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Si tiene preguntas o dudas sobre esta Política de privacidad, póngase en contacto con nosotros:",
+      "company": "NERV Systems, LLC",
+      "email": "Correo electrónico: contact@nervsystems.com"
+    },
+    "backToHome": "← Volver al inicio"
+  },
+  "terms": {
+    "metaTitle": "Condiciones del servicio - NERV Systems",
+    "metaDescription": "Condiciones del servicio del sitio web de NERV Systems. Lea atentamente estas condiciones antes de utilizar nuestro sitio web.",
+    "eyebrow": "DOCUMENTACIÓN LEGAL",
+    "title": "Condiciones del servicio",
+    "effectiveDate": "Fecha de entrada en vigor: 19 de noviembre de 2025",
+    "introduction": {
+      "title": "Introducción",
+      "p1": "Estas Condiciones del servicio (las «Condiciones») regulan su acceso y uso del sitio web de NERV Systems, LLC («NERV», «nosotros» o «nuestro») ubicado en nervsystems.com (el «Sitio web»).",
+      "p2": "Al acceder al Sitio web o utilizarlo, usted acepta quedar vinculado por estas Condiciones. Si no las acepta, no utilice el Sitio web.",
+      "note": "IMPORTANTE: Estas Condiciones se aplican únicamente a este sitio web. El uso de nuestros productos y servicios (incluidas la plataforma NERVA IA y las soluciones TAK) se rige por contratos y condiciones del servicio independientes."
+    },
+    "acceptance": {
+      "title": "Aceptación de las Condiciones",
+      "description": "Al acceder a este Sitio web, usted reconoce haber leído y comprendido estas Condiciones y nuestra Política de privacidad, y acepta quedar vinculado por ellas. Nos reservamos el derecho a modificar estas Condiciones en cualquier momento. El uso continuado del Sitio web tras la publicación de los cambios constituye la aceptación de las Condiciones modificadas."
+    },
+    "useOfWebsite": {
+      "title": "Uso del Sitio web",
+      "intro": "Usted se compromete a utilizar el Sitio web únicamente con fines lícitos y conforme a estas Condiciones. Se compromete a no:",
+      "items": {
+        "lawful": "Utilizar el Sitio web de forma que infrinja la legislación o la normativa aplicable",
+        "accurate": "Facilitar información falsa, inexacta o engañosa",
+        "noHarm": "Transmitir virus, malware u otro código dañino",
+        "noUnauthorized": "Intentar obtener acceso no autorizado al Sitio web o a sus sistemas",
+        "noViolation": "Realizar cualquier conducta que restrinja o impida a terceros el uso del Sitio web"
+      }
+    },
+    "intellectualProperty": {
+      "title": "Derechos de propiedad intelectual",
+      "ownership": "Todo el contenido de este Sitio web, incluidos, entre otros, textos, gráficos, logotipos, imágenes, software y elementos de diseño, es propiedad de NERV Systems, LLC y está protegido por la legislación de derechos de autor, marcas y demás propiedad intelectual de Estados Unidos e internacional.",
+      "restrictions": "No podrá reproducir, distribuir, modificar, crear obras derivadas, exhibir públicamente, volver a publicar, descargar, almacenar ni transmitir ningún material de nuestro Sitio web sin nuestro consentimiento previo por escrito, salvo para uso personal y no comercial."
+    },
+    "thirdPartyLinks": {
+      "title": "Enlaces y contenidos de terceros",
+      "description": "El Sitio web puede contener enlaces a sitios web o servicios de terceros que NERV no posee ni controla. No ejercemos control alguno ni asumimos responsabilidad alguna por el contenido, las políticas de privacidad o las prácticas de dichos sitios o servicios de terceros. Usted reconoce y acepta que NERV no será responsable de ningún daño o pérdida derivados del uso que haga de contenidos, bienes o servicios de terceros."
+    },
+    "disclaimer": {
+      "title": "Exclusión de garantías",
+      "statement": "El sitio web se ofrece «tal cual» y «según disponibilidad», sin garantías de ningún tipo, ya sean expresas o implícitas.",
+      "details": "NERV Systems, LLC rechaza toda garantía, incluidas, entre otras, las garantías implícitas de comerciabilidad, idoneidad para un fin determinado y no infracción. No garantizamos que el Sitio web funcione de forma ininterrumpida, segura o libre de errores, ni que se corrija cualquier defecto. El uso del Sitio web es por su cuenta y riesgo."
+    },
+    "liability": {
+      "title": "Limitación de responsabilidad",
+      "statement": "En la máxima medida permitida por la ley, NERV Systems, LLC no será responsable de daños indirectos, incidentales, especiales, consecuentes o punitivos, ni de lucro cesante o pérdida de ingresos.",
+      "details": "En ningún caso la responsabilidad total de NERV frente a usted por todos los daños, pérdidas y acciones (ya sean contractuales, extracontractuales o de otro tipo) superará el importe que usted haya abonado, en su caso, por acceder al Sitio web. Algunas jurisdicciones no permiten la exclusión de determinadas garantías ni la limitación de responsabilidad por daños incidentales o consecuentes, por lo que es posible que las limitaciones anteriores no le sean aplicables."
+    },
+    "indemnification": {
+      "title": "Indemnización",
+      "description": "Usted se compromete a defender, indemnizar y mantener indemne a NERV Systems, LLC y a sus directivos, consejeros, empleados y agentes frente a cualquier reclamación, responsabilidad, daño, sentencia, laudo, pérdida, coste, gasto u honorario (incluidos los honorarios razonables de abogados) que se derive de su incumplimiento de estas Condiciones o de su uso del Sitio web, o que guarde relación con ellos."
+    },
+    "exportControl": {
+      "title": "Control de exportaciones y cumplimiento normativo",
+      "description": "Determinada información y tecnología presentadas en este Sitio web pueden estar sujetas a la legislación y la normativa estadounidenses de control de exportaciones, incluidas las Export Administration Regulations (EAR) y, cuando proceda, el International Traffic in Arms Regulations (ITAR). Usted se compromete a cumplir toda la legislación y normativa aplicables en materia de exportación y reexportación.",
+      "warning": "NOTA: Algunos productos y servicios pueden estar sujetos a controles de exportación. Los usuarios son responsables de cumplir todos los requisitos aplicables de exportación y reexportación. La exportación o reexportación no autorizada puede dar lugar a sanciones civiles o penales."
+    },
+    "governingLaw": {
+      "title": "Legislación aplicable y jurisdicción",
+      "description": "Estas Condiciones se regirán e interpretarán conforme a la legislación de Estados Unidos y del Estado de Delaware, sin atender a los principios sobre conflicto de leyes. Cualquier controversia derivada de estas Condiciones o de su uso del Sitio web se someterá a la jurisdicción exclusiva de los tribunales de Delaware.",
+      "future": "Nota: NERV Systems, LLC está actualmente constituida en Estados Unidos. Una futura constitución en Singapur podría dar lugar a la actualización de las cláusulas sobre legislación aplicable y jurisdicción."
+    },
+    "changes": {
+      "title": "Modificaciones de las Condiciones",
+      "description": "Nos reservamos el derecho a modificar o sustituir estas Condiciones en cualquier momento y a nuestra entera discreción. Los cambios sustanciales se señalarán actualizando la «Fecha de entrada en vigor» al inicio de estas Condiciones. El uso continuado del Sitio web tras cualquier cambio constituye la aceptación de las nuevas Condiciones."
+    },
+    "severability": {
+      "title": "Divisibilidad",
+      "description": "Si alguna disposición de estas Condiciones resultara inexigible o inválida, dicha disposición se limitará o suprimirá en la medida mínima necesaria, y las restantes disposiciones permanecerán en pleno vigor y efecto."
+    },
+    "entireAgreement": {
+      "title": "Acuerdo íntegro",
+      "description": "Estas Condiciones, junto con nuestra Política de privacidad, constituyen el acuerdo íntegro entre usted y NERV Systems, LLC en relación con el uso del Sitio web, y dejan sin efecto todos los acuerdos y entendimientos previos, ya sean escritos u orales."
+    },
+    "contact": {
+      "title": "Información de contacto",
+      "description": "Si tiene preguntas sobre estas Condiciones, póngase en contacto con nosotros:",
+      "company": "NERV Systems, LLC",
+      "email": "Correo electrónico: contact@nervsystems.com"
+    },
+    "backToHome": "← Volver al inicio"
+  },
+  "sdg": {
+    "eyebrow": "Impacto global",
+    "title": "Alineados con los Objetivos de Desarrollo Sostenible de la ONU",
+    "subtitle": "Los mismos sistemas que sirven a los equipos tácticos ayudan a las comunidades a responder antes, recuperarse más rápido y mantenerse a salvo. Ese doble uso es la razón por la que alineamos nuestro trabajo con la Agenda 2030 para el Desarrollo Sostenible de las Naciones Unidas.",
+    "goals": {
+      "health": {
+        "title": "Salud y bienestar",
+        "description": "Una coordinación más rápida de la evacuación médica y una respuesta en tiempo real acortan el intervalo entre el incidente y la asistencia, lo que mejora la supervivencia en incidentes de múltiples víctimas, en entornos remotos y en desastres."
+      },
+      "infrastructure": {
+        "title": "Industria, innovación e infraestructura",
+        "description": "Los sistemas de arquitectura abierta con capacidad en el borde refuerzan las infraestructuras críticas y mantienen la coordinación operativa incluso cuando fallan las redes y el suministro eléctrico."
+      },
+      "cities": {
+        "title": "Ciudades y comunidades sostenibles",
+        "description": "La conciencia situacional multiagencia y la planificación de evacuaciones contribuyen a reducir las muertes, los heridos y las pérdidas causadas por los desastres, en línea con la meta 11.5 de los ODS sobre comunidades resilientes."
+      },
+      "climate": {
+        "title": "Acción por el clima",
+        "description": "La respuesta asistida por IA ante incendios forestales, inundaciones y fenómenos meteorológicos extremos refuerza la resiliencia y la capacidad de adaptación frente a los riesgos climáticos, en línea con la meta 13.1 de los ODS."
+      },
+      "institutions": {
+        "title": "Paz, justicia e instituciones sólidas",
+        "description": "Una IA verificable y transparente —gracias al aislamiento formalmente verificado de InferNode— respalda instituciones públicas responsables y fiables, y operaciones conformes a derecho."
+      },
+      "partnerships": {
+        "title": "Alianzas para lograr los objetivos",
+        "description": "La interoperabilidad nativa de TAK conecta a los equipos de intervención, los organismos y los socios humanitarios en torno a una imagen operativa común para actuar de forma coordinada."
+      }
+    },
+    "footnote": "NERV Systems es una empresa independiente. Las referencias a los Objetivos de Desarrollo Sostenible de la ONU describen cómo nuestra tecnología contribuye a estos objetivos y no implican respaldo alguno por parte de las Naciones Unidas."
+  },
+  "about": {
+    "eyebrow": "Sobre NERV Systems",
+    "title": "IA avanzada para las misiones que importan",
+    "lead": "NERV Systems es una empresa de tecnología de defensa que lleva la potenciación con IA a TAK y ATAK. Todo lo que construimos sigue una regla: la IA apoya al operador —esbozando opciones, señalando riesgos y coordinando los detalles— mientras que el mando sigue siendo humano.",
+    "body": "Nuestra tecnología está pensada para los entornos operativos más exigentes, y las mismas capacidades que dan ventaja a los equipos tácticos ayudan a salvar vidas en la ayuda ante desastres, la búsqueda y rescate y las crisis humanitarias. Ese doble propósito explica por qué medimos nuestro trabajo no solo en ventaja operativa, sino también en impacto global.",
+    "build": {
+      "eyebrow": "Qué construimos",
+      "title": "Una sola pila, del hardware de borde a la IA verificable",
+      "items": {
+        "nerva": {
+          "label": "NERVA",
+          "title": "Apoyo a la planificación y a la decisión",
+          "description": "Un asistente de IA nativo de TAK que esboza cursos de acción, apoya la coordinación de MEDEVAC y mantiene actualizada la imagen operativa común. NERVA recomienda; el operador decide.",
+          "cta": "Descubrir NERVA"
+        },
+        "infernode": {
+          "label": "INFERNODE",
+          "title": "Entorno de ejecución de IA verificable",
+          "description": "Un entorno de ejecución ligero y formalmente verificado que mantiene a los agentes de IA demostrablemente dentro de sus límites, aplicados por el sistema operativo y auditables antes del despliegue.",
+          "cta": "Descubrir InferNode"
+        },
+        "nervCentre": {
+          "label": "NERV CENTRE",
+          "title": "Cómputo privado on-premise",
+          "description": "Infraestructura de GPU en contenedor que lleva la IA privada a sus instalaciones: soberana, capaz de operar desconectada y dimensionada a la misión.",
+          "cta": "Descubrir NERV Centre"
+        }
+      }
+    },
+    "principles": {
+      "eyebrow": "Cómo trabajamos",
+      "title": "Cuatro compromisos detrás de todo lo que entregamos",
+      "items": {
+        "command": {
+          "number": "01",
+          "title": "El mando es del operador",
+          "description": "Estado mayor, no mando. NERVA esboza opciones y coordina los detalles: la decisión es siempre del operador. No construimos automatismos que estén por encima de las personas a las que sirven."
+        },
+        "edge": {
+          "number": "02",
+          "title": "El borde, primero",
+          "description": "Diseñado para funcionar allí donde está la misión, incluidos entornos desconectados, degradados y con ancho de banda escaso."
+        },
+        "open": {
+          "number": "03",
+          "title": "Arquitectura abierta",
+          "description": "Nativo de TAK y alineado con MOSA. Estándares abiertos e interoperabilidad frente a la dependencia de un proveedor."
+        },
+        "verifiable": {
+          "number": "04",
+          "title": "Verificable por diseño",
+          "description": "Afirmaciones que se pueden comprobar: aislamiento formalmente verificado, configuraciones auditables y límites demostrables para cada agente de IA que desplegamos."
+        }
+      }
+    },
+    "presence": {
+      "eyebrow": "Presencia global",
+      "offices": {
+        "us": {
+          "label": "ESTADOS UNIDOS",
+          "value": "Dover, Delaware"
+        },
+        "sg": {
+          "label": "SINGAPUR",
+          "value": "Block71, Ayer Rajah Crescent"
+        },
+        "uk": {
+          "label": "REINO UNIDO",
+          "value": "Bush House, Londres"
+        }
+      }
+    }
+  },
+  "nervCentre": {
+    "meta": {
+      "title": "NERV Centre | Cómputo de IA privado, on-premise y soberano | NERV Systems",
+      "description": "NERV Centre es un centro de datos sellado y autónomo para IA privada on-premise: cómputo soberano en propiedad o en arrendamiento (HaaS). Ejecute NERVA y agentes de IA tras su propio perímetro, con soberanía del dato, resiliencia y alta disponibilidad, incluso totalmente sin conexión. Compare el coste real frente a la nube pública."
+    },
+    "hero": {
+      "eyebrow": "NERV CENTRE · CÓMPUTO PRIVADO ON-PREMISE",
+      "title": "Su IA. Su edificio.",
+      "titleLine2": "Sus datos, y de nadie más.",
+      "subtitle": "NERV Centre es un centro de datos sellado y autónomo que ejecuta su IA y su infraestructura dentro de los muros que usted controla. Sin hiperescalador. Sin arrendador. Sin enlace que puedan cortar.",
+      "features": {
+        "sealed": "Envolvente sellada IP65",
+        "efficient": "Eficiencia PUE 1,3",
+        "offline": "Funciona totalmente sin conexión",
+        "aiReady": "Preparado para NERVA e InferNode"
+      },
+      "cta": {
+        "quote": "Solicitar presupuesto",
+        "calculator": "Calcule su coste real"
+      }
+    },
+    "value": {
+      "eyebrow": "POR QUÉ ON-PREMISE",
+      "title": "La nube es el ordenador de otro. Este es el suyo.",
+      "subtitle": "Para equipos que no pueden permitirse enviar sus datos a otro sitio, ni dejar de trabajar cuando se cae la conexión.",
+      "pillars": {
+        "sovereignty": {
+          "code": "01",
+          "title": "Soberanía del dato por diseño",
+          "description": "Sus datos se generan, se procesan y se almacenan dentro de su perímetro. Nada se copia a una nube de terceros, ni queda expuesto a otra jurisdicción, ni es accesible para nadie a quien usted no haya dejado entrar."
+        },
+        "resilience": {
+          "code": "02",
+          "title": "Sigue funcionando si cortan el enlace",
+          "description": "El cómputo sellado en sus instalaciones sigue operando cuando caen internet, la red eléctrica o el enlace ascendente. La nube se detiene en la WAN. NERV Centre no."
+        },
+        "physical": {
+          "code": "03",
+          "title": "Protegido físicamente",
+          "description": "Acero sellado IP65/NEMA 4, cerraduras magnéticas con una fuerza de retención de media tonelada, acceso por teclado y llavero, y detección de manipulación con captura de imagen. Un centro de datos cerrado y vigilado, no un rack en un pasillo."
+        },
+        "aiReady": {
+          "code": "04",
+          "title": "IA soberana en el borde",
+          "description": "Dimensionado para inferencia en GPU. Ejecute NERVA y los agentes de IA de InferNode en nodos de clase H100 y L40S junto a quienes los usan: IA soberana con latencia local y sin facturación por token."
+        }
+      }
+    },
+    "products": {
+      "eyebrow": "LA GAMA",
+      "title": "Una plataforma, tres formatos",
+      "subtitle": "El mismo núcleo sellado y monitorizado: en interior, en exterior o en contenedor a gran escala.",
+      "specsLabel": "ESPECIFICACIONES",
+      "items": {
+        "pro": {
+          "name": "NERV Centre Pro",
+          "tag": "INTERIOR",
+          "description": "Microcentro de datos autónomo para interior. Se instala en una oficina, un centro sanitario o una sala de operaciones, sin necesidad de acondicionar una sala de servidores.",
+          "specs": {
+            "capacity": "12-38 U útiles",
+            "cooling": "Refrigeración sellada de hasta 7 kW",
+            "power": "PDU, SAI y cuadro eléctrico integrados"
+          }
+        },
+        "outdoor": {
+          "name": "NERV Centre Outdoor",
+          "tag": "CAMPO / AVANZADO",
+          "description": "Resistente a la intemperie para el campo o el emplazamiento avanzado. El mismo núcleo sellado, con grado IP para instalación en exterior: en blanco, gris, negro o MultiCam.",
+          "specs": {
+            "rating": "Estanqueidad IP65 / NEMA 4",
+            "finish": "Blanco, gris, negro o MultiCam",
+            "siting": "No requiere edificio"
+          }
+        },
+        "max": {
+          "name": "NERV Centre Max",
+          "tag": "EN CONTENEDOR",
+          "description": "Capacidad multirack en contenedor para despliegues mayores y puesta en marcha rápida. Configurado según su carga y entregado listo para funcionar.",
+          "specs": {
+            "capacity": "Multirack, contenedor de 20 pies",
+            "scale": "Hasta seis racks sellados",
+            "deploy": "Configuración a medida, con presupuesto"
+          }
+        }
+      }
+    },
+    "anatomy": {
+      "eyebrow": "QUÉ LLEVA DENTRO",
+      "title": "Un centro de datos sellado, no un armario de servidores",
+      "description": "Cada NERV Centre integra alimentación, refrigeración, seguridad y monitorización en una única envolvente sellada. La refrigeración, la protección contra incendios, el SAI y el control de acceso están diseñados en conjunto, de modo que protege su hardware y funciona sin supervisión, esté donde esté instalado.",
+      "imageAlt": "NERV Centre Pro con protección contra incendios integrada, PDU, control de acceso, baterías y SAI, cuadro eléctrico, refrigeración de precisión, gestión de cableado y ruedas con freno",
+      "specs": {
+        "rating": {
+          "k": "GRADO IP",
+          "v": "IP65 / NEMA 4"
+        },
+        "efficiency": {
+          "k": "EFICIENCIA",
+          "v": "PUE 1,3 típico"
+        },
+        "enclosure": {
+          "k": "ENVOLVENTE",
+          "v": "Acero de 2 mm con recubrimiento en polvo"
+        },
+        "capacity": {
+          "k": "CAPACIDAD",
+          "v": "12-38 U · hasta 7 kW"
+        },
+        "access": {
+          "k": "ACCESO",
+          "v": "Cerraduras magnéticas · teclado + llavero"
+        },
+        "protection": {
+          "k": "PROTECCIÓN",
+          "v": "Detección de manipulación e incendios"
+        }
+      }
+    },
+    "sense": {
+      "eyebrow": "NERV SENSE",
+      "title": "Cada unidad se vigila a sí misma",
+      "description": "NERV Sense es la capa de monitorización y automatización integrada en cada NERV Centre. Mantiene la envolvente en buen estado y protegida, e informa del conjunto a su equipo, en local o en remoto.",
+      "items": {
+        "power": {
+          "title": "Inteligencia eléctrica",
+          "description": "Analítica en tiempo real de carga, capacidad y eficiencia en siete zonas de alimentación, con mapas de estado e informes."
+        },
+        "environment": {
+          "title": "Detección ambiental",
+          "description": "Temperatura, humedad, vibración, agua, presión del aire, caudal de aire y polvo: medidos de forma continua y con alertas asociadas."
+        },
+        "security": {
+          "title": "Control de acceso y manipulación",
+          "description": "Acceso por PIN y llavero, perfiles de usuario, RBAC, listas de IP permitidas y TLS, con detección de manipulación y movimiento vinculada a la captura de imagen."
+        },
+        "automation": {
+          "title": "Respuesta autónoma",
+          "description": "Respuesta automática ante incendios, recuperación de servidores caídos, control remoto seguro de la puerta y optimización de la eficiencia energética, sin intervención del operador."
+        }
+      },
+      "securityNote": "Fortificado de serie: TLS 1.2 con AES-256, autenticación SSH por clave pública, SNMPv3, LDAP/Active Directory sobre TLS, cortafuegos IPv4/IPv6, bloqueo tras intentos fallidos de inicio de sesión y política de contraseñas obligatoria."
+    },
+    "calculator": {
+      "eyebrow": "CALCULADORA DE COSTE REAL",
+      "title": "¿Cuánto le cuesta realmente su infraestructura?",
+      "description": "Compare cinco años de nube pública, una sala de servidores propia, la colocación en centro de datos y un NERV Centre, en compra o en arrendamiento con el soporte incluido. Todas las hipótesis están a la vista y se pueden editar, con precios ajustados a su región y a su carga de trabajo.",
+      "point": "Hay una línea que el gráfico deja clara: cuando se corta el enlace, la opción en la nube se detiene. Las que tienen el hardware en sus instalaciones siguen funcionando.",
+      "button": "Abrir la calculadora",
+      "note": "Abre la calculadora interactiva. Son estimaciones comparativas, no un presupuesto."
+    },
+    "calculatorPage": {
+      "metaTitle": "Calculadora de coste real | Cómputo on-premise NERV Centre | NERV Systems",
+      "metaDescription": "Compare el coste real a cinco años de la nube pública, una sala de servidores on-premise, la colocación en centro de datos y un NERV Centre, en compra o en arrendamiento (HaaS). Todas las hipótesis son editables y los precios se ajustan a su región y a su carga de trabajo de IA.",
+      "back": "← Volver a NERV Centre"
+    },
+    "haas": {
+      "eyebrow": "HARDWARE COMO SERVICIO",
+      "title": "Quédese con la capacidad, no con el desembolso",
+      "description": "No todos los equipos quieren una compra de capital en sus libros. Con NERV Centre en modalidad de hardware como servicio, despliega el mismo cómputo sellado y soberano por una cuota mensual fija —con soporte y mantenimiento incluidos y renovación del hardware al vencimiento—, de modo que la capacidad está en sus instalaciones sin figurar en su balance.",
+      "points": {
+        "opex": {
+          "title": "Gasto operativo, no inversión",
+          "description": "Una cuota mensual previsible en lugar de un desembolso de capital, y sin esperar a un ciclo de aprobación de inversiones."
+        },
+        "bundled": {
+          "title": "Soporte y mantenimiento incluidos",
+          "description": "La monitorización, el mantenimiento y el soporte de NERV Sense van incluidos en el plazo contratado: una sola cuota, sin sorpresas."
+        },
+        "refresh": {
+          "title": "Renovación al vencimiento",
+          "description": "El hardware se renueva al renovar el contrato, de modo que su cómputo de IA nunca se queda obsoleto en plena misión."
+        },
+        "term": {
+          "title": "Plazos de 36 meses",
+          "description": "Gestionados a través de socios financieros consolidados en equipamiento, con plazos ajustados a su ciclo presupuestario."
+        }
+      },
+      "cta": "Comparar compra y arrendamiento"
+    },
+    "closing": {
+      "eyebrow": "DESPLIÉGUELO EN SUS TÉRMINOS",
+      "title": "En propiedad o en arrendamiento, con soporte incluido",
+      "description": "Cómprelo directamente o contrátelo como hardware como servicio a 36 meses, con mantenimiento y renovación incluidos. En ambos casos, el cómputo está donde está usted. Cuéntenos su emplazamiento, su carga y sus limitaciones, y lo dimensionamos.",
+      "quote": "Solicitar presupuesto",
+      "contact": "Hablar con un ingeniero"
+    },
+    "callout": {
+      "label": "NERV CENTRE",
+      "title": "Cómputo de IA privado y on-premise",
+      "description": "Un centro de datos sellado y autónomo que ejecuta NERVA y su infraestructura en instalaciones que usted controla: soberano, capaz de operar sin conexión y protegido físicamente.",
+      "benefits": {
+        "onSite": {
+          "title": "Los datos se quedan in situ",
+          "description": "Nada sale de su perímetro"
+        },
+        "offline": {
+          "title": "Funciona sin conexión",
+          "description": "Opera aunque corten el enlace"
+        },
+        "sealed": {
+          "title": "Sellado IP65",
+          "description": "Cerrado, vigilado y con detección de manipulación"
+        },
+        "aiReady": {
+          "title": "Preparado para IA",
+          "description": "Nodos GPU para NERVA e InferNode"
+        }
+      },
+      "cta": "Descubrir NERV Centre →"
+    }
+  }
+}
