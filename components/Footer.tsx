@@ -135,9 +135,14 @@ export default function Footer() {
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center text-tactical-textDim text-sm">
             <div className="flex flex-col md:flex-row items-center gap-4">
-              <p>
-                {t('copyright')}
-              </p>
+              <div className="flex flex-col items-center md:items-start gap-1">
+                <p>
+                  {t('copyright')}
+                </p>
+                <p className="text-xs text-tactical-textDim/70 font-mono">
+                  {t('entity')}
+                </p>
+              </div>
               <div className="flex gap-4 text-xs">
                 <Link href={`/${locale}/privacy`} className="hover:text-white transition-colors">
                   {t('legal.privacy')}

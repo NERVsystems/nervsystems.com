@@ -518,6 +518,7 @@
       }
     },
     "copyright": "© 2026 NERV Systems. All rights reserved.",
+    "entity": "NERV Systems Pte. Ltd. · UEN 202640906Z",
     "taglineBottom": "Built for the tactical edge",
     "legal": {
       "privacy": "Privacy Policy",
@@ -1243,7 +1244,7 @@
     "governingLaw": {
       "title": "Governing Law and Jurisdiction",
       "description": "These Terms shall be governed by and construed in accordance with the laws of the United States and the State of Delaware, without regard to conflict of law principles. Any disputes arising from these Terms or your use of the Website shall be subject to the exclusive jurisdiction of the courts located in Delaware.",
-      "future": "Note: NERV Systems, LLC is currently incorporated in the United States. Future incorporation in Singapore may result in updates to governing law and jurisdiction provisions."
+      "future": "Note: This Website is operated by NERV Systems, LLC (Delaware, United States). NERV Systems Pte. Ltd. (Singapore, UEN 202640906Z) is an affiliated entity and is not a party to these Terms."
     },
     "changes": {
       "title": "Changes to Terms",

@@ -518,6 +518,7 @@
       }
     },
     "copyright": "© 2026 NERV Systems. All rights reserved.",
+    "entity": "NERV Systems Pte. Ltd. · UEN 202640906Z",
     "taglineBottom": "전술 엣지를 위해 구축됨",
     "legal": {
       "privacy": "개인정보 보호정책",
@@ -1305,7 +1306,7 @@
     "governingLaw": {
       "title": "준거법 및 관할권",
       "description": "본 약관은 법률 충돌 원칙에 관계없이 미국 및 델라웨어주의 법률에 따라 규율되고 해석됩니다. 본 약관 또는 웹사이트 사용으로 인해 발생하는 분쟁은 델라웨어에 위치한 법원의 독점 관할권에 따릅니다.",
-      "future": "참고: NERV Systems, LLC는 현재 미국에 법인화되어 있습니다. 향후 싱가포르에 법인화하면 준거법 및 관할권 조항이 업데이트될 수 있습니다."
+      "future": "참고: 본 웹사이트는 NERV Systems, LLC(미국 델라웨어주)가 운영합니다. NERV Systems Pte. Ltd.(싱가포르, UEN 202640906Z)는 계열사이며 본 약관의 당사자가 아닙니다."
     },
     "changes": {
       "title": "약관의 변경",

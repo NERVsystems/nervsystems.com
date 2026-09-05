@@ -518,6 +518,7 @@
       }
     },
     "copyright": "© 2026 NERV Systems. All rights reserved.",
+    "entity": "NERV Systems Pte. Ltd. · UEN 202640906Z",
     "taglineBottom": "戦術エッジのために構築",
     "legal": {
       "privacy": "プライバシーポリシー",
@@ -1305,7 +1306,7 @@
     "governingLaw": {
       "title": "準拠法および管轄",
       "description": "本規約は、法の抵触に関する原則にかかわらず、米国およびデラウェア州の法律に準拠し、解釈されるものとします。本規約またはウェブサイトの使用から生じる紛争は、デラウェア州に所在する裁判所の専属管轄に服するものとします。",
-      "future": "注：NERV Systems, LLCは現在米国に法人化されています。将来のシンガポールでの法人化により、準拠法および管轄条項が更新される可能性があります。"
+      "future": "注：本ウェブサイトはNERV Systems, LLC（米国デラウェア州）が運営しています。NERV Systems Pte. Ltd.（シンガポール、UEN 202640906Z）は関連会社であり、本規約の当事者ではありません。"
     },
     "changes": {
       "title": "規約の変更",
