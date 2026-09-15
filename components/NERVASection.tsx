@@ -56,9 +56,9 @@ export default function NERVASection() {
         {/* Section Header */}
         <div className="mb-16 text-center">
           <div className="flex items-center justify-center mb-4">
-            {/* NERVA Logo + Logotype lockup */}
+            {/* NERVA logotype */}
             <img
-              src="/img/NERVA WHT Lockup.png"
+              src="/img/nerva-logotype-wht.png"
               alt="NERVA"
               className="h-24 md:h-32 w-auto"
             />
