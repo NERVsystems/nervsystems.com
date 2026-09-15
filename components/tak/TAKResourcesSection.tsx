@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
+import { getLeadMagnetUrl } from '@/lib/leadMagnets';
 
 interface Resource {
   title: string;
@@ -30,10 +31,23 @@ export default function TAKResourcesSection() {
 
   const locale = useLocale();
   const resources = t.raw('items') as Resource[];
+  const downloadUrl = selectedResource ? getLeadMagnetUrl(selectedResource.category, locale) : undefined;
 
   const handleDownloadClick = (resource: Resource) => {
     setSelectedResource(resource);
     setShowDownloadForm(true);
+  };
+
+  const closeForm = () => {
+    setShowDownloadForm(false);
+    setSubmitSuccess(false);
+    setFormData({ firstname: '', lastname: '', email: '', organization: '', jobtitle: '', role: '' });
+    setSelectedResource(null);
+  };
+
+  const deliverResource = () => {
+    setSubmitSuccess(true);
+    if (downloadUrl) window.open(downloadUrl, '_blank', 'noopener');
   };
 
   // Map resource category to form ID environment variable
@@ -61,13 +75,7 @@ export default function TAKResourcesSection() {
         if (process.env.NODE_ENV === 'development') {
           console.warn('HubSpot not configured for resource downloads');
         }
-        setSubmitSuccess(true);
-        setTimeout(() => {
-          setShowDownloadForm(false);
-          setSubmitSuccess(false);
-          setFormData({ firstname: '', lastname: '', email: '', organization: '', jobtitle: '', role: '' });
-          setSelectedResource(null);
-        }, 2000);
+        deliverResource();
         return;
       }
 
@@ -86,7 +94,8 @@ export default function TAKResourcesSection() {
               { name: 'company', value: formData.organization },
               { name: 'jobtitle', value: formData.jobtitle },
               { name: 'hs_role', value: formData.role },
-              { name: 'resource_requested', value: selectedResource?.title || '' },
+              { name: 'requested_resource', value: selectedResource?.title || '' },
+              { name: 'resource_url', value: downloadUrl || '' },
             ],
             context: {
               pageUri: window.location.href,
@@ -97,13 +106,7 @@ export default function TAKResourcesSection() {
       );
 
       if (response.ok) {
-        setSubmitSuccess(true);
-        setTimeout(() => {
-          setShowDownloadForm(false);
-          setSubmitSuccess(false);
-          setFormData({ firstname: '', lastname: '', email: '', organization: '', jobtitle: '', role: '' });
-          setSelectedResource(null);
-        }, 2000);
+        deliverResource();
       } else {
         if (process.env.NODE_ENV === 'development') {
           console.error('HubSpot submission failed:', await response.text());
@@ -212,7 +215,7 @@ export default function TAKResourcesSection() {
           <div className="tactical-border bg-tactical-surface p-8 max-w-md w-full relative">
             {/* Close Button */}
             <button
-              onClick={() => setShowDownloadForm(false)}
+              onClick={closeForm}
               className="absolute top-4 right-4 text-tactical-textDim hover:text-white text-2xl"
             >
               ×
@@ -337,9 +340,19 @@ export default function TAKResourcesSection() {
               <div className="text-center py-8">
                 <div className="text-tactical-accent text-5xl mb-4">✓</div>
                 <h3 className="text-2xl font-bold text-white mb-2">{t('downloadForm.success.title')}</h3>
-                <p className="text-tactical-textDim">
+                <p className="text-tactical-textDim mb-6">
                   {t('downloadForm.success.description')}
                 </p>
+                {downloadUrl && (
+                  <a
+                    href={downloadUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block w-full px-6 py-3 bg-white text-black hover:bg-tactical-accent hover:text-black transition-all duration-300 text-sm font-medium"
+                  >
+                    {t('downloadForm.success.downloadButton')}
+                  </a>
+                )}
               </div>
             )}
           </div>

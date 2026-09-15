@@ -1112,8 +1112,9 @@
         "submitting": "Behandlar...",
         "privacyNote": "Vi värnar om din integritet. Din information används enbart för att skicka relevanta TAK-resurser och uppdateringar till dig.",
         "success": {
-          "title": "Kontrollera din e-post",
-          "description": "Vi har skickat nedladdningslänken till din e-postadress. Kontrollera din inkorg."
+          "title": "Din nedladdning är klar",
+          "description": "Din PDF bör öppnas i en ny flik. Om inte, använd knappen nedan. Vi har också skickat länken till din e-post.",
+          "downloadButton": "Ladda ner PDF"
         }
       },
       "coversLabel": "OMFATTAR:"

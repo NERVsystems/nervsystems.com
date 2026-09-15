@@ -1112,8 +1112,9 @@
         "submitting": "Procesando...",
         "privacyNote": "Respetamos su privacidad. Sus datos solo se utilizarán para enviarle recursos y novedades relevantes sobre TAK.",
         "success": {
-          "title": "Consulte su correo",
-          "description": "Hemos enviado el enlace de descarga a su dirección de correo electrónico. Revise su bandeja de entrada."
+          "title": "Su descarga está lista",
+          "description": "Su PDF debería abrirse en una nueva pestaña. Si no es así, use el botón de abajo. También le hemos enviado el enlace por correo.",
+          "downloadButton": "Descargar PDF"
         }
       },
       "coversLabel": "CONTENIDOS:"
