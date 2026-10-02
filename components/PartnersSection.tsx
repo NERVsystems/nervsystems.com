@@ -2,6 +2,33 @@
 
 import { useTranslations } from 'next-intl';
 
+// Laurel wreath: six leaves per side on a circle, open at the top, placing in the centre
+function LaurelWreath() {
+  const leaves = [18, 44, 70, 96, 122, 148].flatMap((angle) =>
+    [1, -1].map((side) => {
+      const rad = (angle * Math.PI) / 180;
+      const x = (12 + side * 8.6 * Math.sin(rad)).toFixed(2);
+      const y = (12.6 + 8.6 * Math.cos(rad)).toFixed(2);
+      return (
+        <path
+          key={`${angle}:${side}`}
+          d="M0 -2.7Q1.5 0 0 2.7Q-1.5 0 0 -2.7Z"
+          transform={`translate(${x} ${y}) rotate(${side * (122 - angle)})`}
+        />
+      );
+    })
+  );
+
+  return (
+    <svg viewBox="0 0 24 24" className="h-10 w-10 shrink-0" fill="currentColor" aria-hidden="true">
+      {leaves}
+      <text x="12" y="16" textAnchor="middle" fontSize="10" fontWeight="700" className="font-mono">
+        2
+      </text>
+    </svg>
+  );
+}
+
 export default function PartnersSection() {
   const t = useTranslations('partners');
 
@@ -45,6 +72,7 @@ export default function PartnersSection() {
     {
       name: t('items.hackathon.name'),
       description: t('items.hackathon.description'),
+      award: t('items.hackathon.award'),
       logo: "/img/brands/partners/singapore-defence-tech-hackathon.png",
       link: "https://enterprise.nus.edu.sg/event/sdth2026/",
       placeholder: false
@@ -113,6 +141,14 @@ export default function PartnersSection() {
               <p className="text-xs text-tactical-textDim">
                 {partner.description}
               </p>
+
+              {/* Award */}
+              {partner.award && (
+                <p className="mt-4 flex flex-col items-center gap-1 text-xs font-semibold text-tactical-accent">
+                  <LaurelWreath />
+                  <span>{partner.award}</span>
+                </p>
+              )}
             </a>
           ))}
         </div>
