@@ -432,7 +432,8 @@
       },
       "hackathon": {
         "name": "Singapore Defence Tech Hackathon",
-        "description": "Deltagare i SDTH 2026"
+        "description": "Deltagare i SDTH 2026",
+        "award": "2:a plats, kategori LOTR"
       }
     }
   },
