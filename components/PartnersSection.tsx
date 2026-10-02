@@ -23,9 +23,9 @@ export default function PartnersSection() {
     {
       name: t('items.nus.name'),
       description: t('items.nus.description'),
-      logo: "/img/brands/partners/B71_BrandSig_RGB.png",
+      logo: "/img/brands/partners/nusx-logo.png",
       secondaryLogo: "/img/brands/partners/nus-logo.png",
-      link: "https://enterprise.nus.edu.sg/",
+      link: "https://nusx.edu.sg",
       placeholder: false
     },
     {
