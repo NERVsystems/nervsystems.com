@@ -6,7 +6,11 @@ const CATEGORIES = ['ROI', 'COMPARISON', 'DEPLOYMENT', 'TECHNICAL', 'COMPLIANCE'
 describe('getLeadMagnetUrl', () => {
   it('resolves every resource category shown on the TAK page', () => {
     for (const category of CATEGORIES) {
-      expect(getLeadMagnetUrl(category, 'en')).toMatch(new RegExp(`^${BASE}/[a-z-]+/[a-z-]+\\.pdf$`));
+      const url = getLeadMagnetUrl(category, 'en');
+      // Compare the host prefix literally (no regex over the hostname), then
+      // pattern-match only the path.
+      expect(url?.startsWith(`${BASE}/`)).toBe(true);
+      expect(url?.slice(BASE.length)).toMatch(/^\/[a-z-]+\/[a-z-]+\.pdf$/);
     }
   });
 
